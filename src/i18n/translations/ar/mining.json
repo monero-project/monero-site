@@ -1,101 +1,101 @@
 {
-  "pageTitle": "التعدين",
-  "description": "اعدن Monero بـ RandomX. ابدأ بسرعة ولامركزية مع Gupax + P2Pool، أو استخدم XMRig لإعدادات المجموعات التقليدية.",
-  "hero": {
-    "title": "التعدين",
-    "subtitle": "Monero هي عملة مشفرة تعتمد على إثبات العمل لتحقيق الإجماع الموزع."
-  },
-  "gupax": {
-    "title": "Gupax",
-    "subtitle": "عامل التعدين الودي للمستخدم",
-    "lead": "أسرع طريقة لبدء التعدين Monero. يجمع Gupax بين P2Pool و XMRig في تطبيق بسيط مع إعداد سهل وإحصائيات واضحة.",
-    "bullets": [
-      "متعدد المنصات: يعمل على Windows، Linux، و macOS",
-      "إعداد بسيط: ابدأ التعدين في أقل من 3 دقائق",
-      "لامركزي: يعمل على P2Pool"
-    ],
-    "cta": "احصل على Gupax"
-  },
-  "xmrig": {
-    "title": "XMRig",
-    "subtitle": "للمستخدمين المتقدمين",
-    "lead": "تفضل السيطرة الكاملة؟ استخدم XMRig مباشرة للتعدين في المجموعات أو التعدين الفردي وتعديل الأداء.",
-    "bullets": [
-      "أكثر عامل RandomX شعبية",
-      "يعمل مع المجموعات، الفردي، والعديد من التكوينات المتقدمة"
-    ],
-    "cta": "XMRig على GitHub"
-  },
-  "solo": {
-    "title": "التعدين الفردي",
-    "subtitle": "الأكثر استقلالية، الأكثر تقلبًا",
-    "lead": "يقلل التعدين الفردي من الاستقلالية، لكن يتوقع فجوات طويلة بين الدفعات ما لم يكن hashrate عاليًا.",
-    "bullets": [
-      "لا رسوم مجموعة، لا ثقة في المشغل",
-      "\"يانصيب\" الدفعات - تقلب أعلى"
-    ],
-    "cta": "دليل"
-  },
-  "resources": {
-    "title": "الموارد",
-    "guides": {
-      "title": "الدليل",
-      "mineToPool": {
-        "title": "التعدين إلى مجموعة بـ XMRig",
-        "subtitle": "دليل خطوة بخطوة لـ XMRig"
-      },
-      "gupaxSetup": {
-        "title": "إعداد Gupax",
-        "subtitle": "دليل إعداد سهل لعامل التعدين Gupax"
-      }
+    "pageTitle": "التعدين",
+    "description": "اعدن Monero بـ RandomX. ابدأ بسرعة ولامركزية مع Gupax + P2Pool، أو استخدم XMRig لإعدادات المجموعات التقليدية.",
+    "hero": {
+        "title": "التعدين",
+        "subtitle": "Monero هي عملة مشفرة تعتمد على إثبات العمل لتحقيق الإجماع الموزع."
     },
-    "pools": {
-      "title": "المجموعات",
-      "comparePools": {
-        "title": "مقارنة المجموعات",
-        "subtitle": "الرسوم، hashrate، التوزيع"
-      }
+    "gupax": {
+        "title": "Gupax",
+        "subtitle": "عامل التعدين الودي للمستخدم",
+        "lead": "أسرع طريقة لبدء التعدين Monero. يجمع Gupax بين P2Pool و XMRig في تطبيق بسيط مع إعداد سهل وإحصائيات واضحة.",
+        "bullets": [
+            "متعدد المنصات: يعمل على Windows، Linux، و macOS",
+            "إعداد بسيط: ابدأ التعدين في أقل من 3 دقائق",
+            "لامركزي: يعمل على P2Pool"
+        ],
+        "cta": "احصل على Gupax"
     },
-    "benchmarks": {
-      "title": "المعايير",
-      "hashrateEstimates": {
-        "title": "تقديرات hashrate",
-        "subtitle": "حسب نموذج CPU"
-      }
+    "xmrig": {
+        "title": "XMRig",
+        "subtitle": "للمستخدمين المتقدمين",
+        "lead": "تفضل السيطرة الكاملة؟ استخدم XMRig مباشرة للتعدين في المجموعات أو التعدين الفردي وتعديل الأداء.",
+        "bullets": [
+            "أكثر عامل RandomX شعبية",
+            "يعمل مع المجموعات، الفردي، والعديد من التكوينات المتقدمة"
+        ],
+        "cta": "XMRig على GitHub"
+    },
+    "solo": {
+        "title": "التعدين الفردي",
+        "subtitle": "الأكثر استقلالية، الأكثر تقلبًا",
+        "lead": "يقلل التعدين الفردي من الاستقلالية، لكن يتوقع فجوات طويلة بين الدفعات ما لم يكن hashrate عاليًا.",
+        "bullets": [
+            "لا رسوم مجموعة، لا ثقة في المشغل",
+            "\"يانصيب\" الدفعات - تقلب أعلى"
+        ],
+        "cta": "دليل"
+    },
+    "resources": {
+        "title": "الموارد",
+        "guides": {
+            "title": "الدليل",
+            "mineToPool": {
+                "title": "التعدين إلى مجموعة بـ XMRig",
+                "subtitle": "دليل خطوة بخطوة لـ XMRig"
+            },
+            "gupaxSetup": {
+                "title": "إعداد Gupax",
+                "subtitle": "دليل إعداد سهل لعامل التعدين Gupax"
+            }
+        },
+        "pools": {
+            "title": "المجموعات",
+            "comparePools": {
+                "title": "مقارنة المجموعات",
+                "subtitle": "الرسوم، hashrate، التوزيع"
+            }
+        },
+        "benchmarks": {
+            "title": "المعايير",
+            "hashrateEstimates": {
+                "title": "تقديرات hashrate",
+                "subtitle": "حسب نموذج CPU"
+            }
+        }
+    },
+    "faq": {
+        "title": "الأسئلة الشائعة",
+        "whatIsRandomX": {
+            "title": "ما هو RandomX؟",
+            "content": "@RandomX هو خوارزمية إثبات العمل المقاومة لـ ASIC في Monero التي تفضل الأجهزة الاستهلاكية (CPUs)، مما يجعل التعدين متاحًا للجميع."
+        },
+        "soloVsPool": {
+            "title": "التعدين الفردي مقابل التعدين في المجموعة - ما هو التوازن؟",
+            "content": "يقلل التعدين الفردي من الاستقلالية لكنه يوفر دفعات أطول. توفر المجموعات دفعات أكثر تكرارًا لكنها تضيف مخاطر الثقة واللامركزية.\n\n### الفردي\n- لا مشغل مجموعة، لا رسوم مجموعة\n- فترات انتظار طويلة بين المكافآت\n- الأفضل للامركزية\n\n[دليل التعدين الفردي](https://docs.getmonero.org/interacting/mining/guides/solo)\n\n### المجموعة\n- دفعات أكثر تكرارًا\n- رسوم مجموعة + ثقة المشغل\n- مخاطر اللامركزية إذا نمت مجموعة واحدة كبيرة جدًا\n- يتطلب برمجيات تعدين طرف ثالث\n\n[تصفح المجموعات](https://miningpoolstats.stream/monero)"
+        },
+        "whyP2Pool": {
+            "title": "لماذا P2Pool \"أفضل من الاثنين\"؟",
+            "content": "يمنحك P2Pool تكرار دفعات المجموعة مع الحفاظ على التعدين نظير إلى نظير وغير حارس.\n\n- لا خادم مجموعة مركزي\n- 0% رسوم مجموعة (أنت تدفع تكاليف عقدتك الخاصة فقط)\n- غير مرخص: يمكن لأي شخص الانضمام\n- غير موثوق: الأموال لا تكون في حيازة\n- نظام دفع PPLNS\n- حد أدنى 0.0004 XMR للدفع\n\n[إعلان P2Pool](/blog/2021/10/05/p2pool-released/)"
+        },
+        "hardwareExpectations": {
+            "title": "ماذا تتوقع من أجهزتك؟",
+            "content": "تعدين Monero أكثر كفاءة بكثير على CPUs من GPUs. يمكنك تقدير hashrate الخاص بك بمقارنة CPUs في قائمة معايير XMRig.\n\n[معايير XMRig](https://xmrig.com/benchmark)"
+        },
+        "whatMiningSoftware": {
+            "title": "ما برمجيات التعدين التي يجب استخدامها؟",
+            "content": "للتعدين الفردي: محفظة GUI أو CLI (CPU فقط). للمجموعات أو GPUs: XMRig، CSminer، أو Gupax (التي تجمع P2Pool و XMRig).\n\n- [محفظة GUI](https://www.getmonero.org/downloads/#gui) (تعدين فردي)\n- [CLI](https://www.getmonero.org/downloads/#cli) (تعدين فردي)\n- [Gupax](https://gupax.io/) (P2Pool + مغلف XMRig)\n- [XMRig](https://github.com/xmrig/xmrig) (عامل CPU/GPU)\n- [CSminer](https://github.com/cryptonote-social/csminer) (عامل CPU/GPU)"
+        },
+        "whereToGetHelp": {
+            "title": "أين أحصل على المساعدة؟",
+            "content": "تواصل مع المعدنين الآخرين على subreddit r/MoneroMining. \n\n [Reddit](https://www.reddit.com/r/MoneroMining/)"
+        }
+    },
+    "disclaimer": {
+        "title": "إخلاء مسؤولية",
+        "content": "لا يؤيد مشروع Monero أي مجموعة أو برمجيات أو أجهزة معينة، والمحتوى أعلاه مقدم لأغراض إعلامية فقط."
+    },
+    "aria": {
+        "miningOptions": "خيارات التعدين"
     }
-  },
-  "faq": {
-    "title": "الأسئلة الشائعة",
-    "whatIsRandomX": {
-      "title": "ما هو RandomX؟",
-      "content": "@RandomX هو خوارزمية إثبات العمل المقاومة لـ ASIC في Monero التي تفضل الأجهزة الاستهلاكية (CPUs)، مما يجعل التعدين متاحًا للجميع."
-    },
-    "soloVsPool": {
-      "title": "التعدين الفردي مقابل التعدين في المجموعة - ما هو التوازن؟",
-      "content": "يقلل التعدين الفردي من الاستقلالية لكنه يوفر دفعات أطول. توفر المجموعات دفعات أكثر تكرارًا لكنها تضيف مخاطر الثقة واللامركزية.\n\n### الفردي\n- لا مشغل مجموعة، لا رسوم مجموعة\n- فترات انتظار طويلة بين المكافآت\n- الأفضل للامركزية\n\n[دليل التعدين الفردي](https://docs.getmonero.org/interacting/mining/guides/solo)\n\n### المجموعة\n- دفعات أكثر تكرارًا\n- رسوم مجموعة + ثقة المشغل\n- مخاطر اللامركزية إذا نمت مجموعة واحدة كبيرة جدًا\n- يتطلب برمجيات تعدين طرف ثالث\n\n[تصفح المجموعات](https://miningpoolstats.stream/monero)"
-    },
-    "whyP2Pool": {
-      "title": "لماذا P2Pool \"أفضل من الاثنين\"؟",
-      "content": "يمنحك P2Pool تكرار دفعات المجموعة مع الحفاظ على التعدين نظير إلى نظير وغير حارس.\n\n- لا خادم مجموعة مركزي\n- 0% رسوم مجموعة (أنت تدفع تكاليف عقدتك الخاصة فقط)\n- غير مرخص: يمكن لأي شخص الانضمام\n- غير موثوق: الأموال لا تكون في حيازة\n- نظام دفع PPLNS\n- حد أدنى 0.0004 XMR للدفع\n\n[إعلان P2Pool](/blog/2021/10/05/p2pool-released/)"
-    },
-    "hardwareExpectations": {
-      "title": "ماذا تتوقع من أجهزتك؟",
-      "content": "تعدين Monero أكثر كفاءة بكثير على CPUs من GPUs. يمكنك تقدير hashrate الخاص بك بمقارنة CPUs في قائمة معايير XMRig.\n\n[معايير XMRig](https://xmrig.com/benchmark)"
-    },
-    "whatMiningSoftware": {
-      "title": "ما برمجيات التعدين التي يجب استخدامها؟",
-      "content": "للتعدين الفردي: محفظة GUI أو CLI (CPU فقط). للمجموعات أو GPUs: XMRig، CSminer، أو Gupax (التي تجمع P2Pool و XMRig).\n\n- [محفظة GUI](https://www.getmonero.org/downloads/#gui) (تعدين فردي)\n- [CLI](https://www.getmonero.org/downloads/#cli) (تعدين فردي)\n- [Gupax](https://gupax.io/) (P2Pool + مغلف XMRig)\n- [XMRig](https://github.com/xmrig/xmrig) (عامل CPU/GPU)\n- [CSminer](https://github.com/cryptonote-social/csminer) (عامل CPU/GPU)"
-    },
-    "whereToGetHelp": {
-      "title": "أين أحصل على المساعدة؟",
-      "content": "تواصل مع المعدنين الآخرين على subreddit r/MoneroMining. \n\n [Reddit](https://www.reddit.com/r/MoneroMining/)"
-    }
-  },
-  "disclaimer": {
-    "title": "إخلاء مسؤولية",
-    "content": "لا يؤيد مشروع Monero أي مجموعة أو برمجيات أو أجهزة معينة، والمحتوى أعلاه مقدم لأغراض إعلامية فقط."
-  },
-  "aria": {
-    "miningOptions": "خيارات التعدين"
-  }
 }

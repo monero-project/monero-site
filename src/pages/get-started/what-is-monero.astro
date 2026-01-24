@@ -1,6 +1,8 @@
 ---
-import MaskIcon from "@/components/ui/MaskIcon.astro";
 import Layout from "@/layouts/Layout.astro";
+
+import FeatureCard from "@/components/pages/what-is-monero/FeatureCard.astro";
+import UseCaseItem from "@/components/pages/what-is-monero/UseCaseItem.astro";
 import { Image } from "astro:assets";
 
 import Row from "@/components/ui/Row.astro";
@@ -101,86 +103,40 @@ const getLanguageLabel = (lang: string): string => {
         />
       </Fragment>
       <Column slot="aside" gap="2xl">
-        <div class="use-case-item">
-          <div class="icon">
-            <MaskIcon src={shieldCheckIcon} size="2rem" />
-          </div>
-          <div>
-            <h3>
-              {
-                t(
-                  "what-is-monero:sections.useCases.items.financialPrivacy.title",
-                )
-              }
-            </h3>
-            <p>
-              {
-                t(
-                  "what-is-monero:sections.useCases.items.financialPrivacy.description",
-                )
-              }
-            </p>
-          </div>
-        </div>
-        <div class="use-case-item">
-          <div class="icon">
-            <MaskIcon src={coinsIcon} size="2rem" />
-          </div>
-          <div>
-            <h3>
-              {t("what-is-monero:sections.useCases.items.fungibility.title")}
-            </h3>
-            <p>
-              {
-                t(
-                  "what-is-monero:sections.useCases.items.fungibility.description",
-                )
-              }
-            </p>
-          </div>
-        </div>
-        <div class="use-case-item">
-          <div class="icon">
-            <MaskIcon src={fistIcon} size="2rem" />
-          </div>
-          <div>
-            <h3>
-              {
-                t(
-                  "what-is-monero:sections.useCases.items.censorshipResistance.title",
-                )
-              }
-            </h3>
-            <p>
-              {
-                t(
-                  "what-is-monero:sections.useCases.items.censorshipResistance.description",
-                )
-              }
-            </p>
-          </div>
-        </div>
-        <div class="use-case-item">
-          <div class="icon">
-            <MaskIcon src={briefcaseIcon} size="2rem" />
-          </div>
-          <div>
-            <h3>
-              {
-                t(
-                  "what-is-monero:sections.useCases.items.businessPayments.title",
-                )
-              }
-            </h3>
-            <p>
-              {
-                t(
-                  "what-is-monero:sections.useCases.items.businessPayments.description",
-                )
-              }
-            </p>
-          </div>
-        </div>
+        <UseCaseItem
+          icon={shieldCheckIcon}
+          title={t(
+            "what-is-monero:sections.useCases.items.financialPrivacy.title",
+          )}
+          description={t(
+            "what-is-monero:sections.useCases.items.financialPrivacy.description",
+          )}
+        />
+        <UseCaseItem
+          icon={coinsIcon}
+          title={t("what-is-monero:sections.useCases.items.fungibility.title")}
+          description={t(
+            "what-is-monero:sections.useCases.items.fungibility.description",
+          )}
+        />
+        <UseCaseItem
+          icon={fistIcon}
+          title={t(
+            "what-is-monero:sections.useCases.items.censorshipResistance.title",
+          )}
+          description={t(
+            "what-is-monero:sections.useCases.items.censorshipResistance.description",
+          )}
+        />
+        <UseCaseItem
+          icon={briefcaseIcon}
+          title={t(
+            "what-is-monero:sections.useCases.items.businessPayments.title",
+          )}
+          description={t(
+            "what-is-monero:sections.useCases.items.businessPayments.description",
+          )}
+        />
       </Column>
     </MediaSection>
 
@@ -191,93 +147,57 @@ const getLanguageLabel = (lang: string): string => {
         >{t("what-is-monero:sections.technology.eyebrow")}</span
       >
       <h2>{t("what-is-monero:sections.technology.title")}</h2>
-      <Grid minWidth="20rem" gap="2xl" class="feature-grid">
-        <Column gap="md" class="feature-item">
-          <div class="icon">
-            <MaskIcon src={hatGlassesIcon} size="100%" />
-          </div>
-          <h3>
+      <Grid minWidth="20rem" gap="2xl">
+        <FeatureCard
+          icon={hatGlassesIcon}
+          title={t(
+            "what-is-monero:sections.technology.features.stealthAddresses.title",
+          )}
+          description={t(
+            "what-is-monero:sections.technology.features.stealthAddresses.description",
+          )}
+          basedOn={t(
+            "what-is-monero:sections.technology.features.stealthAddresses.basedOn",
             {
-              t(
-                "what-is-monero:sections.technology.features.stealthAddresses.title",
-              )
-            }
-          </h3>
-          <p>
-            {
-              t(
-                "what-is-monero:sections.technology.features.stealthAddresses.description",
-              )
-            }
-          </p>
-          <p
-            class="based-on"
-            set:html={safeMarkdown.parseInline(
-              t(
-                "what-is-monero:sections.technology.features.stealthAddresses.basedOn",
-                {
-                  mpECDH: localizeHref(
-                    "/resources/moneropedia/elliptic-curve-diffie-hellman/",
-                  ),
-                },
+              mpECDH: localizeHref(
+                "/resources/moneropedia/elliptic-curve-diffie-hellman/",
               ),
-            )}
-          />
-        </Column>
-        <Column gap="md" class="feature-item">
-          <div class="icon">
-            <MaskIcon src={shieldPlusIcon} size="100%" />
-          </div>
-          <h3>{t("what-is-monero:sections.technology.features.fcmp.title")}</h3>
-          <p>
-            {t("what-is-monero:sections.technology.features.fcmp.description")}
-          </p>
-          <p
-            class="based-on"
-            set:html={safeMarkdown.parseInline(
-              t("what-is-monero:sections.technology.features.fcmp.basedOn", {
-                mpCurveTrees: localizeHref(
-                  "/resources/moneropedia/curve-trees/",
-                ),
-              }),
-            )}
-          />
-        </Column>
-        <Column gap="md" class="feature-item">
-          <div class="icon">
-            <MaskIcon src={eyeOffIcon} size="100%" />
-          </div>
-          <h3>
+            },
+          )}
+        />
+        <FeatureCard
+          icon={shieldPlusIcon}
+          title={t("what-is-monero:sections.technology.features.fcmp.title")}
+          description={t(
+            "what-is-monero:sections.technology.features.fcmp.description",
+          )}
+          basedOn={t(
+            "what-is-monero:sections.technology.features.fcmp.basedOn",
             {
-              t(
-                "what-is-monero:sections.technology.features.confidentialTransactions.title",
-              )
-            }
-          </h3>
-          <p>
+              mpCurveTrees: localizeHref("/resources/moneropedia/curve-trees/"),
+            },
+          )}
+        />
+        <FeatureCard
+          icon={eyeOffIcon}
+          title={t(
+            "what-is-monero:sections.technology.features.confidentialTransactions.title",
+          )}
+          description={t(
+            "what-is-monero:sections.technology.features.confidentialTransactions.description",
+          )}
+          basedOn={t(
+            "what-is-monero:sections.technology.features.confidentialTransactions.basedOn",
             {
-              t(
-                "what-is-monero:sections.technology.features.confidentialTransactions.description",
-              )
-            }
-          </p>
-          <p
-            class="based-on"
-            set:html={safeMarkdown.parseInline(
-              t(
-                "what-is-monero:sections.technology.features.confidentialTransactions.basedOn",
-                {
-                  mpPedersenCommitments: localizeHref(
-                    "/resources/moneropedia/pedersen-commitment/",
-                  ),
-                  mpBulletproofs: localizeHref(
-                    "/resources/moneropedia/bulletproofs/",
-                  ),
-                },
+              mpPedersenCommitments: localizeHref(
+                "/resources/moneropedia/pedersen-commitment/",
               ),
-            )}
-          />
-        </Column>
+              mpBulletproofs: localizeHref(
+                "/resources/moneropedia/bulletproofs/",
+              ),
+            },
+          )}
+        />
       </Grid>
     </div>
 
@@ -396,61 +316,6 @@ const getLanguageLabel = (lang: string): string => {
 
   .centered-section p {
     margin-inline: auto;
-  }
-
-  .use-case-item {
-    display: flex;
-    gap: var(--space-md);
-    align-items: flex-start;
-  }
-
-  .use-case-item .icon {
-    color: var(--monero-orange);
-  }
-
-  .use-case-item h3 {
-    margin: 0;
-    font-size: var(--font-size-lg);
-    color: var(--heading-color);
-  }
-
-  .use-case-item p {
-    font-size: var(--font-size-md);
-    margin: 0;
-  }
-
-  .feature-item {
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-md);
-    padding: var(--space-xl);
-    text-align: start;
-  }
-
-  .feature-item .icon {
-    width: 2rem;
-    height: 2rem;
-    padding: var(--space-md);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-full);
-    color: var(--monero-orange);
-  }
-
-  .feature-item h3 {
-    font-size: var(--font-size-lg);
-    color: var(--heading-color);
-    margin: 0;
-  }
-
-  .feature-item p {
-    font-size: var(--font-size-md);
-    margin: 0;
-  }
-
-  .feature-item .based-on {
-    font-size: var(--font-size-sm);
-    color: var(--paragraph-subtitle);
-    margin-top: auto;
-    padding-top: var(--space-xl);
   }
 
   .video-section {

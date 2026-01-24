@@ -1,78 +1,78 @@
 {
-  "pageTitle": "交易所",
-  "hero": {
-    "title": "交易所",
-    "subtitle": "允许您购买或交易 Monero 的加密货币交易所。"
-  },
-  "sidebarTitle": "Monero 新手？",
-  "filtersDescription": "首先选择与您情况匹配的选项。我们将突出显示此页面上最适合您的选项。",
-  "sections": {
-    "decentralized": {
-      "title": "去中心化交易所",
-      "description": "这些选项让您直接从自己的钱包交易 Monero，无需传统交易所账户。如果您想要更多隐私和控制，这些是很好的选择。"
+    "pageTitle": "交易所",
+    "hero": {
+        "title": "交易所",
+        "subtitle": "允许您购买或交易 Monero 的加密货币交易所。"
     },
-    "aggregators": {
-      "title": "交换聚合器",
-      "description": "无需创建账户即可将加密货币兑换为 Monero 的最简单方式。这些服务比较多个交换提供商的价格，并为您选择最佳选项。",
-      "disclaimer": "聚合器本身不持有您的资金，但您最终使用的服务可能仍会要求您验证身份。",
-      "resourceBtnTitle": "KYCNot.me - 聚合器",
-      "resourceBtnSubtitle": "社区精选的交易所聚合器列表",
-      "resourceIntro": "如需包含详情和评论的最新列表，您可以访问以下社区资源：",
-      "tip": "**提示：**一些 Monero 钱包具有**内置交易所**功能以方便使用。查看<a href=\"{{communityDownloadsUrl}}\" target=\"_blank\" rel=\"noopener noreferrer\">社区下载</a>获取选项。"
+    "sidebarTitle": "Monero 新手？",
+    "filtersDescription": "首先选择与您情况匹配的选项。我们将突出显示此页面上最适合您的选项。",
+    "sections": {
+        "decentralized": {
+            "title": "去中心化交易所",
+            "description": "这些选项让您直接从自己的钱包交易 Monero，无需传统交易所账户。如果您想要更多隐私和控制，这些是很好的选择。"
+        },
+        "aggregators": {
+            "title": "交换聚合器",
+            "description": "无需创建账户即可将加密货币兑换为 Monero 的最简单方式。这些服务比较多个交换提供商的价格，并为您选择最佳选项。",
+            "disclaimer": "聚合器本身不持有您的资金，但您最终使用的服务可能仍会要求您验证身份。",
+            "resourceBtnTitle": "KYCNot.me - 聚合器",
+            "resourceBtnSubtitle": "社区精选的交易所聚合器列表",
+            "resourceIntro": "如需包含详情和评论的最新列表，您可以访问以下社区资源：",
+            "tip": "**提示：**一些 Monero 钱包具有**内置交易所**功能以方便使用。查看<a href=\"{{communityDownloadsUrl}}\" target=\"_blank\" rel=\"noopener noreferrer\">社区下载</a>获取选项。"
+        },
+        "centralized": {
+            "title": "中心化交易所",
+            "description": "这些是经典的交易所，您需要创建账户、完成身份验证，并可以从您的加密钱包、银行或卡存入资金。"
+        }
     },
-    "centralized": {
-      "title": "中心化交易所",
-      "description": "这些是经典的交易所，您需要创建账户、完成身份验证，并可以从您的加密钱包、银行或卡存入资金。"
+    "descriptions": {
+        "basicswapdex": "无中间人的去信任加密货币交易（原子交换）。",
+        "bisq": "点对点交易所，您直接与其他人交易。支持 BTC → XMR 交换。",
+        "eigenwallet": "高流动性的 BTC 到 XMR 原子交换平台。仅在欧盟可用法币购买 XMR（需要 KYC）。",
+        "retoswap": "基于 Monero 构建的去中心化点对点交易所。支持法币、加密货币 → XMR 交易。",
+        "cyphergoat": "为跨不同提供商的安全加密货币交换寻找路线的服务。",
+        "orangefren": "适合初学者的网站，让您比较和进行加密货币交换，通常无需创建账户。",
+        "trocador": "专注于隐私友好型交换路线的聚合器。",
+        "bitfinex": "具有多种加密货币和衍生品的交易平台。",
+        "kraken": "知名交易所，具有强大的法币支持和高级交易功能。",
+        "kucoin": "以大量山寨币选择（包括 Monero）而闻名的热门交易所。"
+    },
+    "highlightOptions": {
+        "easiest": {
+            "title": "我想要最简单的方式获得 Monero",
+            "subtitle": "适合初学者的选项"
+        },
+        "fiat": {
+            "title": "我想用现金或银行转账支付",
+            "subtitle": "支持法币（美元、欧元等）的交易所"
+        },
+        "privacy": {
+            "title": "我最关心隐私",
+            "subtitle": "不需要身份验证的去中心化选项"
+        },
+        "selectedText": {
+            "easiest": "突出显示：用户友好",
+            "fiat": "突出显示：现金/银行账户",
+            "privacy": "突出显示：私密"
+        }
+    },
+    "disclaimerTitle": "免责声明",
+    "disclaimer": "此列表仅供参考。Monero 项目不认可、推荐或保证此处列出的任何服务。请始终仔细检查 URL，如果不确定，请先从小额测试开始，使用任何服务的风险由您自己承担。",
+    "clearSelection": "清除选择",
+    "table": {
+        "name": "名称",
+        "kyc": "KYC",
+        "fiat": "法币",
+        "crypto": "加密货币",
+        "visit": "访问"
+    },
+    "kyc": {
+        "required": "必需",
+        "optional": "可选",
+        "none": "无"
+    },
+    "aria": {
+        "clearFilters": "清除筛选",
+        "toggleFilters": "切换交易所筛选"
     }
-  },
-  "descriptions": {
-    "basicswapdex": "无中间人的去信任加密货币交易（原子交换）。",
-    "bisq": "点对点交易所，您直接与其他人交易。支持 BTC → XMR 交换。",
-    "eigenwallet": "高流动性的 BTC 到 XMR 原子交换平台。仅在欧盟可用法币购买 XMR（需要 KYC）。",
-    "retoswap": "基于 Monero 构建的去中心化点对点交易所。支持法币、加密货币 → XMR 交易。",
-    "cyphergoat": "为跨不同提供商的安全加密货币交换寻找路线的服务。",
-    "orangefren": "适合初学者的网站，让您比较和进行加密货币交换，通常无需创建账户。",
-    "trocador": "专注于隐私友好型交换路线的聚合器。",
-    "bitfinex": "具有多种加密货币和衍生品的交易平台。",
-    "kraken": "知名交易所，具有强大的法币支持和高级交易功能。",
-    "kucoin": "以大量山寨币选择（包括 Monero）而闻名的热门交易所。"
-  },
-  "highlightOptions": {
-    "easiest": {
-      "title": "我想要最简单的方式获得 Monero",
-      "subtitle": "适合初学者的选项"
-    },
-    "fiat": {
-      "title": "我想用现金或银行转账支付",
-      "subtitle": "支持法币（美元、欧元等）的交易所"
-    },
-    "privacy": {
-      "title": "我最关心隐私",
-      "subtitle": "不需要身份验证的去中心化选项"
-    },
-    "selectedText": {
-      "easiest": "突出显示：用户友好",
-      "fiat": "突出显示：现金/银行账户",
-      "privacy": "突出显示：私密"
-    }
-  },
-  "disclaimerTitle": "免责声明",
-  "disclaimer": "此列表仅供参考。Monero 项目不认可、推荐或保证此处列出的任何服务。请始终仔细检查 URL，如果不确定，请先从小额测试开始，使用任何服务的风险由您自己承担。",
-  "clearSelection": "清除选择",
-  "table": {
-    "name": "名称",
-    "kyc": "KYC",
-    "fiat": "法币",
-    "crypto": "加密货币",
-    "visit": "访问"
-  },
-  "kyc": {
-    "required": "必需",
-    "optional": "可选",
-    "none": "无"
-  },
-  "aria": {
-    "clearFilters": "清除筛选",
-    "toggleFilters": "切换交易所筛选"
-  }
 }

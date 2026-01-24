@@ -1,107 +1,107 @@
 {
-  "pageTitle": "Workgroups",
-  "description": "Join a Monero workgroup and contribute to the project",
-  "hero": {
-    "title": "Workgroups",
-    "subtitle": "Monero is built by passionate volunteers worldwide. Workgroups are formed by community members who join forces to achieve common goals. Find your place and start contributing."
-  },
-  "hangoutsNote": {
-    "title": "Just looking to chat?",
-    "content": "Visit our Hangouts page to connect with the community."
-  },
-  "getStarted": {
-    "title": "Start Here",
-    "communityWorkgroup": {
-      "name": "Community Workgroup",
-      "lead": "The starting point for all new contributors.",
-      "description": "Not sure where to begin? Join the Community Workgroup to meet fellow contributors, discover where your skills fit, and get guidance on your first contribution. Everyone is welcome!",
-      "cta": "Join the conversation"
+    "pageTitle": "Workgroups",
+    "description": "Join a Monero workgroup and contribute to the project",
+    "hero": {
+        "title": "Workgroups",
+        "subtitle": "Monero is built by passionate volunteers worldwide. Workgroups are formed by community members who join forces to achieve common goals. Find your place and start contributing."
+    },
+    "hangoutsNote": {
+        "title": "Just looking to chat?",
+        "content": "Visit our Hangouts page to connect with the community."
+    },
+    "getStarted": {
+        "title": "Start Here",
+        "communityWorkgroup": {
+            "name": "Community Workgroup",
+            "lead": "The starting point for all new contributors.",
+            "description": "Not sure where to begin? Join the Community Workgroup to meet fellow contributors, discover where your skills fit, and get guidance on your first contribution. Everyone is welcome!",
+            "cta": "Join the conversation"
+        }
+    },
+    "columns": {
+        "development": {
+            "title": "Development",
+            "subtitle": "Write code, fix bugs, build features"
+        },
+        "research": {
+            "title": "Research",
+            "subtitle": "Advance the technology and protocols behind Monero"
+        },
+        "community": {
+            "title": "Community Services",
+            "subtitle": "Support the ecosystem"
+        }
+    },
+    "workgroups": {
+        "development": {
+            "name": "Core Development",
+            "action": "Build and maintain the Monero daemon and CLI wallet.",
+            "bestFor": "C++ developers"
+        },
+        "gui": {
+            "name": "GUI Wallet",
+            "action": "Improve the official desktop wallet experience.",
+            "bestFor": "C++, QML, and UX enthusiasts"
+        },
+        "website": {
+            "name": "Website",
+            "action": "Build and enhance getmonero.org.",
+            "bestFor": "TypeScript, Astro, web developers"
+        },
+        "seraphis": {
+            "name": "Dev Lab",
+            "action": "Participate in the development of the next-generation of Monero.",
+            "bestFor": "Cryptography-curious developers"
+        },
+        "docs": {
+            "name": "Documentation",
+            "action": "Maintain and improve Monero's documentation.",
+            "bestFor": "Technical writers, developers"
+        },
+        "researchLab": {
+            "name": "Research Lab",
+            "action": "Advance the cryptography that powers Monero's future.",
+            "bestFor": "Cryptographers, mathematicians, academics"
+        },
+        "researchLounge": {
+            "name": "Research Lounge",
+            "action": "Discuss and collaborate on research ideas.",
+            "bestFor": "Researchers, enthusiasts"
+        },
+        "pow": {
+            "name": "Proof of Work",
+            "action": "Research and develop Monero's proof of work algorithm.",
+            "bestFor": "Cryptographers, hardware experts"
+        },
+        "policy": {
+            "name": "Policy",
+            "action": "Engage regulators and advocate for privacy rights.",
+            "bestFor": "Policy experts, lawyers, communicators"
+        },
+        "malware": {
+            "name": "Malware Response",
+            "action": "Protect users from Monero-related security threats.",
+            "bestFor": "Security researchers, analysts"
+        },
+        "localization": {
+            "name": "Localization",
+            "action": "Translate Monero software and documentation.",
+            "bestFor": "Multilingual contributors, no coding required"
+        },
+        "events": {
+            "name": "Events",
+            "action": "Organize and promote Monero events worldwide.",
+            "bestFor": "Event organizers, marketers"
+        },
+        "support": {
+            "name": "Support",
+            "action": "Help users with Monero-related questions and issues.",
+            "bestFor": "Patient helpers, knowledgeable users"
+        }
+    },
+    "core": {
+        "title": "Core Team",
+        "description": "Stewards of Monero's critical infrastructure. Manages domains, repositories, and release signing. Members receive no compensation and are selected by invitation only.",
+        "note": "The Core Team does not accept applications."
     }
-  },
-  "columns": {
-    "development": {
-      "title": "Development",
-      "subtitle": "Write code, fix bugs, build features"
-    },
-    "research": {
-      "title": "Research",
-      "subtitle": "Advance the technology and protocols behind Monero"
-    },
-    "community": {
-      "title": "Community Services",
-      "subtitle": "Support the ecosystem"
-    }
-  },
-  "workgroups": {
-    "development": {
-      "name": "Core Development",
-      "action": "Build and maintain the Monero daemon and CLI wallet.",
-      "bestFor": "C++ developers"
-    },
-    "gui": {
-      "name": "GUI Wallet",
-      "action": "Improve the official desktop wallet experience.",
-      "bestFor": "C++, QML, and UX enthusiasts"
-    },
-    "website": {
-      "name": "Website",
-      "action": "Build and enhance getmonero.org.",
-      "bestFor": "TypeScript, Astro, web developers"
-    },
-    "seraphis": {
-      "name": "Dev Lab",
-      "action": "Participate in the development of the next-generation of Monero.",
-      "bestFor": "Cryptography-curious developers"
-    },
-    "docs": {
-      "name": "Documentation",
-      "action": "Maintain and improve Monero's documentation.",
-      "bestFor": "Technical writers, developers"
-    },
-    "researchLab": {
-      "name": "Research Lab",
-      "action": "Advance the cryptography that powers Monero's future.",
-      "bestFor": "Cryptographers, mathematicians, academics"
-    },
-    "researchLounge": {
-      "name": "Research Lounge",
-      "action": "Discuss and collaborate on research ideas.",
-      "bestFor": "Researchers, enthusiasts"
-    },
-    "pow": {
-      "name": "Proof of Work",
-      "action": "Research and develop Monero's proof of work algorithm.",
-      "bestFor": "Cryptographers, hardware experts"
-    },
-    "policy": {
-      "name": "Policy",
-      "action": "Engage regulators and advocate for privacy rights.",
-      "bestFor": "Policy experts, lawyers, communicators"
-    },
-    "malware": {
-      "name": "Malware Response",
-      "action": "Protect users from Monero-related security threats.",
-      "bestFor": "Security researchers, analysts"
-    },
-    "localization": {
-      "name": "Localization",
-      "action": "Translate Monero software and documentation.",
-      "bestFor": "Multilingual contributors, no coding required"
-    },
-    "events": {
-      "name": "Events",
-      "action": "Organize and promote Monero events worldwide.",
-      "bestFor": "Event organizers, marketers"
-    },
-    "support": {
-      "name": "Support",
-      "action": "Help users with Monero-related questions and issues.",
-      "bestFor": "Patient helpers, knowledgeable users"
-    }
-  },
-  "core": {
-    "title": "Core Team",
-    "description": "Stewards of Monero's critical infrastructure. Manages domains, repositories, and release signing. Members receive no compensation and are selected by invitation only.",
-    "note": "The Core Team does not accept applications."
-  }
 }

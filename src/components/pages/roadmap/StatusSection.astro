@@ -9,15 +9,22 @@ interface Props {
     status: string;
   }>;
   status: "in-progress" | "upcoming" | "proposed";
+  variant: "active" | "upcoming" | "proposed";
+  label: string;
 }
 
-const { items, status } = Astro.props;
+const { items, status, variant, label } = Astro.props;
 const { t, dir } = Astro.locals;
 const filteredItems = items.filter((item) => item.status === status);
 const rtl = dir === "rtl";
 ---
 
-<ul class="status-list">
+<header class="status-label">
+  <span class:list={["label-dot", variant]}></span>
+  <h2>{label}</h2>
+</header>
+
+<ul class:list={["status-list", variant]}>
   {
     filteredItems.map((item) => (
       <li>
@@ -52,6 +59,54 @@ const rtl = dir === "rtl";
 </ul>
 
 <style>
+  .status-label {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+  }
+
+  .status-label h2 {
+    margin: 0;
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--heading-color);
+  }
+
+  .label-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: var(--paragraph-subtitle);
+  }
+
+  .label-dot.active {
+    background: var(--monero-orange);
+    box-shadow: 0 0 0 3px
+      color-mix(in srgb, var(--monero-orange) 25%, transparent);
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  .label-dot.upcoming {
+    background: var(--heading-color);
+  }
+
+  .label-dot.proposed {
+    background: transparent;
+    border: 1.5px solid var(--paragraph-subtitle);
+  }
+
+  @keyframes pulse {
+    0%,
+    100% {
+      box-shadow: 0 0 0 3px
+        color-mix(in srgb, var(--monero-orange) 25%, transparent);
+    }
+    50% {
+      box-shadow: 0 0 0 5px
+        color-mix(in srgb, var(--monero-orange) 15%, transparent);
+    }
+  }
+
   .status-list {
     list-style: none;
     padding: 0;
@@ -91,5 +146,24 @@ const rtl = dir === "rtl";
     font-size: var(--font-size-sm);
     color: var(--paragraph-subtitle);
     line-height: var(--line-height-caption);
+  }
+
+  .status-list.active .status-item {
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    border-inline-start: 3px solid var(--monero-orange);
+  }
+
+  .status-list.proposed .status-item {
+    background: transparent;
+    border: 1px solid var(--border-color);
+  }
+
+  .status-list.proposed a.status-item:hover {
+    background: var(--card-hover-color);
+    border-color: var(--card-color);
+  }
+
+  .status-list.proposed .status-title {
+    color: var(--paragraph-main);
   }
 </style>

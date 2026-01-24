@@ -1,95 +1,95 @@
 {
-  "index": {
-    "pageTitle": "أدوات Monero",
-    "title": "أدوات Monero",
-    "subtitle": "اعثر على الأداة المناسبة لما تحاول القيام به.",
-    "description": "اعثر على أداة Monero المناسبة لما تحاول القيام به - استكشف السلسلة، بناء التطبيقات، أو قبول المدفوعات.",
-    "itemsCount": "{{num}} عناصر"
-  },
-  "explore": {
-    "pageTitle": "استكشف Monero",
-    "title": "استكشف",
-    "subtitle": "مستكشفات الكتل، مراقبو الشبكة، والأدوات المساعدة لتصفح سلسلة Monero.",
-    "sections": {
-      "blockExplorers": {
-        "title": "مستكشفات الكتل",
-        "subtitle": "عرض المعاملات، الكتل، وبيانات on-chain."
-      },
-      "network": {
-        "title": "الشبكة والعقد",
-        "subtitle": "مراقبة الشبكة، العثور على العقد، وتصور النشاط."
-      },
-      "utilities": {
-        "title": "الأدوات المساعدة",
-        "subtitle": "مولدات المحافظ، مقارنات الأسعار، الإحصائيات، والأرشيفات."
-      }
+    "index": {
+        "pageTitle": "أدوات Monero",
+        "title": "أدوات Monero",
+        "subtitle": "اعثر على الأداة المناسبة لما تحاول القيام به.",
+        "description": "اعثر على أداة Monero المناسبة لما تحاول القيام به - استكشف السلسلة، بناء التطبيقات، أو قبول المدفوعات.",
+        "itemsCount": "{{num}} عناصر"
     },
-    "tools": {
-      "blockExplorers": {
-        "p2poolObserver": "مستكشف غير تقليدي مع التحقق من إثبات المعدنين (يخفي الكتل غير المتنازع عليها)",
-        "p2poolIo": "مستكشف كتل Monero تقليدي",
-        "moneroHash": "مستكشف كتل Monero شائع",
-        "xmrchain": "مستكشف كتل Monero مفتوح المصدر شائع",
-        "localMonero": "مستكشف كتل من LocalMonero",
-        "monerowat": "مستكشف كتل Monero",
-        "xmrmx": "مستكشف كتل Monero"
-      },
-      "network": {
-        "moneroFail": "قائمة شاملة للعقد وخريطة الشبكة",
-        "ditatompel": "قائمة عقد Monero البعيدة",
-        "moneroHashNodes": "خريطة عقد Monero تفاعلية",
-        "txStreet": "مصور مباشر للمعاملات والكتل",
-        "nowNodes": "واجهات برمجة تطبيقات عقد البلوكشين للمطورين",
-        "getBlock": "مزود عقد البلوكشين"
-      },
-      "utilities": {
-        "llcoins": "مولد محفظة وعناوين غير متصل",
-        "monerotech": "أداة لفحص مفاتيح وعناوين المحفظة",
-        "moneroHow": "إحصائيات وموارد تعليمية",
-        "moneroLogs": "أرشيف قنوات IRC لـ Monero"
-      }
+    "explore": {
+        "pageTitle": "استكشف Monero",
+        "title": "استكشف",
+        "subtitle": "مستكشفات الكتل، مراقبو الشبكة، والأدوات المساعدة لتصفح سلسلة Monero.",
+        "sections": {
+            "blockExplorers": {
+                "title": "مستكشفات الكتل",
+                "subtitle": "عرض المعاملات، الكتل، وبيانات on-chain."
+            },
+            "network": {
+                "title": "الشبكة والعقد",
+                "subtitle": "مراقبة الشبكة، العثور على العقد، وتصور النشاط."
+            },
+            "utilities": {
+                "title": "الأدوات المساعدة",
+                "subtitle": "مولدات المحافظ، مقارنات الأسعار، الإحصائيات، والأرشيفات."
+            }
+        },
+        "tools": {
+            "blockExplorers": {
+                "p2poolObserver": "مستكشف غير تقليدي مع التحقق من إثبات المعدنين (يخفي الكتل غير المتنازع عليها)",
+                "p2poolIo": "مستكشف كتل Monero تقليدي",
+                "moneroHash": "مستكشف كتل Monero شائع",
+                "xmrchain": "مستكشف كتل Monero مفتوح المصدر شائع",
+                "localMonero": "مستكشف كتل من LocalMonero",
+                "monerowat": "مستكشف كتل Monero",
+                "xmrmx": "مستكشف كتل Monero"
+            },
+            "network": {
+                "moneroFail": "قائمة شاملة للعقد وخريطة الشبكة",
+                "ditatompel": "قائمة عقد Monero البعيدة",
+                "moneroHashNodes": "خريطة عقد Monero تفاعلية",
+                "txStreet": "مصور مباشر للمعاملات والكتل",
+                "nowNodes": "واجهات برمجة تطبيقات عقد البلوكشين للمطورين",
+                "getBlock": "مزود عقد البلوكشين"
+            },
+            "utilities": {
+                "llcoins": "مولد محفظة وعناوين غير متصل",
+                "monerotech": "أداة لفحص مفاتيح وعناوين المحفظة",
+                "moneroHow": "إحصائيات وموارد تعليمية",
+                "moneroLogs": "أرشيف قنوات IRC لـ Monero"
+            }
+        },
+        "disclaimer": {
+            "title": "إخلاء مسؤولية",
+            "text": "يتم تقديم هذه الروابط لأغراض إعلامية فقط ولا تشكل تأييدًا من مجتمع Monero. لاقتراح أداة،",
+            "linkText": "افتح مشكلة GitHub"
+        }
     },
-    "disclaimer": {
-      "title": "إخلاء مسؤولية",
-      "text": "يتم تقديم هذه الروابط لأغراض إعلامية فقط ولا تشكل تأييدًا من مجتمع Monero. لاقتراح أداة،",
-      "linkText": "افتح مشكلة GitHub"
+    "develop": {
+        "pageTitle": "التطوير مع Monero",
+        "title": "التطوير",
+        "subtitle": "المكتبات و SDKs لدمج Monero في تطبيقاتك.",
+        "tools": {
+            "moneroTs": "مكتبة TypeScript/JavaScript لـ Node.js والمتصفحات",
+            "moneroPython": "مكتبة Python مع RPC وربط أصلي",
+            "moneroOxide": "تنفيذ Rust لبروتوكول Monero blockchain",
+            "moneroJava": "مكتبة Java لـ RPC المحفظة والـ daemon في Monero",
+            "moneroCpp": "مكتبة C++ لمحفظة وـ daemon Monero",
+            "monerophp": "مكتبة PHP لـ RPC محفظة Monero",
+            "goMoneroRpc": "عميل Go لـ RPC المحفظة والـ daemon في Monero"
+        },
+        "disclaimer": {
+            "title": "إخلاء مسؤولية",
+            "text": "يتم تقديم هذه الروابط لأغراض إعلامية فقط ولا تشكل تأييدًا من مجتمع Monero. لاقتراح مكتبة،",
+            "linkText": "افتح مشكلة GitHub"
+        }
+    },
+    "accept": {
+        "pageTitle": "قبول مدفوعات Monero",
+        "title": "قبول المدفوعات",
+        "subtitle": "معالجو الدفع والمكونات الإضافية لقبول Monero على موقعك أو متجرك.",
+        "tools": {
+            "btcPayServer": "معالج دفع مفتوح المصدر ذاتي الاستضافة",
+            "nowPayments": "بوابة دفع عملات رقمية غير وصائية",
+            "bitcart": "منصة دفع عملات رقمية مفتوحة المصدر",
+            "coinPayments": "بوابة دفع متعددة العملات الرقمية",
+            "cryptoWoo": "إضافة WooCommerce لـ Monero",
+            "moneroWooCommerce": "امتداد PHP لمتاجر WooCommerce"
+        },
+        "disclaimer": {
+            "title": "إخلاء مسؤولية",
+            "text": "يتم تقديم هذه الروابط لأغراض إعلامية فقط ولا تشكل تأييدًا من مجتمع Monero. لاقتراح بوابة دفع،",
+            "linkText": "افتح مشكلة GitHub"
+        }
     }
-  },
-  "develop": {
-    "pageTitle": "التطوير مع Monero",
-    "title": "التطوير",
-    "subtitle": "المكتبات و SDKs لدمج Monero في تطبيقاتك.",
-    "tools": {
-      "moneroTs": "مكتبة TypeScript/JavaScript لـ Node.js والمتصفحات",
-      "moneroPython": "مكتبة Python مع RPC وربط أصلي",
-      "moneroOxide": "تنفيذ Rust لبروتوكول Monero blockchain",
-      "moneroJava": "مكتبة Java لـ RPC المحفظة والـ daemon في Monero",
-      "moneroCpp": "مكتبة C++ لمحفظة وـ daemon Monero",
-      "monerophp": "مكتبة PHP لـ RPC محفظة Monero",
-      "goMoneroRpc": "عميل Go لـ RPC المحفظة والـ daemon في Monero"
-    },
-    "disclaimer": {
-      "title": "إخلاء مسؤولية",
-      "text": "يتم تقديم هذه الروابط لأغراض إعلامية فقط ولا تشكل تأييدًا من مجتمع Monero. لاقتراح مكتبة،",
-      "linkText": "افتح مشكلة GitHub"
-    }
-  },
-  "accept": {
-    "pageTitle": "قبول مدفوعات Monero",
-    "title": "قبول المدفوعات",
-    "subtitle": "معالجو الدفع والمكونات الإضافية لقبول Monero على موقعك أو متجرك.",
-    "tools": {
-      "btcPayServer": "معالج دفع مفتوح المصدر ذاتي الاستضافة",
-      "nowPayments": "بوابة دفع عملات رقمية غير وصائية",
-      "bitcart": "منصة دفع عملات رقمية مفتوحة المصدر",
-      "coinPayments": "بوابة دفع متعددة العملات الرقمية",
-      "cryptoWoo": "إضافة WooCommerce لـ Monero",
-      "moneroWooCommerce": "امتداد PHP لمتاجر WooCommerce"
-    },
-    "disclaimer": {
-      "title": "إخلاء مسؤولية",
-      "text": "يتم تقديم هذه الروابط لأغراض إعلامية فقط ولا تشكل تأييدًا من مجتمع Monero. لاقتراح بوابة دفع،",
-      "linkText": "افتح مشكلة GitHub"
-    }
-  }
 }

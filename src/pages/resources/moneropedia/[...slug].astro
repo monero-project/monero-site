@@ -4,10 +4,7 @@ import type { CollectionEntry } from "astro:content";
 import { getCollection, getEntry, render } from "astro:content";
 
 import Layout from "@/layouts/Layout.astro";
-
-import MaskIcon from "@/components/ui/MaskIcon.astro";
-
-import chevronLeft from "@/assets/icons/mask/chevron-left.avif";
+import BackLink from "@/components/ui/BackLink.astro";
 
 export async function getStaticPaths() {
   const entries = await getCollection("moneropedia", (entry) =>
@@ -21,7 +18,7 @@ export async function getStaticPaths() {
 
 type Props = CollectionEntry<"moneropedia">;
 
-const { locale, t, dir, localizeHref } = Astro.locals;
+const { locale, t, localizeHref } = Astro.locals;
 
 const { slug } = Astro.params;
 const entry = await getEntry("moneropedia", `${locale}/${slug}`);
@@ -42,27 +39,16 @@ const title = entry.data.title ?? entry.data.terms[0];
   description=""
 >
   <div class="moneropedia-page container">
-    {/* Row 1, Col 1 */}
     <aside class="moneropedia-sidebar">
-      <a
-        href={localizeHref("/resources/moneropedia/")}
-        class="moneropedia-back"
-      >
-        <span class="moneropedia-back-icon">
-          <MaskIcon src={chevronLeft} size="1.25rem" rtl={dir == "rtl"} />
-        </span>
-        <span class="moneropedia-back-label"
-          >{t("knowledge-base:moneropedia.title")}</span
-        >
-      </a>
+      <BackLink href={localizeHref("/resources/moneropedia/")} size="lg">
+        {t("knowledge-base:moneropedia.title")}
+      </BackLink>
     </aside>
 
-    {/* Row 1, Col 2 */}
     <header class="moneropedia-header">
       <h1>{title}</h1>
     </header>
 
-    {/* Row 2, Col 2 (Row 2 Col 1 intentionally empty) */}
     <article class="moneropedia-article">
       <Content />
     </article>
@@ -83,35 +69,6 @@ const title = entry.data.title ?? entry.data.terms[0];
   .moneropedia-sidebar {
     align-self: center;
     grid-area: sidebar;
-    display: flex;
-    align-items: flex-start;
-  }
-
-  .moneropedia-back {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--space-xs);
-    font-size: var(--font-size-2xl);
-    font-weight: var(--font-weight-semibold);
-    color: var(--monero-orange);
-    text-decoration: none;
-  }
-
-  .moneropedia-back-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: var(--radius-full);
-    background: var(--card-color);
-  }
-
-  .moneropedia-back-label {
-    white-space: nowrap;
-  }
-  .moneropedia-back:hover > .moneropedia-back-label {
-    opacity: 0.8;
   }
 
   .moneropedia-header {
@@ -126,7 +83,7 @@ const title = entry.data.title ?? entry.data.terms[0];
 
   .moneropedia-article {
     grid-area: content;
-    min-width: 0; /* prevent overflow inside the grid */
+    min-width: 0;
   }
 
   @media (max-width: 900px) {

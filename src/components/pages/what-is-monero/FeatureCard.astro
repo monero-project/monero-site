@@ -1,0 +1,60 @@
+---
+import type { ImageMetadata } from "astro";
+import Column from "@/components/ui/Column.astro";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+
+interface Props {
+  icon: ImageMetadata;
+  title: string;
+  description: string;
+  basedOn: string;
+}
+
+const { icon, title, description, basedOn } = Astro.props;
+const { safeMarkdown } = Astro.locals;
+---
+
+<Column gap="md" class="feature-card">
+  <div class="icon">
+    <MaskIcon src={icon} size="100%" />
+  </div>
+  <h3>{title}</h3>
+  <p>{description}</p>
+  <p class="based-on" set:html={safeMarkdown.parseInline(basedOn)} />
+</Column>
+
+<style>
+  .feature-card {
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: var(--space-xl);
+    text-align: start;
+  }
+
+  .icon {
+    width: 2rem;
+    height: 2rem;
+    padding: var(--space-md);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-full);
+    color: var(--monero-orange);
+  }
+
+  h3 {
+    font-size: var(--font-size-lg);
+    color: var(--heading-color);
+    margin: 0;
+  }
+
+  p {
+    font-size: var(--font-size-md);
+    margin: 0;
+  }
+
+  .based-on {
+    font-size: var(--font-size-sm);
+    color: var(--paragraph-subtitle);
+    margin-top: auto;
+    padding-top: var(--space-xl);
+  }
+</style>

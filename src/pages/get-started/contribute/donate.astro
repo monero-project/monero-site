@@ -1,7 +1,7 @@
 ---
 import DonationAddress from "@/components/pages/contribute/DonationAddress.astro";
+import FundFooter from "@/components/pages/contribute/FundFooter.astro";
 import Button from "@/components/ui/Button.astro";
-import Row from "@/components/ui/Row.astro";
 import Grid from "@/components/ui/Grid.astro";
 import HeroCard from "@/components/ui/HeroCard.astro";
 import MaskIcon from "@/components/ui/MaskIcon.astro";
@@ -76,62 +76,13 @@ const { dir, t, localizeHref } = Astro.locals;
         />
       </Grid>
 
-      <footer class="fund-footer">
-        <p class="fund-note">
-          {t("contribute:donate.generalFund.description")}
-        </p>
-        <Row gap="2xl" class="fund-meta">
-          <span class="meta-item">
-            <strong>{t("contribute:donate.generalFund.openAlias")}</strong>
-            <code>donate.getmonero.org</code>
-          </span>
-          <span class="meta-item">
-            <strong>{t("contribute:donate.generalFund.contact")}</strong>
-            <a href="mailto:dev@getmonero.org">dev@getmonero.org</a>
-          </span>
-        </Row>
-      </footer>
+      <FundFooter
+        note={t("contribute:donate.generalFund.description")}
+        openAliasLabel={t("contribute:donate.generalFund.openAlias")}
+        openAliasValue="donate.getmonero.org"
+        contactLabel={t("contribute:donate.generalFund.contact")}
+        contactEmail="dev@getmonero.org"
+      />
     </PageSection>
   </PageContainer>
 </Layout>
-
-<style>
-  .fund-footer {
-    margin-top: var(--space-xl);
-  }
-
-  .fund-note {
-    margin: 0 0 var(--space-md);
-    font-size: var(--font-size-sm);
-    color: var(--paragraph-subtitle);
-    line-height: var(--line-height-body);
-  }
-
-  .fund-meta {
-    font-size: var(--font-size-sm);
-    color: var(--paragraph-subtitle);
-  }
-
-  .meta-item {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5em;
-  }
-
-  .meta-item strong {
-    color: var(--paragraph-main);
-    font-weight: var(--font-weight-semibold);
-  }
-
-  .meta-item code {
-    background: var(--card-color);
-    padding: 0.2em 0.5em;
-    border-radius: var(--radius-sm);
-    font-size: 0.9em;
-    color: var(--heading-color);
-  }
-
-  .meta-item a {
-    font-weight: var(--font-weight-medium);
-  }
-</style>

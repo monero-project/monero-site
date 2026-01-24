@@ -1,124 +1,124 @@
 {
-  "pageTitle": "下载",
-  "hero": {
-    "title": "下载",
-    "subtitle": "获取 Monero 钱包和软件。"
-  },
-  "tabs": {
-    "core": "核心",
-    "community": "社区"
-  },
-  "platforms": {
-    "windows": "Windows",
-    "macos": "macOS",
-    "linux": "Linux",
-    "android": "Android",
-    "freebsd": "FreeBSD",
-    "ios": "iOS"
-  },
-  "communityNote": {
-    "title": "寻找更多钱包？",
-    "content": "访问社区选项卡，查看移动钱包和其他社区创建的软件。"
-  },
-  "core": {
-    "gui": {
-      "title": "Monero GUI 钱包",
-      "subtitle": "由 Monero 社区开发的图形钱包",
-      "features": {
-        "simpleMode": "**简单模式**，方便初学者轻松发送和接收 XMR",
-        "advancedMode": "**高级模式**，完全控制钱包和节点",
-        "merchantPage": "**商家页面**，轻松接受 XMR 支付",
-        "hardwareWallet": "兼容 **Trezor** 和 **Ledger** 硬件钱包",
-        "fiatConversion": "**应用内法币转换**",
-        "pruning": "**区块链修剪**以节省磁盘空间",
-        "languages": "提供 **30 多种语言**"
-      }
+    "pageTitle": "下载",
+    "hero": {
+        "title": "下载",
+        "subtitle": "获取 Monero 钱包和软件。"
     },
-    "cli": {
-      "title": "Monero CLI 工具",
-      "subtitle": "面向高级用户的命令行界面",
-      "features": {
-        "nodeChoice": "选择本地或远程节点访问区块链",
-        "torI2p": "通过 Tor 或 I2P 发送交易以获得额外隐私",
-        "bootstrap": "在本地同步时使用引导节点立即访问",
-        "hardwareWallet": "兼容 Trezor 和 Ledger 硬件钱包",
-        "rpc": "包含 RPC 钱包、ZMQ 接口和守护进程",
-        "pruning": "区块链修剪可节省磁盘空间"
-      }
+    "tabs": {
+        "core": "核心",
+        "community": "社区"
     },
-    "version": "版本",
-    "releaseNotes": "发布说明",
-    "sourceCode": "源代码",
-    "verifyDownload": "验证",
-    "verifyDescription": "强烈建议您 <a href=\"{{verifyInstructionLink}}\" target=\"_blank\" rel=\"noopener noreferrer\">验证您下载文件的 SHA-256 哈希值</a>。\n\n这将确认您下载的文件与 Monero 开发工作组上传的文件完全匹配。请不要低估这一步骤，损坏的文件可能导致资金损失。",
-    "viewHashes": "查看哈希值",
-    "downloadButton": "下载",
-    "torrent": "种子",
-    "magnetLink": "磁力链接",
-    "formats": {
-      "installer": "安装程序",
-      "zip": ".zip",
-      "tarball": "压缩包",
-      "64bit": "64 位",
-      "32bit": "32 位",
-      "intel": "Intel",
-      "appleSilicon": "Apple Silicon",
-      "armv8": "ARMv8",
-      "armv7": "ARMv7",
-      "riscv64": "RISC-V 64 位"
+    "platforms": {
+        "windows": "Windows",
+        "macos": "macOS",
+        "linux": "Linux",
+        "android": "Android",
+        "freebsd": "FreeBSD",
+        "ios": "iOS"
+    },
+    "communityNote": {
+        "title": "寻找更多钱包？",
+        "content": "访问社区选项卡，查看移动钱包和其他社区创建的软件。"
+    },
+    "core": {
+        "gui": {
+            "title": "Monero GUI 钱包",
+            "subtitle": "由 Monero 社区开发的图形钱包",
+            "features": {
+                "simpleMode": "**简单模式**，方便初学者轻松发送和接收 XMR",
+                "advancedMode": "**高级模式**，完全控制钱包和节点",
+                "merchantPage": "**商家页面**，轻松接受 XMR 支付",
+                "hardwareWallet": "兼容 **Trezor** 和 **Ledger** 硬件钱包",
+                "fiatConversion": "**应用内法币转换**",
+                "pruning": "**区块链修剪**以节省磁盘空间",
+                "languages": "提供 **30 多种语言**"
+            }
+        },
+        "cli": {
+            "title": "Monero CLI 工具",
+            "subtitle": "面向高级用户的命令行界面",
+            "features": {
+                "nodeChoice": "选择本地或远程节点访问区块链",
+                "torI2p": "通过 Tor 或 I2P 发送交易以获得额外隐私",
+                "bootstrap": "在本地同步时使用引导节点立即访问",
+                "hardwareWallet": "兼容 Trezor 和 Ledger 硬件钱包",
+                "rpc": "包含 RPC 钱包、ZMQ 接口和守护进程",
+                "pruning": "区块链修剪可节省磁盘空间"
+            }
+        },
+        "version": "版本",
+        "releaseNotes": "发布说明",
+        "sourceCode": "源代码",
+        "verifyDownload": "验证",
+        "verifyDescription": "强烈建议您 <a href=\"{{verifyInstructionLink}}\" target=\"_blank\" rel=\"noopener noreferrer\">验证您下载文件的 SHA-256 哈希值</a>。\n\n这将确认您下载的文件与 Monero 开发工作组上传的文件完全匹配。请不要低估这一步骤，损坏的文件可能导致资金损失。",
+        "viewHashes": "查看哈希值",
+        "downloadButton": "下载",
+        "torrent": "种子",
+        "magnetLink": "磁力链接",
+        "formats": {
+            "installer": "安装程序",
+            "zip": ".zip",
+            "tarball": "压缩包",
+            "64bit": "64 位",
+            "32bit": "32 位",
+            "intel": "Intel",
+            "appleSilicon": "Apple Silicon",
+            "armv8": "ARMv8",
+            "armv7": "ARMv7",
+            "riscv64": "RISC-V 64 位"
+        }
+    },
+    "community": {
+        "sections": {
+            "wallets": {
+                "title": "钱包",
+                "subtitle": "社区开发的钱包软件，适用于不同用例和隐私需求。"
+            },
+            "cold": {
+                "title": "冷钱包",
+                "subtitle": "硬件钱包和离线交易签名应用。"
+            },
+            "nodes": {
+                "title": "节点软件",
+                "subtitle": "替代的 Monero 节点实现。"
+            }
+        },
+        "categories": {
+            "moneroOnly": "仅 Monero",
+            "multiCoin": "多币种",
+            "lws": {
+                "title": "LWS 钱包",
+                "disclaimer": "LWS 钱包将您的交易历史同步到远程服务器以方便使用。除非您可以指定自己的服务器，否则这可能带来隐私风险。"
+            }
+        },
+        "learnMore": "了解更多",
+        "desktopLabel": "桌面",
+        "mobileLabel": "移动",
+        "descriptions": {
+            "anonero": "专注隐私的钱包，所有通信都通过 Tor。",
+            "feather": "轻量、快速且功能丰富的 Monero 桌面钱包。",
+            "monerocom": "由 Cake Labs 开发的仅支持 Monero 的钱包。",
+            "monerujo": "具有高级功能的 Android Monero 钱包。",
+            "monfluo": "纯 Monero Android 钱包。",
+            "cakewallet": "支持 Monero 和硬件钱包的多币种钱包。",
+            "eigenwallet": "具有内置原子交换功能的 Monero 和比特币钱包。",
+            "stackwallet": "支持 Monero 的桌面和移动多币种钱包。",
+            "unstoppable": "支持 Monero 的多币种钱包。",
+            "edge": "具有服务器端同步的多币种钱包。",
+            "ledger": "通过第三方应用支持 Monero 的硬件钱包。",
+            "trezor": "通过第三方应用支持 Monero 的硬件钱包。",
+            "cupcake": "与 Cake Wallet/Monero.com 配合使用的离线签名应用。",
+            "sidekick": "与 Monerujo 配合使用的离线签名应用。通过蓝牙连接。",
+            "cuprate": "用 Rust 编写的快速高效的 Monero 节点实现。"
+        },
+        "tags": {
+            "qrSigning": "二维码签名",
+            "builtInExchange": "内置交易所",
+            "remoteScanning": "远程扫描",
+            "diy": "DIY",
+            "alphaSoftware": "Alpha 软件"
+        },
+        "disclaimerTitle": "免责声明",
+        "disclaimer": "此列表仅供参考。Monero 项目不认可、推荐或保证此处列出的任何服务。请始终仔细检查 URL，如果不确定，请先从小额测试开始，使用任何服务的风险由您自己承担。"
     }
-  },
-  "community": {
-    "sections": {
-      "wallets": {
-        "title": "钱包",
-        "subtitle": "社区开发的钱包软件，适用于不同用例和隐私需求。"
-      },
-      "cold": {
-        "title": "冷钱包",
-        "subtitle": "硬件钱包和离线交易签名应用。"
-      },
-      "nodes": {
-        "title": "节点软件",
-        "subtitle": "替代的 Monero 节点实现。"
-      }
-    },
-    "categories": {
-      "moneroOnly": "仅 Monero",
-      "multiCoin": "多币种",
-      "lws": {
-        "title": "LWS 钱包",
-        "disclaimer": "LWS 钱包将您的交易历史同步到远程服务器以方便使用。除非您可以指定自己的服务器，否则这可能带来隐私风险。"
-      }
-    },
-    "learnMore": "了解更多",
-    "desktopLabel": "桌面",
-    "mobileLabel": "移动",
-    "descriptions": {
-      "anonero": "专注隐私的钱包，所有通信都通过 Tor。",
-      "feather": "轻量、快速且功能丰富的 Monero 桌面钱包。",
-      "monerocom": "由 Cake Labs 开发的仅支持 Monero 的钱包。",
-      "monerujo": "具有高级功能的 Android Monero 钱包。",
-      "monfluo": "纯 Monero Android 钱包。",
-      "cakewallet": "支持 Monero 和硬件钱包的多币种钱包。",
-      "eigenwallet": "具有内置原子交换功能的 Monero 和比特币钱包。",
-      "stackwallet": "支持 Monero 的桌面和移动多币种钱包。",
-      "unstoppable": "支持 Monero 的多币种钱包。",
-      "edge": "具有服务器端同步的多币种钱包。",
-      "ledger": "通过第三方应用支持 Monero 的硬件钱包。",
-      "trezor": "通过第三方应用支持 Monero 的硬件钱包。",
-      "cupcake": "与 Cake Wallet/Monero.com 配合使用的离线签名应用。",
-      "sidekick": "与 Monerujo 配合使用的离线签名应用。通过蓝牙连接。",
-      "cuprate": "用 Rust 编写的快速高效的 Monero 节点实现。"
-    },
-    "tags": {
-      "qrSigning": "二维码签名",
-      "builtInExchange": "内置交易所",
-      "remoteScanning": "远程扫描",
-      "diy": "DIY",
-      "alphaSoftware": "Alpha 软件"
-    },
-    "disclaimerTitle": "免责声明",
-    "disclaimer": "此列表仅供参考。Monero 项目不认可、推荐或保证此处列出的任何服务。请始终仔细检查 URL，如果不确定，请先从小额测试开始，使用任何服务的风险由您自己承担。"
-  }
 }

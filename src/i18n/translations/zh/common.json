@@ -1,219 +1,219 @@
 {
-  "site": {
-    "titleSuffix": "Monero - 安全、私密、不可追踪的加密货币。"
-  },
-  "components": {
-    "bookCard": {
-      "readOnline": "在线阅读",
-      "alsoAvailableIn": "也提供以下语言版本："
+    "site": {
+        "titleSuffix": "Monero - 安全、私密、不可追踪的加密货币。"
     },
-    "workgroupCard": {
-      "bestFor": "最适合：",
-      "joinIrc": "在 IRC 上加入 {{chatName}}",
-      "joinMatrix": "在 Matrix 上加入"
+    "components": {
+        "bookCard": {
+            "readOnline": "在线阅读",
+            "alsoAvailableIn": "也提供以下语言版本："
+        },
+        "workgroupCard": {
+            "bestFor": "最适合：",
+            "joinIrc": "在 IRC 上加入 {{chatName}}",
+            "joinMatrix": "在 Matrix 上加入"
+        },
+        "guideStep": {
+            "step": "第 {{step}} 步"
+        },
+        "paginator": {
+            "pagination": "分页",
+            "previousPage": "上一页",
+            "nextPage": "下一页",
+            "page": "第 {{n}} 页"
+        },
+        "externalResourceButton": {
+            "onionService": "洋葱服务",
+            "openOnionService": "打开洋葱服务"
+        },
+        "communityCard": {
+            "project": "项目",
+            "tags": "标签",
+            "supportedPlatforms": "支持的平台",
+            "visitWebsite": "访问网站"
+        },
+        "pageTabs": {
+            "tabSelection": "标签页选择"
+        },
+        "ircChannelButton": {
+            "matrix": "Matrix",
+            "openOnMatrix": "在 Matrix 上打开"
+        },
+        "languageDropdown": {
+            "changeLanguage": "更改语言",
+            "languages": "语言"
+        },
+        "categoryCard": {
+            "explore": "探索"
+        },
+        "paperCard": {
+            "readPaper": "阅读论文"
+        }
     },
-    "guideStep": {
-      "step": "第 {{step}} 步"
+    "aria": {
+        "footer": "页脚",
+        "footerNav": "页脚导航",
+        "secondaryFooterNav": "次要页脚导航",
+        "primaryNav": "主要",
+        "closeMenu": "关闭菜单",
+        "openMenu": "打开菜单",
+        "close": "关闭",
+        "utilities": "工具",
+        "primaryNavSections": "主要导航部分"
     },
-    "paginator": {
-      "pagination": "分页",
-      "previousPage": "上一页",
-      "nextPage": "下一页",
-      "page": "第 {{n}} 页"
+    "header": {
+        "nav": {
+            "getStarted": "入门",
+            "downloads": "下载",
+            "blog": "博客",
+            "community": "社区",
+            "resources": "资源",
+            "crowdfunding": "众筹"
+        },
+        "dropdowns": {
+            "getStarted": {
+                "whatIsMonero": {
+                    "label": "什么是 Monero？",
+                    "desc": "关于 Monero 您需要了解的一切概览。"
+                },
+                "buyMonero": {
+                    "label": "购买 Monero",
+                    "desc": "允许您购买或交易 Monero 的加密货币交易所。"
+                },
+                "acceptMonero": {
+                    "label": "接受 Monero",
+                    "desc": "了解如何作为商家或个人接受 XMR。"
+                },
+                "spendMonero": {
+                    "label": "使用 Monero",
+                    "desc": "查找接受 Monero 支付的地点和服务。"
+                },
+                "contribute": {
+                    "label": "贡献",
+                    "desc": "帮助 Monero 项目为每个人带来隐私。"
+                },
+                "mining": {
+                    "label": "挖矿",
+                    "desc": "了解如何在您的电脑上挖掘 Monero。"
+                },
+                "faq": {
+                    "label": "常见问题",
+                    "desc": "查找关于 Monero 常见问题的答案。"
+                }
+            },
+            "community": {
+                "workgroups": {
+                    "label": "工作组",
+                    "desc": "与 Monero 的专门工作组在开发、研究和社区工作方面进行合作。"
+                },
+                "sponsorships": {
+                    "label": "赞助商",
+                    "desc": "支持 Monero 项目的企业列表。"
+                },
+                "hangouts": {
+                    "label": "社交场所",
+                    "desc": "加入 Monero 社区聚会和活动，与其他爱好者和开发者交流。"
+                }
+            },
+            "resources": {
+                "knowledgeBase": {
+                    "label": "知识库",
+                    "desc": "书籍、出版物、杂志、Moneropedia。"
+                },
+                "roadmap": {
+                    "label": "路线图",
+                    "desc": "了解最新的 Monero 开发计划和进展。"
+                },
+                "researchLab": {
+                    "label": "研究实验室",
+                    "desc": "探索 Monero 研究实验室的出版物和研究。"
+                },
+                "moneroDocs": {
+                    "label": "Monero 文档",
+                    "desc": "用户和开发者有效、安全使用 Monero 的综合指南。"
+                },
+                "moneroTools": {
+                    "label": "Monero 工具",
+                    "desc": "为 Monero 用户和开发者精选的工具和软件列表。"
+                },
+                "pressKit": {
+                    "label": "媒体资料包",
+                    "desc": "媒体联系方式、标志、图片和其他媒体资源。"
+                }
+            }
+        }
     },
-    "externalResourceButton": {
-      "onionService": "洋葱服务",
-      "openOnionService": "打开洋葱服务"
+    "footer": {
+        "columns": {
+            "resources": {
+                "title": "资源",
+                "links": {
+                    "aboutMonero": "关于 Monero",
+                    "moneropedia": "Moneropedia",
+                    "knowledgeBase": "知识库",
+                    "exchanges": "交易所",
+                    "merchants": "商家",
+                    "moneroDocs": "Monero 文档",
+                    "faq": "常见问题"
+                }
+            },
+            "reachOut": {
+                "title": "联系我们",
+                "links": {
+                    "workgroups": "工作组",
+                    "hangouts": "社交场所",
+                    "mailingList": "邮件列表"
+                }
+            },
+            "community": {
+                "title": "社区",
+                "links": {
+                    "stackExchange": "Stack Exchange",
+                    "bitcoinTalk": "Bitcoin Talk",
+                    "translate": "翻译"
+                }
+            },
+            "theMoneroProject": {
+                "title": "Monero 项目",
+                "links": {
+                    "openAlias": "Open Alias",
+                    "moneroResearchLab": "Monero 研究实验室 (MRL)",
+                    "pressKit": "媒体资料包",
+                    "communityCrowdfundingSystem": "社区众筹系统"
+                }
+            },
+            "legal": {
+                "title": "法律",
+                "links": {
+                    "privacyPolicy": "隐私政策",
+                    "termsOfUse": "使用条款"
+                }
+            }
+        },
+        "bottomLinks": {
+            "torOnionService": "Tor 洋葱服务",
+            "vulnerabilityResponse": "漏洞响应",
+            "legal": "法律",
+            "sourceCode": "源代码",
+            "sitemap": "网站地图",
+            "rssFeed": "RSS 订阅"
+        },
+        "copyright": "© 2025 Monero。保留所有权利。"
     },
-    "communityCard": {
-      "project": "项目",
-      "tags": "标签",
-      "supportedPlatforms": "支持的平台",
-      "visitWebsite": "访问网站"
+    "strings": {
+        "yes": "是",
+        "no": "否"
     },
-    "pageTabs": {
-      "tabSelection": "标签页选择"
-    },
-    "ircChannelButton": {
-      "matrix": "Matrix",
-      "openOnMatrix": "在 Matrix 上打开"
-    },
-    "languageDropdown": {
-      "changeLanguage": "更改语言",
-      "languages": "语言"
-    },
-    "categoryCard": {
-      "explore": "探索"
-    },
-    "paperCard": {
-      "readPaper": "阅读论文"
+    "notFound": {
+        "pageTitle": "404",
+        "pageDescription": "您要找的页面不存在。",
+        "title": "页面未找到",
+        "message": "看起来这个页面不存在 - 或者它只是很重视自己的隐私。",
+        "links": {
+            "home": "首页",
+            "whatIsMonero": "什么是 Monero？",
+            "downloads": "下载",
+            "faq": "常见问题",
+            "community": "社区"
+        }
     }
-  },
-  "aria": {
-    "footer": "页脚",
-    "footerNav": "页脚导航",
-    "secondaryFooterNav": "次要页脚导航",
-    "primaryNav": "主要",
-    "closeMenu": "关闭菜单",
-    "openMenu": "打开菜单",
-    "close": "关闭",
-    "utilities": "工具",
-    "primaryNavSections": "主要导航部分"
-  },
-  "header": {
-    "nav": {
-      "getStarted": "入门",
-      "downloads": "下载",
-      "blog": "博客",
-      "community": "社区",
-      "resources": "资源",
-      "crowdfunding": "众筹"
-    },
-    "dropdowns": {
-      "getStarted": {
-        "whatIsMonero": {
-          "label": "什么是 Monero？",
-          "desc": "关于 Monero 您需要了解的一切概览。"
-        },
-        "buyMonero": {
-          "label": "购买 Monero",
-          "desc": "允许您购买或交易 Monero 的加密货币交易所。"
-        },
-        "acceptMonero": {
-          "label": "接受 Monero",
-          "desc": "了解如何作为商家或个人接受 XMR。"
-        },
-        "spendMonero": {
-          "label": "使用 Monero",
-          "desc": "查找接受 Monero 支付的地点和服务。"
-        },
-        "contribute": {
-          "label": "贡献",
-          "desc": "帮助 Monero 项目为每个人带来隐私。"
-        },
-        "mining": {
-          "label": "挖矿",
-          "desc": "了解如何在您的电脑上挖掘 Monero。"
-        },
-        "faq": {
-          "label": "常见问题",
-          "desc": "查找关于 Monero 常见问题的答案。"
-        }
-      },
-      "community": {
-        "workgroups": {
-          "label": "工作组",
-          "desc": "与 Monero 的专门工作组在开发、研究和社区工作方面进行合作。"
-        },
-        "sponsorships": {
-          "label": "赞助商",
-          "desc": "支持 Monero 项目的企业列表。"
-        },
-        "hangouts": {
-          "label": "社交场所",
-          "desc": "加入 Monero 社区聚会和活动，与其他爱好者和开发者交流。"
-        }
-      },
-      "resources": {
-        "knowledgeBase": {
-          "label": "知识库",
-          "desc": "书籍、出版物、杂志、Moneropedia。"
-        },
-        "roadmap": {
-          "label": "路线图",
-          "desc": "了解最新的 Monero 开发计划和进展。"
-        },
-        "researchLab": {
-          "label": "研究实验室",
-          "desc": "探索 Monero 研究实验室的出版物和研究。"
-        },
-        "moneroDocs": {
-          "label": "Monero 文档",
-          "desc": "用户和开发者有效、安全使用 Monero 的综合指南。"
-        },
-        "moneroTools": {
-          "label": "Monero 工具",
-          "desc": "为 Monero 用户和开发者精选的工具和软件列表。"
-        },
-        "pressKit": {
-          "label": "媒体资料包",
-          "desc": "媒体联系方式、标志、图片和其他媒体资源。"
-        }
-      }
-    }
-  },
-  "footer": {
-    "columns": {
-      "resources": {
-        "title": "资源",
-        "links": {
-          "aboutMonero": "关于 Monero",
-          "moneropedia": "Moneropedia",
-          "knowledgeBase": "知识库",
-          "exchanges": "交易所",
-          "merchants": "商家",
-          "moneroDocs": "Monero 文档",
-          "faq": "常见问题"
-        }
-      },
-      "reachOut": {
-        "title": "联系我们",
-        "links": {
-          "workgroups": "工作组",
-          "hangouts": "社交场所",
-          "mailingList": "邮件列表"
-        }
-      },
-      "community": {
-        "title": "社区",
-        "links": {
-          "stackExchange": "Stack Exchange",
-          "bitcoinTalk": "Bitcoin Talk",
-          "translate": "翻译"
-        }
-      },
-      "theMoneroProject": {
-        "title": "Monero 项目",
-        "links": {
-          "openAlias": "Open Alias",
-          "moneroResearchLab": "Monero 研究实验室 (MRL)",
-          "pressKit": "媒体资料包",
-          "communityCrowdfundingSystem": "社区众筹系统"
-        }
-      },
-      "legal": {
-        "title": "法律",
-        "links": {
-          "privacyPolicy": "隐私政策",
-          "termsOfUse": "使用条款"
-        }
-      }
-    },
-    "bottomLinks": {
-      "torOnionService": "Tor 洋葱服务",
-      "vulnerabilityResponse": "漏洞响应",
-      "legal": "法律",
-      "sourceCode": "源代码",
-      "sitemap": "网站地图",
-      "rssFeed": "RSS 订阅"
-    },
-    "copyright": "© 2025 Monero。保留所有权利。"
-  },
-  "strings": {
-    "yes": "是",
-    "no": "否"
-  },
-  "notFound": {
-    "pageTitle": "404",
-    "pageDescription": "您要找的页面不存在。",
-    "title": "页面未找到",
-    "message": "看起来这个页面不存在 - 或者它只是很重视自己的隐私。",
-    "links": {
-      "home": "首页",
-      "whatIsMonero": "什么是 Monero？",
-      "downloads": "下载",
-      "faq": "常见问题",
-      "community": "社区"
-    }
-  }
 }

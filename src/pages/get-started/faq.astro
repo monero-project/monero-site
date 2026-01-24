@@ -3,11 +3,10 @@ import "@/styles/moneropedia-link.css";
 
 import Layout from "@/layouts/Layout.astro";
 
+import AccordionCard from "@/components/pages/faq/AccordionCard.astro";
 import IndexCard from "@/components/pages/index/IndexCard.astro";
 import ResourceCard from "@/components/pages/index/ResourceCard.astro";
 import type { AccordionItemType } from "@/components/ui/Accordion.astro";
-import Accordion from "@/components/ui/Accordion.astro";
-import Card from "@/components/ui/Card.astro";
 import Grid from "@/components/ui/Grid.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
@@ -70,30 +69,12 @@ const economicsItems = sectionToItems(
   <TitleCard title={t("faq:hero.title")} subtitle={t("faq:hero.subtitle")} />
   <PageContainer>
     <Grid columns={2} gap="lg" class="accordion-grid">
-      <Card class="accordion-card">
-        <h2 class="card-title">{t("faq:basics.title")}</h2>
-        <Accordion items={basicsItems} />
-      </Card>
-      <Card class="accordion-card">
-        <h2 class="card-title">{t("faq:nodes.title")}</h2>
-        <Accordion items={nodesItems} />
-      </Card>
-      <Card class="accordion-card">
-        <h2 class="card-title">{t("faq:privacy.title")}</h2>
-        <Accordion items={privacyItems} />
-      </Card>
-      <Card class="accordion-card">
-        <h2 class="card-title">{t("faq:security.title")}</h2>
-        <Accordion items={securityItems} />
-      </Card>
-      <Card class="accordion-card">
-        <h2 class="card-title">{t("faq:wallets.title")}</h2>
-        <Accordion items={walletsItems} />
-      </Card>
-      <Card class="accordion-card">
-        <h2 class="card-title">{t("faq:economics.title")}</h2>
-        <Accordion items={economicsItems} />
-      </Card>
+      <AccordionCard title={t("faq:basics.title")} items={basicsItems} />
+      <AccordionCard title={t("faq:nodes.title")} items={nodesItems} />
+      <AccordionCard title={t("faq:privacy.title")} items={privacyItems} />
+      <AccordionCard title={t("faq:security.title")} items={securityItems} />
+      <AccordionCard title={t("faq:wallets.title")} items={walletsItems} />
+      <AccordionCard title={t("faq:economics.title")} items={economicsItems} />
     </Grid>
     <IndexCard
       title={t("faq:additionalResources.title")}
@@ -139,22 +120,11 @@ const economicsItems = sectionToItems(
     margin-bottom: var(--space-2xl);
   }
 
-  .card-title {
-    margin: 0 0 var(--space-xl);
-    font-size: var(--font-size-lg);
-    font-weight: var(--font-weight-semibold);
-    color: var(--paragraph-main);
-    text-transform: uppercase;
-  }
-
   .resource-grid {
     grid-column: span 2;
   }
 
   @media (min-width: 900px) {
-    .accordion-card {
-      padding: var(--space-4xl);
-    }
     .resource-grid {
       --grid-min-width: 25rem;
     }

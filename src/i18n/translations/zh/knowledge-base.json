@@ -1,76 +1,76 @@
 {
-  "index": {
-    "pageTitle": "知识库",
-    "title": "知识库",
-    "subtitle": "探索 Monero 的知识库：书籍、百科词条和研究论文。"
-  },
-  "library": {
-    "pageTitle": "图书馆",
-    "title": "图书馆",
-    "cardSubtitle": "社区精选的书籍、出版物、杂志和教育材料。",
-    "subtitle": "探索由 Monero 社区精选的出版物、书籍和教育资源。无论您是刚入门还是深入研究密码学，这里都有适合您的内容。",
-    "sections": {
-      "books": {
-        "title": "书籍",
-        "tocSubtitle": "深度教育资源",
-        "subtitle": "深入的指南和技术资源，帮助您从基础开始理解 Monero。"
-      },
-      "cheatsheets": {
-        "title": "速查表",
-        "tocSubtitle": "视觉指南和信息图表",
-        "salmonSeries": {
-          "title": "三文鱼系列",
-          "description": "处理 Monero 内部工作原理的信息图表。名称来自所使用的颜色，具有语义含义，类似于三文鱼的烹饪程度 - 从生到全熟。"
+    "index": {
+        "pageTitle": "知识库",
+        "title": "知识库",
+        "subtitle": "探索 Monero 的知识库：书籍、百科词条和研究论文。"
+    },
+    "library": {
+        "pageTitle": "图书馆",
+        "title": "图书馆",
+        "cardSubtitle": "社区精选的书籍、出版物、杂志和教育材料。",
+        "subtitle": "探索由 Monero 社区精选的出版物、书籍和教育资源。无论您是刚入门还是深入研究密码学，这里都有适合您的内容。",
+        "sections": {
+            "books": {
+                "title": "书籍",
+                "tocSubtitle": "深度教育资源",
+                "subtitle": "深入的指南和技术资源，帮助您从基础开始理解 Monero。"
+            },
+            "cheatsheets": {
+                "title": "速查表",
+                "tocSubtitle": "视觉指南和信息图表",
+                "salmonSeries": {
+                    "title": "三文鱼系列",
+                    "description": "处理 Monero 内部工作原理的信息图表。名称来自所使用的颜色，具有语义含义，类似于三文鱼的烹饪程度 - 从生到全熟。"
+                }
+            },
+            "newsletters": {
+                "title": "时事通讯",
+                "tocSubtitle": "与社区保持同步",
+                "subtitle": "了解最新的 Monero 新闻、发展和社区亮点。"
+            }
+        },
+        "aria": {
+            "sectionsNav": "图书馆部分"
         }
-      },
-      "newsletters": {
-        "title": "时事通讯",
-        "tocSubtitle": "与社区保持同步",
-        "subtitle": "了解最新的 Monero 新闻、发展和社区亮点。"
-      }
     },
-    "aria": {
-      "sectionsNav": "图书馆部分"
-    }
-  },
-  "moneropedia": {
-    "pageTitle": "Monero 百科",
-    "title": "Monero 百科",
-    "cardSubtitle": "Monero 术语、概念和技术解释的综合百科全书。",
-    "subtitle": "Monero 和区块链术语的综合词汇表。",
-    "searchPlaceholder": "搜索 Moneropedia...",
-    "readMore": "阅读全文",
-    "aria": {
-      "navBar": "Moneropedia 导航栏"
-    }
-  },
-  "researchLab": {
-    "pageTitle": "研究实验室",
-    "title": "研究实验室",
-    "cardSubtitle": "来自 Monero 研究实验室的学术论文、密码学研究和协议改进。",
-    "subtitle": "Monero 致力于继续研究涉及加密货币的金融隐私。以下是我们研究人员的工作，更多论文即将发布。",
-    "hero": {
-      "imageAlt": "Monero 研究实验室",
-      "title": "推进加密货币隐私",
-      "description": "Monero 研究实验室 (MRL) 是一个开放、协作的研究团队，致力于前沿密码学和隐私技术的研究。我们的工作重点是改进 Monero 的协议、分析潜在漏洞，并推进金融隐私研究的最前沿。"
+    "moneropedia": {
+        "pageTitle": "Monero 百科",
+        "title": "Monero 百科",
+        "cardSubtitle": "Monero 术语、概念和技术解释的综合百科全书。",
+        "subtitle": "Monero 和区块链术语的综合词汇表。",
+        "searchPlaceholder": "搜索 Moneropedia...",
+        "readMore": "阅读全文",
+        "aria": {
+            "navBar": "Moneropedia 导航栏"
+        }
     },
-    "papers": {
-      "title": "研究论文",
-      "subtitle": "MRL 成员撰写的关于密码学、隐私和协议改进的论文。",
-      "tabs": {
-        "mrlBulletins": "MRL 公告",
-        "iacr": "IACR",
-        "other": "其他"
-      }
-    },
-    "whitepapers": {
-      "title": "CryptoNote 白皮书",
-      "subtitle": "描述 Monero 所基于协议的基础文档。",
-      "items": {
-        "cryptonote": "CryptoNote 白皮书",
-        "annotated": "注释版白皮书",
-        "goodellReview": "Brandon Goodell 的白皮书评论"
-      }
+    "researchLab": {
+        "pageTitle": "研究实验室",
+        "title": "研究实验室",
+        "cardSubtitle": "来自 Monero 研究实验室的学术论文、密码学研究和协议改进。",
+        "subtitle": "Monero 致力于继续研究涉及加密货币的金融隐私。以下是我们研究人员的工作，更多论文即将发布。",
+        "hero": {
+            "imageAlt": "Monero 研究实验室",
+            "title": "推进加密货币隐私",
+            "description": "Monero 研究实验室 (MRL) 是一个开放、协作的研究团队，致力于前沿密码学和隐私技术的研究。我们的工作重点是改进 Monero 的协议、分析潜在漏洞，并推进金融隐私研究的最前沿。"
+        },
+        "papers": {
+            "title": "研究论文",
+            "subtitle": "MRL 成员撰写的关于密码学、隐私和协议改进的论文。",
+            "tabs": {
+                "mrlBulletins": "MRL 公告",
+                "iacr": "IACR",
+                "other": "其他"
+            }
+        },
+        "whitepapers": {
+            "title": "CryptoNote 白皮书",
+            "subtitle": "描述 Monero 所基于协议的基础文档。",
+            "items": {
+                "cryptonote": "CryptoNote 白皮书",
+                "annotated": "注释版白皮书",
+                "goodellReview": "Brandon Goodell 的白皮书评论"
+            }
+        }
     }
-  }
 }

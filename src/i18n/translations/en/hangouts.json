@@ -1,57 +1,57 @@
 {
-  "pageTitle": "Hangouts",
-  "description": "We come from all over, but we definitely have some places we like to hang out together. Join us!",
-  "hero": {
-    "title": "Hangouts",
-    "subtitle": "We come from all over, but we definitely have some places we like to hang out together. Join us!"
-  },
-  "workgroupsNote": {
-    "title": "Looking for workgroups?",
-    "content": "Check out our Workgroups page to contribute to Monero development."
-  },
-  "chat": {
-    "title": "Chat",
-    "matrix": {
-      "title": "Matrix",
-      "subtitle": "Bridged to IRC"
+    "pageTitle": "Hangouts",
+    "description": "We come from all over, but we definitely have some places we like to hang out together. Join us!",
+    "hero": {
+        "title": "Hangouts",
+        "subtitle": "We come from all over, but we definitely have some places we like to hang out together. Join us!"
     },
-    "discord": {
-      "title": "Discord"
+    "workgroupsNote": {
+        "title": "Looking for workgroups?",
+        "content": "Check out our Workgroups page to contribute to Monero development."
     },
-    "telegram": {
-      "title": "Telegram"
+    "chat": {
+        "title": "Chat",
+        "matrix": {
+            "title": "Matrix",
+            "subtitle": "Bridged to IRC"
+        },
+        "discord": {
+            "title": "Discord"
+        },
+        "telegram": {
+            "title": "Telegram"
+        }
+    },
+    "social": {
+        "title": "Social",
+        "reddit": {
+            "title": "Reddit",
+            "subtitle": "r/Monero"
+        },
+        "x": {
+            "title": "X",
+            "subtitle": "@monero"
+        }
+    },
+    "channels": {
+        "title": "IRC Channels",
+        "monero": {
+            "description": "Discuss all things Monero related"
+        },
+        "community": {
+            "description": "Congregate and discuss ideas"
+        },
+        "markets": {
+            "description": "Price of Monero and other coins"
+        },
+        "offtopic": {
+            "description": "Things not related to Monero"
+        },
+        "mining": {
+            "description": "Mining questions and discussion"
+        },
+        "support": {
+            "description": "Get help from experienced users"
+        }
     }
-  },
-  "social": {
-    "title": "Social",
-    "reddit": {
-      "title": "Reddit",
-      "subtitle": "r/Monero"
-    },
-    "x": {
-      "title": "X",
-      "subtitle": "@monero"
-    }
-  },
-  "channels": {
-    "title": "IRC Channels",
-    "monero": {
-      "description": "Discuss all things Monero related"
-    },
-    "community": {
-      "description": "Congregate and discuss ideas"
-    },
-    "markets": {
-      "description": "Price of Monero and other coins"
-    },
-    "offtopic": {
-      "description": "Things not related to Monero"
-    },
-    "mining": {
-      "description": "Mining questions and discussion"
-    },
-    "support": {
-      "description": "Get help from experienced users"
-    }
-  }
 }

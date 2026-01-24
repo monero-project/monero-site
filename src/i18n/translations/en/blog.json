@@ -1,78 +1,78 @@
 {
-  "rssTitle": "Monero Blog RSS",
-  "tagLabels": {
-    "0mq": "0MQ",
-    "accounts": "Accounts",
-    "announcements": "Announcements",
-    "blockchaindb": "Blockchain DB",
-    "branding": "Branding",
-    "ccs": "CCS",
-    "community": "Community",
-    "compliance": "Compliance",
-    "conferences": "Conferences",
-    "core": "Core",
-    "crypto": "Crypto",
-    "cryptography": "Cryptography",
-    "dev": "Dev",
-    "dev diaries": "Dev Diaries",
-    "development": "Development",
-    "docs": "Docs",
-    "exchanges": "Exchanges",
-    "external": "External",
-    "forkguard": "Forkguard",
-    "funding": "Funding",
-    "gui": "GUI",
-    "i2p": "I2P",
-    "i8n": "i18n",
-    "jamtis": "Jamtis",
-    "kovri": "Kovri",
-    "magic": "MAGIC",
-    "malware": "Malware",
-    "mining": "Mining",
-    "monero": "Monero",
-    "monero missives": "Monero Missives",
-    "mymonero": "MyMonero",
-    "network upgrade": "Network Upgrade",
-    "platforms": "Platforms",
-    "protocol": "Protocol",
-    "protocol upgrade": "Protocol Upgrade",
-    "releases": "Releases",
-    "research": "Research",
-    "rpc": "RPC",
-    "seraphis": "Seraphis",
-    "urgent": "Urgent",
-    "usability": "Usability"
-  },
-  "index": {
-    "pageTitle": "Blog",
-    "hero": {
-      "title": "Blog",
-      "subtitle": "Read the latest news and updates about Monero."
+    "rssTitle": "Monero Blog RSS",
+    "tagLabels": {
+        "0mq": "0MQ",
+        "accounts": "Accounts",
+        "announcements": "Announcements",
+        "blockchaindb": "Blockchain DB",
+        "branding": "Branding",
+        "ccs": "CCS",
+        "community": "Community",
+        "compliance": "Compliance",
+        "conferences": "Conferences",
+        "core": "Core",
+        "crypto": "Crypto",
+        "cryptography": "Cryptography",
+        "dev": "Dev",
+        "dev diaries": "Dev Diaries",
+        "development": "Development",
+        "docs": "Docs",
+        "exchanges": "Exchanges",
+        "external": "External",
+        "forkguard": "Forkguard",
+        "funding": "Funding",
+        "gui": "GUI",
+        "i2p": "I2P",
+        "i8n": "i18n",
+        "jamtis": "Jamtis",
+        "kovri": "Kovri",
+        "magic": "MAGIC",
+        "malware": "Malware",
+        "mining": "Mining",
+        "monero": "Monero",
+        "monero missives": "Monero Missives",
+        "mymonero": "MyMonero",
+        "network upgrade": "Network Upgrade",
+        "platforms": "Platforms",
+        "protocol": "Protocol",
+        "protocol upgrade": "Protocol Upgrade",
+        "releases": "Releases",
+        "research": "Research",
+        "rpc": "RPC",
+        "seraphis": "Seraphis",
+        "urgent": "Urgent",
+        "usability": "Usability"
+    },
+    "index": {
+        "pageTitle": "Blog",
+        "hero": {
+            "title": "Blog",
+            "subtitle": "Read the latest news and updates about Monero."
+        }
+    },
+    "tagIndex": {
+        "pageTitle": "Tag Index",
+        "hero": {
+            "title": "Tag Index",
+            "subtitle": "Browse blog posts by tags."
+        }
+    },
+    "tags": {
+        "pageTitle": "Posts tagged with {{tag}}",
+        "hero": {
+            "title": "Posts tagged with \"{{tag}}\"",
+            "subtitle": "Browse all blog posts tagged with \"{{tag}}\"."
+        }
+    },
+    "post": {
+        "pageTitle": "Blog | {{title}}",
+        "recentPosts": "Recent Posts",
+        "and": "and"
+    },
+    "tabs": {
+        "allPosts": "All Posts"
+    },
+    "aria": {
+        "rssFeed": "RSS Feed"
     }
-  },
-  "tagIndex": {
-    "pageTitle": "Tag Index",
-    "hero": {
-      "title": "Tag Index",
-      "subtitle": "Browse blog posts by tags."
-    }
-  },
-  "tags": {
-    "pageTitle": "Posts tagged with {{tag}}",
-    "hero": {
-      "title": "Posts tagged with \"{{tag}}\"",
-      "subtitle": "Browse all blog posts tagged with \"{{tag}}\"."
-    }
-  },
-  "post": {
-    "pageTitle": "Blog | {{title}}",
-    "recentPosts": "Recent Posts",
-    "and": "and"
-  },
-  "tabs": {
-    "allPosts": "All Posts"
-  },
-  "aria": {
-    "rssFeed": "RSS Feed"
-  }
 }

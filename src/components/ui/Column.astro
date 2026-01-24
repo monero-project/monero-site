@@ -27,11 +27,15 @@ const gapValue = `var(--space-${gap})`;
 const alignValue = align ? alignMap[align] : "stretch";
 ---
 
-<Tag class:list={["column", className]} style={`--gap: ${gapValue}`} {...rest}>
+<Tag
+  class:list={["column", className]}
+  style={`--gap: ${gapValue}; --align: ${alignValue}`}
+  {...rest}
+>
   <slot />
 </Tag>
 
-<style define:vars={{ align: alignValue }}>
+<style>
   .column {
     display: flex;
     flex-direction: column;

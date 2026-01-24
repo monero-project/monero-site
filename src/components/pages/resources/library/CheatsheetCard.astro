@@ -1,0 +1,82 @@
+---
+import type { ImageMetadata } from "astro";
+import Card from "@/components/ui/Card.astro";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+import arrowRightIcon from "@/assets/icons/mask/arrow-right.avif";
+
+interface Props {
+  url: string;
+  title: string;
+  description: string;
+  icon: ImageMetadata;
+  rtl?: boolean;
+}
+
+const { url, title, description, icon, rtl = false } = Astro.props;
+---
+
+<Card
+  as="a"
+  href={url}
+  target="_blank"
+  rel="noopener noreferrer"
+  padding="none"
+  hover
+  class="cheatsheet-card"
+>
+  <div class="cheatsheet-visual">
+    <MaskIcon src={icon} size="2.5rem" />
+  </div>
+  <div class="cheatsheet-content">
+    <h4 class="cheatsheet-title">{title}</h4>
+    <p class="cheatsheet-description">{description}</p>
+  </div>
+  <div class="cheatsheet-action">
+    <MaskIcon src={arrowRightIcon} size="1.25em" rtl={rtl} />
+  </div>
+</Card>
+
+<style>
+  .cheatsheet-card {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+  }
+
+  .cheatsheet-visual {
+    background: var(--background-color);
+    padding: var(--space-xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--monero-orange);
+  }
+
+  .cheatsheet-content {
+    flex: 1;
+    padding: var(--space-md) var(--space-lg);
+  }
+
+  .cheatsheet-title {
+    margin: 0 0 var(--space-2xs);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--heading-color);
+  }
+
+  .cheatsheet-description {
+    margin: 0;
+    font-size: var(--font-size-sm);
+    color: var(--paragraph-subtitle);
+    line-height: var(--line-height-body);
+  }
+
+  .cheatsheet-action {
+    padding: var(--space-sm) var(--space-lg);
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: var(--monero-orange);
+  }
+</style>

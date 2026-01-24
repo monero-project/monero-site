@@ -1,0 +1,66 @@
+---
+import type { AccordionItemType } from "@/components/ui/Accordion.astro";
+import Accordion from "@/components/ui/Accordion.astro";
+
+interface Props {
+  letter: string;
+  items: AccordionItemType[];
+  isFirst?: boolean;
+}
+
+const { letter, items, isFirst = false } = Astro.props;
+---
+
+<div class="letter-group" id={letter}>
+  <hr class:list={["letter-separator", { first: isFirst }]} />
+  <div class="letter-layout">
+    <h2 class="letter-heading">{letter}</h2>
+    <div>
+      <Accordion items={items} multiExpand={false} variant="card" />
+    </div>
+  </div>
+</div>
+
+<style>
+  .letter-layout {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: var(--space-md) var(--space-2xl);
+    align-items: flex-start;
+  }
+
+  .letter-heading {
+    display: inline-grid;
+    place-items: center;
+    inline-size: var(--font-size-5xl);
+    block-size: var(--font-size-5xl);
+    font-size: var(--font-size-xl);
+    margin: 0;
+    color: var(--monero-orange);
+    background: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    user-select: none;
+  }
+
+  .letter-separator {
+    border: 0;
+    border-top: 1px solid var(--border-color);
+    margin: var(--space-2xl) 0 var(--space-2xl);
+  }
+
+  .letter-separator.first {
+    margin-top: 0;
+    border-color: transparent;
+  }
+
+  @media (max-width: 1000px) {
+    .letter-layout {
+      grid-template-columns: 1fr;
+    }
+
+    .letter-heading {
+      margin-bottom: var(--space-md);
+    }
+  }
+</style>

@@ -1,0 +1,45 @@
+---
+import type { ImageMetadata } from "astro";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+
+interface Props {
+  icon: ImageMetadata;
+  title: string;
+  description: string;
+}
+
+const { icon, title, description } = Astro.props;
+---
+
+<div class="use-case-item">
+  <div class="icon">
+    <MaskIcon src={icon} size="2rem" />
+  </div>
+  <div>
+    <h3>{title}</h3>
+    <p>{description}</p>
+  </div>
+</div>
+
+<style>
+  .use-case-item {
+    display: flex;
+    gap: var(--space-md);
+    align-items: flex-start;
+  }
+
+  .icon {
+    color: var(--monero-orange);
+  }
+
+  h3 {
+    margin: 0;
+    font-size: var(--font-size-lg);
+    color: var(--heading-color);
+  }
+
+  p {
+    font-size: var(--font-size-md);
+    margin: 0;
+  }
+</style>

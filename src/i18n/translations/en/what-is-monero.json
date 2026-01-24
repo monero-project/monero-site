@@ -1,83 +1,83 @@
 {
-  "pageTitle": "What is Monero?",
-  "hero": {
-    "title": "What is Monero?",
-    "subtitle": "An introduction to Monero, the privacy-focused cryptocurrency."
-  },
-  "sections": {
-    "problem": {
-      "eyebrow": "The problem",
-      "title": "Most cryptocurrencies are <span style=\"color: #E04B54\">not private</span>",
-      "content": "Bitcoin, Ethereum, and most other cryptocurrencies have transparent blockchains. Using block explorers, anyone can see your balance, track your spending, and trace where your money goes.\n\nImagine if everyone could see your bank statement - that's how most cryptocurrencies work.\n\nThis lack of privacy introduces significant risks, from targeted theft to financial surveillance by governments and corporations."
+    "pageTitle": "What is Monero?",
+    "hero": {
+        "title": "What is Monero?",
+        "subtitle": "An introduction to Monero, the privacy-focused cryptocurrency."
     },
-    "solution": {
-      "eyebrow": "The solution",
-      "title": "Monero is <span style=\"color: var(--monero-orange);\">private by default</span>",
-      "content": "Monero is the leading privacy-focused cryptocurrency where **on-chain activity is private by default.** The public can't see your balance or track you just by looking at the blockchain.\n\nThere's no \"privacy mode\" you have to turn on - every transaction uses privacy features automatically, while still letting you disclose details selectively when needed.\n\nBy not allowing transparent transactions, Monero prevents intermediaries from coercing users onto a surveilled ledger - because there is no transparent path to enforce in the first place."
-    },
-    "useCases": {
-      "eyebrow": "Use Cases",
-      "title": "Why people use Monero",
-      "intro": "Some label Monero as the currency for bad actors due to it's privacy - but that's like saying curtains are shady because they stop strangers from peering into your home.\n\nPrivacy is a basic human right. Monero protects that right.",
-      "items": {
-        "financialPrivacy": {
-          "title": "Financial Privacy",
-          "description": "Keep your salary, savings, and spending habits private from employers, businesses, and data brokers."
+    "sections": {
+        "problem": {
+            "eyebrow": "The problem",
+            "title": "Most cryptocurrencies are <span style=\"color: #E04B54\">not private</span>",
+            "content": "Bitcoin, Ethereum, and most other cryptocurrencies have transparent blockchains. Using block explorers, anyone can see your balance, track your spending, and trace where your money goes.\n\nImagine if everyone could see your bank statement - that's how most cryptocurrencies work.\n\nThis lack of privacy introduces significant risks, from targeted theft to financial surveillance by governments and corporations."
         },
-        "fungibility": {
-          "title": "True Fungibility",
-          "description": "1 XMR is the same as any other - no concept of \"tainted coins\"."
+        "solution": {
+            "eyebrow": "The solution",
+            "title": "Monero is <span style=\"color: var(--monero-orange);\">private by default</span>",
+            "content": "Monero is the leading privacy-focused cryptocurrency where **on-chain activity is private by default.** The public can't see your balance or track you just by looking at the blockchain.\n\nThere's no \"privacy mode\" you have to turn on - every transaction uses privacy features automatically, while still letting you disclose details selectively when needed.\n\nBy not allowing transparent transactions, Monero prevents intermediaries from coercing users onto a surveilled ledger - because there is no transparent path to enforce in the first place."
         },
-        "censorshipResistance": {
-          "title": "Censorship Resistance",
-          "description": "No central authority can deem your transactions unacceptable."
+        "useCases": {
+            "eyebrow": "Use Cases",
+            "title": "Why people use Monero",
+            "intro": "Some label Monero as the currency for bad actors due to it's privacy - but that's like saying curtains are shady because they stop strangers from peering into your home.\n\nPrivacy is a basic human right. Monero protects that right.",
+            "items": {
+                "financialPrivacy": {
+                    "title": "Financial Privacy",
+                    "description": "Keep your salary, savings, and spending habits private from employers, businesses, and data brokers."
+                },
+                "fungibility": {
+                    "title": "True Fungibility",
+                    "description": "1 XMR is the same as any other - no concept of \"tainted coins\"."
+                },
+                "censorshipResistance": {
+                    "title": "Censorship Resistance",
+                    "description": "No central authority can deem your transactions unacceptable."
+                },
+                "businessPayments": {
+                    "title": "Business Payments",
+                    "description": "Accept payments without exposing your revenue, suppliers, or financial relationships to competitors."
+                }
+            }
         },
-        "businessPayments": {
-          "title": "Business Payments",
-          "description": "Accept payments without exposing your revenue, suppliers, or financial relationships to competitors."
+        "technology": {
+            "eyebrow": "Technology",
+            "title": "How Monero protects you",
+            "features": {
+                "stealthAddresses": {
+                    "title": "Stealth Addresses",
+                    "description": "Each transaction generates a unique, one-time address for the recipient, ensuring the receiver address never appears on the blockchain.",
+                    "basedOn": "Based on: [Elliptic Curve Diffie-Hellman]({{mpECDH}})"
+                },
+                "fcmp": {
+                    "title": "FCMP++",
+                    "description": "Full Chain Membership Proofs (FCMP++) are zero knowledge proofs that prove a payment used a real coin on the blockchain, without revealing which one - protecting the sender's privacy.",
+                    "basedOn": "Based on: [Curve Trees]({{mpCurveTrees}})"
+                },
+                "confidentialTransactions": {
+                    "title": "Confidential Transactions",
+                    "description": "Transaction amounts are encrypted, so only the sender and receiver know the value being transferred.",
+                    "basedOn": "Based on: [Pedersen Commitments]({{mpPedersenCommitments}}) and [Bulletproofs+]({{mpBulletproofs}})"
+                }
+            }
+        },
+        "video": {
+            "eyebrow": "Learn More",
+            "title": "Monero: Sound Money, Safe Mode",
+            "description": "In this 2020 presentation, Dr. Daniel Kim outlines how Monero works and why privacy-preserving sound money is important."
+        },
+        "community": {
+            "title": "Built by a global community",
+            "content": "Monero has no centralized authority behind it - it's an open-source project maintained by hundreds of developers worldwide. The [Monero Research Lab]({{mrlLink}}) leads cutting-edge cryptography research, ensuring the protocol stays ahead of threats.\n\nSince its launch in 2014, the project has received contributions from **500+ developers** located all around the world.",
+            "joinCommunity": "Join the community",
+            "contributeToMonero": "Contribute to Monero"
+        },
+        "cta": {
+            "title": "Ready to get started?",
+            "subtitle": "Download a wallet and take control of your financial privacy today.",
+            "downloadWallet": "Download a wallet",
+            "getMonero": "Get Monero"
         }
-      }
     },
-    "technology": {
-      "eyebrow": "Technology",
-      "title": "How Monero protects you",
-      "features": {
-        "stealthAddresses": {
-          "title": "Stealth Addresses",
-          "description": "Each transaction generates a unique, one-time address for the recipient, ensuring the receiver address never appears on the blockchain.",
-          "basedOn": "Based on: [Elliptic Curve Diffie-Hellman]({{mpECDH}})"
-        },
-        "fcmp": {
-          "title": "FCMP++",
-          "description": "Full Chain Membership Proofs (FCMP++) are zero knowledge proofs that prove a payment used a real coin on the blockchain, without revealing which one - protecting the sender's privacy.",
-          "basedOn": "Based on: [Curve Trees]({{mpCurveTrees}})"
-        },
-        "confidentialTransactions": {
-          "title": "Confidential Transactions",
-          "description": "Transaction amounts are encrypted, so only the sender and receiver know the value being transferred.",
-          "basedOn": "Based on: [Pedersen Commitments]({{mpPedersenCommitments}}) and [Bulletproofs+]({{mpBulletproofs}})"
-        }
-      }
-    },
-    "video": {
-      "eyebrow": "Learn More",
-      "title": "Monero: Sound Money, Safe Mode",
-      "description": "In this 2020 presentation, Dr. Daniel Kim outlines how Monero works and why privacy-preserving sound money is important."
-    },
-    "community": {
-      "title": "Built by a global community",
-      "content": "Monero has no centralized authority behind it - it's an open-source project maintained by hundreds of developers worldwide. The [Monero Research Lab]({{mrlLink}}) leads cutting-edge cryptography research, ensuring the protocol stays ahead of threats.\n\nSince its launch in 2014, the project has received contributions from **500+ developers** located all around the world.",
-      "joinCommunity": "Join the community",
-      "contributeToMonero": "Contribute to Monero"
-    },
-    "cta": {
-      "title": "Ready to get started?",
-      "subtitle": "Download a wallet and take control of your financial privacy today.",
-      "downloadWallet": "Download a wallet",
-      "getMonero": "Get Monero"
+    "aria": {
+        "presentationVideo": "Dr. Daniel Kim's presentation on Monero"
     }
-  },
-  "aria": {
-    "presentationVideo": "Dr. Daniel Kim's presentation on Monero"
-  }
 }

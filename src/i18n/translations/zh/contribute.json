@@ -1,115 +1,115 @@
 {
-  "index": {
-    "pageTitle": "贡献",
-    "title": "贡献",
-    "subtitle": "Monero 是开源的、由社区驱动的。以下是支持该项目的几种方式。"
-  },
-  "network": {
-    "title": "支持网络",
-    "subtitle": "实用、高影响力的贡献，加强去中心化和安全性。",
-    "mine": {
-      "title": "挖矿",
-      "description": "挖矿确保网络安全并用 XMR 奖励您。Monero 使用 @RandomX，一种由 Monero 贡献者开发的抗 ASIC 算法，旨在保持消费级硬件（CPU）的可挖掘性。",
-      "learnAboutMining": "了解挖矿",
-      "imageAlt": "Monero 挖矿插图",
-      "bullets": {
-        "earnXmr": "在保护网络的同时赚取 XMR",
-        "noSpecializedHardware": "无需专用硬件",
-        "convertCpuPower": "将 CPU 算力转换为私密收入"
-      }
+    "index": {
+        "pageTitle": "贡献",
+        "title": "贡献",
+        "subtitle": "Monero 是开源的、由社区驱动的。以下是支持该项目的几种方式。"
     },
-    "runANode": {
-      "title": "运行节点",
-      "description": "帮助 Monero 网络的简单有效方式是运行节点。节点保持网络安全和去中心化。",
-      "moneroDocs": "Monero 文档",
-      "sethForPrivacy": "SethForPrivacy",
-      "imageAlt": "终端中运行的 Monero 守护进程",
-      "bullets": {
-        "validateBlocks": "验证区块并广播交易",
-        "reduceReliance": "减少对第三方基础设施的依赖",
-        "enableOthers": "如果您开放节点，可让其他人连接"
-      }
+    "network": {
+        "title": "支持网络",
+        "subtitle": "实用、高影响力的贡献，加强去中心化和安全性。",
+        "mine": {
+            "title": "挖矿",
+            "description": "挖矿确保网络安全并用 XMR 奖励您。Monero 使用 @RandomX，一种由 Monero 贡献者开发的抗 ASIC 算法，旨在保持消费级硬件（CPU）的可挖掘性。",
+            "learnAboutMining": "了解挖矿",
+            "imageAlt": "Monero 挖矿插图",
+            "bullets": {
+                "earnXmr": "在保护网络的同时赚取 XMR",
+                "noSpecializedHardware": "无需专用硬件",
+                "convertCpuPower": "将 CPU 算力转换为私密收入"
+            }
+        },
+        "runANode": {
+            "title": "运行节点",
+            "description": "帮助 Monero 网络的简单有效方式是运行节点。节点保持网络安全和去中心化。",
+            "moneroDocs": "Monero 文档",
+            "sethForPrivacy": "SethForPrivacy",
+            "imageAlt": "终端中运行的 Monero 守护进程",
+            "bullets": {
+                "validateBlocks": "验证区块并广播交易",
+                "reduceReliance": "减少对第三方基础设施的依赖",
+                "enableOthers": "如果您开放节点，可让其他人连接"
+            }
+        }
+    },
+    "develop": {
+        "title": "开发",
+        "subtitle": "Monero 是开源和无许可的。欢迎整个生态系统的贡献者。",
+        "coreProjects": "核心项目",
+        "coreProjectsSubtitle": "支持 Monero 生态系统的开源代码库",
+        "table": {
+            "project": "项目",
+            "description": "描述",
+            "stack": "技术栈",
+            "visit": "访问"
+        },
+        "daemon": {
+            "title": "守护进程",
+            "description": "核心 Monero 实现，包括共识规则、P2P 网络和钱包功能。"
+        },
+        "guiWallet": {
+            "title": "GUI 钱包",
+            "description": "Monero 的图形用户界面，提供易于使用的桌面应用程序来管理 Monero 资金。"
+        },
+        "moneroWebsite": {
+            "title": "Monero 网站",
+            "description": "本网站，使用 Astro 框架构建。"
+        },
+        "moneroDocs": {
+            "title": "Monero 文档",
+            "description": "Monero 的文档，包括用户指南、开发者资源和协议规范。"
+        },
+        "bounties": {
+            "title": "悬赏任务",
+            "description": "喜欢有明确范围和奖励的任务？各种 Monero 相关项目都有许多悬赏任务可用。",
+            "browseMoneroBounties": "Monero 悬赏",
+            "securityDisclosures": "HackerOne"
+        },
+        "workgroups": {
+            "title": "工作组",
+            "description": "Monero 工作组在 Monero 开发和社区工作的特定领域进行合作。",
+            "joinWorkgroups": "加入工作组"
+        },
+        "resources": {
+            "title": "资源",
+            "moneroDocs": "Monero 文档",
+            "librariesSdks": "库和 SDK",
+            "githubOrganization": "GitHub 组织"
+        },
+        "communityProjects": "社区项目",
+        "communityProjectsSubtitle": "由社区维护的基础设施项目。",
+        "xmrig": {
+            "title": "XMRig",
+            "description": "高性能 RandomX 矿工。"
+        },
+        "cuprate": {
+            "title": "Cuprate",
+            "description": "用 Rust 编写的替代 Monero 节点实现，专注于性能、模块化和正确性。"
+        },
+        "p2pool": {
+            "title": "P2Pool",
+            "description": "Monero 的去中心化矿池。矿工保持对资金的控制并直接获得支付。"
+        }
+    },
+    "donate": {
+        "title": "捐赠",
+        "subtitle": "通过 CCS 资助特定工作或支持通用基金以增强长期韧性。",
+        "ccs": {
+            "title": "社区众筹系统",
+            "lead": "直接影响 Monero 开发",
+            "description": "Monero 使用社区众筹系统，项目被提出进行开发并由社区资助。资金由托管方持有，并在开发者完成编程里程碑后支付。任何人都可以提出新提案或资助现有提案。",
+            "viewProposals": "查看 CCS 提案"
+        },
+        "generalFund": {
+            "title": "通用基金",
+            "subtitle": "支持持续的基础设施和紧急情况",
+            "description": "通用基金的捐赠用于紧急情况或需求。基础设施成本由赞助商和通用基金承担。",
+            "moneroXmr": "Monero (XMR)",
+            "bitcoinBtc": "比特币 (BTC)",
+            "viewOnlyWalletDetails": "只读钱包详情",
+            "primaryAddress": "主地址",
+            "viewKey": "查看密钥",
+            "openAlias": "OpenAlias：",
+            "contact": "联系方式："
+        }
     }
-  },
-  "develop": {
-    "title": "开发",
-    "subtitle": "Monero 是开源和无许可的。欢迎整个生态系统的贡献者。",
-    "coreProjects": "核心项目",
-    "coreProjectsSubtitle": "支持 Monero 生态系统的开源代码库",
-    "table": {
-      "project": "项目",
-      "description": "描述",
-      "stack": "技术栈",
-      "visit": "访问"
-    },
-    "daemon": {
-      "title": "守护进程",
-      "description": "核心 Monero 实现，包括共识规则、P2P 网络和钱包功能。"
-    },
-    "guiWallet": {
-      "title": "GUI 钱包",
-      "description": "Monero 的图形用户界面，提供易于使用的桌面应用程序来管理 Monero 资金。"
-    },
-    "moneroWebsite": {
-      "title": "Monero 网站",
-      "description": "本网站，使用 Astro 框架构建。"
-    },
-    "moneroDocs": {
-      "title": "Monero 文档",
-      "description": "Monero 的文档，包括用户指南、开发者资源和协议规范。"
-    },
-    "bounties": {
-      "title": "悬赏任务",
-      "description": "喜欢有明确范围和奖励的任务？各种 Monero 相关项目都有许多悬赏任务可用。",
-      "browseMoneroBounties": "Monero 悬赏",
-      "securityDisclosures": "HackerOne"
-    },
-    "workgroups": {
-      "title": "工作组",
-      "description": "Monero 工作组在 Monero 开发和社区工作的特定领域进行合作。",
-      "joinWorkgroups": "加入工作组"
-    },
-    "resources": {
-      "title": "资源",
-      "moneroDocs": "Monero 文档",
-      "librariesSdks": "库和 SDK",
-      "githubOrganization": "GitHub 组织"
-    },
-    "communityProjects": "社区项目",
-    "communityProjectsSubtitle": "由社区维护的基础设施项目。",
-    "xmrig": {
-      "title": "XMRig",
-      "description": "高性能 RandomX 矿工。"
-    },
-    "cuprate": {
-      "title": "Cuprate",
-      "description": "用 Rust 编写的替代 Monero 节点实现，专注于性能、模块化和正确性。"
-    },
-    "p2pool": {
-      "title": "P2Pool",
-      "description": "Monero 的去中心化矿池。矿工保持对资金的控制并直接获得支付。"
-    }
-  },
-  "donate": {
-    "title": "捐赠",
-    "subtitle": "通过 CCS 资助特定工作或支持通用基金以增强长期韧性。",
-    "ccs": {
-      "title": "社区众筹系统",
-      "lead": "直接影响 Monero 开发",
-      "description": "Monero 使用社区众筹系统，项目被提出进行开发并由社区资助。资金由托管方持有，并在开发者完成编程里程碑后支付。任何人都可以提出新提案或资助现有提案。",
-      "viewProposals": "查看 CCS 提案"
-    },
-    "generalFund": {
-      "title": "通用基金",
-      "subtitle": "支持持续的基础设施和紧急情况",
-      "description": "通用基金的捐赠用于紧急情况或需求。基础设施成本由赞助商和通用基金承担。",
-      "moneroXmr": "Monero (XMR)",
-      "bitcoinBtc": "比特币 (BTC)",
-      "viewOnlyWalletDetails": "只读钱包详情",
-      "primaryAddress": "主地址",
-      "viewKey": "查看密钥",
-      "openAlias": "OpenAlias：",
-      "contact": "联系方式："
-    }
-  }
 }

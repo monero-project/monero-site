@@ -28,158 +28,156 @@ const { t, localizeHref, localizeNumber } = Astro.locals;
   />
 
   <PageContainer>
-    <div>
-      <GuideStep
-        step={localizeNumber(1)}
-        title={t("accept-monero:steps.chooseSetup.title")}
-        icon={appWindowIcon}
-        align="start"
-      >
-        <p>{t("accept-monero:steps.chooseSetup.intro")}</p>
+    <GuideStep
+      step={localizeNumber(1)}
+      title={t("accept-monero:steps.chooseSetup.title")}
+      icon={appWindowIcon}
+      align="start"
+    >
+      <p>{t("accept-monero:steps.chooseSetup.intro")}</p>
 
-        <Accordion>
-          <AccordionItem
-            title={t("accept-monero:steps.chooseSetup.wallet.title")}
-            variant="card"
-            name="method"
-            open
-          >
-            <p>
-              {t("accept-monero:steps.chooseSetup.wallet.description")}
-            </p>
-            <IconLink
-              href={localizeHref("/downloads/community/#wallets")}
-              size="sm"
-              underline
-            >
-              {t("accept-monero:steps.chooseSetup.wallet.viewWallets")}
-            </IconLink>
-          </AccordionItem>
-
-          <AccordionItem
-            title={t("accept-monero:steps.chooseSetup.pos.title")}
-            variant="card"
-            name="method"
-          >
-            <p>
-              {t("accept-monero:steps.chooseSetup.pos.description")}
-            </p>
-            <Column gap="xs" class="service-buttons">
-              <ExternalResourceButton
-                href="https://bitrequest.io/"
-                title="BitRequest"
-                subtitle={t(
-                  "accept-monero:steps.chooseSetup.pos.services.bitrequest",
-                )}
-                border
-              />
-              <ExternalResourceButton
-                href="https://docs.btcpayserver.org/Apps/#point-of-sale-app"
-                title="BTCPay Server POS"
-                subtitle={t(
-                  "accept-monero:steps.chooseSetup.pos.services.btcpayPos",
-                )}
-                border
-              />
-            </Column>
-          </AccordionItem>
-
-          <AccordionItem
-            title={t("accept-monero:steps.chooseSetup.processor.title")}
-            variant="card"
-            name="method"
-          >
-            <p>
-              {t("accept-monero:steps.chooseSetup.processor.description")}
-            </p>
-            <IconLink
-              href={localizeHref("/resources/tools/accept/")}
-              size="sm"
-              underline
-            >
-              {t("accept-monero:steps.chooseSetup.processor.viewGateways")}
-            </IconLink>
-          </AccordionItem>
-
-          <AccordionItem
-            title={t("accept-monero:steps.chooseSetup.selfHosted.title")}
-            variant="card"
-            name="method"
-          >
-            <p>
-              {t("accept-monero:steps.chooseSetup.selfHosted.description")}
-            </p>
-            <Column gap="xs" class="service-buttons">
-              <ExternalResourceButton
-                href="https://btcpayserver.org/"
-                title="BTCPay Server"
-                subtitle={t(
-                  "accept-monero:steps.chooseSetup.selfHosted.services.btcpay",
-                )}
-                border
-              />
-              <ExternalResourceButton
-                href="https://bitcart.ai/"
-                title="Bitcart"
-                subtitle={t(
-                  "accept-monero:steps.chooseSetup.selfHosted.services.bitcart",
-                )}
-                border
-              />
-              <ExternalResourceButton
-                href="https://github.com/moneropay/moneropay"
-                title="MoneroPay"
-                subtitle={t(
-                  "accept-monero:steps.chooseSetup.selfHosted.services.moneropay",
-                )}
-                border
-              />
-            </Column>
-          </AccordionItem>
-        </Accordion>
-      </GuideStep>
-
-      <hr />
-
-      <GuideStep
-        step={localizeNumber(2)}
-        title={t("accept-monero:steps.acceptPayment.title")}
-        icon={handCoinsIcon}
-        reverse
-      >
-        <p>
-          {t("accept-monero:steps.acceptPayment.description")}
-        </p>
-        <p>
-          <strong
-            >{t("accept-monero:steps.acceptPayment.confirmationsLabel")}</strong
-          >
-          {t("accept-monero:steps.acceptPayment.confirmations")}
-        </p>
-        <TipBox showIcon>
-          {t("accept-monero:steps.acceptPayment.tip")}
-        </TipBox>
-      </GuideStep>
-
-      <hr />
-
-      <GuideStep
-        step={localizeNumber(3)}
-        title={t("accept-monero:steps.getListed.title")}
-        icon={usersIcon}
-      >
-        <p>
-          {t("accept-monero:steps.getListed.description")}
-        </p>
-        <IconLink
-          href={localizeHref("/get-started/merchants")}
-          size="sm"
-          underline
+      <Accordion>
+        <AccordionItem
+          title={t("accept-monero:steps.chooseSetup.wallet.title")}
+          variant="card"
+          name="method"
+          open
         >
-          {t("accept-monero:steps.getListed.viewDirectories")}
-        </IconLink>
-      </GuideStep>
-    </div>
+          <p>
+            {t("accept-monero:steps.chooseSetup.wallet.description")}
+          </p>
+          <IconLink
+            href={localizeHref("/downloads/community/#wallets")}
+            size="sm"
+            underline
+          >
+            {t("accept-monero:steps.chooseSetup.wallet.viewWallets")}
+          </IconLink>
+        </AccordionItem>
+
+        <AccordionItem
+          title={t("accept-monero:steps.chooseSetup.pos.title")}
+          variant="card"
+          name="method"
+        >
+          <p>
+            {t("accept-monero:steps.chooseSetup.pos.description")}
+          </p>
+          <Column gap="xs" class="service-buttons">
+            <ExternalResourceButton
+              href="https://bitrequest.io/"
+              title="BitRequest"
+              subtitle={t(
+                "accept-monero:steps.chooseSetup.pos.services.bitrequest",
+              )}
+              border
+            />
+            <ExternalResourceButton
+              href="https://docs.btcpayserver.org/Apps/#point-of-sale-app"
+              title="BTCPay Server POS"
+              subtitle={t(
+                "accept-monero:steps.chooseSetup.pos.services.btcpayPos",
+              )}
+              border
+            />
+          </Column>
+        </AccordionItem>
+
+        <AccordionItem
+          title={t("accept-monero:steps.chooseSetup.processor.title")}
+          variant="card"
+          name="method"
+        >
+          <p>
+            {t("accept-monero:steps.chooseSetup.processor.description")}
+          </p>
+          <IconLink
+            href={localizeHref("/resources/tools/accept/")}
+            size="sm"
+            underline
+          >
+            {t("accept-monero:steps.chooseSetup.processor.viewGateways")}
+          </IconLink>
+        </AccordionItem>
+
+        <AccordionItem
+          title={t("accept-monero:steps.chooseSetup.selfHosted.title")}
+          variant="card"
+          name="method"
+        >
+          <p>
+            {t("accept-monero:steps.chooseSetup.selfHosted.description")}
+          </p>
+          <Column gap="xs" class="service-buttons">
+            <ExternalResourceButton
+              href="https://btcpayserver.org/"
+              title="BTCPay Server"
+              subtitle={t(
+                "accept-monero:steps.chooseSetup.selfHosted.services.btcpay",
+              )}
+              border
+            />
+            <ExternalResourceButton
+              href="https://bitcart.ai/"
+              title="Bitcart"
+              subtitle={t(
+                "accept-monero:steps.chooseSetup.selfHosted.services.bitcart",
+              )}
+              border
+            />
+            <ExternalResourceButton
+              href="https://github.com/moneropay/moneropay"
+              title="MoneroPay"
+              subtitle={t(
+                "accept-monero:steps.chooseSetup.selfHosted.services.moneropay",
+              )}
+              border
+            />
+          </Column>
+        </AccordionItem>
+      </Accordion>
+    </GuideStep>
+
+    <hr />
+
+    <GuideStep
+      step={localizeNumber(2)}
+      title={t("accept-monero:steps.acceptPayment.title")}
+      icon={handCoinsIcon}
+      reverse
+    >
+      <p>
+        {t("accept-monero:steps.acceptPayment.description")}
+      </p>
+      <p>
+        <strong
+          >{t("accept-monero:steps.acceptPayment.confirmationsLabel")}</strong
+        >
+        {t("accept-monero:steps.acceptPayment.confirmations")}
+      </p>
+      <TipBox showIcon>
+        {t("accept-monero:steps.acceptPayment.tip")}
+      </TipBox>
+    </GuideStep>
+
+    <hr />
+
+    <GuideStep
+      step={localizeNumber(3)}
+      title={t("accept-monero:steps.getListed.title")}
+      icon={usersIcon}
+    >
+      <p>
+        {t("accept-monero:steps.getListed.description")}
+      </p>
+      <IconLink
+        href={localizeHref("/get-started/merchants")}
+        size="sm"
+        underline
+      >
+        {t("accept-monero:steps.getListed.viewDirectories")}
+      </IconLink>
+    </GuideStep>
   </PageContainer>
 </Layout>
 

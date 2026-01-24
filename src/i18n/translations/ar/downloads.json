@@ -1,124 +1,124 @@
 {
-  "pageTitle": "التحميلات",
-  "hero": {
-    "title": "التحميلات",
-    "subtitle": "احصل على محافظ وبرمجيات Monero."
-  },
-  "tabs": {
-    "core": "الأساسي",
-    "community": "المجتمع"
-  },
-  "platforms": {
-    "windows": "Windows",
-    "macos": "macOS",
-    "linux": "Linux",
-    "android": "Android",
-    "freebsd": "FreeBSD",
-    "ios": "iOS"
-  },
-  "communityNote": {
-    "title": "تبحث عن محافظ أكثر؟",
-    "content": "زور علامة التبويب المجتمع لمحافظ الهاتف المحمول وبرمجيات أخرى تم إنشاؤها من قبل المجتمع."
-  },
-  "core": {
-    "gui": {
-      "title": "محفظة Monero GUI",
-      "subtitle": "محفظة رسومية مطورة من قبل مجتمع Monero",
-      "features": {
-        "simpleMode": "**الوضع البسيط** للمبتدئين لإرسال واستقبال XMR بسهولة",
-        "advancedMode": "**الوضع المتقدم** مع سيطرة كاملة على المحفظة والعقدة",
-        "merchantPage": "**صفحة التاجر** لقبول XMR بسهولة",
-        "hardwareWallet": "متوافق مع **Trezor** و **Ledger** محافظ الأجهزة",
-        "fiatConversion": "**تحويل العملة الورقية داخل التطبيق**",
-        "pruning": "**تقليم السلسلة** لتوفير مساحة القرص",
-        "languages": "متوفر بـ **30+ لغة**"
-      }
+    "pageTitle": "التحميلات",
+    "hero": {
+        "title": "التحميلات",
+        "subtitle": "احصل على محافظ وبرمجيات Monero."
     },
-    "cli": {
-      "title": "أدوات Monero CLI",
-      "subtitle": "واجهة سطر الأوامر للمستخدمين المتقدمين",
-      "features": {
-        "nodeChoice": "اختر بين عقدة محلية أو بعيدة للوصول إلى السلسلة",
-        "torI2p": "أرسل المعاملات عبر Tor أو I2P لخصوصية إضافية",
-        "bootstrap": "استخدم عقدة bootstrap للوصول الفوري أثناء المزامنة محليًا",
-        "hardwareWallet": "متوافق مع Trezor و Ledger محافظ الأجهزة",
-        "rpc": "يشمل RPC wallet، واجهة ZMQ و daemon",
-        "pruning": "تقليم السلسلة يوفر مساحة القرص"
-      }
+    "tabs": {
+        "core": "الأساسي",
+        "community": "المجتمع"
     },
-    "version": "الإصدار",
-    "releaseNotes": "ملاحظات الإصدار",
-    "sourceCode": "رمز المصدر",
-    "verifyDownload": "تحقق",
-    "verifyDescription": "يُنصح بشدة <a href=\"{{verifyInstructionLink}}\" target=\"_blank\" rel=\"noopener noreferrer\">التحقق من تجزئة SHA-256</a> للملف الذي قمت بتنزيله.\n\nسيؤكد ذلك أن الملفات التي قمت بتنزيلها تطابق تمامًا الملفات التي تم تحميلها بواسطة مجموعة عمل تطوير Monero. يرجى عدم التقليل من هذه الخطوة، قد يؤدي الأرشيف التالف إلى فقدان الأموال.",
-    "viewHashes": "عرض التجزئات",
-    "downloadButton": "تحميل",
-    "torrent": "تورنت",
-    "magnetLink": "رابط Magnet",
-    "formats": {
-      "installer": "المثبت",
-      "zip": ".zip",
-      "tarball": "Tarball",
-      "64bit": "64 بت",
-      "32bit": "32 بت",
-      "intel": "Intel",
-      "appleSilicon": "Apple Silicon",
-      "armv8": "ARMv8",
-      "armv7": "ARMv7",
-      "riscv64": "RISC-V 64 بت"
+    "platforms": {
+        "windows": "Windows",
+        "macos": "macOS",
+        "linux": "Linux",
+        "android": "Android",
+        "freebsd": "FreeBSD",
+        "ios": "iOS"
+    },
+    "communityNote": {
+        "title": "تبحث عن محافظ أكثر؟",
+        "content": "زور علامة التبويب المجتمع لمحافظ الهاتف المحمول وبرمجيات أخرى تم إنشاؤها من قبل المجتمع."
+    },
+    "core": {
+        "gui": {
+            "title": "محفظة Monero GUI",
+            "subtitle": "محفظة رسومية مطورة من قبل مجتمع Monero",
+            "features": {
+                "simpleMode": "**الوضع البسيط** للمبتدئين لإرسال واستقبال XMR بسهولة",
+                "advancedMode": "**الوضع المتقدم** مع سيطرة كاملة على المحفظة والعقدة",
+                "merchantPage": "**صفحة التاجر** لقبول XMR بسهولة",
+                "hardwareWallet": "متوافق مع **Trezor** و **Ledger** محافظ الأجهزة",
+                "fiatConversion": "**تحويل العملة الورقية داخل التطبيق**",
+                "pruning": "**تقليم السلسلة** لتوفير مساحة القرص",
+                "languages": "متوفر بـ **30+ لغة**"
+            }
+        },
+        "cli": {
+            "title": "أدوات Monero CLI",
+            "subtitle": "واجهة سطر الأوامر للمستخدمين المتقدمين",
+            "features": {
+                "nodeChoice": "اختر بين عقدة محلية أو بعيدة للوصول إلى السلسلة",
+                "torI2p": "أرسل المعاملات عبر Tor أو I2P لخصوصية إضافية",
+                "bootstrap": "استخدم عقدة bootstrap للوصول الفوري أثناء المزامنة محليًا",
+                "hardwareWallet": "متوافق مع Trezor و Ledger محافظ الأجهزة",
+                "rpc": "يشمل RPC wallet، واجهة ZMQ و daemon",
+                "pruning": "تقليم السلسلة يوفر مساحة القرص"
+            }
+        },
+        "version": "الإصدار",
+        "releaseNotes": "ملاحظات الإصدار",
+        "sourceCode": "رمز المصدر",
+        "verifyDownload": "تحقق",
+        "verifyDescription": "يُنصح بشدة <a href=\"{{verifyInstructionLink}}\" target=\"_blank\" rel=\"noopener noreferrer\">التحقق من تجزئة SHA-256</a> للملف الذي قمت بتنزيله.\n\nسيؤكد ذلك أن الملفات التي قمت بتنزيلها تطابق تمامًا الملفات التي تم تحميلها بواسطة مجموعة عمل تطوير Monero. يرجى عدم التقليل من هذه الخطوة، قد يؤدي الأرشيف التالف إلى فقدان الأموال.",
+        "viewHashes": "عرض التجزئات",
+        "downloadButton": "تحميل",
+        "torrent": "تورنت",
+        "magnetLink": "رابط Magnet",
+        "formats": {
+            "installer": "المثبت",
+            "zip": ".zip",
+            "tarball": "Tarball",
+            "64bit": "64 بت",
+            "32bit": "32 بت",
+            "intel": "Intel",
+            "appleSilicon": "Apple Silicon",
+            "armv8": "ARMv8",
+            "armv7": "ARMv7",
+            "riscv64": "RISC-V 64 بت"
+        }
+    },
+    "community": {
+        "sections": {
+            "wallets": {
+                "title": "المحافظ",
+                "subtitle": "برمجيات محفظة مطورة من قبل المجتمع لاستخدامات وأولويات خصوصية مختلفة."
+            },
+            "cold": {
+                "title": "المحافظ الباردة",
+                "subtitle": "محافظ الأجهزة وتطبيقات توقيع المعاملات دون اتصال."
+            },
+            "nodes": {
+                "title": "برمجيات العقد",
+                "subtitle": "تنفيذات بديلة لعقد Monero."
+            }
+        },
+        "categories": {
+            "moneroOnly": "Monero فقط",
+            "multiCoin": "متعدد العملات",
+            "lws": {
+                "title": "محافظ LWS",
+                "disclaimer": "تحتفظ محافظ LWS بتاريخ معاملاتك متزامنًا على خادم بعيد لراحتك. ما لم يكن لديك خيار تحديد خوادمك الخاصة، قد يؤدي ذلك إلى مخاطر خصوصية."
+            }
+        },
+        "learnMore": "تعلم المزيد",
+        "desktopLabel": "سطح المكتب",
+        "mobileLabel": "الهاتف المحمول",
+        "descriptions": {
+            "anonero": "محفظة تركز على الخصوصية مع جميع الاتصالات عبر Tor.",
+            "feather": "محفظة سطح مكتب Monero خفيفة وسريعة وغنية بالميزات.",
+            "monerocom": "محفظة Monero فقط مطورة بواسطة Cake Labs.",
+            "monerujo": "محفظة Monero لـ Android مع ميزات متقدمة.",
+            "monfluo": "محفظة Monero نقية لـ Android.",
+            "cakewallet": "محفظة متعددة العملات مع Monero ودعم محفظة الأجهزة.",
+            "eigenwallet": "محفظة Monero و Bitcoin مع تبادل ذري مدمج.",
+            "stackwallet": "محفظة متعددة العملات تدعم Monero لسطح المكتب والهاتف المحمول.",
+            "unstoppable": "محفظة متعددة العملات تدعم Monero.",
+            "edge": "محفظة متعددة العملات مع مزامنة جانب الخادم.",
+            "ledger": "محفظة أجهزة تدعم Monero عبر تطبيقات الطرف الثالث.",
+            "trezor": "محفظة أجهزة تدعم Monero عبر تطبيقات الطرف الثالث.",
+            "cupcake": "تطبيق توقيع دون اتصال للاستخدام مع Cake Wallet/Monero.com.",
+            "sidekick": "تطبيق توقيع دون اتصال للاستخدام مع Monerujo. يتصل عبر Bluetooth.",
+            "cuprate": "تنفيذ عقدة Monero سريعة وفعالة مكتوب بلغة Rust."
+        },
+        "tags": {
+            "qrSigning": "توقيع QR",
+            "builtInExchange": "تبادل مدمج",
+            "remoteScanning": "مسح عن بعد",
+            "diy": "DIY",
+            "alphaSoftware": "برمجية ألفا"
+        },
+        "disclaimerTitle": "إخلاء مسؤولية",
+        "disclaimer": "هذه القائمة لأغراض إعلامية فقط. لا يؤيد مشروع Monero أو يوصي أو يضمن أي خدمة مدرجة هنا. تحقق دائمًا من عناوين URL، ابدأ بمبلغ اختبار صغير إذا كنت غير متأكد، واستخدم كل خدمة على مسؤوليتك الخاصة."
     }
-  },
-  "community": {
-    "sections": {
-      "wallets": {
-        "title": "المحافظ",
-        "subtitle": "برمجيات محفظة مطورة من قبل المجتمع لاستخدامات وأولويات خصوصية مختلفة."
-      },
-      "cold": {
-        "title": "المحافظ الباردة",
-        "subtitle": "محافظ الأجهزة وتطبيقات توقيع المعاملات دون اتصال."
-      },
-      "nodes": {
-        "title": "برمجيات العقد",
-        "subtitle": "تنفيذات بديلة لعقد Monero."
-      }
-    },
-    "categories": {
-      "moneroOnly": "Monero فقط",
-      "multiCoin": "متعدد العملات",
-      "lws": {
-        "title": "محافظ LWS",
-        "disclaimer": "تحتفظ محافظ LWS بتاريخ معاملاتك متزامنًا على خادم بعيد لراحتك. ما لم يكن لديك خيار تحديد خوادمك الخاصة، قد يؤدي ذلك إلى مخاطر خصوصية."
-      }
-    },
-    "learnMore": "تعلم المزيد",
-    "desktopLabel": "سطح المكتب",
-    "mobileLabel": "الهاتف المحمول",
-    "descriptions": {
-      "anonero": "محفظة تركز على الخصوصية مع جميع الاتصالات عبر Tor.",
-      "feather": "محفظة سطح مكتب Monero خفيفة وسريعة وغنية بالميزات.",
-      "monerocom": "محفظة Monero فقط مطورة بواسطة Cake Labs.",
-      "monerujo": "محفظة Monero لـ Android مع ميزات متقدمة.",
-      "monfluo": "محفظة Monero نقية لـ Android.",
-      "cakewallet": "محفظة متعددة العملات مع Monero ودعم محفظة الأجهزة.",
-      "eigenwallet": "محفظة Monero و Bitcoin مع تبادل ذري مدمج.",
-      "stackwallet": "محفظة متعددة العملات تدعم Monero لسطح المكتب والهاتف المحمول.",
-      "unstoppable": "محفظة متعددة العملات تدعم Monero.",
-      "edge": "محفظة متعددة العملات مع مزامنة جانب الخادم.",
-      "ledger": "محفظة أجهزة تدعم Monero عبر تطبيقات الطرف الثالث.",
-      "trezor": "محفظة أجهزة تدعم Monero عبر تطبيقات الطرف الثالث.",
-      "cupcake": "تطبيق توقيع دون اتصال للاستخدام مع Cake Wallet/Monero.com.",
-      "sidekick": "تطبيق توقيع دون اتصال للاستخدام مع Monerujo. يتصل عبر Bluetooth.",
-      "cuprate": "تنفيذ عقدة Monero سريعة وفعالة مكتوب بلغة Rust."
-    },
-    "tags": {
-      "qrSigning": "توقيع QR",
-      "builtInExchange": "تبادل مدمج",
-      "remoteScanning": "مسح عن بعد",
-      "diy": "DIY",
-      "alphaSoftware": "برمجية ألفا"
-    },
-    "disclaimerTitle": "إخلاء مسؤولية",
-    "disclaimer": "هذه القائمة لأغراض إعلامية فقط. لا يؤيد مشروع Monero أو يوصي أو يضمن أي خدمة مدرجة هنا. تحقق دائمًا من عناوين URL، ابدأ بمبلغ اختبار صغير إذا كنت غير متأكد، واستخدم كل خدمة على مسؤوليتك الخاصة."
-  }
 }

@@ -1,115 +1,115 @@
 {
-  "index": {
-    "pageTitle": "ساهم",
-    "title": "ساهم",
-    "subtitle": "Monero مفتوح المصدر ومدفوء بالمجتمع. وصف أدناه عدة طرق لدعم المشروع."
-  },
-  "network": {
-    "title": "دعم الشبكة",
-    "subtitle": "مساهمات عملية وعالية التأثير تقوي اللامركزية والأمان.",
-    "mine": {
-      "title": "التعدين",
-      "description": "يضمن التعدين سلامة الشبكة ويكافئك بـ XMR. يستخدم Monero @RandomX، خوارزمية مقاومة للـ ASIC تم تطويرها بواسطة مساهمي Monero، والتي تهدف إلى البقاء قابلة للتعدين بأجهزة المستهلك (CPUs).",
-      "learnAboutMining": "تعلم عن التعدين",
-      "imageAlt": "رسم توضيحي لتعدين Monero",
-      "bullets": {
-        "earnXmr": "اكسب XMR أثناء تأمين الشبكة",
-        "noSpecializedHardware": "لا يتطلب أجهزة متخصصة",
-        "convertCpuPower": "حول قوة CPU إلى دخل خاص"
-      }
+    "index": {
+        "pageTitle": "ساهم",
+        "title": "ساهم",
+        "subtitle": "Monero مفتوح المصدر ومدفوء بالمجتمع. وصف أدناه عدة طرق لدعم المشروع."
     },
-    "runANode": {
-      "title": "شغل عقدة",
-      "description": "طريقة سهلة وفعالة للمساعدة في شبكة Monero هي تشغيل عقدة. تحافظ العقد على سلامة الشبكة ولامركزيتها.",
-      "moneroDocs": "وثائق Monero",
-      "sethForPrivacy": "SethForPrivacy",
-      "imageAlt": "تشغيل daemon Monero في الطرفية",
-      "bullets": {
-        "validateBlocks": "تحقق من الكتل وتبث المعاملات",
-        "reduceReliance": "قلل الاعتماد على البنية التحتية للطرف الثالث",
-        "enableOthers": "تمكن الآخرين من الاتصال إذا فتحت عقدتك"
-      }
+    "network": {
+        "title": "دعم الشبكة",
+        "subtitle": "مساهمات عملية وعالية التأثير تقوي اللامركزية والأمان.",
+        "mine": {
+            "title": "التعدين",
+            "description": "يضمن التعدين سلامة الشبكة ويكافئك بـ XMR. يستخدم Monero @RandomX، خوارزمية مقاومة للـ ASIC تم تطويرها بواسطة مساهمي Monero، والتي تهدف إلى البقاء قابلة للتعدين بأجهزة المستهلك (CPUs).",
+            "learnAboutMining": "تعلم عن التعدين",
+            "imageAlt": "رسم توضيحي لتعدين Monero",
+            "bullets": {
+                "earnXmr": "اكسب XMR أثناء تأمين الشبكة",
+                "noSpecializedHardware": "لا يتطلب أجهزة متخصصة",
+                "convertCpuPower": "حول قوة CPU إلى دخل خاص"
+            }
+        },
+        "runANode": {
+            "title": "شغل عقدة",
+            "description": "طريقة سهلة وفعالة للمساعدة في شبكة Monero هي تشغيل عقدة. تحافظ العقد على سلامة الشبكة ولامركزيتها.",
+            "moneroDocs": "وثائق Monero",
+            "sethForPrivacy": "SethForPrivacy",
+            "imageAlt": "تشغيل daemon Monero في الطرفية",
+            "bullets": {
+                "validateBlocks": "تحقق من الكتل وتبث المعاملات",
+                "reduceReliance": "قلل الاعتماد على البنية التحتية للطرف الثالث",
+                "enableOthers": "تمكن الآخرين من الاتصال إذا فتحت عقدتك"
+            }
+        }
+    },
+    "develop": {
+        "title": "التطوير",
+        "subtitle": "Monero مفتوح المصدر وغير مرخص. المساهمون مرحب بهم عبر النظام البيئي.",
+        "coreProjects": "المشاريع الأساسية",
+        "coreProjectsSubtitle": "مستودعات مفتوحة المصدر تدفع نظام Monero البيئي",
+        "table": {
+            "project": "المشروع",
+            "description": "الوصف",
+            "stack": "التقنية",
+            "visit": "زور"
+        },
+        "daemon": {
+            "title": "Daemon",
+            "description": "تنفيذ Monero الأساسي، بما في ذلك قواعد الإجماع، شبكة P2P، ووظائف المحفظة."
+        },
+        "guiWallet": {
+            "title": "محفظة GUI",
+            "description": "واجهة المستخدم الرسومية لـ Monero، توفر تطبيق سطح مكتب سهل الاستخدام لإدارة أموال Monero."
+        },
+        "moneroWebsite": {
+            "title": "موقع Monero",
+            "description": "هذا الموقع، مبني بإطار Astro."
+        },
+        "moneroDocs": {
+            "title": "وثائق Monero",
+            "description": "التوثيق لـ Monero، بما في ذلك دليل المستخدمين، موارد المطورين، ومواصفات البروتوكول."
+        },
+        "bounties": {
+            "title": "المكافآت",
+            "description": "تفضل العمل على مهام محددة بوضوح مع مكافأة؟ تتوفر العديد من المكافآت لمشاريع Monero المختلفة.",
+            "browseMoneroBounties": "مكافآت Monero",
+            "securityDisclosures": "HackerOne"
+        },
+        "workgroups": {
+            "title": "مجموعات العمل",
+            "description": "تتعاون مجموعات عمل Monero في مجالات محددة من تطوير Monero وجهود المجتمع.",
+            "joinWorkgroups": "انضم إلى مجموعة عمل"
+        },
+        "resources": {
+            "title": "الموارد",
+            "moneroDocs": "وثائق Monero",
+            "librariesSdks": "المكتبات و SDKs",
+            "githubOrganization": "منظمة GitHub"
+        },
+        "communityProjects": "مشاريع المجتمع",
+        "communityProjectsSubtitle": "بنية تحتية يحافظ عليها المجتمع.",
+        "xmrig": {
+            "title": "XMRig",
+            "description": "عامل تعدين RandomX عالي الأداء."
+        },
+        "cuprate": {
+            "title": "Cuprate",
+            "description": "تنفيذ بديل لعقدة Monero مكتوب بلغة Rust، يركز على الأداء والنمطية والصحة."
+        },
+        "p2pool": {
+            "title": "P2Pool",
+            "description": "مجموعة تعدين لامركزية لـ Monero. يحتفظ المعدنون بالسيطرة على أموالهم ويكسبون الدفعات مباشرة."
+        }
+    },
+    "donate": {
+        "title": "تبرع",
+        "subtitle": "مول عملًا محددًا عبر CCS أو دعم الصندوق العام للمتانة طويلة الأمد.",
+        "ccs": {
+            "title": "نظام التمويل الجماعي المجتمعي",
+            "lead": "تأثير مباشر على تطوير Monero",
+            "description": "يستخدم Monero نظام تمويل جماعي مجتمعي حيث يتم اقتراح المشاريع للتطوير وتمويلها من قبل المجتمع. يتم الاحتفاظ بالتمويل في الضمان ويتم تسليمه إلى المطورين عند تحقيق معالم البرمجة. يمكن لأي شخص إنشاء اقتراحات جديدة أو تمويل الاقتراحات الموجودة.",
+            "viewProposals": "عرض اقتراحات CCS"
+        },
+        "generalFund": {
+            "title": "الصندوق العام",
+            "subtitle": "دعم البنية التحتية المستمرة والطوارئ",
+            "description": "تُستخدم التبرعات للصندوق العام للطوارئ أو الحاجة. تغطي تكاليف البنية التحتية الرعاة والصندوق العام.",
+            "moneroXmr": "Monero (XMR)",
+            "bitcoinBtc": "Bitcoin (BTC)",
+            "viewOnlyWalletDetails": "تفاصيل المحفظة للعرض فقط",
+            "primaryAddress": "العنوان الأساسي",
+            "viewKey": "مفتاح العرض",
+            "openAlias": "OpenAlias:",
+            "contact": "الاتصال:"
+        }
     }
-  },
-  "develop": {
-    "title": "التطوير",
-    "subtitle": "Monero مفتوح المصدر وغير مرخص. المساهمون مرحب بهم عبر النظام البيئي.",
-    "coreProjects": "المشاريع الأساسية",
-    "coreProjectsSubtitle": "مستودعات مفتوحة المصدر تدفع نظام Monero البيئي",
-    "table": {
-      "project": "المشروع",
-      "description": "الوصف",
-      "stack": "التقنية",
-      "visit": "زور"
-    },
-    "daemon": {
-      "title": "Daemon",
-      "description": "تنفيذ Monero الأساسي، بما في ذلك قواعد الإجماع، شبكة P2P، ووظائف المحفظة."
-    },
-    "guiWallet": {
-      "title": "محفظة GUI",
-      "description": "واجهة المستخدم الرسومية لـ Monero، توفر تطبيق سطح مكتب سهل الاستخدام لإدارة أموال Monero."
-    },
-    "moneroWebsite": {
-      "title": "موقع Monero",
-      "description": "هذا الموقع، مبني بإطار Astro."
-    },
-    "moneroDocs": {
-      "title": "وثائق Monero",
-      "description": "التوثيق لـ Monero، بما في ذلك دليل المستخدمين، موارد المطورين، ومواصفات البروتوكول."
-    },
-    "bounties": {
-      "title": "المكافآت",
-      "description": "تفضل العمل على مهام محددة بوضوح مع مكافأة؟ تتوفر العديد من المكافآت لمشاريع Monero المختلفة.",
-      "browseMoneroBounties": "مكافآت Monero",
-      "securityDisclosures": "HackerOne"
-    },
-    "workgroups": {
-      "title": "مجموعات العمل",
-      "description": "تتعاون مجموعات عمل Monero في مجالات محددة من تطوير Monero وجهود المجتمع.",
-      "joinWorkgroups": "انضم إلى مجموعة عمل"
-    },
-    "resources": {
-      "title": "الموارد",
-      "moneroDocs": "وثائق Monero",
-      "librariesSdks": "المكتبات و SDKs",
-      "githubOrganization": "منظمة GitHub"
-    },
-    "communityProjects": "مشاريع المجتمع",
-    "communityProjectsSubtitle": "بنية تحتية يحافظ عليها المجتمع.",
-    "xmrig": {
-      "title": "XMRig",
-      "description": "عامل تعدين RandomX عالي الأداء."
-    },
-    "cuprate": {
-      "title": "Cuprate",
-      "description": "تنفيذ بديل لعقدة Monero مكتوب بلغة Rust، يركز على الأداء والنمطية والصحة."
-    },
-    "p2pool": {
-      "title": "P2Pool",
-      "description": "مجموعة تعدين لامركزية لـ Monero. يحتفظ المعدنون بالسيطرة على أموالهم ويكسبون الدفعات مباشرة."
-    }
-  },
-  "donate": {
-    "title": "تبرع",
-    "subtitle": "مول عملًا محددًا عبر CCS أو دعم الصندوق العام للمتانة طويلة الأمد.",
-    "ccs": {
-      "title": "نظام التمويل الجماعي المجتمعي",
-      "lead": "تأثير مباشر على تطوير Monero",
-      "description": "يستخدم Monero نظام تمويل جماعي مجتمعي حيث يتم اقتراح المشاريع للتطوير وتمويلها من قبل المجتمع. يتم الاحتفاظ بالتمويل في الضمان ويتم تسليمه إلى المطورين عند تحقيق معالم البرمجة. يمكن لأي شخص إنشاء اقتراحات جديدة أو تمويل الاقتراحات الموجودة.",
-      "viewProposals": "عرض اقتراحات CCS"
-    },
-    "generalFund": {
-      "title": "الصندوق العام",
-      "subtitle": "دعم البنية التحتية المستمرة والطوارئ",
-      "description": "تُستخدم التبرعات للصندوق العام للطوارئ أو الحاجة. تغطي تكاليف البنية التحتية الرعاة والصندوق العام.",
-      "moneroXmr": "Monero (XMR)",
-      "bitcoinBtc": "Bitcoin (BTC)",
-      "viewOnlyWalletDetails": "تفاصيل المحفظة للعرض فقط",
-      "primaryAddress": "العنوان الأساسي",
-      "viewKey": "مفتاح العرض",
-      "openAlias": "OpenAlias:",
-      "contact": "الاتصال:"
-    }
-  }
 }

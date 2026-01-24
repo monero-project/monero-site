@@ -1,0 +1,33 @@
+---
+import type { AccordionItemType } from "@/components/ui/Accordion.astro";
+import Accordion from "@/components/ui/Accordion.astro";
+import Card from "@/components/ui/Card.astro";
+
+interface Props {
+  title: string;
+  items: AccordionItemType[];
+}
+
+const { title, items } = Astro.props;
+---
+
+<Card class="accordion-card">
+  <h2 class="card-title">{title}</h2>
+  <Accordion items={items} />
+</Card>
+
+<style>
+  .card-title {
+    margin: 0 0 var(--space-xl);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    color: var(--paragraph-main);
+    text-transform: uppercase;
+  }
+
+  @media (min-width: 900px) {
+    .accordion-card {
+      padding: var(--space-4xl);
+    }
+  }
+</style>

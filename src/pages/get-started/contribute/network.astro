@@ -96,20 +96,14 @@ const { t, dir, localizeHref, safeMarkdown } = Astro.locals;
 </Layout>
 
 <style>
-  hr {
-    margin-block: var(--space-2xl);
-  }
-
   h2 {
     font-size: var(--font-size-3xl);
-    color: var(--heading-color);
     margin: 0;
   }
 
   p {
     font-size: var(--font-size-lg);
     color: var(--paragraph-subtitle);
-    line-height: var(--line-height-body);
     max-width: 60ch;
     margin: 0.75rem 0 0;
   }
@@ -133,9 +127,5 @@ const { t, dir, localizeHref, safeMarkdown } = Astro.locals;
 
   .cta-links {
     margin-top: var(--space-xl);
-  }
-
-  .cta-links :global(.button) {
-    color: white;
   }
 </style>

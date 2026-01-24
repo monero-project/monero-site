@@ -1,98 +1,98 @@
 {
-  "pageTitle": "挖矿",
-  "description": "使用 RandomX 挖掘 Monero。使用 Gupax + P2Pool 快速去中心化启动，或使用 XMRig 进行传统矿池设置。",
-  "hero": {
-    "title": "挖矿",
-    "subtitle": "Monero 是一种依赖工作量证明挖矿来实现分布式共识的加密货币。"
-  },
-  "gupax": {
-    "title": "Gupax",
-    "subtitle": "用户友好的 Monero 矿工",
-    "lead": "开始挖掘 Monero 的最快方式。Gupax 将 P2Pool 和 XMRig 打包成一个简单的应用程序，易于设置并提供清晰的统计数据。",
-    "bullets": [
-      "跨平台：适用于 Windows、Linux 和 macOS",
-      "简单设置：3 分钟内开始挖矿",
-      "去中心化：运行在 P2Pool 上"
-    ],
-    "cta": "获取 Gupax"
-  },
-  "xmrig": {
-    "title": "XMRig",
-    "subtitle": "面向高级用户",
-    "lead": "喜欢完全控制？直接使用 XMRig 进行矿池/单独挖矿和性能调优。",
-    "bullets": [
-      "最受欢迎的 RandomX 矿工",
-      "适用于矿池、单独挖矿和许多高级配置"
-    ],
-    "cta": "XMRig GitHub"
-  },
-  "solo": {
-    "title": "单独挖矿",
-    "subtitle": "最独立，最大方差",
-    "lead": "单独挖矿最大化独立性，但除非您的算力很高，否则预计支付之间会有较长的间隔。",
-    "bullets": ["无矿池费用，无运营商信任", "\"彩票\"支付 - 更高的方差"],
-    "cta": "指南"
-  },
-  "resources": {
-    "title": "资源",
-    "guides": {
-      "title": "指南",
-      "mineToPool": {
-        "title": "使用 XMRig 挖矿到矿池",
-        "subtitle": "XMRig 分步指南"
-      },
-      "gupaxSetup": {
-        "title": "Gupax 设置指南",
-        "subtitle": "Gupax 矿工的简单设置指南"
-      }
+    "pageTitle": "挖矿",
+    "description": "使用 RandomX 挖掘 Monero。使用 Gupax + P2Pool 快速去中心化启动，或使用 XMRig 进行传统矿池设置。",
+    "hero": {
+        "title": "挖矿",
+        "subtitle": "Monero 是一种依赖工作量证明挖矿来实现分布式共识的加密货币。"
     },
-    "pools": {
-      "title": "矿池",
-      "comparePools": {
-        "title": "比较矿池",
-        "subtitle": "费用、算力、分布"
-      }
+    "gupax": {
+        "title": "Gupax",
+        "subtitle": "用户友好的 Monero 矿工",
+        "lead": "开始挖掘 Monero 的最快方式。Gupax 将 P2Pool 和 XMRig 打包成一个简单的应用程序，易于设置并提供清晰的统计数据。",
+        "bullets": [
+            "跨平台：适用于 Windows、Linux 和 macOS",
+            "简单设置：3 分钟内开始挖矿",
+            "去中心化：运行在 P2Pool 上"
+        ],
+        "cta": "获取 Gupax"
     },
-    "benchmarks": {
-      "title": "基准测试",
-      "hashrateEstimates": {
-        "title": "算力估计",
-        "subtitle": "按 CPU 型号"
-      }
+    "xmrig": {
+        "title": "XMRig",
+        "subtitle": "面向高级用户",
+        "lead": "喜欢完全控制？直接使用 XMRig 进行矿池/单独挖矿和性能调优。",
+        "bullets": [
+            "最受欢迎的 RandomX 矿工",
+            "适用于矿池、单独挖矿和许多高级配置"
+        ],
+        "cta": "XMRig GitHub"
+    },
+    "solo": {
+        "title": "单独挖矿",
+        "subtitle": "最独立，最大方差",
+        "lead": "单独挖矿最大化独立性，但除非您的算力很高，否则预计支付之间会有较长的间隔。",
+        "bullets": ["无矿池费用，无运营商信任", "\"彩票\"支付 - 更高的方差"],
+        "cta": "指南"
+    },
+    "resources": {
+        "title": "资源",
+        "guides": {
+            "title": "指南",
+            "mineToPool": {
+                "title": "使用 XMRig 挖矿到矿池",
+                "subtitle": "XMRig 分步指南"
+            },
+            "gupaxSetup": {
+                "title": "Gupax 设置指南",
+                "subtitle": "Gupax 矿工的简单设置指南"
+            }
+        },
+        "pools": {
+            "title": "矿池",
+            "comparePools": {
+                "title": "比较矿池",
+                "subtitle": "费用、算力、分布"
+            }
+        },
+        "benchmarks": {
+            "title": "基准测试",
+            "hashrateEstimates": {
+                "title": "算力估计",
+                "subtitle": "按 CPU 型号"
+            }
+        }
+    },
+    "faq": {
+        "title": "常见问题",
+        "whatIsRandomX": {
+            "title": "什么是 RandomX？",
+            "content": "@RandomX 是 Monero 的抗 ASIC 工作量证明算法，有利于消费级硬件（CPU），使每个人都可以参与挖矿。"
+        },
+        "soloVsPool": {
+            "title": "单独挖矿 vs 矿池挖矿 - 有什么权衡？",
+            "content": "单独挖矿最大化独立性，但支付可能需要很长时间。矿池支付更频繁，但增加了信任和中心化风险。\n\n### 单独\n- 无矿池运营商，无矿池费用\n- 奖励之间等待时间长\n- 最有利于去中心化\n\n[单独挖矿指南](https://docs.getmonero.org/interacting/mining/guides/solo)\n\n### 矿池\n- 更频繁的支付\n- 矿池费用 + 运营商信任\n- 如果一个矿池变得太大会有中心化风险\n- 需要第三方挖矿软件\n\n[浏览矿池](https://miningpoolstats.stream/monero)"
+        },
+        "whyP2Pool": {
+            "title": "为什么 P2Pool 是\"两全其美\"？",
+            "content": "P2Pool 为您提供类似矿池的支付频率，同时保持挖矿的点对点和非托管特性。\n\n- 无中心化矿池服务器\n- 0% 矿池费用（您仍需支付自己的节点成本）\n- 无需许可：任何人都可以加入\n- 无需信任：资金从不托管\n- PPLNS 支付方案\n- 最低支付不到 0.0004 XMR\n\n[P2Pool 公告](/blog/2021/10/05/p2pool-released/)"
+        },
+        "hardwareExpectations": {
+            "title": "我的硬件应该期望什么？",
+            "content": "Monero 挖矿在 CPU 上比 GPU 更高效。您可以通过比较 XMRig 基准列表上的 CPU 来估计您的算力。\n\n[XMRig 基准](https://xmrig.com/benchmark)"
+        },
+        "whatMiningSoftware": {
+            "title": "我应该使用什么挖矿软件？",
+            "content": "单独挖矿：Monero GUI 或 CLI 钱包（仅 CPU）。矿池或 GPU：XMRig、CSminer 或 Gupax（捆绑 P2Pool 和 XMRig）。\n\n- [Monero GUI](https://www.getmonero.org/downloads/#gui)（单独挖矿）\n- [Monero CLI](https://www.getmonero.org/downloads/#cli)（单独挖矿）\n- [Gupax](https://gupax.io/)（P2Pool + XMRig 封装）\n- [XMRig](https://github.com/xmrig/xmrig)（CPU/GPU 矿工）\n- [CSminer](https://github.com/cryptonote-social/csminer)（CPU/GPU 矿工）"
+        },
+        "whereToGetHelp": {
+            "title": "我在哪里可以获得帮助？",
+            "content": "在 r/MoneroMining subreddit 上与其他矿工联系。\n\n [Reddit](https://www.reddit.com/r/MoneroMining/)"
+        }
+    },
+    "disclaimer": {
+        "title": "免责声明",
+        "content": "Monero 项目不认可任何特定的矿池、软件或硬件，上述内容仅供参考。"
+    },
+    "aria": {
+        "miningOptions": "挖矿选项"
     }
-  },
-  "faq": {
-    "title": "常见问题",
-    "whatIsRandomX": {
-      "title": "什么是 RandomX？",
-      "content": "@RandomX 是 Monero 的抗 ASIC 工作量证明算法，有利于消费级硬件（CPU），使每个人都可以参与挖矿。"
-    },
-    "soloVsPool": {
-      "title": "单独挖矿 vs 矿池挖矿 - 有什么权衡？",
-      "content": "单独挖矿最大化独立性，但支付可能需要很长时间。矿池支付更频繁，但增加了信任和中心化风险。\n\n### 单独\n- 无矿池运营商，无矿池费用\n- 奖励之间等待时间长\n- 最有利于去中心化\n\n[单独挖矿指南](https://docs.getmonero.org/interacting/mining/guides/solo)\n\n### 矿池\n- 更频繁的支付\n- 矿池费用 + 运营商信任\n- 如果一个矿池变得太大会有中心化风险\n- 需要第三方挖矿软件\n\n[浏览矿池](https://miningpoolstats.stream/monero)"
-    },
-    "whyP2Pool": {
-      "title": "为什么 P2Pool 是\"两全其美\"？",
-      "content": "P2Pool 为您提供类似矿池的支付频率，同时保持挖矿的点对点和非托管特性。\n\n- 无中心化矿池服务器\n- 0% 矿池费用（您仍需支付自己的节点成本）\n- 无需许可：任何人都可以加入\n- 无需信任：资金从不托管\n- PPLNS 支付方案\n- 最低支付不到 0.0004 XMR\n\n[P2Pool 公告](/blog/2021/10/05/p2pool-released/)"
-    },
-    "hardwareExpectations": {
-      "title": "我的硬件应该期望什么？",
-      "content": "Monero 挖矿在 CPU 上比 GPU 更高效。您可以通过比较 XMRig 基准列表上的 CPU 来估计您的算力。\n\n[XMRig 基准](https://xmrig.com/benchmark)"
-    },
-    "whatMiningSoftware": {
-      "title": "我应该使用什么挖矿软件？",
-      "content": "单独挖矿：Monero GUI 或 CLI 钱包（仅 CPU）。矿池或 GPU：XMRig、CSminer 或 Gupax（捆绑 P2Pool 和 XMRig）。\n\n- [Monero GUI](https://www.getmonero.org/downloads/#gui)（单独挖矿）\n- [Monero CLI](https://www.getmonero.org/downloads/#cli)（单独挖矿）\n- [Gupax](https://gupax.io/)（P2Pool + XMRig 封装）\n- [XMRig](https://github.com/xmrig/xmrig)（CPU/GPU 矿工）\n- [CSminer](https://github.com/cryptonote-social/csminer)（CPU/GPU 矿工）"
-    },
-    "whereToGetHelp": {
-      "title": "我在哪里可以获得帮助？",
-      "content": "在 r/MoneroMining subreddit 上与其他矿工联系。\n\n [Reddit](https://www.reddit.com/r/MoneroMining/)"
-    }
-  },
-  "disclaimer": {
-    "title": "免责声明",
-    "content": "Monero 项目不认可任何特定的矿池、软件或硬件，上述内容仅供参考。"
-  },
-  "aria": {
-    "miningOptions": "挖矿选项"
-  }
 }

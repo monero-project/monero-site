@@ -1,85 +1,85 @@
 {
-  "pageTitle": "Press Kit",
-  "title": "Press Kit",
-  "subtitle": "Press contacts, brand assets, and media resources for journalists and content creators.",
-  "description": "Press contacts, brand assets, and media resources for Monero.",
-  "sections": {
-    "brandAssets": {
-      "title": "Brand Assets",
-      "tocSubtitle": "Logos and symbols",
-      "intro": "Download official Monero logos and symbols. White background options have a white background under the Monero symbol only.",
-      "downloadVector": "Download Vector (.ai)",
-      "downloadAll": "Download All Assets (.zip)"
+    "pageTitle": "Press Kit",
+    "title": "Press Kit",
+    "subtitle": "Press contacts, brand assets, and media resources for journalists and content creators.",
+    "description": "Press contacts, brand assets, and media resources for Monero.",
+    "sections": {
+        "brandAssets": {
+            "title": "Brand Assets",
+            "tocSubtitle": "Logos and symbols",
+            "intro": "Download official Monero logos and symbols. White background options have a white background under the Monero symbol only.",
+            "downloadVector": "Download Vector (.ai)",
+            "downloadAll": "Download All Assets (.zip)"
+        },
+        "pressMaterials": {
+            "title": "Press Materials",
+            "tocSubtitle": "Documentation and resources",
+            "pressDocumentation": "Press Documentation",
+            "marketingMaterials": "Marketing Materials"
+        },
+        "contacts": {
+            "title": "Contacts",
+            "tocSubtitle": "Reach the Monero community",
+            "pressInquiries": {
+                "title": "Press Inquiries",
+                "description": "For media and press related questions:"
+            },
+            "workgroups": {
+                "title": "Workgroups",
+                "description": "Contact specific Monero workgroups:",
+                "link": "View Workgroups"
+            },
+            "community": {
+                "title": "Community",
+                "description": "Reach the many subcommunities:",
+                "link": "Community Hangouts"
+            }
+        }
     },
-    "pressMaterials": {
-      "title": "Press Materials",
-      "tocSubtitle": "Documentation and resources",
-      "pressDocumentation": "Press Documentation",
-      "marketingMaterials": "Marketing Materials"
+    "assets": {
+        "moneroSymbol": {
+            "name": "Monero Symbol",
+            "description": "The Monero 'M' symbol for use in icons and compact spaces."
+        },
+        "moneroLogo": {
+            "name": "Monero Logo",
+            "description": "Full Monero logo with wordmark for general use."
+        },
+        "variants": {
+            "transparent": "Transparent",
+            "whiteBackground": "White Background"
+        },
+        "sizes": {
+            "small": "Small",
+            "medium": "Medium",
+            "large": "Large"
+        }
     },
-    "contacts": {
-      "title": "Contacts",
-      "tocSubtitle": "Reach the Monero community",
-      "pressInquiries": {
-        "title": "Press Inquiries",
-        "description": "For media and press related questions:"
-      },
-      "workgroups": {
-        "title": "Workgroups",
-        "description": "Contact specific Monero workgroups:",
-        "link": "View Workgroups"
-      },
-      "community": {
-        "title": "Community",
-        "description": "Reach the many subcommunities:",
-        "link": "Community Hangouts"
-      }
+    "documents": {
+        "quickFacts": {
+            "title": "Quick-Facts Sheet",
+            "description": "Everything about Monero: history, key differentiating factors, technical fundamentals, and features in development."
+        },
+        "timeline": {
+            "title": "Monero Timeline",
+            "description": "A timeline of key developments in the Monero history."
+        }
+    },
+    "marketing": {
+        "dontBuySticker": {
+            "title": "Don't Buy Monero Sticker",
+            "description": "Spread Monero everywhere with this sticker. Available in multiple languages and formats."
+        },
+        "promotionalGraphics": {
+            "title": "Promotional Graphics",
+            "description": "Badges and stickers for websites created by TheMonera for merchants and enthusiasts."
+        },
+        "graphicsCollection": {
+            "title": "Monero Graphics Collection",
+            "description": "Posters, illustrations, wallpapers, and stickers that can be used by everyone."
+        }
+    },
+    "aria": {
+        "sectionsNav": "Press kit sections"
     }
-  },
-  "assets": {
-    "moneroSymbol": {
-      "name": "Monero Symbol",
-      "description": "The Monero 'M' symbol for use in icons and compact spaces."
-    },
-    "moneroLogo": {
-      "name": "Monero Logo",
-      "description": "Full Monero logo with wordmark for general use."
-    },
-    "variants": {
-      "transparent": "Transparent",
-      "whiteBackground": "White Background"
-    },
-    "sizes": {
-      "small": "Small",
-      "medium": "Medium",
-      "large": "Large"
-    }
-  },
-  "documents": {
-    "quickFacts": {
-      "title": "Quick-Facts Sheet",
-      "description": "Everything about Monero: history, key differentiating factors, technical fundamentals, and features in development."
-    },
-    "timeline": {
-      "title": "Monero Timeline",
-      "description": "A timeline of key developments in the Monero history."
-    }
-  },
-  "marketing": {
-    "dontBuySticker": {
-      "title": "Don't Buy Monero Sticker",
-      "description": "Spread Monero everywhere with this sticker. Available in multiple languages and formats."
-    },
-    "promotionalGraphics": {
-      "title": "Promotional Graphics",
-      "description": "Badges and stickers for websites created by TheMonera for merchants and enthusiasts."
-    },
-    "graphicsCollection": {
-      "title": "Monero Graphics Collection",
-      "description": "Posters, illustrations, wallpapers, and stickers that can be used by everyone."
-    }
-  },
-  "aria": {
-    "sectionsNav": "Press kit sections"
-  }
 }

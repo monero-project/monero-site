@@ -1,51 +1,51 @@
 {
-  "pageTitle": "Accept Monero",
-  "title": "Accept Monero",
-  "subtitle": "Start accepting private, low-fee payments for your business.",
-  "description": "Learn how to accept Monero payments for your business.",
-  "steps": {
-    "chooseSetup": {
-      "title": "Choose Your Setup",
-      "intro": "How you accept Monero depends on your needs:",
-      "wallet": {
-        "title": "Wallet",
-        "description": "Best for occasional payments or getting started. Generate a QR code with the amount, customer scans and pays. No fees, no setup.",
-        "viewWallets": "View Wallets"
-      },
-      "pos": {
-        "title": "Point-of-Sale App",
-        "description": "Dedicated apps for regular in-person use. Get fiat price conversion, invoice tracking, and configurable confirmation settings.",
-        "services": {
-          "bitrequest": "Multi-coin point-of-sale app",
-          "btcpayPos": "Point-of-sale app for BTCPay Server"
+    "pageTitle": "Accept Monero",
+    "title": "Accept Monero",
+    "subtitle": "Start accepting private, low-fee payments for your business.",
+    "description": "Learn how to accept Monero payments for your business.",
+    "steps": {
+        "chooseSetup": {
+            "title": "Choose Your Setup",
+            "intro": "How you accept Monero depends on your needs:",
+            "wallet": {
+                "title": "Wallet",
+                "description": "Best for occasional payments or getting started. Generate a QR code with the amount, customer scans and pays. No fees, no setup.",
+                "viewWallets": "View Wallets"
+            },
+            "pos": {
+                "title": "Point-of-Sale App",
+                "description": "Dedicated apps for regular in-person use. Get fiat price conversion, invoice tracking, and configurable confirmation settings.",
+                "services": {
+                    "bitrequest": "Multi-coin point-of-sale app",
+                    "btcpayPos": "Point-of-sale app for BTCPay Server"
+                }
+            },
+            "processor": {
+                "title": "Payment Processor",
+                "description": "Third-party services that handle payments for you. Quick setup, plugins for most platforms, small fees (~0.5-1%). Some offer auto-conversion to fiat.",
+                "viewGateways": "View Payment Gateways"
+            },
+            "selfHosted": {
+                "title": "Self-Hosted",
+                "description": "Run your own payment server for complete control. Zero fees, full privacy, invoice management, and works for both online and in-person. Requires a server and technical setup.",
+                "services": {
+                    "btcpay": "Open-source, multi-coin, includes POS app",
+                    "bitcart": "Open-source, multi-coin payment processor",
+                    "moneropay": "Lightweight, Monero-only, easy to deploy"
+                }
+            }
+        },
+        "acceptPayment": {
+            "title": "Accept Your First Payment!",
+            "description": "A customer scans your QR code or copies your address and sends Monero from their wallet. You'll see the payment appear in your wallet or dashboard within seconds.",
+            "confirmations": "Transactions are typically confirmed in ~2 minutes. For small purchases, most merchants hand over goods immediately. For larger amounts, waiting 1-2 confirmations adds security.",
+            "confirmationsLabel": "Confirmations:",
+            "tip": "If you're using a wallet, your seed phrase is the only way to recover funds. Write it down and store it securely offline - never share it with anyone."
+        },
+        "getListed": {
+            "title": "Get Listed",
+            "description": "Let the Monero community know you accept payments. Getting listed in merchant directories helps customers find your business.",
+            "viewDirectories": "View Merchant Directories"
         }
-      },
-      "processor": {
-        "title": "Payment Processor",
-        "description": "Third-party services that handle payments for you. Quick setup, plugins for most platforms, small fees (~0.5-1%). Some offer auto-conversion to fiat.",
-        "viewGateways": "View Payment Gateways"
-      },
-      "selfHosted": {
-        "title": "Self-Hosted",
-        "description": "Run your own payment server for complete control. Zero fees, full privacy, invoice management, and works for both online and in-person. Requires a server and technical setup.",
-        "services": {
-          "btcpay": "Open-source, multi-coin, includes POS app",
-          "bitcart": "Open-source, multi-coin payment processor",
-          "moneropay": "Lightweight, Monero-only, easy to deploy"
-        }
-      }
-    },
-    "acceptPayment": {
-      "title": "Accept Your First Payment!",
-      "description": "A customer scans your QR code or copies your address and sends Monero from their wallet. You'll see the payment appear in your wallet or dashboard within seconds.",
-      "confirmations": "Transactions are typically confirmed in ~2 minutes. For small purchases, most merchants hand over goods immediately. For larger amounts, waiting 1-2 confirmations adds security.",
-      "confirmationsLabel": "Confirmations:",
-      "tip": "If you're using a wallet, your seed phrase is the only way to recover funds. Write it down and store it securely offline - never share it with anyone."
-    },
-    "getListed": {
-      "title": "Get Listed",
-      "description": "Let the Monero community know you accept payments. Getting listed in merchant directories helps customers find your business.",
-      "viewDirectories": "View Merchant Directories"
     }
-  }
 }

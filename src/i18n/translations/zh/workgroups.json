@@ -1,113 +1,113 @@
 {
-  "pageTitle": "工作组",
-  "description": "加入 Monero 工作组并为项目做出贡献",
-  "hero": {
-    "title": "工作组",
-    "subtitle": "Monero 由全球充满热情的志愿者构建。工作组由联合起来实现共同目标的社区成员组成。找到您的位置并开始贡献。"
-  },
-  "hangoutsNote": {
-    "title": "只是想聊天？",
-    "content": "访问我们的社交场所页面与社区联系。"
-  },
-  "getStarted": {
-    "title": "从这里开始",
-    "communityWorkgroup": {
-      "name": "社区工作组",
-      "lead": "所有新贡献者的起点。",
-      "description": "不确定从哪里开始？加入社区工作组，认识其他贡献者，发现您的技能适合哪里，并获得您第一次贡献的指导。欢迎所有人！",
-      "cta": "加入对话"
+    "pageTitle": "工作组",
+    "description": "加入 Monero 工作组并为项目做出贡献",
+    "hero": {
+        "title": "工作组",
+        "subtitle": "Monero 由全球充满热情的志愿者构建。工作组由联合起来实现共同目标的社区成员组成。找到您的位置并开始贡献。"
     },
-    "localization": {
-      "name": "本地化工作组",
-      "lead": "无需编程。",
-      "description": "通过翻译软件、文档和网站内容，帮助 Monero 走向全球。我们最古老、最热情的工作组之一。",
-      "cta": "开始翻译"
+    "hangoutsNote": {
+        "title": "只是想聊天？",
+        "content": "访问我们的社交场所页面与社区联系。"
+    },
+    "getStarted": {
+        "title": "从这里开始",
+        "communityWorkgroup": {
+            "name": "社区工作组",
+            "lead": "所有新贡献者的起点。",
+            "description": "不确定从哪里开始？加入社区工作组，认识其他贡献者，发现您的技能适合哪里，并获得您第一次贡献的指导。欢迎所有人！",
+            "cta": "加入对话"
+        },
+        "localization": {
+            "name": "本地化工作组",
+            "lead": "无需编程。",
+            "description": "通过翻译软件、文档和网站内容，帮助 Monero 走向全球。我们最古老、最热情的工作组之一。",
+            "cta": "开始翻译"
+        }
+    },
+    "columns": {
+        "development": {
+            "title": "开发",
+            "subtitle": "编写代码、修复错误、构建功能"
+        },
+        "research": {
+            "title": "研究",
+            "subtitle": "推进 Monero 背后的技术和协议"
+        },
+        "community": {
+            "title": "社区服务",
+            "subtitle": "支持生态系统"
+        }
+    },
+    "workgroups": {
+        "development": {
+            "name": "核心开发",
+            "action": "构建和维护 Monero 守护进程和 CLI 钱包。",
+            "bestFor": "C++ 开发者"
+        },
+        "gui": {
+            "name": "GUI 钱包",
+            "action": "改进官方桌面钱包体验。",
+            "bestFor": "C++、QML 和 UX 爱好者"
+        },
+        "website": {
+            "name": "网站",
+            "action": "构建和增强 getmonero.org。",
+            "bestFor": "TypeScript、Astro、Web 开发者"
+        },
+        "seraphis": {
+            "name": "开发实验室",
+            "action": "参与下一代 Monero 的开发。",
+            "bestFor": "对密码学感兴趣的开发者"
+        },
+        "docs": {
+            "name": "文档",
+            "action": "维护和改进 Monero 的文档。",
+            "bestFor": "技术写作者、开发者"
+        },
+        "researchLab": {
+            "name": "研究实验室",
+            "action": "推进驱动 Monero 未来的密码学。",
+            "bestFor": "密码学家、数学家、学者"
+        },
+        "researchLounge": {
+            "name": "研究休息室",
+            "action": "讨论和合作研究想法。",
+            "bestFor": "研究人员、爱好者"
+        },
+        "pow": {
+            "name": "工作量证明",
+            "action": "研究和开发 Monero 的工作量证明算法。",
+            "bestFor": "密码学家、硬件专家"
+        },
+        "policy": {
+            "name": "政策",
+            "action": "与监管机构接触并倡导隐私权。",
+            "bestFor": "政策专家、律师、沟通者"
+        },
+        "malware": {
+            "name": "恶意软件响应",
+            "action": "保护用户免受 Monero 相关的安全威胁。",
+            "bestFor": "安全研究人员、分析师"
+        },
+        "localization": {
+            "name": "本地化",
+            "action": "翻译 Monero 软件和文档。",
+            "bestFor": "多语言贡献者，无需编程"
+        },
+        "events": {
+            "name": "活动",
+            "action": "在全球组织和推广 Monero 活动。",
+            "bestFor": "活动组织者、营销人员"
+        },
+        "support": {
+            "name": "支持",
+            "action": "帮助用户解决 Monero 相关的问题。",
+            "bestFor": "耐心的帮助者、知识渊博的用户"
+        }
+    },
+    "core": {
+        "title": "核心团队",
+        "description": "Monero 关键基础设施的管理者。管理域名、代码库和发布签名。成员不收取报酬，仅通过邀请选择。",
+        "note": "核心团队不接受申请。"
     }
-  },
-  "columns": {
-    "development": {
-      "title": "开发",
-      "subtitle": "编写代码、修复错误、构建功能"
-    },
-    "research": {
-      "title": "研究",
-      "subtitle": "推进 Monero 背后的技术和协议"
-    },
-    "community": {
-      "title": "社区服务",
-      "subtitle": "支持生态系统"
-    }
-  },
-  "workgroups": {
-    "development": {
-      "name": "核心开发",
-      "action": "构建和维护 Monero 守护进程和 CLI 钱包。",
-      "bestFor": "C++ 开发者"
-    },
-    "gui": {
-      "name": "GUI 钱包",
-      "action": "改进官方桌面钱包体验。",
-      "bestFor": "C++、QML 和 UX 爱好者"
-    },
-    "website": {
-      "name": "网站",
-      "action": "构建和增强 getmonero.org。",
-      "bestFor": "TypeScript、Astro、Web 开发者"
-    },
-    "seraphis": {
-      "name": "开发实验室",
-      "action": "参与下一代 Monero 的开发。",
-      "bestFor": "对密码学感兴趣的开发者"
-    },
-    "docs": {
-      "name": "文档",
-      "action": "维护和改进 Monero 的文档。",
-      "bestFor": "技术写作者、开发者"
-    },
-    "researchLab": {
-      "name": "研究实验室",
-      "action": "推进驱动 Monero 未来的密码学。",
-      "bestFor": "密码学家、数学家、学者"
-    },
-    "researchLounge": {
-      "name": "研究休息室",
-      "action": "讨论和合作研究想法。",
-      "bestFor": "研究人员、爱好者"
-    },
-    "pow": {
-      "name": "工作量证明",
-      "action": "研究和开发 Monero 的工作量证明算法。",
-      "bestFor": "密码学家、硬件专家"
-    },
-    "policy": {
-      "name": "政策",
-      "action": "与监管机构接触并倡导隐私权。",
-      "bestFor": "政策专家、律师、沟通者"
-    },
-    "malware": {
-      "name": "恶意软件响应",
-      "action": "保护用户免受 Monero 相关的安全威胁。",
-      "bestFor": "安全研究人员、分析师"
-    },
-    "localization": {
-      "name": "本地化",
-      "action": "翻译 Monero 软件和文档。",
-      "bestFor": "多语言贡献者，无需编程"
-    },
-    "events": {
-      "name": "活动",
-      "action": "在全球组织和推广 Monero 活动。",
-      "bestFor": "活动组织者、营销人员"
-    },
-    "support": {
-      "name": "支持",
-      "action": "帮助用户解决 Monero 相关的问题。",
-      "bestFor": "耐心的帮助者、知识渊博的用户"
-    }
-  },
-  "core": {
-    "title": "核心团队",
-    "description": "Monero 关键基础设施的管理者。管理域名、代码库和发布签名。成员不收取报酬，仅通过邀请选择。",
-    "note": "核心团队不接受申请。"
-  }
 }

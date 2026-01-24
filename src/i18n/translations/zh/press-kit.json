@@ -1,85 +1,85 @@
 {
-  "pageTitle": "媒体资料包",
-  "title": "媒体资料包",
-  "subtitle": "面向记者和内容创作者的媒体联系方式、品牌资产和媒体资源。",
-  "description": "Monero 的媒体联系方式、品牌资产和媒体资源。",
-  "sections": {
-    "brandAssets": {
-      "title": "品牌资产",
-      "tocSubtitle": "标志和符号",
-      "intro": "下载官方 Monero 标志和符号。白色背景选项仅在 Monero 符号下有白色背景。",
-      "downloadVector": "下载矢量图 (.ai)",
-      "downloadAll": "下载所有资产 (.zip)"
+    "pageTitle": "媒体资料包",
+    "title": "媒体资料包",
+    "subtitle": "面向记者和内容创作者的媒体联系方式、品牌资产和媒体资源。",
+    "description": "Monero 的媒体联系方式、品牌资产和媒体资源。",
+    "sections": {
+        "brandAssets": {
+            "title": "品牌资产",
+            "tocSubtitle": "标志和符号",
+            "intro": "下载官方 Monero 标志和符号。白色背景选项仅在 Monero 符号下有白色背景。",
+            "downloadVector": "下载矢量图 (.ai)",
+            "downloadAll": "下载所有资产 (.zip)"
+        },
+        "pressMaterials": {
+            "title": "媒体材料",
+            "tocSubtitle": "文档和资源",
+            "pressDocumentation": "媒体文档",
+            "marketingMaterials": "营销材料"
+        },
+        "contacts": {
+            "title": "联系方式",
+            "tocSubtitle": "联系 Monero 社区",
+            "pressInquiries": {
+                "title": "媒体查询",
+                "description": "如有媒体和新闻相关问题："
+            },
+            "workgroups": {
+                "title": "工作组",
+                "description": "联系特定的 Monero 工作组：",
+                "link": "查看工作组"
+            },
+            "community": {
+                "title": "社区",
+                "description": "联系众多子社区：",
+                "link": "社区聚会"
+            }
+        }
     },
-    "pressMaterials": {
-      "title": "媒体材料",
-      "tocSubtitle": "文档和资源",
-      "pressDocumentation": "媒体文档",
-      "marketingMaterials": "营销材料"
+    "assets": {
+        "moneroSymbol": {
+            "name": "Monero 符号",
+            "description": "用于图标和紧凑空间的 Monero 'M' 符号。"
+        },
+        "moneroLogo": {
+            "name": "Monero 标志",
+            "description": "带有文字标识的完整 Monero 标志，用于一般用途。"
+        },
+        "variants": {
+            "transparent": "透明",
+            "whiteBackground": "白色背景"
+        },
+        "sizes": {
+            "small": "小",
+            "medium": "中",
+            "large": "大"
+        }
     },
-    "contacts": {
-      "title": "联系方式",
-      "tocSubtitle": "联系 Monero 社区",
-      "pressInquiries": {
-        "title": "媒体查询",
-        "description": "如有媒体和新闻相关问题："
-      },
-      "workgroups": {
-        "title": "工作组",
-        "description": "联系特定的 Monero 工作组：",
-        "link": "查看工作组"
-      },
-      "community": {
-        "title": "社区",
-        "description": "联系众多子社区：",
-        "link": "社区聚会"
-      }
+    "documents": {
+        "quickFacts": {
+            "title": "快速事实表",
+            "description": "关于 Monero 的一切：历史、关键差异化因素、技术基础和正在开发的功能。"
+        },
+        "timeline": {
+            "title": "Monero 时间线",
+            "description": "Monero 历史上关键发展的时间线。"
+        }
+    },
+    "marketing": {
+        "dontBuySticker": {
+            "title": "Don't Buy Monero 贴纸",
+            "description": "用这个贴纸到处传播 Monero。提供多种语言和格式。"
+        },
+        "promotionalGraphics": {
+            "title": "促销图形",
+            "description": "由 TheMonera 为商家和爱好者创建的网站徽章和贴纸。"
+        },
+        "graphicsCollection": {
+            "title": "Monero 图形集",
+            "description": "每个人都可以使用的海报、插图、壁纸和贴纸。"
+        }
+    },
+    "aria": {
+        "sectionsNav": "媒体资料包部分"
     }
-  },
-  "assets": {
-    "moneroSymbol": {
-      "name": "Monero 符号",
-      "description": "用于图标和紧凑空间的 Monero 'M' 符号。"
-    },
-    "moneroLogo": {
-      "name": "Monero 标志",
-      "description": "带有文字标识的完整 Monero 标志，用于一般用途。"
-    },
-    "variants": {
-      "transparent": "透明",
-      "whiteBackground": "白色背景"
-    },
-    "sizes": {
-      "small": "小",
-      "medium": "中",
-      "large": "大"
-    }
-  },
-  "documents": {
-    "quickFacts": {
-      "title": "快速事实表",
-      "description": "关于 Monero 的一切：历史、关键差异化因素、技术基础和正在开发的功能。"
-    },
-    "timeline": {
-      "title": "Monero 时间线",
-      "description": "Monero 历史上关键发展的时间线。"
-    }
-  },
-  "marketing": {
-    "dontBuySticker": {
-      "title": "Don't Buy Monero 贴纸",
-      "description": "用这个贴纸到处传播 Monero。提供多种语言和格式。"
-    },
-    "promotionalGraphics": {
-      "title": "促销图形",
-      "description": "由 TheMonera 为商家和爱好者创建的网站徽章和贴纸。"
-    },
-    "graphicsCollection": {
-      "title": "Monero 图形集",
-      "description": "每个人都可以使用的海报、插图、壁纸和贴纸。"
-    }
-  },
-  "aria": {
-    "sectionsNav": "媒体资料包部分"
-  }
 }

@@ -1,0 +1,70 @@
+---
+import chevronLeft from "@/assets/icons/mask/chevron-left.avif";
+import MaskIcon from "./MaskIcon.astro";
+
+interface Props {
+  href: string;
+  size?: "sm" | "lg";
+  class?: string;
+}
+
+const { href, size = "sm", class: className, ...rest } = Astro.props;
+
+const rtl = Astro.locals.dir === "rtl";
+---
+
+<a href={href} class:list={["back-link", className]} data-size={size} {...rest}>
+  <span class="back-link-icon">
+    <MaskIcon
+      src={chevronLeft}
+      size={size === "lg" ? "1.25rem" : "1.125rem"}
+      rtl={rtl}
+    />
+  </span>
+  <span class="back-link-label"><slot /></span>
+</a>
+
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--paragraph-subtitle);
+    transition: color 0.15s ease;
+    width: fit-content;
+    text-decoration: none;
+  }
+
+  .back-link[data-size="lg"] {
+    font-size: var(--font-size-2xl);
+    color: var(--monero-orange);
+  }
+
+  .back-link:hover {
+    color: var(--monero-orange);
+  }
+
+  .back-link[data-size="lg"]:hover {
+    opacity: 0.8;
+  }
+
+  .back-link-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: var(--radius-full);
+    background: var(--card-color);
+  }
+
+  .back-link:hover .back-link-icon {
+    background: var(--card-hover-color);
+  }
+
+  .back-link-label {
+    white-space: nowrap;
+  }
+</style>

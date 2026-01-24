@@ -1,57 +1,57 @@
 {
-  "pageTitle": "الأماكن",
-  "description": "نحن قادمون من كل مكان، لكن لدينا بالتأكيد بعض الأماكن التي نحب التجمع فيها معًا. انضم إلينا!",
-  "hero": {
-    "title": "الأماكن",
-    "subtitle": "نحن قادمون من كل مكان، لكن لدينا بالتأكيد بعض الأماكن التي نحب التجمع فيها معًا. انضم إلينا!"
-  },
-  "workgroupsNote": {
-    "title": "تبحث عن مجموعات العمل؟",
-    "content": "تحقق من صفحة مجموعات العمل لدينا للمساهمة في تطوير Monero."
-  },
-  "chat": {
-    "title": "الدردشة",
-    "matrix": {
-      "title": "Matrix",
-      "subtitle": "متصل بـ IRC"
+    "pageTitle": "الأماكن",
+    "description": "نحن قادمون من كل مكان، لكن لدينا بالتأكيد بعض الأماكن التي نحب التجمع فيها معًا. انضم إلينا!",
+    "hero": {
+        "title": "الأماكن",
+        "subtitle": "نحن قادمون من كل مكان، لكن لدينا بالتأكيد بعض الأماكن التي نحب التجمع فيها معًا. انضم إلينا!"
     },
-    "discord": {
-      "title": "Discord"
+    "workgroupsNote": {
+        "title": "تبحث عن مجموعات العمل؟",
+        "content": "تحقق من صفحة مجموعات العمل لدينا للمساهمة في تطوير Monero."
     },
-    "telegram": {
-      "title": "Telegram"
+    "chat": {
+        "title": "الدردشة",
+        "matrix": {
+            "title": "Matrix",
+            "subtitle": "متصل بـ IRC"
+        },
+        "discord": {
+            "title": "Discord"
+        },
+        "telegram": {
+            "title": "Telegram"
+        }
+    },
+    "social": {
+        "title": "الاجتماعي",
+        "reddit": {
+            "title": "Reddit",
+            "subtitle": "r/Monero"
+        },
+        "x": {
+            "title": "X",
+            "subtitle": "@monero"
+        }
+    },
+    "channels": {
+        "title": "قنوات IRC",
+        "monero": {
+            "description": "مناقشة كل شيء متعلق بـ Monero"
+        },
+        "community": {
+            "description": "التجمع ومناقشة الأفكار"
+        },
+        "markets": {
+            "description": "سعر Monero والعملات الأخرى"
+        },
+        "offtopic": {
+            "description": "أشياء غير متعلقة بـ Monero"
+        },
+        "mining": {
+            "description": "أسئلة التعدين ومناقشتها"
+        },
+        "support": {
+            "description": "احصل على مساعدة من المستخدمين ذوي الخبرة"
+        }
     }
-  },
-  "social": {
-    "title": "الاجتماعي",
-    "reddit": {
-      "title": "Reddit",
-      "subtitle": "r/Monero"
-    },
-    "x": {
-      "title": "X",
-      "subtitle": "@monero"
-    }
-  },
-  "channels": {
-    "title": "قنوات IRC",
-    "monero": {
-      "description": "مناقشة كل شيء متعلق بـ Monero"
-    },
-    "community": {
-      "description": "التجمع ومناقشة الأفكار"
-    },
-    "markets": {
-      "description": "سعر Monero والعملات الأخرى"
-    },
-    "offtopic": {
-      "description": "أشياء غير متعلقة بـ Monero"
-    },
-    "mining": {
-      "description": "أسئلة التعدين ومناقشتها"
-    },
-    "support": {
-      "description": "احصل على مساعدة من المستخدمين ذوي الخبرة"
-    }
-  }
 }

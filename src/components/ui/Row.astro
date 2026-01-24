@@ -43,13 +43,13 @@ const alignValue = alignMap[align];
 <Tag
   class:list={["row", className]}
   data-nowrap={!wrap || undefined}
-  style={`--gap: ${gapValue}`}
+  style={`--gap: ${gapValue}; --justify: ${justifyValue}; --align: ${alignValue};`}
   {...rest}
 >
   <slot />
 </Tag>
 
-<style define:vars={{ justify: justifyValue, align: alignValue }}>
+<style>
   .row {
     display: flex;
     flex-wrap: wrap;

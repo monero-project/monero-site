@@ -4,7 +4,8 @@ import { getCollection } from "astro:content";
 
 import Layout from "@/layouts/Layout.astro";
 
-import Accordion from "@/components/ui/Accordion.astro";
+import LetterGroup from "@/components/pages/moneropedia/LetterGroup.astro";
+import LetterNav from "@/components/pages/moneropedia/LetterNav.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 
@@ -60,23 +61,14 @@ for (const letter of sortedLetters) {
     backLabel={t("knowledge-base:index.title")}
   />
   <PageContainer class="moneropedia-index">
-    <nav
-      class="letter-nav"
-      aria-label={t("knowledge-base:moneropedia.aria.navBar")}
-    >
-      {
-        sortedLetters.map((letter) => (
-          <a class="letter-nav-link" href={`#${letter}`}>
-            {letter}
-          </a>
-        ))
-      }
-    </nav>
+    <LetterNav
+      letters={sortedLetters}
+      ariaLabel={t("knowledge-base:moneropedia.aria.navBar")}
+    />
     <div class="letter-groups">
       {
-        sortedLetters.map((letter) => {
+        sortedLetters.map((letter, index) => {
           const groupEntries = groups.get(letter)!;
-
           const accordionItems = groupEntries.map((entry) => ({
             title: entry.title,
             content: safeMarkdown.parse(
@@ -85,19 +77,11 @@ for (const letter of sortedLetters) {
           }));
 
           return (
-            <div class="letter-group" id={`${letter}`}>
-              <hr class="letter-separator" />
-              <div class="letter-layout">
-                <h2 class="letter-heading">{letter}</h2>
-                <div>
-                  <Accordion
-                    items={accordionItems}
-                    multiExpand={false}
-                    variant="card"
-                  />
-                </div>
-              </div>
-            </div>
+            <LetterGroup
+              letter={letter}
+              items={accordionItems}
+              isFirst={index === 0}
+            />
           );
         })
       }
@@ -111,66 +95,12 @@ for (const letter of sortedLetters) {
     scroll-behavior: smooth;
   }
 
-  .letter-nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-sm);
-    padding-bottom: var(--space-sm);
-    border-bottom: 1px solid var(--border-color);
-    width: 100%;
-    font-weight: var(--font-weight-semibold);
-  }
-
-  .letter-nav-link {
-    padding: var(--space-xs);
-    border-radius: var(--radius-sm);
-    font-size: var(--font-size-sm);
-    text-decoration: none;
-    color: var(--text-primary);
-    user-select: none;
-  }
-
-  .letter-nav-link:hover {
-    background: var(--card-color);
-  }
-
   .letter-groups {
     overflow-y: auto;
     max-height: clamp(20rem, 70vh, 60rem);
     padding-inline-start: var(--space-xs);
     scroll-behavior: smooth;
     scroll-padding-top: 0;
-  }
-
-  .letter-layout {
-    display: grid;
-    grid-template-columns: auto minmax(0, 1fr);
-    gap: var(--space-md) var(--space-2xl);
-    align-items: flex-start;
-  }
-
-  .letter-heading {
-    display: inline-grid;
-    place-items: center;
-    inline-size: var(--font-size-5xl);
-    block-size: var(--font-size-5xl);
-    font-size: var(--font-size-xl);
-    margin: 0;
-    color: var(--monero-orange);
-    background: var(--card-color);
-    border: 1px solid var(--border-color);
-    border-radius: 50%;
-    user-select: none;
-  }
-
-  .letter-separator {
-    border: 0;
-    border-top: 1px solid var(--border-color);
-    margin: var(--space-2xl) 0 var(--space-2xl);
-  }
-  .letter-group:first-child .letter-separator {
-    margin-top: 0;
-    border-color: transparent;
   }
 
   @media (max-width: 1000px) {
@@ -180,71 +110,10 @@ for (const letter of sortedLetters) {
       gap: var(--space-xl);
     }
 
-    .letter-nav {
-      --sticky-offset: 6rem;
-
-      flex-direction: column;
-      flex-wrap: nowrap;
-      gap: var(--space-md);
-      padding: 0.5rem 1rem 0.5rem 2rem;
-      margin-inline-start: calc(-1 * var(--space-2xl));
-      border-bottom: unset;
-      border-inline-start: 1px solid var(--border-color);
-      width: auto;
-      position: sticky;
-      top: var(--sticky-offset);
-      align-self: flex-start;
-      max-height: calc(
-        100vh - var(--sticky-offset) - calc(var(--sticky-offset) / 2)
-      );
-      margin-bottom: var(--space-xl);
-      overflow: hidden auto;
-      overscroll-behavior: contain;
-      -webkit-overflow-scrolling: touch;
-      scrollbar-gutter: stable;
-      mask-image: linear-gradient(
-        180deg,
-        transparent 0,
-        #000 1rem,
-        #000 calc(100% - 1rem),
-        transparent 100%
-      );
-      mask-mode: alpha;
-      scrollbar-width: thin;
-      scrollbar-color: var(--monero-orange) transparent;
-    }
-
-    .letter-nav::-webkit-scrollbar {
-      width: var(--space-2xs);
-    }
-
-    .letter-nav::-webkit-scrollbar-track {
-      background: transparent;
-    }
-
-    .letter-nav::-webkit-scrollbar-thumb {
-      background: var(--monero-orange);
-      border-radius: var(--radius-full);
-    }
-
-    .letter-nav-link {
-      padding: var(--space-2xs) var(--space-xs);
-      font-size: var(--font-size-sm);
-      text-align: center;
-    }
-
     .letter-groups {
       overflow: visible;
       max-height: none;
       padding-inline-start: 0;
-    }
-
-    .letter-layout {
-      grid-template-columns: 1fr;
-    }
-
-    .letter-heading {
-      margin-bottom: var(--space-md);
     }
   }
 </style>

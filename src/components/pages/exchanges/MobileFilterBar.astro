@@ -1,0 +1,97 @@
+---
+import Column from "@/components/ui/Column.astro";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+import searchIcon from "@/assets/icons/mask/search.avif";
+
+interface Props {
+  toggleId: string;
+  title: string;
+  filterTexts: Array<{
+    filter: string;
+    text: string;
+  }>;
+}
+
+const { toggleId, title, filterTexts } = Astro.props;
+const { dir } = Astro.locals;
+---
+
+<div class="mobile-filter-container">
+  <label for={toggleId} class="mobile-filter-bar">
+    <div class="mobile-filter-bar-inner">
+      <MaskIcon
+        src={searchIcon}
+        size="1.25em"
+        aria-hidden="true"
+        rtl={dir == "rtl"}
+      />
+      <Column gap="3xs" align="center">
+        <span>{title}</span>
+        <div class="mobile-filter-subtitle">
+          {
+            filterTexts.map(({ filter, text }) => (
+              <span class="filter-text" data-filter={filter}>
+                {text}
+              </span>
+            ))
+          }
+        </div>
+      </Column>
+    </div>
+  </label>
+</div>
+
+<style>
+  .mobile-filter-container {
+    display: block;
+    position: sticky;
+    bottom: 0;
+    margin-top: var(--space-xl);
+    margin-inline: calc(-1 * var(--space-2xl));
+    background-color: var(--bg-color);
+  }
+
+  .mobile-filter-bar {
+    display: block;
+    padding: var(--space-md);
+    background-color: var(--bg-color);
+    border-top: 1px solid var(--border-color);
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
+
+  .mobile-filter-bar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xs);
+    padding: 0.65rem var(--space-md);
+    border-radius: var(--radius-full);
+    background: var(--card-color);
+    border: 1px solid var(--border-color);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--heading-color);
+  }
+
+  .mobile-filter-bar-inner:hover {
+    background: var(--card-hover-color);
+  }
+
+  .mobile-filter-subtitle {
+    display: none;
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-normal);
+    color: var(--paragraph-subtitle);
+  }
+
+  .filter-text {
+    display: none;
+  }
+
+  @media (min-width: 1200px) {
+    .mobile-filter-container {
+      display: none;
+    }
+  }
+</style>

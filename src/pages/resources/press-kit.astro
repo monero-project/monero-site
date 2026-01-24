@@ -1,6 +1,5 @@
 ---
 import Button from "@/components/ui/Button.astro";
-import Card from "@/components/ui/Card.astro";
 import Row from "@/components/ui/Row.astro";
 import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro";
 import Grid from "@/components/ui/Grid.astro";
@@ -11,7 +10,9 @@ import Column from "@/components/ui/Column.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import TOCContainer from "@/components/ui/TOCContainer.astro";
 import Layout from "@/layouts/Layout.astro";
-import { Image } from "astro:assets";
+
+import BrandAssetCard from "@/components/pages/press-kit/BrandAssetCard.astro";
+import ContactCard from "@/components/pages/press-kit/ContactCard.astro";
 
 import bookTextIcon from "@/assets/icons/mask/bookText.avif";
 import componentIcon from "@/assets/icons/mask/component.avif";
@@ -63,152 +64,106 @@ const sections = [
       ariaLabel={t("press-kit:aria.sectionsNav")}
     />
 
-    <Column gap="xl">
-      <PageSection
-        title={t("press-kit:sections.brandAssets.title")}
-        anchorId="brand-assets"
-      >
-        <p class="section-intro">
-          {t("press-kit:sections.brandAssets.intro")}
-        </p>
+    <PageSection
+      title={t("press-kit:sections.brandAssets.title")}
+      subtitle={t("press-kit:sections.brandAssets.intro")}
+      anchorId="brand-assets"
+    >
+      <Grid minWidth="22rem" gap="xl" class="assets-grid">
+        {
+          brandAssets.map((asset, i) => (
+            <BrandAssetCard
+              asset={asset}
+              previewWidth={previewDimensions[i].width}
+              previewHeight={previewDimensions[i].height}
+            />
+          ))
+        }
+      </Grid>
 
-        <Grid minWidth="22rem" gap="xl" class="assets-grid">
-          {
-            brandAssets.map((asset, i) => (
-              <Card>
-                <div class="asset-preview">
-                  <Image
-                    src={asset.preview}
-                    alt=""
-                    width={previewDimensions[i].width}
-                    height={previewDimensions[i].height}
-                  />
-                </div>
+      <Row justify="end" class="download-all">
+        <Button href="/media/press-kit/monero-press-kit.zip" variant="primary">
+          {t("press-kit:sections.brandAssets.downloadAll")}
+        </Button>
+      </Row>
+    </PageSection>
 
-                <div class="asset-header">
-                  <h3>{t(`press-kit:assets.${asset.id}.name`)}</h3>
-                  <p>{t(`press-kit:assets.${asset.id}.description`)}</p>
-                </div>
+    <hr aria-hidden="true" />
 
-                <Column gap="md">
-                  {asset.variants.map((variant) => (
-                    <Row gap="xs">
-                      <span class="variant-label">
-                        {t(`press-kit:assets.variants.${variant.labelKey}`)}
-                      </span>
-                      <Row gap="md">
-                        {variant.sizes.map((size) => (
-                          <a
-                            href={size.url}
-                            class="size-link"
-                            download
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            {t(`press-kit:assets.sizes.${size.labelKey}`)}
-                          </a>
-                        ))}
-                      </Row>
-                    </Row>
-                  ))}
-                </Column>
-
-                {asset.vectorUrl && (
-                  <div class="vector-download">
-                    <Button as="a" href={asset.vectorUrl} variant="secondary">
-                      {t("press-kit:sections.brandAssets.downloadVector")}
-                    </Button>
-                  </div>
-                )}
-              </Card>
-            ))
-          }
-        </Grid>
-
-        <Row justify="end" class="download-all">
-          <Button
-            href="/media/press-kit/monero-press-kit.zip"
-            variant="primary"
-          >
-            {t("press-kit:sections.brandAssets.downloadAll")}
-          </Button>
-        </Row>
-      </PageSection>
-
-      <hr aria-hidden="true" />
-
-      <PageSection
-        title={t("press-kit:sections.pressMaterials.title")}
-        anchorId="press-materials"
-      >
-        <Grid columns={2} gap="2xl">
-          <Column gap="md">
-            <h3 class="column-title">
-              {t("press-kit:sections.pressMaterials.pressDocumentation")}
-            </h3>
-            <Column gap="sm">
-              {
-                pressDocuments.map((doc) => (
-                  <ExternalResourceButton
-                    href={doc.url}
-                    title={t(`press-kit:documents.${doc.id}.title`)}
-                    subtitle={t(`press-kit:documents.${doc.id}.description`)}
-                  />
-                ))
-              }
-            </Column>
+    <PageSection
+      title={t("press-kit:sections.pressMaterials.title")}
+      anchorId="press-materials"
+    >
+      <Grid columns={2} gap="2xl">
+        <Column gap="md">
+          <h3 class="column-title">
+            {t("press-kit:sections.pressMaterials.pressDocumentation")}
+          </h3>
+          <Column gap="sm">
+            {
+              pressDocuments.map((doc) => (
+                <ExternalResourceButton
+                  href={doc.url}
+                  title={t(`press-kit:documents.${doc.id}.title`)}
+                  subtitle={t(`press-kit:documents.${doc.id}.description`)}
+                />
+              ))
+            }
           </Column>
+        </Column>
 
-          <Column gap="md">
-            <h3 class="column-title">
-              {t("press-kit:sections.pressMaterials.marketingMaterials")}
-            </h3>
-            <Column gap="sm">
-              {
-                marketingResources.map((resource) => (
-                  <ExternalResourceButton
-                    href={resource.url}
-                    title={t(`press-kit:marketing.${resource.id}.title`)}
-                    subtitle={t(
-                      `press-kit:marketing.${resource.id}.description`,
-                    )}
-                  />
-                ))
-              }
-            </Column>
+        <Column gap="md">
+          <h3 class="column-title">
+            {t("press-kit:sections.pressMaterials.marketingMaterials")}
+          </h3>
+          <Column gap="sm">
+            {
+              marketingResources.map((resource) => (
+                <ExternalResourceButton
+                  href={resource.url}
+                  title={t(`press-kit:marketing.${resource.id}.title`)}
+                  subtitle={t(`press-kit:marketing.${resource.id}.description`)}
+                />
+              ))
+            }
           </Column>
-        </Grid>
-      </PageSection>
+        </Column>
+      </Grid>
+    </PageSection>
 
-      <hr aria-hidden="true" />
+    <hr aria-hidden="true" />
 
-      <PageSection
-        title={t("press-kit:sections.contacts.title")}
-        anchorId="contacts"
-      >
-        <Grid minWidth="18rem" gap="md">
-          <Card class="contact-card">
-            <h3>{t("press-kit:sections.contacts.pressInquiries.title")}</h3>
-            <p>{t("press-kit:sections.contacts.pressInquiries.description")}</p>
-            <a href="mailto:press@getmonero.org"> press@getmonero.org </a>
-          </Card>
-          <Card class="contact-card">
-            <h3>{t("press-kit:sections.contacts.workgroups.title")}</h3>
-            <p>{t("press-kit:sections.contacts.workgroups.description")}</p>
-            <IconLink href={localizeHref("/community/workgroups")}>
-              {t("press-kit:sections.contacts.workgroups.link")}
-            </IconLink>
-          </Card>
-          <Card class="contact-card">
-            <h3>{t("press-kit:sections.contacts.community.title")}</h3>
-            <p>{t("press-kit:sections.contacts.community.description")}</p>
-            <IconLink href={localizeHref("/community/hangouts")}>
-              {t("press-kit:sections.contacts.community.link")}
-            </IconLink>
-          </Card>
-        </Grid>
-      </PageSection>
-    </Column>
+    <PageSection
+      title={t("press-kit:sections.contacts.title")}
+      anchorId="contacts"
+    >
+      <Grid minWidth="18rem" gap="md">
+        <ContactCard
+          title={t("press-kit:sections.contacts.pressInquiries.title")}
+          description={t(
+            "press-kit:sections.contacts.pressInquiries.description",
+          )}
+        >
+          <a href="mailto:press@getmonero.org">press@getmonero.org</a>
+        </ContactCard>
+        <ContactCard
+          title={t("press-kit:sections.contacts.workgroups.title")}
+          description={t("press-kit:sections.contacts.workgroups.description")}
+        >
+          <IconLink href={localizeHref("/community/workgroups")}>
+            {t("press-kit:sections.contacts.workgroups.link")}
+          </IconLink>
+        </ContactCard>
+        <ContactCard
+          title={t("press-kit:sections.contacts.community.title")}
+          description={t("press-kit:sections.contacts.community.description")}
+        >
+          <IconLink href={localizeHref("/community/hangouts")}>
+            {t("press-kit:sections.contacts.community.link")}
+          </IconLink>
+        </ContactCard>
+      </Grid>
+    </PageSection>
   </PageContainer>
 </Layout>
 
@@ -220,18 +175,6 @@ const sections = [
     text-transform: uppercase;
     letter-spacing: 0.02em;
     color: var(--paragraph-main);
-  }
-
-  .contact-card h3 {
-    margin: 0 0 var(--space-xs);
-    font-size: var(--font-size-lg);
-    font-weight: var(--font-weight-semibold);
-  }
-
-  .contact-card p {
-    margin: 0 0 var(--space-sm);
-    color: var(--paragraph-subtitle);
-    font-size: var(--font-size-sm);
   }
 
   .section-intro {
@@ -246,55 +189,5 @@ const sections = [
 
   .assets-grid {
     margin-bottom: var(--space-2xl);
-  }
-
-  .asset-preview {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: var(--space-xl);
-    margin-bottom: var(--space-lg);
-    background: repeating-conic-gradient(#e4e1e9 0% 25%, #f9f7fc 0% 50%) 50% /
-      16px 16px;
-    border-radius: var(--radius-md);
-  }
-
-  .asset-preview img {
-    max-width: 100%;
-    max-height: 6rem;
-    object-fit: contain;
-  }
-
-  .asset-header {
-    margin-bottom: var(--space-lg);
-  }
-
-  .asset-header h3 {
-    margin: 0 0 0.25rem;
-    font-size: var(--font-size-lg);
-    font-weight: var(--font-weight-semibold);
-  }
-
-  .asset-header p {
-    margin: 0;
-    color: var(--paragraph-subtitle);
-    font-size: var(--font-size-sm);
-  }
-
-  .variant-label {
-    font-size: var(--font-size-sm);
-    color: var(--paragraph-main);
-    font-weight: var(--font-weight-medium);
-    min-width: 10rem;
-  }
-
-  .size-link {
-    font-size: var(--font-size-sm);
-  }
-
-  .vector-download {
-    margin-top: var(--space-lg);
-    padding-top: var(--space-md);
-    border-top: 1px solid var(--border-color);
   }
 </style>

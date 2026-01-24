@@ -1,0 +1,32 @@
+---
+import TOCItem from "@/components/ui/TOCItem.astro";
+import type { ImageMetadata } from "astro";
+
+interface Props {
+  filterId: string;
+  highlight: string;
+  icon: ImageMetadata;
+  title: string;
+  subtitle: string;
+}
+
+const { filterId, highlight, icon, title, subtitle } = Astro.props;
+---
+
+<label for={filterId} class="filter-option" data-highlight={highlight}>
+  <TOCItem icon={icon} title={title} subtitle={subtitle} tag="span" />
+</label>
+
+<style>
+  .filter-option {
+    display: flex;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    background: var(--card-hover-color);
+    cursor: pointer;
+  }
+
+  .filter-option:hover {
+    background: var(--card-color);
+  }
+</style>

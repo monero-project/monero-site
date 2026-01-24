@@ -1,6 +1,5 @@
 ---
-import chevronLeft from "@/assets/icons/mask/chevron-left.avif";
-import MaskIcon from "./MaskIcon.astro";
+import BackLink from "./BackLink.astro";
 
 export interface Props {
   title: string;
@@ -17,19 +16,14 @@ const {
   backHref,
   backLabel,
 } = Astro.props;
-
-const rtl = Astro.locals.dir === "rtl";
 ---
 
 <header class="header" data-centered={centered || undefined}>
   {
     backHref && backLabel && (
-      <a href={backHref} class="back">
-        <span class="back-icon">
-          <MaskIcon src={chevronLeft} size="1.125rem" rtl={rtl} />
-        </span>
-        <span class="back-label">{backLabel}</span>
-      </a>
+      <BackLink href={backHref} class="back">
+        {backLabel}
+      </BackLink>
     )
   }
   <h1 class="title">{title}</h1>
@@ -49,36 +43,7 @@ const rtl = Astro.locals.dir === "rtl";
     margin-inline: auto;
   }
   .back {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--space-xs);
     margin-bottom: var(--space-md);
-    font-size: var(--font-size-base);
-    font-weight: var(--font-weight-semibold);
-    color: var(--paragraph-subtitle);
-    text-decoration: none;
-    transition: color 0.15s ease;
-    width: fit-content;
-  }
-  .back:hover {
-    color: var(--monero-orange);
-    text-decoration: none;
-  }
-  .back-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: var(--radius-full);
-    background: var(--card-color);
-    transition: background 0.15s ease;
-  }
-  .back:hover .back-icon {
-    background: var(--card-hover-color);
-  }
-  .back-label {
-    white-space: nowrap;
   }
   .title {
     margin: 0;

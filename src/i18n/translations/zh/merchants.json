@@ -1,16 +1,16 @@
 {
-  "pageTitle": "商家",
-  "hero": {
-    "title": "商家",
-    "subtitle": "接受 Monero 支付的商店和商家。"
-  },
-  "intro": "如果您正在寻找使用 Monero 的地方，以下目录提供了全面的选项列表。请记住在信任他们处理您的资金之前自己做好调查。",
-  "subtitles": {
-    "cryptwerk": "接受 Monero 的商家目录",
-    "monerica": "Monero 循环经济目录",
-    "xmrbazaar": "点对点 Monero 市场",
-    "kycnotme": "查找不需要 KYC 的服务，以获得更好的隐私和数据控制"
-  },
-  "disclaimerTitle": "免责声明",
-  "disclaimer": "此列表仅供参考。Monero 项目不认可、推荐或保证此处列出的任何商家。请始终仔细检查 URL，如果不确定，请先从小额测试开始，使用任何商家的风险由您自己承担。"
+    "pageTitle": "商家",
+    "hero": {
+        "title": "商家",
+        "subtitle": "接受 Monero 支付的商店和商家。"
+    },
+    "intro": "如果您正在寻找使用 Monero 的地方，以下目录提供了全面的选项列表。请记住在信任他们处理您的资金之前自己做好调查。",
+    "subtitles": {
+        "cryptwerk": "接受 Monero 的商家目录",
+        "monerica": "Monero 循环经济目录",
+        "xmrbazaar": "点对点 Monero 市场",
+        "kycnotme": "查找不需要 KYC 的服务，以获得更好的隐私和数据控制"
+    },
+    "disclaimerTitle": "免责声明",
+    "disclaimer": "此列表仅供参考。Monero 项目不认可、推荐或保证此处列出的任何商家。请始终仔细检查 URL，如果不确定，请先从小额测试开始，使用任何商家的风险由您自己承担。"
 }

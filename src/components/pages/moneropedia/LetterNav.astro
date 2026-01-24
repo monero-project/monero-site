@@ -1,0 +1,98 @@
+---
+interface Props {
+  letters: string[];
+  ariaLabel: string;
+}
+
+const { letters, ariaLabel } = Astro.props;
+---
+
+<nav class="letter-nav" aria-label={ariaLabel}>
+  {
+    letters.map((letter) => (
+      <a class="letter-nav-link" href={`#${letter}`}>
+        {letter}
+      </a>
+    ))
+  }
+</nav>
+
+<style>
+  .letter-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    padding-bottom: var(--space-sm);
+    border-bottom: 1px solid var(--border-color);
+    width: 100%;
+    font-weight: var(--font-weight-semibold);
+  }
+
+  .letter-nav-link {
+    padding: var(--space-xs);
+    border-radius: var(--radius-sm);
+    font-size: var(--font-size-sm);
+    text-decoration: none;
+    color: var(--text-primary);
+    user-select: none;
+  }
+
+  .letter-nav-link:hover {
+    background: var(--card-color);
+  }
+
+  @media (max-width: 1000px) {
+    .letter-nav {
+      --sticky-offset: 6rem;
+
+      flex-direction: column;
+      flex-wrap: nowrap;
+      gap: var(--space-md);
+      padding: 0.5rem 1rem 0.5rem 2rem;
+      margin-inline-start: calc(-1 * var(--space-2xl));
+      border-bottom: unset;
+      border-inline-start: 1px solid var(--border-color);
+      width: auto;
+      position: sticky;
+      top: var(--sticky-offset);
+      align-self: flex-start;
+      max-height: calc(
+        100vh - var(--sticky-offset) - calc(var(--sticky-offset) / 2)
+      );
+      margin-bottom: var(--space-xl);
+      overflow: hidden auto;
+      overscroll-behavior: contain;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-gutter: stable;
+      mask-image: linear-gradient(
+        180deg,
+        transparent 0,
+        #000 1rem,
+        #000 calc(100% - 1rem),
+        transparent 100%
+      );
+      mask-mode: alpha;
+      scrollbar-width: thin;
+      scrollbar-color: var(--monero-orange) transparent;
+    }
+
+    .letter-nav::-webkit-scrollbar {
+      width: var(--space-2xs);
+    }
+
+    .letter-nav::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .letter-nav::-webkit-scrollbar-thumb {
+      background: var(--monero-orange);
+      border-radius: var(--radius-full);
+    }
+
+    .letter-nav-link {
+      padding: var(--space-2xs) var(--space-xs);
+      font-size: var(--font-size-sm);
+      text-align: center;
+    }
+  }
+</style>

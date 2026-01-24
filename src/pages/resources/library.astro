@@ -1,9 +1,8 @@
 ---
 import BookCard from "@/components/pages/resources/library/BookCard.astro";
-import Card from "@/components/ui/Card.astro";
+import CheatsheetCard from "@/components/pages/resources/library/CheatsheetCard.astro";
 import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro";
 import Grid from "@/components/ui/Grid.astro";
-import MaskIcon from "@/components/ui/MaskIcon.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
 import PageSection from "@/components/ui/PageSection.astro";
 import Column from "@/components/ui/Column.astro";
@@ -11,7 +10,6 @@ import TitleCard from "@/components/ui/TitleCard.astro";
 import TOCContainer from "@/components/ui/TOCContainer.astro";
 import Layout from "@/layouts/Layout.astro";
 
-import arrowRightIcon from "@/assets/icons/mask/arrow-right.avif";
 import bookTextIcon from "@/assets/icons/mask/bookText.avif";
 import mailsIcon from "@/assets/icons/mask/mails.avif";
 import receiptTextIcon from "@/assets/icons/mask/receiptText.avif";
@@ -90,30 +88,13 @@ const sections = [
       <Grid minWidth="16rem" gap="md">
         {
           cheatsheets.map((sheet) => (
-            <Card
-              as="a"
-              href={sheet.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              padding="none"
-              hover
-              class="cheatsheet-card"
-            >
-              <div class="cheatsheet-visual">
-                <MaskIcon src={receiptTextIcon} size="2.5rem" />
-              </div>
-              <div class="cheatsheet-content">
-                <h4 class="cheatsheet-title">{sheet.title}</h4>
-                <p class="cheatsheet-description">{sheet.description}</p>
-              </div>
-              <div class="cheatsheet-action">
-                <MaskIcon
-                  src={arrowRightIcon}
-                  size="1.25em"
-                  rtl={dir === "rtl"}
-                />
-              </div>
-            </Card>
+            <CheatsheetCard
+              url={sheet.url}
+              title={sheet.title}
+              description={sheet.description}
+              icon={receiptTextIcon}
+              rtl={dir === "rtl"}
+            />
           ))
         }
       </Grid>
@@ -158,48 +139,5 @@ const sections = [
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-semibold);
     color: var(--heading-color);
-  }
-
-  .cheatsheet-card {
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-  }
-
-  .cheatsheet-visual {
-    background: var(--background-color);
-    padding: var(--space-xl);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--monero-orange);
-  }
-
-  .cheatsheet-content {
-    flex: 1;
-    padding: var(--space-md) var(--space-lg);
-  }
-
-  .cheatsheet-title {
-    margin: 0 0 var(--space-2xs);
-    font-size: var(--font-size-base);
-    font-weight: var(--font-weight-semibold);
-    color: var(--heading-color);
-  }
-
-  .cheatsheet-description {
-    margin: 0;
-    font-size: var(--font-size-sm);
-    color: var(--paragraph-subtitle);
-    line-height: var(--line-height-body);
-  }
-
-  .cheatsheet-action {
-    padding: var(--space-sm) var(--space-lg);
-    border-top: 1px solid var(--border-color);
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    color: var(--monero-orange);
   }
 </style>

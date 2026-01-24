@@ -1,85 +1,85 @@
 {
-  "pageTitle": "مجموعة الصحافة",
-  "title": "مجموعة الصحافة",
-  "subtitle": "اتصالات الصحافة، أصول العلامة التجارية، وموارد الإعلام للصحفيين ومنشئي المحتوى.",
-  "description": "اتصالات الصحافة، أصول العلامة التجارية، وموارد الإعلام لـ Monero.",
-  "sections": {
-    "brandAssets": {
-      "title": "أصول العلامة التجارية",
-      "tocSubtitle": "الشعارات والرموز",
-      "intro": "قم بتنزيل شعارات Monero الرسمية والرموز. خيارات الخلفية البيضاء لها خلفية بيضاء تحت رمز Monero فقط.",
-      "downloadVector": "تنزيل المتجه (.ai)",
-      "downloadAll": "تنزيل جميع الأصول (.zip)"
+    "pageTitle": "مجموعة الصحافة",
+    "title": "مجموعة الصحافة",
+    "subtitle": "اتصالات الصحافة، أصول العلامة التجارية، وموارد الإعلام للصحفيين ومنشئي المحتوى.",
+    "description": "اتصالات الصحافة، أصول العلامة التجارية، وموارد الإعلام لـ Monero.",
+    "sections": {
+        "brandAssets": {
+            "title": "أصول العلامة التجارية",
+            "tocSubtitle": "الشعارات والرموز",
+            "intro": "قم بتنزيل شعارات Monero الرسمية والرموز. خيارات الخلفية البيضاء لها خلفية بيضاء تحت رمز Monero فقط.",
+            "downloadVector": "تنزيل المتجه (.ai)",
+            "downloadAll": "تنزيل جميع الأصول (.zip)"
+        },
+        "pressMaterials": {
+            "title": "مواد الصحافة",
+            "tocSubtitle": "التوثيق والموارد",
+            "pressDocumentation": "توثيق الصحافة",
+            "marketingMaterials": "مواد التسويق"
+        },
+        "contacts": {
+            "title": "الاتصالات",
+            "tocSubtitle": "الوصول إلى مجتمع Monero",
+            "pressInquiries": {
+                "title": "استفسارات الصحافة",
+                "description": "للأسئلة المتعلقة بالإعلام والصحافة:"
+            },
+            "workgroups": {
+                "title": "مجموعات العمل",
+                "description": "اتصل بمجموعات عمل Monero المحددة:",
+                "link": "عرض مجموعات العمل"
+            },
+            "community": {
+                "title": "المجتمع",
+                "description": "الوصول إلى المجتمعات الفرعية المتنوعة:",
+                "link": "أماكن تجمع المجتمع"
+            }
+        }
     },
-    "pressMaterials": {
-      "title": "مواد الصحافة",
-      "tocSubtitle": "التوثيق والموارد",
-      "pressDocumentation": "توثيق الصحافة",
-      "marketingMaterials": "مواد التسويق"
+    "assets": {
+        "moneroSymbol": {
+            "name": "رمز Monero",
+            "description": "رمز 'M' الخاص بـ Monero للاستخدام في الأيقونات والمساحات المدمجة."
+        },
+        "moneroLogo": {
+            "name": "شعار Monero",
+            "description": "شعار Monero الكامل مع العلامة النصية للاستخدام العام."
+        },
+        "variants": {
+            "transparent": "شفاف",
+            "whiteBackground": "خلفية بيضاء"
+        },
+        "sizes": {
+            "small": "صغير",
+            "medium": "متوسط",
+            "large": "كبير"
+        }
     },
-    "contacts": {
-      "title": "الاتصالات",
-      "tocSubtitle": "الوصول إلى مجتمع Monero",
-      "pressInquiries": {
-        "title": "استفسارات الصحافة",
-        "description": "للأسئلة المتعلقة بالإعلام والصحافة:"
-      },
-      "workgroups": {
-        "title": "مجموعات العمل",
-        "description": "اتصل بمجموعات عمل Monero المحددة:",
-        "link": "عرض مجموعات العمل"
-      },
-      "community": {
-        "title": "المجتمع",
-        "description": "الوصول إلى المجتمعات الفرعية المتنوعة:",
-        "link": "أماكن تجمع المجتمع"
-      }
+    "documents": {
+        "quickFacts": {
+            "title": "ورقة الحقائق السريعة",
+            "description": "كل شيء عن Monero: التاريخ، العوامل المميزة الرئيسية، الأساسيات التقنية، والميزات قيد التطوير."
+        },
+        "timeline": {
+            "title": "الجدول الزمني لـ Monero",
+            "description": "جدول زمني للتطورات الرئيسية في تاريخ Monero."
+        }
+    },
+    "marketing": {
+        "dontBuySticker": {
+            "title": "ملصق لا تشتري Monero",
+            "description": "انشر Monero في كل مكان مع هذا الملصق. متوفر بلغات وتنسيقات متعددة."
+        },
+        "promotionalGraphics": {
+            "title": "رسومات ترويجية",
+            "description": "شارات وملصقات للمواقع الإلكترونية أنشأها TheMonera للتجار والمتحمسين."
+        },
+        "graphicsCollection": {
+            "title": "مجموعة رسومات Monero",
+            "description": "ملصقات ورسوم توضيحية وخلفيات وملصقات يمكن لأي شخص استخدامها."
+        }
+    },
+    "aria": {
+        "sectionsNav": "تنقل أقسام مجموعة الصحافة"
     }
-  },
-  "assets": {
-    "moneroSymbol": {
-      "name": "رمز Monero",
-      "description": "رمز 'M' الخاص بـ Monero للاستخدام في الأيقونات والمساحات المدمجة."
-    },
-    "moneroLogo": {
-      "name": "شعار Monero",
-      "description": "شعار Monero الكامل مع العلامة النصية للاستخدام العام."
-    },
-    "variants": {
-      "transparent": "شفاف",
-      "whiteBackground": "خلفية بيضاء"
-    },
-    "sizes": {
-      "small": "صغير",
-      "medium": "متوسط",
-      "large": "كبير"
-    }
-  },
-  "documents": {
-    "quickFacts": {
-      "title": "ورقة الحقائق السريعة",
-      "description": "كل شيء عن Monero: التاريخ، العوامل المميزة الرئيسية، الأساسيات التقنية، والميزات قيد التطوير."
-    },
-    "timeline": {
-      "title": "الجدول الزمني لـ Monero",
-      "description": "جدول زمني للتطورات الرئيسية في تاريخ Monero."
-    }
-  },
-  "marketing": {
-    "dontBuySticker": {
-      "title": "ملصق لا تشتري Monero",
-      "description": "انشر Monero في كل مكان مع هذا الملصق. متوفر بلغات وتنسيقات متعددة."
-    },
-    "promotionalGraphics": {
-      "title": "رسومات ترويجية",
-      "description": "شارات وملصقات للمواقع الإلكترونية أنشأها TheMonera للتجار والمتحمسين."
-    },
-    "graphicsCollection": {
-      "title": "مجموعة رسومات Monero",
-      "description": "ملصقات ورسوم توضيحية وخلفيات وملصقات يمكن لأي شخص استخدامها."
-    }
-  },
-  "aria": {
-    "sectionsNav": "تنقل أقسام مجموعة الصحافة"
-  }
 }

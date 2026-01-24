@@ -1,0 +1,69 @@
+---
+import Row from "@/components/ui/Row.astro";
+
+interface Props {
+  note: string;
+  openAliasLabel: string;
+  openAliasValue: string;
+  contactLabel: string;
+  contactEmail: string;
+}
+
+const { note, openAliasLabel, openAliasValue, contactLabel, contactEmail } =
+  Astro.props;
+---
+
+<footer class="fund-footer">
+  <p class="fund-note">{note}</p>
+  <Row gap="2xl" class="fund-meta">
+    <span class="meta-item">
+      <strong>{openAliasLabel}</strong>
+      <code>{openAliasValue}</code>
+    </span>
+    <span class="meta-item">
+      <strong>{contactLabel}</strong>
+      <a href={`mailto:${contactEmail}`}>{contactEmail}</a>
+    </span>
+  </Row>
+</footer>
+
+<style>
+  .fund-footer {
+    margin-top: var(--space-xl);
+  }
+
+  .fund-note {
+    margin: 0 0 var(--space-md);
+    font-size: var(--font-size-sm);
+    color: var(--paragraph-subtitle);
+    line-height: var(--line-height-body);
+  }
+
+  .fund-meta {
+    font-size: var(--font-size-sm);
+    color: var(--paragraph-subtitle);
+  }
+
+  .meta-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  .meta-item strong {
+    color: var(--paragraph-main);
+    font-weight: var(--font-weight-semibold);
+  }
+
+  .meta-item code {
+    background: var(--card-color);
+    padding: 0.2em 0.5em;
+    border-radius: var(--radius-sm);
+    font-size: 0.9em;
+    color: var(--heading-color);
+  }
+
+  .meta-item a {
+    font-weight: var(--font-weight-medium);
+  }
+</style>

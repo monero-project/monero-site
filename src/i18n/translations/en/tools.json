@@ -1,95 +1,95 @@
 {
-  "index": {
-    "pageTitle": "Monero Tools",
-    "title": "Monero Tools",
-    "subtitle": "Find the right tool for what you're trying to do.",
-    "description": "Find the right Monero tool for what you're trying to do - explore the blockchain, build applications, or accept payments.",
-    "itemsCount": "{{num}} items"
-  },
-  "explore": {
-    "pageTitle": "Explore Monero",
-    "title": "Explore",
-    "subtitle": "Block explorers, network monitors, and utilities for browsing the Monero blockchain.",
-    "sections": {
-      "blockExplorers": {
-        "title": "Block Explorers",
-        "subtitle": "View transactions, blocks, and on-chain data."
-      },
-      "network": {
-        "title": "Network & Nodes",
-        "subtitle": "Monitor the network, find nodes, and visualize activity."
-      },
-      "utilities": {
-        "title": "Utilities",
-        "subtitle": "Wallet generators, price comparisons, statistics, and archives."
-      }
+    "index": {
+        "pageTitle": "Monero Tools",
+        "title": "Monero Tools",
+        "subtitle": "Find the right tool for what you're trying to do.",
+        "description": "Find the right Monero tool for what you're trying to do - explore the blockchain, build applications, or accept payments.",
+        "itemsCount": "{{num}} items"
     },
-    "tools": {
-      "blockExplorers": {
-        "p2poolObserver": "Unconventional explorer with miner proof verification (hides uncontested blocks)",
-        "p2poolIo": "Traditional Monero block explorer",
-        "moneroHash": "Popular Monero block explorer",
-        "xmrchain": "Popular open-source Monero block explorer",
-        "localMonero": "Block explorer by LocalMonero",
-        "monerowat": "Monero block explorer",
-        "xmrmx": "Monero block explorer"
-      },
-      "network": {
-        "moneroFail": "Comprehensive node list and network map",
-        "ditatompel": "Monero remote node list",
-        "moneroHashNodes": "Interactive Monero node map",
-        "txStreet": "Live transaction and block visualizer",
-        "nowNodes": "Blockchain node APIs for developers",
-        "getBlock": "Blockchain nodes provider"
-      },
-      "utilities": {
-        "llcoins": "Offline wallet and address generator",
-        "monerotech": "Tool to inspect wallet keys and addresses",
-        "moneroHow": "Statistics and educational resources",
-        "moneroLogs": "Archive of Monero IRC channels"
-      }
+    "explore": {
+        "pageTitle": "Explore Monero",
+        "title": "Explore",
+        "subtitle": "Block explorers, network monitors, and utilities for browsing the Monero blockchain.",
+        "sections": {
+            "blockExplorers": {
+                "title": "Block Explorers",
+                "subtitle": "View transactions, blocks, and on-chain data."
+            },
+            "network": {
+                "title": "Network & Nodes",
+                "subtitle": "Monitor the network, find nodes, and visualize activity."
+            },
+            "utilities": {
+                "title": "Utilities",
+                "subtitle": "Wallet generators, price comparisons, statistics, and archives."
+            }
+        },
+        "tools": {
+            "blockExplorers": {
+                "p2poolObserver": "Unconventional explorer with miner proof verification (hides uncontested blocks)",
+                "p2poolIo": "Traditional Monero block explorer",
+                "moneroHash": "Popular Monero block explorer",
+                "xmrchain": "Popular open-source Monero block explorer",
+                "localMonero": "Block explorer by LocalMonero",
+                "monerowat": "Monero block explorer",
+                "xmrmx": "Monero block explorer"
+            },
+            "network": {
+                "moneroFail": "Comprehensive node list and network map",
+                "ditatompel": "Monero remote node list",
+                "moneroHashNodes": "Interactive Monero node map",
+                "txStreet": "Live transaction and block visualizer",
+                "nowNodes": "Blockchain node APIs for developers",
+                "getBlock": "Blockchain nodes provider"
+            },
+            "utilities": {
+                "llcoins": "Offline wallet and address generator",
+                "monerotech": "Tool to inspect wallet keys and addresses",
+                "moneroHow": "Statistics and educational resources",
+                "moneroLogs": "Archive of Monero IRC channels"
+            }
+        },
+        "disclaimer": {
+            "title": "Disclaimer",
+            "text": "These links are provided for informational purposes only and do not constitute an endorsement by the Monero community. To suggest a tool, ",
+            "linkText": "open a GitHub issue"
+        }
     },
-    "disclaimer": {
-      "title": "Disclaimer",
-      "text": "These links are provided for informational purposes only and do not constitute an endorsement by the Monero community. To suggest a tool, ",
-      "linkText": "open a GitHub issue"
+    "develop": {
+        "pageTitle": "Develop with Monero",
+        "title": "Develop",
+        "subtitle": "Libraries and SDKs for integrating Monero into your applications.",
+        "tools": {
+            "moneroTs": "TypeScript/JavaScript library for Node.js and browsers",
+            "moneroPython": "Python library with RPC and native bindings",
+            "moneroOxide": "Rust implementation of the Monero blockchain protocol",
+            "moneroJava": "Java library for Monero wallet and daemon RPC",
+            "moneroCpp": "C++ library for Monero wallet and daemon",
+            "monerophp": "PHP library for Monero wallet RPC",
+            "goMoneroRpc": "Go client for Monero wallet and daemon RPC"
+        },
+        "disclaimer": {
+            "title": "Disclaimer",
+            "text": "These links are provided for informational purposes only and do not constitute an endorsement by the Monero community. To suggest a library, ",
+            "linkText": "open a GitHub issue"
+        }
+    },
+    "accept": {
+        "pageTitle": "Accept Monero Payments",
+        "title": "Accept Payments",
+        "subtitle": "Payment processors and plugins for accepting Monero on your website or store.",
+        "tools": {
+            "btcPayServer": "Self-hosted, open-source payment processor",
+            "nowPayments": "Non-custodial crypto payment gateway",
+            "bitcart": "Open-source cryptocurrency payment platform",
+            "coinPayments": "Multi-cryptocurrency payment gateway",
+            "cryptoWoo": "WooCommerce Monero plugin",
+            "moneroWooCommerce": "PHP extension for WooCommerce stores"
+        },
+        "disclaimer": {
+            "title": "Disclaimer",
+            "text": "These links are provided for informational purposes only and do not constitute an endorsement by the Monero community. To suggest a payment gateway, ",
+            "linkText": "open a GitHub issue"
+        }
     }
-  },
-  "develop": {
-    "pageTitle": "Develop with Monero",
-    "title": "Develop",
-    "subtitle": "Libraries and SDKs for integrating Monero into your applications.",
-    "tools": {
-      "moneroTs": "TypeScript/JavaScript library for Node.js and browsers",
-      "moneroPython": "Python library with RPC and native bindings",
-      "moneroOxide": "Rust implementation of the Monero blockchain protocol",
-      "moneroJava": "Java library for Monero wallet and daemon RPC",
-      "moneroCpp": "C++ library for Monero wallet and daemon",
-      "monerophp": "PHP library for Monero wallet RPC",
-      "goMoneroRpc": "Go client for Monero wallet and daemon RPC"
-    },
-    "disclaimer": {
-      "title": "Disclaimer",
-      "text": "These links are provided for informational purposes only and do not constitute an endorsement by the Monero community. To suggest a library, ",
-      "linkText": "open a GitHub issue"
-    }
-  },
-  "accept": {
-    "pageTitle": "Accept Monero Payments",
-    "title": "Accept Payments",
-    "subtitle": "Payment processors and plugins for accepting Monero on your website or store.",
-    "tools": {
-      "btcPayServer": "Self-hosted, open-source payment processor",
-      "nowPayments": "Non-custodial crypto payment gateway",
-      "bitcart": "Open-source cryptocurrency payment platform",
-      "coinPayments": "Multi-cryptocurrency payment gateway",
-      "cryptoWoo": "WooCommerce Monero plugin",
-      "moneroWooCommerce": "PHP extension for WooCommerce stores"
-    },
-    "disclaimer": {
-      "title": "Disclaimer",
-      "text": "These links are provided for informational purposes only and do not constitute an endorsement by the Monero community. To suggest a payment gateway, ",
-      "linkText": "open a GitHub issue"
-    }
-  }
 }

@@ -1,0 +1,175 @@
+---
+import type { ImageMetadata } from "astro";
+import Card from "@/components/ui/Card.astro";
+import MaskIcon from "@/components/ui/MaskIcon.astro";
+
+interface Project {
+  title: string;
+  description: string;
+  tags: string[];
+  href: string;
+  icon: ImageMetadata;
+}
+
+interface Props {
+  projects: Project[];
+  headers: {
+    project: string;
+    description: string;
+    stack: string;
+    visit: string;
+  };
+}
+
+const { projects, headers } = Astro.props;
+---
+
+<Card padding="none">
+  <table class="projects-table">
+    <thead class="table-head">
+      <tr>
+        <th scope="col">{headers.project}</th>
+        <th scope="col">{headers.description}</th>
+        <th scope="col">{headers.stack}</th>
+        <th scope="col" class="th-link">
+          <span class="sr-only">{headers.visit}</span>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        projects.map((project) => (
+          <tr class="project-row">
+            <td class="cell-project">
+              <span class="project-icon">
+                <MaskIcon src={project.icon} size="1rem" />
+              </span>
+              <span class="project-name">{project.title}</span>
+            </td>
+            <td class="cell-desc">{project.description}</td>
+            <td class="cell-stack">
+              {project.tags.map((tag) => (
+                <span class="tag">{tag}</span>
+              ))}
+            </td>
+            <td class="cell-link">
+              <a
+                href={project.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="visit-link"
+              >
+                {headers.visit}
+              </a>
+            </td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</Card>
+
+<style>
+  .cell-stack {
+    display: none;
+    width: 8rem;
+    white-space: nowrap;
+  }
+
+  .cell-link,
+  .th-link {
+    width: 1%;
+    white-space: nowrap;
+    text-align: end;
+  }
+
+  .project-row {
+    transition: background 0.15s ease;
+  }
+
+  .project-row:hover {
+    background: var(--card-hover-color);
+  }
+
+  .cell-project {
+    white-space: nowrap;
+  }
+
+  .project-icon {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: var(--radius-md);
+    background: color-mix(in srgb, var(--monero-orange) 12%, transparent);
+    color: var(--monero-orange);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    margin-inline-end: var(--space-sm);
+  }
+
+  .project-name {
+    font-weight: var(--font-weight-semibold);
+    color: var(--heading-color);
+    vertical-align: middle;
+  }
+
+  .cell-desc {
+    display: none;
+    color: var(--paragraph-subtitle);
+    line-height: 1.4;
+  }
+
+  .projects-table th:nth-child(2),
+  .projects-table th:nth-child(3) {
+    display: none;
+  }
+
+  .tag {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    background: var(--border-color);
+    border-radius: var(--radius-xl);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    color: var(--paragraph-subtitle);
+  }
+
+  .tag + .tag {
+    margin-inline-start: 0.375rem;
+  }
+
+  .visit-link {
+    font-weight: var(--font-weight-medium);
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  @media (min-width: 600px) {
+    .cell-stack,
+    .projects-table th:nth-child(3) {
+      display: table-cell;
+    }
+  }
+
+  @media (min-width: 900px) {
+    .cell-desc,
+    .projects-table th:nth-child(2) {
+      display: table-cell;
+    }
+
+    .projects-table :is(th, td):not(:first-child) {
+      padding-inline: var(--space-lg);
+    }
+  }
+</style>

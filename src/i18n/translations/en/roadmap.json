@@ -1,112 +1,112 @@
 {
-  "pageTitle": "Roadmap",
-  "hero": {
-    "title": "Roadmap",
-    "subtitle": "Track Monero's development progress and upcoming features."
-  },
-  "status": {
-    "inProgress": "In Progress",
-    "upcoming": "Upcoming",
-    "proposed": "Proposed"
-  },
-  "items": {
-    "fcmp": {
-      "title": "Full-Chain Membership Proofs",
-      "description": "Privacy upgrade replacing ring signatures with a new ZKP system."
+    "pageTitle": "Roadmap",
+    "hero": {
+        "title": "Roadmap",
+        "subtitle": "Track Monero's development progress and upcoming features."
     },
-    "cuprate": {
-      "title": "Cuprate",
-      "description": "A Rust implementation of the Monero node."
+    "status": {
+        "inProgress": "In Progress",
+        "upcoming": "Upcoming",
+        "proposed": "Proposed"
     },
-    "newSite": {
-      "title": "New getmonero.org",
-      "description": "Complete redesign and modernization of the official website."
+    "items": {
+        "fcmp": {
+            "title": "Full-Chain Membership Proofs",
+            "description": "Privacy upgrade replacing ring signatures with a new ZKP system."
+        },
+        "cuprate": {
+            "title": "Cuprate",
+            "description": "A Rust implementation of the Monero node."
+        },
+        "newSite": {
+            "title": "New getmonero.org",
+            "description": "Complete redesign and modernization of the official website."
+        },
+        "randomxV2": {
+            "title": "RandomX V2",
+            "description": "Next iteration of Monero's proof-of-work algorithm to improve ASIC resistance."
+        },
+        "bulletproofsPP": {
+            "title": "Bulletproofs++",
+            "description": "Next generation range proofs for smaller, faster transactions."
+        },
+        "seraphis": {
+            "title": "Seraphis & Jamtis",
+            "description": "New transaction protocol with improved privacy and functionality."
+        },
+        "ospead": {
+            "title": "OSPEAD",
+            "description": "Optimal Static Parametric Estimation of Arbitrary Distributions for decoy selection."
+        },
+        "mrlResearch": {
+            "title": "MRL Research Tasks",
+            "description": "Various research initiatives proposed by Monero Research Lab."
+        }
     },
-    "randomxV2": {
-      "title": "RandomX V2",
-      "description": "Next iteration of Monero's proof-of-work algorithm to improve ASIC resistance."
+    "history": {
+        "title": "History",
+        "months": {
+            "january": "January",
+            "february": "February",
+            "march": "March",
+            "april": "April",
+            "may": "May",
+            "june": "June",
+            "july": "July",
+            "august": "August",
+            "september": "September",
+            "october": "October",
+            "november": "November",
+            "december": "December"
+        },
+        "events": {
+            "havenoDex": "HavenoDEX released",
+            "xmrBchSwap": "XMR-BCH atomic swap completed",
+            "lwsSubaddress": "Light Wallet Server subaddress support",
+            "ethSwaps": "Monero ↔ Ethereum Atomic Swaps",
+            "blockProp": "Block propagation delay reduced, tx_extra limited, wallet speedups",
+            "v15Hardfork": "Network upgrade v15 Hardfork",
+            "fluorineFermi": "CLI and GUI 0.18 'Fluorine Fermi' released",
+            "viewTags": "View tags: +40% wallet sync speed improvement",
+            "p2pool": "P2Pool released",
+            "btcSwaps": "Monero ↔ Bitcoin atomic swaps",
+            "onionAddress": "Onion address for getmonero.org",
+            "clsag": "CLSAG signatures implemented",
+            "oxygenOrion": "CLI and GUI 0.17 'Oxygen Orion' released",
+            "v0160": "CLI and GUI 0.16.0.0 released",
+            "dandelion": "Dandelion++ protocol implemented",
+            "randomx": "RandomX proof of work algorithm",
+            "ipv6": "IPv6 support",
+            "paymentIdRemoved": "Standalone payment ID removed",
+            "pruning": "Blockchain pruning",
+            "hwSupport2019": "Trezor Model T & Ledger Nano X support",
+            "torI2p": "Tor & I2P CLI wallet integration",
+            "ccs": "Community Crowdfunding System (CCS) launched",
+            "cryptonightR": "CryptoNightR proof of work",
+            "bulletproofs": "Bulletproofs implemented",
+            "ringSize11": "Ring size increased to 11",
+            "berylliumBullet": "0.13 'Beryllium Bullet' released",
+            "kovri": "Kovri alpha release",
+            "ledgerSupport": "Ledger hardware wallet support",
+            "multisigSubaddress": "Multisig & subaddresses in network upgrade",
+            "guiRelease2018": "Official GUI released",
+            "multisig": "Multi-signatures (multisig)",
+            "subaddresses": "Subaddresses",
+            "fluffyBlocks": "Fluffy blocks",
+            "guiOutOfBeta": "GUI out of beta",
+            "ringSize5": "Ring size increased to 5, RingCT required",
+            "ringctEnabled": "RingCT transactions enabled",
+            "guiBeta": "Official GUI Beta 1 released",
+            "wolframWarptangent": "0.10.0 'Wolfram Warptangent' released",
+            "ringSize3": "Minimum ring size of 3 required",
+            "hydrogenHelix": "0.9.0 'Hydrogen Helix' released",
+            "spamAttack": "Recovered from spam attack",
+            "mrlPapers": "Monero Research Lab Papers 1-3 published",
+            "bitcointalk": "Launched on Bitcointalk",
+            "renamed": "Renamed from Bitmonero to Monero"
+        }
     },
-    "bulletproofsPP": {
-      "title": "Bulletproofs++",
-      "description": "Next generation range proofs for smaller, faster transactions."
-    },
-    "seraphis": {
-      "title": "Seraphis & Jamtis",
-      "description": "New transaction protocol with improved privacy and functionality."
-    },
-    "ospead": {
-      "title": "OSPEAD",
-      "description": "Optimal Static Parametric Estimation of Arbitrary Distributions for decoy selection."
-    },
-    "mrlResearch": {
-      "title": "MRL Research Tasks",
-      "description": "Various research initiatives proposed by Monero Research Lab."
+    "aria": {
+        "kanban": "Development status"
     }
-  },
-  "history": {
-    "title": "History",
-    "months": {
-      "january": "January",
-      "february": "February",
-      "march": "March",
-      "april": "April",
-      "may": "May",
-      "june": "June",
-      "july": "July",
-      "august": "August",
-      "september": "September",
-      "october": "October",
-      "november": "November",
-      "december": "December"
-    },
-    "events": {
-      "havenoDex": "HavenoDEX released",
-      "xmrBchSwap": "XMR-BCH atomic swap completed",
-      "lwsSubaddress": "Light Wallet Server subaddress support",
-      "ethSwaps": "Monero ↔ Ethereum Atomic Swaps",
-      "blockProp": "Block propagation delay reduced, tx_extra limited, wallet speedups",
-      "v15Hardfork": "Network upgrade v15 Hardfork",
-      "fluorineFermi": "CLI and GUI 0.18 'Fluorine Fermi' released",
-      "viewTags": "View tags: +40% wallet sync speed improvement",
-      "p2pool": "P2Pool released",
-      "btcSwaps": "Monero ↔ Bitcoin atomic swaps",
-      "onionAddress": "Onion address for getmonero.org",
-      "clsag": "CLSAG signatures implemented",
-      "oxygenOrion": "CLI and GUI 0.17 'Oxygen Orion' released",
-      "v0160": "CLI and GUI 0.16.0.0 released",
-      "dandelion": "Dandelion++ protocol implemented",
-      "randomx": "RandomX proof of work algorithm",
-      "ipv6": "IPv6 support",
-      "paymentIdRemoved": "Standalone payment ID removed",
-      "pruning": "Blockchain pruning",
-      "hwSupport2019": "Trezor Model T & Ledger Nano X support",
-      "torI2p": "Tor & I2P CLI wallet integration",
-      "ccs": "Community Crowdfunding System (CCS) launched",
-      "cryptonightR": "CryptoNightR proof of work",
-      "bulletproofs": "Bulletproofs implemented",
-      "ringSize11": "Ring size increased to 11",
-      "berylliumBullet": "0.13 'Beryllium Bullet' released",
-      "kovri": "Kovri alpha release",
-      "ledgerSupport": "Ledger hardware wallet support",
-      "multisigSubaddress": "Multisig & subaddresses in network upgrade",
-      "guiRelease2018": "Official GUI released",
-      "multisig": "Multi-signatures (multisig)",
-      "subaddresses": "Subaddresses",
-      "fluffyBlocks": "Fluffy blocks",
-      "guiOutOfBeta": "GUI out of beta",
-      "ringSize5": "Ring size increased to 5, RingCT required",
-      "ringctEnabled": "RingCT transactions enabled",
-      "guiBeta": "Official GUI Beta 1 released",
-      "wolframWarptangent": "0.10.0 'Wolfram Warptangent' released",
-      "ringSize3": "Minimum ring size of 3 required",
-      "hydrogenHelix": "0.9.0 'Hydrogen Helix' released",
-      "spamAttack": "Recovered from spam attack",
-      "mrlPapers": "Monero Research Lab Papers 1-3 published",
-      "bitcointalk": "Launched on Bitcointalk",
-      "renamed": "Renamed from Bitmonero to Monero"
-    }
-  },
-  "aria": {
-    "kanban": "Development status"
-  }
 }

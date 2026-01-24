@@ -2,26 +2,25 @@
 import DisclaimerNote from "@/components/ui/DisclaimerNote.astro";
 import PageContainer from "@/components/ui/PageContainer.astro";
 import PageSection from "@/components/ui/PageSection.astro";
-import Column from "@/components/ui/Column.astro";
+import SidebarLayout from "@/components/ui/SidebarLayout.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import Layout from "@/layouts/Layout.astro";
 
 import bankIcon from "@/assets/icons/mask/bank.avif";
-import closeIcon from "@/assets/icons/mask/close.avif";
 import hatGlassesIcon from "@/assets/icons/mask/hat-glasses.avif";
 import rabbitIcon from "@/assets/icons/mask/rabbit.avif";
-import searchIcon from "@/assets/icons/mask/search.avif";
 import shieldIcon from "@/assets/icons/mask/shieldAlert.avif";
-import MaskIcon from "@/components/ui/MaskIcon.astro";
 
 import ExchangeTable from "@/components/pages/get-started/exchanges/ExchangeTable.astro";
+import FilterOption from "@/components/pages/exchanges/FilterOption.astro";
+import FiltersPanel from "@/components/pages/exchanges/FiltersPanel.astro";
+import MobileFilterBar from "@/components/pages/exchanges/MobileFilterBar.astro";
 import DisclaimerBar from "@/components/ui/DisclaimerBar.astro";
 import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro";
-import TOCItem from "@/components/ui/TOCItem.astro";
 
 import exchanges from "@/data/exchanges";
 
-const { dir, t, localizeHref, safeMarkdown } = Astro.locals;
+const { t, localizeHref, safeMarkdown } = Astro.locals;
 
 const highlightOptions = [
   {
@@ -92,138 +91,113 @@ const highlightOptions = [
     />
 
     <div class="exchanges-wrapper">
-      <div class="exchanges-page-layout">
-        <aside class="filters-panel" aria-label={t("exchanges:sidebarTitle")}>
-          <h2 class="filters-title">{t("exchanges:sidebarTitle")}</h2>
-          <p class="filters-description">{t("exchanges:filtersDescription")}</p>
+      <SidebarLayout
+        sidebarPosition="start"
+        aria-label={t("exchanges:aria.pageLayout")}
+        sidebarWidth="25rem"
+      >
+        <FiltersPanel
+          slot="sidebar"
+          title={t("exchanges:sidebarTitle")}
+          description={t("exchanges:filtersDescription")}
+          clearLabel={t("exchanges:clearSelection")}
+          closeLabel={t("common:aria.close")}
+          clearFilterId="filter-none"
+          mobileToggleId="mobile-filter-toggle"
+        >
+          {
+            highlightOptions.map((opt) => (
+              <FilterOption
+                filterId={`filter-${opt.key}`}
+                highlight={opt.highlight}
+                icon={opt.icon}
+                title={opt.title}
+                subtitle={opt.subtitle}
+              />
+            ))
+          }
+        </FiltersPanel>
 
-          <Column gap="md">
-            {
-              highlightOptions.map((opt) => {
-                const filterId = `filter-${opt.key}`;
-                return (
-                  <label
-                    for={filterId}
-                    class="highlight-option"
-                    data-highlight={opt.highlight}
-                  >
-                    <TOCItem
-                      icon={opt.icon}
-                      title={opt.title}
-                      subtitle={opt.subtitle}
-                      tag="span"
-                    />
-                  </label>
-                );
-              })
-            }
+        <PageSection
+          title={t("exchanges:sections.decentralized.title")}
+          subtitle={t("exchanges:sections.decentralized.description")}
+          anchorId="decentralized"
+        >
+          <ExchangeTable
+            exchanges={exchanges.decentralizedExchanges}
+            hasKyc={false}
+          />
+        </PageSection>
 
-            <div class="clear-highlights">
-              <label
-                for="filter-none"
-                class="clear-highlights-link clear-highlights-label"
-              >
-                {t("exchanges:clearSelection")}
-              </label>
-            </div>
+        <hr aria-hidden="true" />
 
-            <label for="mobile-filter-toggle" class="mobile-filter-close">
-              <MaskIcon src={closeIcon} size="1.25em" aria-hidden="true" />
-              {t("common:aria.close")}
-            </label>
-          </Column>
-        </aside>
+        <PageSection
+          title={t("exchanges:sections.aggregators.title")}
+          subtitle={t("exchanges:sections.aggregators.description")}
+          anchorId="aggregators"
+        >
+          <DisclaimerNote
+            text={t("exchanges:sections.aggregators.disclaimer")}
+          />
+          <p style="color: var(--paragraph-subtitle);">
+            {t("exchanges:sections.aggregators.resourceIntro")}
+          </p>
+          <ExternalResourceButton
+            href="https://kycnot.me/?categories=aggregator&currency-mode=or&currencies=xmr&max-kyc=0"
+            onionHref="http://kycnotmezdiftahfmc34pqbpicxlnx3jbf5p7jypge7gdvduu7i6qjqd.onion/?categories=aggregator&currency-mode=or&currencies=xmr&max-kyc=0"
+            title={t("exchanges:sections.aggregators.resourceBtnTitle")}
+            subtitle={t("exchanges:sections.aggregators.resourceBtnSubtitle")}
+            logo="/media/directories/kycnotme.jpg"
+            data-highlight="user-friendly crypto"
+          />
+          <p
+            style="color: var(--paragraph-subtitle);"
+            set:html={safeMarkdown.parseInline(
+              t("exchanges:sections.aggregators.tip", {
+                communityDownloadsUrl: localizeHref(
+                  "/downloads/community/#built-in-exchange",
+                ),
+              }),
+            )}
+          />
+        </PageSection>
 
-        <div class="main-content">
-          <PageSection
-            title={t("exchanges:sections.decentralized.title")}
-            subtitle={t("exchanges:sections.decentralized.description")}
-            anchorId="decentralized"
-          >
-            <ExchangeTable
-              exchanges={exchanges.decentralizedExchanges}
-              hasKyc={false}
-            />
-          </PageSection>
+        <hr aria-hidden="true" />
 
-          <hr aria-hidden="true" />
-
-          <PageSection
-            title={t("exchanges:sections.aggregators.title")}
-            subtitle={t("exchanges:sections.aggregators.description")}
-            anchorId="aggregators"
-          >
-            <DisclaimerNote
-              text={t("exchanges:sections.aggregators.disclaimer")}
-            />
-            <p style="color: var(--paragraph-subtitle);">
-              {t("exchanges:sections.aggregators.resourceIntro")}
-            </p>
-            <ExternalResourceButton
-              href="https://kycnot.me/?categories=aggregator&currency-mode=or&currencies=xmr&max-kyc=0"
-              onionHref="http://kycnotmezdiftahfmc34pqbpicxlnx3jbf5p7jypge7gdvduu7i6qjqd.onion/?categories=aggregator&currency-mode=or&currencies=xmr&max-kyc=0"
-              title={t("exchanges:sections.aggregators.resourceBtnTitle")}
-              subtitle={t("exchanges:sections.aggregators.resourceBtnSubtitle")}
-              logo="/media/directories/kycnotme.jpg"
-              data-highlight="user-friendly crypto"
-            />
-            <p
-              style="color: var(--paragraph-subtitle);"
-              set:html={safeMarkdown.parseInline(
-                t("exchanges:sections.aggregators.tip", {
-                  communityDownloadsUrl: localizeHref(
-                    "/downloads/community/#built-in-exchange",
-                  ),
-                }),
-              )}
-            />
-          </PageSection>
-
-          <hr aria-hidden="true" />
-
-          <PageSection
-            title={t("exchanges:sections.centralized.title")}
-            subtitle={t("exchanges:sections.centralized.description")}
-            anchorId="centralized"
-          >
-            <ExchangeTable
-              exchanges={exchanges.centralizedExchanges}
-              hasKyc={true}
-            />
-          </PageSection>
-        </div>
-      </div>
+        <PageSection
+          title={t("exchanges:sections.centralized.title")}
+          subtitle={t("exchanges:sections.centralized.description")}
+          anchorId="centralized"
+        >
+          <ExchangeTable
+            exchanges={exchanges.centralizedExchanges}
+            hasKyc={true}
+          />
+        </PageSection>
+      </SidebarLayout>
 
       <DisclaimerBar icon={shieldIcon} title={t("exchanges:disclaimerTitle")}>
         {t("exchanges:disclaimer")}
       </DisclaimerBar>
 
-      <div class="mobile-filter-container">
-        <label for="mobile-filter-toggle" class="mobile-filter-bar">
-          <div class="mobile-filter-bar-inner">
-            <MaskIcon
-              src={searchIcon}
-              size="1.25em"
-              aria-hidden="true"
-              rtl={dir == "rtl"}
-            />
-            <Column gap="3xs" align="center">
-              <span>{t("exchanges:sidebarTitle")}</span>
-              <div class="mobile-filter-subtitle">
-                <span class="filter-text" data-filter="easiest"
-                  >{t("exchanges:highlightOptions.selectedText.easiest")}</span
-                >
-                <span class="filter-text" data-filter="fiat"
-                  >{t("exchanges:highlightOptions.selectedText.fiat")}</span
-                >
-                <span class="filter-text" data-filter="privacy"
-                  >{t("exchanges:highlightOptions.selectedText.privacy")}</span
-                >
-              </div>
-            </Column>
-          </div>
-        </label>
-      </div>
+      <MobileFilterBar
+        toggleId="mobile-filter-toggle"
+        title={t("exchanges:sidebarTitle")}
+        filterTexts={[
+          {
+            filter: "easiest",
+            text: t("exchanges:highlightOptions.selectedText.easiest"),
+          },
+          {
+            filter: "fiat",
+            text: t("exchanges:highlightOptions.selectedText.fiat"),
+          },
+          {
+            filter: "privacy",
+            text: t("exchanges:highlightOptions.selectedText.privacy"),
+          },
+        ]}
+      />
     </div>
   </PageContainer>
 </Layout>
@@ -249,53 +223,6 @@ const highlightOptions = [
     border: 0;
   }
 
-  .exchanges-wrapper {
-    position: relative;
-  }
-  .exchanges-page-layout {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-2xl);
-  }
-  .main-content {
-    flex: 1;
-  }
-
-  .filters-title {
-    margin: 0;
-    color: var(--heading-color);
-    font-size: var(--font-size-2xl);
-    font-weight: var(--font-weight-bold);
-  }
-  .filters-description {
-    color: var(--paragraph-subtitle);
-    font-size: var(--font-size-md);
-    margin: 0.75rem 0 var(--space-2xl);
-  }
-
-  .highlight-option {
-    display: flex;
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-md);
-    background: var(--card-hover-color);
-  }
-  .highlight-option:hover {
-    background: var(--card-color);
-  }
-
-  .clear-highlights {
-    text-align: end;
-  }
-  .clear-highlights-link {
-    color: var(--text-secondary);
-    text-decoration: none;
-    font-size: var(--font-size-sm);
-    cursor: pointer;
-  }
-  .clear-highlights-link:hover {
-    text-decoration: underline;
-  }
-
   .filter-toggle {
     position: fixed;
     top: 0;
@@ -306,6 +233,7 @@ const highlightOptions = [
     pointer-events: none;
   }
 
+  /* Filter highlighting */
   #exchange-filters:has(#filter-fiat:checked)
     ~ .exchanges-wrapper
     :global(tr[data-highlight~="fiat"]),
@@ -320,123 +248,43 @@ const highlightOptions = [
 
   #exchange-filters:has(#filter-fiat:checked)
     ~ .exchanges-wrapper
-    .filters-panel
-    .highlight-option[data-highlight~="fiat"],
+    :global(.filter-option[data-highlight~="fiat"]),
   #exchange-filters:has(#filter-privacy:checked)
     ~ .exchanges-wrapper
-    .filters-panel
-    .highlight-option[data-highlight~="privacy"],
+    :global(.filter-option[data-highlight~="privacy"]),
   #exchange-filters:has(#filter-easiest:checked)
     ~ .exchanges-wrapper
-    .filters-panel
-    .highlight-option[data-highlight~="user-friendly"] {
+    :global(.filter-option[data-highlight~="user-friendly"]) {
     background: var(--card-color);
     border-color: var(--monero-orange);
   }
 
   #exchange-filters:has(#filter-easiest:checked)
     ~ .exchanges-wrapper
-    [data-highlight~="user-friendly"]:not(.highlight-option) {
+    :global([data-highlight~="user-friendly"]:not(tr):not(.filter-option)) {
     outline: 2px solid var(--monero-orange);
   }
 
-  .mobile-filter-container {
-    display: block;
-    position: sticky;
-    bottom: 0;
-    margin-top: var(--space-xl);
-    margin-inline: calc(-1 * var(--space-2xl));
-    background-color: var(--bg-color);
-  }
-
-  .mobile-filter-bar {
-    display: block;
-    padding: var(--space-md);
-    background-color: var(--bg-color);
-    border-top: 1px solid var(--border-color);
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.15);
-  }
-
-  .mobile-filter-bar-inner,
-  .mobile-filter-close {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--space-xs);
-    padding: 0.65rem var(--space-md);
-    border-radius: var(--radius-full);
-    background: var(--card-color);
-    border: 1px solid var(--border-color);
-    font-size: var(--font-size-base);
-    font-weight: var(--font-weight-semibold);
-    color: var(--heading-color);
-  }
-
-  .mobile-filter-bar-inner:hover {
-    background: var(--card-hover-color);
-  }
-
-  .mobile-filter-subtitle {
-    font-size: var(--font-size-xs);
-    font-weight: var(--font-weight-normal);
-    color: var(--paragraph-subtitle);
-  }
-
-  .filters-panel {
-    display: block;
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    padding: var(--space-md) var(--space-2xl);
-    padding-top: var(--space-2xl);
-    background: var(--card-color);
-    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-
-    max-height: 75vh;
-    overflow-y: auto;
-    z-index: var(--z-dropdown);
-
-    transform: translateY(100%);
-    transition:
-      transform 0.25s ease-out,
-      visibility 0.25s ease-out;
-    visibility: hidden;
-    margin: 0;
-  }
-
-  .mobile-filter-subtitle {
-    display: none;
-  }
-
+  /* Mobile filter text visibility */
   #exchange-filters:has(:checked:not(#filter-none))
     ~ .exchanges-wrapper
-    .mobile-filter-subtitle {
+    :global(.mobile-filter-subtitle) {
     display: block;
   }
-
-  .filter-text {
-    display: none;
-  }
-
   #exchange-filters:has(#filter-easiest:checked)
     ~ .exchanges-wrapper
-    .mobile-filter-subtitle
-    .filter-text[data-filter="easiest"],
+    :global(.filter-text[data-filter="easiest"]),
   #exchange-filters:has(#filter-fiat:checked)
     ~ .exchanges-wrapper
-    .mobile-filter-subtitle
-    .filter-text[data-filter="fiat"],
+    :global(.filter-text[data-filter="fiat"]),
   #exchange-filters:has(#filter-privacy:checked)
     ~ .exchanges-wrapper
-    .mobile-filter-subtitle
-    .filter-text[data-filter="privacy"] {
+    :global(.filter-text[data-filter="privacy"]) {
     display: inline;
   }
 
   @media not (min-width: 1200px) {
-    #mobile-filter-toggle:checked ~ .exchanges-wrapper .filters-panel {
+    #mobile-filter-toggle:checked ~ .exchanges-wrapper :global(.filters-panel) {
       box-shadow: 0 -8px 16px rgba(0, 0, 0, 0.35);
       transform: translateY(0);
       visibility: visible;
@@ -444,30 +292,6 @@ const highlightOptions = [
   }
 
   @media (min-width: 1200px) {
-    .exchanges-page-layout {
-      flex-direction: row;
-    }
-
-    .filters-panel {
-      position: sticky;
-      top: 2rem;
-      margin-bottom: var(--space-2xl);
-      flex: 0 0 20rem;
-      height: fit-content;
-
-      transform: unset;
-      transition: unset;
-      max-height: unset;
-      overflow-y: unset;
-      visibility: unset;
-      z-index: unset;
-
-      padding: var(--space-2xl);
-      border-radius: var(--radius-md);
-    }
-
-    .mobile-filter-container,
-    .mobile-filter-close,
     #mobile-filter-toggle {
       display: none;
     }

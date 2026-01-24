@@ -1,0 +1,120 @@
+---
+import Button from "@/components/ui/Button.astro";
+import Card from "@/components/ui/Card.astro";
+import Row from "@/components/ui/Row.astro";
+import Column from "@/components/ui/Column.astro";
+import { Image } from "astro:assets";
+import type { BrandAsset } from "@/data/press-kit";
+
+interface Props {
+  asset: BrandAsset;
+  previewWidth: number;
+  previewHeight: number;
+}
+
+const { asset, previewWidth, previewHeight } = Astro.props;
+const { t } = Astro.locals;
+---
+
+<Card>
+  <div class="asset-preview">
+    <Image
+      src={asset.preview}
+      alt=""
+      width={previewWidth}
+      height={previewHeight}
+    />
+  </div>
+
+  <div class="asset-header">
+    <h3>{t(`press-kit:assets.${asset.id}.name`)}</h3>
+    <p>{t(`press-kit:assets.${asset.id}.description`)}</p>
+  </div>
+
+  <Column gap="md">
+    {
+      asset.variants.map((variant) => (
+        <Row gap="xs">
+          <span class="variant-label">
+            {t(`press-kit:assets.variants.${variant.labelKey}`)}
+          </span>
+          <Row gap="md">
+            {variant.sizes.map((size) => (
+              <a
+                href={size.url}
+                class="size-link"
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t(`press-kit:assets.sizes.${size.labelKey}`)}
+              </a>
+            ))}
+          </Row>
+        </Row>
+      ))
+    }
+  </Column>
+
+  {
+    asset.vectorUrl && (
+      <div class="vector-download">
+        <Button as="a" href={asset.vectorUrl} variant="secondary">
+          {t("press-kit:sections.brandAssets.downloadVector")}
+        </Button>
+      </div>
+    )
+  }
+</Card>
+
+<style>
+  .asset-preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-xl);
+    margin-bottom: var(--space-lg);
+    background: repeating-conic-gradient(#e4e1e9 0% 25%, #f9f7fc 0% 50%) 50% /
+      16px 16px;
+    border-radius: var(--radius-md);
+  }
+
+  .asset-preview img {
+    max-width: 100%;
+    max-height: 6rem;
+    object-fit: contain;
+  }
+
+  .asset-header {
+    margin-bottom: var(--space-lg);
+  }
+
+  .asset-header h3 {
+    margin: 0 0 0.25rem;
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+  }
+
+  .asset-header p {
+    margin: 0;
+    color: var(--paragraph-subtitle);
+    font-size: var(--font-size-sm);
+  }
+
+  .variant-label {
+    font-size: var(--font-size-sm);
+    color: var(--paragraph-main);
+    font-weight: var(--font-weight-medium);
+    min-width: 10rem;
+  }
+
+  .size-link {
+    font-size: var(--font-size-sm);
+  }
+
+  .vector-download {
+    margin-top: var(--space-lg);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--border-color);
+  }
+</style>
