@@ -626,6 +626,15 @@ library:
     <li>针对开发人员，工程师，软件架构师等人的对门罗技术基础的介绍</li>
     <li>新项目介绍：防弹证明，科维，多重签名和硬件钱包</li></ul>
     有关完整版，请参见 <a href="https://masteringmonero.com/">Mastering Monero</a> 网站
+  masteringmonerop1: "一本能让你在看似复杂的门罗世界里畅游无阻的指南。"
+  masteringmonerop2: "其中包括:"
+  masteringmoneroul1: "区块链的广泛介绍和隐私的重要性——对不懂技术的用户来说，这是个好的入手点。"
+  masteringmoneroul2: "对比特币的缺点的讨论和门罗币为此提供的具体解决方案。"
+  masteringmoneroul3: "其他用户的小故事（以此来说名门罗是如何保护您的隐私），类比、事例、法律／道德层面的讨论和对于一些关键技术代码的讨论。"
+  masteringmoneroul4: "门罗币的去中心化网络、点对点结构、交易周期和安全原则的详细信息。"
+  masteringmoneroul5: "针对开发人员，工程师，软件架构师等人的对门罗技术基础的介绍"
+  masteringmoneroul6: "新项目介绍：防弹证明，科维，多重签名和硬件钱包"
+  masteringmoneroinfo: "有关完整版，请参见 <a href=\"https://masteringmonero.com/\">Mastering Monero</a> 网站"
 moneropedia:
   add_new_text1: 如果有您想添加或修改的条目，请在
   add_new_link: 这个网页的GitLab存储库中开启一个新问题

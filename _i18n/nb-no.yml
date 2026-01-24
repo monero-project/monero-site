@@ -129,6 +129,15 @@ library:
     \ og nysgjerrige brukere.</li> <li>Nye utviklinger som f.eks. Kovri, Bulletproofs,\
     \ multi-signatur, maskinvare-lommebøker, osv.</li></ul> Se <a href=\"https://masteringmonero.com/\"\
     >Mestring av Monero</a>-nettsiden for mer informasjon.\n"
+  masteringmonerop1: "En veiledning til den tilsynelatende komplekse verden bak Monero."
+  masteringmonerop2: "Det inkluderer:"
+  masteringmoneroul1: "En bred introduksjon til blokkjeder og viktigheten av personvern – ideelt for brukere med lite teknisk kunnskap."
+  masteringmoneroul2: "Drøfting av Bitcoins mangler og spesifikke løsninger som er gitt av Monero."
+  masteringmoneroul3: "Historier fra brukere (som illustrerer hvordan Monero beskytter personvernet ditt), analogier, eksempler, lovlige/etiske diskusjoner og kodeutdrag som illustrerer viktige, tekniske konsepter."
+  masteringmoneroul4: "Detaljer på Moneros desentraliserte nettverk, peer-to-peer-arkitektur, transaksjoners livssyklus og sikkerhetsprinsipper."
+  masteringmoneroul5: "Introduksjoner til Moneros tekniske fundament, som er ment for utviklere, ingeniører, programvarearkitekter, og nysgjerrige brukere."
+  masteringmoneroul6: "Nye utviklinger som f.eks. Kovri, Bulletproofs, multi-signatur, maskinvare-lommebøker, osv."
+  masteringmoneroinfo: "Se <a href=\"https://masteringmonero.com/\">Mestring av Monero</a>-nettsiden for mer informasjon."
   zerotomonerov1p: "Publisert: 26. juni, 2018, med <a href=\"https://github.com/UkoeHB/Monero-RCT-report\"\
     >LaTeX-kildekode her</a>\n"
   zerotomonerov1: 'Zero to Monero: Første utgave'
