@@ -11,7 +11,7 @@ terms:
 
 **FCMP++** (Full-Chain Membership Proofs + Spend Authorization + Linkability) is the system Monero uses to prove that @transaction inputs are valid and unspent without revealing which outputs are actually being spent.
 
-Each FCMP++ input proves it does spend **one output from the entire set of eligible outputs on the @blockchain**. The proof itself does not leak any information about which specific output is real.
+Each FCMP++ input proves it does spend **one output from the whole set of eligible outputs on the @blockchain**. The proof itself does not leak any information about which specific output is real.
 
 From a chain observer’s perspective, it is not possible to determine the real input.
 
