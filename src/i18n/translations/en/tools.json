@@ -80,7 +80,7 @@
         "subtitle": "Payment processors and plugins for accepting Monero on your website or store.",
         "tools": {
             "btcPayServer": "Self-hosted, open-source payment processor",
-            "nowPayments": "Non-custodial crypto payment gateway",
+            "nowPayments": "Crypto payment gateway",
             "bitcart": "Open-source cryptocurrency payment platform",
             "coinPayments": "Multi-cryptocurrency payment gateway",
             "cryptoWoo": "WooCommerce Monero plugin",
