@@ -164,3 +164,14 @@ tbody tr:last-child {
 [lang="he"] ol {
   list-style-type: hebrew;
 }
+
+/* ========================================
+   Third-Party Overrides
+   ======================================== */
+
+body,
+html {
+  .__ns__pop2top {
+    z-index: unset !important;
+  }
+}
