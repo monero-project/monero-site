@@ -13,9 +13,8 @@ terms:
 النظام الذي تستخدمه Monero لإثبات أن مدخلات @transaction صالحة وغير منفقة دون
 الكشف عن المخرجات التي يتم إنفاقها بالفعل.
 
-Each FCMP++ input proves it does spend **one output from the whole set of
-eligible outputs on the @blockchain**. The proof itself does not leak any
-information about which specific output is real.
+كل مدخل في FCMP++ يثبت أنه ينفق **مخرج واحد من المجموعة الكاملة للمخرجات المؤهلة
+على @blockchain**. الإثبات نفسه لا يكشف أي معلومات عن المخرج المحدّد الحقيقي.
 
 من وجهة نظر مراقب السلسلة، لا يمكن تحديد المدخلات الحقيقية.
 
