@@ -62,6 +62,9 @@ importers:
       rehype-external-links:
         specifier: ^3.0.0
         version: 3.0.0
+      sass:
+        specifier: ^1.97.2
+        version: 1.97.2
       sharp:
         specifier: ^0.34.5
         version: 0.34.5
@@ -6048,8 +6051,7 @@ snapshots:
 
   ignore@7.0.5: {}
 
-  immutable@5.1.4:
-    optional: true
+  immutable@5.1.4: {}
 
   import-fresh@3.3.1:
     dependencies:
@@ -7208,7 +7210,6 @@ snapshots:
       source-map-js: 1.2.1
     optionalDependencies:
       '@parcel/watcher': 2.5.4
-    optional: true
 
   sax@1.4.4: {}
 

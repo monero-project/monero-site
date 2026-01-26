@@ -68,7 +68,7 @@ const date = localizeDateString(dateString, {
   }
 </div>
 
-<style>
+<style lang="scss">
   h1 {
     font-size: var(--font-size-3xl);
     margin: 0;
@@ -93,12 +93,12 @@ const date = localizeDateString(dateString, {
     display: flex;
     align-items: center;
     gap: var(--space-xs);
+  }
 
-    > .icon {
-      display: grid;
-      place-items: center;
-      color: var(--monero-orange);
-    }
+  .meta-item > .icon {
+    display: grid;
+    place-items: center;
+    color: var(--monero-orange);
   }
 
   .tag-container {
@@ -118,10 +118,10 @@ const date = localizeDateString(dateString, {
     text-decoration: none;
     color: inherit;
     white-space: nowrap;
+  }
 
-    &:hover {
-      color: var(--text-secondary);
-    }
+  .tag:hover {
+    color: var(--text-secondary);
   }
 
   @media (max-width: 600px) {

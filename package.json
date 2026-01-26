@@ -36,6 +36,7 @@
     "marked": "^15.0.12",
     "mdast-util-find-and-replace": "^3.0.2",
     "rehype-external-links": "^3.0.0",
+    "sass": "^1.97.2",
     "sharp": "^0.34.5",
     "unist-util-visit": "^5.0.0"
   },
