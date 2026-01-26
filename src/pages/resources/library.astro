@@ -2,19 +2,19 @@
 import BookCard from "@/components/pages/resources/library/BookCard.astro";
 import CheatsheetCard from "@/components/pages/resources/library/CheatsheetCard.astro";
 import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro";
-import Grid from "@/components/ui/Grid.astro";
-import PageContainer from "@/components/ui/PageContainer.astro";
-import PageSection from "@/components/ui/PageSection.astro";
-import Column from "@/components/ui/Column.astro";
+import Grid from "@/components/ui/layout/Grid.astro";
+import PageContainer from "@/components/ui/layout/PageContainer.astro";
+import PageSection from "@/components/ui/layout/PageSection.astro";
+import Column from "@/components/ui/layout/Column.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
-import TOCContainer from "@/components/ui/TOCContainer.astro";
+import TOCContainer from "@/components/ui/toc/TOCContainer.astro";
 import Layout from "@/layouts/Layout.astro";
 
 import bookTextIcon from "@/assets/icons/mask/bookText.avif";
 import mailsIcon from "@/assets/icons/mask/mails.avif";
 import receiptTextIcon from "@/assets/icons/mask/receiptText.avif";
 
-import { books, cheatsheets, newsletters } from "@/data/library";
+import { books, cheatsheets, newsletters } from "@/data/resources/library";
 
 const { dir, t, localizeHref } = Astro.locals;
 

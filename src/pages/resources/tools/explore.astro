@@ -1,11 +1,15 @@
 ---
-import DisclaimerBar from "@/components/ui/DisclaimerBar.astro";
+import DisclaimerBar from "@/components/ui/disclaimer/DisclaimerBar.astro";
 import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro";
-import Grid from "@/components/ui/Grid.astro";
-import PageContainer from "@/components/ui/PageContainer.astro";
-import PageSection from "@/components/ui/PageSection.astro";
+import Grid from "@/components/ui/layout/Grid.astro";
+import PageContainer from "@/components/ui/layout/PageContainer.astro";
+import PageSection from "@/components/ui/layout/PageSection.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
-import { blockExplorers, networkTools, utilities } from "@/data/monero-tools";
+import {
+  blockExplorers,
+  networkTools,
+  utilities,
+} from "@/data/resources/monero-tools";
 import Layout from "@/layouts/Layout.astro";
 
 import shieldAlertIcon from "@/assets/icons/mask/shieldAlert.avif";

@@ -3,9 +3,9 @@ import WorkgroupCard from "@/components/pages/community/workgroups/WorkgroupCard
 import Button from "@/components/ui/Button.astro";
 import HeroCard from "@/components/ui/HeroCard.astro";
 import InternalResourceButton from "@/components/ui/InternalResourceButton.astro";
-import MaskIcon from "@/components/ui/MaskIcon.astro";
-import PageContainer from "@/components/ui/PageContainer.astro";
-import PageSection from "@/components/ui/PageSection.astro";
+import MaskIcon from "@/components/ui/icons/MaskIcon.astro";
+import PageContainer from "@/components/ui/layout/PageContainer.astro";
+import PageSection from "@/components/ui/layout/PageSection.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import Layout from "@/layouts/Layout.astro";
 
@@ -19,7 +19,7 @@ import {
   communityWorkgroups,
   developmentWorkgroups,
   researchWorkgroups,
-} from "@/data/workgroups";
+} from "@/data/community/workgroups";
 
 const { t, dir, localizeHref } = Astro.locals;
 ---

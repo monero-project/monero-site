@@ -1,9 +1,13 @@
 ---
 import CategoryCard from "@/components/ui/CategoryCard.astro";
-import Grid from "@/components/ui/Grid.astro";
-import PageContainer from "@/components/ui/PageContainer.astro";
+import Grid from "@/components/ui/layout/Grid.astro";
+import PageContainer from "@/components/ui/layout/PageContainer.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
-import { acceptCount, developCount, exploreCount } from "@/data/monero-tools";
+import {
+  acceptCount,
+  developCount,
+  exploreCount,
+} from "@/data/resources/monero-tools";
 import Layout from "@/layouts/Layout.astro";
 
 const { t, localizeHref, localizeNumber } = Astro.locals;

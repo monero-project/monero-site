@@ -1,14 +1,14 @@
 ---
 import HistoryTimeline from "@/components/pages/resources/roadmap/HistoryTimeline.astro";
 import StatusSection from "@/components/pages/resources/roadmap/StatusSection.astro";
-import Grid from "@/components/ui/Grid.astro";
-import PageContainer from "@/components/ui/PageContainer.astro";
-import PageSection from "@/components/ui/PageSection.astro";
-import Column from "@/components/ui/Column.astro";
+import Grid from "@/components/ui/layout/Grid.astro";
+import PageContainer from "@/components/ui/layout/PageContainer.astro";
+import PageSection from "@/components/ui/layout/PageSection.astro";
+import Column from "@/components/ui/layout/Column.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import Layout from "@/layouts/Layout.astro";
 
-import roadmapData from "@/data/roadmap";
+import roadmapData from "@/data/resources/roadmap";
 
 const { t } = Astro.locals;
 const { items, history } = roadmapData;

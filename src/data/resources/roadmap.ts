@@ -35,7 +35,11 @@ const inProgressItems: RoadmapItem[] = [
     link: "https://cuprate.org/",
   },
   { id: "newSite", status: "in-progress" },
-  { id: "randomxV2", status: "in-progress" },
+  {
+    id: "randomxV2",
+    status: "in-progress",
+    link: "https://github.com/tevador/RandomX/pull/317",
+  },
 ];
 
 const upcomingItems: RoadmapItem[] = [

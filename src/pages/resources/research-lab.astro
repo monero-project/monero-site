@@ -2,14 +2,14 @@
 import PaperCard from "@/components/pages/resources/research-lab/PaperCard.astro";
 import Button from "@/components/ui/Button.astro";
 import HeroCard from "@/components/ui/HeroCard.astro";
-import MaskIcon from "@/components/ui/MaskIcon.astro";
-import PageContainer from "@/components/ui/PageContainer.astro";
-import PageSection from "@/components/ui/PageSection.astro";
-import SectionTabs from "@/components/ui/SectionTabs.astro";
-import SidebarCard from "@/components/ui/SidebarCard.astro";
-import SidebarLayout from "@/components/ui/SidebarLayout.astro";
-import SidebarLink from "@/components/ui/SidebarLink.astro";
-import Column from "@/components/ui/Column.astro";
+import MaskIcon from "@/components/ui/icons/MaskIcon.astro";
+import PageContainer from "@/components/ui/layout/PageContainer.astro";
+import PageSection from "@/components/ui/layout/PageSection.astro";
+import SectionTabs from "@/components/ui/tabs/SectionTabs.astro";
+import SidebarCard from "@/components/ui/sidebar/SidebarCard.astro";
+import SidebarLayout from "@/components/ui/sidebar/SidebarLayout.astro";
+import SidebarLink from "@/components/ui/sidebar/SidebarLink.astro";
+import Column from "@/components/ui/layout/Column.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import Layout from "@/layouts/Layout.astro";
 
@@ -26,7 +26,7 @@ import {
   mrlBulletins,
   otherPapers,
   whitepapers,
-} from "@/data/research-lab";
+} from "@/data/resources/research-lab";
 
 const paperTabs = [
   {

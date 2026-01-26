@@ -4,9 +4,9 @@ import Layout from "@/layouts/Layout.astro";
 import type { DownloadLink } from "@/components/pages/downloads/CoreCard.astro";
 import CoreCard from "@/components/pages/downloads/CoreCard.astro";
 import CTACard from "@/components/ui/CTACard.astro";
-import Grid from "@/components/ui/Grid.astro";
+import Grid from "@/components/ui/layout/Grid.astro";
 import InternalResourceButton from "@/components/ui/InternalResourceButton.astro";
-import PageTabs from "@/components/ui/PageTabs.astro";
+import PageTabs from "@/components/ui/tabs/PageTabs.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 
 import coreDownloads from "@/data/downloads/core.json";
@@ -16,7 +16,7 @@ import walletIcon from "@/assets/icons/mask/wallet.avif";
 import cliImage from "@/assets/images/cli.avif";
 import guiImage from "@/assets/images/gui.avif";
 
-import PageContainer from "@/components/ui/PageContainer.astro";
+import PageContainer from "@/components/ui/layout/PageContainer.astro";
 
 const { t, localizeHref, safeMarkdown } = Astro.locals;
 

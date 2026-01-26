@@ -1,14 +1,14 @@
 ---
 import Button from "@/components/ui/Button.astro";
-import Row from "@/components/ui/Row.astro";
+import Row from "@/components/ui/layout/Row.astro";
 import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro";
-import Grid from "@/components/ui/Grid.astro";
+import Grid from "@/components/ui/layout/Grid.astro";
 import IconLink from "@/components/ui/IconLink.astro";
-import PageContainer from "@/components/ui/PageContainer.astro";
-import PageSection from "@/components/ui/PageSection.astro";
-import Column from "@/components/ui/Column.astro";
+import PageContainer from "@/components/ui/layout/PageContainer.astro";
+import PageSection from "@/components/ui/layout/PageSection.astro";
+import Column from "@/components/ui/layout/Column.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
-import TOCContainer from "@/components/ui/TOCContainer.astro";
+import TOCContainer from "@/components/ui/toc/TOCContainer.astro";
 import Layout from "@/layouts/Layout.astro";
 
 import BrandAssetCard from "@/components/pages/resources/press-kit/BrandAssetCard.astro";
@@ -22,7 +22,7 @@ import {
   brandAssets,
   marketingResources,
   pressDocuments,
-} from "@/data/press-kit";
+} from "@/data/resources/press-kit";
 import { getPublicImageDimensions } from "@/utils/image";
 
 const { t, localizeHref } = Astro.locals;

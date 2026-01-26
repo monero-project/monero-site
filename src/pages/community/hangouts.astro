@@ -1,17 +1,17 @@
 ---
 import IRCChannelButton from "@/components/pages/community/hangouts/IRCChannelButton.astro";
 import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro";
-import Grid from "@/components/ui/Grid.astro";
+import Grid from "@/components/ui/layout/Grid.astro";
 import InternalResourceButton from "@/components/ui/InternalResourceButton.astro";
-import PageContainer from "@/components/ui/PageContainer.astro";
-import PageSection from "@/components/ui/PageSection.astro";
-import Column from "@/components/ui/Column.astro";
+import PageContainer from "@/components/ui/layout/PageContainer.astro";
+import PageSection from "@/components/ui/layout/PageSection.astro";
+import Column from "@/components/ui/layout/Column.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import Layout from "@/layouts/Layout.astro";
 
 import usersIcon from "@/assets/icons/mask/users.avif";
 
-import { channels, chatLinks, socialLinks } from "@/data/hangouts";
+import { channels, chatLinks, socialLinks } from "@/data/community/hangouts";
 
 const { t, localizeHref } = Astro.locals;
 ---

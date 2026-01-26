@@ -1,8 +1,8 @@
 ---
-import DisclaimerNote from "@/components/ui/DisclaimerNote.astro";
-import PageContainer from "@/components/ui/PageContainer.astro";
-import PageSection from "@/components/ui/PageSection.astro";
-import SidebarLayout from "@/components/ui/SidebarLayout.astro";
+import DisclaimerNote from "@/components/ui/disclaimer/DisclaimerNote.astro";
+import PageContainer from "@/components/ui/layout/PageContainer.astro";
+import PageSection from "@/components/ui/layout/PageSection.astro";
+import SidebarLayout from "@/components/ui/sidebar/SidebarLayout.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import Layout from "@/layouts/Layout.astro";
 
@@ -16,10 +16,10 @@ import ExchangeTable from "@/components/pages/get-started/exchanges/ExchangeTabl
 import FilterOption from "@/components/pages/get-started/exchanges/FilterOption.astro";
 import FiltersPanel from "@/components/pages/get-started/exchanges/FiltersPanel.astro";
 import MobileFilterBar from "@/components/pages/get-started/exchanges/MobileFilterBar.astro";
-import DisclaimerBar from "@/components/ui/DisclaimerBar.astro";
+import DisclaimerBar from "@/components/ui/disclaimer/DisclaimerBar.astro";
 import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro";
 
-import exchanges from "@/data/exchanges";
+import exchanges from "@/data/get-started/exchanges";
 
 const { t, localizeHref, safeMarkdown } = Astro.locals;
 
