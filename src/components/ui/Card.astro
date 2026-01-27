@@ -57,8 +57,10 @@ const cardRadius = radius === "none" ? "0" : `var(--radius-${radius})`;
   .card[data-hover] {
     transition: background 0.15s ease;
   }
-  .card[data-hover]:hover,
-  .card[data-hover]:focus-within {
+  .card[data-hover]:hover {
+    background: var(--card-hover-color);
+  }
+  .card[data-hover]:focus-visible {
     background: var(--card-hover-color);
   }
 </style>

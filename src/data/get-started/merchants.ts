@@ -4,6 +4,7 @@ import cryptwerkLogo from "@/assets/images/directories/cryptwerk.jpg";
 import monericaLogo from "@/assets/images/directories/monerica-logo.png";
 import xmrbazaarLogo from "@/assets/images/directories/xmrbazaar.jpg";
 import kycnotmeLogo from "@/assets/images/directories/kycnotme.jpg";
+import bankExitLogo from "@/assets/images/directories/bankExitCollective.png";
 
 export type Merchant = {
   id: string;
@@ -14,6 +15,12 @@ export type Merchant = {
 };
 
 const merchants: Merchant[] = [
+  {
+    id: "bankExit",
+    name: "Bank-Exit Map",
+    logo: bankExitLogo,
+    link: "https://bank-exit.org/en/map/5/?coins[]=monero",
+  },
   {
     id: "cryptwerk",
     name: "Cryptwerk",
