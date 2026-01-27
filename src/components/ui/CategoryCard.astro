@@ -91,6 +91,10 @@ const defaultLinkText = t("common:components.categoryCard.explore");
     .category-card {
       flex-direction: row;
       align-items: stretch;
+
+      .card-link {
+        display: none;
+      }
     }
 
     .card-image {
@@ -111,15 +115,11 @@ const defaultLinkText = t("common:components.categoryCard.explore");
     }
 
     .card-description {
-      font-size: var(--font-size-xs);
+      font-size: var(--font-size-sm);
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
       overflow: hidden;
-    }
-
-    .card-link {
-      display: none;
     }
   }
 </style>
