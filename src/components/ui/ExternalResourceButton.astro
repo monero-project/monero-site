@@ -166,19 +166,23 @@ const rtl = dir === "rtl";
   }
 
   .link-icon {
+    order: 1;
     width: 3.5rem;
     color: color-mix(in srgb, var(--monero-orange) 60%, transparent);
     transition: color 0.15s ease;
   }
 
+  .has-onion .link-icon {
+    border-inline-start: 1px solid var(--border-color);
+  }
+
   .link-icon:hover,
-  .primary-link:hover + .link-icon {
+  .primary-link:hover ~ .link-icon {
     color: var(--monero-orange);
   }
 
   .onion-link {
     width: 3.5rem;
-    border-inline-start: 1px solid var(--border-color);
     color: #7d4698;
     transition: background 0.15s ease;
 
@@ -218,9 +222,11 @@ const rtl = dir === "rtl";
 
       .link-icon,
       .onion-link {
+        order: 0;
         flex: 1;
         width: auto;
         border-top: 1px solid var(--border-color);
+        border-inline-start: none;
         padding: var(--space-sm);
       }
 
