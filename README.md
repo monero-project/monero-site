@@ -1,6 +1,6 @@
 # Monero Site Redesign in Astro
 
-This is a work-in-progress (WIP) implementation of the planned Monero page redesign, built with Astro.
+This is a implementation of the planned Monero page redesign, built with Astro.
 
 ## Features
 
@@ -35,14 +35,6 @@ This is a work-in-progress (WIP) implementation of the planned Monero page redes
 └── package.json
 ```
 
-## Next steps
-
-- [ ] Weblate integration
-- [x] Add icons in place of placeholders
-- [x] Add RSS feed generation
-- [x] Create components for page content
-- [x] Add localized blog content support
-
 ## Commands
 
 All commands are run from the root of the project:
@@ -58,11 +50,6 @@ All commands are run from the root of the project:
 | `pnpm format`          | Format code using Prettier                       |
 | `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `pnpm astro -- --help` | Get help using the Astro CLI                     |
-
-## Donate
-
-If you'd like to support my development effort, consider donating to the CCS:
-https://ccs.getmonero.org/proposals/redsh4de-getmonero-redesign.html
 
 ## More
 
