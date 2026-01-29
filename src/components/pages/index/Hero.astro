@@ -91,19 +91,20 @@ const { t, localizeHref } = Astro.locals;
     align-items: center;
     margin-top: var(--space-xs);
     max-width: 100%;
-  }
 
-  .hero-button {
-    padding: 1em 2em;
+    .hero-button {
+      padding: 1em 2em;
+    }
   }
 
   @media (max-width: 600px) {
     .actions {
       flex-direction: column;
       gap: var(--space-sm);
-    }
-    .hero-button {
-      width: 100%;
+
+      .hero-button {
+        width: 100%;
+      }
     }
   }
 

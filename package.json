@@ -22,7 +22,7 @@
     "@astrojs/sitemap": "^3.7.0",
     "@fontsource-variable/dm-sans": "^5.2.8",
     "@fontsource/dm-sans": "^5.2.8",
-    "astro": "^5.16.12",
+    "astro": "^5.17.1",
     "astro-i18n-aut": "^0.7.3",
     "astro-og-canvas": "^0.10.0",
     "astro-seo": "^0.8.4",
@@ -36,9 +36,9 @@
     "marked": "^15.0.12",
     "mdast-util-find-and-replace": "^3.0.2",
     "rehype-external-links": "^3.0.0",
-    "sass": "^1.97.2",
+    "sass": "^1.97.3",
     "sharp": "^0.34.5",
-    "unist-util-visit": "^5.0.0"
+    "unist-util-visit": "^5.1.0"
   },
   "packageManager": "pnpm@10.24.0",
   "devDependencies": {
@@ -51,7 +51,7 @@
     "eslint-plugin-astro": "^1.5.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "htmlhint": "^1.8.0",
-    "lefthook": "^2.0.15",
+    "lefthook": "^2.0.16",
     "postcss-html": "^1.8.1",
     "prettier": "3.8.0",
     "prettier-plugin-astro": "0.14.1",
@@ -60,7 +60,7 @@
     "stylelint-no-unsupported-browser-features": "^8.0.5",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.53.1",
+    "typescript-eslint": "^8.54.0",
     "unified": "^11.0.5",
     "vfile": "^6.0.3"
   },
