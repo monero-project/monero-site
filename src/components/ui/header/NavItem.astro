@@ -1,10 +1,9 @@
 ---
 import type { ImageMetadata } from "astro";
 
-import ColorIcon from "@/components/ui/icons/ColorIcon.astro";
 import MaskIcon from "@/components/ui/icons/MaskIcon.astro";
+import NavDropdownLink from "./NavDropdownLink.astro";
 
-import arrowRight from "@/assets/icons/mask/arrow-right.avif";
 import chevronDown from "@/assets/icons/mask/chevron-down.avif";
 
 export interface DropdownItem {
@@ -25,12 +24,11 @@ const { label, href, dropdown = [] } = Astro.props;
 const isDropdown = dropdown.length > 0;
 const id = "dd-" + Math.random().toString(36).slice(2, 11);
 const closeId = id + "-close";
-const rtl = Astro.locals.dir === "rtl";
 ---
 
 <li class="nav-item" data-is-dropdown={isDropdown || undefined}>
   {
-    isDropdown ? (
+    isDropdown && (
       <>
         <input
           id={id}
@@ -48,24 +46,25 @@ const rtl = Astro.locals.dir === "rtl";
           aria-hidden="true"
           hidden
         />
+      </>
+    )
+  }
 
-        <div class="row">
-          {href ? (
-            <a href={href} class="link">
-              {label}
-              <span class="caret" aria-hidden="true">
-                <MaskIcon src={chevronDown} />
-              </span>
-            </a>
-          ) : (
-            <span class="link" role="link" tabindex="0">
-              {label}
-              <span class="caret" aria-hidden="true">
-                <MaskIcon src={chevronDown} />
-              </span>
-            </span>
-          )}
+  <div class="row">
+    <a href={href} class="link">
+      {label}
+      {
+        isDropdown && (
+          <span class="caret" aria-hidden="true">
+            <MaskIcon src={chevronDown} />
+          </span>
+        )
+      }
+    </a>
 
+    {
+      isDropdown && (
+        <>
           <label
             for={id}
             class="mobile-open"
@@ -76,37 +75,19 @@ const rtl = Astro.locals.dir === "rtl";
             class="mobile-close"
             aria-label={`Close ${label} menu`}
           />
-        </div>
+        </>
+      )
+    }
+  </div>
 
-        <div class="dropdown" role="menu" aria-label={`${label} menu`}>
-          <div class="dropdown-inner">
-            <div class="dropdown-content">
-              {dropdown.map((item) => (
-                <a href={item.href} class="dropdown-item" role="menuitem">
-                  <ColorIcon
-                    src={item.icon}
-                    darkSrc={item.iconDark}
-                    size="2rem"
-                    class="icon"
-                  />
-                  <div class="content">
-                    <div class="title">{item.label}</div>
-                    {item.desc && <div class="desc">{item.desc}</div>}
-                  </div>
-                  <div class="arrow">
-                    <MaskIcon src={arrowRight} size="1rem" rtl={rtl} />
-                  </div>
-                </a>
-              ))}
-            </div>
-          </div>
+  {
+    isDropdown && (
+      <div class="dropdown" role="menu" aria-label={`${label} menu`}>
+        <div class="dropdown-content">
+          {dropdown.map((item) => (
+            <NavDropdownLink {...item} />
+          ))}
         </div>
-      </>
-    ) : (
-      <div class="row">
-        <a href={href} class="link">
-          {label}
-        </a>
       </div>
     )
   }
@@ -177,16 +158,6 @@ const rtl = Astro.locals.dir === "rtl";
     width: unset;
     max-height: 0;
     overflow: hidden;
-
-    &::before {
-      content: none;
-    }
-  }
-
-  .dropdown-inner {
-    background: none;
-    box-shadow: none;
-    border-radius: 0;
   }
 
   .dropdown-content {
@@ -222,52 +193,6 @@ const rtl = Astro.locals.dir === "rtl";
       pointer-events: auto;
       cursor: pointer;
     }
-  }
-
-  .arrow {
-    display: flex;
-    align-items: flex-start;
-    margin-inline-start: auto;
-    opacity: 0;
-    transition: opacity 0.2s ease;
-    color: var(--paragraph-subtitle);
-  }
-
-  .dropdown-item {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: var(--space-md);
-    color: var(--heading-color);
-    text-decoration: none;
-    padding: var(--space-sm);
-    border-radius: var(--radius-md);
-
-    &:where(:hover, :focus-visible) {
-      background: var(--card-hover-color);
-
-      .arrow {
-        opacity: 1;
-      }
-    }
-  }
-
-  .icon {
-    width: 2rem;
-    height: 2rem;
-    flex: 0 0 2rem;
-  }
-
-  .title {
-    font-weight: var(--font-weight-semibold);
-  }
-
-  .desc {
-    font-size: var(--font-size-sm);
-    color: var(--paragraph-subtitle);
-    line-height: var(--line-height-caption);
-    margin-top: 0.15rem;
   }
 
   .nav-item[data-is-dropdown]:is(:focus-within, :has(.dropdown :focus-visible))
@@ -325,6 +250,10 @@ const rtl = Astro.locals.dir === "rtl";
       transform: translateY(-10px);
       transition: transform 0.2s ease;
       z-index: var(--z-header);
+      background: var(--card-color);
+      box-shadow: 0 4px 2px -2px rgb(0 0 0 / 20%);
+      border-radius: 0 0 var(--radius-md) var(--radius-md);
+      padding-block: 0 var(--space-md);
     }
 
     .dropdown::before {
@@ -335,13 +264,6 @@ const rtl = Astro.locals.dir === "rtl";
       height: 1.5rem;
       transform: translateY(-100%);
       background: transparent;
-    }
-
-    .dropdown-inner {
-      background: var(--card-color);
-      box-shadow: 0 4px 2px -2px rgb(0 0 0 / 20%);
-      border-radius: 0 0 var(--radius-md) var(--radius-md);
-      padding-block: 0 var(--space-md);
     }
 
     .dropdown-content {
@@ -380,8 +302,7 @@ const rtl = Astro.locals.dir === "rtl";
   /* Reduce motion */
   @media (prefers-reduced-motion: reduce) {
     .dropdown,
-    .caret,
-    .arrow {
+    .caret {
       transition: none;
     }
   }

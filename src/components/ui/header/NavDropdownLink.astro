@@ -1,0 +1,77 @@
+---
+import ColorIcon from "@/components/ui/icons/ColorIcon.astro";
+import MaskIcon from "@/components/ui/icons/MaskIcon.astro";
+
+import arrowRight from "@/assets/icons/mask/arrow-right.avif";
+import type { DropdownItem } from "./NavItem.astro";
+
+type Props = DropdownItem;
+
+const { href, label, desc, icon, iconDark } = Astro.props;
+const rtl = Astro.locals.dir === "rtl";
+---
+
+<a href={href} class="dropdown-item" role="menuitem">
+  <ColorIcon src={icon} darkSrc={iconDark} size="2rem" class="icon" />
+  <div class="content">
+    <div class="title">{label}</div>
+    {desc && <div class="desc">{desc}</div>}
+  </div>
+  <div class="arrow">
+    <MaskIcon src={arrowRight} size="1rem" rtl={rtl} />
+  </div>
+</a>
+
+<style>
+  .arrow {
+    display: flex;
+    align-items: flex-start;
+    margin-inline-start: auto;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    color: var(--paragraph-subtitle);
+  }
+
+  .dropdown-item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--space-md);
+    color: var(--heading-color);
+    text-decoration: none;
+    padding: var(--space-sm);
+    border-radius: var(--radius-md);
+
+    &:where(:hover, :focus-visible) {
+      background: var(--card-hover-color);
+
+      .arrow {
+        opacity: 1;
+      }
+    }
+  }
+
+  .icon {
+    width: 2rem;
+    height: 2rem;
+    flex: 0 0 2rem;
+  }
+
+  .title {
+    font-weight: var(--font-weight-semibold);
+  }
+
+  .desc {
+    font-size: var(--font-size-sm);
+    color: var(--paragraph-subtitle);
+    line-height: var(--line-height-caption);
+    margin-top: 0.15rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .arrow {
+      transition: none;
+    }
+  }
+</style>

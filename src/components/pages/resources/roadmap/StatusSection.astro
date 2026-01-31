@@ -64,7 +64,7 @@ const rtl = dir === "rtl";
     align-items: center;
     gap: 0.625rem;
 
-    h2 {
+    & h2 {
       margin: 0;
       font-size: var(--font-size-base);
       font-weight: var(--font-weight-semibold);
@@ -125,7 +125,7 @@ const rtl = dir === "rtl";
       text-decoration: none;
     }
 
-    a.status-item {
+    & a.status-item {
       &::after {
         display: none;
       }
@@ -162,7 +162,7 @@ const rtl = dir === "rtl";
         border: 1px solid var(--border-color);
       }
 
-      a.status-item:hover {
+      & a.status-item:hover {
         background: var(--card-hover-color);
         border-color: var(--card-color);
       }

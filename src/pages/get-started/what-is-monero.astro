@@ -296,13 +296,13 @@ const getLanguageLabel = (lang: string): string => {
   .content-section {
     margin-block: var(--space-2xl);
 
-    h2 {
+    & h2 {
       font-size: var(--font-size-3xl);
       color: var(--heading-color);
       margin-top: var(--space-xs);
     }
 
-    p {
+    & p {
       font-size: var(--font-size-lg);
       color: var(--paragraph-subtitle);
       line-height: var(--line-height-body);
@@ -313,7 +313,7 @@ const getLanguageLabel = (lang: string): string => {
   .centered-section {
     text-align: center;
 
-    p {
+    & p {
       margin-inline: auto;
     }
   }
