@@ -1,7 +1,7 @@
 ---
-import hashtagIcon from "@/assets/icons/mask/hashtag.avif";
 import type { ImageMetadata } from "astro";
 import MaskIcon from "../icons/MaskIcon.astro";
+import { icons } from "@/utils/icons";
 
 export interface Props {
   href?: string;
@@ -37,7 +37,7 @@ const linkProps = Tag === "a" ? { href } : {};
   </div>
 
   <div class="decoration">
-    <MaskIcon src={hashtagIcon} size="0.75em" aria-hidden="true" />
+    <MaskIcon src={icons.mask("hashtag")} size="0.75em" aria-hidden="true" />
   </div>
 </Tag>
 

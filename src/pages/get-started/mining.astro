@@ -12,14 +12,10 @@ import Column from "@/components/ui/layout/Column.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import Layout from "@/layouts/Layout.astro";
 
-import appWindowIcon from "@/assets/icons/mask/app-window.avif";
-import pickaxeIcon from "@/assets/icons/mask/pickaxe.avif";
-import shieldIcon from "@/assets/icons/mask/shieldAlert.avif";
-import terminalIcon from "@/assets/icons/mask/terminal.avif";
-
 import guiWindow from "@/assets/images/gui.avif";
 import gupaxWindow from "@/assets/images/gupax-window.webp";
 import xmrigWindow from "@/assets/images/xmrig-window.avif";
+import { icons } from "@/utils/icons";
 
 const { t, safeMarkdown } = Astro.locals;
 
@@ -54,7 +50,7 @@ const faqItems = faqToItems(
         <ContentCard
           title={t("mining:gupax.title")}
           subtitle={t("mining:gupax.subtitle")}
-          icon={appWindowIcon}
+          icon={icons.mask("app-window")}
           image={gupaxWindow}
           imageAlt={t("mining:gupax.imageAlt")}
         >
@@ -75,7 +71,7 @@ const faqItems = faqToItems(
         <ContentCard
           title={t("mining:xmrig.title")}
           subtitle={t("mining:xmrig.subtitle")}
-          icon={terminalIcon}
+          icon={icons.mask("terminal")}
           image={xmrigWindow}
           imageAlt={t("mining:xmrig.imageAlt")}
         >
@@ -96,7 +92,7 @@ const faqItems = faqToItems(
         <ContentCard
           title={t("mining:solo.title")}
           subtitle={t("mining:solo.subtitle")}
-          icon={pickaxeIcon}
+          icon={icons.mask("pickaxe")}
           image={guiWindow}
           imageAlt={t("mining:solo.imageAlt")}
         >
@@ -182,7 +178,10 @@ const faqItems = faqToItems(
     <PageSection title={t("mining:faq.title")}>
       <Accordion variant="card" items={faqItems} />
 
-      <DisclaimerBar icon={shieldIcon} title={t("mining:disclaimer.title")}>
+      <DisclaimerBar
+        icon={icons.mask("shield-alert")}
+        title={t("mining:disclaimer.title")}
+      >
         {t("mining:disclaimer.content")}
       </DisclaimerBar>
     </PageSection>

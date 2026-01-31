@@ -1,10 +1,10 @@
 ---
 import Card from "@/components/ui/Card.astro";
 import IconLink from "@/components/ui/IconLink.astro";
-import bookTextIcon from "@/assets/icons/mask/bookText.avif";
 import MaskIcon from "@/components/ui/icons/MaskIcon.astro";
 import type { Book } from "@/data/resources/library";
 import { Image } from "astro:assets";
+import { icons } from "@/utils/icons";
 
 export type Props = Book;
 
@@ -27,7 +27,7 @@ const getLanguageName = (targetLocale: string): string => {
         <Image src={cover} alt="" format="avif" />
       ) : (
         <div class="book-placeholder">
-          <MaskIcon src={bookTextIcon} size="2rem" />
+          <MaskIcon src={icons.mask("book-text")} size="2rem" />
         </div>
       )
     }

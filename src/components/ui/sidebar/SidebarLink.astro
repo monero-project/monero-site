@@ -1,7 +1,7 @@
 ---
 import MaskIcon from "../icons/MaskIcon.astro";
-import arrowRightIcon from "@/assets/icons/mask/arrow-right.avif";
 import type { ImageMetadata } from "astro";
+import { icons } from "@/utils/icons";
 
 interface Props {
   href: string;
@@ -30,7 +30,7 @@ const isRtl = dir === "rtl";
     <slot />
   </span>
   <span class="arrow">
-    <MaskIcon src={arrowRightIcon} size="1em" rtl={isRtl} />
+    <MaskIcon src={icons.mask("arrow-right")} size="1em" rtl={isRtl} />
   </span>
 </a>
 

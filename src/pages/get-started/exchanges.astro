@@ -6,10 +6,6 @@ import SidebarLayout from "@/components/ui/sidebar/SidebarLayout.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import Layout from "@/layouts/Layout.astro";
 
-import bankIcon from "@/assets/icons/mask/bank.avif";
-import hatGlassesIcon from "@/assets/icons/mask/hat-glasses.avif";
-import rabbitIcon from "@/assets/icons/mask/rabbit.avif";
-import shieldIcon from "@/assets/icons/mask/shieldAlert.avif";
 import kycNotMeLogo from "@/assets/images/directories/kycnotme.jpg";
 
 import ExchangeTable from "@/components/pages/get-started/exchanges/ExchangeTable.astro";
@@ -20,6 +16,7 @@ import DisclaimerBar from "@/components/ui/disclaimer/DisclaimerBar.astro";
 import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro";
 
 import exchanges from "@/data/get-started/exchanges";
+import { icons } from "@/utils/icons";
 
 const { t, localizeHref, safeMarkdown } = Astro.locals;
 
@@ -27,21 +24,21 @@ const highlightOptions = [
   {
     key: "easiest",
     highlight: "user-friendly",
-    icon: rabbitIcon,
+    icon: icons.mask("rabbit"),
     title: t("exchanges:highlightOptions.easiest.title"),
     subtitle: t("exchanges:highlightOptions.easiest.subtitle"),
   },
   {
     key: "fiat",
     highlight: "fiat",
-    icon: bankIcon,
+    icon: icons.mask("bank"),
     title: t("exchanges:highlightOptions.fiat.title"),
     subtitle: t("exchanges:highlightOptions.fiat.subtitle"),
   },
   {
     key: "privacy",
     highlight: "privacy",
-    icon: hatGlassesIcon,
+    icon: icons.mask("hat-glasses"),
     title: t("exchanges:highlightOptions.privacy.title"),
     subtitle: t("exchanges:highlightOptions.privacy.subtitle"),
   },
@@ -177,7 +174,10 @@ const highlightOptions = [
         </PageSection>
       </SidebarLayout>
 
-      <DisclaimerBar icon={shieldIcon} title={t("exchanges:disclaimerTitle")}>
+      <DisclaimerBar
+        icon={icons.mask("shield-alert")}
+        title={t("exchanges:disclaimerTitle")}
+      >
         {t("exchanges:disclaimer")}
       </DisclaimerBar>
 

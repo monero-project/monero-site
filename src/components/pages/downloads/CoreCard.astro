@@ -9,14 +9,7 @@ import Dropdown from "@/components/ui/dropdown/Dropdown.astro";
 import DropdownItem from "@/components/ui/dropdown/DropdownItem.astro";
 import DropdownSeparator from "@/components/ui/dropdown/DropdownSeparator.astro";
 import MaskIcon from "@/components/ui/icons/MaskIcon.astro";
-
-import magnetIconDark from "@/assets/icons/color/dark/magnet.avif";
-import magnetIcon from "@/assets/icons/color/light/magnet.avif";
-import androidIcon from "@/assets/icons/mask/brand/android.avif";
-import appleIcon from "@/assets/icons/mask/brand/apple.avif";
-import freebsdIcon from "@/assets/icons/mask/brand/freebsd.avif";
-import linuxIcon from "@/assets/icons/mask/brand/linux.avif";
-import windowsIcon from "@/assets/icons/mask/brand/windows.avif";
+import { icons } from "@/utils/icons";
 
 export interface DownloadLink {
   href: string;
@@ -59,11 +52,11 @@ const {
 const { t, safeMarkdown } = Astro.locals;
 
 const PLATFORM_ICONS: Record<string, ImageMetadata> = {
-  windows: windowsIcon,
-  macos: appleIcon,
-  linux: linuxIcon,
-  android: androidIcon,
-  freebsd: freebsdIcon,
+  windows: icons.mask("brand/windows"),
+  macos: icons.mask("brand/apple"),
+  linux: icons.mask("brand/linux"),
+  android: icons.mask("brand/android"),
+  freebsd: icons.mask("brand/freebsd"),
 };
 ---
 
@@ -135,8 +128,8 @@ const PLATFORM_ICONS: Record<string, ImageMetadata> = {
                 title={t("downloads:core.magnetLink")}
               >
                 <ColorIcon
-                  src={magnetIcon}
-                  darkSrc={magnetIconDark}
+                  src={icons.color("magnet").light}
+                  darkSrc={icons.color("magnet").dark}
                   size="1.25em"
                 />
               </Button>

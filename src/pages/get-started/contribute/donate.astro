@@ -10,11 +10,10 @@ import PageSection from "@/components/ui/layout/PageSection.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import Layout from "@/layouts/Layout.astro";
 
-import externalLinkIcon from "@/assets/icons/mask/external-link.avif";
-
 import communityLogo from "@/assets/images/idea-bulb.avif";
 
 import contributingData from "@/data/contributing/contributing.json";
+import { icons } from "@/utils/icons";
 
 const { dir, t, localizeHref } = Astro.locals;
 ---
@@ -44,7 +43,11 @@ const { dir, t, localizeHref } = Astro.locals;
         rel="noopener"
       >
         {t("contribute:donate.ccs.viewProposals")}
-        <MaskIcon src={externalLinkIcon} size="1em" rtl={dir === "rtl"} />
+        <MaskIcon
+          src={icons.mask("external-link")}
+          size="1em"
+          rtl={dir === "rtl"}
+        />
       </Button>
     </HeroCard>
 

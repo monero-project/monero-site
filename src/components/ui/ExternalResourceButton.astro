@@ -1,11 +1,10 @@
 ---
 import Card from "./Card.astro";
-import externalLinkIcon from "@/assets/icons/mask/external-link.avif";
-import torIcon from "@/assets/icons/mask/tor.avif";
 import type { HTMLAttributes } from "astro/types";
 import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
 import MaskIcon from "./icons/MaskIcon.astro";
+import { icons } from "@/utils/icons";
 
 export interface Props extends HTMLAttributes<"div"> {
   href: string;
@@ -71,7 +70,7 @@ const rtl = dir === "rtl";
     rel="noopener noreferrer external"
     class="link-icon"
   >
-    <MaskIcon src={externalLinkIcon} size="1em" rtl={rtl} />
+    <MaskIcon src={icons.mask("external-link")} size="1em" rtl={rtl} />
   </a>
 
   {
@@ -86,7 +85,7 @@ const rtl = dir === "rtl";
           "common:components.externalResourceButton.openOnionService",
         )}
       >
-        <MaskIcon src={torIcon} size="1.25em" />
+        <MaskIcon src={icons.mask("tor")} size="1.25em" />
       </a>
     )
   }

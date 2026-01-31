@@ -2,8 +2,8 @@
 import ColorIcon from "@/components/ui/icons/ColorIcon.astro";
 import MaskIcon from "@/components/ui/icons/MaskIcon.astro";
 
-import arrowRight from "@/assets/icons/mask/arrow-right.avif";
 import type { DropdownItem } from "./NavItem.astro";
+import { icons } from "@/utils/icons";
 
 type Props = DropdownItem;
 
@@ -18,7 +18,7 @@ const rtl = Astro.locals.dir === "rtl";
     {desc && <div class="desc">{desc}</div>}
   </div>
   <div class="arrow">
-    <MaskIcon src={arrowRight} size="1rem" rtl={rtl} />
+    <MaskIcon src={icons.mask("arrow-right")} size="1rem" rtl={rtl} />
   </div>
 </a>
 

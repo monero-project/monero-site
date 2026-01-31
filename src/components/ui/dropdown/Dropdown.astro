@@ -1,8 +1,7 @@
 ---
 import Button from "@/components/ui/Button.astro";
 import MaskIcon from "@/components/ui/icons/MaskIcon.astro";
-
-import chevronDownIcon from "@/assets/icons/mask/chevron-down.avif";
+import { icons } from "@/utils/icons";
 
 interface Props {
   label?: string;
@@ -16,7 +15,7 @@ const { label } = Astro.props;
       <Button variant="primary" as="span">
         {label}
         <span class="caret">
-          <MaskIcon src={chevronDownIcon} />
+          <MaskIcon src={icons.mask("chevron-down")} />
         </span>
       </Button>
     </slot>

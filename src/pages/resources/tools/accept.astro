@@ -6,8 +6,7 @@ import PageContainer from "@/components/ui/layout/PageContainer.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import { paymentGateways } from "@/data/resources/monero-tools";
 import Layout from "@/layouts/Layout.astro";
-
-import shieldAlertIcon from "@/assets/icons/mask/shieldAlert.avif";
+import { icons } from "@/utils/icons";
 
 const { t, localizeHref } = Astro.locals;
 ---
@@ -41,7 +40,7 @@ const { t, localizeHref } = Astro.locals;
   </PageContainer>
 
   <DisclaimerBar
-    icon={shieldAlertIcon}
+    icon={icons.mask("shield-alert")}
     title={t("tools:accept.disclaimer.title")}
   >
     {t("tools:accept.disclaimer.text")}

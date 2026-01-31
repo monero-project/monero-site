@@ -10,30 +10,27 @@ import TitleCard from "@/components/ui/TitleCard.astro";
 import TOCContainer from "@/components/ui/toc/TOCContainer.astro";
 import Layout from "@/layouts/Layout.astro";
 
-import bookTextIcon from "@/assets/icons/mask/bookText.avif";
-import mailsIcon from "@/assets/icons/mask/mails.avif";
-import receiptTextIcon from "@/assets/icons/mask/receiptText.avif";
-
 import { books, cheatsheets, newsletters } from "@/data/resources/library";
+import { icons } from "@/utils/icons";
 
 const { dir, t, localizeHref } = Astro.locals;
 
 const sections = [
   {
     id: "books",
-    icon: bookTextIcon,
+    icon: icons.mask("book-text"),
     title: t("knowledge-base:library.sections.books.title"),
     subtitle: t("knowledge-base:library.sections.books.tocSubtitle"),
   },
   {
     id: "cheatsheets",
-    icon: receiptTextIcon,
+    icon: icons.mask("receipt-text"),
     title: t("knowledge-base:library.sections.cheatsheets.title"),
     subtitle: t("knowledge-base:library.sections.cheatsheets.tocSubtitle"),
   },
   {
     id: "newsletters",
-    icon: mailsIcon,
+    icon: icons.mask("mails"),
     title: t("knowledge-base:library.sections.newsletters.title"),
     subtitle: t("knowledge-base:library.sections.newsletters.tocSubtitle"),
   },
@@ -92,7 +89,7 @@ const sections = [
               url={sheet.url}
               title={sheet.title}
               description={sheet.description}
-              icon={receiptTextIcon}
+              icon={icons.mask("receipt-text")}
               rtl={dir === "rtl"}
             />
           ))

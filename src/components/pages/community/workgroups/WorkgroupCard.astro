@@ -2,8 +2,7 @@
 import Card from "@/components/ui/Card.astro";
 import MaskIcon from "@/components/ui/icons/MaskIcon.astro";
 import type { ImageMetadata } from "astro";
-
-import matrixIcon from "@/assets/icons/mask/matrix.avif";
+import { icons } from "@/utils/icons";
 
 export interface Props {
   name: string;
@@ -48,7 +47,7 @@ const { t } = Astro.locals;
             class="matrix-button"
             title={t("common:components.workgroupCard.joinMatrix")}
           >
-            <MaskIcon src={matrixIcon} size="1.5em" />
+            <MaskIcon src={icons.mask("matrix")} size="1.5em" />
             Matrix
           </a>
           <span class="irc-link">

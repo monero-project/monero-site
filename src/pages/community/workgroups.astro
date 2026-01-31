@@ -11,10 +11,7 @@ import Layout from "@/layouts/Layout.astro";
 
 import communityLogo from "@/assets/images/community-logo.avif";
 
-import externalLinkIcon from "@/assets/icons/mask/external-link.avif";
-import hashtagIcon from "@/assets/icons/mask/hashtag.avif";
-import messageCircleIcon from "@/assets/icons/mask/messageCircle.avif";
-
+import { icons } from "@/utils/icons";
 import {
   communityWorkgroups,
   developmentWorkgroups,
@@ -35,7 +32,7 @@ const { t, dir, localizeHref } = Astro.locals;
 
   <PageContainer>
     <InternalResourceButton
-      icon={messageCircleIcon}
+      icon={icons.mask("message-circle")}
       title={t("workgroups:hangoutsNote.title")}
       href={localizeHref("/community/hangouts")}
     >
@@ -55,7 +52,11 @@ const { t, dir, localizeHref } = Astro.locals;
         rel="noopener noreferrer"
       >
         {t("workgroups:getStarted.communityWorkgroup.cta")}
-        <MaskIcon src={externalLinkIcon} size="1em" rtl={dir === "rtl"} />
+        <MaskIcon
+          src={icons.mask("external-link")}
+          size="1em"
+          rtl={dir === "rtl"}
+        />
       </Button>
       <Button
         as="a"
@@ -64,7 +65,7 @@ const { t, dir, localizeHref } = Astro.locals;
         rel="noopener noreferrer"
         variant="secondary"
       >
-        <MaskIcon src={hashtagIcon} size="0.9em" />
+        <MaskIcon src={icons.mask("hashtag")} size="0.9em" />
         IRC
       </Button>
     </HeroCard>

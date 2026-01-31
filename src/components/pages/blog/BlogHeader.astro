@@ -1,9 +1,7 @@
 ---
 import MaskIcon from "@/components/ui/icons/MaskIcon.astro";
 import { getDateStringFromId } from "@/utils/blog.ts";
-
-import calendarIcon from "@/assets/icons/mask/calendar.avif";
-import userIcon from "@/assets/icons/mask/user.avif";
+import { icons } from "@/utils/icons";
 
 interface Props {
   title: string;
@@ -31,7 +29,7 @@ const date = localizeDateString(dateString, {
       date && (
         <div class="meta-item">
           <div class="icon">
-            <MaskIcon src={calendarIcon} />
+            <MaskIcon src={icons.mask("calendar")} />
           </div>
           <time datetime={dateString}>{date}</time>
         </div>
@@ -42,7 +40,7 @@ const date = localizeDateString(dateString, {
       author && (
         <div class="meta-item">
           <div class="icon">
-            <MaskIcon src={userIcon} />
+            <MaskIcon src={icons.mask("user")} />
           </div>
           {author.replace(" and ", ` ${t("blog:post.and")} `)}
         </div>

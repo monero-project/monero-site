@@ -1,7 +1,6 @@
 ---
-import externalLinkIcon from "@/assets/icons/mask/external-link.avif";
-import matrixIcon from "@/assets/icons/mask/matrix.avif";
 import MaskIcon from "@/components/ui/icons/MaskIcon.astro";
+import { icons } from "@/utils/icons";
 
 export interface Props {
   name: string;
@@ -39,7 +38,7 @@ const { prefix, suffix } = parseChannelName(name);
       >
       <span class="channel-desc">{description}</span>
     </span>
-    <MaskIcon src={externalLinkIcon} size="1em" rtl={rtl} />
+    <MaskIcon src={icons.mask("external-link")} size="1em" rtl={rtl} />
   </a>
 
   {
@@ -52,7 +51,7 @@ const { prefix, suffix } = parseChannelName(name);
         title={t("common:components.ircChannelButton.matrix")}
         aria-label={t("common:components.ircChannelButton.openOnMatrix")}
       >
-        <MaskIcon src={matrixIcon} size="2em" />
+        <MaskIcon src={icons.mask("matrix")} size="2em" />
       </a>
     )
   }

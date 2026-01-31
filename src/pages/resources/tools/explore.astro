@@ -11,8 +11,7 @@ import {
   utilities,
 } from "@/data/resources/monero-tools";
 import Layout from "@/layouts/Layout.astro";
-
-import shieldAlertIcon from "@/assets/icons/mask/shieldAlert.avif";
+import { icons } from "@/utils/icons";
 
 const { t, localizeHref } = Astro.locals;
 ---
@@ -96,7 +95,7 @@ const { t, localizeHref } = Astro.locals;
   </PageContainer>
 
   <DisclaimerBar
-    icon={shieldAlertIcon}
+    icon={icons.mask("shield-alert")}
     title={t("tools:explore.disclaimer.title")}
   >
     {t("tools:explore.disclaimer.text")}

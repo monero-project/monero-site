@@ -1,37 +1,5 @@
 import type { ImageMetadata } from "astro";
-
-// Light theme icons
-import acceptMonero from "@/assets/icons/color/light/accept-monero.avif";
-import contribute from "@/assets/icons/color/light/contribute.avif";
-import developerGuides from "@/assets/icons/color/light/developer-guides.avif";
-import faq from "@/assets/icons/color/light/faq.avif";
-import hangouts from "@/assets/icons/color/light/hangouts.avif";
-import merchantsExchanges from "@/assets/icons/color/light/merchants-exchanges.avif";
-import mining from "@/assets/icons/color/light/mining.avif";
-import moneropedia from "@/assets/icons/color/light/moneropedia.avif";
-import pressKit from "@/assets/icons/color/light/press-kit.avif";
-import researchLab from "@/assets/icons/color/light/research-lab.avif";
-import roadmap from "@/assets/icons/color/light/roadmap.avif";
-import sponsorships from "@/assets/icons/color/light/sponsorships.avif";
-import tools from "@/assets/icons/color/light/tools.avif";
-import workgroups from "@/assets/icons/color/light/workgroups.avif";
-import monero from "@/assets/icons/color/monero.avif";
-
-// Dark theme icons
-import acceptMoneroDark from "@/assets/icons/color/dark/accept-monero.avif";
-import contributeDark from "@/assets/icons/color/dark/contribute.avif";
-import developerGuidesDark from "@/assets/icons/color/dark/developer-guides.avif";
-import faqDark from "@/assets/icons/color/dark/faq.avif";
-import hangoutsDark from "@/assets/icons/color/dark/hangouts.avif";
-import merchantsExchangesDark from "@/assets/icons/color/dark/merchants-exchanges.avif";
-import miningDark from "@/assets/icons/color/dark/mining.avif";
-import moneropediaDark from "@/assets/icons/color/dark/moneropedia.avif";
-import pressKitDark from "@/assets/icons/color/dark/press-kit.avif";
-import researchLabDark from "@/assets/icons/color/dark/research-lab.avif";
-import roadmapDark from "@/assets/icons/color/dark/roadmap.avif";
-import sponsorshipsDark from "@/assets/icons/color/dark/sponsorships.avif";
-import toolsDark from "@/assets/icons/color/dark/tools.avif";
-import workgroupsDark from "@/assets/icons/color/dark/workgroups.avif";
+import { icons } from "@/utils/icons";
 
 interface DropdownItem {
   key: string;
@@ -53,6 +21,11 @@ interface NavLinkConfig {
 
 type NavItemConfig = NavDropdownConfig | NavLinkConfig;
 
+const navIcon = (name: string) => {
+  const { light, dark } = icons.color(name);
+  return { icon: light, iconDark: dark };
+};
+
 export const navigationItems: NavItemConfig[] = [
   {
     translationKey: "getStarted",
@@ -61,43 +34,37 @@ export const navigationItems: NavItemConfig[] = [
       {
         key: "whatIsMonero",
         href: "/get-started/what-is-monero",
-        icon: monero,
+        ...navIcon("monero"),
       },
       {
         key: "buyMonero",
         href: "/get-started/exchanges",
-        icon: merchantsExchanges,
-        iconDark: merchantsExchangesDark,
+        ...navIcon("merchants-exchanges"),
       },
       {
         key: "spendMonero",
         href: "/get-started/merchants",
-        icon: sponsorships,
-        iconDark: sponsorshipsDark,
+        ...navIcon("sponsorships"),
       },
       {
         key: "acceptMonero",
         href: "/get-started/accept-monero",
-        icon: acceptMonero,
-        iconDark: acceptMoneroDark,
+        ...navIcon("accept-monero"),
       },
       {
         key: "mining",
         href: "/get-started/mining",
-        icon: mining,
-        iconDark: miningDark,
+        ...navIcon("mining"),
       },
       {
         key: "contribute",
         href: "/get-started/contribute",
-        icon: contribute,
-        iconDark: contributeDark,
+        ...navIcon("contribute"),
       },
       {
         key: "faq",
         href: "/get-started/faq",
-        icon: faq,
-        iconDark: faqDark,
+        ...navIcon("faq"),
       },
     ],
   },
@@ -116,20 +83,17 @@ export const navigationItems: NavItemConfig[] = [
       {
         key: "workgroups",
         href: "/community/workgroups",
-        icon: workgroups,
-        iconDark: workgroupsDark,
+        ...navIcon("workgroups"),
       },
       {
         key: "sponsorships",
         href: "/community/sponsorships",
-        icon: sponsorships,
-        iconDark: sponsorshipsDark,
+        ...navIcon("sponsorships"),
       },
       {
         key: "hangouts",
         href: "/community/hangouts",
-        icon: hangouts,
-        iconDark: hangoutsDark,
+        ...navIcon("hangouts"),
       },
     ],
   },
@@ -140,38 +104,32 @@ export const navigationItems: NavItemConfig[] = [
       {
         key: "knowledgeBase",
         href: "/resources/knowledge-base",
-        icon: moneropedia,
-        iconDark: moneropediaDark,
+        ...navIcon("moneropedia"),
       },
       {
         key: "roadmap",
         href: "/resources/roadmap",
-        icon: roadmap,
-        iconDark: roadmapDark,
+        ...navIcon("roadmap"),
       },
       {
         key: "researchLab",
         href: "/resources/research-lab",
-        icon: researchLab,
-        iconDark: researchLabDark,
+        ...navIcon("research-lab"),
       },
       {
         key: "moneroTools",
         href: "/resources/tools",
-        icon: tools,
-        iconDark: toolsDark,
+        ...navIcon("tools"),
       },
       {
         key: "moneroDocs",
         href: "https://docs.getmonero.org",
-        icon: developerGuides,
-        iconDark: developerGuidesDark,
+        ...navIcon("developer-guides"),
       },
       {
         key: "pressKit",
         href: "/resources/press-kit",
-        icon: pressKit,
-        iconDark: pressKitDark,
+        ...navIcon("press-kit"),
       },
     ],
   },

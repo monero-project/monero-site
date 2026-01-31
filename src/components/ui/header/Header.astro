@@ -8,8 +8,7 @@ import MaskIcon from "@/components/ui/icons/MaskIcon.astro";
 import { navigationItems } from "@/data/navigation";
 
 import moneroLogo from "@/../public/meta/monerologo.avif";
-import close from "@/assets/icons/mask/close.avif";
-import hamburger from "@/assets/icons/mask/hamburger.avif";
+import { icons } from "@/utils/icons";
 
 const { t, localizeHref } = Astro.locals;
 
@@ -62,7 +61,7 @@ const navItems = navigationItems.map((item) => {
           aria-controls="primary-nav"
           aria-label={t("common:aria.closeMenu")}
         >
-          <MaskIcon src={close} size="1.5rem" />
+          <MaskIcon src={icons.mask("close")} size="1.5rem" />
         </label>
       </div>
       <fieldset>
@@ -89,7 +88,7 @@ const navItems = navigationItems.map((item) => {
         aria-controls="primary-nav"
         aria-label={t("common:aria.openMenu")}
       >
-        <MaskIcon src={hamburger} size="1.5rem" />
+        <MaskIcon src={icons.mask("hamburger")} size="1.5rem" />
       </label>
     </div>
   </div>

@@ -1,7 +1,7 @@
 ---
 import Column from "@/components/ui/layout/Column.astro";
 import MaskIcon from "@/components/ui/icons/MaskIcon.astro";
-import closeIcon from "@/assets/icons/mask/close.avif";
+import { icons } from "@/utils/icons";
 
 interface Props {
   title: string;
@@ -36,7 +36,7 @@ const {
     </div>
 
     <label for={mobileToggleId} class="mobile-filter-close">
-      <MaskIcon src={closeIcon} size="1.25em" aria-hidden="true" />
+      <MaskIcon src={icons.mask("close")} size="1.25em" aria-hidden="true" />
       {closeLabel}
     </label>
   </Column>

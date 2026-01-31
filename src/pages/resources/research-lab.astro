@@ -13,14 +13,11 @@ import Column from "@/components/ui/layout/Column.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import Layout from "@/layouts/Layout.astro";
 
-import bookTextIcon from "@/assets/icons/mask/bookText.avif";
-import externalLinkIcon from "@/assets/icons/mask/external-link.avif";
-import hashtagIcon from "@/assets/icons/mask/hashtag.avif";
-
 import mrlLogo from "@/assets/images/mrl-logo.avif";
 
 const { dir, t, localizeHref } = Astro.locals;
 
+import { icons } from "@/utils/icons";
 import {
   iacrPapers,
   mrlBulletins,
@@ -69,7 +66,11 @@ const paperTabs = [
         rel="noopener noreferrer"
       >
         MoneroResearch.info
-        <MaskIcon src={externalLinkIcon} size="1em" rtl={dir === "rtl"} />
+        <MaskIcon
+          src={icons.mask("external-link")}
+          size="1em"
+          rtl={dir === "rtl"}
+        />
       </Button>
       <Button
         href="https://matrix.to/#/#monero-research-lab:monero.social"
@@ -79,7 +80,11 @@ const paperTabs = [
         variant="secondary"
       >
         Matrix
-        <MaskIcon src={externalLinkIcon} size="1em" rtl={dir === "rtl"} />
+        <MaskIcon
+          src={icons.mask("external-link")}
+          size="1em"
+          rtl={dir === "rtl"}
+        />
       </Button>
       <Button
         as="a"
@@ -88,7 +93,11 @@ const paperTabs = [
         rel="noopener noreferrer"
         variant="secondary"
       >
-        <MaskIcon src={hashtagIcon} size="0.9em" rtl={dir === "rtl"} />
+        <MaskIcon
+          src={icons.mask("hashtag")}
+          size="0.9em"
+          rtl={dir === "rtl"}
+        />
         IRC
       </Button>
     </HeroCard>
@@ -150,7 +159,11 @@ const paperTabs = [
         >
           {
             whitepapers.map((paper) => (
-              <SidebarLink href={paper.url} icon={bookTextIcon} external>
+              <SidebarLink
+                href={paper.url}
+                icon={icons.mask("book-text")}
+                external
+              >
                 {t(`knowledge-base:researchLab.whitepapers.items.${paper.id}`)}
               </SidebarLink>
             ))

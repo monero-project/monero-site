@@ -9,12 +9,9 @@ import Grid from "@/components/ui/layout/Grid.astro";
 import Column from "@/components/ui/layout/Column.astro";
 import VideoContainer from "@/components/ui/VideoContainer.astro";
 
-import codeIcon from "@/assets/icons/mask/codeXml.avif";
-import chatIcon from "@/assets/icons/mask/messageCircle.avif";
-import usersIcon from "@/assets/icons/mask/users.avif";
-
 import landingImage from "@/assets/images/landing.avif";
 import { Image } from "astro:assets";
+import { icons } from "@/utils/icons";
 
 const { t, localizeHref } = Astro.locals;
 ---
@@ -107,21 +104,21 @@ const { t, localizeHref } = Astro.locals;
           description={t("index:hangoutsDesc")}
           ctaLabel={t("index:hangoutsCta")}
           ctaHref={localizeHref("/community/hangouts")}
-          icon={chatIcon}
+          icon={icons.mask("message-circle")}
         />
         <ResourceCard
           title={t("index:workgroupsTitle")}
           description={t("index:workgroupsDesc")}
           ctaLabel={t("index:workgroupsCta")}
           ctaHref={localizeHref("/community/workgroups")}
-          icon={usersIcon}
+          icon={icons.mask("users")}
         />
         <ResourceCard
           title={t("index:contributeTitle")}
           description={t("index:contributeDesc")}
           ctaLabel={t("index:contributeCta")}
           ctaHref={localizeHref("/get-started/contribute")}
-          icon={codeIcon}
+          icon={icons.mask("code-xml")}
         />
       </Grid>
     </IndexCard>

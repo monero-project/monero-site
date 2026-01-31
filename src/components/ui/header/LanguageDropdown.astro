@@ -3,8 +3,7 @@ import { locales } from "@/i18n/config";
 import { getLocaleName, localizeHref } from "@/i18n/utils";
 
 import MaskIcon from "@/components/ui/icons/MaskIcon.astro";
-
-import Globe from "@/assets/icons/mask/globe.avif";
+import { icons } from "@/utils/icons";
 
 const { t, locale: currentLocale } = Astro.locals;
 
@@ -21,7 +20,7 @@ const localeList = Object.keys(locales).map((code) => {
     aria-haspopup="true"
     role="button"
   >
-    <MaskIcon src={Globe} size="1.5rem" />
+    <MaskIcon src={icons.mask("globe")} size="1.5rem" />
   </summary>
 
   <div

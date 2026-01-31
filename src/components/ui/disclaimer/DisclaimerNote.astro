@@ -1,6 +1,6 @@
 ---
-import shieldIcon from "@/assets/icons/mask/shieldAlert.avif";
 import MaskIcon from "@/components/ui/icons/MaskIcon.astro";
+import { icons } from "@/utils/icons";
 
 export interface Props {
   text: string;
@@ -11,7 +11,7 @@ const { text } = Astro.props;
 
 <div class="disclaimer-note">
   <div class="disclaimer-icon">
-    <MaskIcon src={shieldIcon} size="1.25em" />
+    <MaskIcon src={icons.mask("shield-alert")} size="1.25em" />
   </div>
   <span>{text}</span>
 </div>

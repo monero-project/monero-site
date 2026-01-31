@@ -9,10 +9,9 @@ import TitleCard from "@/components/ui/TitleCard.astro";
 import Layout from "@/layouts/Layout.astro";
 import { Image } from "astro:assets";
 
-import arrowRight from "@/assets/icons/mask/arrow-right.avif";
-
 import moneroPickaxe from "@/assets/images/monero_pickaxe.webp";
 import serverImage from "@/assets/images/server.avif";
+import { icons } from "@/utils/icons";
 
 const { t, dir, localizeHref, safeMarkdown } = Astro.locals;
 ---
@@ -44,7 +43,11 @@ const { t, dir, localizeHref, safeMarkdown } = Astro.locals;
       <Row gap="xl" class="cta-links">
         <Button href={localizeHref("/get-started/mining/")}>
           {t("contribute:network.mine.learnAboutMining")}
-          <MaskIcon src={arrowRight} size="1em" rtl={dir == "rtl"} />
+          <MaskIcon
+            src={icons.mask("arrow-right")}
+            size="1em"
+            rtl={dir == "rtl"}
+          />
         </Button>
       </Row>
 

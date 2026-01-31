@@ -1,7 +1,7 @@
 ---
-import chevronDownIcon from "@/assets/icons/mask/chevron-down.avif";
 import DOMPurify from "isomorphic-dompurify";
 import MaskIcon from "../icons/MaskIcon.astro";
+import { icons } from "@/utils/icons";
 
 export interface Props {
   title: string;
@@ -23,7 +23,7 @@ const { title, content, variant = "default", name, open = false } = Astro.props;
   <summary class="header">
     <span class="title">{title}</span>
     <div class="icon">
-      <MaskIcon src={chevronDownIcon} />
+      <MaskIcon src={icons.mask("chevron-down")} />
     </div>
   </summary>
   {

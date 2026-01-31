@@ -11,12 +11,11 @@ import TitleCard from "@/components/ui/TitleCard.astro";
 
 import coreDownloads from "@/data/downloads/core.json";
 
-import shieldCheckIcon from "@/assets/icons/mask/shieldCheck.avif";
-import walletIcon from "@/assets/icons/mask/wallet.avif";
 import cliImage from "@/assets/images/cli.avif";
 import guiImage from "@/assets/images/gui.avif";
 
 import PageContainer from "@/components/ui/layout/PageContainer.astro";
+import { icons } from "@/utils/icons";
 
 const { t, localizeHref, safeMarkdown } = Astro.locals;
 
@@ -44,7 +43,7 @@ const tabs = [
       activeIndex={0}
     />
     <InternalResourceButton
-      icon={walletIcon}
+      icon={icons.mask("wallet")}
       title={t("downloads:communityNote.title")}
       href={localizeHref("/downloads/community")}
     >
@@ -98,7 +97,7 @@ const tabs = [
       title={t("downloads:core.verifyDownload")}
       href="/downloads/hashes.txt"
       linkText={t("downloads:core.viewHashes")}
-      icon={shieldCheckIcon}
+      icon={icons.mask("shield-check")}
     >
       <Fragment
         set:html={safeMarkdown.parse(

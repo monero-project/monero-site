@@ -1,7 +1,7 @@
 ---
 import Column from "@/components/ui/layout/Column.astro";
 import MaskIcon from "@/components/ui/icons/MaskIcon.astro";
-import searchIcon from "@/assets/icons/mask/search.avif";
+import { icons } from "@/utils/icons";
 
 interface Props {
   toggleId: string;
@@ -20,7 +20,7 @@ const { dir } = Astro.locals;
   <label for={toggleId} class="mobile-filter-bar">
     <div class="mobile-filter-bar-inner">
       <MaskIcon
-        src={searchIcon}
+        src={icons.mask("search")}
         size="1.25em"
         aria-hidden="true"
         rtl={dir == "rtl"}

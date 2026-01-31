@@ -18,20 +18,13 @@ import communityLogo from "@/assets/images/community-logo.avif";
 import cryptoLock from "@/assets/images/crypto-lock.avif";
 import surveillanceImage from "@/assets/images/surveillanceImage.avif";
 
-import briefcaseIcon from "@/assets/icons/mask/briefcase.avif";
-import coinsIcon from "@/assets/icons/mask/coins.avif";
-import eyeOffIcon from "@/assets/icons/mask/eyeOff.avif";
-import fistIcon from "@/assets/icons/mask/fist.avif";
-import hatGlassesIcon from "@/assets/icons/mask/hat-glasses.avif";
-import shieldCheckIcon from "@/assets/icons/mask/shieldCheck.avif";
-import shieldPlusIcon from "@/assets/icons/mask/shieldPlus.avif";
-
 import Button from "@/components/ui/Button.astro";
 import IconLink from "@/components/ui/IconLink.astro";
 import { getLocaleName } from "@/i18n/utils";
 
 import { readdirSync } from "fs";
 import { join } from "path";
+import { icons } from "@/utils/icons";
 
 const { t, localizeHref, safeMarkdown } = Astro.locals;
 
@@ -104,7 +97,7 @@ const getLanguageLabel = (lang: string): string => {
       </Fragment>
       <Column slot="aside" gap="2xl">
         <UseCaseItem
-          icon={shieldCheckIcon}
+          icon={icons.mask("shield-check")}
           title={t(
             "what-is-monero:sections.useCases.items.financialPrivacy.title",
           )}
@@ -113,14 +106,14 @@ const getLanguageLabel = (lang: string): string => {
           )}
         />
         <UseCaseItem
-          icon={coinsIcon}
+          icon={icons.mask("coins")}
           title={t("what-is-monero:sections.useCases.items.fungibility.title")}
           description={t(
             "what-is-monero:sections.useCases.items.fungibility.description",
           )}
         />
         <UseCaseItem
-          icon={fistIcon}
+          icon={icons.mask("fist")}
           title={t(
             "what-is-monero:sections.useCases.items.censorshipResistance.title",
           )}
@@ -129,7 +122,7 @@ const getLanguageLabel = (lang: string): string => {
           )}
         />
         <UseCaseItem
-          icon={briefcaseIcon}
+          icon={icons.mask("briefcase")}
           title={t(
             "what-is-monero:sections.useCases.items.businessPayments.title",
           )}
@@ -149,7 +142,7 @@ const getLanguageLabel = (lang: string): string => {
       <h2>{t("what-is-monero:sections.technology.title")}</h2>
       <Grid minWidth="20rem" gap="2xl">
         <FeatureCard
-          icon={hatGlassesIcon}
+          icon={icons.mask("hat-glasses")}
           title={t(
             "what-is-monero:sections.technology.features.stealthAddresses.title",
           )}
@@ -166,7 +159,7 @@ const getLanguageLabel = (lang: string): string => {
           )}
         />
         <FeatureCard
-          icon={shieldPlusIcon}
+          icon={icons.mask("shield-plus")}
           title={t("what-is-monero:sections.technology.features.fcmp.title")}
           description={t(
             "what-is-monero:sections.technology.features.fcmp.description",
@@ -179,7 +172,7 @@ const getLanguageLabel = (lang: string): string => {
           )}
         />
         <FeatureCard
-          icon={eyeOffIcon}
+          icon={icons.mask("eye-off")}
           title={t(
             "what-is-monero:sections.technology.features.confidentialTransactions.title",
           )}

@@ -7,9 +7,8 @@ import PageContainer from "@/components/ui/layout/PageContainer.astro";
 import Column from "@/components/ui/layout/Column.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 
-import shieldIcon from "@/assets/icons/mask/shieldAlert.avif";
-
 import merchants from "@/data/get-started/merchants";
+import { icons } from "@/utils/icons";
 
 const { t } = Astro.locals;
 ---
@@ -43,7 +42,10 @@ const { t } = Astro.locals;
     </Column>
   </PageContainer>
 
-  <DisclaimerBar icon={shieldIcon} title={t("merchants:disclaimerTitle")}>
+  <DisclaimerBar
+    icon={icons.mask("shield-alert")}
+    title={t("merchants:disclaimerTitle")}
+  >
     {t("merchants:disclaimer")}
   </DisclaimerBar>
 </Layout>

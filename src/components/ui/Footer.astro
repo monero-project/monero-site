@@ -2,9 +2,8 @@
 import { isExternal } from "@/utils/links";
 import type { ImageMetadata } from "astro";
 
-import rssIcon from "@/assets/icons/mask/rss.avif";
-import torIcon from "@/assets/icons/mask/tor.avif";
 import MaskIcon from "./icons/MaskIcon.astro";
+import { icons } from "@/utils/icons";
 
 const { t, dir, localizeHref } = Astro.locals;
 
@@ -112,7 +111,7 @@ const bottomLinks: Link[] = [
     label: t("common:footer.bottomLinks.torOnionService"),
     href: "#",
     icon: {
-      src: torIcon,
+      src: icons.mask("tor"),
       size: "1rem",
       color: "#7d4698",
       ignoreRtl: true,
@@ -134,7 +133,7 @@ const bottomLinks: Link[] = [
     label: t("common:footer.bottomLinks.rssFeed"),
     href: "/feed.xml",
     icon: {
-      src: rssIcon,
+      src: icons.mask("rss"),
       size: "1rem",
       color: "var(--monero-orange)",
     },

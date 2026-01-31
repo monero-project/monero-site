@@ -1,7 +1,7 @@
 ---
 import Card from "@/components/ui/Card.astro";
-import shieldIcon from "@/assets/icons/mask/shieldAlert.avif";
 import MaskIcon from "@/components/ui/icons/MaskIcon.astro";
+import { icons } from "@/utils/icons";
 
 export interface Props {
   class?: string;
@@ -15,7 +15,7 @@ const { class: className, showIcon = false } = Astro.props;
   {
     showIcon && (
       <span class="icon">
-        <MaskIcon src={shieldIcon} size="1.5em" />
+        <MaskIcon src={icons.mask("shield-alert")} size="1.5em" />
       </span>
     )
   }

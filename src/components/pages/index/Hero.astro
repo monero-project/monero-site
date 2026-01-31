@@ -1,8 +1,7 @@
 ---
 import Button from "@/components/ui/Button.astro";
 import MaskIcon from "@/components/ui/icons/MaskIcon.astro";
-
-import moneroOutline from "@/assets/icons/mask/monerooutline.avif";
+import { icons } from "@/utils/icons";
 
 const { class: className, ...rest } = Astro.props;
 const { t, localizeHref } = Astro.locals;
@@ -12,7 +11,7 @@ const { t, localizeHref } = Astro.locals;
   <div class="background-logo" aria-hidden="true">
     <div class="logo-box">
       <div class="mask-icon">
-        <MaskIcon src={moneroOutline} size="100%" />
+        <MaskIcon src={icons.mask("monerooutline")} size="100%" />
       </div>
       <div class="inner-circle"></div>
     </div>

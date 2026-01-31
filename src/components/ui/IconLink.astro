@@ -2,9 +2,7 @@
 import type { HTMLTag } from "astro/types";
 import type { ImageMetadata } from "astro";
 import MaskIcon from "./icons/MaskIcon.astro";
-
-import arrowRight from "@/assets/icons/mask/arrow-right.avif";
-import externalLink from "@/assets/icons/mask/external-link.avif";
+import { icons } from "@/utils/icons";
 
 type Size = "sm" | "base" | "lg";
 type Weight = "normal" | "medium" | "semibold" | "bold";
@@ -46,7 +44,11 @@ const rtl = dir === "rtl";
 const isExternal =
   external ?? (href?.startsWith("http") || href?.startsWith("//"));
 const resolvedIcon =
-  icon !== undefined ? icon : isExternal ? externalLink : arrowRight;
+  icon !== undefined
+    ? icon
+    : isExternal
+      ? icons.mask("external-link")
+      : icons.mask("arrow-right");
 const Tag = (as ?? (href ? "a" : "span")) as HTMLTag;
 
 const sizeValue = `var(--font-size-${size})`;

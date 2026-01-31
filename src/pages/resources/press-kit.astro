@@ -14,16 +14,13 @@ import Layout from "@/layouts/Layout.astro";
 import BrandAssetCard from "@/components/pages/resources/press-kit/BrandAssetCard.astro";
 import ContactCard from "@/components/pages/resources/press-kit/ContactCard.astro";
 
-import bookTextIcon from "@/assets/icons/mask/bookText.avif";
-import componentIcon from "@/assets/icons/mask/component.avif";
-import usersIcon from "@/assets/icons/mask/users.avif";
-
 import {
   brandAssets,
   marketingResources,
   pressDocuments,
 } from "@/data/resources/press-kit";
 import { getPublicImageDimensions } from "@/utils/image";
+import { icons } from "@/utils/icons";
 
 const { t, localizeHref } = Astro.locals;
 const previewDimensions = await Promise.all(
@@ -33,19 +30,19 @@ const previewDimensions = await Promise.all(
 const sections = [
   {
     id: "brand-assets",
-    icon: componentIcon,
+    icon: icons.mask("component"),
     title: t("press-kit:sections.brandAssets.title"),
     subtitle: t("press-kit:sections.brandAssets.tocSubtitle"),
   },
   {
     id: "press-materials",
-    icon: bookTextIcon,
+    icon: icons.mask("book-text"),
     title: t("press-kit:sections.pressMaterials.title"),
     subtitle: t("press-kit:sections.pressMaterials.tocSubtitle"),
   },
   {
     id: "contacts",
-    icon: usersIcon,
+    icon: icons.mask("users"),
     title: t("press-kit:sections.contacts.title"),
     subtitle: t("press-kit:sections.contacts.tocSubtitle"),
   },

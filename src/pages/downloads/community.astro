@@ -9,17 +9,13 @@ import TitleCard from "@/components/ui/TitleCard.astro";
 import TOCContainer from "@/components/ui/toc/TOCContainer.astro";
 import communityWallets from "@/data/downloads/community";
 
-import serverIcon from "@/assets/icons/mask/server.avif";
-import snowflakeIcon from "@/assets/icons/mask/snowflake.avif";
-import walletIcon from "@/assets/icons/mask/wallet.avif";
-
-import shieldIcon from "@/assets/icons/mask/shieldAlert.avif";
 import DisclaimerBar from "@/components/ui/disclaimer/DisclaimerBar.astro";
 import DisclaimerNote from "@/components/ui/disclaimer/DisclaimerNote.astro";
 import PageContainer from "@/components/ui/layout/PageContainer.astro";
 import PageSection from "@/components/ui/layout/PageSection.astro";
 
 import type { Wallet } from "@/data/downloads/community";
+import { icons } from "@/utils/icons";
 
 export const sortWallets = (wallets: Wallet[]) =>
   // Sort by number of supported platforms (mobile + desktop), then alphabetically
@@ -43,19 +39,19 @@ const tabs = [
 const sections = [
   {
     id: "wallets",
-    icon: walletIcon,
+    icon: icons.mask("wallet"),
     title: t("downloads:community.sections.wallets.title"),
     subtitle: t("downloads:community.sections.wallets.subtitle"),
   },
   {
     id: "cold-wallets",
-    icon: snowflakeIcon,
+    icon: icons.mask("snowflake"),
     title: t("downloads:community.sections.cold.title"),
     subtitle: t("downloads:community.sections.cold.subtitle"),
   },
   {
     id: "nodes",
-    icon: serverIcon,
+    icon: icons.mask("server"),
     title: t("downloads:community.sections.nodes.title"),
     subtitle: t("downloads:community.sections.nodes.subtitle"),
   },
@@ -224,7 +220,7 @@ const setBuiltinId = (wallet: Wallet) => {
     </PageSection>
 
     <DisclaimerBar
-      icon={shieldIcon}
+      icon={icons.mask("shield-alert")}
       title={t("downloads:community.disclaimerTitle")}
     >
       {t("downloads:community.disclaimer")}

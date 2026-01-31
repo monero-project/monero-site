@@ -1,6 +1,6 @@
 ---
-import externalLinkIcon from "@/assets/icons/mask/external-link.avif";
 import MaskIcon from "@/components/ui/icons/MaskIcon.astro";
+import { icons } from "@/utils/icons";
 
 interface Props {
   items: Array<{
@@ -37,7 +37,11 @@ const rtl = dir === "rtl";
           >
             <span class="status-title">
               {t(`roadmap:items.${item.id}.title`)}
-              <MaskIcon src={externalLinkIcon} size="0.875em" rtl={rtl} />
+              <MaskIcon
+                src={icons.mask("external-link")}
+                size="0.875em"
+                rtl={rtl}
+              />
             </span>
             <p class="status-desc">
               {t(`roadmap:items.${item.id}.description`)}

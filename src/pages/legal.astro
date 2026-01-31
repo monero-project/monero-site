@@ -6,10 +6,7 @@ import TitleCard from "@/components/ui/TitleCard.astro";
 import TOCContainer from "@/components/ui/toc/TOCContainer.astro";
 import Layout from "@/layouts/Layout.astro";
 import { getCollection, render } from "astro:content";
-
-import copyrightIcon from "@/assets/icons/mask/copyright.avif";
-import receiptTextIcon from "@/assets/icons/mask/receiptText.avif";
-import shieldCheckIcon from "@/assets/icons/mask/shieldCheck.avif";
+import { icons } from "@/utils/icons";
 
 const { t } = Astro.locals;
 
@@ -17,19 +14,19 @@ const sections = [
   {
     id: "terms-of-use",
     title: t("legal:sections.termsOfUse.title"),
-    icon: receiptTextIcon,
+    icon: icons.mask("receipt-text"),
     subtitle: t("legal:sections.termsOfUse.tocSubtitle"),
   },
   {
     id: "copyright",
     title: t("legal:sections.copyright.title"),
-    icon: copyrightIcon,
+    icon: icons.mask("copyright"),
     subtitle: t("legal:sections.copyright.tocSubtitle"),
   },
   {
     id: "privacy-policy",
     title: t("legal:sections.privacyPolicy.title"),
-    icon: shieldCheckIcon,
+    icon: icons.mask("shield-check"),
     subtitle: t("legal:sections.privacyPolicy.tocSubtitle"),
   },
 ];

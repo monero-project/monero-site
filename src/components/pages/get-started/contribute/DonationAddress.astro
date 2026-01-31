@@ -1,7 +1,7 @@
 ---
-import chevronDownIcon from "@/assets/icons/mask/chevron-down.avif";
 import MaskIcon from "@/components/ui/icons/MaskIcon.astro";
 import { Image } from "astro:assets";
+import { icons } from "@/utils/icons";
 
 interface Props {
   currency: string;
@@ -48,7 +48,7 @@ const {
           <details class="view-only-details">
             <summary>
               <span class="icon">
-                <MaskIcon src={chevronDownIcon} size="0.875em" />
+                <MaskIcon src={icons.mask("chevron-down")} size="0.875em" />
               </span>
               <span>{viewOnlyLabel}</span>
             </summary>

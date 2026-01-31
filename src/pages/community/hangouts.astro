@@ -9,9 +9,8 @@ import Column from "@/components/ui/layout/Column.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import Layout from "@/layouts/Layout.astro";
 
-import usersIcon from "@/assets/icons/mask/users.avif";
-
 import { channels, chatLinks, socialLinks } from "@/data/community/hangouts";
+import { icons } from "@/utils/icons";
 
 const { t, localizeHref } = Astro.locals;
 ---
@@ -23,7 +22,7 @@ const { t, localizeHref } = Astro.locals;
   />
   <PageContainer>
     <InternalResourceButton
-      icon={usersIcon}
+      icon={icons.mask("users")}
       title={t("hangouts:workgroupsNote.title")}
       href={localizeHref("/community/workgroups")}
     >

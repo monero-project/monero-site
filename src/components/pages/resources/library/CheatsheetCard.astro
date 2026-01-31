@@ -2,7 +2,7 @@
 import type { ImageMetadata } from "astro";
 import Card from "@/components/ui/Card.astro";
 import MaskIcon from "@/components/ui/icons/MaskIcon.astro";
-import arrowRightIcon from "@/assets/icons/mask/arrow-right.avif";
+import { icons } from "@/utils/icons";
 
 interface Props {
   url: string;
@@ -32,7 +32,7 @@ const { url, title, description, icon, rtl = false } = Astro.props;
     <p class="cheatsheet-description">{description}</p>
   </div>
   <div class="cheatsheet-action">
-    <MaskIcon src={arrowRightIcon} size="1.25em" rtl={rtl} />
+    <MaskIcon src={icons.mask("arrow-right")} size="1.25em" rtl={rtl} />
   </div>
 </Card>
 

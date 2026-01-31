@@ -11,8 +11,8 @@ import type { GetStaticPaths, Page } from "astro";
 import type { CollectionEntry } from "astro:content";
 import { getCollection } from "astro:content";
 
-import rssIcon from "@/assets/icons/mask/rss.avif";
 import MaskIcon from "@/components/ui/icons/MaskIcon.astro";
+import { icons } from "@/utils/icons";
 
 export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
   const allPosts = (await getCollection("blog")).sort((a, b) =>
@@ -100,7 +100,7 @@ const titleKey = isMainTab ? "blog:index.hero.title" : "blog:tags.hero.title";
         aria-label={t("blog:aria.rssFeed")}
         title={t("blog:aria.rssFeed")}
       >
-        <MaskIcon src={rssIcon} size="2.5rem" rtl={dir == "rtl"} />
+        <MaskIcon src={icons.mask("rss")} size="2.5rem" rtl={dir == "rtl"} />
       </a>
     </Row>
     <Grid columns={2} gap="md" class="blog-grid">

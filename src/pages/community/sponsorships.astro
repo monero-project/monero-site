@@ -10,8 +10,7 @@ import PageSection from "@/components/ui/layout/PageSection.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 
 import { currentSponsors, pastSponsors } from "@/data/community/sponsors";
-
-import heartPlusIcon from "@/assets/icons/mask/heartPlus.avif";
+import { icons } from "@/utils/icons";
 
 const { t } = Astro.locals;
 ---
@@ -49,7 +48,7 @@ const { t } = Astro.locals;
       title={t("sponsorships:becomeASponsor.title")}
       href="mailto:dev@getmonero.org"
       linkText={t("sponsorships:becomeASponsor.cta")}
-      icon={heartPlusIcon}
+      icon={icons.mask("heart-plus")}
       variant="centered"
     >
       {t("sponsorships:becomeASponsor.description")}

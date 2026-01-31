@@ -1,6 +1,6 @@
 ---
-import chevronLeft from "@/assets/icons/mask/chevron-left.avif";
 import MaskIcon from "./icons/MaskIcon.astro";
+import { icons } from "@/utils/icons";
 
 interface Props {
   href: string;
@@ -16,7 +16,7 @@ const rtl = Astro.locals.dir === "rtl";
 <a href={href} class:list={["back-link", className]} data-size={size} {...rest}>
   <span class="icon-wrap">
     <MaskIcon
-      src={chevronLeft}
+      src={icons.mask("chevron-left")}
       size={size === "lg" ? "1.25rem" : "1.125rem"}
       rtl={rtl}
     />

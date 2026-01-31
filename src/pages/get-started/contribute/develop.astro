@@ -10,18 +10,10 @@ import Column from "@/components/ui/layout/Column.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import Layout from "@/layouts/Layout.astro";
 
-import appWindowIcon from "@/assets/icons/mask/app-window.avif";
-import bookTextIcon from "@/assets/icons/mask/bookText.avif";
-import codeXmlIcon from "@/assets/icons/mask/codeXml.avif";
-import coinsIcon from "@/assets/icons/mask/coins.avif";
-import externalLinkIcon from "@/assets/icons/mask/external-link.avif";
-import globeIcon from "@/assets/icons/mask/globe.avif";
-import shieldCheckIcon from "@/assets/icons/mask/shieldCheck.avif";
-import terminalIcon from "@/assets/icons/mask/terminal.avif";
-import usersIcon from "@/assets/icons/mask/users.avif";
 import cuprateLogo from "@/assets/images/nodes/cuprate.avif";
 import p2poolLogo from "@/assets/images/ecosystem/p2pool.png";
 import xmrigLogo from "@/assets/images/ecosystem/xmrig.png";
+import { icons } from "@/utils/icons";
 
 const { t, localizeHref } = Astro.locals;
 
@@ -31,28 +23,28 @@ const coreProjects = [
     description: t("contribute:develop.daemon.description"),
     tags: ["C++"],
     href: "https://github.com/monero-project/monero",
-    icon: terminalIcon,
+    icon: icons.mask("terminal"),
   },
   {
     title: t("contribute:develop.guiWallet.title"),
     description: t("contribute:develop.guiWallet.description"),
     tags: ["C++", "QML"],
     href: "https://github.com/monero-project/monero-gui",
-    icon: appWindowIcon,
+    icon: icons.mask("app-window"),
   },
   {
     title: t("contribute:develop.moneroWebsite.title"),
     description: t("contribute:develop.moneroWebsite.description"),
     tags: ["TypeScript"],
     href: "https://github.com/monero-project/monero-site",
-    icon: globeIcon,
+    icon: icons.mask("globe"),
   },
   {
     title: t("contribute:develop.moneroDocs.title"),
     description: t("contribute:develop.moneroDocs.description"),
     tags: ["Markdown"],
     href: "https://github.com/monero-project/monero-docs",
-    icon: bookTextIcon,
+    icon: icons.mask("book-text"),
   },
 ];
 
@@ -134,14 +126,14 @@ const communityProjects = [
         >
           <SidebarLink
             href="https://bounties.monero.social/"
-            icon={coinsIcon}
+            icon={icons.mask("coins")}
             external
           >
             {t("contribute:develop.bounties.browseMoneroBounties")}
           </SidebarLink>
           <SidebarLink
             href="https://hackerone.com/monero"
-            icon={shieldCheckIcon}
+            icon={icons.mask("shield-check")}
             external
           >
             {t("contribute:develop.bounties.securityDisclosures")}
@@ -154,7 +146,7 @@ const communityProjects = [
         >
           <SidebarLink
             href={localizeHref("/community/workgroups/")}
-            icon={usersIcon}
+            icon={icons.mask("users")}
           >
             {t("contribute:develop.workgroups.joinWorkgroups")}
           </SidebarLink>
@@ -163,20 +155,20 @@ const communityProjects = [
         <SidebarCard title={t("contribute:develop.resources.title")}>
           <SidebarLink
             href="https://docs.getmonero.org/"
-            icon={bookTextIcon}
+            icon={icons.mask("book-text")}
             external
           >
             {t("contribute:develop.resources.moneroDocs")}
           </SidebarLink>
           <SidebarLink
             href={localizeHref("/resources/tools/develop/")}
-            icon={codeXmlIcon}
+            icon={icons.mask("code-xml")}
           >
             {t("contribute:develop.resources.librariesSdks")}
           </SidebarLink>
           <SidebarLink
             href="https://github.com/monero-project"
-            icon={externalLinkIcon}
+            icon={icons.mask("external-link")}
             external
           >
             {t("contribute:develop.resources.githubOrganization")}

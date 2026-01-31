@@ -1,11 +1,10 @@
 ---
 import Card from "@/components/ui/Card.astro";
-import calendarIcon from "@/assets/icons/mask/calendar.avif";
-import userIcon from "@/assets/icons/mask/user.avif";
 import MaskIcon from "@/components/ui/icons/MaskIcon.astro";
 import { getDateStringFromId } from "@/utils/blog.ts";
 import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
+import { icons } from "@/utils/icons";
 
 interface Props {
   id: string;
@@ -55,7 +54,7 @@ const localizedLink = localizeHref(`/blog/${id}/`);
         date && (
           <div class="meta-item">
             <div class="icon">
-              <MaskIcon src={calendarIcon} />
+              <MaskIcon src={icons.mask("calendar")} />
             </div>
             <time datetime={dateString}>{date}</time>
           </div>
@@ -66,7 +65,7 @@ const localizedLink = localizeHref(`/blog/${id}/`);
         author && (
           <div class="meta-item">
             <div class="icon">
-              <MaskIcon src={userIcon} />
+              <MaskIcon src={icons.mask("user")} />
             </div>
             {author.replace(" and ", ` ${t("blog:post.and")} `)}
           </div>

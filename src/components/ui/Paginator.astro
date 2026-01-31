@@ -1,9 +1,7 @@
 ---
 import type { Page } from "astro";
 import MaskIcon from "./icons/MaskIcon.astro";
-
-import chevronLeft from "@/assets/icons/mask/chevron-left.avif";
-import chevronRight from "@/assets/icons/mask/chevron-right.avif";
+import { icons } from "@/utils/icons";
 
 interface Props {
   page: Page<unknown>;
@@ -71,7 +69,11 @@ const hasNext = current < last;
         aria-disabled={!hasPrev}
         rel={hasPrev ? "prev" : undefined}
       >
-        <MaskIcon src={chevronLeft} size="1.25em" rtl={dir === "rtl"} />
+        <MaskIcon
+          src={icons.mask("chevron-left")}
+          size="1.25em"
+          rtl={dir === "rtl"}
+        />
       </a>
 
       <ul class="pagination-list">
@@ -110,7 +112,11 @@ const hasNext = current < last;
         aria-disabled={!hasNext}
         rel={hasNext ? "next" : undefined}
       >
-        <MaskIcon src={chevronRight} size="1.25em" rtl={dir === "rtl"} />
+        <MaskIcon
+          src={icons.mask("chevron-right")}
+          size="1.25em"
+          rtl={dir === "rtl"}
+        />
       </a>
     </nav>
   )
