@@ -1,0 +1,95 @@
+{
+    "index": {
+        "pageTitle": "",
+        "title": "",
+        "subtitle": "",
+        "description": "",
+        "itemsCount": ""
+    },
+    "explore": {
+        "pageTitle": "",
+        "title": "",
+        "subtitle": "",
+        "sections": {
+            "blockExplorers": {
+                "title": "",
+                "subtitle": ""
+            },
+            "network": {
+                "title": "",
+                "subtitle": ""
+            },
+            "utilities": {
+                "title": "",
+                "subtitle": ""
+            }
+        },
+        "tools": {
+            "blockExplorers": {
+                "p2poolObserver": "",
+                "p2poolIo": "",
+                "moneroHash": "",
+                "xmrchain": "",
+                "localMonero": "",
+                "monerowat": "",
+                "xmrmx": ""
+            },
+            "network": {
+                "moneroFail": "",
+                "ditatompel": "",
+                "moneroHashNodes": "",
+                "txStreet": "",
+                "nowNodes": "",
+                "getBlock": ""
+            },
+            "utilities": {
+                "llcoins": "",
+                "monerotech": "",
+                "moneroHow": "",
+                "moneroLogs": ""
+            }
+        },
+        "disclaimer": {
+            "title": "",
+            "text": "",
+            "linkText": ""
+        }
+    },
+    "develop": {
+        "pageTitle": "",
+        "title": "",
+        "subtitle": "",
+        "tools": {
+            "moneroTs": "",
+            "moneroPython": "",
+            "moneroOxide": "",
+            "moneroJava": "",
+            "moneroCpp": "",
+            "monerophp": "",
+            "goMoneroRpc": ""
+        },
+        "disclaimer": {
+            "title": "",
+            "text": "",
+            "linkText": ""
+        }
+    },
+    "accept": {
+        "pageTitle": "",
+        "title": "",
+        "subtitle": "",
+        "tools": {
+            "btcPayServer": "",
+            "nowPayments": "",
+            "bitcart": "",
+            "coinPayments": "",
+            "cryptoWoo": "",
+            "moneroWooCommerce": ""
+        },
+        "disclaimer": {
+            "title": "",
+            "text": "",
+            "linkText": ""
+        }
+    }
+}

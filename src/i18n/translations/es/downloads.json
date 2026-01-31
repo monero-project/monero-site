@@ -1,0 +1,124 @@
+{
+    "pageTitle": "",
+    "hero": {
+        "title": "",
+        "subtitle": ""
+    },
+    "tabs": {
+        "core": "",
+        "community": ""
+    },
+    "platforms": {
+        "windows": "",
+        "macos": "",
+        "linux": "",
+        "android": "",
+        "freebsd": "",
+        "ios": ""
+    },
+    "communityNote": {
+        "title": "",
+        "content": ""
+    },
+    "core": {
+        "gui": {
+            "title": "",
+            "subtitle": "",
+            "features": {
+                "simpleMode": "",
+                "advancedMode": "",
+                "merchantPage": "",
+                "hardwareWallet": "",
+                "fiatConversion": "",
+                "pruning": "",
+                "languages": ""
+            }
+        },
+        "cli": {
+            "title": "",
+            "subtitle": "",
+            "features": {
+                "nodeChoice": "",
+                "torI2p": "",
+                "bootstrap": "",
+                "hardwareWallet": "",
+                "rpc": "",
+                "pruning": ""
+            }
+        },
+        "version": "",
+        "releaseNotes": "",
+        "sourceCode": "",
+        "verifyDownload": "",
+        "verifyDescription": "",
+        "viewHashes": "",
+        "downloadButton": "",
+        "torrent": "",
+        "magnetLink": "",
+        "formats": {
+            "installer": "",
+            "zip": "",
+            "tarball": "",
+            "64bit": "",
+            "32bit": "",
+            "intel": "",
+            "appleSilicon": "",
+            "armv8": "",
+            "armv7": "",
+            "riscv64": ""
+        }
+    },
+    "community": {
+        "sections": {
+            "wallets": {
+                "title": "",
+                "subtitle": ""
+            },
+            "cold": {
+                "title": "",
+                "subtitle": ""
+            },
+            "nodes": {
+                "title": "",
+                "subtitle": ""
+            }
+        },
+        "categories": {
+            "moneroOnly": "",
+            "multiCoin": "",
+            "lws": {
+                "title": "",
+                "disclaimer": ""
+            }
+        },
+        "learnMore": "",
+        "desktopLabel": "",
+        "mobileLabel": "",
+        "descriptions": {
+            "anonero": "",
+            "feather": "",
+            "monerocom": "",
+            "monerujo": "",
+            "monfluo": "",
+            "cakewallet": "",
+            "eigenwallet": "",
+            "stackwallet": "",
+            "unstoppable": "",
+            "edge": "",
+            "ledger": "",
+            "trezor": "",
+            "cupcake": "",
+            "sidekick": "",
+            "cuprate": ""
+        },
+        "tags": {
+            "qrSigning": "",
+            "builtInExchange": "",
+            "remoteScanning": "",
+            "diy": "",
+            "alphaSoftware": ""
+        },
+        "disclaimerTitle": "",
+        "disclaimer": ""
+    }
+}

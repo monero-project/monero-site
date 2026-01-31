@@ -1,0 +1,112 @@
+{
+    "pageTitle": "",
+    "hero": {
+        "title": "",
+        "subtitle": ""
+    },
+    "status": {
+        "inProgress": "",
+        "upcoming": "",
+        "proposed": ""
+    },
+    "items": {
+        "fcmp": {
+            "title": "",
+            "description": ""
+        },
+        "cuprate": {
+            "title": "",
+            "description": ""
+        },
+        "newSite": {
+            "title": "",
+            "description": ""
+        },
+        "randomxV2": {
+            "title": "",
+            "description": ""
+        },
+        "bulletproofsPP": {
+            "title": "",
+            "description": ""
+        },
+        "seraphis": {
+            "title": "",
+            "description": ""
+        },
+        "ospead": {
+            "title": "",
+            "description": ""
+        },
+        "mrlResearch": {
+            "title": "",
+            "description": ""
+        }
+    },
+    "history": {
+        "title": "",
+        "months": {
+            "january": "",
+            "february": "",
+            "march": "",
+            "april": "",
+            "may": "",
+            "june": "",
+            "july": "",
+            "august": "",
+            "september": "",
+            "october": "",
+            "november": "",
+            "december": ""
+        },
+        "events": {
+            "havenoDex": "",
+            "xmrBchSwap": "",
+            "lwsSubaddress": "",
+            "ethSwaps": "",
+            "blockProp": "",
+            "v15Hardfork": "",
+            "fluorineFermi": "",
+            "viewTags": "",
+            "p2pool": "",
+            "btcSwaps": "",
+            "onionAddress": "",
+            "clsag": "",
+            "oxygenOrion": "",
+            "v0160": "",
+            "dandelion": "",
+            "randomx": "",
+            "ipv6": "",
+            "paymentIdRemoved": "",
+            "pruning": "",
+            "hwSupport2019": "",
+            "torI2p": "",
+            "ccs": "",
+            "cryptonightR": "",
+            "bulletproofs": "",
+            "ringSize11": "",
+            "berylliumBullet": "",
+            "kovri": "",
+            "ledgerSupport": "",
+            "multisigSubaddress": "",
+            "guiRelease2018": "",
+            "multisig": "",
+            "subaddresses": "",
+            "fluffyBlocks": "",
+            "guiOutOfBeta": "",
+            "ringSize5": "",
+            "ringctEnabled": "",
+            "guiBeta": "",
+            "wolframWarptangent": "",
+            "ringSize3": "",
+            "hydrogenHelix": "",
+            "spamAttack": "",
+            "mrlPapers": "",
+            "bitcointalk": "",
+            "renamed": ""
+        }
+    },
+    "aria": {
+        "kanban": ""
+    }
+}

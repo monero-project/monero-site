@@ -1,0 +1,83 @@
+{
+    "pageTitle": "",
+    "hero": {
+        "title": "",
+        "subtitle": ""
+    },
+    "sections": {
+        "problem": {
+            "eyebrow": "",
+            "title": "",
+            "content": ""
+        },
+        "solution": {
+            "eyebrow": "",
+            "title": "",
+            "content": ""
+        },
+        "useCases": {
+            "eyebrow": "",
+            "title": "",
+            "intro": "",
+            "items": {
+                "financialPrivacy": {
+                    "title": "",
+                    "description": ""
+                },
+                "fungibility": {
+                    "title": "",
+                    "description": ""
+                },
+                "censorshipResistance": {
+                    "title": "",
+                    "description": ""
+                },
+                "businessPayments": {
+                    "title": "",
+                    "description": ""
+                }
+            }
+        },
+        "technology": {
+            "eyebrow": "",
+            "title": "",
+            "features": {
+                "stealthAddresses": {
+                    "title": "",
+                    "description": "",
+                    "basedOn": ""
+                },
+                "fcmp": {
+                    "title": "",
+                    "description": "",
+                    "basedOn": ""
+                },
+                "confidentialTransactions": {
+                    "title": "",
+                    "description": "",
+                    "basedOn": ""
+                }
+            }
+        },
+        "video": {
+            "eyebrow": "",
+            "title": "",
+            "description": ""
+        },
+        "community": {
+            "title": "",
+            "content": "",
+            "joinCommunity": "",
+            "contributeToMonero": ""
+        },
+        "cta": {
+            "title": "",
+            "subtitle": "",
+            "downloadWallet": "",
+            "getMonero": ""
+        }
+    },
+    "aria": {
+        "presentationVideo": ""
+    }
+}
