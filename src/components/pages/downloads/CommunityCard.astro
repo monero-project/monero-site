@@ -195,24 +195,28 @@ const hasBuiltinExchange = general.includes("i18n:builtInExchange");
     flex-direction: column;
     gap: var(--space-sm);
   }
+
   .card-header {
     display: flex;
     align-items: center;
     gap: var(--space-sm);
   }
+
   .card-logo {
     width: 40px;
     height: 40px;
     flex-shrink: 0;
     overflow: hidden;
     border-radius: var(--radius-md);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
   }
-  .card-logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: block;
-  }
+
   .card-title {
     margin: 0;
     line-height: var(--line-height-title);
@@ -227,6 +231,7 @@ const hasBuiltinExchange = general.includes("i18n:builtInExchange");
     gap: var(--space-xs);
     height: 100%;
   }
+
   .card-description-text {
     margin: 0;
     font-size: var(--font-size-sm);
@@ -241,6 +246,7 @@ const hasBuiltinExchange = general.includes("i18n:builtInExchange");
     padding: 0;
     list-style: none;
   }
+
   .pill {
     display: inline-flex;
     align-items: center;
@@ -252,6 +258,7 @@ const hasBuiltinExchange = general.includes("i18n:builtInExchange");
     color: var(--paragraph-main);
     line-height: 1;
   }
+
   .tag-text {
     letter-spacing: 0.01em;
   }
@@ -262,12 +269,14 @@ const hasBuiltinExchange = general.includes("i18n:builtInExchange");
     gap: var(--space-2xs);
     padding-top: var(--space-xs);
   }
+
   .platform-row {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: var(--space-xs);
     align-items: start;
   }
+
   .platforms-label {
     white-space: nowrap;
     align-self: center;

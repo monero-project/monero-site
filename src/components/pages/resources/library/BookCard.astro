@@ -20,7 +20,7 @@ const getLanguageName = (targetLocale: string): string => {
 };
 ---
 
-<Card as="article" padding="lg" radius="lg" border class="book-card">
+<Card as="article" padding="lg" radius="lg" class="book-card">
   <a href={link} class="book-cover" target="_blank" rel="noopener noreferrer">
     {
       cover ? (
@@ -84,23 +84,21 @@ const getLanguageName = (targetLocale: string): string => {
     background: var(--background-color);
     border-radius: var(--radius-md);
     overflow: hidden;
-  }
 
-  .book-cover::after {
-    display: none;
-  }
+    &::after {
+      display: none;
+    }
 
-  .book-cover img,
-  .book-cover :global(img) {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.2s ease;
-  }
+    & :global(img) {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.2s ease;
+    }
 
-  .book-cover:hover img,
-  .book-cover:hover :global(img) {
-    transform: scale(1.03);
+    &:hover :global(img) {
+      transform: scale(1.03);
+    }
   }
 
   .book-placeholder {
@@ -166,26 +164,26 @@ const getLanguageName = (targetLocale: string): string => {
     align-items: center;
     gap: var(--space-2xs);
     font-size: var(--font-size-sm);
+
+    .translations-label {
+      color: var(--paragraph-subtitle);
+    }
+
+    a {
+      color: var(--paragraph-main);
+
+      &:hover {
+        color: var(--monero-orange);
+      }
+    }
+
+    .sep {
+      color: var(--paragraph-subtitle);
+      opacity: 0.5;
+    }
   }
 
-  .translations-label {
-    color: var(--paragraph-subtitle);
-  }
-
-  .book-translations a {
-    color: var(--paragraph-main);
-  }
-
-  .book-translations a:hover {
-    color: var(--monero-orange);
-  }
-
-  .book-translations .sep {
-    color: var(--paragraph-subtitle);
-    opacity: 0.5;
-  }
-
-  @media (max-width: 600px) {
+  @media (width <= 600px) {
     .book-card {
       flex-direction: column;
       align-items: center;

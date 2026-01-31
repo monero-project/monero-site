@@ -28,7 +28,7 @@ const closeId = id + "-close";
 const rtl = Astro.locals.dir === "rtl";
 ---
 
-<li class:list={["nav-item", { "nav-item--dropdown": isDropdown }]}>
+<li class="nav-item" data-is-dropdown={isDropdown || undefined}>
   {
     isDropdown ? (
       <>
@@ -134,10 +134,10 @@ const rtl = Astro.locals.dir === "rtl";
     white-space: nowrap;
     padding-block: var(--space-md);
     width: 100%;
-  }
 
-  .link:hover {
-    color: var(--heading-color);
+    &:hover {
+      color: var(--heading-color);
+    }
   }
 
   .caret {
@@ -175,13 +175,12 @@ const rtl = Astro.locals.dir === "rtl";
   .dropdown {
     position: static;
     width: unset;
-
     max-height: 0;
     overflow: hidden;
-  }
 
-  .dropdown::before {
-    content: none;
+    &::before {
+      content: none;
+    }
   }
 
   .dropdown-inner {
@@ -225,6 +224,15 @@ const rtl = Astro.locals.dir === "rtl";
     }
   }
 
+  .arrow {
+    display: flex;
+    align-items: flex-start;
+    margin-inline-start: auto;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    color: var(--paragraph-subtitle);
+  }
+
   .dropdown-item {
     position: relative;
     display: flex;
@@ -235,10 +243,14 @@ const rtl = Astro.locals.dir === "rtl";
     text-decoration: none;
     padding: var(--space-sm);
     border-radius: var(--radius-md);
-  }
 
-  .dropdown-item:where(:hover, :focus-visible) {
-    background: var(--card-hover-color);
+    &:where(:hover, :focus-visible) {
+      background: var(--card-hover-color);
+
+      .arrow {
+        opacity: 1;
+      }
+    }
   }
 
   .icon {
@@ -258,38 +270,15 @@ const rtl = Astro.locals.dir === "rtl";
     margin-top: 0.15rem;
   }
 
-  .arrow {
-    display: flex;
-    align-items: flex-start;
-    margin-inline-start: auto;
-    opacity: 0;
-    transition: opacity 0.2s ease;
-    color: var(--paragraph-subtitle);
-  }
-
-  .dropdown-item:hover .arrow,
-  .dropdown-item:focus-visible .arrow {
-    opacity: 1;
-  }
-
-  .nav-item--dropdown:is(:focus-within, :has(.dropdown :focus-visible))
+  .nav-item[data-is-dropdown]:is(:focus-within, :has(.dropdown :focus-visible))
     > .row
     > .link {
     color: var(--heading-color);
   }
 
-  @media (min-width: 1200px) and (hover: hover) {
+  @media (width >= 1200px) and (hover: hover) {
     .nav-item {
       position: static;
-    }
-
-    /* reset mobile accordion states */
-    .dd-toggle:checked ~ .row > .link {
-      color: unset;
-
-      > .caret {
-        transform: unset;
-      }
     }
 
     .row {
@@ -301,6 +290,15 @@ const rtl = Astro.locals.dir === "rtl";
       padding-block: unset;
     }
 
+    /* reset mobile accordion states */
+    .dd-toggle:checked ~ .row > .link {
+      color: unset;
+
+      > .caret {
+        transform: unset;
+      }
+    }
+
     /* remove mobile dividers */
     .nav-item:not(:last-child) {
       border-bottom: none;
@@ -310,7 +308,6 @@ const rtl = Astro.locals.dir === "rtl";
     .mobile-open,
     .mobile-close {
       display: none;
-      pointer-events: none;
     }
 
     .dropdown {
@@ -342,7 +339,7 @@ const rtl = Astro.locals.dir === "rtl";
 
     .dropdown-inner {
       background: var(--card-color);
-      box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 2px -2px rgb(0 0 0 / 20%);
       border-radius: 0 0 var(--radius-md) var(--radius-md);
       padding-block: 0 var(--space-md);
     }
@@ -352,19 +349,18 @@ const rtl = Astro.locals.dir === "rtl";
       max-width: 1200px;
       margin-inline: auto;
       padding-inline: clamp(1rem, 4vw, 4rem);
-
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: var(--space-md) var(--space-xl);
     }
   }
 
-  @media (min-width: 1200px) and (hover: hover) and (pointer: fine) {
-    .nav-item--dropdown:is(
-      :hover,
-      :focus-within,
-      :has(.dropdown :focus-visible)
-    ) {
+  @media (width >= 1200px) and (hover: hover) and (pointer: fine) {
+    .nav-item[data-is-dropdown]:is(
+        :hover,
+        :focus-within,
+        :has(.dropdown :focus-visible)
+      ) {
       > .dropdown {
         visibility: visible;
         pointer-events: auto;

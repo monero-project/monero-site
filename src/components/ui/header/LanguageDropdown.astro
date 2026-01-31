@@ -50,14 +50,15 @@ const localeList = Object.keys(locales).map((code) => {
   .lang-container {
     position: static;
     display: inline-block;
-  }
 
-  .lang-container > summary {
-    list-style: none;
-  }
-  .lang-container > summary::marker,
-  .lang-container > summary::-webkit-details-marker {
-    display: none;
+    > summary {
+      list-style: none;
+
+      &::marker,
+      &::-webkit-details-marker {
+        display: none;
+      }
+    }
   }
 
   .lang {
@@ -70,10 +71,12 @@ const localeList = Object.keys(locales).map((code) => {
     background: transparent;
     vertical-align: middle;
     color: inherit;
-  }
-  .lang:hover,
-  .lang:focus-visible {
-    color: var(--heading-color);
+
+    &:hover,
+    &:focus-visible,
+    .lang-container[open] & {
+      color: var(--heading-color);
+    }
   }
 
   /* Panel (hidden by default) */
@@ -81,24 +84,26 @@ const localeList = Object.keys(locales).map((code) => {
     position: absolute;
     inset-inline: 0;
     inset-block-start: 100%;
-
     background: var(--card-color);
-    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 2px -2px rgb(0 0 0 / 20%);
     border-radius: 0 0 var(--radius-md) var(--radius-md);
-
     z-index: var(--z-overlay);
     padding-inline: clamp(1rem, 4vw, 4rem);
     padding-block: 0 var(--space-md);
     user-select: none;
-
     max-height: 75dvh;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-
     visibility: hidden;
     pointer-events: none;
     transform: translateY(-10px);
     transition: transform 0.2s ease;
+
+    .lang-container[open] & {
+      visibility: visible;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
   }
 
   /* Items */
@@ -109,40 +114,31 @@ const localeList = Object.keys(locales).map((code) => {
     display: flex;
     flex-direction: column;
     gap: var(--space-2xs);
+
+    li {
+      margin: 0;
+    }
+
+    a {
+      display: block;
+      padding: var(--space-sm);
+      color: var(--heading-color);
+      text-decoration: none;
+      border-radius: var(--radius-md);
+
+      &:hover,
+      &:focus {
+        background: var(--card-hover-color);
+      }
+
+      &.active {
+        font-weight: var(--font-weight-semibold);
+        background: var(--card-hover-color);
+      }
+    }
   }
 
-  .lang-list li {
-    margin: 0;
-  }
-
-  .lang-list a {
-    display: block;
-    padding: var(--space-sm);
-    color: var(--heading-color);
-    text-decoration: none;
-    border-radius: var(--radius-md);
-  }
-
-  .lang-list a:hover,
-  .lang-list a:focus {
-    background: var(--card-hover-color);
-  }
-
-  .lang-list a.active {
-    font-weight: var(--font-weight-semibold);
-    background: var(--card-hover-color);
-  }
-
-  .lang-container[open] .lang-dropdown {
-    visibility: visible;
-    pointer-events: auto;
-    transform: translateY(0);
-  }
-  .lang-container[open] .lang {
-    color: var(--heading-color);
-  }
-
-  @media (min-width: 1200px) and (hover: hover) {
+  @media (width >= 1200px) and (hover: hover) {
     .lang-container {
       position: relative;
     }
@@ -155,14 +151,11 @@ const localeList = Object.keys(locales).map((code) => {
       inset-inline: auto;
       inset-inline-end: 0;
       inset-block-start: 100%;
-
       margin-top: var(--space-xs);
       padding: var(--space-sm);
       min-width: 140px;
-
       border-radius: var(--radius-lg);
       box-shadow: var(--shadow-lg);
-
       max-height: none;
       overflow: visible;
     }

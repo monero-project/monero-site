@@ -58,11 +58,7 @@ const title = entry.data.title ?? entry.data.terms[0];
 <style>
   .moneropedia-page {
     display: grid;
-    grid-template-columns: auto minmax(0, 1fr);
-    grid-template-rows: auto 1fr;
-    grid-template-areas:
-      "sidebar header"
-      ".       content";
+    grid-template: "sidebar header" auto ". content" 1fr / auto minmax(0, 1fr);
     gap: 1rem 5rem;
   }
 
@@ -86,14 +82,9 @@ const title = entry.data.title ?? entry.data.terms[0];
     min-width: 0;
   }
 
-  @media (max-width: 900px) {
+  @media (width <= 900px) {
     .moneropedia-page {
-      grid-template-columns: 1fr;
-      grid-template-rows: auto auto auto;
-      grid-template-areas:
-        "sidebar"
-        "header"
-        "content";
+      grid-template: "sidebar" auto "header" auto "content" auto / 1fr;
       gap: var(--space-xl);
     }
 

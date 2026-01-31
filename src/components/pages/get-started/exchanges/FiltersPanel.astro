@@ -84,10 +84,10 @@ const {
     text-decoration: none;
     font-size: var(--font-size-sm);
     cursor: pointer;
-  }
 
-  .clear-filters-link:hover {
-    text-decoration: underline;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   .mobile-filter-close {
@@ -106,7 +106,7 @@ const {
   }
 
   /* Desktop: regular panel (SidebarLayout handles positioning) */
-  @media (min-width: 1200px) {
+  @media (width >= 1200px) {
     .filters-panel {
       position: static;
       transform: none;

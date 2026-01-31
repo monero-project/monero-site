@@ -25,7 +25,7 @@ const {
 const { t } = Astro.locals;
 ---
 
-<section class:list={["guide-step", { reverse }]} data-align={align ?? null}>
+<section class="guide-step" data-align={align ?? null} data-reverse={reverse}>
   <div class="step-content">
     <span class="step-label"
       >{t("common:components.guideStep.step", { step })}</span
@@ -61,18 +61,14 @@ const { t } = Astro.locals;
     grid-template-columns: 1fr 1fr;
     gap: var(--space-4xl);
     align-items: center;
-  }
 
-  .guide-step[data-align="start"] {
-    align-items: start;
-  }
+    &[data-align="start"] {
+      align-items: start;
+    }
 
-  .guide-step.reverse .step-content {
-    order: 2;
-  }
-
-  .guide-step.reverse .step-image {
-    order: 1;
+    &[data-reverse="true"] .step-content {
+      order: 2;
+    }
   }
 
   .step-label {
@@ -97,31 +93,30 @@ const { t } = Astro.locals;
     display: flex;
     flex-direction: column;
     gap: var(--space-md);
-  }
 
-  .step-body :global(p) {
-    margin: 0;
-    color: var(--paragraph-subtitle);
-    line-height: var(--line-height-body);
-    max-width: 55ch;
-  }
+    & :global(p) {
+      margin: 0;
+      color: var(--paragraph-subtitle);
+      line-height: var(--line-height-body);
+      max-width: 55ch;
+    }
 
-  .step-body :global(ol),
-  .step-body :global(ul) {
-    margin: 0;
-    padding-inline-start: var(--space-xl);
-    color: var(--paragraph-subtitle);
-    line-height: 1.8;
-  }
+    & :is(:global(ol), :global(ul)) {
+      margin: 0;
+      padding-inline-start: var(--space-xl);
+      color: var(--paragraph-subtitle);
+      line-height: 1.8;
+    }
 
-  .step-body :global(li) {
-    margin-bottom: var(--space-2xs);
-    padding-inline-start: var(--space-2xs);
-  }
+    & :global(li) {
+      margin-bottom: var(--space-2xs);
+      padding-inline-start: var(--space-2xs);
+    }
 
-  .step-body :global(li::marker) {
-    color: var(--monero-orange);
-    font-weight: var(--font-weight-semibold);
+    & :global(li::marker) {
+      color: var(--monero-orange);
+      font-weight: var(--font-weight-semibold);
+    }
   }
 
   .step-image {
@@ -133,12 +128,16 @@ const { t } = Astro.locals;
     overflow: hidden;
     aspect-ratio: 4 / 3;
     border: 1px solid var(--border-color);
-  }
 
-  .step-image :global(img) {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    .guide-step[data-reverse="true"] & {
+      order: 1;
+    }
+
+    & :global(img) {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   .step-image-placeholder {
@@ -172,15 +171,14 @@ const { t } = Astro.locals;
     opacity: 0.5;
   }
 
-  @media (max-width: 900px) {
+  @media (width <= 900px) {
     .guide-step {
       grid-template-columns: 1fr;
       gap: var(--space-xl);
-    }
 
-    .guide-step.reverse .step-content,
-    .guide-step.reverse .step-image {
-      order: unset;
+      &[data-reverse="true"] :is(.step-content, .step-image) {
+        order: unset;
+      }
     }
 
     .step-image {

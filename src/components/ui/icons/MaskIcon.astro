@@ -18,7 +18,7 @@ const iconSrc = await getImage({ src, format: "avif" }).then(
 );
 ---
 
-<div class:list={["icon", rtl && "icon--rtl"]}></div>
+<div class="icon" data-rtl={rtl || undefined}></div>
 
 <style define:vars={{ iconSize, iconSrc, iconColor: color, spacing }}>
   .icon {
@@ -26,14 +26,12 @@ const iconSrc = await getImage({ src, format: "avif" }).then(
     inline-size: var(--iconSize);
     block-size: var(--iconSize);
     margin-inline-start: var(--spacing);
-
     background: var(--iconColor);
-    -webkit-mask: var(--iconSrc) no-repeat center / contain;
     mask: var(--iconSrc) no-repeat center / contain;
-  }
 
-  .icon--rtl {
-    transform: scaleX(-1);
-    transform-origin: center;
+    &[data-rtl] {
+      transform: scaleX(-1);
+      transform-origin: center;
+    }
   }
 </style>

@@ -28,9 +28,10 @@ const { class: className, ...rest } = Astro.props as HTMLAttributes<"a">;
     gap: var(--space-md);
     white-space: nowrap;
     border-radius: var(--radius-md);
-  }
-  .dropdown-item:hover {
-    background: var(--card-hover-color);
+
+    &:hover {
+      background: var(--card-hover-color);
+    }
   }
 
   .meta {

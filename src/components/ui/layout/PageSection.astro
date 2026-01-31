@@ -50,15 +50,14 @@ const ariaLabelledBy = ariaLabel ? undefined : anchorId;
 </section>
 
 <style>
-  .section[data-centered] .header {
-    text-align: center;
-  }
-  .section[data-centered] .subtitle {
-    margin-inline: auto;
-  }
   .header {
     margin-bottom: var(--space-xl);
+
+    .section[data-centered] & {
+      text-align: center;
+    }
   }
+
   .title {
     font-size: var(--font-size-2xl);
     color: var(--heading-color);
@@ -66,13 +65,18 @@ const ariaLabelledBy = ariaLabel ? undefined : anchorId;
     scroll-margin-top: 6.5rem;
     letter-spacing: -0.01em;
   }
+
   .subtitle {
     margin: var(--space-xs) 0 0;
     color: var(--paragraph-subtitle);
     max-width: 80ch;
+
+    .section[data-centered] & {
+      margin-inline: auto;
+    }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (width >= 1200px) {
     .title {
       scroll-margin-top: var(--space-2xl);
     }

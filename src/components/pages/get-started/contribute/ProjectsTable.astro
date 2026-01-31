@@ -85,10 +85,10 @@ const { projects, headers } = Astro.props;
 
   .project-row {
     transition: background 0.15s ease;
-  }
 
-  .project-row:hover {
-    background: var(--card-hover-color);
+    &:hover {
+      background: var(--card-hover-color);
+    }
   }
 
   .cell-project {
@@ -133,10 +133,10 @@ const { projects, headers } = Astro.props;
     font-size: var(--font-size-xs);
     font-weight: var(--font-weight-medium);
     color: var(--paragraph-subtitle);
-  }
 
-  .tag + .tag {
-    margin-inline-start: 0.375rem;
+    & + & {
+      margin-inline-start: 0.375rem;
+    }
   }
 
   .visit-link {
@@ -155,14 +155,14 @@ const { projects, headers } = Astro.props;
     border: 0;
   }
 
-  @media (min-width: 600px) {
+  @media (width >= 600px) {
     .cell-stack,
     .projects-table th:nth-child(3) {
       display: table-cell;
     }
   }
 
-  @media (min-width: 900px) {
+  @media (width >= 900px) {
     .cell-desc,
     .projects-table th:nth-child(2) {
       display: table-cell;

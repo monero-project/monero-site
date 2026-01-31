@@ -125,19 +125,19 @@ const recentPosts = allPosts.filter((_, i) => i !== currentIndex).slice(0, N);
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--space-2xl);
-  }
 
-  .blog-container > * {
-    min-width: 0;
+    > * {
+      min-width: 0;
+    }
   }
 
   .sidebar {
     height: fit-content;
-  }
 
-  .sidebar h2 {
-    font-size: var(--font-size-xl);
-    margin-top: 0;
+    h2 {
+      font-size: var(--font-size-xl);
+      margin-top: 0;
+    }
   }
 
   .recent-posts {
@@ -147,31 +147,31 @@ const recentPosts = allPosts.filter((_, i) => i !== currentIndex).slice(0, N);
     display: flex;
     flex-direction: column;
     gap: var(--space-md);
+
+    li {
+      margin-bottom: var(--space-xs);
+    }
+
+    .post-title {
+      font-size: var(--font-size-md);
+      color: var(--paragraph-main);
+      text-decoration-line: underline;
+      text-decoration-style: dotted;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .post-date {
+      display: block;
+      font-size: var(--font-size-sm);
+      color: var(--paragraph-subtitle);
+      margin-top: var(--space-2xs);
+    }
   }
 
-  .recent-posts li {
-    margin-bottom: var(--space-xs);
-  }
-
-  .recent-posts .post-date {
-    display: block;
-    font-size: var(--font-size-sm);
-    color: var(--paragraph-subtitle);
-    margin-top: var(--space-2xs);
-  }
-
-  .recent-posts .post-title {
-    font-size: var(--font-size-md);
-    color: var(--paragraph-main);
-    text-decoration-line: underline;
-    text-decoration-style: dotted;
-  }
-
-  .recent-posts .post-title:hover {
-    text-decoration: underline;
-  }
-
-  @media (min-width: 1200px) {
+  @media (width >= 1200px) {
     .blog-container {
       grid-template-columns: 1fr 65ch 1fr;
     }
@@ -186,7 +186,7 @@ const recentPosts = allPosts.filter((_, i) => i !== currentIndex).slice(0, N);
     }
   }
 
-  @media (min-width: 1600px) {
+  @media (width >= 1600px) {
     .sidebar {
       grid-column: 3;
       grid-row: 1;

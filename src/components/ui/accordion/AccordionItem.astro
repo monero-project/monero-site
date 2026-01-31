@@ -40,10 +40,12 @@ const { title, content, variant = "default", name, open = false } = Astro.props;
 <style>
   .item {
     border-bottom: 1px solid var(--border-color);
+
+    &:last-child {
+      border-bottom: none;
+    }
   }
-  .item:last-child {
-    border-bottom: none;
-  }
+
   .header {
     display: flex;
     align-items: center;
@@ -53,15 +55,18 @@ const { title, content, variant = "default", name, open = false } = Astro.props;
     list-style: none;
     user-select: none;
     gap: var(--space-sm);
+
+    &::-webkit-details-marker {
+      display: none;
+    }
   }
-  .header::-webkit-details-marker {
-    display: none;
-  }
+
   .title {
     color: var(--heading-color);
     font-weight: var(--font-weight-semibold);
     font-size: var(--font-size-lg);
   }
+
   .icon {
     display: flex;
     align-items: center;
@@ -73,15 +78,25 @@ const { title, content, variant = "default", name, open = false } = Astro.props;
     color: var(--paragraph-main);
     flex-shrink: 0;
     margin-inline-start: auto;
+
+    .item[open] & {
+      transform: rotate(180deg);
+    }
   }
-  .item[open] .icon {
-    transform: rotate(180deg);
-  }
+
   .content {
     padding: 0 0 var(--space-xl) 0;
     color: var(--paragraph-main);
     line-height: var(--line-height-body);
     font-weight: var(--font-weight-normal);
+
+    > :global(p:first-child) {
+      margin-top: 0;
+    }
+
+    > :global(p:last-child) {
+      margin-bottom: 0;
+    }
   }
 
   /* Card variant */
@@ -91,25 +106,22 @@ const { title, content, variant = "default", name, open = false } = Astro.props;
     border-radius: var(--radius-lg);
     background: var(--card-color);
     padding: 0 var(--space-lg);
-  }
-  .item[data-variant="card"]:last-child {
-    margin-bottom: 0;
-  }
-  .item[data-variant="card"] .header {
-    padding: var(--space-lg) 0;
-  }
-  .item[data-variant="card"]:has(.header:focus-visible) {
-    border-radius: var(--radius-lg);
-  }
-  .item[data-variant="card"] .content {
-    padding: 0 0 var(--space-lg) 0;
-  }
 
-  :global(.content > p:first-child) {
-    margin-top: 0;
-  }
-  :global(.content > p:last-child) {
-    margin-bottom: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    > .header {
+      padding: var(--space-lg) 0;
+    }
+
+    &:has(.header:focus-visible) {
+      border-radius: var(--radius-lg);
+    }
+
+    > .content {
+      padding: 0 0 var(--space-lg) 0;
+    }
   }
 
   @media (hover: hover) {
@@ -117,10 +129,12 @@ const { title, content, variant = "default", name, open = false } = Astro.props;
       background: var(--card-hover-color);
     }
   }
-  @media screen and (max-width: 900px) {
+
+  @media screen and (width <= 900px) {
     .header {
       padding: var(--space-md) 0;
     }
+
     .title {
       font-size: var(--font-size-base);
     }

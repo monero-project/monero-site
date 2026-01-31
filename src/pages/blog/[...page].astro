@@ -97,16 +97,17 @@ const tabs = [
 
   .tabs-bar {
     margin-bottom: var(--space-2xl);
-  }
-  .tabs-bar :global(.tab-header) {
-    margin-bottom: unset;
+
+    & :global(.tab-header) {
+      margin-bottom: unset;
+    }
   }
 
   .rss-icon {
     display: none;
   }
 
-  @media (min-width: 1200px) {
+  @media (width >= 1200px) {
     .blog-grid {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -115,9 +116,10 @@ const tabs = [
       display: inline-flex;
       align-items: center;
       color: var(--monero-orange);
-    }
-    .rss-icon:hover {
-      opacity: 0.8;
+
+      &:hover {
+        opacity: 0.8;
+      }
     }
   }
 </style>

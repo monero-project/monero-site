@@ -246,10 +246,10 @@ const bottomLinks: Link[] = [
     list-style: none;
     padding: 0;
     margin: 0;
-  }
 
-  .list li {
-    margin: var(--space-xs) 0;
+    li {
+      margin: var(--space-xs) 0;
+    }
   }
 
   a {
@@ -258,11 +258,11 @@ const bottomLinks: Link[] = [
     display: flex;
     align-items: center;
     width: fit-content;
-  }
 
-  a:hover,
-  a:focus-visible {
-    color: var(--paragraph-subtitle);
+    &:hover,
+    &:focus-visible {
+      color: var(--paragraph-subtitle);
+    }
   }
 
   .bottom {
@@ -280,24 +280,26 @@ const bottomLinks: Link[] = [
     justify-content: center;
   }
 
-  .inline-item a:hover,
-  .inline-item a:focus {
-    color: var(--heading-color);
+  .inline-item {
+    a:hover,
+    a:focus {
+      color: var(--heading-color);
+    }
   }
 
-  @media (min-width: 600px) {
+  @media (width >= 600px) {
     .grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
 
-  @media (min-width: 900px) {
+  @media (width >= 900px) {
     .grid {
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
 
-  @media (min-width: 1200px) {
+  @media (width >= 1200px) {
     .items {
       padding-block: 5rem;
       padding-inline: var(--desktop-padding-inline);

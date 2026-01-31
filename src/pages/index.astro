@@ -144,6 +144,7 @@ const { t, localizeHref } = Astro.locals;
     color: var(--heading-color);
     margin-bottom: var(--space-sm);
   }
+
   p {
     margin: 0;
     color: var(--paragraph-subtitle);
@@ -161,11 +162,6 @@ const { t, localizeHref } = Astro.locals;
   }
 
   .landing-image {
-    -webkit-mask-image: radial-gradient(
-      ellipse at center,
-      black 60%,
-      transparent 100%
-    );
     mask-image: radial-gradient(ellipse at center, black 60%, transparent 100%);
   }
 
@@ -179,21 +175,19 @@ const { t, localizeHref } = Astro.locals;
   .index-hero {
     position: absolute;
     top: 3rem;
-    inset-inline-start: 5rem;
-    inset-inline-end: 5rem;
+    inset-inline: 5rem;
     min-height: var(--hero-min-height);
   }
 
-  @media (max-width: 1200px) {
+  @media (width <= 1200px) {
     #start-using-monero {
       scroll-margin-top: 4rem;
     }
   }
 
-  @media (max-width: 600px) {
+  @media (width <= 600px) {
     .index-hero {
-      inset-inline-start: 2rem;
-      inset-inline-end: 2rem;
+      inset-inline: 2rem;
     }
   }
 </style>

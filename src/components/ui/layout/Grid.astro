@@ -32,7 +32,8 @@ const gridMinWidth = minWidth ?? "20rem";
 ---
 
 <Tag
-  class:list={["grid", mode && `grid--${mode}`, className]}
+  class:list={["grid", className]}
+  data-mode={mode}
   style={`--grid-min-width: ${gridMinWidth}; --grid-gap: ${gridGap}; --grid-cols: ${gridCols};`}
   {...rest}
 >
@@ -43,24 +44,27 @@ const gridMinWidth = minWidth ?? "20rem";
   .grid {
     display: grid;
     gap: var(--grid-gap);
+
+    &[data-mode="fixed"] {
+      grid-template-columns: repeat(var(--grid-cols), 1fr);
+    }
+
+    &[data-mode="auto"] {
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(var(--grid-min-width), 100%), 1fr)
+      );
+    }
+
+    &:is(ul, ol) {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
   }
 
-  .grid--fixed {
-    grid-template-columns: repeat(var(--grid-cols), 1fr);
-  }
-  .grid--auto {
-    grid-template-columns: repeat(
-      auto-fit,
-      minmax(min(var(--grid-min-width), 100%), 1fr)
-    );
-  }
-  .grid:is(ul, ol) {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  @media (max-width: 900px) {
-    .grid--fixed {
+  @media (width <= 900px) {
+    .grid[data-mode="fixed"] {
       grid-template-columns: 1fr;
     }
   }

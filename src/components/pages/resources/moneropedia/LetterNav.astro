@@ -35,18 +35,17 @@ const { letters, ariaLabel } = Astro.props;
     text-decoration: none;
     color: var(--text-primary);
     user-select: none;
+
+    &:hover {
+      background: var(--card-color);
+    }
   }
 
-  .letter-nav-link:hover {
-    background: var(--card-color);
-  }
-
-  @media (max-width: 1000px) {
+  @media (width <= 1000px) {
     .letter-nav {
       --sticky-offset: 6rem;
 
-      flex-direction: column;
-      flex-wrap: nowrap;
+      flex-flow: column nowrap;
       gap: var(--space-md);
       padding: 0.5rem 1rem 0.5rem 2rem;
       margin-inline-start: calc(-1 * var(--space-2xl));
@@ -74,19 +73,19 @@ const { letters, ariaLabel } = Astro.props;
       mask-mode: alpha;
       scrollbar-width: thin;
       scrollbar-color: var(--monero-orange) transparent;
-    }
 
-    .letter-nav::-webkit-scrollbar {
-      width: var(--space-2xs);
-    }
+      &::-webkit-scrollbar {
+        width: var(--space-2xs);
+      }
 
-    .letter-nav::-webkit-scrollbar-track {
-      background: transparent;
-    }
+      &::-webkit-scrollbar-track {
+        background: transparent;
+      }
 
-    .letter-nav::-webkit-scrollbar-thumb {
-      background: var(--monero-orange);
-      border-radius: var(--radius-full);
+      &::-webkit-scrollbar-thumb {
+        background: var(--monero-orange);
+        border-radius: var(--radius-full);
+      }
     }
 
     .letter-nav-link {

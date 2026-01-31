@@ -74,24 +74,26 @@ const {
     text-decoration: none;
     user-select: none;
     box-sizing: border-box;
-  }
 
-  .button[data-variant="primary"] {
-    background: var(--monero-orange);
-    color: white;
-  }
-  .button[data-variant="secondary"] {
-    background: var(--secondary-button-color, var(--footer-color));
-    color: var(--paragraph-main);
-  }
-  .button[data-variant="outline"] {
-    background: transparent;
-    color: var(--monero-orange);
-    border-color: var(--monero-orange);
-  }
+    &[data-variant="primary"] {
+      background: var(--monero-orange);
+      color: white;
+    }
 
-  .button:hover,
-  .button:focus-visible {
-    opacity: 0.9;
+    &[data-variant="secondary"] {
+      background: var(--secondary-button-color, var(--footer-color));
+      color: var(--paragraph-main);
+    }
+
+    &[data-variant="outline"] {
+      background: transparent;
+      color: var(--monero-orange);
+      border-color: var(--monero-orange);
+    }
+
+    &:hover,
+    &:focus-visible {
+      opacity: 0.9;
+    }
   }
 </style>

@@ -121,10 +121,10 @@ const { t } = Astro.locals;
     margin: 0;
     font-size: var(--font-size-sm);
     color: var(--paragraph-subtitle);
-  }
 
-  .best-for-label {
-    font-weight: var(--font-weight-semibold);
+    .best-for-label {
+      font-weight: var(--font-weight-semibold);
+    }
   }
 
   .card-links {
@@ -150,15 +150,15 @@ const { t } = Astro.locals;
     transition:
       background 0.15s ease,
       color 0.15s ease;
-  }
 
-  .matrix-button:hover {
-    background: color-mix(
-      in srgb,
-      var(--heading-color) 10%,
-      var(--card-hover-color)
-    );
-    color: white;
+    &:hover {
+      background: color-mix(
+        in srgb,
+        var(--heading-color) 10%,
+        var(--card-hover-color)
+      );
+      color: white;
+    }
   }
 
   .irc-link {
@@ -167,29 +167,29 @@ const { t } = Astro.locals;
     gap: var(--space-xs);
     font-size: var(--font-size-sm);
     color: var(--paragraph-subtitle);
-  }
 
-  .irc-link a {
-    color: var(--text-primary);
-    text-decoration: none;
-    transition: color 0.15s ease;
-  }
+    a {
+      color: var(--text-primary);
+      text-decoration: none;
+      transition: color 0.15s ease;
 
-  .irc-link a:hover {
-    color: var(--paragraph-subtitle);
-  }
-
-  @media (max-width: 400px) {
-    .irc-separator {
-      display: none;
+      &:hover {
+        color: var(--paragraph-subtitle);
+      }
     }
+  }
 
+  @media (width <= 400px) {
     .irc-link {
       width: 100%;
+
+      &::before {
+        content: "IRC: ";
+      }
     }
 
-    .irc-link::before {
-      content: "IRC: ";
+    .irc-separator {
+      display: none;
     }
   }
 </style>

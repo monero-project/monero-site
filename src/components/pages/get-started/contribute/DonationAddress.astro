@@ -105,7 +105,7 @@ const {
     flex: 1;
     display: block;
     padding: var(--space-xs) var(--space-sm);
-    background: rgba(0, 0, 0, 0.05);
+    background: rgb(0 0 0 / 5%);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-sm);
     font-family: monospace;
@@ -119,56 +119,56 @@ const {
     border: 1px dashed var(--border-color);
     border-radius: var(--radius-md);
     padding: var(--space-xs) var(--space-sm);
-    background: rgba(0, 0, 0, 0.02);
-  }
+    background: rgb(0 0 0 / 2%);
 
-  .view-only-details summary {
-    display: flex;
-    align-items: center;
-    gap: var(--space-xs);
-    list-style: none;
-    cursor: pointer;
-    user-select: none;
-    font-weight: var(--font-weight-semibold);
-    color: var(--paragraph-subtitle);
-  }
+    summary {
+      display: flex;
+      align-items: center;
+      gap: var(--space-xs);
+      list-style: none;
+      cursor: pointer;
+      user-select: none;
+      font-weight: var(--font-weight-semibold);
+      color: var(--paragraph-subtitle);
 
-  .view-only-details summary::-webkit-details-marker {
-    display: none;
-  }
+      &::-webkit-details-marker {
+        display: none;
+      }
+    }
 
-  .view-only-details .icon {
-    display: inline-flex;
-    transition: transform 0.2s ease;
-  }
+    .icon {
+      display: inline-flex;
+      transition: transform 0.2s ease;
+    }
 
-  .view-only-details[open] .icon {
-    transform: rotate(180deg);
+    &[open] .icon {
+      transform: rotate(180deg);
+    }
   }
 
   .view-only-content {
     margin-top: var(--space-sm);
     display: grid;
     gap: var(--space-2xs);
+
+    p {
+      margin: 0;
+    }
+
+    code {
+      display: block;
+      padding: var(--space-xs) var(--space-sm);
+      background: rgb(0 0 0 / 5%);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      font-family: monospace;
+      font-size: var(--font-size-sm);
+      word-break: break-all;
+      line-height: 1.4;
+    }
   }
 
-  .view-only-content p {
-    margin: 0;
-  }
-
-  .view-only-content code {
-    display: block;
-    padding: var(--space-xs) var(--space-sm);
-    background: rgba(0, 0, 0, 0.05);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-sm);
-    font-family: monospace;
-    font-size: var(--font-size-sm);
-    word-break: break-all;
-    line-height: 1.4;
-  }
-
-  @media (max-width: 600px) {
+  @media (width <= 600px) {
     .address-content {
       flex-direction: column;
       align-items: center;

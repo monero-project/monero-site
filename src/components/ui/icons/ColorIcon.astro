@@ -24,7 +24,11 @@ const darkUrl = darkSrc
   : lightUrl;
 ---
 
-<div class:list={["icon", className, { "icon--rtl": rtl }]} aria-hidden="true">
+<div
+  class:list={["icon", className]}
+  aria-hidden="true"
+  data-rtl={rtl || undefined}
+>
 </div>
 
 <style
@@ -38,20 +42,20 @@ const darkUrl = darkSrc
     display: inline-block;
     inline-size: var(--iconSize);
     block-size: var(--iconSize);
-
     aspect-ratio: 1 / 1;
     vertical-align: middle;
 
     --iconUrl: var(--lightUrl);
+
     background-image: var(--iconUrl);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-  }
 
-  .icon--rtl {
-    transform: scaleX(-1);
-    transform-origin: center;
+    &[data-rtl] {
+      transform: scaleX(-1);
+      transform-origin: center;
+    }
   }
 
   @media (prefers-color-scheme: dark) {

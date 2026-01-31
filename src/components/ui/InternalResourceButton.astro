@@ -14,29 +14,31 @@ const { icon, title, href } = Astro.props;
 const rtl = Astro.locals.dir === "rtl";
 ---
 
-{
-  href ? (
-    <Card
-      as="a"
-      padding="sm"
-      hover
-      class="info-bar is-link"
-      href={href}
-      aria-label={title}
-    >
-      {icon && (
-        <span class="info-icon" aria-hidden="true">
-          <MaskIcon src={icon} size="1.5em" aria-hidden="true" />
-        </span>
-      )}
+<Card
+  as={href ? "a" : "div"}
+  padding="sm"
+  hover={!!href}
+  class="info-bar"
+  href={href || undefined}
+  aria-label={href ? title : undefined}
+>
+  {
+    icon && (
+      <span class="info-icon" aria-hidden="true">
+        <MaskIcon src={icon} size="1.5em" aria-hidden="true" />
+      </span>
+    )
+  }
 
-      <div class="info-content">
-        <span class="info-title">{title}</span>
-        <div class="info-description">
-          <slot />
-        </div>
-      </div>
+  <div class="info-content">
+    <span class="info-title">{title}</span>
+    <div class="info-description">
+      <slot />
+    </div>
+  </div>
 
+  {
+    href && (
       <span class="info-arrow" aria-hidden="true">
         <MaskIcon
           src={arrowRightIcon}
@@ -45,24 +47,9 @@ const rtl = Astro.locals.dir === "rtl";
           rtl={rtl}
         />
       </span>
-    </Card>
-  ) : (
-    <Card padding="sm" class="info-bar">
-      {icon && (
-        <span class="info-icon" aria-hidden="true">
-          <MaskIcon src={icon} size="1.5em" aria-hidden="true" />
-        </span>
-      )}
-
-      <div class="info-content">
-        <p class="info-title">{title}</p>
-        <div class="info-description">
-          <slot />
-        </div>
-      </div>
-    </Card>
-  )
-}
+    )
+  }
+</Card>
 
 <style>
   .info-bar {
@@ -87,19 +74,19 @@ const rtl = Astro.locals.dir === "rtl";
     flex-direction: column;
     gap: 0.125rem;
     min-width: 0;
-  }
 
-  .info-title {
-    margin: 0;
-    font-size: var(--font-size-md);
-    font-weight: var(--font-weight-semibold);
-    color: var(--heading-color);
-  }
+    .info-title {
+      margin: 0;
+      font-size: var(--font-size-md);
+      font-weight: var(--font-weight-semibold);
+      color: var(--heading-color);
+    }
 
-  .info-description {
-    margin: 0;
-    font-size: var(--font-size-sm);
-    color: var(--text-secondary);
+    .info-description {
+      margin: 0;
+      font-size: var(--font-size-sm);
+      color: var(--text-secondary);
+    }
   }
 
   .info-arrow {
@@ -111,13 +98,15 @@ const rtl = Astro.locals.dir === "rtl";
     transition: opacity 0.15s ease;
   }
 
-  .info-bar.is-link:hover .info-arrow,
-  .info-bar.is-link:focus-visible .info-arrow {
-    opacity: 1;
-  }
+  a.info-bar {
+    &:hover .info-arrow,
+    &:focus-visible .info-arrow {
+      opacity: 1;
+    }
 
-  .info-bar.is-link:focus-visible {
-    outline: 2px solid var(--monero-orange);
-    outline-offset: 2px;
+    &:focus-visible {
+      outline: 2px solid var(--monero-orange);
+      outline-offset: 2px;
+    }
   }
 </style>

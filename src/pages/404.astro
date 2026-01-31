@@ -83,7 +83,7 @@ const { t, localizeHref, localizeNumber } = Astro.locals;
     font-weight: var(--font-weight-semibold);
   }
 
-  @media (min-width: 600px) {
+  @media (width >= 600px) {
     .error-container {
       min-height: calc(
         100vh - (var(--page-top-margin) * 5)

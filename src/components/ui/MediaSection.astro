@@ -39,38 +39,42 @@ const Tag = as as HTMLTag;
     grid-template-columns: 1fr;
     gap: var(--space-xl);
     align-items: center;
-  }
-  .content,
-  .aside {
-    min-width: 0;
-  }
-  .section[data-hide-aside] .aside {
-    display: none;
+
+    .content,
+    .aside {
+      min-width: 0;
+    }
+
+    &[data-hide-aside] .aside {
+      display: none;
+    }
   }
 
-  @media (min-width: 900px) {
+  @media (width >= 900px) {
     .section {
       grid-template-columns: 1fr 1fr;
       gap: 4rem;
+
+      .aside {
+        position: relative;
+        align-self: stretch;
+      }
+
+      &[data-reverse] .content {
+        order: 2;
+      }
+
+      &[data-hide-aside] .aside {
+        display: block;
+      }
     }
-    .section[data-reverse] .content {
-      order: 2;
-    }
-    .section[data-hide-aside] .aside {
-      display: block;
-    }
-    .aside {
-      position: relative;
-      align-self: stretch;
-    }
+
     .aside :global(img) {
       position: absolute;
-      inset: 0;
       width: 100%;
       height: 100%;
       object-fit: contain;
       object-position: center;
-      display: block;
     }
   }
 </style>

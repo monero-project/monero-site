@@ -28,40 +28,40 @@ const hasBottom = Astro.slots.has("bottom");
 <Card
   as="article"
   radius="lg"
-  class:list={["contentCard", className]}
+  class:list={["content-card", className]}
   {...rest}
 >
   {
     image && (
-      <div class="contentCardImage">
+      <div class="content-card-image">
         <Image src={image} alt={imageAlt} format="avif" />
       </div>
     )
   }
 
-  <header class="contentCardHeader">
-    <div class="titleRow">
+  <header>
+    <div class="title-row">
       {
         icon && (
-          <div class="cardIcon">
+          <div class="card-icon">
             <MaskIcon src={icon} size="1.25em" />
           </div>
         )
       }
-      <div class="titleBlock">
-        <h3 class="contentCardTitle">{title}</h3>
-        {subtitle && <p class="contentCardSubtitle">{subtitle}</p>}
+      <div class="title-block">
+        <h3 class="card-title">{title}</h3>
+        {subtitle && <p class="card-subtitle">{subtitle}</p>}
       </div>
     </div>
   </header>
 
-  <div class="contentCardBody">
+  <div class="card-body">
     <slot />
   </div>
 
   {
     hasBottom && (
-      <footer class="contentCardBottom">
+      <footer class="card-bottom">
         <slot name="bottom" />
       </footer>
     )
@@ -69,107 +69,106 @@ const hasBottom = Astro.slots.has("bottom");
 </Card>
 
 <style>
-  .contentCard {
+  .content-card {
     position: relative;
     display: flex;
     flex-direction: column;
     min-width: 0;
   }
 
-  .contentCardImage {
+  .content-card-image {
     margin: calc(-1 * var(--space-lg)) calc(-1 * var(--space-lg))
       var(--space-lg);
     border-radius: var(--radius-lg) var(--radius-lg) 0 0;
     overflow: hidden;
     aspect-ratio: 16 / 9;
+
+    & :global(img) {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
-  .contentCardImage :global(img) {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .titleRow {
+  .title-row {
     display: flex;
     gap: 0.5em;
     align-items: center;
     min-width: 0;
+
+    .card-icon {
+      width: 1.75rem;
+      height: 1.75rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--monero-orange);
+      flex-shrink: 0;
+    }
   }
 
-  .cardIcon {
-    width: 1.75rem;
-    height: 1.75rem;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--monero-orange);
-    flex-shrink: 0;
-  }
-
-  .titleBlock {
+  .title-block {
     display: flex;
     flex-direction: column;
     min-width: 0;
+
+    .card-title {
+      margin: 0;
+      color: var(--heading-color);
+      font-weight: var(--font-weight-bold);
+      line-height: 1.2;
+      font-size: var(--font-size-lg);
+    }
+
+    .card-subtitle {
+      margin: var(--space-2xs) 0 0;
+      color: var(--paragraph-subtitle);
+      font-size: var(--font-size-sm);
+      line-height: 1.3;
+    }
   }
 
-  .contentCardTitle {
-    margin: 0;
-    color: var(--heading-color);
-    font-weight: var(--font-weight-bold);
-    line-height: 1.2;
-    font-size: var(--font-size-lg);
-  }
-
-  .contentCardSubtitle {
-    margin: var(--space-2xs) 0 0;
-    color: var(--paragraph-subtitle);
-    font-size: var(--font-size-sm);
-    line-height: 1.3;
-  }
-
-  .contentCardBody {
+  .card-body {
     flex: 1;
     margin-top: var(--space-md);
     display: flex;
     flex-direction: column;
     gap: var(--space-sm);
     min-height: 0;
+
+    & :global(p) {
+      margin: 0;
+      color: var(--paragraph-subtitle);
+      line-height: var(--line-height-body);
+      max-width: 65ch;
+    }
+
+    & :global(ul) {
+      margin: 0;
+      padding-inline-start: var(--space-lg);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2xs);
+      color: var(--paragraph-subtitle);
+      line-height: var(--line-height-body);
+    }
+
+    & :global(li::marker) {
+      color: var(--monero-orange);
+    }
   }
 
-  .contentCardBody :global(p) {
-    margin: 0;
-    color: var(--paragraph-subtitle);
-    line-height: var(--line-height-body);
-    max-width: 65ch;
-  }
-
-  .contentCardBody :global(ul) {
-    margin: 0;
-    padding-inline-start: var(--space-lg);
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-2xs);
-    color: var(--paragraph-subtitle);
-    line-height: var(--line-height-body);
-  }
-
-  .contentCardBody :global(li::marker) {
-    color: var(--monero-orange);
-  }
-
-  .contentCardBottom {
+  .card-bottom {
     margin-top: auto;
     padding-top: var(--space-md);
-  }
 
-  .contentCardBottom :global(a) {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.35em;
-    font-weight: var(--font-weight-semibold);
-    color: var(--monero-orange);
-    text-decoration: none;
+    & :global(a) {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35em;
+      font-weight: var(--font-weight-semibold);
+      color: var(--monero-orange);
+      text-decoration: none;
+    }
   }
 </style>

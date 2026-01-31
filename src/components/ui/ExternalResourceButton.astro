@@ -96,11 +96,11 @@ const rtl = dir === "rtl";
   .external-resource-button {
     display: flex;
     align-items: stretch;
-  }
 
-  .external-resource-button[data-border] {
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-lg);
+    &[data-border] {
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+    }
   }
 
   .primary-link {
@@ -111,10 +111,10 @@ const rtl = dir === "rtl";
     padding: var(--space-md) var(--space-lg);
     text-decoration: none;
     min-width: 0;
-  }
 
-  .primary-link::after {
-    display: none;
+    &::after {
+      display: none;
+    }
   }
 
   .logo {
@@ -124,12 +124,12 @@ const rtl = dir === "rtl";
     border-radius: var(--radius-md);
     overflow: hidden;
     background: var(--background-color);
-  }
 
-  .logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
   }
 
   .content {
@@ -170,15 +170,15 @@ const rtl = dir === "rtl";
     width: 3.5rem;
     color: color-mix(in srgb, var(--monero-orange) 60%, transparent);
     transition: color 0.15s ease;
-  }
 
-  .has-onion .link-icon {
-    border-inline-start: 1px solid var(--border-color);
-  }
+    .has-onion & {
+      border-inline-start: 1px solid var(--border-color);
+    }
 
-  .link-icon:hover,
-  .primary-link:hover ~ .link-icon {
-    color: var(--monero-orange);
+    &:hover,
+    .primary-link:hover ~ & {
+      color: var(--monero-orange);
+    }
   }
 
   .onion-link {
@@ -194,25 +194,25 @@ const rtl = dir === "rtl";
   /* Mini variant */
   .external-resource-button.mini {
     border-radius: var(--radius-md);
+
+    .primary-link {
+      padding: var(--space-sm) var(--space-md);
+      gap: var(--space-sm);
+    }
+
+    .logo {
+      width: 2.25rem;
+      height: 2.25rem;
+      border-radius: var(--radius-sm);
+    }
+
+    .link-icon,
+    .onion-link {
+      width: 2.75rem;
+    }
   }
 
-  .external-resource-button.mini .primary-link {
-    padding: var(--space-sm) var(--space-md);
-    gap: var(--space-sm);
-  }
-
-  .external-resource-button.mini .logo {
-    width: 2.25rem;
-    height: 2.25rem;
-    border-radius: var(--radius-sm);
-  }
-
-  .external-resource-button.mini .link-icon,
-  .external-resource-button.mini .onion-link {
-    width: 2.75rem;
-  }
-
-  @media screen and (max-width: 600px) {
+  @media screen and (width <= 600px) {
     .external-resource-button.has-onion {
       flex-wrap: wrap;
 

@@ -27,13 +27,13 @@ const linkProps = Tag === "a" ? { href } : {};
 ---
 
 <Tag class:list={["toc-item", className]} {...linkProps} {...rest}>
-  <span class="toc-item-icon">
+  <span class="item-icon">
     <MaskIcon src={icon} size="1.5em" aria-hidden="true" />
   </span>
 
-  <div class="content">
-    <span class="toc-item-title">{title}</span>
-    <span class="toc-item-subtitle">{subtitle}</span>
+  <div class="item-content">
+    <span class="item-title">{title}</span>
+    <span class="item-subtitle">{subtitle}</span>
   </div>
 
   <div class="decoration">
@@ -45,7 +45,6 @@ const linkProps = Tag === "a" ? { href } : {};
   .toc-item {
     position: relative;
     display: flex;
-    flex-direction: row;
     align-items: flex-start;
     gap: var(--space-md);
     color: var(--heading-color);
@@ -57,18 +56,18 @@ const linkProps = Tag === "a" ? { href } : {};
     flex: 1;
   }
 
-  .toc-item-icon {
+  .item-icon {
     color: var(--monero-orange);
   }
 
-  .toc-item-title {
+  .item-title {
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-semibold);
     color: var(--heading-color);
     display: block;
   }
 
-  .toc-item-subtitle {
+  .item-subtitle {
     font-size: var(--font-size-sm);
     color: var(--paragraph-subtitle);
     line-height: var(--line-height-caption);

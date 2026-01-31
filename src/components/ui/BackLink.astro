@@ -14,14 +14,14 @@ const rtl = Astro.locals.dir === "rtl";
 ---
 
 <a href={href} class:list={["back-link", className]} data-size={size} {...rest}>
-  <span class="back-link-icon">
+  <span class="icon-wrap">
     <MaskIcon
       src={chevronLeft}
       size={size === "lg" ? "1.25rem" : "1.125rem"}
       rtl={rtl}
     />
   </span>
-  <span class="back-link-label"><slot /></span>
+  <span class="label"><slot /></span>
 </a>
 
 <style>
@@ -35,36 +35,36 @@ const rtl = Astro.locals.dir === "rtl";
     transition: color 0.15s ease;
     width: fit-content;
     text-decoration: none;
-  }
 
-  .back-link[data-size="lg"] {
-    font-size: var(--font-size-2xl);
-    color: var(--monero-orange);
-  }
+    .icon-wrap {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2rem;
+      height: 2rem;
+      border-radius: var(--radius-full);
+      background: var(--card-color);
+    }
 
-  .back-link:hover {
-    color: var(--monero-orange);
-  }
+    .label {
+      white-space: nowrap;
+    }
 
-  .back-link[data-size="lg"]:hover {
-    opacity: 0.8;
-  }
+    &[data-size="lg"] {
+      font-size: var(--font-size-2xl);
+      color: var(--monero-orange);
 
-  .back-link-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: var(--radius-full);
-    background: var(--card-color);
-  }
+      &:hover {
+        opacity: 0.8;
+      }
+    }
 
-  .back-link:hover .back-link-icon {
-    background: var(--card-hover-color);
-  }
+    &:hover {
+      color: var(--monero-orange);
 
-  .back-link-label {
-    white-space: nowrap;
+      .icon-wrap {
+        background: var(--card-hover-color);
+      }
+    }
   }
 </style>

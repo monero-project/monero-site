@@ -48,12 +48,12 @@ const defaultLinkText = t("common:components.categoryCard.explore");
     align-items: center;
     justify-content: center;
     padding: var(--space-2xl);
-  }
 
-  .card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
   }
 
   .card-content {
@@ -81,13 +81,13 @@ const defaultLinkText = t("common:components.categoryCard.explore");
   .card-link {
     margin-top: auto;
     padding-top: var(--space-md);
+
+    .category-card:hover & {
+      opacity: 0.8;
+    }
   }
 
-  .category-card:hover .card-link {
-    opacity: 0.8;
-  }
-
-  @media (max-width: 900px) {
+  @media (width <= 900px) {
     .category-card {
       flex-direction: row;
       align-items: stretch;

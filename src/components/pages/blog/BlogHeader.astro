@@ -80,7 +80,6 @@ const date = localizeDateString(dateString, {
 
   #meta {
     display: flex;
-    flex-direction: row;
     gap: var(--space-2xl);
     color: var(--text-secondary);
     margin-top: var(--space-md);
@@ -106,25 +105,25 @@ const date = localizeDateString(dateString, {
     gap: var(--space-xs);
     font-size: var(--font-size-sm);
     flex-wrap: wrap;
-  }
 
-  .tag {
-    text-align: center;
-    padding: var(--space-2xs) var(--space-sm);
-    background: var(--footer-color);
-    border-radius: var(--radius-md);
-    text-transform: uppercase;
-    font-weight: var(--font-weight-semibold);
-    text-decoration: none;
-    color: inherit;
-    white-space: nowrap;
+    .tag {
+      text-align: center;
+      padding: var(--space-2xs) var(--space-sm);
+      background: var(--footer-color);
+      border-radius: var(--radius-md);
+      text-transform: uppercase;
+      font-weight: var(--font-weight-semibold);
+      text-decoration: none;
+      color: inherit;
+      white-space: nowrap;
 
-    &:hover {
-      color: var(--text-secondary);
+      &:hover {
+        color: var(--text-secondary);
+      }
     }
   }
 
-  @media (max-width: 600px) {
+  @media (width <= 600px) {
     #meta {
       flex-direction: column;
       font-size: var(--font-size-md);
@@ -132,12 +131,10 @@ const date = localizeDateString(dateString, {
       gap: var(--space-md);
     }
 
-    .meta-item > .icon {
-      font-size: var(--font-size-lg);
-    }
-
-    .tag-container {
-      font-size: var(--font-size-sm);
+    .meta-item {
+      > .icon {
+        font-size: var(--font-size-lg);
+      }
     }
   }
 </style>

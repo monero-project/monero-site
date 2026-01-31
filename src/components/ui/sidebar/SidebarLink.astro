@@ -46,39 +46,45 @@ const isRtl = dir === "rtl";
     border-radius: var(--radius-md);
     text-decoration: none;
     transition: background 0.15s ease;
-  }
-  .link::after {
-    display: none;
-  }
-  .link:hover {
-    background: var(--card-hover-color);
-    text-decoration: none;
-  }
-  .link:hover .arrow {
-    opacity: 1;
-    color: var(--monero-orange);
-  }
-  .icon {
-    flex-shrink: 0;
-    color: var(--monero-orange);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .title {
-    flex: 1;
-    font-weight: var(--font-weight-medium);
-    color: var(--heading-color);
-  }
-  .arrow {
-    flex-shrink: 0;
-    color: var(--paragraph-subtitle);
-    opacity: 0.5;
-    transition:
-      opacity 0.15s ease,
-      color 0.15s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+    .arrow {
+      flex-shrink: 0;
+      color: var(--paragraph-subtitle);
+      opacity: 0.5;
+      transition:
+        opacity 0.15s ease,
+        color 0.15s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .icon {
+      flex-shrink: 0;
+      color: var(--monero-orange);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .title {
+      flex: 1;
+      font-weight: var(--font-weight-medium);
+      color: var(--heading-color);
+    }
+
+    &::after {
+      display: none;
+    }
+
+    &:hover {
+      background: var(--card-hover-color);
+      text-decoration: none;
+
+      .arrow {
+        opacity: 1;
+        color: var(--monero-orange);
+      }
+    }
   }
 </style>

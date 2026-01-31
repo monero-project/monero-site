@@ -244,7 +244,7 @@ const highlightOptions = [
   #exchange-filters:has(#filter-easiest:checked)
     ~ .exchanges-wrapper
     :global(tr[data-highlight~="user-friendly"]) {
-    background: rgba(255, 152, 0, 0.1);
+    background: rgb(255 152 0 / 10%);
   }
 
   #exchange-filters:has(#filter-fiat:checked)
@@ -262,7 +262,7 @@ const highlightOptions = [
 
   #exchange-filters:has(#filter-easiest:checked)
     ~ .exchanges-wrapper
-    :global([data-highlight~="user-friendly"]:not(tr):not(.filter-option)) {
+    :global([data-highlight~="user-friendly"]:not(tr, .filter-option)) {
     outline: 2px solid var(--monero-orange);
   }
 
@@ -272,6 +272,7 @@ const highlightOptions = [
     :global(.mobile-filter-subtitle) {
     display: block;
   }
+
   #exchange-filters:has(#filter-easiest:checked)
     ~ .exchanges-wrapper
     :global(.filter-text[data-filter="easiest"]),
@@ -284,15 +285,15 @@ const highlightOptions = [
     display: inline;
   }
 
-  @media not (min-width: 1200px) {
+  @media not (width >= 1200px) {
     #mobile-filter-toggle:checked ~ .exchanges-wrapper :global(.filters-panel) {
-      box-shadow: 0 -8px 16px rgba(0, 0, 0, 0.35);
+      box-shadow: 0 -8px 16px rgb(0 0 0 / 35%);
       transform: translateY(0);
       visibility: visible;
     }
   }
 
-  @media (min-width: 1200px) {
+  @media (width >= 1200px) {
     #mobile-filter-toggle {
       display: none;
     }

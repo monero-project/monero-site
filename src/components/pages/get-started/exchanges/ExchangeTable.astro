@@ -138,10 +138,10 @@ if (!exchanges) {
 
   .exchange-row {
     transition: background 0.15s ease;
-  }
 
-  .exchange-row:hover {
-    background: var(--card-hover-color);
+    &:hover {
+      background: var(--card-hover-color);
+    }
   }
 
   .with-icon {
@@ -179,29 +179,35 @@ if (!exchanges) {
   .kyc-required {
     color: #f44336;
   }
+
   .kyc-optional {
     color: #ff9800;
   }
+
   .kyc-none,
   .checkmark {
     color: #4caf50;
   }
+
   .cross {
     color: var(--text-secondary);
   }
 
-  .visit-cell a {
-    font-weight: var(--font-weight-medium);
+  .visit-cell {
+    a {
+      font-weight: var(--font-weight-medium);
+    }
   }
 
   .th-visit {
     text-align: end;
   }
 
-  @media (min-width: 901px) {
+  @media (width >= 901px) {
     .col-flag {
       width: 1%;
     }
+
     .col-visit {
       width: 1%;
     }
@@ -218,7 +224,7 @@ if (!exchanges) {
   }
 
   /* mobile cards */
-  @media (max-width: 900px) {
+  @media (width <= 900px) {
     .table-wrap {
       background: transparent;
       border-radius: 0;
@@ -246,16 +252,6 @@ if (!exchanges) {
       display: block;
     }
 
-    .exchange-row {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 0.75rem 0.9rem;
-      margin-bottom: var(--space-sm);
-      border-radius: var(--radius-lg);
-      background: var(--card-color);
-      box-shadow: var(--shadow-xs);
-    }
-
     .exchange-description {
       margin-top: var(--space-xs);
     }
@@ -265,27 +261,37 @@ if (!exchanges) {
       box-shadow: none;
     }
 
-    .exchange-row:last-child {
-      margin-bottom: 0;
-    }
+    .exchange-row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0.75rem 0.9rem;
+      margin-bottom: var(--space-sm);
+      border-radius: var(--radius-lg);
+      background: var(--card-color);
+      box-shadow: var(--shadow-xs);
 
-    .exchange-row td:not(.pill) {
-      padding: 0;
-    }
+      &:last-child {
+        margin-bottom: 0;
+      }
 
-    .exchange-row .with-icon {
-      order: 0;
-      flex: 1 1 100%;
-      grid-template-areas:
-        "icon name"
-        "desc desc";
-      margin-bottom: var(--space-xs);
-      column-gap: var(--space-sm);
-      align-items: center;
-    }
+      td:not(.pill) {
+        padding: 0;
+      }
 
-    .exchange-row .exchange-icon {
-      width: 2.5rem;
+      .with-icon {
+        order: 0;
+        flex: 1 1 100%;
+        grid-template-areas:
+          "icon name"
+          "desc desc";
+        margin-bottom: var(--space-xs);
+        column-gap: var(--space-sm);
+        align-items: center;
+      }
+
+      .exchange-icon {
+        width: 2.5rem;
+      }
     }
 
     .pill {
@@ -301,33 +307,33 @@ if (!exchanges) {
       line-height: 1;
       white-space: nowrap;
       gap: var(--space-2xs);
-    }
 
-    .pill::before {
-      content: attr(data-label);
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      font-weight: var(--font-weight-medium);
-      font-size: var(--font-size-xs);
-      color: var(--paragraph-subtitle);
+      &::before {
+        content: attr(data-label);
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        font-weight: var(--font-weight-medium);
+        font-size: var(--font-size-xs);
+        color: var(--paragraph-subtitle);
+      }
     }
 
     .visit-cell {
       order: 2;
       flex: 1 1 100%;
       margin-top: 0.25rem;
-    }
 
-    .visit-cell::before {
-      content: "";
-      display: block;
-      margin-bottom: var(--space-md);
-    }
+      &::before {
+        content: "";
+        display: block;
+        margin-bottom: var(--space-md);
+      }
 
-    .visit-cell a {
-      display: inline-flex;
-      align-items: center;
-      font-size: var(--font-size-sm);
+      a {
+        display: inline-flex;
+        align-items: center;
+        font-size: var(--font-size-sm);
+      }
     }
   }
 </style>

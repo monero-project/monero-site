@@ -43,10 +43,10 @@ const { sections, ariaLabel } = Astro.props;
 
   .toc-item-default {
     background: var(--card-color);
-  }
 
-  .toc-item-default:hover,
-  .toc-item-default:focus-visible {
-    background: var(--card-hover-color);
+    &:hover,
+    &:focus-visible {
+      background: var(--card-hover-color);
+    }
   }
 </style>

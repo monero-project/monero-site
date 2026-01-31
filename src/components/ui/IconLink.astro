@@ -91,17 +91,19 @@ const colorValue = colorMap[color];
     font-size: var(--size);
     font-weight: var(--weight);
     color: var(--color);
-  }
-  .link::after {
-    display: none;
-  }
-  .link:hover,
-  .link:focus-visible {
-    opacity: 0.8;
-  }
-  .link[data-underline]:hover,
-  .link[data-underline]:focus-visible {
-    opacity: 1;
-    text-decoration: underline;
+
+    &::after {
+      display: none;
+    }
+
+    &:hover,
+    &:focus-visible {
+      opacity: 0.8;
+
+      &[data-underline] {
+        opacity: 1;
+        text-decoration: underline;
+      }
+    }
   }
 </style>

@@ -1,8 +1,13 @@
 /** @type {import("stylelint").Config} */
 export default {
-  extends: ["stylelint-config-html/astro"],
+  extends: ["stylelint-config-standard", "stylelint-config-html/astro"],
   plugins: ["stylelint-no-unsupported-browser-features"],
   rules: {
+    "selector-pseudo-class-no-unknown": [
+      true,
+      { ignorePseudoClasses: ["global"] },
+    ],
+    "custom-property-pattern": null,
     "plugin/no-unsupported-browser-features": [
       true,
       {

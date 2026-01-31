@@ -56,13 +56,15 @@ const alignValue = alignMap[align];
     gap: var(--gap);
     justify-content: var(--justify);
     align-items: var(--align);
-  }
-  .row[data-nowrap] {
-    flex-wrap: nowrap;
-  }
-  .row:is(ul, ol) {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+
+    &[data-nowrap] {
+      flex-wrap: nowrap;
+    }
+
+    &:is(ul, ol) {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
   }
 </style>

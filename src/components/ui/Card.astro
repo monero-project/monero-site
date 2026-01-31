@@ -46,18 +46,22 @@ const cardRadius = radius === "none" ? "0" : `var(--radius-${radius})`;
     background: var(--card-color);
     padding: var(--card-padding);
     border-radius: var(--card-radius);
-  }
-  .card[data-border] {
-    border: 1px solid var(--border-color);
-  }
-  .card[data-transparent] {
-    background: transparent;
-  }
-  .card[data-hover] {
-    transition: background 0.15s ease;
-  }
-  .card[data-hover]:hover,
-  .card[data-hover]:focus-visible {
-    background: var(--card-hover-color);
+
+    &[data-border] {
+      border: 1px solid var(--border-color);
+    }
+
+    &[data-transparent] {
+      background: transparent;
+    }
+
+    &[data-hover] {
+      transition: background 0.15s ease;
+
+      &:hover,
+      &:focus-visible {
+        background: var(--card-hover-color);
+      }
+    }
   }
 </style>

@@ -187,13 +187,13 @@ const PLATFORM_ICONS: Record<string, ImageMetadata> = {
     border-start-start-radius: var(--radius-md);
     border-start-end-radius: var(--radius-md);
     background: var(--card-hover-color);
-  }
 
-  .card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
   }
 
   .card-content {
@@ -250,15 +250,15 @@ const PLATFORM_ICONS: Record<string, ImageMetadata> = {
     display: flex;
     flex-direction: column;
     gap: var(--space-2xs);
-  }
 
-  .card-features li {
-    color: var(--paragraph-main);
-    line-height: var(--line-height-body);
-  }
+    li {
+      color: var(--paragraph-main);
+      line-height: var(--line-height-body);
 
-  .card-features li::marker {
-    color: var(--monero-orange);
+      &::marker {
+        color: var(--monero-orange);
+      }
+    }
   }
 
   .card-footer {
@@ -277,22 +277,22 @@ const PLATFORM_ICONS: Record<string, ImageMetadata> = {
 
   .torrent-split-button {
     display: flex;
-  }
 
-  .torrent-split-button .button {
-    border-radius: 0;
-    margin: 0;
-  }
+    .button {
+      border-radius: 0;
+      margin: 0;
+    }
 
-  .torrent-split-button .torrent-button {
-    border-start-start-radius: var(--radius-full);
-    border-end-start-radius: var(--radius-full);
-  }
+    .torrent-button {
+      border-start-start-radius: var(--radius-full);
+      border-end-start-radius: var(--radius-full);
+    }
 
-  .torrent-split-button .magnet-button {
-    border-start-end-radius: var(--radius-full);
-    border-end-end-radius: var(--radius-full);
-    margin-inline-start: 0.1rem;
+    .magnet-button {
+      border-start-end-radius: var(--radius-full);
+      border-end-end-radius: var(--radius-full);
+      margin-inline-start: 0.1rem;
+    }
   }
 
   .metadata-links {
@@ -315,22 +315,22 @@ const PLATFORM_ICONS: Record<string, ImageMetadata> = {
     text-decoration: none;
     opacity: 0.8;
     transition: opacity 0.2s ease;
-  }
 
-  .metadata-link:hover {
-    opacity: 1;
-    text-decoration: underline;
+    &:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
   }
 
   .dropdown-label {
     display: inline-flex;
     align-items: center;
     gap: var(--space-xs);
-  }
 
-  .platform-icon {
-    display: inline-flex;
-    align-items: center;
-    opacity: 0.6;
+    .platform-icon {
+      display: inline-flex;
+      align-items: center;
+      opacity: 0.6;
+    }
   }
 </style>

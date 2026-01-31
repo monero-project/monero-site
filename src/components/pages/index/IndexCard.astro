@@ -26,12 +26,14 @@ const { title, description = "", id, ...rest } = Astro.props;
     gap: var(--space-2xl);
     padding-block: 3rem;
   }
+
   .head {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
     gap: 5rem;
     align-items: start;
   }
+
   .title {
     margin: 0;
     font-weight: var(--font-weight-bold);
@@ -39,12 +41,14 @@ const { title, description = "", id, ...rest } = Astro.props;
     font-size: var(--font-size-4xl);
     color: var(--heading-color);
   }
+
   .desc {
     margin: 0;
     line-height: var(--line-height-body);
     color: var(--text-primary);
     font-size: var(--font-size-xl);
   }
+
   .body {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
@@ -53,16 +57,18 @@ const { title, description = "", id, ...rest } = Astro.props;
   }
 
   /* stack on small screens */
-  @media (max-width: 900px) {
+  @media (width <= 900px) {
     .card {
       gap: var(--space-lg);
       padding-block: var(--space-2xl);
     }
+
     .head,
     .body {
       grid-template-columns: 1fr;
       gap: var(--space-md);
     }
+
     .body {
       display: flex;
       flex-direction: column-reverse;

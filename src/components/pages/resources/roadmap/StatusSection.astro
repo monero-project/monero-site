@@ -20,11 +20,11 @@ const rtl = dir === "rtl";
 ---
 
 <header class="status-label">
-  <span class:list={["label-dot", variant]}></span>
+  <span class="label-dot" data-variant={variant}></span>
   <h2>{label}</h2>
 </header>
 
-<ul class:list={["status-list", variant]}>
+<ul class="status-list" data-variant={variant}>
   {
     filteredItems.map((item) => (
       <li>
@@ -63,13 +63,13 @@ const rtl = dir === "rtl";
     display: flex;
     align-items: center;
     gap: 0.625rem;
-  }
 
-  .status-label h2 {
-    margin: 0;
-    font-size: var(--font-size-base);
-    font-weight: var(--font-weight-semibold);
-    color: var(--heading-color);
+    h2 {
+      margin: 0;
+      font-size: var(--font-size-base);
+      font-weight: var(--font-weight-semibold);
+      color: var(--heading-color);
+    }
   }
 
   .label-dot {
@@ -77,22 +77,22 @@ const rtl = dir === "rtl";
     height: 0.5rem;
     border-radius: 50%;
     background: var(--paragraph-subtitle);
-  }
 
-  .label-dot.active {
-    background: var(--monero-orange);
-    box-shadow: 0 0 0 3px
-      color-mix(in srgb, var(--monero-orange) 25%, transparent);
-    animation: pulse 2s ease-in-out infinite;
-  }
+    &[data-variant="active"] {
+      background: var(--monero-orange);
+      box-shadow: 0 0 0 3px
+        color-mix(in srgb, var(--monero-orange) 25%, transparent);
+      animation: pulse 2s ease-in-out infinite;
+    }
 
-  .label-dot.upcoming {
-    background: var(--heading-color);
-  }
+    &[data-variant="upcoming"] {
+      background: var(--heading-color);
+    }
 
-  .label-dot.proposed {
-    background: transparent;
-    border: 1.5px solid var(--paragraph-subtitle);
+    &[data-variant="proposed"] {
+      background: transparent;
+      border: 1.5px solid var(--paragraph-subtitle);
+    }
   }
 
   @keyframes pulse {
@@ -101,6 +101,7 @@ const rtl = dir === "rtl";
       box-shadow: 0 0 0 3px
         color-mix(in srgb, var(--monero-orange) 25%, transparent);
     }
+
     50% {
       box-shadow: 0 0 0 5px
         color-mix(in srgb, var(--monero-orange) 15%, transparent);
@@ -114,56 +115,61 @@ const rtl = dir === "rtl";
     display: flex;
     flex-direction: column;
     gap: var(--space-xs);
-  }
 
-  .status-item {
-    display: block;
-    padding: var(--space-sm) var(--space-md);
-    background: var(--card-color);
-    border-radius: var(--radius-md);
-    transition: background 0.15s ease;
-    text-decoration: none;
-  }
+    .status-item {
+      display: block;
+      padding: var(--space-sm) var(--space-md);
+      background: var(--card-color);
+      border-radius: var(--radius-md);
+      transition: background 0.15s ease;
+      text-decoration: none;
+    }
 
-  a.status-item::after {
-    display: none;
-  }
-  a.status-item:hover {
-    background: var(--card-hover-color);
-  }
+    a.status-item {
+      &::after {
+        display: none;
+      }
 
-  .status-title {
-    display: flex;
-    align-items: center;
-    gap: var(--space-2xs);
-    font-weight: var(--font-weight-semibold);
-    color: var(--heading-color);
-    line-height: var(--line-height-caption);
-  }
+      &:hover {
+        background: var(--card-hover-color);
+      }
+    }
 
-  .status-desc {
-    margin: var(--space-2xs) 0 0;
-    font-size: var(--font-size-sm);
-    color: var(--paragraph-subtitle);
-    line-height: var(--line-height-caption);
-  }
+    .status-title {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2xs);
+      font-weight: var(--font-weight-semibold);
+      color: var(--heading-color);
+      line-height: var(--line-height-caption);
+    }
 
-  .status-list.active .status-item {
-    border-radius: 0 var(--radius-md) var(--radius-md) 0;
-    border-inline-start: 3px solid var(--monero-orange);
-  }
+    .status-desc {
+      margin: var(--space-2xs) 0 0;
+      font-size: var(--font-size-sm);
+      color: var(--paragraph-subtitle);
+      line-height: var(--line-height-caption);
+    }
 
-  .status-list.proposed .status-item {
-    background: transparent;
-    border: 1px solid var(--border-color);
-  }
+    &[data-variant="active"] .status-item {
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      border-inline-start: 3px solid var(--monero-orange);
+    }
 
-  .status-list.proposed a.status-item:hover {
-    background: var(--card-hover-color);
-    border-color: var(--card-color);
-  }
+    &[data-variant="proposed"] {
+      .status-item {
+        background: transparent;
+        border: 1px solid var(--border-color);
+      }
 
-  .status-list.proposed .status-title {
-    color: var(--paragraph-main);
+      a.status-item:hover {
+        background: var(--card-hover-color);
+        border-color: var(--card-color);
+      }
+
+      .status-title {
+        color: var(--paragraph-main);
+      }
+    }
   }
 </style>

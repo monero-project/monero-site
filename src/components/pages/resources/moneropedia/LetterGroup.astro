@@ -47,14 +47,14 @@ const { letter, items, isFirst = false } = Astro.props;
     border: 0;
     border-top: 1px solid var(--border-color);
     margin: var(--space-2xl) 0 var(--space-2xl);
+
+    &.first {
+      margin-top: 0;
+      border-color: transparent;
+    }
   }
 
-  .letter-separator.first {
-    margin-top: 0;
-    border-color: transparent;
-  }
-
-  @media (max-width: 1000px) {
+  @media (width <= 1000px) {
     .letter-layout {
       grid-template-columns: 1fr;
     }

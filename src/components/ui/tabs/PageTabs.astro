@@ -205,7 +205,6 @@ const active = I(initial);
 
   .tab-header {
     display: flex;
-    flex-wrap: nowrap;
     align-items: stretch;
     box-sizing: border-box;
 
@@ -220,18 +219,18 @@ const active = I(initial);
     scrollbar-width: thin;
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
-  }
 
-  .tab-header::-webkit-scrollbar {
-    height: 4px;
-  }
+    &::-webkit-scrollbar {
+      height: 4px;
+    }
 
-  .tab-header::-webkit-scrollbar-track {
-    background: transparent;
-  }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
 
-  .tab-header::-webkit-scrollbar-thumb {
-    border-radius: var(--radius-full);
+    &::-webkit-scrollbar-thumb {
+      border-radius: var(--radius-full);
+    }
   }
 
   .tab-label {
@@ -250,14 +249,14 @@ const active = I(initial);
     white-space: nowrap;
     scroll-snap-align: center;
     color: var(--heading-color);
-  }
 
-  .tab-label:hover {
-    background: var(--card-hover-color);
-  }
+    &:hover {
+      background: var(--card-hover-color);
+    }
 
-  .tab-label.active {
-    background: var(--footer-color);
+    &.active {
+      background: var(--footer-color);
+    }
   }
 
   .panel {

@@ -187,19 +187,14 @@ const navItems = navigationItems.map((item) => {
     position: fixed;
     inset-block: 0;
     inset-inline-end: -100%;
-
     inline-size: min(26.25rem, calc(100vw - var(--drawer-gap)));
     box-sizing: border-box;
-
     background: var(--bg-color);
     padding: var(--space-md);
-
     z-index: var(--z-modal-content);
-
     display: flex;
     flex-direction: column;
     overflow: hidden;
-
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -221,7 +216,6 @@ const navItems = navigationItems.map((item) => {
     margin: var(--space-md) 0 0;
     padding: 0;
     list-style: none;
-
     flex: 1 1 auto;
     overflow-y: auto;
     overscroll-behavior: contain;
@@ -233,25 +227,26 @@ const navItems = navigationItems.map((item) => {
   .scrim {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.45);
+    background: rgb(0 0 0 / 45%);
     z-index: var(--z-modal-background);
     touch-action: none;
-
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.2s ease;
   }
 
-  .nav-toggle:checked ~ .nav {
-    inset-inline-end: 0;
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-  }
+  .nav-toggle:checked {
+    & ~ .nav {
+      inset-inline-end: 0;
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
 
-  .nav-toggle:checked ~ .scrim {
-    opacity: 1;
-    pointer-events: auto;
+    & ~ .scrim {
+      opacity: 1;
+      pointer-events: auto;
+    }
   }
 
   body:has(#nav-toggle:checked) {
@@ -263,13 +258,13 @@ const navItems = navigationItems.map((item) => {
     background: var(--card-color);
   }
 
-  @media (min-width: 1200px) {
+  @media (width >= 1200px) {
     .header-inner {
       padding-inline: 5rem;
     }
   }
 
-  @media (min-width: 1200px) and (hover: hover) {
+  @media (width >= 1200px) and (hover: hover) {
     .header {
       position: relative;
       background: unset;
@@ -291,11 +286,9 @@ const navItems = navigationItems.map((item) => {
       padding: 0;
       background: unset;
       overflow: visible;
-
       opacity: 1;
       visibility: visible;
       pointer-events: auto;
-
       display: block;
     }
 
@@ -325,13 +318,13 @@ const navItems = navigationItems.map((item) => {
       display: none;
     }
 
-    .header:has(.nav-item--dropdown:hover),
-    .header:has(.nav-item--dropdown:focus-within) {
+    .header:has(.nav-item[data-is-dropdown]:hover),
+    .header:has(.nav-item[data-is-dropdown]:focus-within) {
       background: var(--card-color);
     }
 
-    .header:has(.nav-item--dropdown:focus-within)
-      :global(.nav-item--dropdown:not(:focus-within)) {
+    .header:has(.nav-item[data-is-dropdown]:focus-within)
+      :global(.nav-item[data-is-dropdown]:not(:focus-within)) {
       pointer-events: none;
     }
   }

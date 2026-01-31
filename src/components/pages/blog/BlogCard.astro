@@ -29,10 +29,11 @@ const localizedLink = localizeHref(`/blog/${id}/`);
 
 <Card padding="2xl" border transparent class="card-container">
   <a
-    class:list={["thumbnail", { "no-image": !image }]}
+    class="thumbnail"
     href={localizedLink}
     tabindex="-1"
     aria-hidden="true"
+    data-no-image={!image}
   >
     {
       image ? (
@@ -106,25 +107,26 @@ const localizedLink = localizeHref(`/blog/${id}/`);
     background-color: #f0f0f0;
     border-radius: var(--radius-md);
     position: relative;
-  }
-  .thumbnail.no-image {
-    background-color: var(--monero-orange);
-  }
 
-  .thumbnail img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    border-radius: inherit;
-  }
+    &[data-no-image="true"] {
+      background-color: var(--monero-orange);
+    }
 
-  .thumbnail span {
-    position: absolute;
-    bottom: 2rem;
-    inset-inline-start: 2rem;
-    color: white;
-    font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-4xl);
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: inherit;
+    }
+
+    span {
+      position: absolute;
+      bottom: 2rem;
+      inset-inline-start: 2rem;
+      color: white;
+      font-weight: var(--font-weight-bold);
+      font-size: var(--font-size-4xl);
+    }
   }
 
   .info {
@@ -134,7 +136,6 @@ const localizedLink = localizeHref(`/blog/${id}/`);
 
   .meta {
     display: flex;
-    flex-direction: row;
     gap: clamp(1rem, 1vw, 2rem);
     flex-wrap: wrap;
     color: var(--text-secondary);
@@ -144,12 +145,29 @@ const localizedLink = localizeHref(`/blog/${id}/`);
     display: flex;
     align-items: center;
     gap: var(--space-xs);
+
+    > .icon {
+      display: grid;
+      place-items: center;
+      color: var(--monero-orange);
+    }
   }
 
-  .meta-item > .icon {
-    display: grid;
-    place-items: center;
-    color: var(--monero-orange);
+  .title {
+    a {
+      text-decoration: none;
+      color: inherit;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .summary {
+    margin: 0 0 var(--space-md);
+    color: var(--text-secondary);
+    text-decoration: none;
   }
 
   .tag-container {
@@ -158,53 +176,41 @@ const localizedLink = localizeHref(`/blog/${id}/`);
     flex-wrap: wrap;
     gap: var(--space-md);
     font-size: var(--font-size-sm);
+
+    .tag {
+      text-align: center;
+      padding: var(--space-2xs) var(--space-sm);
+      background: var(--footer-color);
+      border-radius: var(--radius-md);
+      text-transform: uppercase;
+      font-weight: var(--font-weight-semibold);
+      text-decoration: none;
+      color: inherit;
+      white-space: nowrap;
+
+      &:hover {
+        color: var(--text-secondary);
+      }
+    }
   }
 
-  .tag {
-    text-align: center;
-    padding: var(--space-2xs) var(--space-sm);
-    background: var(--footer-color);
-    border-radius: var(--radius-md);
-    text-transform: uppercase;
-    font-weight: var(--font-weight-semibold);
-    text-decoration: none;
-    color: inherit;
-    white-space: nowrap;
-  }
-  .tag:hover {
-    color: var(--text-secondary);
-  }
-
-  .title a {
-    text-decoration: none;
-    color: inherit;
-  }
-  .title a:hover {
-    text-decoration: underline;
-  }
-
-  .summary {
-    margin: 0;
-    margin-bottom: var(--space-md);
-    color: var(--text-secondary);
-    text-decoration: none;
-  }
-
-  @media (max-width: 1200px) {
+  @media (width <= 1200px) {
     .card-container {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: none;
     }
 
-    .thumbnail img {
-      position: absolute;
-      inset: 0;
-      object-fit: cover;
-    }
+    .thumbnail {
+      img {
+        position: absolute;
+        inset: 0;
+        object-fit: cover;
+      }
 
-    .thumbnail span {
-      bottom: unset;
-      top: 2rem;
+      span {
+        bottom: unset;
+        top: 2rem;
+      }
     }
 
     .title {
@@ -217,14 +223,9 @@ const localizedLink = localizeHref(`/blog/${id}/`);
     .meta {
       margin-bottom: var(--space-md);
     }
-
-    .tag-container {
-      font-size: var(--font-size-sm);
-      gap: var(--space-md);
-    }
   }
 
-  @media (max-width: 900px) {
+  @media (width <= 900px) {
     .thumbnail {
       display: none;
     }

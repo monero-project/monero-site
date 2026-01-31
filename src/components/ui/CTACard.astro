@@ -27,7 +27,9 @@ const hasButtonsSlot = Astro.slots.has("buttons");
 
 <Card
   padding="xl"
-  class:list={["cta-card", { "has-icon": icon }, variant, className]}
+  class:list={["cta-card", className]}
+  data-variant={variant ?? null}
+  data-has-icon={icon ? true : null}
   {...rest}
 >
   {
@@ -53,23 +55,6 @@ const hasButtonsSlot = Astro.slots.has("buttons");
 </Card>
 
 <style>
-  .cta-card {
-    margin-top: var(--space-2xl);
-    border-end-start-radius: 0;
-    border-start-start-radius: 0;
-    border-inline-start: 3px solid var(--monero-orange);
-  }
-
-  .cta-card.has-icon {
-    display: grid;
-    grid-template-areas:
-      "icon title"
-      ".    description"
-      ".    link";
-    grid-template-columns: auto 1fr;
-    column-gap: var(--space-md);
-  }
-
   .cta-icon {
     grid-area: icon;
     display: flex;
@@ -95,10 +80,10 @@ const hasButtonsSlot = Astro.slots.has("buttons");
     line-height: var(--line-height-body);
     gap: var(--space-sm);
     max-width: 75ch;
-  }
 
-  .cta-description :global(p) {
-    margin: 0;
+    & :global(p) {
+      margin: 0;
+    }
   }
 
   .cta-link {
@@ -108,38 +93,58 @@ const hasButtonsSlot = Astro.slots.has("buttons");
     font-weight: var(--font-weight-semibold);
   }
 
-  .cta-card.centered {
-    text-align: center;
-    border-inline-start: unset;
-    border-start-start-radius: unset;
-    border-start-end-radius: unset;
-    border-end-start-radius: var(--radius-md);
-    border-block-start: 3px solid var(--monero-orange);
-    display: grid;
-    grid-template-areas:
-      "title"
-      "description"
-      "link";
-    grid-template-columns: unset;
-    justify-items: center;
-    row-gap: var(--space-xs);
-  }
-  .cta-card.centered.has-icon {
-    grid-template-areas:
-      "icon"
-      "title"
-      "description"
-      "link";
-  }
-  .cta-card.centered .cta-description {
-    max-width: 50ch;
-    text-align: center;
-    margin-inline: auto;
-  }
-  .cta-card.centered .cta-link {
-    display: flex;
-    justify-content: center;
-    gap: var(--space-md);
-    flex-wrap: wrap;
+  .cta-card {
+    margin-top: var(--space-2xl);
+    border-end-start-radius: 0;
+    border-start-start-radius: 0;
+    border-inline-start: 3px solid var(--monero-orange);
+
+    &[data-has-icon] {
+      display: grid;
+      grid-template-areas:
+        "icon title"
+        ".    description"
+        ".    link";
+      grid-template-columns: auto 1fr;
+      column-gap: var(--space-md);
+    }
+
+    &[data-variant="centered"] {
+      text-align: center;
+      border-inline-start: unset;
+      border-start-start-radius: unset;
+      border-start-end-radius: unset;
+      border-end-start-radius: var(--radius-md);
+      border-block-start: 3px solid var(--monero-orange);
+      display: grid;
+      grid-template-areas:
+        "title"
+        "description"
+        "link";
+      grid-template-columns: unset;
+      justify-items: center;
+      row-gap: var(--space-xs);
+
+      &[data-has-icon] {
+        grid-template-areas:
+          "icon"
+          "title"
+          "description"
+          "link";
+      }
+
+      .cta-description {
+        max-width: 50ch;
+        text-align: center;
+        margin-inline: auto;
+      }
+
+      .cta-link {
+        display: flex;
+        justify-content: center;
+        gap: var(--space-md);
+        flex-wrap: wrap;
+      }
+    }
   }
 </style>

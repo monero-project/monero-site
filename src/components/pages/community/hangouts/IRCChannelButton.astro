@@ -65,11 +65,11 @@ const { prefix, suffix } = parseChannelName(name);
     background: var(--card-color);
     border-radius: var(--radius-md);
     transition: background 0.15s ease;
-  }
 
-  .irc-channel-button:hover,
-  .irc-channel-button:focus-visible {
-    background: var(--card-hover-color);
+    &:hover,
+    &:focus-visible {
+      background-color: var(--card-hover-color);
+    }
   }
 
   .primary-link {
@@ -92,14 +92,14 @@ const { prefix, suffix } = parseChannelName(name);
   .channel-name {
     font-weight: var(--font-weight-semibold);
     white-space: nowrap;
-  }
 
-  .channel-prefix {
-    color: var(--paragraph-subtitle);
-  }
+    .channel-prefix {
+      color: var(--paragraph-subtitle);
+    }
 
-  .channel-suffix {
-    color: var(--monero-orange);
+    .channel-suffix {
+      color: var(--monero-orange);
+    }
   }
 
   .channel-desc {
@@ -120,14 +120,14 @@ const { prefix, suffix } = parseChannelName(name);
     transition:
       background 0.15s ease,
       color 0.15s ease;
+
+    &:hover {
+      background: color-mix(in srgb, var(--monero-orange) 10%, transparent);
+      color: var(--monero-orange);
+    }
   }
 
-  .matrix-link:hover {
-    background: color-mix(in srgb, var(--monero-orange) 10%, transparent);
-    color: var(--monero-orange);
-  }
-
-  @media (max-width: 900px) {
+  @media (width <= 900px) {
     .channel-content {
       flex-wrap: wrap;
     }

@@ -41,17 +41,14 @@
     background: var(--card-color);
     border: 1px solid var(--border-color);
     border-radius: 0.25rem;
-
     box-sizing: border-box;
     overflow-wrap: break-word;
-
     min-inline-size: 25ch;
     max-inline-size: min(35ch, calc(100vw - 2.5rem));
-
     font-size: var(--font-size-sm);
     line-height: var(--line-height-caption);
     color: var(--text-primary);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 8px rgb(0 0 0 / 30%);
   }
 
   /* Tooltip arrow */

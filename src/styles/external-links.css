@@ -4,14 +4,10 @@ a[rel~="external"]::after {
   inline-size: 0.9rem;
   block-size: 0.9rem;
   margin-inline-start: 0.25em;
-
   vertical-align: -0.1rem;
-
-  -webkit-mask: url("../assets/icons/mask/external-link.avif") no-repeat
-    center / contain;
   mask: url("../assets/icons/mask/external-link.avif") no-repeat center /
     contain;
-  background-color: currentColor;
+  background-color: currentcolor;
 }
 
 [dir="rtl"] a[rel~="external"]::after {

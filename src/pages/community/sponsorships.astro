@@ -91,14 +91,14 @@ const { t } = Astro.locals;
     transition:
       background 0.15s ease,
       color 0.15s ease;
-  }
 
-  .past-sponsor-chip:hover {
-    background: var(--card-hover-color);
-    color: var(--heading-color);
-  }
+    &:hover {
+      background: var(--card-hover-color);
+      color: var(--heading-color);
+    }
 
-  .past-sponsor-chip::after {
-    display: none;
+    &::after {
+      display: none;
+    }
   }
 </style>

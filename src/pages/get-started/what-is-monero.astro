@@ -295,27 +295,27 @@ const getLanguageLabel = (lang: string): string => {
 
   .content-section {
     margin-block: var(--space-2xl);
-  }
 
-  .content-section h2 {
-    font-size: var(--font-size-3xl);
-    color: var(--heading-color);
-    margin-top: var(--space-xs);
-  }
+    h2 {
+      font-size: var(--font-size-3xl);
+      color: var(--heading-color);
+      margin-top: var(--space-xs);
+    }
 
-  .content-section p {
-    font-size: var(--font-size-lg);
-    color: var(--paragraph-subtitle);
-    line-height: var(--line-height-body);
-    max-width: 75ch;
+    p {
+      font-size: var(--font-size-lg);
+      color: var(--paragraph-subtitle);
+      line-height: var(--line-height-body);
+      max-width: 75ch;
+    }
   }
 
   .centered-section {
     text-align: center;
-  }
 
-  .centered-section p {
-    margin-inline: auto;
+    p {
+      margin-inline: auto;
+    }
   }
 
   .video-section {
@@ -328,9 +328,9 @@ const getLanguageLabel = (lang: string): string => {
 
   .final-cta {
     padding-block: var(--space-2xl);
-  }
 
-  .final-cta :global(.cta-title) {
-    font-size: var(--font-size-3xl);
+    & :global(.cta-title) {
+      font-size: var(--font-size-3xl);
+    }
   }
 </style>

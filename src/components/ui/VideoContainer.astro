@@ -14,16 +14,10 @@ const {
 
 const style = `--video-max-width: ${maxWidth}`;
 
-const classes = [
-  "video-container",
-  centered && "video-container--centered",
-  className,
-]
-  .filter(Boolean)
-  .join(" ");
+const classes = ["video-container", className].filter(Boolean).join(" ");
 ---
 
-<div class={classes} style={style} {...rest}>
+<div class={classes} style={style} {...rest} data-centered={centered}>
   <slot />
 </div>
 
@@ -35,16 +29,16 @@ const classes = [
     border-radius: var(--radius-xl);
     border: 1px solid var(--border-color);
     overflow: hidden;
-  }
 
-  .video-container--centered {
-    margin-inline: auto;
-  }
+    &[data-centered] {
+      margin-inline: auto;
+    }
 
-  .video-container :global(video) {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
+    & :global(video) {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
   }
 </style>

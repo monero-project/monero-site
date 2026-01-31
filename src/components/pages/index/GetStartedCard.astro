@@ -32,6 +32,7 @@ const { localizeNumber, localizeHref } = Astro.locals;
   :root {
     --num-color: light-dark(var(--monero-orange), var(--border-color));
   }
+
   .gs {
     display: flex;
     align-items: center;
@@ -65,12 +66,13 @@ const { localizeNumber, localizeHref } = Astro.locals;
     line-height: var(--line-height-body);
   }
 
-  @media (max-width: 600px) {
+  @media (width <= 600px) {
     .gs {
       flex-direction: column;
       align-items: flex-start;
       gap: var(--space-lg);
     }
+
     .num {
       font-size: 4.5rem;
     }
