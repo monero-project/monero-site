@@ -25,7 +25,6 @@ if (columns && minWidth) {
   );
 }
 
-const mode = columns ? "fixed" : minWidth ? "auto" : undefined;
 const gridGap = `var(--space-${gap})`;
 const gridCols = columns ?? 1;
 const gridMinWidth = minWidth ?? "20rem";
@@ -33,7 +32,7 @@ const gridMinWidth = minWidth ?? "20rem";
 
 <Tag
   class:list={["grid", className]}
-  data-mode={mode}
+  data-auto-mode={minWidth ? true : undefined}
   style={`--grid-min-width: ${gridMinWidth}; --grid-gap: ${gridGap}; --grid-cols: ${gridCols};`}
   {...rest}
 >
@@ -46,7 +45,7 @@ const gridMinWidth = minWidth ?? "20rem";
     gap: var(--grid-gap);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
 
-    &[data-mode="auto"] {
+    &[data-auto-mode="true"] {
       grid-template-columns: repeat(
         auto-fit,
         minmax(min(var(--grid-min-width), 100%), 1fr)
