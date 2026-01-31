@@ -2,23 +2,18 @@
 interface Props {
   class?: string;
   id?: string;
-  variant?: "spaced" | "flush";
 }
 
-const { id, class: className, variant = "flush", ...rest } = Astro.props;
+const { id, class: className, ...rest } = Astro.props;
 const classes = ["page-container", className ?? ""].filter(Boolean).join(" ");
 ---
 
-<div id={id} class={classes} {...rest} data-variant={variant}>
+<div id={id} class={classes} {...rest}>
   <slot />
 </div>
 
 <style>
   .page-container {
     padding-bottom: var(--space-2xl);
-
-    &[data-variant="spaced"] {
-      padding-top: var(--space-2xl);
-    }
   }
 </style>
