@@ -2,7 +2,7 @@
 import type { HTMLTag } from "astro/types";
 
 interface Props {
-  columns?: 1 | 2 | 3 | 4;
+  columns?: 2 | 3 | 4;
   minWidth?: string;
   gap?: "2xs" | "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | "3xl";
   as?: "div" | "ul" | "ol";
@@ -20,20 +20,27 @@ const {
 const Tag = as as HTMLTag;
 
 if (columns && minWidth) {
-  throw new Error(
-    "Cannot use both columns and minWidth on the same Grid component.",
-  );
+  throw new Error("Grid: cannot use both 'columns' and 'minWidth'.");
 }
 
+if (!columns && !minWidth) {
+  throw new Error("Grid: provide either 'columns' or 'minWidth'.");
+}
+
+const defaultMinWidths: Record<number, string> = {
+  2: "25rem",
+  3: "18rem",
+  4: "14rem",
+};
+
 const gridGap = `var(--space-${gap})`;
-const gridCols = columns ?? 1;
-const gridMinWidth = minWidth ?? "20rem";
+const gridMinWidth = columns ? defaultMinWidths[columns] : minWidth;
 ---
 
 <Tag
   class:list={["grid", className]}
-  data-auto-mode={minWidth ? true : undefined}
-  style={`--grid-min-width: ${gridMinWidth}; --grid-gap: ${gridGap}; --grid-cols: ${gridCols};`}
+  data-capped={columns ? true : undefined}
+  style={`--grid-min-width: ${gridMinWidth}; --grid-gap: ${gridGap};${columns ? ` --grid-col-count: ${columns};` : ""}`}
   {...rest}
 >
   <slot />
@@ -43,19 +50,31 @@ const gridMinWidth = minWidth ?? "20rem";
   .grid {
     display: grid;
     gap: var(--grid-gap);
-    grid-template-columns: repeat(var(--grid-cols), 1fr);
-
-    &[data-auto-mode="true"] {
-      grid-template-columns: repeat(
-        auto-fit,
-        minmax(min(var(--grid-min-width), 100%), 1fr)
-      );
-    }
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(min(var(--grid-min-width), 100%), 1fr)
+    );
 
     &:is(ul, ol) {
       list-style: none;
       margin: 0;
       padding: 0;
+    }
+
+    &[data-capped] {
+      --gap-count: calc(var(--grid-col-count) - 1);
+      --total-gap-width: calc(var(--gap-count) * var(--grid-gap));
+      --grid-max-width: calc(
+        (100% - var(--total-gap-width)) / var(--grid-col-count)
+      );
+
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(
+          min(100%, max(var(--grid-min-width), var(--grid-max-width))),
+          1fr
+        )
+      );
     }
   }
 </style>
