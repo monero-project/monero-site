@@ -91,7 +91,7 @@ const tabs = [
 </Layout>
 
 <style>
-  .blog-grid {
+  .blog-grid[data-capped] {
     grid-template-columns: 1fr;
   }
 
@@ -108,7 +108,7 @@ const tabs = [
   }
 
   @media (width >= 1200px) {
-    .blog-grid {
+    .blog-grid[data-capped] {
       grid-template-columns: repeat(2, 1fr);
     }
 

@@ -45,7 +45,6 @@ const { t, localizeHref, localizeNumber } = Astro.locals;
           </p>
           <IconLink
             href={localizeHref("/downloads/community/#wallets")}
-            size="sm"
             underline
           >
             {t("accept-monero:steps.chooseSetup.wallet.viewWallets")}
@@ -88,11 +87,7 @@ const { t, localizeHref, localizeNumber } = Astro.locals;
           <p>
             {t("accept-monero:steps.chooseSetup.processor.description")}
           </p>
-          <IconLink
-            href={localizeHref("/resources/tools/accept/")}
-            size="sm"
-            underline
-          >
+          <IconLink href={localizeHref("/resources/tools/accept/")} underline>
             {t("accept-monero:steps.chooseSetup.processor.viewGateways")}
           </IconLink>
         </AccordionItem>
@@ -167,11 +162,7 @@ const { t, localizeHref, localizeNumber } = Astro.locals;
       <p>
         {t("accept-monero:steps.getListed.description")}
       </p>
-      <IconLink
-        href={localizeHref("/get-started/merchants")}
-        size="sm"
-        underline
-      >
+      <IconLink href={localizeHref("/get-started/merchants")} underline>
         {t("accept-monero:steps.getListed.viewDirectories")}
       </IconLink>
     </GuideStep>

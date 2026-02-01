@@ -90,11 +90,11 @@ const { title, content, variant = "default", name, open = false } = Astro.props;
     line-height: var(--line-height-body);
     font-weight: var(--font-weight-normal);
 
-    & > :global(p:first-child) {
+    & > :global(:first-child) {
       margin-top: 0;
     }
 
-    & > :global(p:last-child) {
+    & > :global(:last-child) {
       margin-bottom: 0;
     }
   }
