@@ -36,19 +36,14 @@ For translation strings (JSON), use the safeMarkdown helpers from `utils/safeMar
 
 ```astro
 ---
-import { createSafeMarkdown } from "@/utils/safeMarkdown";
-import { getLocale, createTInstance } from "@/i18n/utils";
-
-const locale = getLocale(Astro.url);
-const t = await createTInstance(locale);
-const safeMarkdown = createSafeMarkdown(locale);
+const { t, safeMarkdown } = Astro.locals;
 ---
 
-<div set:html={safeMarkdown.parse(t("safetyTip"));} />
+<div set:html={safeMarkdown.parse(t("safetyTip"))} />
 ```
 
-- `createSafeMarkdown` injects Moneropedia links for `@term` mentions and sanitizes the output.
-- Use `parseInline` if you need inline-only HTML for small snippets.
+- `safeMarkdown` (provided via middleware) injects Moneropedia links for `@term` mentions and sanitizes the output.
+- Use `safeMarkdown.parseInline()` if you need inline-only HTML for small snippets.
 
 If your translation string includes multiple `@term` usages, the same process handles them all.
 

@@ -2,12 +2,11 @@
 
 ## Basic Page Localization Setup
 
-1. **Add Translations**: Create/update JSON files in `src/i18n/translations/[locale]/` (e.g., `en/translation.json`).
+1. **Add Translations**: Create/update JSON files in `src/i18n/translations/[locale]/`. Each file is a namespace (e.g., `downloads.json` = `downloads` namespace).
 
-   Example `src/i18n/translations/en/translation.json`:
+   Example `src/i18n/translations/en/my-page.json`:
    ```json
-   ...,
-   "myNewPage": {
+   {
      "pageTitle": "My Page | Monero - the secure, private, untraceable cryptocurrency",
      "heroTitle": "Welcome to My Page",
      "heroSubtitle": "This is a localized page.",
@@ -18,86 +17,97 @@
 
    For dynamic content (links, etc), use `{{variable}}` placeholders. Pass values when calling `t()` (see step 2).
 
-2. **Update the Page**: Import and use the translation instance.
+2. **Update the Page**: Use the translation utilities from `Astro.locals` (provided by the middleware).
 
-   ```typescript
+   ```astro
    ---
-   import { createTInstance, getLocale } from "@/i18n/utils";
+   import Layout from "@/layouts/Layout.astro";
+   import TitleCard from "@/components/ui/TitleCard.astro";
 
-   const locale = getLocale(Astro.url);
-   const t = await createTInstance(locale);
+   const { t, localizeHref } = Astro.locals;
    ---
 
-   <Layout title={t("myNewPage.pageTitle")} description={t("myNewPage.heroSubtitle")}>
-     <TitleCard title={t("myNewPage.heroTitle")} subtitle={t("myNewPage.heroSubtitle")} />
+   <Layout title={t("my-page:pageTitle")} description={t("my-page:heroSubtitle")}>
+     <TitleCard title={t("my-page:heroTitle")} subtitle={t("my-page:heroSubtitle")} />
 
      <div id="content">
-       <p>{t("myNewPage.greeting", { name: "Alice" })}</p>
-       <p>{t("myNewPage.itemCount", { count: 5 })}</p>
+       <p>{t("my-page:greeting", { name: "Alice" })}</p>
+       <p>{t("my-page:itemCount", { count: 5 })}</p>
      </div>
-
    </Layout>
    ```
 
+   The middleware provides these helpers on `Astro.locals`:
+   - `t` - translation function
+   - `locale` - current locale string
+   - `dir` - text direction ("ltr" or "rtl")
+   - `localizeHref` - creates locale-aware URLs
+   - `localizeNumber` - formats numbers for the locale
+   - `localizeDateString` - formats dates for the locale
+   - `safeMarkdown` - renders Markdown with Moneropedia links
+
 ## Utility Functions
 
-### getLocale
-**Why**: Retrieves the current locale from the URL, used for most other i18n functions.
+These utilities are available on `Astro.locals` via the middleware. For advanced use cases, they can also be imported from `@/i18n/utils`.
 
-**How**: Pass Astro.url.
+### locale
+**Why**: The current locale string, retrieved automatically by the middleware.
+
+**How**: Access via `Astro.locals.locale`.
 
 Example:
-```typescript
-import { getLocale } from "@/i18n/utils";
-
-const locale = getLocale(Astro.url); // "en"
+```astro
+---
+const { locale } = Astro.locals;
+// locale is "en", "ar", etc.
+---
 ```
 
 ### localizeHref
 **Why**: Creates locale-aware URLs for links, ensuring correct paths for different languages.
 
-**How**: Pass locale and href. Handles internal/external links and prefixes.
+**How**: Use `Astro.locals.localizeHref(href)`. The locale is automatically applied.
 
 Example:
-```typescript
-import { localizeHref, getLocale } from "@/i18n/utils";
-
-const locale = getLocale(Astro.url);
-const link = localizeHref(locale, "/blog"); // "/es/blog" for Spanish
+```astro
+---
+const { localizeHref } = Astro.locals;
+const link = localizeHref("/blog"); // "/es/blog" for Spanish, "/blog" for English
+---
 ```
 
 ### localizeNumber
-**Why**: Formats numbers according to locale rules (e.g., commas, decimals).
+**Why**: Formats numbers according to locale rules (e.g., digit glyphs for Arabic).
 
-**How**: Pass number, locale, and optional minimum digits.
+**How**: Use `Astro.locals.localizeNumber(number, minimumIntegerDigits?)`.
 
 Example:
-```typescript
-import { localizeNumber, getLocale } from "@/i18n/utils";
-
-const locale = getLocale(Astro.url);
-const formatted = localizeNumber(locale, 1234); // "1234" (this helper does not add thousands separators; it localizes digit glyphs)
-
-> Tip: If you need thousands separators/grouping (e.g., "1,234"), use `Intl.NumberFormat` directly with `useGrouping: true` or implement a small wrapper using `number.toLocaleString(localeString, { useGrouping: true })`.
+```astro
+---
+const { localizeNumber } = Astro.locals;
+const formatted = localizeNumber(1234); // Localizes digit glyphs
+---
 ```
+
+> Tip: If you need thousands separators/grouping (e.g., "1,234"), use `Intl.NumberFormat` directly with `useGrouping: true`.
 
 ### localizeDateString
 **Why**: Formats dates in locale-specific ways (e.g., MM/DD/YYYY vs DD/MM/YYYY).
 
-**How**: Pass date string, locale, and optional format options.
+**How**: Use `Astro.locals.localizeDateString(date, options?)`.
 
 Example:
-```typescript
-import { localizeDateString, getLocale } from "@/i18n/utils";
-
-const locale = getLocale(Astro.url);
-const date = localizeDateString("2023-12-16", locale, { year: "numeric", month: "long" }); // "December 2023" in en
+```astro
+---
+const { localizeDateString } = Astro.locals;
+const date = localizeDateString("2023-12-16", { year: "numeric", month: "long" }); // "December 2023" in en
+---
 ```
 
-### getLocaleName
+### getLocaleName (advanced)
 **Why**: Gets the display name of a language (e.g., for language selectors).
 
-**How**: Pass locale code.
+**How**: Import from `@/i18n/utils` and pass locale code.
 
 Example:
 ```typescript
@@ -106,41 +116,58 @@ import { getLocaleName } from "@/i18n/utils";
 const name = getLocaleName("es")?.name; // "Spanish"
 ```
 
-### getDirection
+### dir (text direction)
 **Why**: Determines text direction (left-to-right or right-to-left) for RTL languages. Can be used to set the `dir` attribute on HTML elements and `MaskIcon` components.
 
-**How**: Pass locale.
+**How**: Use `Astro.locals.dir`.
 
 Example:
-```typescript
-import { getDirection } from "@/i18n/utils";
-
-const dir = getDirection("ar"); // "rtl"
+```astro
+---
+const { dir } = Astro.locals;
+// dir is "ltr" or "rtl"
+---
+<div dir={dir}>...</div>
+<MaskIcon src={icons.mask("arrow-right")} rtl={dir === "rtl"} />
 ```
 
-### createTInstance
-**Why**: Initializes i18n for loading translations from JSON files.
+### t (translation function)
+**Why**: Loads translations from JSON files.
 
-**How**: Pass locale and optional namespaces. It returns an initialized i18next instance which is callable like a `t` function (so `const t = await createTInstance(locale)` lets you call `t("key")` directly).
+**How**: Use `Astro.locals.t`. Returns an initialized i18next instance.
 
 Example:
-```typescript
-import { createTInstance } from "@/i18n/utils";
+```astro
+---
+const { t } = Astro.locals;
+const text = t("index:pageTitle");
+// For objects (e.g., FAQ categories), use:
+const basicsSection = t("faq:basics", { returnObjects: true });
+---
+```
 
-const t = await createTInstance("en", "common");
-const text = t("index.pageTitle");
-// For arrays/objects (e.g., lists in the FAQ), use:
-const items = t("faq.basics.items", { returnObjects: true });
+### safeMarkdown
+**Why**: Renders Markdown strings with automatic Moneropedia `@term` linking and XSS sanitization.
+
+**How**: Use `Astro.locals.safeMarkdown.parse()` or `.parseInline()` for inline content.
+
+Example:
+```astro
+---
+const { t, safeMarkdown } = Astro.locals;
+---
+<div set:html={safeMarkdown.parse(t("faq:basics.answer"))} />
 ```
 
 ## Tips
-
-- For complex strings, use interpolation (e.g., `{{name}}`).
 - For getmonero.org links in translation JSON files, use interpolation variables `{{link}}` and pass localized URLs when calling `t()` with `localizeHref()`.
-    Example: 
+    Example in `src/i18n/translations/en/common.json`: 
     ```json
     "learnMore": "Learn more on the {{link}}."
     ```
-    ```typescript
-    const learnMoreText = t("learnMore", { link: localizeHref(locale, "/get-started/") });
+    ```astro
+    ---
+    const { t, localizeHref } = Astro.locals;
+    const learnMoreText = t("common:learnMore", { link: localizeHref("/get-started/") });
+    ---
     ```

@@ -4,33 +4,28 @@ For more detailed information, refer to the [Astro component documentation.](htt
 
 ## Quick checklist
 
-- Pick type: UI (`src/components/ui/`) | Page (`src/components/pages/.../`) | Layout (`src/components/layout/`).
+- Pick type: UI (`src/components/ui/`) | Page (`src/components/pages/...`).
 - Name with PascalCase (e.g., `MyButton.astro`).
 - Keep it small, testable, accessible, and well-documented.
 
-## Where to put a new component (ui / pages / layout)
+## Where to put a new component (ui / pages)
 
 Quick decision guide:
 
 - `src/components/ui/` -> **Reusable UI building blocks**
   - Use for small, style/behavior-focused components that may be used across the site (Buttons, Accordions, Icon wrappers).
   - Keep these dependency-free (accept props, avoid page-specific logic).
-  - Example: `src/components/ui/Button.astro`, `Accordion.astro`.
+  - Subfolders exist for organization: `accordion/`, `header/`, `icons/`, `layout/`, `tabs/`, `toc/`, etc.
+  - Example: `src/components/ui/Button.astro`, `src/components/ui/accordion/Accordion.astro`.
 
 - `src/components/pages/<page-name>/` -> **Page-specific or feature components**
   - Use when the component is tightly coupled to one page or feature (e.g., blog listing card, downloads grid, search results component, exchanges table).
   - They can import page-level helpers and expect specific data shapes.
   - Example: `src/components/pages/blog/BlogCard.astro`.
 
-- `src/components/layout/` -> **Structural/site-level parts**
-  - Use for header, footer, navigation, or other pieces that compose site layouts and appear on many pages.
-  - These components can assume i18n, global CSS, or layout-level data.
-  - Example: `src/components/layout/Footer.astro`.
-
 Rules of thumb:
-- If it’s small and can be reused later -> put it in `ui/`.
-- If it depends on a single page’s data or route -> put it in `pages/<page-name>/`.
-- If it composes site scaffolding or is used by `src/layouts/` -> put it in `layout/`.
+- If it's small and can be reused later -> put it in `ui/` (or a subfolder within `ui/`).
+- If it depends on a single page's data or route -> put it in `pages/<page-name>/`.
 
 If you're still unsure, search for similar components in `src/components/` and follow the existing pattern. Add a short comment at the top of the file describing purpose and intended scope.
 
@@ -83,30 +78,26 @@ const { title = "", class: className = "" } = Astro.props;
 
 ## Localization in components
 
-If a component needs localized strings, do **not** create a new translation instance inside the component. Instead, obtain `t` in the page (or layout) using `createTInstance(locale)` and pass `t` into the component via props.
+Components can access `Astro.locals` directly for translation and locale utilities. Component-level strings should be added to the `common.json` translation file, under the `components` key.
 
-Example (page):
 ```astro
 ---
-import { createTInstance, getLocale } from "@/i18n/utils";
-import MyComponent from "@/components/ui/MyComponent.astro";
-const locale = getLocale(Astro.url);
-const t = await createTInstance(locale);
+// MyComponent.astro
+interface Props { customLabel?: string }
+const { customLabel } = Astro.props;
+const { t, dir } = Astro.locals;
 ---
-<MyComponent t={t} />
+<div dir={dir}>
+  <span>{t("common:components.bookCard.readOnline")}</span>
+  {customLabel && <span>{customLabel}</span>}
+</div>
 ```
 
-Example (component):
-```astro
----
-import type { TFunction } from "i18next";
-interface Props { t: TFunction }
-const { t } = Astro.props as Props;
----
-<div>{t("component.label")}</div>
-```
-
-This keeps localization synchronous inside components and avoids creating multiple i18n instances.
+**Guidelines:**
+- Use `Astro.locals.t` for standard UI strings (buttons, labels, aria text).
+- Use `Astro.locals.dir` for RTL-aware layouts.
+- For component-level strings, add keys to `src/i18n/translations/[locale]/common.json`.
+- Page-specific content should still be passed as props from the page.
 
 ## Testing & QA
 
@@ -121,7 +112,7 @@ This keeps localization synchronous inside components and avoids creating multip
 
 ## Examples
 
-- Reusable button: `src/components/ui/CustomButton.astro` (variants, `aria-` support).
-- Page-only card: `src/components/pages/blog/AuthorCard.astro`.
+- Reusable button: `src/components/ui/Button.astro` (variants, `aria-` support).
+- Page-only card: `src/components/pages/blog/BlogCard.astro`.
 
 For icon usage see [How to Use and Create Icons](how-to-use-and-create-icons.md).

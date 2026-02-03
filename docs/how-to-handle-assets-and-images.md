@@ -47,18 +47,16 @@ import logo from "@/assets/icons/logo.png";
 
 ## Handling Images in Content Collections
 
-For blogs and Moneropedia:
+### Blog posts (frontmatter images)
 
-1. Place images in `src/content/blog/assets/` or `src/content/moneropedia/en/assets/`.
-2. Reference in frontmatter or Markdown:
+1. Place images in `src/content/blog/assets/<post-folder>/`.
+2. Reference in frontmatter:
 
    ```md
    ---
    title: My Post
-   image: ./assets/airgap/my-image.avif
+   image: ./assets/my-post-folder/my-image.png
    ---
-
-   ![Alt text](./assets/airgap/my-image.avif)
    ```
 
 3. In the page component, access via `entry.data.image` and use `<Image />`:
@@ -69,6 +67,17 @@ For blogs and Moneropedia:
    ---
 
    <Image src={entry.data.image} alt="Post image" format="avif" />
+   ```
+
+### Moneropedia or other content (inline images)
+
+For images embedded in markdown content:
+
+1. Create an `assets/` folder next to the markdown file (e.g., `src/content/moneropedia/en/assets/`).
+2. Reference in the markdown body using relative paths:
+
+   ```md
+   ![Diagram of ring signatures](./assets/ring-signatures-diagram.png)
    ```
 
 - Relative paths (`./assets/`) work in collections.

@@ -1,19 +1,12 @@
 # How to Make a New Page
 
-## Quick checklist
-
-- Create `src/pages/<your-path>/index.astro` or `src/pages/<name>.astro`.
-- Use `Layout`, `TitleCard` and `PageContainer` for consistent header/footer/main content.
-- Use components from `src/components/ui/` where needed.
-- Run `pnpm dev` and preview at `http://localhost:4321/<your-path>`.
-
 ## Minimal page template
 
 ```astro
 ---
 import Layout from "@/layouts/Layout.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
-import PageContainer from "@/components/ui/PageContainer.astro";
+import PageContainer from "@/components/ui/layout/PageContainer.astro";
 ---
 
 <Layout title="My page" description="Short description">
@@ -50,6 +43,13 @@ Use `src/components/pages/` for page-specific components and `src/components/ui/
 - Use proper heading order (h1 -> h2 -> …).
 - Add `alt` text for images and aria attributes for interactive elements. If a image is decorative, use `alt=""`.
 - Keep content concise and scannable (short sections, meaningful headings).
+
+## Quick checklist
+
+- Create `src/pages/<your-path>/index.astro` or `src/pages/<name>.astro`.
+- Use `Layout`, `TitleCard` and `PageContainer` for consistent header/footer/main content.
+- Use components from `src/components/ui/` where needed.
+- Run `pnpm dev` and preview at `http://localhost:4321/<your-path>`.
 
 ## Test & PR checklist
 

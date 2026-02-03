@@ -10,7 +10,8 @@
 ## Useful variables (examples)
 
 - Colors: `--monero-orange`, `--card-color`, `--heading-color`, `--text-primary`.
-- Spacing: `--page-top-margin`, `--mobile-padding-inline`, `--desktop-padding-inline`.
+- Spacing: `--space-sm`, `--space-md`, `--space-lg`, `--space-xl`, `--space-2xl` (see global.css for full scale).
+- Layout: `--page-top-margin`, `--mobile-padding-inline`, `--desktop-padding-inline`.
 - Typography: `--font-size-base`, `--font-size-2xl`, `--font-weight-semibold`.
 
 See `src/styles/global.css` for the full list. These variables have built-in dark mode equivalents.
@@ -20,8 +21,10 @@ See `src/styles/global.css` for the full list. These variables have built-in dar
 ```astro
 ---
 import Layout from "@/layouts/Layout.astro";
-import PageContainer from "@/components/ui/PageContainer.astro";
+import PageContainer from "@/components/ui/layout/PageContainer.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
+import Grid from "@/components/ui/layout/Grid.astro";
+import Column from "@/components/ui/layout/Column.astro";
 import Button from "@/components/ui/Button.astro";
 ---
 
@@ -29,13 +32,16 @@ import Button from "@/components/ui/Button.astro";
   <TitleCard title="Example section" subtitle="A short intro sentence" />
 
   <PageContainer>
-    <div class="two-col">
-      <article>
+    <Grid columns={2} gap="lg">
+      <Column gap="md">
         <h2 class="example-title">Section heading</h2>
-        <p>Use CSS variables for color and spacing. This paragraph shows body copy using <code>var(--paragraph-main)</code>.</p>
+        <p>Use CSS variables for color and spacing.</p>
         <Button variant="primary">Call to action</Button>
-      </article>
-    </div>
+      </Column>
+      <Column gap="sm">
+        <p>Second column content.</p>
+      </Column>
+    </Grid>
   </PageContainer>
 </Layout>
 
@@ -44,21 +50,20 @@ import Button from "@/components/ui/Button.astro";
     font-size: var(--font-size-2xl);
     color: var(--heading-color);
   }
-  .two-col {
-    display: grid;
-    gap: 1.25rem;
-    grid-template-columns: 1fr;
-  }
-
-  @media (min-width: 900px) {
-    .two-col {
-      grid-template-columns: 2fr 1fr;
-      gap: 2rem;
-      align-items: start;
-    }
-  }
 </style>
 ```
+
+### Layout components
+
+The project provides layout primitives in `src/components/ui/layout/`:
+
+- **Grid** - Responsive grid with `columns` (2, 3, 4) or `minWidth` prop. Use for card grids, multi-column layouts.
+- **Column** - Flexbox column with `gap` and `align` props. Use for vertical stacking.
+- **Row** - Flexbox row with `gap`, `justify`, `align`, and `wrap` props. Use for horizontal layouts.
+- **PageContainer** - Standard page content wrapper with max-width and padding.
+- **PageSection** - Section wrapper for consistent vertical spacing.
+
+Prefer these components over writing custom grid/flex CSS.
 
 ## Component styling tips
 

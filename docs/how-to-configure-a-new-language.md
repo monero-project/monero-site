@@ -34,11 +34,10 @@ Create a folder for the new language translations:
 mkdir -p src/i18n/translations/<lang>/
 ```
 
-Copy `common.json` and `translation.json` from `src/i18n/translations/en/` into the new folder to seed the translation keys. Example:
+Copy all JSON namespace files from `src/i18n/translations/en/` into the new folder to seed the translation keys. Example:
 
 ```
-cp src/i18n/translations/en/common.json src/i18n/translations/de/common.json
-cp src/i18n/translations/en/translation.json src/i18n/translations/de/translation.json
+cp src/i18n/translations/en/*.json src/i18n/translations/de/
 ```
 
 Important:
@@ -49,18 +48,18 @@ Important:
 
 - Run: `pnpm dev`.
 - Visit the site and open the language selector - the new language should be listed.
-- Verify translated UI strings with `t()` work by replacing a string in the new `translation.json` for a quick smoke test.
+- Verify translated UI strings with `t()` work by replacing a string in a namespace file (e.g., `common.json`) for a quick smoke test.
 - For RTL languages, preview pages and verify layout/direction looks correct.
 
 ## PR checklist
 
 - [ ] Added the new locale to `src/i18n/config.ts`.
-- [ ] Created `src/i18n/translations/<lang>/` and seeded `common.json` and `translation.json`.
+- [ ] Created `src/i18n/translations/<lang>/` and seeded all namespace JSON files.
 - [ ] If applicable, added the locale to `rtlLocales` (for RTL languages).
 - [ ] Tested with `pnpm dev` and confirmed the language appears in the selector and basic strings resolve.
 
 ## Troubleshooting
 
 - Language not appearing: confirm `src/i18n/config.ts` was edited correctly and the dev server restarted.
-- Missing keys: ensure your `translation.json` contains the same keys as `en/`.
+- Missing keys: ensure your namespace files contain the same keys as `en/`.
 - RTL layout issues: add the code to `rtlLocales` and verify styles; open an issue if complex layout changes are required.

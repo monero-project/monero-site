@@ -49,7 +49,6 @@ terms:
 - [ ] Front matter includes `title`, `summary`, and `terms`.
 - [ ] Images (if any) placed in `./assets/<file-name>/` and referenced relatively.
 - [ ] Run `pnpm dev` and verify entry renders and links work.
-- [ ] If you changed files/new files were added, run `pnpm run i18n:moneropedia:config` and `pnpm run i18n:moneropedia:update-po` to update translation files.
 
 ## Examples & references
 - See existing entries in `src/content/moneropedia/en/` for style and structure.

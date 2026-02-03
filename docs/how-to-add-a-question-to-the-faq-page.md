@@ -5,38 +5,48 @@ The FAQ page is located at `/get-started/faq` and displays frequently asked ques
 ## Steps to add a new FAQ question
 
 1. **Navigate to the translation files**:
-   - Go to `src/i18n/translations/[locale]/translation.json`, where `[locale]` is the language code (e.g., `en` for English).
-   - For English, this is `src/i18n/translations/en/translation.json`.
+   - Go to `src/i18n/translations/[locale]/faq.json`, where `[locale]` is the language code (e.g., `en` for English).
+   - For English, this is `src/i18n/translations/en/faq.json`.
 
-2. **Locate the FAQ section**:
-   - Open the file and find the `"faq"` key.
-   - Under `"faq"`, you'll see categories like `"basics"`, `"nodes"`, `"privacy"`, `"security"`, `"wallets"`, and `"economics"`.
-   - Each category has a `"title"` and an `"items"` array containing the questions.
+2. **Locate the FAQ categories**:
+   - Open the file and you'll see categories like `"basics"`, `"nodes"`, `"privacy"`, `"security"`, `"wallets"`, and `"economics"`.
+   - Each category has a `"title"` key plus individual question objects as named keys.
 
 3. **Choose or create a category**:
    - Select an existing category that fits your question (e.g., `"basics"` for general questions, `"privacy"` for privacy-related ones).
-   - If no category fits, you can add a new one by creating a new key under `"faq"`, following the structure:
+   - If no category fits, you can add a new one by creating a new key in `faq.json`, following the structure:
      ```json
      "newCategory": {
        "title": "New Category Name",
-       "items": []
+       "firstQuestion": {
+         "title": "Question text?",
+         "content": "Answer text."
+       }
      }
      ```
-     - Update the FAQ page (`src/pages/get-started/faq.astro`) to include the new category by adding a similar line to the existing ones (e.g., `t("faq.newCategory.items", { returnObjects: true }) as AccordionItem[]`).
+     - Update the FAQ page (`src/pages/get-started/faq.astro`) to include the new category by adding a similar `sectionToItems()` call.
 
 4. **Add the question and answer**:
-   - In the chosen category's `"items"` array, add a new object with `"title"` (the question) and `"content"` (the answer).
+   - In the chosen category, add a new named key with `"title"` (the question) and `"content"` (the answer).
+   - Use camelCase for the key name (e.g., `"howToSecureWallet"`).
    - Example:
      ```json
-     {
-       "title": "What is the best way to secure my Monero wallet?",
-       "content": "Always use a strong, unique password and enable two-factor authentication if available. Store your seed phrase offline in a secure location."
+     "basics": {
+       "title": "Basics",
+       "whatIsMonero": {
+         "title": "What is Monero?",
+         "content": "Monero is uncompromising digital cash..."
+       },
+       "howToSecureWallet": {
+         "title": "What is the best way to secure my Monero wallet?",
+         "content": "Always use a strong, unique password and enable two-factor authentication if available. Store your seed phrase offline in a secure location."
+       }
      }
      ```
    - The `"content"` field supports Markdown formatting, including links to Moneropedia terms using the `@` prefix (e.g., `@RandomX`).
 
-6. **Test the changes**:
-   - Run the development server (`npm run dev` or `pnpm dev`) and navigate to `/get-started/faq` to verify the new question appears correctly.
+5. **Test the changes**:
+   - Run the development server (`pnpm dev`) and navigate to `/get-started/faq` to verify the new question appears correctly.
    - Check that any @links render properly as links to Moneropedia entries.
 
 ## Notes
