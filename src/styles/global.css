@@ -99,10 +99,10 @@ a {
   color: var(--monero-orange);
   text-decoration: none;
   font-weight: var(--font-weight-medium);
-}
 
-a:hover {
-  text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 h1,
@@ -146,10 +146,10 @@ th {
 
 tbody tr {
   box-shadow: inset 0 -1px 0 var(--border-color);
-}
 
-tbody tr:last-child {
-  box-shadow: none;
+  &:last-child {
+    box-shadow: none;
+  }
 }
 
 /* ========================================
