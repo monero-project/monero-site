@@ -21,7 +21,6 @@ paginate_path: blog/page:num/
 
 plugins:
   - jekyll-paginate
-  - jekyll-multiple-languages-plugin
   - jekyll-feed
 
 feed:
@@ -29,7 +28,7 @@ feed:
 
 # jekyll-multiple-languages-plugin settings:
 languages: ["en", "es", "it", "pl", "fr", "ar", "ru", "de", "nl", "pt-br", "tr", "zh-cn", "zh-tw", "nb-no", "el"]
-
+verbose: true
 
 exclude_from_localizations: ["img", "css", "fonts", "media", "404.html", "feed.xml", "meta", "_posts", "legal", "blog"]
 
