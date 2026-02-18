@@ -273,8 +273,8 @@ jobs:
           #CDN_LINK_CLI="https://dlsrc.getmonero.org/monero-$version_cli.torrent"
           #CDN_LINK_GUI="https://dlsrc.getmonero.org/monero-gui-$version_gui.torrent"
           # TODO: download from monero-torrent repo for testing, replace with above dlsrc link in production
-          CDN_LINK_CLI="https://github.com/plowsof/monero-torrent/releases/download/v0.18.4.4/monero-v0.18.4.4.torrent"
-          CDN_LINK_GUI="https://github.com/plowsof/monero-torrent/releases/download/v0.18.4.4/monero-gui-v0.18.4.4.torrent"
+          CDN_LINK_CLI="https://github.com/plowsof/monero-torrent/releases/download/v0.18.4.5/monero-v0.18.4.5.torrent"
+          CDN_LINK_GUI="https://github.com/plowsof/monero-torrent/releases/download/v0.18.4.5/monero-gui-v0.18.4.5.torrent"
           wget $CDN_LINK_CLI
           wget $CDN_LINK_GUI
           CDN_MAGNET_LINK_CLI=$(transmission-show -m monero-$version_cli.torrent)
