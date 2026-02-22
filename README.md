@@ -108,6 +108,17 @@ docker run -p 4321:4321 monero-site-ssr
 
 Then open [http://127.0.0.1:4321](http://127.0.0.1:4321).
 
+### Build args
+
+| Arg                        | Description                                         | Example |
+| :------------------------- | :-------------------------------------------------- | :------ |
+| `LIMIT_POSTS`              | Keep only the N most recent blog posts for previews | `6`     |
+| `SKIP_IMAGE_OPTIMIZATION`  | Disable image processing for faster builds          | `true`  |
+
+```bash
+docker build --build-arg LIMIT_POSTS=6 --build-arg SKIP_IMAGE_OPTIMIZATION=true --target serve-ssr -t monero-site-ssr .
+```
+
 ## More
 
 - [Astro Documentation](https://docs.astro.build)

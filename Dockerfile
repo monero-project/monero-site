@@ -4,27 +4,39 @@ ENV ASTRO_TELEMETRY_DISABLED=1
 RUN corepack enable
 WORKDIR /app
 
-# Install dependencies
+# Install production dependencies
 FROM base AS deps
+COPY package.json pnpm-lock.yaml ./
+RUN pnpm install --frozen-lockfile --prod
+
+# Install all dependencies
+FROM base AS deps-dev
 COPY package.json pnpm-lock.yaml ./
 RUN pnpm install --frozen-lockfile
 
-# Build the site (static)
-FROM base AS build
+# Prepare source
+FROM base AS src
+ARG LIMIT_POSTS
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
-RUN pnpm build
+RUN if [ -n "$LIMIT_POSTS" ]; then \
+      find src/content/blog -maxdepth 1 -name '[^_]*.md' | sort -r | tail -n +$((LIMIT_POSTS + 1)) | while IFS= read -r f; do rm -f "$f"; done; \
+    fi
+
+# Build the site (static)
+FROM src AS build
+ARG SKIP_IMAGE_OPTIMIZATION
+RUN SKIP_IMAGE_OPTIMIZATION=$SKIP_IMAGE_OPTIMIZATION pnpm build
 
 # Build the site (SSR)
-FROM base AS build-ssr
-COPY --from=deps /app/node_modules ./node_modules
-COPY . .
+FROM src AS build-ssr
+ARG SKIP_IMAGE_OPTIMIZATION
 ENV SSR=true
-RUN pnpm build
+RUN SKIP_IMAGE_OPTIMIZATION=$SKIP_IMAGE_OPTIMIZATION pnpm build
 
 # Development server
 FROM base AS dev
-COPY --from=deps /app/node_modules ./node_modules
+COPY --from=deps-dev /app/node_modules ./node_modules
 COPY . .
 EXPOSE 4321
 CMD ["pnpm", "dev", "--host"]
@@ -35,19 +47,20 @@ COPY --from=build /app/dist /
 
 # Serve static build with Caddy
 FROM caddy:alpine AS serve-static
-COPY --from=build /app/dist /srv
+COPY --from=build /app/dist /usr/share/caddy
+COPY Caddyfile /etc/caddy/Caddyfile
 EXPOSE 80
 
 # SSR runtime files
 FROM node:22-alpine AS ssr-runtime
 WORKDIR /app
 COPY --from=build-ssr /app/dist ./dist
-COPY --from=build-ssr /app/node_modules ./node_modules
-COPY --from=build-ssr /app/src/i18n/translations ./src/i18n/translations
-COPY --from=build-ssr /app/src/content/moneropedia ./src/content/moneropedia
-COPY --from=build-ssr /app/public/media/press-kit ./public/media/press-kit
-COPY --from=build-ssr /app/public/media/vtt ./public/media/vtt
-COPY --from=build-ssr /app/downloads ./downloads
+COPY --from=deps /app/node_modules ./node_modules
+COPY --from=src /app/src/i18n/translations ./src/i18n/translations
+COPY --from=src /app/src/content/moneropedia ./src/content/moneropedia
+COPY --from=src /app/public/media/press-kit ./public/media/press-kit
+COPY --from=src /app/public/media/vtt ./public/media/vtt
+COPY --from=src /app/downloads ./downloads
 
 # Export SSR build to host
 FROM scratch AS ssr

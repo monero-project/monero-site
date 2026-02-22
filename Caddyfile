@@ -1,0 +1,8 @@
+:80 {
+	root * /usr/share/caddy
+	file_server
+	handle_errors {
+		rewrite * /{err.status_code}.html
+		file_server
+	}
+}

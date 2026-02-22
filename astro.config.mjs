@@ -11,6 +11,7 @@ import { isExternal } from "./src/utils/links";
 const SITE_ROOTDOMAIN = "beta.monerodevs.org";
 
 const isSSR = process.env.SSR === "true";
+const skipImageOptimization = process.env.SKIP_IMAGE_OPTIMIZATION === "true";
 
 // https://astro.build/config
 export default defineConfig({
@@ -36,10 +37,14 @@ export default defineConfig({
   },
   build: {
     format: "directory",
+    concurrency: 4,
   },
   image: {
     responsiveStyles: true,
     layout: "constrained",
+    ...(skipImageOptimization && {
+      service: { entrypoint: "astro/assets/services/noop" },
+    }),
   },
   integrations: [
     i18n({
