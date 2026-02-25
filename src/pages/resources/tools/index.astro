@@ -10,6 +10,10 @@ import {
 } from "@/data/resources/monero-tools";
 import Layout from "@/layouts/Layout.astro";
 
+import developImage from "@/assets/images/tools/develop.avif";
+import exploreImage from "@/assets/images/tools/explore.avif";
+import acceptImage from "@/assets/images/tools/accept.avif";
+
 const { t, localizeHref, localizeNumber } = Astro.locals;
 
 const categories = [
@@ -20,6 +24,7 @@ const categories = [
     linkText: t("tools:index.itemsCount", {
       num: localizeNumber(exploreCount),
     }),
+    image: exploreImage,
   },
   {
     title: t("tools:develop.title"),
@@ -28,6 +33,7 @@ const categories = [
     linkText: t("tools:index.itemsCount", {
       num: localizeNumber(developCount),
     }),
+    image: developImage,
   },
   {
     title: t("tools:accept.title"),
@@ -36,6 +42,7 @@ const categories = [
     linkText: t("tools:index.itemsCount", {
       num: localizeNumber(acceptCount),
     }),
+    image: acceptImage,
   },
 ];
 ---
@@ -58,6 +65,7 @@ const categories = [
             description={cat.description}
             href={cat.href}
             linkText={cat.linkText}
+            image={cat.image}
           />
         ))
       }

@@ -5,6 +5,10 @@ import PageContainer from "@/components/ui/layout/PageContainer.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import Layout from "@/layouts/Layout.astro";
 
+import developImage from "@/assets/images/contribute/develop.avif";
+import networkImage from "@/assets/images/contribute/network.avif";
+import donateImage from "@/assets/images/contribute/donate.avif";
+
 const { t, localizeHref } = Astro.locals;
 
 const cards = [
@@ -12,16 +16,19 @@ const cards = [
     title: t("contribute:network.title"),
     description: t("contribute:network.subtitle"),
     href: localizeHref("/get-started/contribute/network"),
+    image: networkImage,
   },
   {
     title: t("contribute:develop.title"),
     description: t("contribute:develop.subtitle"),
     href: localizeHref("/get-started/contribute/develop"),
+    image: developImage,
   },
   {
     title: t("contribute:donate.title"),
     description: t("contribute:donate.subtitle"),
     href: localizeHref("/get-started/contribute/donate"),
+    image: donateImage,
   },
 ];
 ---
@@ -43,6 +50,7 @@ const cards = [
             title={card.title}
             description={card.description}
             href={card.href}
+            image={card.image}
           />
         ))
       }

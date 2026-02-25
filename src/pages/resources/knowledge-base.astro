@@ -5,6 +5,10 @@ import PageContainer from "@/components/ui/layout/PageContainer.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import Layout from "@/layouts/Layout.astro";
 
+import libraryImage from "@/assets/images/knowledge-base/library.avif";
+import moneropediaImage from "@/assets/images/knowledge-base/moneropedia.avif";
+import researchLabImage from "@/assets/images/knowledge-base/research-lab.avif";
+
 const { t, localizeHref } = Astro.locals;
 
 const cards = [
@@ -12,16 +16,19 @@ const cards = [
     title: t("knowledge-base:library.title"),
     description: t("knowledge-base:library.cardSubtitle"),
     href: localizeHref("/resources/library/"),
+    image: libraryImage,
   },
   {
     title: t("knowledge-base:moneropedia.title"),
     description: t("knowledge-base:moneropedia.cardSubtitle"),
     href: localizeHref("/resources/moneropedia/"),
+    image: moneropediaImage,
   },
   {
     title: t("knowledge-base:researchLab.title"),
     description: t("knowledge-base:researchLab.cardSubtitle"),
     href: localizeHref("/resources/research-lab"),
+    image: researchLabImage,
   },
 ];
 ---
@@ -40,6 +47,7 @@ const cards = [
             title={card.title}
             description={card.description}
             href={card.href}
+            image={card.image}
           />
         ))
       }
