@@ -20,7 +20,7 @@ const { title, subtitle, class: className, ...rest } = Astro.props;
   .card {
     background: var(--card-color);
     border-radius: var(--radius-md);
-    padding: var(--space-md);
+    padding: var(--space-xl);
   }
 
   .title {
@@ -37,10 +37,6 @@ const { title, subtitle, class: className, ...rest } = Astro.props;
   }
 
   @media (width >= 600px) {
-    .card {
-      padding: var(--space-xl);
-    }
-
     .title {
       font-size: var(--font-size-xl);
     }
