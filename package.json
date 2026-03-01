@@ -23,7 +23,7 @@
     "@astrojs/sitemap": "^3.7.0",
     "@fontsource-variable/dm-sans": "^5.2.8",
     "@fontsource/dm-sans": "^5.2.8",
-    "astro": "^5.17.3",
+    "astro": "^5.18.0",
     "astro-i18n-aut": "^0.7.3",
     "astro-og-canvas": "^0.10.1",
     "astro-seo": "^1.1.0",
