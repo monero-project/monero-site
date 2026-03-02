@@ -1,0 +1,46 @@
+---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+
+interface Props {
+  src: ImageMetadata;
+  darkSrc?: ImageMetadata;
+  alt: string;
+  class?: string;
+}
+
+const { src, darkSrc, alt, class: className, ...rest } = Astro.props as Props;
+---
+
+<Image
+  class:list={[className, darkSrc && "light-only"]}
+  src={src}
+  alt={alt}
+  {...rest}
+/>
+{
+  darkSrc && (
+    <Image
+      class:list={[className, "dark-only"]}
+      src={darkSrc}
+      alt={alt}
+      {...rest}
+    />
+  )
+}
+
+<style>
+  .dark-only {
+    display: none;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .light-only {
+      display: none;
+    }
+
+    .dark-only {
+      display: block;
+    }
+  }
+</style>
