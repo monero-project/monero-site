@@ -2,7 +2,9 @@
 import Layout from "@/layouts/Layout.astro";
 
 import FeatureCard from "@/components/pages/get-started/what-is-monero/FeatureCard.astro";
+
 import UseCaseItem from "@/components/pages/get-started/what-is-monero/UseCaseItem.astro";
+import ThemeableImage from "@/components/ui/ThemeableImage.astro";
 import { Image } from "astro:assets";
 
 import Row from "@/components/ui/layout/Row.astro";
@@ -15,8 +17,11 @@ import TitleCard from "@/components/ui/TitleCard.astro";
 import VideoContainer from "@/components/ui/VideoContainer.astro";
 
 import communityLogo from "@/assets/images/community-logo.avif";
-import cryptoLock from "@/assets/images/crypto-lock.avif";
-import surveillanceImage from "@/assets/images/surveillanceImage.avif";
+
+import surveillanceImage from "@/assets/images/what-is-monero/surveillance-light.avif";
+import surveillanceImageDark from "@/assets/images/what-is-monero/surveillance-dark.avif";
+import privacyImage from "@/assets/images/what-is-monero/privacy-light.avif";
+import privacyImageDark from "@/assets/images/what-is-monero/privacy-dark.avif";
 
 import Button from "@/components/ui/Button.astro";
 import IconLink from "@/components/ui/IconLink.astro";
@@ -26,7 +31,7 @@ import { readdirSync } from "fs";
 import { join } from "path";
 import { icons } from "@/utils/icons";
 
-const { t, localizeHref, safeMarkdown } = Astro.locals;
+const { t, localizeHref, safeMarkdown, dir } = Astro.locals;
 
 const i18nVttFiles = readdirSync(
   join(process.cwd(), "public", "media", "vtt", "msmsm"),
@@ -46,7 +51,7 @@ const getLanguageLabel = (lang: string): string => {
 >
   <TitleCard title={t("what-is-monero:hero.title")} />
   <PageContainer>
-    <MediaSection as="div" class="content-section">
+    <MediaSection as="div" class="content-section bleed-aside">
       <span class="eyebrow">{t("what-is-monero:sections.problem.eyebrow")}</span
       >
       <h2
@@ -59,12 +64,19 @@ const getLanguageLabel = (lang: string): string => {
           t("what-is-monero:sections.problem.content"),
         )}
       />
-      <Image slot="aside" src={surveillanceImage} alt="" format="avif" />
+      <ThemeableImage
+        class="top-blur"
+        slot="aside"
+        src={surveillanceImage}
+        darkSrc={surveillanceImageDark}
+        alt=""
+        rtl={dir === "rtl"}
+      />
     </MediaSection>
 
     <hr />
 
-    <MediaSection as="div" reverse class="content-section">
+    <MediaSection as="div" reverse class="content-section bleed-aside">
       <span class="eyebrow"
         >{t("what-is-monero:sections.solution.eyebrow")}</span
       >
@@ -78,7 +90,14 @@ const getLanguageLabel = (lang: string): string => {
           t("what-is-monero:sections.solution.content"),
         )}
       />
-      <Image slot="aside" src={cryptoLock} alt="" format="avif" />
+      <ThemeableImage
+        class="top-blur"
+        slot="aside"
+        src={privacyImage}
+        darkSrc={privacyImageDark}
+        alt=""
+        rtl={dir === "rtl"}
+      />
     </MediaSection>
 
     <hr />
@@ -279,6 +298,14 @@ const getLanguageLabel = (lang: string): string => {
 </Layout>
 
 <style>
+  hr {
+    margin: 0;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
   .eyebrow {
     text-transform: uppercase;
     font-weight: var(--font-weight-semibold);
@@ -317,6 +344,18 @@ const getLanguageLabel = (lang: string): string => {
 
   .community-cta-links {
     margin-top: var(--space-2xl);
+  }
+
+  .bleed-aside {
+    margin-block: 0;
+
+    & :global(.content) {
+      padding-block: var(--space-2xl);
+    }
+  }
+
+  .top-blur {
+    mask-image: linear-gradient(to bottom, transparent, var(--bg-color) 0%);
   }
 
   .final-cta {

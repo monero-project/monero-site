@@ -6,16 +6,25 @@ interface Props {
   src: ImageMetadata;
   darkSrc?: ImageMetadata;
   alt: string;
+  rtl?: boolean;
   class?: string;
 }
 
-const { src, darkSrc, alt, class: className, ...rest } = Astro.props as Props;
+const {
+  src,
+  darkSrc,
+  alt,
+  rtl,
+  class: className,
+  ...rest
+} = Astro.props as Props;
 ---
 
 <Image
   class:list={[className, darkSrc && "light-only"]}
   src={src}
   alt={alt}
+  data-rtl={rtl || undefined}
   {...rest}
 />
 {
@@ -24,12 +33,18 @@ const { src, darkSrc, alt, class: className, ...rest } = Astro.props as Props;
       class:list={[className, "dark-only"]}
       src={darkSrc}
       alt={alt}
+      data-rtl={rtl || undefined}
       {...rest}
     />
   )
 }
 
 <style>
+  [data-rtl] {
+    transform: scaleX(-1);
+    transform-origin: center;
+  }
+
   .dark-only {
     display: none;
   }
