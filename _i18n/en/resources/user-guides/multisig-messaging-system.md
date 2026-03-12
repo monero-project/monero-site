@@ -781,7 +781,7 @@ There are two situations where your MMS-using wallet receives data from another 
 
 Notes as transmitted by the `mms note` command can be used for "social engineering". An attacker could e.g. try to formulate a note that looks like an error message in an attempt to deceive. The technical possibilities here are quite limited however: Notes are strictly textual only, and when displaying them the MMS filters out characters with ASCII codes less than 32 and the two characters "<" and ">" that could be used to build HTML or XML that might get interpreted somehow (very unlikely in the CLI wallet, but somewhat more likely in GUI-based wallets.) There is also a length limit for notes.
 
-The second way is an attempt to deceive with labels that are sent through `mms send_signer_config`. Bob could label Alice as *trent* and Trent as *alice*, send that signer configuration to Alice and somehow convince her to use that. This is the reason why a message of type `singer config` if sent outside of auto-config with an explicit `mms send_signer_config` is not processed right away, but displayed first together with a confirmation prompt.
+The second way is an attempt to deceive with labels that are sent through `mms send_signer_config`. Bob could label Alice as *trent* and Trent as *alice*, send that signer configuration to Alice and somehow convince her to use that. This is the reason why a message of type `signer config` if sent outside of auto-config with an explicit `mms send_signer_config` is not processed right away, but displayed first together with a confirmation prompt.
 
 ## Troubleshooting
 
