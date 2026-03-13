@@ -37,7 +37,7 @@ gui:
      icon: icon-github
    - platform: Torrent
      link: https://downloads.getmonero.org/gui/torrent
-     magnet: 'magnet:?xt=urn:btih:7ace4874eff840e79d067c9819dbf11616088b1c&dn=monero-gui-v0.18.4.5&ws=https%3A%2F%2Fdownloads.getmonero.org%2F'
+     magnet: 'magnet:?xt=urn:btih:cb1c2165c4b8f4859ac2c7c2f55284577bee9996&dn=monero-gui-v0.18.4.7&ws=https%3A%2F%2Fdownloads.getmonero.org%2F'
      icon: icon-torrent
      vers:
 
@@ -115,6 +115,6 @@ cli:
      icon: icon-github
    - platform: Torrent
      link: https://downloads.getmonero.org/cli/torrent
-     magnet: 'magnet:?xt=urn:btih:418b72acefb822c45e831e6406f605dfc2ed37fc&dn=monero-v0.18.4.5&ws=https%3A%2F%2Fdownloads.getmonero.org%2F'
+     magnet: 'magnet:?xt=urn:btih:5f6d01b1705e53331c9e30c05c6be5421b430529&dn=monero-v0.18.4.6&ws=https%3A%2F%2Fdownloads.getmonero.org%2F'
      icon: icon-torrent
      vers:
