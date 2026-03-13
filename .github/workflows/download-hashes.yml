@@ -5,8 +5,6 @@ name: "Download Hashes"
 
 on:
   push:
-    branches:
-      - main
     paths:
       - "downloads/hashes.txt"
   pull_request:
