@@ -30,7 +30,7 @@ jobs:
           json="src/data/contributing/contributing.json"
           for coin in xmr btc; do
               qr_checksum=$(jq -r ".${coin}.qr_checksum" "$json")
-              qr_filename=public/media/contributing/$(jq -r ".${coin}.qr_filename" "$json")
+              qr_filename=public/contributing/$(jq -r ".${coin}.qr_filename" "$json")
               qr_content=$(jq -r ".${coin}.qr_content" "$json")
               echo "DEBUG: $qr_checksum $qr_filename"
               echo "DEBUG: $qr_content"
