@@ -3,10 +3,12 @@ on:
   push:
     paths:
       - "src/data/contributing/contributing.json"
+      - "src/data/contributing/contributing.json.asc"
       - "public/contributing/*.png"
   pull_request:
     paths:
       - "src/data/contributing/contributing.json"
+      - "src/data/contributing/contributing.json.asc"
       - "public/contributing/*.png"
   workflow_dispatch:
 jobs:
