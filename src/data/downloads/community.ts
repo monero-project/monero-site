@@ -99,7 +99,7 @@ export const community: CommunityData = {
         id: "monfluo",
         name: "Monfluo",
         logo: monfluoLogo,
-        link: "https://codeberg.org/acx/monfluo/releases",
+        link: "https://codeberg.org/Monfluo/monfluo-android/releases",
         tags: {
           mobile: ["android"],
           general: ["GPL-3.0"],
