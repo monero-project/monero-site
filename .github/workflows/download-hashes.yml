@@ -262,7 +262,7 @@ jobs:
 
           # Download torrents from CDN (replace with the monero URLs)
           CDN_CLI_URL="https://github.com/plowsof/monero-torrent/releases/download/${version_cli}/monero-${version_cli}.torrent"
-          CDN_GUI_URL="https://github.com/plowsof/monero-torrent/releases/download/${version_gui}/monero-gui-${version_gui}.torrent"
+          CDN_GUI_URL="https://github.com/plowsof/monero-torrent/releases/download/${version_cli}/monero-gui-${version_gui}.torrent"
 
           CDN_AVAILABLE=true
           if ! wget --spider -q "$CDN_CLI_URL" || ! wget --spider -q "$CDN_GUI_URL"; then
