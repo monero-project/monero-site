@@ -1,45 +1,19 @@
-name: Check links
+name: Check Links
+
 on:
   pull_request:
 
 jobs:
-  junit:
+  linkChecker:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
+      - name: Link Checker
+        uses: lycheeverse/lychee-action@v1.5.1
         with:
-          fetch-depth: 0
-      
-      - name: Get changed files
-        id: changed-files
-        uses: tj-actions/changed-files@v44
-        with:
-          files: |
-            **/*.md
-            **/*.html
-            **/*.json
-          separator: " "
-
-      - name: Check links in changed files
-        id: lychee
-        if: steps.changed-files.outputs.any_changed == 'true'
-        uses: lycheeverse/lychee-action@v2
-        with:
-          fail: false
-          format: "json"
-          output: "results.json"
-          args: |
-            --verbose
-            ${{ steps.changed-files.outputs.all_changed_files }}
-
-      - name: Create empty results if no files changed
-        if: steps.changed-files.outputs.any_changed == 'false'
-        run: echo '[]' > results.json
-
-      - name: Publish link check report
-        uses: mikepenz/action-junit-report@v6
-        with:
-          report_paths: "results.json"
-          annotate_only: true
-          fail_on_failure: true
+            args: --config ./.github/config/lychee.toml README.md
+            format: markdown
+            output: ./lychee/out.md
+            fail: true
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
