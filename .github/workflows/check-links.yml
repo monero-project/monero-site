@@ -15,11 +15,15 @@ jobs:
         with:
           fail: false
           format: "json"
-          output: "results.xml"
+          output: "results.json"
+          args: |
+            --include "**/*.md"
+            --include "**/*.html"
+            --verbose
 
       - name: Publish link check report
         uses: mikepenz/action-junit-report@v6
         with:
-          report_paths: "results.xml"
+          report_paths: "results.json"
           annotate_only: true
           fail_on_failure: true
