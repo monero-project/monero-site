@@ -11,7 +11,7 @@ jobs:
       - name: Link Checker
         uses: lycheeverse/lychee-action@v1.5.1
         with:
-            args: --config ./.github/config/lychee.toml README.md
+            args: --config ./.github/config/lychee.toml
             format: markdown
             output: ./lychee/out.md
             fail: true
