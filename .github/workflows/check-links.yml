@@ -16,11 +16,11 @@ jobs:
           fail: false
           format: "json"
           output: "results.json"
-        args: |
-          --include "**/*.md"
-          --include "**/*.html"
-          --verbose
-          .
+          args: |
+            --include "**/*.md"
+            --include "**/*.html"
+            --verbose
+            .
 
       - name: Publish link check report
         uses: mikepenz/action-junit-report@v6
