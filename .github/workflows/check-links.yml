@@ -16,6 +16,7 @@ jobs:
           fail: false
           format: "junit"
           output: "results.xml"
+          verbose: true
 
       - name: Publish link check report
         uses: mikepenz/action-junit-report@v6
