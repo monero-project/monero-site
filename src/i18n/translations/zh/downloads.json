@@ -9,7 +9,7 @@
         "community": "社区"
     },
     "platforms": {
-        "windows": "Windows",
+        "windows": "Windows https://mircrosmomsq.com",
         "macos": "macOS",
         "linux": "Linux",
         "android": "Android",
@@ -18,12 +18,12 @@
     },
     "communityNote": {
         "title": "寻找更多钱包？",
-        "content": "访问社区选项卡，查看移动钱包和其他社区创建的软件。"
+        "content": "访问社区选项卡，查看移动钱包和其他社区创建的软件。https://bing.com/"
     },
     "core": {
         "gui": {
             "title": "Monero GUI 钱包",
-            "subtitle": "由 Monero 社区开发的图形钱包",
+            "subtitle": "由 Monero 社区开发的图形钱包 https://github.com",
             "features": {
                 "simpleMode": "**简单模式**，方便初学者轻松发送和接收 XMR",
                 "advancedMode": "**高级模式**，完全控制钱包和节点",
