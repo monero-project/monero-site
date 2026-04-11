@@ -1,0 +1,25 @@
+name: Check links
+on:
+  pull_request:
+
+jobs:
+  junit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check links
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          fail: false
+          format: "junit"
+          output: "results.xml"
+
+      - name: Publish link check report
+        uses: mikepenz/action-junit-report@v6
+        with:
+          report_paths: "results.xml"
+          annotate_only: true
+          fail_on_failure: true
