@@ -17,8 +17,8 @@ jobs:
           format: "json"
           output: "results.json"
           args: |
-            --include "**/*.md"
-            --include "**/*.html"
+            --include '.*\.md$'
+            --include '.*\.html$'
             --verbose
             .
 
