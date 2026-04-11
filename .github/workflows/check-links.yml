@@ -14,9 +14,8 @@ jobs:
         uses: lycheeverse/lychee-action@v2
         with:
           fail: false
-          format: "junit"
+          format: "json"
           output: "results.xml"
-          verbose: true
 
       - name: Publish link check report
         uses: mikepenz/action-junit-report@v6
