@@ -1,0 +1,61 @@
+---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+
+interface Props {
+  src: ImageMetadata;
+  darkSrc?: ImageMetadata;
+  alt: string;
+  rtl?: boolean;
+  class?: string;
+}
+
+const {
+  src,
+  darkSrc,
+  alt,
+  rtl,
+  class: className,
+  ...rest
+} = Astro.props as Props;
+---
+
+<Image
+  class:list={[className, darkSrc && "light-only"]}
+  src={src}
+  alt={alt}
+  data-rtl={rtl || undefined}
+  {...rest}
+/>
+{
+  darkSrc && (
+    <Image
+      class:list={[className, "dark-only"]}
+      src={darkSrc}
+      alt={alt}
+      data-rtl={rtl || undefined}
+      {...rest}
+    />
+  )
+}
+
+<style>
+  [data-rtl] {
+    transform: scaleX(-1);
+    transform-origin: center;
+  }
+
+  .dark-only {
+    display: none;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .light-only {
+      display: none;
+    }
+
+    .dark-only {
+      display: block;
+    }
+  }
+</style>
