@@ -31,16 +31,14 @@
                 "moneroHash": "",
                 "xmrchain": "",
                 "localMonero": "",
-                "monerowat": "",
+                "moneroWatch": "",
                 "xmrmx": ""
             },
             "network": {
                 "moneroFail": "",
                 "ditatompel": "",
                 "moneroHashNodes": "",
-                "txStreet": "",
-                "nowNodes": "",
-                "getBlock": ""
+                "txStreet": ""
             },
             "utilities": {
                 "llcoins": "",

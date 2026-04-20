@@ -31,16 +31,14 @@
                 "moneroHash": "Popular Monero block explorer",
                 "xmrchain": "Popular open-source Monero block explorer",
                 "localMonero": "Block explorer by LocalMonero",
-                "monerowat": "Monero block explorer",
+                "moneroWatch": "Monero block explorer",
                 "xmrmx": "Monero block explorer"
             },
             "network": {
                 "moneroFail": "Comprehensive node list and network map",
                 "ditatompel": "Monero remote node list",
                 "moneroHashNodes": "Interactive Monero node map",
-                "txStreet": "Live transaction and block visualizer",
-                "nowNodes": "Blockchain node APIs for developers",
-                "getBlock": "Blockchain nodes provider"
+                "txStreet": "Live transaction and block visualizer"
             },
             "utilities": {
                 "llcoins": "Offline wallet and address generator",

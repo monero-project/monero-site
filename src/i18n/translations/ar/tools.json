@@ -31,16 +31,14 @@
                 "moneroHash": "مستكشف كتل Monero شائع",
                 "xmrchain": "مستكشف كتل Monero مفتوح المصدر شائع",
                 "localMonero": "مستكشف كتل من LocalMonero",
-                "monerowat": "مستكشف كتل Monero",
+                "moneroWatch": "مستكشف كتل Monero",
                 "xmrmx": "مستكشف كتل Monero"
             },
             "network": {
                 "moneroFail": "قائمة شاملة للعقد وخريطة الشبكة",
                 "ditatompel": "قائمة عقد Monero البعيدة",
                 "moneroHashNodes": "خريطة عقد Monero تفاعلية",
-                "txStreet": "مصور مباشر للمعاملات والكتل",
-                "nowNodes": "واجهات برمجة تطبيقات عقد البلوكشين للمطورين",
-                "getBlock": "مزود عقد البلوكشين"
+                "txStreet": "مصور مباشر للمعاملات والكتل"
             },
             "utilities": {
                 "llcoins": "مولد محفظة وعناوين غير متصل",

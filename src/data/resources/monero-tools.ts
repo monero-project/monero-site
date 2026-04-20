@@ -50,14 +50,14 @@ export const blockExplorers: Tool[] = [
     href: "https://localmonero.co/blocks",
   },
   {
-    id: "monerowat",
-    title: "Monerowat.ch",
+    id: "moneroWatch",
+    title: "MoneroWatch",
     href: "https://monerowat.ch",
   },
   {
     id: "xmrmx",
     title: "xmr.mx",
-    href: "https://xmr.mx",
+    href: "https://explorer.xmr.mx",
     onionHref:
       "http://ravfxexpx76quysu77pbvao4ng5qnyo46gguklfwlafhllrujwdgqtyd.onion/",
   },
@@ -83,16 +83,6 @@ export const networkTools: Tool[] = [
     id: "txStreet",
     title: "TxStreet",
     href: "https://txstreet.com/v/xmr",
-  },
-  {
-    id: "nowNodes",
-    title: "NOWNodes",
-    href: "https://nownodes.io",
-  },
-  {
-    id: "getBlock",
-    title: "GetBlock",
-    href: "https://getblock.io",
   },
 ];
 

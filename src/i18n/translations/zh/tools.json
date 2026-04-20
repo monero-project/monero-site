@@ -31,16 +31,14 @@
                 "moneroHash": "流行的 Monero 区块浏览器",
                 "xmrchain": "流行的开源 Monero 区块浏览器",
                 "localMonero": "LocalMonero 区块浏览器",
-                "monerowat": "Monero 区块浏览器",
+                "moneroWatch": "Monero 区块浏览器",
                 "xmrmx": "Monero 区块浏览器"
             },
             "network": {
                 "moneroFail": "全面的节点列表和网络地图",
                 "ditatompel": "Monero 远程节点列表",
                 "moneroHashNodes": "交互式 Monero 节点地图",
-                "txStreet": "实时交易和区块可视化工具",
-                "nowNodes": "面向开发者的区块链节点 API",
-                "getBlock": "区块链节点提供商"
+                "txStreet": "实时交易和区块可视化工具"
             },
             "utilities": {
                 "llcoins": "离线钱包和地址生成器",
