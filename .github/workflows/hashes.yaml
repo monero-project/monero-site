@@ -17,7 +17,7 @@ jobs:
     name: Validate Hashes
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v6
       - name: Install dependencies
         run: |
           sudo apt-get install -y --no-install-recommends curl gpg jq python3-pip zbar-tools
