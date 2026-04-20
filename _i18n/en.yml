@@ -168,6 +168,9 @@ merchants:
   setreq: Setup required
   eigenwalletdescr: Exchange Bitcoin for Monero using Atomic Swaps.
   visiteigenwallet: Visit Eigen Wallet
+  havenodescr: Decentralized P2P exchange built on Tor and Monero. Non-custodial with direct fiat-to-XMR trading.
+  visithaveno: Visit Haveno
+  havenonetworks: "Active Networks:"
 
 sponsorships:
   intro: The following businesses actively support the Monero Project in its goal to bring financial privacy to the world. We couldn't be more grateful for their contributions. If you would like to sponsor the Monero Project and be listed on this page, please send an email to dev@getmonero.org.
