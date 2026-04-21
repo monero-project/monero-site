@@ -91,7 +91,7 @@
         },
         "whereToGetHelp": {
             "title": "Where do I get help?",
-            "content": "Connect with other miners on the r/MoneroMining subreddit. \n\n [Reddit](https://www.reddit.com/r/MoneroMining/)"
+            "content": "There is an active Monero mining community on Reddit.\n\n[/r/MoneroMining](https://www.reddit.com/r/MoneroMining/)\n\nYou can join the Libera Chat IRC channel.\n\n[#monero-mining](https://web.libera.chat/#monero-mining)\n\nYou can also join the Matrix room.\n\n[#xmrmine](https://matrix.to/#/#xmrmine:matrix.org)"
         }
     },
     "disclaimer": {
