@@ -80,6 +80,9 @@ jobs:
           echo "version_gui=$version_gui" >> $GITHUB_OUTPUT
           echo "version_cli=$version_cli" >> $GITHUB_OUTPUT
 
+          echo "version_cli: $version_cli"
+          echo "version_gui: $version_gui"
+
           filenames_cli=()
           filenames_gui=()
 
@@ -320,7 +323,7 @@ jobs:
     needs: validate-download-hashes
     name: "Update static data with new download info"
     runs-on: ubuntu-22.04
-    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    #if: github.event_name == 'push' && github.ref == 'refs/heads/beta'
     permissions:
       contents: write
       pull-requests: write
@@ -344,12 +347,19 @@ jobs:
 
           MAGNET_LINK_GUI="${{ needs.validate-download-hashes.outputs.magnet_gui }}"
           MAGNET_LINK_CLI="${{ needs.validate-download-hashes.outputs.magnet_cli }}"
+          echo "MAGNET_LINK_CLI: $MAGNET_LINK_CLI
+          echo "MAGNET_LINK_GUI: $MAGNET_LINK_GUI
 
           # Update magnet links in core.json only if different
-          CURRENT_GUI_MAGNET=$(jq -r '.gui.torrent.magnet' src/data/downloads/core.json)
+
+          CURRENT_GUI_MAGNET=$(jq -r '.gui.torrent.magnet' src/data/downloads/core.json)          
           if [ "$CURRENT_GUI_MAGNET" != "$MAGNET_LINK_GUI" ]; then
             jq --arg m "$MAGNET_LINK_GUI" '.gui.torrent.magnet = $m' src/data/downloads/core.json > tmp.json && mv tmp.json src/data/downloads/core.json
           fi
+
+          echo "CURRENT_CLI_MAGNET: $CURRENT_CLI_MAGNET"
+          echo "CURRENT_GUI_MAGNET: $CURRENT_GUI_MAGNET"
+
           CURRENT_CLI_MAGNET=$(jq -r '.cli.torrent.magnet' src/data/downloads/core.json)
           if [ "$CURRENT_CLI_MAGNET" != "$MAGNET_LINK_CLI" ]; then
             jq --arg m "$MAGNET_LINK_CLI" '.cli.torrent.magnet = $m' src/data/downloads/core.json > tmp.json && mv tmp.json src/data/downloads/core.json
@@ -367,10 +377,16 @@ jobs:
           current_gui_version=$(jq -r '.gui.version' src/data/downloads/core.json)
           current_cli_version=$(jq -r '.cli.version' src/data/downloads/core.json)
 
+          echo "version_gui: $version_gui"
+          echo "version_cli: $version_cli"
+          echo "current_gui_version: $current_gui_version"
+          echo "current_cli_version: $current_cli_version"
+
+
           if [ "$current_gui_version" != "$version_gui" ] || [ "$current_cli_version" != "$version_cli" ]; then
             echo "Versions differ, updating core downloads"
 
-            # Get release names from GitHub
+            # Get release names from GitHub (name of the major release flourine fermi)
             first_release_cli=$(echo "${version_cli}" | sed 's/\.[0-9]\+\.[0-9]\+$/.0.0/')
             first_release_gui=$(echo "${version_gui}" | sed 's/\.[0-9]\+\.[0-9]\+$/.0.0/')
             cli_name="$(gh release view "${first_release_cli}" --repo monero-project/monero --json name --jq '.name | sub("[^A-Za-z ]+.*$"; "") | sub(" +$"; "")' || echo '')"
@@ -407,7 +423,7 @@ jobs:
       - name: Create pull request
         env:
           GH_TOKEN: ${{ github.token }}
-          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+          BASE_BRANCH: beta
         run: |
           set -euo pipefail
 
@@ -422,7 +438,7 @@ jobs:
           # List existing core.json update PRs
           prs=$(gh pr list \
             --state open \
-            --base "$DEFAULT_BRANCH" \
+            --base "$BASE_BRANCH" \
             --json number,headRefName \
             --jq '.[] | select(.headRefName | startswith("'"$PREFIX"'")) | .number')
 
