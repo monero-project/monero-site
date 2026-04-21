@@ -25,6 +25,9 @@ meta_descr: hangouts.intro
             <li>
                 <a class="ext-noicon" href="https://discord.gg/SyGUMWBqvF" target="_blank" rel="noreferrer noopener" aria-label="Discord logo"><div class="social-icon discord"></div></a>
             </li>
+            <li>
+                <a class="ext-noicon" href="https://scribe.disroot.org/c/monero@monero.town" target="_blank" rel="noreferrer noopener" aria-label="Lemmy logo"><div class="social-icon lemmy"></div></a>
+            </li>
         </ul>
     </section>
 </div>
