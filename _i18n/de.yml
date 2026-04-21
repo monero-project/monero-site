@@ -1495,6 +1495,15 @@ library:
     Hardware-Wallets etc.</li></ul>
     Auf der Webseite von <a href="https://masteringmonero.com/">Mastering Monero</a>
     gibt es Informationen zur vollen Version.
+  masteringmonerop1: "Ein Begleiter durch die scheinbar komplizierte Welt Moneros"
+  masteringmonerop2: "Er enthält:"
+  masteringmoneroul1: "Eine weitreichende Einführung in Blockchains und den Wert von Privatsphäre – ideal für Nutzer ohne technischen Hintergrund"
+  masteringmoneroul2: "Diskussion der Schwachstellen Bitcoins und spezifische Lösungen dieser durch Monero"
+  masteringmoneroul3: "Nutzererfahrungen (die zeigen, wie Monero deine Daten schützt), Vergleiche, Beispiele, rechtliche und ethische Diskussionen und Quellcodeauszüge, die grundlegende, technische Konzepte darlegen"
+  masteringmoneroul4: "Details des dezentralisierten Monero-Netzwerkes, der Peer-to-Peer-Architektur, dem Ablauf von Transaktionen und Grundlagen der Sicherheit"
+  masteringmoneroul5: "Einführung in das technische Fundament Moneros – für Entwickler, Ingenieure, Softwarearchitekten und neugierige Nutzer"
+  masteringmoneroul6: "Neue Entwicklungen wie beispielsweise Kovri, Bulletproofs, Multisignaturen, Hardware-Wallets etc."
+  masteringmoneroinfo: "Auf der Webseite von <a href=\"https://masteringmonero.com/\">Mastering Monero</a> gibt es Informationen zur vollen Version."
 moneropedia:
   add_new_text1: Wenn es einen Eintrag gibt, den du hinzufügen oder ändern möchtest,
   add_new_link: eröffne bitte ein neues Issue im Repository dieser Webseite auf GitHub

@@ -778,6 +778,15 @@ library:
     gelişmeler.</li></ul>
     Tam sürümü hakkında bilgi için <a href="https://masteringmonero.com/">Monero'da
     Ustalaşmak</a> internet sayfasını görüntüleyin.
+  masteringmonerop1: "Monero'nun karışık görünen dünyasına bir rehber."
+  masteringmonerop2: "Şunları içerir:"
+  masteringmoneroul1: "Blokzincirlere ve gizliliğin önemine geniş bir giriş - teknik olmayan kullanıcılar için idealdir."
+  masteringmoneroul2: "Bitcoin'in eksikliklerinin ve Monero tarafından sunulan belirli çözümlerin tartışması."
+  masteringmoneroul3: "(Monero'nun gizliliğinizi nasıl koruduğunu sergileyen) kullanıcı hikayeleri, analojiler, örnekler, yasal/etik tartışmalar ve temel teknik kavramları sergileyen kod parçacıkları."
+  masteringmoneroul4: "Monero merkeziyetsiz ağının, eşler-arası mimarinin, işlem yaşam döngüsünün ve güvenlik prensiplerinin detayları."
+  masteringmoneroul5: "Geliştiricilere, mühendislere, yazılım mimarlarına ve meraklı kullanıcılara yönelik Monero'nun teknik temellerinin tanıtımları."
+  masteringmoneroul6: "Kovri, Kurşun-geçirmezler, Çoklu-imzalar, Donanım Cüzdanları vs. gibi yeni gelişmeler."
+  masteringmoneroinfo: "Tam sürümü hakkında bilgi için <a href=\"https://masteringmonero.com/\">Monero'da Ustalaşmak</a> internet sayfasını görüntüleyin."
 moneropedia:
   add_new_text1: Değiştirmek veya eklemek istediğiniz bir girdi varsa lütfen
   add_new_link: bu sitenin GitLab deposunda bir sorun açın
