@@ -88,7 +88,7 @@ export const channels: IRCChannel[] = [
     name: "#monero-mining",
     descriptionKey: "hangouts:channels.mining.description",
     href: "https://web.libera.chat/#monero-mining",
-    matrixHref: "https://matrix.to/#/#monero-mining:monero.social",
+    matrixHref: "https://matrix.to/#/#xmrmine:matrix.org",
   },
   {
     name: "#monero-support",
