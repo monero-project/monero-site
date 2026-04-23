@@ -15,7 +15,8 @@
     "lint:css": "stylelint \"src/**/*.{css,astro}\"",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "prepare-build": "tsx scripts/prepare-build.ts"
   },
   "dependencies": {
     "@astrojs/node": "^9.5.4",

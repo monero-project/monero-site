@@ -43,6 +43,7 @@ All commands are run from the root of the project:
 | :--------------------- | :----------------------------------------------- |
 | `pnpm install`         | Installs dependencies                            |
 | `pnpm dev`             | Starts local dev server at `localhost:4321`      |
+| `pnpm prepare-build`   | Trim sources before `pnpm build` (see below)     |
 | `pnpm build`           | Build your production site to `./dist/`          |
 | `pnpm preview`         | Preview your build locally, before deploying     |
 | `pnpm lint`            | Run ESLint to check for code issues              |
@@ -50,6 +51,31 @@ All commands are run from the root of the project:
 | `pnpm format`          | Format code using Prettier                       |
 | `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `pnpm astro -- --help` | Get help using the Astro CLI                     |
+
+## Prepare build
+
+It is possible to trim the source code before `pnpm build` to speed up preview deployments (fewer blog posts, fewer locales, no OG image generation).
+
+```bash
+pnpm prepare-build [flags]
+```
+
+Each flag has an env var equivalent, for build environments that don't accept CLI arguments.
+
+| Flag              | Env var              | Description                                               |
+| :---------------- | :------------------- | :-------------------------------------------------------- |
+| `--limit-posts N` | `LIMIT_POSTS=N`      | Keep only the N most recent blog posts                    |
+| `--skip-og`       | `SKIP_OG=true`       | Remove OpenGraph image generation                         |
+| `--limit-locales` | `LIMIT_LOCALES=true` | Build only the default locale (+ locales with PR changes) |
+
+Changed-file detection (pick one):
+
+| Flag                 | Env var            | Description                                              |
+| :------------------- | :----------------- | :------------------------------------------------------- |
+| `--base-branch NAME` | `BASE_BRANCH=NAME` | Branch to diff against via merge-base (for PRs/previews) |
+| `--base-ref SHA`     | `BASE_REF=SHA`     | SHA to diff against directly (for push events)           |
+
+`SKIP_PREPARE_BUILD=true` early-exits the script. Useful if you can't set a per-environment build command in your platform, and have to skip the script in production.
 
 ## Docker
 
@@ -110,13 +136,13 @@ Then open [http://127.0.0.1:4321](http://127.0.0.1:4321).
 
 ### Build args
 
-| Arg                        | Description                                         | Example |
-| :------------------------- | :-------------------------------------------------- | :------ |
-| `LIMIT_POSTS`              | Keep only the N most recent blog posts for previews | `6`     |
-| `SKIP_IMAGE_OPTIMIZATION`  | Disable image processing for faster builds          | `true`  |
+| Arg                        | Description                                          | Example                     |
+| :------------------------- | :--------------------------------------------------- | :-------------------------- |
+| `PREPARE_BUILD_ARGS`       | Flags for the [prepare-build](#prepare-build) script | `--limit-posts 6 --skip-og` |
+| `SKIP_IMAGE_OPTIMIZATION`  | Disable image processing for faster builds          | `true`                      |
 
 ```bash
-docker build --build-arg LIMIT_POSTS=6 --build-arg SKIP_IMAGE_OPTIMIZATION=true --target serve-ssr -t monero-site-ssr .
+docker build --build-arg PREPARE_BUILD_ARGS="--limit-posts 6 --skip-og" --build-arg SKIP_IMAGE_OPTIMIZATION=true --target serve-ssr -t monero-site-ssr .
 ```
 
 ## More

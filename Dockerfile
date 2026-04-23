@@ -16,12 +16,13 @@ RUN pnpm install --frozen-lockfile
 
 # Prepare source
 FROM base AS src
-ARG LIMIT_POSTS
-COPY --from=deps /app/node_modules ./node_modules
+ARG PREPARE_BUILD_ARGS
+COPY --from=deps-dev /app/node_modules ./node_modules
 COPY . .
-RUN if [ -n "$LIMIT_POSTS" ]; then \
-      find src/content/blog -maxdepth 1 -name '[^_]*.md' | sort -r | tail -n +$((LIMIT_POSTS + 1)) | while IFS= read -r f; do rm -f "$f"; done; \
+RUN if [ -n "$PREPARE_BUILD_ARGS" ]; then \
+      pnpm prepare-build $PREPARE_BUILD_ARGS; \
     fi
+COPY --from=deps /app/node_modules ./node_modules
 
 # Build the site (static)
 FROM src AS build
