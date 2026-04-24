@@ -147,6 +147,7 @@ docker build --build-arg PREPARE_BUILD_ARGS="--limit-posts 6 --skip-og" --build-
 
 ## More
 
+- [Beta Preview](https://beta.monerodevs.org)
 - [Astro Documentation](https://docs.astro.build)
 - [Monero Project](https://www.getmonero.org)
 - [Diego's Figma](https://www.figma.com/design/y53fDBe55sM1GvhxXXjQEp/Monero-Website-Redesign-2024--Copy-?node-id=140-1399&t=TThf0slioIblcNoq-0)
