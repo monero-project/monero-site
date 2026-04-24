@@ -36,9 +36,9 @@ const inProgressItems: RoadmapItem[] = [
   },
   { id: "newSite", status: "in-progress" },
   {
-    id: "randomxV2",
+    id: "jamtis",
     status: "in-progress",
-    link: "https://github.com/tevador/RandomX/pull/317",
+    link: "https://gist.github.com/tevador/639d083c994c1ef9401832c08e2b7832",
   },
 ];
 
@@ -63,6 +63,14 @@ const proposedItems: RoadmapItem[] = [
 // History
 
 const historyByYear: Record<string, HistoryEvent[]> = {
+  2026: [
+    {
+      month: "february",
+      titleKey: "randomxV2",
+      link: "https://github.com/tevador/RandomX/pull/317",
+    },
+  ],
+
   2024: [
     { month: "may", titleKey: "havenoDex", link: "https://haveno.exchange/" },
     { month: "january", titleKey: "xmrBchSwap" },
