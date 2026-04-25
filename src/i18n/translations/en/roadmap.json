@@ -14,6 +14,10 @@
             "title": "Full-Chain Membership Proofs",
             "description": "Privacy upgrade replacing ring signatures with a new ZKP system."
         },
+        "carrot": {
+            "title": "CARROT",
+            "description": "A addressing protocol for the upcoming FCMP++ upgrade."
+        },
         "cuprate": {
             "title": "Cuprate",
             "description": "A Rust implementation of the Monero node."

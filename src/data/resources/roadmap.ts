@@ -30,6 +30,11 @@ const inProgressItems: RoadmapItem[] = [
     link: "https://github.com/seraphis-migration/strategy/wiki/Our-Wallet-Rewrite-Project-After-Priority-Switched-From-Seraphis-to-FCMPs",
   },
   {
+    id: "carrot",
+    status: "in-progress",
+    link: "https://github.com/jeffro256/carrot/blob/master/carrot.md",
+  },
+  {
     id: "cuprate",
     status: "in-progress",
     link: "https://cuprate.org/",
