@@ -10,6 +10,11 @@ layout: base
                             <h3 style="padding: 0;">⚠️ This page is deprecated</h3>
                             <p>The latest version of this document is available at <a href="{{ site.docsurl }}{{ page.deprecated_url_docs }}">Monero Docs</a>.</p>
                         </div>
+                    {% elsif page.deprecated_url  %}
+                        <div class="info-block center-xs">
+                            <h3 style="padding: 0;">⚠️ {{ page.deprecated_title }}</h3>
+                            <p>{{ page.deprecated_body }} <a href="{{ page.deprecated_url }}">{{ page.deprecated_url_label }}</a>.</p>
+                        </div>
                     {% endif %}
                     <div>
                         {{content}}
