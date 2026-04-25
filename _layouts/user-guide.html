@@ -5,10 +5,10 @@ layout: base
     <!-- FULL WIDTH BLOCK -->
         <section class="container full guides">
                 <div class="info-block text-adapt">
-                    {% if page.deprecated_url %}
+                    {% if page.deprecated_url_docs %}
                         <div class="info-block center-xs">
                             <h3 style="padding: 0;">⚠️ This page is deprecated</h3>
-                            <p>The latest version of this document is available at <a href="{{ site.docsurl }}{{ page.deprecated_url }}">Monero Docs</a>.</p>
+                            <p>The latest version of this document is available at <a href="{{ site.docsurl }}{{ page.deprecated_url_docs }}">Monero Docs</a>.</p>
                         </div>
                     {% endif %}
                     <div>
