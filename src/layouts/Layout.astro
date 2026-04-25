@@ -7,8 +7,7 @@ import "@/styles/external-links.css";
 import "@/styles/global.css";
 import "@/styles/moneropedia-link.css";
 
-import "@fontsource-variable/dm-sans";
-import dmSansFont from "@fontsource-variable/dm-sans/files/dm-sans-latin-wght-normal.woff2?url";
+import { Font } from "astro:assets";
 import { SEO } from "astro-seo";
 
 const { t, locale, dir } = Astro.locals;
@@ -42,6 +41,10 @@ const fullTitle = title.includes("|")
 <!doctype html>
 <html lang={locale} dir={dir}>
   <head>
+    <Font
+      cssVariable="--font-dm-sans"
+      preload={[{ weight: "100 1000", style: "normal" }]}
+    />
     <SEO
       title={fullTitle}
       description={description}
@@ -90,13 +93,6 @@ const fullTitle = title.includes("|")
       }}
       extend={{
         link: [
-          {
-            rel: "preload",
-            as: "font",
-            type: "font/woff2",
-            href: dmSansFont,
-            crossorigin: "anonymous",
-          },
           { rel: "icon", href: "/meta/favicon-16x16.png", sizes: "16x16" },
           { rel: "icon", href: "/meta/favicon-32x32.png", sizes: "32x32" },
           {
@@ -138,7 +134,7 @@ const fullTitle = title.includes("|")
   body {
     margin: 0;
     min-height: 100vh;
-    font-family: "DM Sans Variable", sans-serif;
+    font-family: var(--font-dm-sans);
     background: var(--bg-color);
     color: var(--text-primary);
     display: flex;
