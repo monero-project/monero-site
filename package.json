@@ -19,12 +19,12 @@
     "prepare-build": "tsx scripts/prepare-build.ts"
   },
   "dependencies": {
-    "@astrojs/node": "^9.5.4",
-    "@astrojs/rss": "^4.0.15",
-    "@astrojs/sitemap": "^3.7.0",
+    "@astrojs/node": "^10.0.6",
+    "@astrojs/rss": "^4.0.18",
+    "@astrojs/sitemap": "^3.7.2",
     "@fontsource-variable/dm-sans": "^5.2.8",
     "@fontsource/dm-sans": "^5.2.8",
-    "astro": "^5.18.0",
+    "astro": "^6.1.9",
     "astro-i18n-aut": "^0.7.3",
     "astro-og-canvas": "^0.10.1",
     "astro-seo": "^1.1.0",
