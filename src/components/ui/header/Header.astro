@@ -12,6 +12,9 @@ import { icons } from "@/utils/icons";
 
 const { t, localizeHref } = Astro.locals;
 
+const isCoolifyPreview = import.meta.env.COOLIFY_PREVIEW;
+const sourceCommit = import.meta.env.SOURCE_COMMIT;
+
 const navItems = navigationItems.map((item) => {
   const label = t(`common:header.nav.${item.translationKey}`);
 
@@ -34,6 +37,10 @@ const navItems = navigationItems.map((item) => {
   };
 });
 ---
+{isCoolifyPreview && sourceCommit && (
+  <p style="background: orange; color: black; padding: 4px;">
+    commit {sourceCommit}
+  </p>)}
 
 <header class="header">
   <div class="header-inner">
