@@ -14,6 +14,10 @@
             "title": "Full-Chain Membership Proofs",
             "description": "Privacy upgrade replacing ring signatures with a new ZKP system."
         },
+        "carrot": {
+            "title": "CARROT",
+            "description": "A addressing protocol for the upcoming FCMP++ upgrade."
+        },
         "cuprate": {
             "title": "Cuprate",
             "description": "A Rust implementation of the Monero node."
@@ -22,16 +26,16 @@
             "title": "New getmonero.org",
             "description": "Complete redesign and modernization of the official website."
         },
-        "randomxV2": {
-            "title": "RandomX V2",
-            "description": "Next iteration of Monero's proof-of-work algorithm to improve ASIC resistance."
+        "jamtis": {
+            "title": "Jamtis",
+            "description": "Post-quantum addressing protocol for Monero."
         },
         "bulletproofsPP": {
             "title": "Bulletproofs++",
             "description": "Next generation range proofs for smaller, faster transactions."
         },
         "seraphis": {
-            "title": "Seraphis & Jamtis",
+            "title": "Seraphis",
             "description": "New transaction protocol with improved privacy and functionality."
         },
         "ospead": {
@@ -60,6 +64,7 @@
             "december": "December"
         },
         "events": {
+            "randomxV2": "RandomX v2 released",
             "havenoDex": "HavenoDEX released",
             "xmrBchSwap": "XMR-BCH atomic swap completed",
             "lwsSubaddress": "Light Wallet Server subaddress support",
