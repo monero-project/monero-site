@@ -34,7 +34,10 @@ const inProgressItems: RoadmapItem[] = [
     status: "in-progress",
     link: "https://cuprate.org/",
   },
-  { id: "newSite", status: "in-progress" },
+  {
+    id: "newSite",
+    status: "in-progress",
+  },
   {
     id: "jamtis",
     status: "in-progress",
@@ -43,8 +46,14 @@ const inProgressItems: RoadmapItem[] = [
 ];
 
 const upcomingItems: RoadmapItem[] = [
-  { id: "bulletproofsPP", status: "upcoming" },
-  { id: "seraphis", status: "upcoming" },
+  {
+    id: "bulletproofsPP",
+    status: "upcoming",
+  },
+  {
+    id: "seraphis",
+    status: "upcoming",
+  },
   {
     id: "ospead",
     status: "upcoming",
@@ -72,14 +81,29 @@ const historyByYear: Record<string, HistoryEvent[]> = {
   ],
 
   2024: [
-    { month: "may", titleKey: "havenoDex", link: "https://haveno.exchange/" },
-    { month: "january", titleKey: "xmrBchSwap" },
+    {
+      month: "may",
+      titleKey: "havenoDex",
+      link: "https://haveno.exchange/",
+    },
+    {
+      month: "january",
+      titleKey: "xmrBchSwap",
+    },
   ],
 
   2023: [
-    { month: "december", titleKey: "lwsSubaddress" },
-    { month: "may", titleKey: "ethSwaps" },
-    { titleKey: "blockProp" },
+    {
+      month: "december",
+      titleKey: "lwsSubaddress",
+    },
+    {
+      month: "may",
+      titleKey: "ethSwaps",
+    },
+    {
+      titleKey: "blockProp",
+    },
   ],
 
   2022: [
@@ -93,7 +117,10 @@ const historyByYear: Record<string, HistoryEvent[]> = {
       titleKey: "fluorineFermi",
       link: "/blog/2022/07/19/monero-0.18.0.0-released/",
     },
-    { month: "april", titleKey: "viewTags" },
+    {
+      month: "april",
+      titleKey: "viewTags",
+    },
   ],
 
   2021: [
@@ -107,48 +134,123 @@ const historyByYear: Record<string, HistoryEvent[]> = {
       titleKey: "btcSwaps",
       link: "/blog/2021/08/20/atomic-swaps/",
     },
-    { month: "february", titleKey: "onionAddress" },
+    {
+      month: "february",
+      titleKey: "onionAddress",
+    },
   ],
 
   2020: [
-    { month: "october", titleKey: "clsag" },
-    { month: "october", titleKey: "oxygenOrion" },
+    {
+      month: "october",
+      titleKey: "clsag",
+    },
+    {
+      month: "october",
+      titleKey: "oxygenOrion",
+    },
     {
       month: "may",
       titleKey: "v0160",
       link: "/blog/2020/05/23/monero-0.16-released/",
     },
-    { month: "april", titleKey: "dandelion" },
+    {
+      month: "april",
+      titleKey: "dandelion",
+    },
   ],
 
   2019: [
-    { month: "november", titleKey: "randomx" },
-    { month: "november", titleKey: "ipv6" },
-    { month: "november", titleKey: "paymentIdRemoved" },
-    { month: "july", titleKey: "pruning" },
-    { month: "july", titleKey: "hwSupport2019" },
-    { month: "july", titleKey: "torI2p" },
-    { month: "march", titleKey: "ccs" },
-    { month: "march", titleKey: "cryptonightR" },
+    {
+      month: "november",
+      titleKey: "randomx",
+    },
+    {
+      month: "november",
+      titleKey: "ipv6",
+    },
+    {
+      month: "november",
+      titleKey: "paymentIdRemoved",
+    },
+    {
+      month: "july",
+      titleKey: "pruning",
+    },
+    {
+      month: "july",
+      titleKey: "hwSupport2019",
+    },
+    {
+      month: "july",
+      titleKey: "torI2p",
+    },
+    {
+      month: "march",
+      titleKey: "ccs",
+    },
+    {
+      month: "march",
+      titleKey: "cryptonightR",
+    },
   ],
 
   2018: [
-    { month: "october", titleKey: "bulletproofs" },
-    { month: "october", titleKey: "ringSize11" },
-    { month: "october", titleKey: "berylliumBullet" },
-    { month: "august", titleKey: "kovri" },
-    { month: "june", titleKey: "ledgerSupport" },
-    { month: "april", titleKey: "multisigSubaddress" },
-    { month: "april", titleKey: "guiRelease2018" },
+    {
+      month: "october",
+      titleKey: "bulletproofs",
+    },
+    {
+      month: "october",
+      titleKey: "ringSize11",
+    },
+    {
+      month: "october",
+      titleKey: "berylliumBullet",
+    },
+    {
+      month: "august",
+      titleKey: "kovri",
+    },
+    {
+      month: "june",
+      titleKey: "ledgerSupport",
+    },
+    {
+      month: "april",
+      titleKey: "multisigSubaddress",
+    },
+    {
+      month: "april",
+      titleKey: "guiRelease2018",
+    },
   ],
 
   2017: [
-    { month: "december", titleKey: "multisig" },
-    { month: "october", titleKey: "subaddresses" },
-    { month: "september", titleKey: "fluffyBlocks" },
-    { month: "september", titleKey: "guiOutOfBeta" },
-    { month: "september", titleKey: "ringSize5" },
-    { month: "january", titleKey: "ringctEnabled" },
+    {
+      month: "december",
+      titleKey: "multisig",
+    },
+    {
+      month: "october",
+      titleKey: "subaddresses",
+    },
+    {
+      month: "september",
+      titleKey: "fluffyBlocks",
+    },
+    {
+      month: "september",
+      titleKey: "guiOutOfBeta",
+    },
+    {
+      month: "september",
+      titleKey: "ringSize5",
+    },
+    {
+      month: "january",
+      titleKey: "ringctEnabled",
+    },
   ],
 
   2016: [
@@ -162,7 +264,10 @@ const historyByYear: Record<string, HistoryEvent[]> = {
       titleKey: "wolframWarptangent",
       link: "/blog/2016/09/19/monero-0.10.0-released/",
     },
-    { month: "march", titleKey: "ringSize3" },
+    {
+      month: "march",
+      titleKey: "ringSize3",
+    },
     {
       month: "january",
       titleKey: "hydrogenHelix",
@@ -171,14 +276,23 @@ const historyByYear: Record<string, HistoryEvent[]> = {
   ],
 
   2014: [
-    { month: "september", titleKey: "spamAttack" },
-    { month: "september", titleKey: "mrlPapers" },
+    {
+      month: "september",
+      titleKey: "spamAttack",
+    },
+    {
+      month: "september",
+      titleKey: "mrlPapers",
+    },
     {
       month: "april",
       titleKey: "bitcointalk",
       link: "https://bitcointalk.org/index.php?topic=563821.0",
     },
-    { month: "april", titleKey: "renamed" },
+    {
+      month: "april",
+      titleKey: "renamed",
+    },
   ],
 };
 
