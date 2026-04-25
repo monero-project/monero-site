@@ -2,7 +2,7 @@
 layout: moneropedia
 title: titles.moneropedia
 entry: moneropedia.entries.mnemonicseed
-deprecated_url: /mnemonics/
+deprecated_url_docs: /mnemonics/
 ---
 
 @moneropedia_article
