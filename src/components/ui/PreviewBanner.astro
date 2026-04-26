@@ -2,9 +2,9 @@
 const isCoolifyPreview = import.meta.env.COOLIFY_PREVIEW;
 const sourceCommit = import.meta.env.SOURCE_COMMIT;
 const coolifyBranch = import.meta.env.COOLIFY_BRANCH; // "pull/2639/head:pr-2639-coolify",
-const coolifyPrNum = coolifyBranch.split("/")[1]
 const coolifyRepo = import.meta.env.COOLIFY_REPO;
 if (!isCoolifyPreview) return;
+const coolifyPrNum = coolifyBranch.split("/")[1]
 ---
 
 <div class="preview-banner">
