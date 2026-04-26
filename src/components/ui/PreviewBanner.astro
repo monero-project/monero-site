@@ -1,0 +1,33 @@
+---
+const isCoolifyPreview = import.meta.env.COOLIFY_PREVIEW;
+const sourceCommit = import.meta.env.SOURCE_COMMIT;
+const coolifyBranch = import.meta.env.COOLIFY_BRANCH; // "pull/2639/head:pr-2639-coolify",
+const coolifyPrNum = coolifyBranch.split("/")[1]
+const coolifyRepo = import.meta.env.COOLIFY_REPO;
+if (!isCoolifyPreview) return;
+---
+
+<div class="preview-banner">
+  <span class="preview-banner-style">
+    <a href={`${coolifyRepo}/pull/${coolifyPrNum}/changes/${sourceCommit}`}>{sourceCommit.slice(0,7)}</a> Preview powered by <a href="https://coolify.io/">Coolify</a>
+  </span>
+</div>
+
+<style>
+  .preview-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+  }
+
+  .preview-banner-style {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+  }
+</style>
