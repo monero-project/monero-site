@@ -5,11 +5,12 @@ import { icons } from "@/utils/icons";
 
 interface Props {
   label?: string;
+  name?: string;
 }
-const { label } = Astro.props;
+const { label, name } = Astro.props;
 ---
 
-<details class="dropdown">
+<details class="dropdown" name={name}>
   <summary class="dropdown-summary">
     <slot name="trigger">
       <Button variant="primary" as="span">

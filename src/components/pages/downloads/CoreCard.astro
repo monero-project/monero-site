@@ -32,6 +32,7 @@ interface Props {
   releaseNotesUrl?: string;
   torrentUrl?: string;
   magnetUrl?: string;
+  dropdownGroup?: string;
 }
 
 const {
@@ -47,6 +48,7 @@ const {
   releaseNotesUrl,
   torrentUrl,
   magnetUrl,
+  dropdownGroup,
   ...rest
 } = Astro.props;
 const { t, safeMarkdown } = Astro.locals;
@@ -82,7 +84,10 @@ const PLATFORM_ICONS: Record<string, ImageMetadata> = {
     </ul>
     <div class="card-footer">
       <div class="download-actions">
-        <Dropdown label={t("downloads:core.downloadButton")}>
+        <Dropdown
+          label={t("downloads:core.downloadButton")}
+          name={dropdownGroup}
+        >
           {
             downloads.map((item) =>
               item === "separator" ? (
