@@ -1,6 +1,4 @@
 ---
-import crypto from "node:crypto";
-
 interface Tab {
   label: string;
   count?: number;
@@ -17,7 +15,10 @@ if (!tabs || tabs.length === 0) {
   throw new Error("<SectionTabs> requires at least one tab");
 }
 
-const uid = `stabs-${crypto.randomUUID().slice(0, 8)}`;
+const uid = `stabs-${[...tabs.map((t) => t.label).join("")]
+  .slice(0, 7)
+  .map((c) => c.codePointAt(0))
+  .join("-")}`;
 ---
 
 <div class:list={["section-tabs", className]} id={uid}>
