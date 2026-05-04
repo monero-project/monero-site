@@ -4,7 +4,9 @@ import TitleCard from "@/components/ui/TitleCard.astro";
 import Layout from "@/layouts/Layout.astro";
 import { getCollection } from "astro:content";
 
-const allPosts = await getCollection("blog");
+const allPosts = (await getCollection("blog")).sort((a, b) =>
+  a.id.localeCompare(b.id),
+);
 const tags = [...new Set(allPosts.flatMap((post) => post.data.tags))].filter(
   (tag) => tag !== undefined,
 );
