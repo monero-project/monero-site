@@ -92,6 +92,7 @@ const titleKey = isMainTab ? "blog:index.hero.title" : "blog:tags.hero.title";
   <PageContainer>
     <Row justify="between" align="center" wrap={false} class="tabs-bar">
       <PageTabs
+        id={`tabs-blog-tag-${tag}`}
         labels={tabs.map((tab) => tab.label)}
         links={tabs.map((tab) => localizeHref(tab.link))}
         activeIndex={activeTab}

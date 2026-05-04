@@ -61,6 +61,7 @@ const tabs = [
   <PageContainer>
     <Row justify="between" align="center" wrap={false} class="tabs-bar">
       <PageTabs
+        id="tabs-blog"
         labels={tabs.map((tab) => tab.label)}
         links={tabs.map((tab) => localizeHref(tab.link))}
         activeIndex={0}
