@@ -80,7 +80,7 @@ jobs:
 
       - name: Prepare source for CI/Release build
         env:
-          BASE_BRANCH: ${{ github.event_name != 'release' && github.event.pull_request.base.ref || '' }}  # PR target branch
+          BASE_BRANCH: ${{ github.event_name != 'release' && github.event.pull_request.base.ref || '' }} # PR target branch
           BASE_REF: ${{ github.event_name == 'push' && github.event.before || '' }} # previous commit before the push event
           LIMIT_POSTS: ${{ github.event_name != 'release' && '10' || '' }}
           SKIP_IMAGE_OPTIMIZATION: ${{ github.event_name != 'release' && 'true' || '' }}
