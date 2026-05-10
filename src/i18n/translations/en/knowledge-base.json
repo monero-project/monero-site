@@ -55,21 +55,11 @@
             "description": "The Monero Research Lab (MRL) is an open, collaborative team of researchers working on cutting-edge cryptography and privacy technologies. Our work focuses on improving Monero's protocol, analyzing potential vulnerabilities, and advancing the state of financial privacy research."
         },
         "papers": {
-            "title": "Research Papers",
-            "subtitle": "Papers written by MRL members on cryptography, privacy, and protocol improvements.",
             "tabs": {
                 "mrlBulletins": "MRL Bulletins",
                 "iacr": "IACR",
-                "other": "Other"
-            }
-        },
-        "whitepapers": {
-            "title": "Cryptonote Whitepapers",
-            "subtitle": "Foundational documents describing the protocol Monero is built upon.",
-            "items": {
-                "cryptonote": "Cryptonote Whitepaper",
-                "annotated": "Annotated Whitepaper",
-                "goodellReview": "Brandon Goodell's Whitepaper Review"
+                "other": "Other",
+                "whitepapers": "Whitepapers"
             }
         }
     }

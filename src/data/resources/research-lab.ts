@@ -6,11 +6,6 @@ export interface ResearchPaper {
   note?: string;
 }
 
-export interface Whitepaper {
-  id: string;
-  url: string;
-}
-
 export const iacrPapers: ResearchPaper[] = [
   {
     code: "IACR 2020/312",
@@ -129,17 +124,23 @@ export const otherPapers: ResearchPaper[] = [
   },
 ];
 
-export const whitepapers: Whitepaper[] = [
+export const whitepapers: ResearchPaper[] = [
   {
-    id: "cryptonote",
+    title: "Cryptonote Whitepaper",
+    abstract:
+      "Nicolas van Saberhagen's 2013 whitepaper introducing the CryptoNote protocol — the cryptographic foundation Monero is built on, defining one-time keys, ring signatures, and untraceable transactions.",
     url: "/resources/research-lab/pubs/cryptonote-whitepaper.pdf",
   },
   {
-    id: "annotated",
+    title: "Annotated Whitepaper",
+    abstract:
+      "An annotated edition of the CryptoNote whitepaper produced by the Monero Research Lab, with marginal notes and corrections clarifying the original document's notation and cryptographic claims.",
     url: "/resources/research-lab/pubs/whitepaper_annotated.pdf",
   },
   {
-    id: "goodellReview",
+    title: "Brandon Goodell's Whitepaper Review",
+    abstract:
+      "Brandon Goodell's formal review of the CryptoNote whitepaper, examining its cryptographic claims and identifying open questions for further research.",
     url: "/resources/research-lab/pubs/whitepaper_review.pdf",
   },
 ];

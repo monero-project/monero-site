@@ -6,10 +6,6 @@ import MaskIcon from "@/components/ui/icons/MaskIcon.astro";
 import PageContainer from "@/components/ui/layout/PageContainer.astro";
 import PageSection from "@/components/ui/layout/PageSection.astro";
 import SectionTabs from "@/components/ui/tabs/SectionTabs.astro";
-import SidebarCard from "@/components/ui/sidebar/SidebarCard.astro";
-import SidebarLayout from "@/components/ui/sidebar/SidebarLayout.astro";
-import SidebarLink from "@/components/ui/sidebar/SidebarLink.astro";
-import Column from "@/components/ui/layout/Column.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import Layout from "@/layouts/Layout.astro";
 
@@ -37,6 +33,10 @@ const paperTabs = [
   {
     label: t("knowledge-base:researchLab.papers.tabs.other"),
     count: otherPapers.length,
+  },
+  {
+    label: t("knowledge-base:researchLab.papers.tabs.whitepapers"),
+    count: whitepapers.length,
   },
 ];
 ---
@@ -102,74 +102,71 @@ const paperTabs = [
       </Button>
     </HeroCard>
 
-    <hr aria-hidden="true" />
-
-    <PageSection
-      title={t("knowledge-base:researchLab.papers.title")}
-      subtitle={t("knowledge-base:researchLab.papers.subtitle")}
-      anchorId="papers"
-    >
-      <SidebarLayout>
-        <SectionTabs tabs={paperTabs}>
-          <Column slot="panel-0" gap="sm">
-            {
-              mrlBulletins.map((paper) => (
-                <PaperCard
-                  code={paper.code}
-                  title={paper.title}
-                  abstract={paper.abstract}
-                  url={paper.url}
-                  note={paper.note}
-                />
-              ))
-            }
-          </Column>
-          <Column slot="panel-1" gap="sm">
-            {
-              iacrPapers.map((paper) => (
-                <PaperCard
-                  code={paper.code}
-                  title={paper.title}
-                  abstract={paper.abstract}
-                  url={paper.url}
-                  note={paper.note}
-                />
-              ))
-            }
-          </Column>
-          <Column slot="panel-2" gap="sm">
-            {
-              otherPapers.map((paper) => (
-                <PaperCard
-                  code={paper.code}
-                  title={paper.title}
-                  abstract={paper.abstract}
-                  url={paper.url}
-                  note={paper.note}
-                />
-              ))
-            }
-          </Column>
-        </SectionTabs>
-
-        <SidebarCard
-          slot="sidebar"
-          title={t("knowledge-base:researchLab.whitepapers.title")}
-          subtitle={t("knowledge-base:researchLab.whitepapers.subtitle")}
-        >
+    <PageSection anchorId="papers" class="papers-section">
+      <SectionTabs tabs={paperTabs}>
+        <Fragment slot="panel-0">
           {
-            whitepapers.map((paper) => (
-              <SidebarLink
-                href={paper.url}
-                icon={icons.mask("book-text")}
-                external
-              >
-                {t(`knowledge-base:researchLab.whitepapers.items.${paper.id}`)}
-              </SidebarLink>
+            mrlBulletins.map((paper) => (
+              <PaperCard
+                code={paper.code}
+                title={paper.title}
+                abstract={paper.abstract}
+                url={paper.url}
+                note={paper.note}
+                name="papers"
+              />
             ))
           }
-        </SidebarCard>
-      </SidebarLayout>
+        </Fragment>
+        <Fragment slot="panel-1">
+          {
+            iacrPapers.map((paper) => (
+              <PaperCard
+                code={paper.code}
+                title={paper.title}
+                abstract={paper.abstract}
+                url={paper.url}
+                note={paper.note}
+                name="papers"
+              />
+            ))
+          }
+        </Fragment>
+        <Fragment slot="panel-2">
+          {
+            otherPapers.map((paper) => (
+              <PaperCard
+                code={paper.code}
+                title={paper.title}
+                abstract={paper.abstract}
+                url={paper.url}
+                note={paper.note}
+                name="papers"
+              />
+            ))
+          }
+        </Fragment>
+        <Fragment slot="panel-3">
+          {
+            whitepapers.map((paper) => (
+              <PaperCard
+                code={paper.code}
+                title={paper.title}
+                abstract={paper.abstract}
+                url={paper.url}
+                note={paper.note}
+                name="papers"
+              />
+            ))
+          }
+        </Fragment>
+      </SectionTabs>
     </PageSection>
   </PageContainer>
 </Layout>
+
+<style>
+  .papers-section {
+    margin-top: var(--space-2xl);
+  }
+</style>
