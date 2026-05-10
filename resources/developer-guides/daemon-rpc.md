@@ -1,7 +1,7 @@
 ---
 layout: user-guide
 title: "Daemon RPC documentation"
-deprecated_url: /rpc-library/monerod-rpc/
+deprecated_url_docs: /rpc-library/monerod-rpc/
 ---
 
 {% t global.lang_tag %}
