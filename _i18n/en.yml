@@ -828,12 +828,11 @@ roadmap:
   p2pool: P2Pool released
   haveno: Haveno
 
-  seraphis-jamtis: Seraphis codebase & Jamtis
+  jamtis: Jamtis PQ
   ospead: OSPEAD
   released-0-18: CLI and GUI 0.18 "Flourine Fermi" released
   hardfork-v15: Network upgrade v15 Hardfork
   xmr-eth-atomicswaps: Monero <-> Ethereum Atomic Swaps
-  bp++: Bulletproofs++
   lws-subaddress: Light Wallet Server subaddress support
   view-tags: Wallet synchronization speed improved by +40% with one-byte view tags
 
