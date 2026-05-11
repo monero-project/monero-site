@@ -11,6 +11,7 @@ export interface Props extends HTMLAttributes<"div"> {
   title: string;
   subtitle?: string;
   logo?: ImageMetadata;
+  icon?: ImageMetadata;
   onionHref?: string;
   variant?: "default" | "mini";
   border?: boolean;
@@ -21,6 +22,7 @@ const {
   title,
   subtitle,
   logo,
+  icon,
   onionHref,
   variant = "default",
   border = false,
@@ -37,7 +39,7 @@ const rtl = dir === "rtl";
   class:list={[
     "external-resource-button",
     variant,
-    { "has-onion": onionHref, "has-logo": logo },
+    { "has-onion": onionHref, "has-logo": logo, "has-icon": icon && !logo },
     className,
   ]}
   data-border={border || undefined}
@@ -54,6 +56,14 @@ const rtl = dir === "rtl";
       logo && (
         <div class="logo">
           <Image src={logo} alt="" format="avif" priority />
+        </div>
+      )
+    }
+
+    {
+      icon && !logo && (
+        <div class="icon-tile" aria-hidden="true">
+          <MaskIcon src={icon} size="1.35rem" />
         </div>
       )
     }
@@ -129,6 +139,18 @@ const rtl = dir === "rtl";
       height: 100%;
       object-fit: contain;
     }
+  }
+
+  .icon-tile {
+    flex-shrink: 0;
+    width: 3rem;
+    height: 3rem;
+    border-radius: var(--radius-md);
+    background: var(--card-elevated-color);
+    color: var(--monero-orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .content {
