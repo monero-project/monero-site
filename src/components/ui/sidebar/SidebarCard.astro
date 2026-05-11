@@ -8,12 +8,21 @@ interface Props {
 }
 
 const { title, subtitle, class: className, ...rest } = Astro.props;
+const hasHeader = Boolean(title || subtitle);
 ---
 
-<Column gap="xs" class:list={["card", className]} {...rest}>
-  {title && <h3 class="title">{title}</h3>}
-  {subtitle && <p class="subtitle">{subtitle}</p>}
-  <slot />
+<Column as="section" gap="md" class:list={["card", className]} {...rest}>
+  {
+    hasHeader && (
+      <Column as="header" gap="2xs">
+        {title && <h3 class="title">{title}</h3>}
+        {subtitle && <p class="subtitle">{subtitle}</p>}
+      </Column>
+    )
+  }
+  <Column gap="xs">
+    <slot />
+  </Column>
 </Column>
 
 <style>
@@ -31,7 +40,7 @@ const { title, subtitle, class: className, ...rest } = Astro.props;
   }
 
   .subtitle {
-    margin: 0 0 var(--space-xs);
+    margin: 0;
     color: var(--paragraph-subtitle);
     line-height: var(--line-height-body);
   }
