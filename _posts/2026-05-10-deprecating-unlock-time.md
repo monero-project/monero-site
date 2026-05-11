@@ -10,7 +10,7 @@ Please be advised, the [Custom Transaction Unlock Time feature](https://www.getm
 
 **All transactions created after June 1, 2026, and with an Unlock Time set to unlock after the FCMP++ fork, would unlock immediately when the FCMP++ fork block hits the chain.**
 
-If we see a large influx of **new** Unlock Time transactions created between now and date June 1, 2026, the feature may be deprecated earlier than June 1, 2026. Deprecating avoids complications with the FCMP++ wallet integration, enabling a smoother wallet experience for all users. Note that a FCMP++ fork date is not set at the time this is written.
+If we see a large influx of **new** Unlock Time transactions created between now and June 1, 2026, the feature may be deprecated earlier than June 1, 2026. Deprecating avoids complications with the FCMP++ wallet integration, enabling a smoother wallet experience for all users. Note that a FCMP++ fork date is not set at the time this is written.
 
 This change **will not** affect transactions **already created**. If you, a user, created a transaction in the past with an Unlock Time set to a future date (even years from today), then you are **not** affected by this change. Your transaction will unlock based on the Unlock Time you set when you created the transaction. This change will **only** affect **new** transactions.
 
