@@ -17,8 +17,8 @@ import { icons } from "@/utils/icons";
 import {
   iacrPapers,
   mrlBulletins,
-  otherPapers,
   whitepapers,
+  otherPapers,
 } from "@/data/resources/research-lab";
 
 const paperTabs = [
@@ -31,12 +31,12 @@ const paperTabs = [
     count: iacrPapers.length,
   },
   {
-    label: t("knowledge-base:researchLab.papers.tabs.other"),
-    count: otherPapers.length,
-  },
-  {
     label: t("knowledge-base:researchLab.papers.tabs.whitepapers"),
     count: whitepapers.length,
+  },
+  {
+    label: t("knowledge-base:researchLab.papers.tabs.other"),
+    count: otherPapers.length,
   },
 ];
 ---
@@ -134,7 +134,7 @@ const paperTabs = [
         </Fragment>
         <Fragment slot="panel-2">
           {
-            otherPapers.map((paper) => (
+            whitepapers.map((paper) => (
               <PaperCard
                 code={paper.code}
                 title={paper.title}
@@ -148,7 +148,7 @@ const paperTabs = [
         </Fragment>
         <Fragment slot="panel-3">
           {
-            whitepapers.map((paper) => (
+            otherPapers.map((paper) => (
               <PaperCard
                 code={paper.code}
                 title={paper.title}
