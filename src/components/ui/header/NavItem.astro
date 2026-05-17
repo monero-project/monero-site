@@ -21,7 +21,10 @@ export interface Props {
 
 const { label, href, dropdown = [] } = Astro.props;
 const isDropdown = dropdown.length > 0;
-const id = "dd-" + Math.random().toString(36).slice(2, 11);
+const id = `dd-${[...label]
+  .slice(0, 7)
+  .map((c) => c.codePointAt(0))
+  .join("-")}`;
 const closeId = id + "-close";
 ---
 

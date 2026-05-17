@@ -1,6 +1,4 @@
 ---
-import "node:crypto";
-
 import AccordionItem from "./AccordionItem.astro";
 
 export interface AccordionItemType {
@@ -15,7 +13,15 @@ export interface Props {
 }
 
 const { items, multiExpand = false, variant = "default" } = Astro.props;
-const accordionId = crypto.randomUUID();
+if (items?.some((i) => typeof i.title !== "string" || !i.title.trim())) {
+  throw new Error("<Accordion> item has an empty title.");
+}
+const accordionId = items?.length
+  ? `${variant}-${[...items.map((i) => i.title).join("")]
+      .slice(0, 7)
+      .map((c) => c.codePointAt(0))
+      .join("-")}`
+  : `${variant}-slot`;
 const accordionName = multiExpand ? undefined : `accordion-${accordionId}`;
 ---
 

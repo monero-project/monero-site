@@ -6,7 +6,9 @@ import { createSafeMarkdown } from "@/utils/safeMarkdown";
 const safeMarkdown = createSafeMarkdown();
 
 export async function GET(context) {
-  const blog = await getCollection("blog");
+  const blog = (await getCollection("blog")).sort((a, b) =>
+    b.id.localeCompare(a.id),
+  );
   return rss({
     title: "Monero",
     description: "Monero Blog RSS Feed",

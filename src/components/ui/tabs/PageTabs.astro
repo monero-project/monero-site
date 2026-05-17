@@ -1,10 +1,8 @@
 ---
-import crypto from "node:crypto";
-
 interface Props {
   labels: string[]; // One label per panel slot (panel-0 ... panel-9)
   links?: string[]; // Optional array of URLs, if provided, renders as navigation links instead of same-page tabs
-  id?: string; // Optional stable id if multiple components on a page
+  id: string; // Required id
   initial?: number; // 0-based default tab
   activeIndex?: number; // 0-based active tab for navigation mode
 }
@@ -23,7 +21,10 @@ if (links && links.length !== labels.length) {
 if (links && labels.some((_, i) => Astro.slots.has(`panel-${i}`))) {
   throw new Error("<PageTabs> cannot have both links and slot content.");
 }
-const uid = id ?? `tabs-${crypto.randomUUID()}`;
+if (typeof id !== "string" || id.trim() === "") {
+  throw new Error("<PageTabs> requires a non-empty id.");
+}
+const uid = id.trim();
 const I = (n: number) =>
   Math.min(Math.max(0, Number(n) || 0), labels.length - 1);
 const active = I(initial);
