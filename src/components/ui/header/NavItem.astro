@@ -4,6 +4,7 @@ import type { ImageMetadata } from "astro";
 import MaskIcon from "@/components/ui/icons/MaskIcon.astro";
 import NavDropdownLink from "./NavDropdownLink.astro";
 import { icons } from "@/utils/icons";
+import { stableId } from "@/utils/stableId";
 
 export interface DropdownItem {
   label: string;
@@ -21,11 +22,8 @@ export interface Props {
 
 const { label, href, dropdown = [] } = Astro.props;
 const isDropdown = dropdown.length > 0;
-const id = `dd-${[...label]
-  .slice(0, 7)
-  .map((c) => c.codePointAt(0))
-  .join("-")}`;
-const closeId = id + "-close";
+const id = `dd-${stableId(label)}`;
+const closeId = `${id}-close`;
 ---
 
 <li class="nav-item" data-is-dropdown={isDropdown || undefined}>
