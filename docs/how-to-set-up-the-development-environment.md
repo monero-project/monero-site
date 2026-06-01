@@ -5,13 +5,13 @@ Quick, minimal steps to get the site running locally so you can start contributi
 ## Requirements
 
 - Node.js 22 (LTS) or higher - use a version manager like [fnm](https://fnm.vercel.app/).
-- pnpm (recommended, project uses pnpm@10+) - install with `corepack enable pnpm` or `npm install -g pnpm`.
+- pnpm (recommended, project uses pnpm@11+) - install with `corepack enable pnpm` or `npm install -g pnpm`.
 - Git – for cloning and PRs.
 
 Verify:
 ```bash
 node --version   # 22+
-pnpm --version   # 10+
+pnpm --version   # 11+
 git --version
 ```
 
