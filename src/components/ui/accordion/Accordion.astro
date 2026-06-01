@@ -1,5 +1,6 @@
 ---
 import AccordionItem from "./AccordionItem.astro";
+import { stableId } from "@/utils/stableId";
 
 export interface AccordionItemType {
   title: string;
@@ -13,15 +14,11 @@ export interface Props {
 }
 
 const { items, multiExpand = false, variant = "default" } = Astro.props;
-if (items?.some((i) => typeof i.title !== "string" || !i.title.trim())) {
+const titles = items?.map((i) => i.title) ?? [];
+if (titles.some((t) => !t.trim())) {
   throw new Error("<Accordion> item has an empty title.");
 }
-const accordionId = items?.length
-  ? `${variant}-${[...items.map((i) => i.title).join("")]
-      .slice(0, 7)
-      .map((c) => c.codePointAt(0))
-      .join("-")}`
-  : `${variant}-slot`;
+const accordionId = `${variant}-${titles.length ? stableId(titles) : "slot"}`;
 const accordionName = multiExpand ? undefined : `accordion-${accordionId}`;
 ---
 

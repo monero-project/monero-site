@@ -1,4 +1,6 @@
 ---
+import { stableId } from "@/utils/stableId";
+
 interface Tab {
   label: string;
   count?: number;
@@ -15,10 +17,7 @@ if (!tabs || tabs.length === 0) {
   throw new Error("<SectionTabs> requires at least one tab");
 }
 
-const uid = `stabs-${[...tabs.map((t) => t.label).join("")]
-  .slice(0, 7)
-  .map((c) => c.codePointAt(0))
-  .join("-")}`;
+const uid = `stabs-${stableId(tabs.map((t) => t.label))}`;
 ---
 
 <div class:list={["section-tabs", className]} id={uid}>
