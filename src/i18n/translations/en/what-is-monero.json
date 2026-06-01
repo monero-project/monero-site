@@ -49,7 +49,7 @@
                 },
                 "fcmp": {
                     "title": "FCMP++",
-                    "description": "Full Chain Membership Proofs (FCMP++) are zero knowledge proofs that prove a payment used a real coin on the blockchain, without revealing which one - protecting the sender's privacy.",
+                    "description": "Full Chain Membership Proofs (FCMP++) are zero-knowledge proofs that prove a payment used a real coin on the blockchain, without revealing which one - protecting the sender's privacy.",
                     "basedOn": "Based on: [Curve Trees]({{mpCurveTrees}})"
                 },
                 "confidentialTransactions": {

@@ -9,12 +9,12 @@
             "intro": "How you accept Monero depends on your needs:",
             "wallet": {
                 "title": "Wallet",
-                "description": "Best for occasional payments or getting started. Generate a QR code with the amount, customer scans and pays. No fees, no setup.",
+                "description": "Best for occasional payments or getting started. Generate a QR code with the amount, the customer scans and pays. No fees, minimal setup.",
                 "viewWallets": "View Wallets"
             },
             "pos": {
                 "title": "Point-of-Sale App",
-                "description": "Dedicated apps for regular in-person use. Get fiat price conversion, invoice tracking, and configurable confirmation settings.",
+                "description": "Dedicated apps for regular in-person use. Get fiat exchange rates, invoice tracking, and configurable confirmation settings.",
                 "services": {
                     "bitrequest": "Multi-coin point-of-sale app",
                     "btcpayPos": "Point-of-sale app for BTCPay Server"
@@ -27,7 +27,7 @@
             },
             "selfHosted": {
                 "title": "Self-Hosted",
-                "description": "Run your own payment server for complete control. Zero fees, full privacy, invoice management, and works for both online and in-person. Requires a server and technical setup.",
+                "description": "Run your own payment server for complete control. Zero fees, full privacy, invoice management, and works for both online and in-person. Requires a server and some technical expertise.",
                 "services": {
                     "btcpay": "Open-source, multi-coin, includes POS app",
                     "bitcart": "Open-source, multi-coin payment processor",
@@ -37,7 +37,7 @@
         },
         "acceptPayment": {
             "title": "Accept Your First Payment!",
-            "description": "A customer scans your QR code or copies your address and sends Monero from their wallet. You'll see the payment appear in your wallet or dashboard within seconds.",
+            "description": "A customer sends Monero to your QR code or address. You'll see the payment appear in your wallet or dashboard within seconds.",
             "confirmations": "Transactions are typically confirmed in ~2 minutes. For small purchases, most merchants hand over goods immediately. For larger amounts, waiting 1-2 confirmations adds security.",
             "confirmationsLabel": "Confirmations:",
             "tip": "If you're using a wallet, your seed phrase is the only way to recover funds. Write it down and store it securely offline - never share it with anyone."

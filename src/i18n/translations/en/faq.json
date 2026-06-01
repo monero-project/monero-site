@@ -16,7 +16,7 @@
         },
         "doesMoneroUseEncryption": {
             "title": "Does Monero use encryption?",
-            "content": "Yes. Monero uses strong public key encryption and zero knowledge proofs so that transaction data is never published in plain form.\n\nOn chain you only see encrypted commitments and proofs that the rules are followed, instead of a readable payment history."
+            "content": "Yes. Monero uses strong public key encryption and zero-knowledge proofs so that transaction data is never published in plain form.\n\nOn chain you only see encrypted commitments and proofs that the rules are followed, instead of a readable payment history."
         },
         "isMoneroLegal": {
             "title": "Is Monero legal to use?",
