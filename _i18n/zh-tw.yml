@@ -1,690 +1,1080 @@
 global:
   date: '%Y/%m/%d'
   monero: 門羅幣
-  getting_started: 開始使用
-  copyright: 版權
-  monero_project: 門羅幣專案
-  sitename: getmonero.org, 門羅幣專案
+  getting_started: 入门
+  copyright: 版权
+  monero_project: 門羅幣項目
+  sitename: getmonero.org, 門羅幣項目
   wiki: 門羅幣百科
-  tags: 以標籤列出文章
-  wikimeta: 門羅幣百科，開放的門羅幣知識百科全書
-  tagsmeta: 被標籤標註的所有文章
-  titlemeta: 門羅幣為一安全、保護隱私且完全匿蹤的數位貨幣
-  terms: 條款
+  tags: 標签
+  wikimeta: 門羅幣百科，門羅幣知识的开放百科全书
+  tagsmeta: 所有標記的門羅幣博客文章
+  titlemeta: 門羅幣，一种安全、隱私且無法追踪的數字貨幣
+  terms: 条款
   privacy: 隱私
-  untranslated: 這個頁面尚未被翻譯，如果您願意協助翻譯，請見
+  untranslated: 這個頁面尚未被翻譯。如果您愿意协助翻譯，請參见
+  outdated: 此頁面内容已过期，可能不再有效。如果您需要幫助，請聯繫社區。
+  outdatedMin: 這個頁面自被翻譯后又有更新。您可以繼續使用這個版本的頁面，但是它有可能并不完整。請使用
   outdatedVersion: 英文版本
-  outdatedMin: 這個頁面資訊因未更新翻譯，資訊已過時。您仍可繼續使用這個頁面，但資料可能不完整。
-  lang_tag: "@lang_tag_zh-tw"
+  lang_tag: "@lang_tag_zh-cn"
 
-  outdated: 此頁面之內容可能為老舊資訊且不符合目前狀況. 請聯繫社群如您需要任何幫助.
 titles:
   index: 首頁
-  whatismonero: 什麼是門羅幣 (XMR)?
-  accepting: 收取門羅幣
-  contributing: 改善門羅幣
-  mining: 挖取門羅幣
-  faq: 常見問題
+  whatismonero: 什么是門羅幣 (XMR)?
+  accepting: 接收門羅幣
+  contributing: 改進門羅幣
+  mining: 門羅幣挖礦
+  faq: 常见問題
   downloads: 下載
   allposts: 所有文章
-  hangouts: 聊天室
-  sponsorships: 贊助單位
-  merchants: 商家 ＆ 服務
+  workgroups: 工作組
+  hangouts: 社區
+  sponsorships: 贊助
+  merchants: 商戶和交易所
   about: 關於門羅幣
-  roadmap: 發展規劃
-  researchlab: 門羅幣研究實驗室
+  roadmap: 路線圖
+  researchlab: 門羅幣研究實驗室（MRL）
   moneropedia: 門羅幣百科
-  userguides: 使用者指引
-  developerguides: 開發者指引
-  technicalspecs: 技術規格
-  themoneroproject: 門羅幣專案
-  presskit: 門羅幣新聞資料袋
-  legal: 使用規定
-  blogbytag: Blog
-  library: 圖書出版品
+  userguides: 用戶指南
+  developerguides: 開發者指南
+  technicalspecs: 技術說明
+  themoneroproject: 門羅幣項目
+  tools: 工具
+  presskit: 門羅幣资料
+  legal: 规则
+  blogbytag: 博客
+  library: 资料库
 
-  workgroups: 工作社群
+meta_descr:
+  whatismonero: 關於什么是門羅幣以及如何开始使用的详尽說明
+  accepting: 使用圖形界面錢包接收門羅幣支付的指南
+  contributing: 門羅幣有多种貢獻方式，適合各种技能水平
+  mining: 關於門羅幣挖礦的信息、軟件和資源
+  blog: 來自門羅幣項目及其社區的新闻、发布通知和通讯
+  workgroups: 了解数百位致力于門羅幣的志愿者在哪里會面和协调工作
+  sponsorships: 門羅幣項目当前和过去的贊助商
+  about: 門羅幣項目和技術的歷史、价值觀和基本結構
+  roadmap: 可浏覽的概覽，展示門羅幣自創建以來取得的成就、当前正在開發的内容以及未來計划
+  mrl: 門羅幣的研究專区，包含研究論文、白皮书和其他研究相关信息
+  userguides: 指导您使用門羅幣和解决常见問題的指南和手册集合
+  tools: 與門羅幣生態系統交互的第三方工具鏈接，如区块浏覽器、支付网关和生成器
+  presskit: 關於門羅幣的標志、营销材料、聯繫方式和新闻文檔
+
 navigation:
-  getstarted: 開始使用
-  whatis: 什麼是門羅幣？
-  accepting: 接受支付
+  getstarted: 开始
+  whatis: 什么是門羅幣？
+  accepting: 接收
   contributing: 貢獻
   mining: 挖礦
-  community: 社群
-  merchants: 使用商家
-  resources: 相關資源
-  about: 關於門羅幣
+  community: 社區
+  merchants: 商戶和交易所
+  resources: 資源
+  about: 關於
   mrl: 研究實驗室
+
+footer:
+  feed: RSS源
+  legal: 规则
+  source: 源代碼
+  ml: 邮件列表
+  ccs: 社區众筹系統
+  reachout: 聯繫我們
 
 index:
-  page_title: "門羅幣 - 安全、保護隱私且完全匿蹤的加密貨幣"
+  page_title: "門羅幣 - 安全、隱私、無法追踪"
 
 home:
-  heading2: 保護隱私的數位貨幣
-  downloads: 下載
-  moneropedia_para: 你想要找門羅幣的各種用詞和概念的解釋嗎？在這裡你可以找到用字母排序的字詞與其意義解釋，範圍包括門羅幣與 Kovri 專案。
-  moneropedia_button: 閱讀門羅幣百科
-  faq: 常見問題
-  faq_para: 過去數年我們聽到了不少疑問，我們把它編列成一份方便閱讀的常見問題集。別擔心，如果你的問題不在裡面，歡迎直接到社群發問。
-  getcoins: 取得些許門羅幣
-  heading: 門羅幣意旨錢
+  heading: Monero 意為金钱
+  heading2: 私密、去中心化的加密貨幣，保證您财務隱私與安全。
+  whatis: 了解更多關於門羅幣的信息
   about: 關於門羅幣
+  joincommunity: 加入社區
   choosewallet: 選擇錢包
-  choosewallet_para: "以使用門羅幣, 您先必須擁有一錢包. 請造訪我們了下載頁面並選擇最適合您的錢包. \n門羅幣錢包適用於多方平台並具有完整素材供您立即使用門羅幣."
-  morevideos: 在找更多解釋影片嗎？
-  merchants: 商家
-  useit_para: 門羅幣是一種貨幣。它可以不公開地用來換來貨物，服務和其他貨幣，並只需非常少的費用。不少實體都樂意地接受門羅幣，看看 “商家” 的頁面。
-  answers: 解答你的疑問
+  choosewallet_para: 要使用門羅幣，首先需要一個錢包。訪問我們的下載頁面，選擇適合您的錢包。門羅幣錢包適用于多种平台，包含立即使用門羅幣所需的一切。
+  downloads: 下載
+  getcoins: 獲得門羅幣
+  getcoins_para: 安装錢包后，您需要獲得一些門羅幣。有多种方式可以獲得門羅幣，比如挖礦或工作换取門羅幣，但最簡單的方式是使用交易所，將您的法定貨幣兑换成 XMR。许多中心化和去中心化交易所都支持門羅幣（XMR）。
+  exchanges: 交易所
+  useit: 這是一种貨幣，尽情使用它吧！
+  useit_para: 門羅幣是一种貨幣，可以用來交换商品、服務和其他貨幣，私密且手續费极低。许多實體乐意接受 XMR 作為支付方式；請查看我們的"商戶"頁面。
+  merchants: 商戶
+  answers: 寻找問題的答案
+  faq: 常见問題
+  faq_para: 多年來我們听到了很多問題，并整理了一份详尽的常见問題解答。如果您的問題不在其中，您随時可以咨询社區。
+  guides: 指南和資源
+  guides_para: >
+    社區汇集了大量資源和文檔。用戶可以在"用戶指南"部分找到關於常见配置和技巧的有用信息和指南。開發者可以在"開發者指南"中找到構建基于門羅幣的服務或與網絡通信所需的一切。资料库提供免费下載的出版物和书籍，包括完整的《精通門羅幣》和《從零到門羅幣》书籍。
+  moneropedia_para: 您想查找門羅幣中使用的术语和概念的含义吗？這里您會找到按字母顺序排列的术语及其含义指南。
+  moneropedia_button: 閱讀門羅幣百科
+  contributecommunity: "我們需要您的技能：貢獻吧！"
+  contributecommunity_para: 門羅幣不仅仅是一种貨幣，它是一個去中心化社區，只因数百位將時间奉献给項目的志愿者而存在。加入我們！
+  researchlab_para: MRL（門羅幣研究實驗室）是門羅幣非常重要的一部分。來自全世界的研究者和密碼学家聚在一起寻找改進門羅幣的新方法。閱讀他們的論文，加入他們！
+  visitmrl: 訪問 MRL
   contributing: 貢獻
-  exchanges: 交易平台
-hangouts:
-  intro: 門羅幣的社群具有高度的多樣性，我們雖然來自世界各地，但還是常常會在幾個地方聚在一起交流，你可以在以下幾個地方找到我們，加入我們吧！
-  resources: 協作群組資源
-  resources_para: 為了支持有組織性的協作，門羅幣有幾種資源平台可以用聚會或是規劃專案，Mattermost 甚至有橋接了數個熱門的 Monero
-    IRC 頻道。
-  irc: IRC 頻道
-  irc_para: 門羅幣社群利用了許多 IRC 頻道作為多種不同用途的溝通管道。有些是工作用，有些則是單純閒聊，你可以在下面找到幾個比較熱門的頻道。
-  irc_channels:
-    monero: 這頻道是用來討論所有與門羅幣相關的主題。
-    monero-community: 這頻道是門羅幣社群用來組織及討論想法的地方。
-    monero-dev: 許多貢獻者與開發者會在這裡討論開發相關的事情。
-    monero-markets: 我們用這頻道來討論門羅幣或其他幣種的價格資訊。
-    monero-offtopic: 在這裡可以與其他門羅幣使用者聊聊與門羅幣無關的事情。
-    monero-mining: 這是用來討論門羅幣挖礦與礦池的頻道。
-    monero-research-lab: 這頻道的主題是研究金融與加密貨幣的隱私。
-    monero-translations: 將門羅幣專案翻譯至當地語言的工作溝通頻道。
-    monero-hardware: 打造硬體錢包以保護你的門羅幣安全。
-    monero-site:
-  mailing_list1: 想要直接用電子郵件收到重大的消息宣佈嗎？加入我們的郵件名單吧！
-  mailing_list: 郵件名單
-  subscribe: 訂閱
-merchants:
-  intro3:
-  disclaimer: |
-    "請注意：這些連結只是提供便利的資訊，並不代表是由門羅幣社群認可的產品、服務或該單位所發表之個人或單位的意見。門羅幣社群不對其準確性，合法性或其網站內容負擔任何責任。請聯絡該單位以獲得與其內容相關的問題解答。 請謹記貨物售出概不退換的原則，你必須自己做功課並為其負責，永遠要在線上購物時發揮你的判斷力。
+  meetcommunity: "認识社區！"
+  meetus: "門羅幣社區的成员遍布世界各地。您可以在多個平台上找到我們。來認识我們吧！"
+  hangouts: 社區聚集地
+  morevideos: 想要更多解释性視頻？
 
-  descr: 你可以在這個頁面找到接受門羅幣的店鋪和商店，也有兌換門羅幣去其他貨幣的交易平台。
-  useit: 接受門羅幣的商家
-  cardfoss: '開放源碼:'
-  depsell: 取決於賣家
-  visitbisq: 造訪 Bisq
-  visitlocalmonero: 造訪 LocalMonero
-  visithodlhodl: 造訪 HodlHodl
+hangouts:
+  intro: 門羅幣社區多元且多样化。我們來自世界各地，但我們確實有一些喜欢一起闲逛的地方。您會在下面找到其中大部分。加入我們！
+  resources: 工作組資源
+  resources_para: 正在寻找工作組？查看我們的工作組頁面。
+  irc-matrix: IRC/Matrix 频道
+  irc_para: 門羅幣社區使用大量 IRC 和 Matrix 频道，每個频道都有不同的用途。有些用于工作，有些只是闲逛。您會在下面找到最受欢迎的频道。
+  bridges: 這些频道桥接到许多其他平台，允许社區使用他們喜欢的聊天服務/協議進行交流。
+  matrixspace: Matrix 用戶可以加入我們的 <a href="https://matrix.to/#/%23monerospace:monero.social">Monero space</a> 查看频道的完整列表。
+  mailing_list: 邮件列表
+  mailing_list1: 您想直接在電子郵件地址接收重要公告吗？加入我們的邮件列表！
+  subscribe: 訂閱
+  matrixtutorial: 我們提供了一份分步指南：<a href="/resources/user-guides/join-monero-matrix.html">通過 Element 加入門羅幣社區 Matrix 服務器</a>
+  irc_channels:
+    monero: 此频道用于討論所有與門羅幣相关的事情。
+    monero-community: 此频道供門羅幣社區聚集和討論想法。
+    monero-markets: 我們使用此频道討論門羅幣和其他币的價格。
+    monero-offtopic: 與其他門羅幣用戶聊天，討論與門羅幣无关的事情。
+    monero-mining: 這是挖礦問題和討論的地方。
+    monero-support: 您可以在此频道從有經驗的用戶那里獲得支持和提问。請記住；門羅幣没有官方支持，没有人會索要您的私钥，<a class="ext-noicon" href="https://dontasktoask.com/" target="_blank" rel="noreferrer noopener">不要问是否可以提问</a>。
+
+merchants:
+  descr: 在此頁面上，您會找到接受門羅幣作為支付方式的商店和商戶，以及交易門羅幣與其他貨幣的交易所。
+  useit: "接受門羅幣的商戶"
+  use: 多年來，各类商戶逐渐認识到門羅幣带來的金融隱私价值。事實上，商戶采用率正在持續上升。
+  dirdescr: "如果您正在寻找使用門羅幣的地方，下面的目录提供了一些选项。請記住在信任他們處理您的資金之前做好自己的研究："
+  descrp2p: 交换門羅幣與其他貨幣的好方法是使用点對点 [P2P] 交易所。P2P 交易所允许交易者直接互动，在某些情况下无需信任第三方（除了提供托管服務）。這些交易所通常比中心化和/或托管式交易所更加私密。
+  swapsdescr: "使用原子交换（Atomic Swaps）是一种无需信任的門羅幣與其他加密貨幣交换方法。更多信息請參见博客文章："
+  bisqdescr: 基于比特币和 Tor 的去中心化 P2P 交易所。
+  cardfoss: "開源："
+  cardkyc: "<b>无 KYC</b>（无需身份驗證）："
+  cardbtcfiat: (可進行 BTC &#8596; 法幣交易)
+  cardonion: "洋葱地址："
+  cardi2p: "I2P 地址："
+  noncustodial: "非托管式："
+  locmondescr: 提供点對点交易的在線 P2P 交易所。
+  depsell: 取决于卖家
+  locnojs: (但提供无 JS 版本)
+  simpleswapdescr: 非托管式即時交换所。
+  disclaimer: |
+    "請注意：這些鏈接仅為方便和信息目的而提供；它們不構成門羅幣社區對所列公司、組织或個人的任何產品、服務或意见的認可。門羅幣社區對這些外部網站的准確性、合法性或内容不承担责任。有关其内容的問題請聯繫外部網站。一如既往，买者自负；您有责任進行自己的研究。在線购物時始终保持判断力。"
+  visitbisq: 訪問 Bisq
+  centrexchanges: 中心化交易所 (CEXs) 和兑换服務
+  centrexchangesp: 如果您更喜欢使用中心化交易所，這里列出了一些知名的中心化交易所和兑换服務。更多交易所支持門羅幣，我們在這里仅列出一些信誉良好的。
+  cexp: 提供門羅幣與法定貨幣和加密貨幣交换的中心化交易所。
+  swappersp: 兑换服務讓用戶可以將 XMR 兑换成其他加密貨幣。
+  basicswapdexdesc: 去中心化 P2P 原子交换，專注于用戶體驗。
+  visitbasicswapdex: 訪問 BasicSwapDEX
+  setreq: 需要設置
+  eigenwalletdescr: 使用原子交换將比特币兑换為門羅幣。
+  visiteigenwallet: 訪問 Eigen Wallet
+  havenodescr: 基于 Tor 和門羅幣構建的去中心化 P2P 交易所。非托管式，可直接進行法幣到 XMR 交易。
+  visithaveno: 訪問 Haveno
+  havenonetworks: "活跃網絡："
+
 sponsorships:
-  intro: 下列商家支持門羅幣專案設立將達成世界金融隱私的目標，我們由衷地感激他們的貢獻。如果你也想要贊助門羅幣專案並被列在本頁清單，請電郵至 dev@getmonero.org。
+  intro: 以下企業积极支持門羅幣項目將金融隱私带给全世界的目標。我們對他們的貢獻感激不尽。如果您想贊助門羅幣項目并被列在此頁面上，請發送電子郵件至 dev@getmonero.org。
+  tari: Tari Labs 贊助本網站使用的 CDN。
+  symas: Symas 贊助其 CTO Howard Chu (hyc) 在門羅幣代碼库上的工作。
+  macstadium: MacStadium 贊助一台專用 Mac Mini，用于 Mac 相关開發。
+  cakewallet: Cake Wallet 贊助"工具"服務器，包括邮件列表、GitLab、Matrix、Taiga 和 Weblate。
+  cypherstack: Cypher Stack 贊助運維人员來維護門羅幣基础設施。
+  pastsponsors: 过去的贊助商
 
 team:
-  core: 核心開發團隊
-  community: 社群
+  introduction: 工作組由社區成员組成，他們联合起來實現共同目標。它們有不同的結構和目標。在此頁面上，我們列出了一些更活跃的工作組以及一些入门提示，如果您希望為其中任何一個做出貢獻。
+  core: 核心團隊
+  community: 社區工作組
   mrl: 研究實驗室
-downloads:
-  intro: 在這個頁面你可以下載到最新版本的門羅幣軟體，包括硬體錢包、輕錢包與行動錢包。
-  choose: 選擇你的下載
-  gui: GUI 錢包
-  cli: CLI 錢包
-  blockchain: 匯入區塊鏈檔案
-  blockchain1: 如果你想要使用原始區塊鏈檔案而不要自行從頭同步的話，你可以使用最近的檔案。這通常會比從頭同步來得更快，但它也會需要使用大量的記憶體空間。
-  blockchainbutton: 下載區塊鏈
-  mobilelight: 行動 ＆輕錢包
-  hardware: 硬體錢包
-  gui_intro: GUI 錢包提供了不錯的使用者界面，以符合大多數使用者的需求，最適合想要快速收發 XMR 的入門使用者。
-  simplemode: 簡易模式
-  simplemode1: 設計給入門的使用者，只想要用最快最簡單的方式使用門羅幣。建立錢包，自動連接至@遠端節點，發送/接收 XMR，搞定！
-  advancedmode: 進階模式
-  advancedmode1: 提供完整的進階功能，適合給希望完全掌控錢包與節點的進階門羅幣使用者
-  merchantpage: 收銀台模式
-  merchantpage1: 輕鬆地接受你的客戶付款
-  hwcompatible: 與硬體錢包相容
-  hwcompatible1: 如 Trezor 與 Ledger
-  fiatconv: APP 內匯率轉換
-  fiatconv1: 不再需要上網去換算你的 XMR 餘額
-  pruning: 區塊鏈修剪
-  pruning1: 硬碟空間不足嗎？使用 @pruning 後就可以只需要下載 1/3 的區塊鏈
-  langs: "支援<b>30+ 種語言</b>"
-  cli_intro: CLI 錢包提供你完整的節點與資金控制，高度可客製化且附帶許多分析工具，包括 HTTP RPC 與 0MQ 界面。
-  currentversion: 目前版本
-  sourcecode: Source Code
-  helpsupport: 幫助與支援
-  helpsupport1: "A guide with an explanation of every section of the wallet is available:"
-  helpsupport2: "查看最新的釋出"
-  gui_helpsupport: "如果您遇到問題或是需要更多的資料，請向社群求助。您可以在 #monero-gui 聯繫GUI開發者，或是在聊天室頁面找到完整的聯絡方式及聊天室列表。"
-  cli_helpsupport: "If you are experiencing issues or you need more info, feel free\
-    \ to reach out to the community. You can find the CLI team at #monero or #monero-dev,\
-    \ or else check out the Hangouts page for a more complete list of contacts and\
-    \ chatrooms"
-  localremote: 本地或遠端節點
-  localremote1: 使用本地或遠端伺服器的區塊鏈數據
-  transacttor: 以 Tor 或 I2P 廣播交易資料
-  transacttor1: 獲得額外的隱私保護
-  bootstrapnode: 引導節點
-  bootstrapnode1: 在本機同步區塊鏈時暫時使用@遠端節點，這樣可以讓你立即開始使用門羅幣，待同步完成後即會切換回你自己的節點
-  rpc: RPC 錢包與節點
-  rpc1: 附帶在下載檔案中
-  payforrpc: Pay-for-RPC
-  payforrpc1: 讓節點管理者可以在節點被使用時收取獎勵的新功能
-  verify: 驗證
-  verify1: You are strongly advised to verify the hashes of the archive you downloaded.
-    This will confirm that the files you downloaded perfectly match the files uploaded
-    by the Monero development workgroup. Please don't underestimate this step, a corrupted
-    archive could result in lost funds. Always verify your downloads!
-  showhash: 顯示下載檔案的雜湊碼
-  showhash1: These SHA256 hashes are listed for convenience, but a GPG-signed list
-    of the hashes is at getmonero.org/downloads/hashes.txt and should be treated as
-    canonical, with the signature checked against the appropriate GPG key
-  showhash2: in the source code
-  showhash3: "Two guides are available to guide you through the verification process:"
-  mobilelight1: 以下是被社群視為安全的行動錢包或輕錢包，如果你喜歡的錢包沒有被列在這裡，你可以找社群來試看看。到我們的
-  mobilelight2: 聊天室
-  mobilelight3: page to see where we are.
-  installer: 安裝檔
+  descr: 描述
+  start: 從哪里开始
+  contacts: 聊天室和聯繫方式
+  chat: "聊天："
+  website: "網站："
+  core_descr: 作為項目的管理者，核心團隊管理和維護無法避免中心化的基础設施（域名、網站、GitHub 仓库等）。其成员在適当時充当调解人，旨在权衡社區共识，延續使門羅幣成為今天成功項目的高质量互动。核心團隊不曾也從未接受任何經济补偿。
+  core_start: 核心團隊是一個封闭的工作組；除非受邀，否则無法加入。
+  community_descr: 此工作組供社區用于組织和协调。如果您是非編程人员并希望為門羅幣做出貢獻，請從這里开始。
+  community_start: 开始為此工作組做出貢獻的最佳方式是加入聊天室并介绍自己，說明您的兴趣和您愿意為社區提供的技能。
+  devworkgroup: 開發工作組
+  devworkgroup_descr: "此工作組联合致力于門羅幣項目錢包和守護進程的開發人员。它由两個主要部分組成：CLI 團隊和 GUI 團隊。這些團隊使用两個不同的聊天室進行协调。"
+  devworkgroup_start: 最好先查看两個仓库的开放問題，了解可以修復或改進的内容。两個代碼库，尤其是核心仓库，可能相当具有挑战性，因此建議首先在聊天室中寫信介绍自己、您的技能以及您希望貢獻的内容。
+  chatgeneral: "聊天（通用）："
+  chatgui: "聊天（GUI）："
+  webworkgroup: 網站工作組
+  web_descr: 這個以開發為重点的工作組协调網站的開發。大多数成员也是開發工作組的一部分。網站工作組主要是為了將與網站相关的討論集中在一個地方。
+  web_start: 加入聊天室直接與工作組成员交谈總是一個好主意，但如果您更喜欢自己开始，請查看 GitHub 仓库中的 readme。它包含逐步說明來編輯此網站的每個部分。
+  localization: 本地化工作組
+  localization_descr: 門羅幣最古老的工作組之一，由致力于翻譯門羅幣相关軟件和文檔的貢獻者組成。強烈建議在开始翻譯工作之前聯繫工作組。
+  localization_start: 在聊天室聯繫工作組或在 GitHub 仓库上开启問題。您也可以立即使用 Weblate 平台开始翻譯。只需確保首先閱讀翻譯者指南。
+  locplatform: "本地化平台："
+  telegram: "Telegram 聊天："
+  mrl_descr: 顾名思义，門羅幣研究實驗室是專注于門羅幣相关研究的工作組。它由寻找改進門羅幣協議和功能的科学家組成。使門羅幣出色的大多数協議改進，如 CLSAG 和 @Bulletproofs，都是此工作組努力的結果。
+  mrl_start: 加入下面的聊天室并說明您的兴趣和技能。研究始终在進行中，有人會為您指明正確的方向。
+  space: Monero Space
+  space_descr: Monero Space 是一個活跃的、以項目為重点的門羅幣工作組，為門羅幣社區提供服務。它托管流行資源并組织活动，如 Monero Meet。
+  space_start: 可以通過在 Matrix/Libera 上向他們的聊天室寫信來聯繫该工作組。
+  mrw: 恶意軟件響应工作組
+  mrw_descr: 恶意軟件響应工作組為多种类型的門羅幣相关恶意軟件提供資源和實時支持。
+  mrw_start: 此工作組的大部分活动发生在 IRC 聊天中。如果您希望貢獻，只需加入频道提问或提供支持。
+  mpwg: 門羅幣政策工作組
+  mpwg_descr: 門羅幣政策工作組是一個松散組成的個人法定人数，他們有兴趣與监管机構、政策制定者和更广泛的金融服務部门互动，以確保對門羅幣組成技術的广泛理解，特别是關於其與不断发展的监管和合规要求的兼容性。
+  mpwg_start: 如果您想參與或关注政策討論，請加入 Matrix/Libera 聊天室。
+  nwlb_descr: Seraphis 錢包工作組是一組致力于在門羅幣中實現 Seraphis 和 Jamtis 的開發人员，通過開發全新类型的錢包，將大幅改進門羅幣的隱私能力和可用性。
+  nwlb_start: 该工作組經常开會，并在 Matrix 房间（中繼到 IRC）中协调。他們一直在寻找愿意幫助的貢獻者。
+  docs: 門羅幣文檔工作組
+  docs_descr: 此工作組致力于門羅幣及其工具的文檔編寫。
+  docs_start: 您可以加入 IRC 或 Matrix 房间。
 
-  blockchain2: 如果你仍然想要繼續，請詳閱使用說明
-  showhash4: 有兩個教學可以引導你進行驗證的步驟：
-  blockchain3: 匯入門羅幣區塊鏈
-  blockchain4: 給 Windows 作業系統的操作步驟。
-  verify2: 務必驗證你的下載檔案！
-monero-project: {}
+downloads:
+  intro: 在此頁面上，您可以找到并下載門羅幣軟件的最新可用版本，以及硬件、轻錢包和移动錢包。
+  choose: 選擇您的下載
+  gui: 門羅幣圖形界面錢包
+  cli: 門羅幣命令行錢包
+  blockchain3: 導入門羅幣區塊鏈
+  mobilelight0: 移动和轻錢包
+  mobilelight: 移动和轻錢包
+  hardware: 硬件錢包
+  gui_intro: 由門羅幣社區開發的開源圖形用戶界面（GUI）錢包，完全免费使用，適合初学者和高级用戶。
+  simplemode: 简易模式
+  simplemode1: 專為技術水平较低的用戶創建，他們只想以最簡單、最快捷的方式使用門羅幣。打开錢包，自动連接到 @remote-node，發送/接收 XMR，完成！
+  advancedmode: 進阶模式
+  advancedmode1: 具備您可能需要的所有高级功能。非常適合經驗丰富的門羅幣用戶，他們更喜欢完全控制自己的錢包和節點
+  merchantpage: 商戶頁面
+  merchantpage1: 轻松接收 XMR 用于您的業務
+  hwcompatible: 兼容硬件錢包
+  hwcompatible1: 如 Trezor 和 Ledger
+  fiatconv: 应用内法幣转换
+  fiatconv1: 无需再在線查看您的 XMR 价值
+  pruning: 區塊鏈修剪
+  pruning1: 磁盘空间不足？只需使用 @pruning 仅下載 1/3 的區塊鏈
+  langs: "可用 <b>30 多种語言</b>"
+  cli_intro0: 由門羅幣社區開發的開源命令行界面（CLI）錢包，完全免费使用，最適合開發人员、中级和高级用戶。
+  cli_intro: CLI 錢包讓您完全控制您的門羅幣節點和資金。高度可定制，包括各种分析工具，以及 HTTP RPC 和 0MQ 接口。
+  currentversion: 当前版本
+  sourcecode: 源代碼
+  helpsupport: 幫助與支持
+  helpsupport1: "提供了錢包每個部分的解释指南："
+  helpsupport2: "查看最新版本"
+  helpsupport3: "如果您遇到問題或需要更多信息，請随時聯繫社區。您可以加入 <code>#monero-support</code> 或查看<a href=\"/community/hangouts/\">社區聚集地</a>頁面以获取更完整和詳細的聯繫方式和聊天室列表"
+  localremote: 本地或遠程節點
+  localremote1: 使用您自己的區塊鏈副本或公开可用的副本
+  transacttor: 通過 Tor/I2P 交易
+  transacttor1: 提供额外的隱私層
+  bootstrapnode: 引导節點
+  bootstrapnode1: 在本地下載區塊鏈時使用 @remote-node，這將允许您立即使用門羅幣，并在完全同步后切换到本地節點
+  rpc: RPC 錢包和守護進程
+  rpc1: 包含在存档中
+  verify: 驗證
+  verify1: 強烈建議您驗證下載的存档的哈希值。這將確認您下載的文件與門羅幣開發工作組上傳的文件完全匹配。請不要低估此步骤，损坏的存档可能导致資金损失。
+  verify2: 始终驗證您的下載！
+  showhash: 顯示哈希值以驗證您的下載
+  showhash1: 這些 SHA256 哈希值為方便起见而列出，但 GPG 签名的哈希值列表位于
+  showhash2: 应被视為权威，签名应针對適当的 GPG 密鑰進行檢查
+  showhash3: 在源代碼中
+  showhash4: "有两份指南可指导您完成驗證过程："
+  mobilelight1: 下面列出的錢包是非托管式移动或轻錢包，不由門羅幣核心團隊管理，但已經存在一段時间了。強烈建議您進行自己的研究，了解這些錢包是否安全以及使用它們的风险。訪問我們的
+  mobilelight2: 社區聚集地
+  mobilelight3: 頁面查看門羅幣社區的聚集地。
+  installer: 安装程序
+  avwarning: 請注意，某些杀毒軟件和防火墙可能會將門羅幣可执行文件和存档標記為恶意軟件。
+  moreinfofaq: 常见問題中的更多信息
+  packages: 還有適用于多個 Linux 发行版的軟件包。
+  packages_link: 在 GitHub 上查看列表
+  releasenotes: 发布說明
+  wallet: 錢包
+  mobile: 移动
+  desktop: 桌面
+  antivirus: 杀毒軟件
+  sourcearchive: 源代碼（存档）
+  localsync: 本地同步
+  localsyncinfo: 這些錢包連接到 @remote-nodes 并在您的設備上掃描 @blockchain，而不與節點共享任何密鑰。它們提供更高的隱私性，但需要更多時间同步，因為只有在打开錢包時才會掃描缺失的 @blocks。
+  remotesync: 遠程同步（轻量级）
+  remotesyncinfo: 這些錢包與遠程服務器共享您的私人 @view-key，服務器持續掃描區塊鏈寻找您的交易。它們使用起來更快，但如果您不控制遠程服務器，您的隱私可能會降低。
+  hwdesc: "硬件錢包是加密安全的設備，有助于保護您的币安全。門羅幣目前由 Ledger Nano（S、S Plus 和 X）和 Trezor（Model T、Safe 3、Safe 5）支持"
+  hwth: 硬件錢包
+  instructions: 使用說明
+  hwthmodel: 型號
+  hwthsupported: 錢包
+  hwthfirm: 最低固件版本
+  hwnanos: "Nano S: 2.1.0"
+  hwnanosplus: "Nano S Plus: 1.0.3"
+  hwnanox: "Nano X: 2.0.2"
+  hwtrezor: "2.5.2"
+  hwmobmodels: "支持門羅幣的型號："
+
+
 press-kit:
-  intro2: 請注意白色背景選項是只有在門羅幣圖案底下的白色背景，而非整張圖片的背景。
-  intro3: 最後，你可以在這裡下載一個包含所有檔案的 zip 壓縮檔，請點擊
-  intro4: 這裡。
-  noback: 無背景
-  whiteback: 白色背景
-  symbol: 門羅幣代表性圖案
-  logo: 門羅幣標誌
+  intro: 在此頁面上，您將找到新闻聯繫方式、符號和標志。
+  intro2: 請注意，白色背景选项仅在門羅幣符號下有白色背景，而不是整個圖像的背景。
+  intro3: 最后，您可以通過点击
+  intro4: 這里一次性下載此頁面上的所有内容到一個 zip 文件。
+  noback: 透明 M
+  whiteback: 白色 M（推薦）
+  symbol: 門羅幣符號
+  logo: 門羅幣標志
   small: 小
   medium: 中
   large: 大
-  symbol_file: 圖案 .ai 原始圖檔
-  logo_file: 標誌 .ai 原始圖檔
-  pressdoc: 新聞稿文件
-  quickfacts: "懶人包"
+  symbol_file: 符號 .ai 文件
+  logo_file: 標志 .ai 文件
+  pressdoc: 新闻文檔
+  quickfacts: "快速事實表"
   quickfactsp: >
-    一份可以快速全面了解門羅幣的讀物： 發展歷史、關鍵的獨特之處、技術的奠基與開發中的功能。<br>
-    參訪 <a target="_blank" href="https://www.monerooutreach.org/index.php">Monero Outreach</a>
-    網站以查看更多資訊。
-  marketing: Marketing Material
-  dontbuysticker: "The 'Don't buy Monero' sticker"
-  dontbuystickerp: Spread Monero everywhere with the help of this sticker. Available
-    in multiple languages and formats (vectors included).
-  guerrillakit: Guerrilla Toolkit
-  guerrillakitp: A document created by the Monero Outreach workgroup containing materials
-    and tips for an effective guerrilla marketing campaign.
+    一份快速且易于閱讀的文檔，了解有关門羅幣的一切：歷史、关键差异化因素、技術基础和正在開發的功能。
+  marketing: 营销材料
+  dontbuysticker: "'不要購買門羅幣'贴纸"
+  dontbuystickerp: 借助此贴纸在各处傳播門羅幣。提供多种語言和格式（包括矢量）。
+  guerrillakit: 游击工具包
+  guerrillakitp: 門羅幣外联工作組創建的文檔，包含有效游击营销活动的材料和技巧。
+  promographics: "門羅幣宣傳圖形 - 網站徽章和贴纸"
+  promographicsp: TheMonera 創建的各种圖形和徽章，適用于商戶和普通爱好者。
+  xmrgraphics: 門羅幣圖形
+  xmrgraphicsp: 門羅幣海報、插圖、編輯、壁纸、贴纸，任何人都可以使用。
+  othersymbols: 其他符號和標志
+  mrllogo_para: SVG 格式的門羅幣研究實驗室標志。
+  contacts: 聯繫方式
+  contactsp: 有多种方式聯繫社區。根据您寻找的信息，您可能想聯繫工作組、社區的單個成员或核心團隊。
+  contactgen: "對于新闻咨询："
+  contactwg: "聯繫特定的門羅幣工作組："
+  contactcomm: "聯繫众多子社區："
+  whymonero: 為什么選擇門羅幣？
+  whycommunity: 門羅幣拥有任何開源項目中最大的社區之一。門羅幣研究、審計和實施关键的安全和隱私技術，被全球数百万人使用。
+  whycommunity1: 門羅幣被信任用于比所有其他加密貨幣總和更多的私密交易。
+  whyconf: 門羅幣社區在 Defcon、Grayhat 和 CCC（混沌計算機俱乐部）有大量參與。門羅幣 Konferenco 是一個学术會议，每年举办。
+  whyconf1: 我們鼓励每個人在相关新闻文章和活动中包括來自最大隱私項目的社區成员。
+  altpk-1: 一位女士站在 Monero Talk 横幅前的照片
+  altpk-2: fluffypony 在 DEFCON 人群前演讲的照片
+  johnr365timeline: 門羅幣時间線
+  johnr365timelinep: 門羅幣歷史上关键发展的時间線
 
 accepting:
-  title_gui: GUI 錢包的操作說明
-  gui1: 用 GUI 錢包來接受付款非常簡單，不論你是商家或個人皆適用，會有兩種收款頁面供你使選擇：收款與收銀台模式。
-  gui2: 收款頁面（下圖文）詳細介紹
-  guilinkguide: 在 GUI 的教學中。
+  title_gui: 圖形界面的說明
+  index: 索引
+  gui1: "使用圖形界面接受付款非常簡單。无论您是商戶還是用戶，您都有两個可用頁面：接收和商戶。"
+  gui2: 接收頁面（如下所示）的詳細說明
+  guilinkguide: 在圖形界面指南中。
+  guiinstructions: >
+    要接收 XMR，您只需向付款人提供一個 @address，他們可以將資金發送到该地址。大多数情况下，只需分享二維碼并讓付款人掃描，而不是復制粘贴字母數字字符串更容易。
+    使用圖形界面，每個生成的地址都带有二維碼。讓對方用手机上的門羅幣 @wallet 掃描二維碼，几分鐘内接收您的 XMR。
+    請記住，您可以生成任意数量的地址（子地址）。如果您出于任何原因想要將資金分开，這很有用。
+  guimerchant: 商戶可能會发現使用"商戶"頁面（下面的截圖）更方便，该頁面在
+  guilinkguide1: 上述鏈接指南
+  guimerchant1: >
+    這是一個类似 POS 的頁面，商戶可以轻松使用來設置要接收的 XMR 金额。如果启用了"销售跟踪器"选项，
+    您將實時看到付款到達您的錢包，以及確認数量。
+  guisteps: "這两個頁面讓每個人都可以通過以下步骤轻松接收 XMR："
+  guiol: "转到「接收」頁面并創建/選擇您想要接收币的地址。"
+  guiol1: 與您想要接收币的人分享由字母和數字組成的地址。您可能更喜欢使用更用戶友好的二維碼。
+  guiol2: "如果您想指定要接收的金额，請转到「商戶」頁面（在「接收」頁面中選擇將用于接收 XMR 的 @account 后）。"
+  guiol3: "插入要接收的金额，然后與付款人分享付款 URL 或二維碼。如果您想實時跟踪付款，請勾选「启用销售跟踪器」选项。"
+  guiol4: 等待付款到達并有足够的確認（確認越多，交易越安全。您至少需要 10 次確認才能使用資金）。
+  cliinstructions: 命令行的說明
+  clicreatewallet: >
+    当您第一次創建錢包時，會自动向您顯示一個 @address。這是您的主地址。
+    如果您愿意，您可以簡單地使用该地址接收付款。您應該关心谁知道此地址（因為不同位置的一個地址可以关联），
+    但您不需要担心區塊鏈觀察者像比特币一样觀察此地址的交易。朋友可以向同一地址發送交易而不會降低隱私。
+  cliaccounts: >
+    如果您愿意，您可以有更多控制权。門羅幣提供了創建多個賬戶的可能性，每個賬戶包含多個子地址，
+    如果您想控制多個賬戶，這很有用。例如，您可能想要一個 @account 用于接收捐贈，另一個用于日常使用。
+    這將允许您轻松监控"捐贈"賬戶的資金流入，而不會與您的主賬戶混淆。
+  clicreateaccount: "要創建賬戶，只需運行此命令："
+  clicreateaccount1: 現在您有了另一個與主賬戶分开的賬戶。您可以随時在賬戶之间切换。
+  cliindex: >
+    如您從上圖中看到的，每個賬戶都有一個索引號，您可以使用命令
+    `account switch [index]` 在賬戶之间切换。例如，使用上圖作為參考，如果您想切换到"捐贈"賬戶來监控它，
+    您可以通過给您的 CLI 此命令 `account switch 1` 來實現。現在您在您的"捐贈"賬戶上，可以立即开始使用它。
+  cliindex1: >
+    每個賬戶可以托管几乎无限数量的子地址。它們的工作方式與普通地址完全相同，您可以創建任意数量
+    并使用它們接收 XMR 到它們鏈接的賬戶。要為賬戶創建新的子地址，請使用命令：
+  clinotes: >
+    請注意，下面的說明只是創建和使用賬戶/子地址所需的最低限度。
+    CLI 提供了更精细的方式來處理賬戶和一般錢包。使用"help"命令列出所有可用选项。
+  merchantstitle: 商戶說明
+  merchantsreceive: 如果您是企業，希望以編程方式接收 @transactions 或使用多重签名等高级功能，建議查閱
+  merchdevguides: 開發者指南
+  merchantsreceive1: "如果您需要支持，社區將始终乐意提供幫助。來 #monero 聊天，聊天室在 Freenode 上，但也中繼到 MatterMost 和 Matrix。"
+  merchantsint: "如果您不想直接處理錢包，可以使用第三方支付系統。門羅幣社區成员為各种平台和語言創建了一套集成。您可以在"
+  merchantsintlink: GitHub 組织上找到更多信息
+  merchantsthirdp: 如果您正在寻找其他第三方集成系統，
+  merchthirdlink: 工具頁面上有支付网关列表
+  merchantsthirdp1: 其中一些提供了不錯的功能，如自动將部分收入转换為法定貨幣或接受其他加密貨幣以及門羅幣的可能性。
+
 contributing:
-  intro: 門羅幣是一個開放原始碼、由社群推動的專案。以下列出了一些可以支持本專案的方法。
-  network: 支持交易網路
-  develop: 開發工作
-  full-node: 運行全節點
+  intro: 門羅幣是一個開源的、社區驱动的項目。以下描述了支持该項目的几种方式。
+  network: 支持網絡
+  develop: 開發
+  developp: "門羅幣是開源且无需许可的；欢迎并鼓励貢獻者。開發者可以通過多种方式為不同項目做出貢獻："
+  cli: "CLI 錢包和守護進程："
+  cli_p: 核心錢包，主要用 C++ 編寫。
+  gui: "GUI 錢包："
+  gui_p: 主要是 QML 和 C++。
+  website: "本網站："
+  website_p: 使用 Jekyll 構建。无 Javascript。
+  bug: "漏洞和脆弱性狩猎：門羅幣在 Hackerone 上列出，開發者被要求负责任地披露漏洞和脆弱性。請參见"
+  discl: 門羅幣項目脆弱性響应流程。
+  develop_descr: >
+    此列表仅包括核心團隊管理的工具，但門羅幣生態系統要广泛得多。人們可以為库、服務、文檔、圖形等的開發做出貢獻。列表實际上是无限的。聯繫或加入您想要貢獻的工作組。
+  develop_wg: 查看門羅幣工作組。
+  full-node: 運行節點
+  full-node_p: 幫助門羅幣網絡的一种簡單有效的方式是運行 @node。節點確保網絡保持安全和去中心化運行。一個簡單的完全同步節點足以幫助網絡，但如果您想做得更多，您可以運行开放的 @remote-node，以允许其他人連接到它。
+  full-node_p2: "我們有几份指南可以幫助您運行和配置節點："
+  allguides: 查看所有用戶指南。
   mine: 挖礦
-  ffs: 造訪論壇募資系統
-  donate: 贊助
+  mine_p: >
+    挖礦確保網絡的安全。門羅幣使用 @randomx，一种由門羅幣貢獻者開發的抗 ASIC 算法，旨在保持可由普通消费级硬件挖掘。有关挖礦的更多信息，請參见
+  mine_link: 專门的挖礦頁面。
+  ffs: 社區众筹系統
+  ccs_p: 門羅幣利用社區众筹系統，通過该系統提出開發項目并由社區资助。資金托管，一旦達到編程里程碑，就會向開發者汇款。任何人都可以生成新提案或资助現有提案。
+  ccsbutton: 前往 CCS
+  donate: 捐贈
+  donate_p: 向一般基金的捐贈在紧急情况或需要時使用。基础設施成本目前由贊助商覆盖。
+  genfund: 一般基金
+  genfund_p: "您可以捐贈門羅幣和比特币："
   donate-other: 其他
-  donate-other_para1: 發送電子郵件至
-  donate-other_para2: 若你想要以其他的方式贊助或是想要成為門羅幣的贊助單位。
+  donate-other_para1: 電子郵件
+  donate-other_para2: 获取其他捐贈方式或如果您想成為門羅幣項目的贊助商。
+  supportdev: 支持開發者
+  supportdev_p: 致力于門羅幣的開發者大多是獨立志愿者，但其中一些可能通過 CCS 提案獲得資金。如果您希望通過捐贈一些 XMR 來支持他們的努力，請考虑直接聯繫他們或使用打赏服務。
+  supportdev_p2: 您可以在
+  supportdev_link: 門羅幣的 OpenHub 頁面上找到直接貢獻或曾經貢獻过門羅幣仓库的人员概覽（以及其他有用的统計数据）
+  sponsor: 贊助
+  sponsor_p: 您也可以通過贊助計划支持門羅幣。請參见專门的
+  sponsor_link: 贊助頁面
+  sponsor_p2: 了解更多信息。
+  altqrmonero: 門羅幣二維碼
+  altqrbitcoin: 比特币二維碼
+  primary_address: 主地址
+  donation_viewkeys: 仅查看錢包详情
+
 
 faq:
-  q1: 門羅幣的價值是怎麼產生的？
-  a1: 門羅幣之所以會有價值是因為人們願意購買它，若是沒有人願意購買門羅幣，他將不會有任何價值。而若是市場需求量提升，門羅幣的價格亦隨著上升，若是供過於求則會使價格下降。
-  q2: 我要如何取得門羅幣？
-  a2: 你可以從交易所或其他持有者購買門羅幣。此外，你也可以試著透過挖礦取得@區塊獎勵的門羅幣。
-  q3: 為什麽助記種子碼非常重要？
-  a3: '@助記種子碼 是可以用來回復錢包用的一組 25 個字詞，請保護好這些字詞，並不要與其他人透漏這些字詞，即使你的電腦損壞而無法使用，你還是可以 (在其他電腦)
-    回復你的帳戶。'
-  q4: 門羅幣的隱私保護與其他幣種有什麼差異？
-  a4: |-
-    門羅幣使用三種不同的技術來保護隱私： @環狀簽名 、 @環簽保密交易 (RingCT) 與 @隱匿性地址 。這些技術可以隱藏發送者與接收者在 @交易 中的資訊。所有的交易在網路上都是強制保護的，你無法意外地發送一筆透明的交易，這是門羅幣獨特的功能，你不需要信任任何人來保護你的隱私。
-  q5: 為什麼我的錢包要花這麼久的時間來完成同步？
-  a5: 如果你是在本地端運作全 @節點 ，你需要將整個 @區塊鏈 複製到你的電腦中。這可以花上不少時間，尤其是當你是使用舊硬碟或是較慢的網路速度更是如此。如果你是用
-    @遠端節點 ，你電腦將會需要請求獲得一份交易輸出，這過程有可能會需要數個小時完成。請保持耐心，若你為了較快地同步速度而改用遠端節點或輕 @錢包 ，將有可能犧牲一些隱私。
-  q6: 普通錢包與輕錢包有什麼差異？
-  a6: 以輕錢包來說，你將提供查看金鑰給節點以掃描你的帳戶在區塊鏈上的交易，節點會得知你在什麼時候接收到資金，但無法得知你接收到的金額或來源。根據你使用的錢包軟體差異，你可能可以使用你自己控制的節點以避免這類的隱私資訊洩漏。若需要完整的隱私保護，請使用普通錢包搭配你自己的節點。
-  q7: 門羅幣與比特幣有什麼差異？
-  a7: 門羅幣並不是基於比特幣所開發，它是基於 CryptoNote 協定所開發。比特幣是完全透明的系統，人們可以完整看見資金與金額是如何從一個使用者發送至另一個使用者。門羅幣在所有交易中都對這些隱私資訊提供了保護。它也擁有動態
-    @區塊 與手續費系統、抵抗 ASIC 礦機的工作量證明 (RandomX) 演算法、 @尾發行 與一些其他的改變。
-  q8: 門羅幣有區塊容量限制嗎？
-  a8: 沒有，門羅幣並沒有硬性固定的 @區塊容量 限制。取而代之的是，區塊容量會隨著需求量增加或減少區塊容量。但區塊的成長速率有設定上限以避免沒有節制的暴增 （
-    @可擴展性 ）。
-  q11: 什麼是貨幣替代性與為什麼這是重要的特性？
-  a11: '@貨幣替代性 (Fungibility) 是錢幣的基本特性，代表兩個相同單位的錢幣之間沒有差異。如果兩個人交換了一個 10 與兩個 5，沒有人會有所損失。但是，若假設所有人都知道那筆
-    10 曾被用在一場勒索軟體的攻擊事件中，那其他人還會願意接受這筆交易嗎？很可能不會。即使該持有者與該勒索攻擊事件無關。這就產生了一個問題，接收錢幣的那方將必須持續檢查是否不小心收到了贓款。門羅幣是滿足貨幣替代性的，因此人們再也不需要擔心這個問題。'
-  q12: 如果門羅幣這麼保護隱私，那我們要如何知道這些錢幣不是從無中生有的？
-  a12-1: 在門羅幣中，每一筆 @交易 輸出都會帶有一個金鑰映像 (key image)，每個映像只能被該筆交易輸出組合所產生。重複出現的金鑰映像將會使得該筆交易被礦工視為雙重花費
-    (double-spends) 而拒絕加入 @區塊 中，當每筆新的交易出現時，礦工將會驗證其金鑰映像不得出現在先前的交易中以確保該筆交易不是雙重花費。
-  a12-2: 即使在交易中的金額是被加密隱藏 (僅有接收方能得知交易金額)，我們也可以驗證每筆交易金額是否有效，因為金額是透過 Pedersen commitments
-    進行加密表示，意思是沒有外部觀察者可以得知交易輸入與輸出的金額，但是他們可以透過計算 @Pedersen-commitments 以確認沒有門羅幣是被無中生有的產生。
-  a12-3: 只要加密後的輸出金額相等於輸入金額總和 (包括發送給接收者的輸出、回到自己錢包的找零輸出、未加密的交易手續費)，那你就可以確認這是一筆有效的交易，沒有門羅幣在這之中被無中生有，Pedersen
-    commitments 使得金額總和可以被驗證是否相等，但每筆交易輸出個別的金額仍然得以維持在未知的狀態。
-  q13: 不論我怎麼做，門羅幣都可以很神奇的保護我的隱私嗎？
-  a13: 門羅幣不是魔法。如果你在使用門羅幣時提供了對方你的姓名與地址，對方並不會很神奇的就忘記你的姓名和地址。如果你交出了你的私鑰，有心人將可得知你的過往交易紀錄。如果你的電腦被入侵，有心人將可以側錄你的行為。如果你使用了低強度的密碼，有心人將有機會暴力破解你的金鑰檔。如果你在雲端備份你的種子碼，你很快將會招致損失。
-  q14: 門羅幣是百分之百匿名的嗎？
-  a14: 沒有所謂的百分之百匿名。 正常情況下，門羅幣能提供的匿名程度就是相對於不使用門羅幣能提供的保護程度。門羅幣也有可能出現 bug，即使沒有，還是有可能存在著一些在門羅幣使用中推測出些許隱私資訊的方法，不論是現在或未來，對隱私的的攻擊力道只會越來越強。舉例來說，即使你有繫安全帶還是有可能在車禍中重傷致死。請使用常識思考，謹慎面對威脅並作出一定程度的防禦。
+  basics: 基础
+  privacy: 隱私
+  security: 安全
+  economics: 經济
+  wallets: 錢包
+  node: 節點
+  intro: 查找關於門羅幣的常见問題和疑虑的答案。
+  toc: 目录
+  additional: "更多信息："
+  resandhelp: 資源與幫助
+  stackexchange: 關於門羅幣最完整的資源之一。如果您的問題不在此常见問題中，您可能會在門羅幣 StackExchange 上找到答案。
+  userguides: 幫助用戶與門羅幣網絡及其組件交互的文檔集合。
+  devguides: 開發者的指南和資源。
+  monerosupport: 專门幫助門羅幣用戶的 subreddit。基本上是社區成员互相幫助。使用搜索选项。
+  monerohow: "旧的知名資源，有大量指南和使用方法"
+  qword: "'[技術词汇]'是什么意思？"
+  aword: "門羅幣中使用的术语可能相当複雜，為此我們有"
+  aword1: "您經常看到的术语及其解释的综合列表。如果您不知道一個词的含义或想要更多相关信息，只需訪問門羅幣百科。一些經常搜索的术语示例：@node、@fungibility、@view-key、@pruning。"
+  qcontribute: 我如何貢獻？
+  acontribute: "門羅幣是一個開源社區項目。這意味着没有公司在運营它，也没有 CEO 雇佣人员。一切都由志愿者或社區资助的貢獻者構建，他們將時间奉献给項目。有很多方式可以貢獻："
+  acontribute1: 翻譯。這很容易，任何會說英语以外語言的人都可以幫助。翻譯主要发生在
+  acontribute2: "聯繫工作組。門羅幣中几乎所有事情都由工作組管理，工作組是致力于開發某些特定方面的貢獻者群體（通常由协调员领导）。一些例子包括：本地化工作組（翻譯）、社區工作組、GUI 工作組、外联工作組等。工作組大多是獨立的，有自己的結構。聯繫您感兴趣的工作組并询问如何幫助。有关聯繫方式列表，請參见"
+  acontribute3: 做您最擅长的事。您是設計师吗？創建門羅幣相关圖像并到处傳播。您是作家吗？撰寫關於門羅幣的文章。唯一的限制是您的想象力。找到您喜欢做的事并為門羅幣做！
+  acontribute4: "外联工作組寫了一篇有用的文章來幫助新人："
+  q1: 門羅幣為什么有价值？
+  a1: 門羅幣有价值是因為人們愿意購買它。如果没有人愿意購買門羅幣，那么它就不會有任何价值。如果需求超过供应，門羅幣的價格就會上涨；如果供应超过需求，價格就會下跌。
+  q2: 如何獲得門羅幣？
+  a2: 您可以從交易所或個人那里購買門羅幣。交易所是購買門羅幣最常见的方式；大多数司法管辖区都有合规的交易所。一些錢包包含功能，可以轻松用法幣或其他加密貨幣購買門羅幣。或者，您可以尝试挖掘門羅幣以從 @block 奖励中獲得币。
+  a2exchanges: "过去，您需要比特币才能購買門羅幣，但現在不再是這样。您可以在许多交易所直接用国家貨幣（美元、歐元、英镑等）或其他加密貨幣交易門羅幣。有些需要 KYC（身份證明）；其他的不需要，如去中心化交易所。本網站上有一個可以購買/出售門羅幣（XMR）的交易所列表："
+  q3: 為什么助記词很重要？
+  a3: "@mnemonic-seed 是一組 25 個單词，可用于在任何地方恢復您的賬戶。請妥善保管這些單词，不要與其他人分享。您可以使用此种子恢復您的賬戶，即使您的計算機崩溃了。"
+  q4: 門羅幣的隱私與其他币有何不同？
+  a4: "門羅幣使用三种不同的隱私技術：@ring-signatures、环机密交易（@RingCT）和 @stealth-addresses。這些分别隐藏 @transaction 中的發送方、金额和接收方。網絡上的所有交易都是強制私密的；没有办法意外發送透明交易。此功能是門羅幣獨有的。您不需要信任任何其他人來保護您的隱私。"
+  q5: 為什么我的錢包同步需要這么长時间？
+  a5: 如果您在本地運行完整的 @node，您需要將整個 @blockchain 復制到您的計算機上。這可能需要很长時间，尤其是在旧硬盘或慢速互联网連接上。如果您使用 @remote-node，您的計算機仍然需要請求所有输出的副本，這可能需要几個小時。請耐心等待，如果您愿意為更快的同步時间牺牲一些隱私，請考虑使用遠程節點或轻量级 @wallet。
+  q6: 轻錢包和普通錢包有什么区别？
+  a6: 對于轻錢包，您將查看密鑰提供给節點，節點會代表您掃描區塊鏈并查找您賬戶的傳入交易。此節點會知道您何時收到钱，但不會知道您收到了多少、從谁那里收到的或您要發送给谁。根据您的錢包軟件，您可能能夠使用您控制的節點以避免隱私泄露。為了更多隱私，請使用普通錢包，它可以與您自己的節點一起使用。
+  q7: 門羅幣與比特币有何不同？
+  a7: 門羅幣不是基于比特币的。它基于 CryptoNote 協議。比特币是一個完全透明的系統，人們可以准確看到從一個用戶發送到另一個用戶的金额。門羅幣隐藏此信息以保護所有交易中的用戶隱私。它還具有动態 @block 大小和动態費用、抗 ASIC 的工作量證明（@randomx）和 @tail-emission，以及其他几项變化。
+  q8: 門羅幣有区块大小限制吗？
+  a8: 不，門羅幣没有硬 @block 大小限制。相反，区块大小可以根据需求随時间增加或減少。它被限制在一定的增长率内以防止过度增长（@scalability）。
+  q11: 什么是可互换性，為什么它很重要？
+  a11: "@Fungibility 是貨幣的一個簡單属性，即相同价值的两個金额之间没有区别。如果两個人交换一张 10 元和两张 5 元，那么没有人會吃亏。然而，假設每個人都知道那张 10 元之前用于勒索軟件攻击。另一個人還會進行交易吗？可能不會，即使持有 10 元的人與勒索軟件没有聯繫。這是一個問題，因為接收金钱的人需要不断檢查他們收到的钱，以免最终得到被污染的币。門羅幣具有可互换性，這意味着人們不需要經历這种努力。"
+  q12: 如果門羅幣如此私密，我們如何知道它們不是凭空创造的？
+  a12-1: 在門羅幣中，每個 @transaction 输出都與一個密鑰镜像唯一关联，该密鑰镜像只能由该输出的持有者生成。被使用多次的密鑰镜像會被礦工作為双重支付拒绝，無法添加到有效的 @block 中。当收到新交易時，礦工會驗證密鑰镜像之前是否已存在于之前的交易中，以確保它不是双重支付。
+  a12-2: 我們還可以知道交易金额是有效的，即使您花费的输入值和您發送的输出值是加密的（這些對除接收者之外的所有人都是隐藏的）。因為金额使用 @Pedersen-commitments 加密，這意味着没有觀察者可以知道输入和输出的金额，但他們可以對 Pedersen 承诺進行数学運算，以確定没有門羅幣凭空创造。
+  a12-3: 只要您創建的加密输出金额等于正在花费的输入總和（包括接收者的输出和返回给您自己的找零输出以及未加密的交易费），那么您就有一個合法的交易，并且知道没有門羅幣凭空创造。Pedersen 承诺意味着總和可以被驗證為相等，但總和的門羅幣价值以及單獨的输入和输出的門羅幣价值是無法確定的。
+  aabout-auditability: 關於供应可審計性的更多信息
+  adetailed-auditability: 供应可審計性的深入分析
+  q13: 門羅幣是魔法，无论我做什么都能保護我的隱私吗？
+  a13: 門羅幣不是魔法。如果您使用門羅幣但將您的姓名和地址告诉另一方，另一方不會神奇地忘記您的姓名和地址。如果您泄露了您的密鑰，其他人會知道您做了什么。如果您受到攻击，其他人將能夠記录您的按键。如果您使用弱密碼，其他人將能夠暴力破解您的密鑰文件。如果您在云端備份种子，您很快就會變穷。
+  q14: 門羅幣 100% 匿名吗？
+  a14: 不存在 100% 匿名的东西。如果没有别的，您的匿名集就是使用門羅幣的人群。有些人不使用門羅幣。門羅幣也可能有漏洞。即使没有，現在或以后可能存在通過門羅幣的隱私層推断某些信息的方法。攻击只會變得更好。如果您系安全带，您仍然可能在车祸中死亡。使用常识、谨慎和深度防御。
+  q15: 門羅幣是混币器或混币服務吗？
+  a15: 不是。門羅幣使用完全非交互式、非托管式和自动的流程來創建私密交易。相比之下，對于混币服務，用戶選擇加入參與。
+  qwallet: 我應該使用什么錢包？
+  awallet: 有多种錢包可用于大量平台。在本網站上，您會找到核心團隊发布的錢包（GUI 和 CLI）以及广受信任且開源的第三方桌面和移动錢包列表。
+  qnofunds: 我看不到我的資金。我刚刚失去了所有門羅幣吗？
+  anofunds: "您可能没有。很难簡單地'丢失'您的币，因為從技術上讲它們无处可寻。您的币'存在'于區塊鏈上，并通過密碼学保護的公钥和私钥系統鏈接到您的賬戶。這就是為什么如果您看不到您的資金，可能是因為技術問題。查看本頁顶部的'資源與幫助'部分，获取有用資源列表，這些資源將幫助您识别和解决問題。"
+  qnodetor: 如何通過 Tor 連接我的節點？
+  anodetor: 對 Tor 的支持仍处于初期阶段，但已經可以通過網絡本地發送交易并在 Tor 網絡上運行門羅幣 @daemon。更好的 Tor 和 I2P 集成正在進行中。
+  qfullpruned: 如何决定是運行完整節點還是修剪節點？
+  afullpruned: "完整 @node 需要相当大的存储空间，下載和驗證整個區塊鏈可能需要很长時间，尤其是在较旧的硬件上。如果您的存储空间有限，建議使用修剪節點。它仅存储 1/8 的不必要區塊鏈数据，同時保留完整的交易歷史。如果有足够的存储空间，建議使用完整節點，但修剪節點仍然對網絡有很大貢獻并改善您的隱私。"
+  qblocksize: 門羅幣區塊鏈有多大？
+  ablocksize: "門羅幣 @blockchain 始终在增长，因此没有固定大小。截至 2024 年，完整區塊鏈约為 ~225GB。修剪的區塊鏈约為 ~86GB。查看門羅幣百科条目 @pruning 了解完整和修剪區塊鏈之间的区别。"
+  qblockspace: 為什么區塊鏈需要這么多空间？
+  ablockspace: "当您下載 @blockchain 時，您正在下載自門羅幣網絡創建以來发生的 @transactions 的整個歷史。交易和相关数据很大，每個節點都必須保留整個歷史以確保每個人都相同。@Pruning 區塊鏈允许運行仅保留 1/8 的非严格必要區塊鏈数据的節點。這导致區塊鏈比完整區塊鏈小 2/3。對于磁盘空间有限的人來說很方便。查看門羅幣百科条目 @node 和 @remote-node 了解更多详情。"
+  qavoidbc: 我可以避免下載整個區塊鏈吗？
+  aavoidbc: "是的。您不需要下載 @blockchain 即可在網絡上進行交易。您可以連接到 @remote-node，它會為您存储區塊鏈。所有最常见的 @wallets（包括 GUI 和 CLI）都允许使用遠程節點在網絡上進行交易。有多种方式可以利用此功能。例如，GUI 和 CLI 提供'引导節點'功能，允许人們下載自己的區塊鏈，同時使用遠程節點立即使用網絡。不断探索改善門羅幣網絡可用性的方法。"
+  qscanned: 為什么每次打开錢包都需要掃描？
+  ascanned: 大约每 2 分鐘會向 @blockchain 添加一個新的 @block。您的錢包需要掃描這些区块以查找属于它的 @transactions。使用轻錢包（也称為遠程同步錢包）時，此过程不是必需的。對于轻錢包，遠程服務器（可能由您管理）代表您進行掃描。
+  qdangernode: 運行個人節點危险吗？
+  adangernode: "運行個人 @node 是與門羅幣網絡交互的最安全方式，因為您完全控制，不需要依赖第三方。從一般角度來看，運行節點并不危险，但請記住，您的 ISP 可以看到您正在運行門羅幣節點。"
+  qdangerrnode: 使用遠程節點危险吗？節點操作员可以從我這里獲得什么数据？
+  adangerrnode: "始终建議，特别是對于注重隱私的用戶，在網絡上進行交易時使用個人節點以實現最高的隱私率。有些人為了方便更喜欢使用不受其控制的 @remote-node（公共節點）。不必處理 @blockchain 個人副本的便利是有代价的：隱私降低。遠程節點操作员能夠看到交易來自什么 IP 地址（即使無法看到接收者或金额），在某些极端情况下，可以進行能夠降低您隱私的攻击。通過在 Tor 或 I2P 網絡上使用遠程節點或使用 VPN 可以減轻一些危险。"
+  qantivirus: 為什么我的杀毒軟件/防火墙將我刚下載的門羅幣軟件標記為恶意軟件？
+  aantivirus: 下載門羅幣軟件（GUI 和 CLI）后，您的杀毒軟件或防火墙可能會將可执行文件標記為恶意軟件。有些杀毒軟件只是警告您可能的威胁，其他杀毒軟件會静默刪除您下載的 @wallet / @daemon。這很可能是因為集成的礦工，它用于挖礦和 @block 驗證。一些杀毒軟件可能錯误地將礦工视為危险軟件并采取行动刪除它。
+  aantivirus1: 正在討論该問題并制定解决方案。同時，如果您收到杀毒軟件的警告，請確保您下載的軟件是合法的（請參见下面鏈接的指南），然后在杀毒軟件中為其添加例外，這样就不會被刪除或阻止。如果您需要幫助，請随時聯繫社區。
+  qmoneromeaning: "為什么門羅幣被称為'Monero'？"
+  amoneromeaning: "Monero 是世界语單词，意思是'硬币'。最初門羅幣被称為'Bitmonero'，在世界语中翻譯為'比特币'。社區决定從原始維護者分叉后，'bit'被刪除，改為簡單的'Monero'。"
+  qimporting: 我可以手动導入區塊鏈吗？
+  aimporting: >
+    是的，您可以，但您可能不應該。導入外部 @blockchain 非常占用資源，并迫使您信任為您提供區塊鏈的實體。通常以正常方式下載更快：運行節點并讓它與網絡中的其他 @nodes 同步。如果您使用 Windows，請遵循下面的指南。如果您是 Linux 用戶，可以使用"monero-blockchain-import"工具，该工具包含在下載 GUI 或 CLI 錢包時的存档中。使用此命令开始同步導入的區塊鏈："monero-blockchain-import --input-file blockchain.raw"。
+  qhf: 門羅幣真的每 6 個月進行一次硬分叉吗？
+  ahf: 門羅幣曾經每年進行 2 次網絡升级（硬分叉），但現在不再是這样。選擇双年硬分叉是為了能夠引入重要的共识變更，這些變更添加了隱私功能和網絡范围的改進（例如 @bulletproofs 和 CLSAG 都需要硬分叉）并避免協議僵化。最近，双年硬分叉包括對 PoW 算法的更改，以保持抗 ASIC 性。
+  ahf1: 開發社區和核心團隊一致認為協議足够稳定和成熟，不再需要双年硬分叉。此外，門羅幣周围的生態系統在這些年中呈指数级增长，频繁的協議更改將越來越难以协调，可能不利于生態系統的增长和用戶體驗。锦上添花的是，新算法 @RandomX 正在確保长期抗 ASIC 性，因此不再需要定期更改。網絡升级仍將用于添加重要的協議改進和共识更改，但频率较低且不那么严格（每 9-12 個月）。最后一次硬分叉是在 2022 年 8 月 13 日。
+  qvideos: 有我可以觀看的視頻來了解門羅幣吗？
+  avideos: >
+    多年來，社區創建了大量信息内容，如文章和視頻。其中大部分視頻在 YouTube 等平台上公开提供。在本網站上，我們托管了一些解释門羅幣基础知识的視頻。為了優化其有效性，应按顺序觀看它們：
+  video_intro: 門羅幣简介
+  video_essentials: 基础知识
+  video_sa: 隐身地址
+  video_ringsig: 环签名
+  video_ringct: 环机密交易
+  fcmp: 全链成员證明
+  mvideos: "門羅幣百科条目中的更多信息："
+  aavailable: 也可用于
+  and: 和
+  qlongtimemove: 我很长時间没有使用我的門羅幣了，我是否因為硬分叉（網絡升级）而丢失了我的币？
+  alongtimemove: 不用担心，您的币是安全的。要能夠使用它們，您只需下載并運行最新的門羅幣軟件。您可以使用之前保存的 @mnemonic-seed 随時恢復您的錢包。請注意，門羅幣中的硬分叉是预定的且无争议的。這意味着不會創建新币。
+  qvuln: 門羅幣有已知的漏洞吗？
+  avuln: >
+    門羅幣社區創建了一系列名為"Breaking Monero"的視頻，其中探索和討論了潜在的門羅幣漏洞。有 14 個視頻，每個探索不同的主题。查看 <a href="https://www.youtube.com/playlist?list=PLsSYUeVwrHBnAUre2G_LYDsdo-tD0ov-y">YouTube 上的播放列表</a>。
+  vulnspotify: 在 Spotify 上作為播客提供
+  qasicresistance: "什么是抗 ASIC？為什么它很重要？"
+  aasicresistance: ASIC 基本上是專门為做一件工作而創建的特殊計算機，與為通用目的而制造的普通計算機相反。這個特性使 ASIC 在 @mining 方面非常高效。
+  aasicresistance1: 問題是這些設備非常昂贵，只有少数人能夠负担得起。這导致少数實體拥有網絡的大量算力，這對網絡本身的安全性構成严重威胁。例如，如果大型 ASIC 操作员串通并設法獲得網絡的大部分算力，他們可以任意拒绝交易。
+  aasicresistance2: >
+    門羅幣通過抗 ASIC 解决了這個問題：它使用一种算法（@randomx），大大降低了 ASIC 的效率，使其无利可圖。礦工可以使用普通消费级硬件，這允许他們公平竞争。門羅幣網絡目前由数千名使用'常规'計算機的礦工保護。這导致網絡更难攻击，没有礦工比其他礦工有显著优势（他們都使用或多或少相同的硬件）。
+  qmaxsupply: 門羅幣的最大供应量是多少？
+  amaxsupply: 門羅幣有固定的发行率，而不是設定的最大供应量。門羅幣尾部发行從区块 2641623 开始，于 2022 年 6 月 9 日 00:29 UTC，并將永久保持在每分鐘 0.3 XMR（每 @block 0.6 XMR）。這在第一年约為 1% 的通货膨胀率，未來几年將接近 0% 的通货膨胀率。這個 @tail-emission 允许永久激励來保護門羅幣，即使在遥遠的未來，同時保持通货膨胀率非常低。
+  qtailemission: 為什么門羅幣没有最大供应量？
+  atailemission: 礦工通過 @mining 区块在門羅幣網絡上處理交易。@block 的礦工獲得 .6 XMR 的恒定区块奖励，以及在该区块中有交易的用戶的 @transaction 費用。門羅幣有区块奖励而不是仅依赖交易費用，以激励礦工繼續用他們的算力保護網絡，并保持交易費用低。
+  atailemission1: 這個恒定区块奖励导致的 @tail-emission 创造了低于 1% 的通货膨胀率，随着時间的推移趋向于 0%。貨幣的固定发行確保人為腐败不能过度膨胀供应。保持網絡可预測、去中心化和安全。
 
-  toc: 內容列表
-  additional: 更多資訊：
-  resandhelp: 資源＆幫助
-  intro: 一些常見問題與其相關的解答與資源
+
 mining:
-  intro1: 門羅幣是一種透過工作量證明達到分散式共識的加密貨幣。你可以在下面找到一些關於如何開始挖礦的資訊。
-  intro2: 門羅幣專案並不為任何礦池、軟體、硬體做背書，以下提供之內容僅為教學使用的資訊分享。
-  support: 技術支援
-  software: 挖礦軟體
-  software_para: 請注意有些挖礦工具可能會收取開發者手續費。
+  intro1: 門羅幣是一种依赖工作量證明挖礦來實現分布式共识的加密貨幣。以下是一些關於如何开始挖礦的信息和資源。
+  intro2: 門羅幣項目不認可任何特定的矿池、軟件或硬件，以下内容仅供參考。
+  pow: 工作量證明
+  philosophy: >
+    門羅幣的哲学之一是維持平等挖礦，讓每個人都有挖礦的可能性。為了實現這一点，門羅幣使用由門羅幣社區成员構思和開發的特殊算法：@RandomX。這個 PoW 算法抗 ASIC，這意味着無法構建專用硬件來挖掘門羅幣。礦工必須使用消费级硬件并公平竞争。
+  efficiency: 門羅幣可以由 CPU 和 GPU 挖掘，但前者效率要高得多。
+  miningset: 獨立或矿池挖礦
+  miningsetp: >
+    礦工可以决定是喜欢獨立挖礦還是在矿池中挖礦。每种方法都有其优点和缺点，但門羅幣項目鼓励個人使用門羅幣軟件（<a href="https://www.getmonero.org/downloads/#gui">GUI</a> 和 <a href="https://www.getmonero.org/downloads/#cli">CLI</a>）進行獨立挖礦，因為這种类型的獨立挖礦是增強門羅幣網絡鲁棒性的最有效方式。也鼓励使用 P2Pool 挖礦。
+  procons: "獨立和矿池挖礦的优缺点："
+  solo: 獨立
+  prosecure: 使網絡比在矿池中挖礦更安全
+  prowallet: 您可以使用門羅幣錢包挖礦。无需额外軟件
+  conlong: "根据您的算力，可能需要数月才能找到一個区块。這通常被称為'抽奖'"
+  pool: 矿池
+  propay: 频繁支付。您將根据您在所选矿池中的參與程度獲得 XMR。
+  conopfee: 您必須向矿池運营商支付費用
+  conminfee: 您只能使用第三方軟件進行矿池挖礦，這可能會占用您一小部分份额
+  conpolcent: 太多人在單個矿池上挖礦可能导致矿池拥有 >50% 的總算力，這很危险
+  choosepol: "如果您需要幫助選擇矿池或只是想了解更多信息，請使用："
+  hardware: 硬件
+  hardwarep: 門羅幣可以在 CPU 和 GPU 上挖掘，但后者的效率遠低于前者。您可以使用 <a href="https://xmrig.com/benchmark">xmrig 基准頁面</a>了解您的硬件與其他硬件相比的性能（某些結果可能已过時）。
+  software: 軟件
+  softwarep: >
+    在挖礦軟件方面有多种選擇。如前所述，要進行獨立挖礦，可以使用 CLI 或 GUI 錢包（仅 CPU）。如果您想在矿池中挖礦或使用 GPU 挖礦，您需要專用軟件。支持門羅幣的礦工：
+  software_para: 請注意，某些礦工可能有開發者費用。
+  support: 支持
+  supportp: 如果您有問題或只是想與其他礦工交流，請來門羅幣挖礦聊天。在 <a href="https://matrix.to/#/%23xmrmine:matrix.org">Matrix</a> 和 <a href="irc://irc.libera.chat/#monero-mining">Libera</a> 上。
+  p2poolh: "P2Pool：獨立和矿池挖礦的最佳結合"
+  p2poolnew: >
+    P2Pool 是一种巧妙的新型門羅幣挖礦方式，允许礦工獲得矿池提供的频繁支付，而无需信任中心化矿池。P2Pool 是一個点對点挖礦池，讓礦工完全控制他們的門羅幣節點及其挖掘内容。更多详情請參见 <a href="/2021/10/05/p2pool-released.html">公告帖</a>。
+  p2poolp: >
+    P2Pool 是門羅幣的侧链，P2Pool 区块可能是門羅幣区块。每個礦工提交包含對同時挖礦的所有礦工（当前在 PPLNS 窗口中有份额的礦工）的支付的区块模板。高质量的区块模板作為区块添加到 P2Pool 區塊鏈；這些計為找到它們的礦工的"份额"。
+  p2poolfeatures: 主要功能
+  p2pdecentralized: <b>去中心化：</b>没有可以关闭/阻止/恶意的中央服務器。
+  p2ppermissionless: <b>无需许可：</b>任何人都可以加入侧链，并且實际上無法審查個别礦工。
+  p2ptrustless: <b>无需信任：</b>没有矿池錢包；資金從不托管。所有矿池区块立即向礦工支付。
+  p2pplns: <b>PPLNS</b> 支付方案
+  p2pzerofee: 0% 費用
+  p2pzeropayout: <b>0 XMR</b> 支付費用
+  p2pminpayout: 低于 0.0004 XMR 最低支付
+  p2pmoreinfo: "項目 GitHub 仓库上的更多信息和详情："
 
-using: {}
 what-is-monero:
-  need-to-know: 你需要知道的事情
-  leading: 門羅幣是專注在保護隱私與對抗審查交易的領導加密貨幣。
-  leading_para1: 大多數現行的加密或幣，包括比特幣與乙太幣都是透明的區塊鏈，意思是所有交易都是向全世界任何一個人開放驗證與查詢。此外，發送與接收這些交易的錢包地址有可能會被連結至某個人在真實世界中的身分。
-  leading_para2: 門羅幣利用密碼學保護了發送與接收的錢包地址，也保護了交易金額。
-  confidential: 門羅幣交易是機密且無法追蹤的。
-  confidential_para1: 每一筆門羅幣的交易，在預設的狀況下，發送與接收的地址與交易金額都是被混淆過的資訊。這項永遠啟用的隱私保護代表著門羅幣的每個使用活動都是在提升其他人的隱私保護，這與其他選擇性透明的加密貨幣
-    (例如 Zcash) 不同。
-  confidential_para2: 門羅幣是滿足貨幣替代性的。由於資訊都是被混淆過的，門羅幣無法被先前的交易汙染，這代表門羅幣永遠不會有被審查而拒絕收取的風險。
-  grassroots: 門羅幣是草根型的社群，吸引了全世界頂尖的加密貨幣研究員與工程師
-  electronic: 門羅幣提供全世界一個交易快速，低負擔的電子現金。
-  electronic_para1: 不存在著需時數日的等待期或是詐騙退款風險，不會有所謂的「資金管控」- 這些都是限制傳統貨幣流通的因素，時常發生於一些在極端狀況下，經濟狀況不穩定的國家。
-  videos: 門羅幣影片 (英文)
+  need-to-know: 您需要知道什么
+  leading: 門羅幣是專注于私密和抗審查交易的领先加密貨幣。
+  leading_para1: 大多数現有的 @cryptocurrencies，包括比特币和以太坊，都有透明的 @blockchains。@transactions 可以被世界上任何人驗證和/或追踪。這意味着這些 @transactions 的發送和接收 @addresses 可能與現實世界的身份相关联。
+  leading_para2: 另一方面，門羅幣使用各种技術來確保其用戶的隱私。
+  confidential: 門羅幣交易是保密且無法追踪的。
+  confidential_para1: "與選擇性透明的替代方案（例如 Zcash）不同，門羅幣是唯一一种默認情况下每個用戶都是匿名的主要加密貨幣。每笔交易的發送方、接收方和金额都通過使用三种重要技術隐藏：@Stealth-Addresses、@Ring-Signatures 和 @RingCT。"
+  confidential_para2: 因為每笔交易都是私密的，門羅幣無法被追踪。這使其成為真正的 @fungible 貨幣。接受門羅幣的商戶和個人不需要担心黑名單或被污染的币。
+  grassroots: 門羅幣是一個草根社區，吸引世界上最好的加密貨幣研究人员和工程人才。
+  grassroots_p1: 門羅幣項目处于加密貨幣隱私和安全的前沿。其
+  grassroots_p2: 研究實驗室
+  grassroots_p3: 和開發團隊不断致力于新的创新技術。自推出以來，该項目已收到來自全球
+  grassroots_p4: 500 多名開發者
+  grassroots_p5: 的貢獻。
+  grassroots_p6: 众多
+  grassroots_p7: 论坛和聊天频道
+  grassroots_p8: 可供任何人加入，社區始终欢迎新成员。
+  electronic: 門羅幣是电子現金，允许快速、廉价地向世界任何地方付款和收款。
+  electronic_para1: 使用門羅幣，没有电汇或支票清算費用，没有多天的持有期，也没有欺诈性退單。因為門羅幣是去中心化的，它不受任何特定法律管辖区的约束，并提供免受资本管制的安全。
+  videos: 門羅幣視頻（英文）
+  aboutb: 關於
+  walletb: 获取錢包
+  getb: 获取門羅幣
+  joinb: 加入工作組
 
 about:
-  history: 簡要歷史
-  history_para1: 門羅幣專案創始於 2014 年 4 月。是一次公平、預先公告以 CryptoNote 程式碼作為基礎的發行。沒有預挖或瞬挖，也沒有給開發工作的抽成。詳見原始的
-    Bitcointalk 公告
-  history_para2: 討論串。
-  history_para3: 創立者 thankful_for_today 做了一些備受社群爭議的修改，結果門羅幣核心開發者跟著支持他們的社群們分叉了專案，這群核心開發者在那之後就持續負責看管著門羅幣專案的開發。
-  history_para4: 門羅幣在創始之後做出了數個大程度的改進，區塊鏈檔案被移植到新的資料庫架構以提供更好的效率及彈性，環狀簽名也被設下了最低限制，使得所有交易預設都必須要是保護隱私的，環狀保密交易也加入以隱藏交易金額，幾乎所有的改進都是為了提升安全性與保護隱私，或是使其更易於使用，門羅幣將持續秉持以安全性優先，效率與易用性其次的目標進行開發。
-  values: 我們的核心價值
-  values_para: 門羅幣不僅僅是一項科技，它更是這項科技所想要呈現的。以下列出一些重要的發展哲學。
+  history: 简史
+  history_para1: 門羅幣于 2014 年 4 月推出。這是 CryptoNote 參考代碼的公平、预先宣布的推出。没有预挖或瞬间挖礦，区块奖励的任何部分都不归開發。請參见原始 Bitcointalk 主题
+  history_para2: 這里。
+  history_para3: 创始人 thankful_for_today 提出了一些社區不同意的有争议的變更。发生了争执，門羅幣核心團隊分叉了項目，社區跟随了這個新的核心團隊。自那時起，這個核心團隊一直提供监督。
+  history_para4: 門羅幣自推出以來進行了多项重大改進。區塊鏈被迁移到不同的数据库結構以提供更高的效率和灵活性，設置了最小环签名大小，以便所有交易都是強制私密的，并實施了 RingCT 以隐藏交易金额。几乎所有改進都提供了安全性或隱私性的改進，或者促進了使用。門羅幣繼續以隱私和安全為首要目標，易用性和效率為次要目標发展。
+  values: 我們的价值觀
+  values_para: 門羅幣不仅仅是一项技術。它也是技術所代表的东西。以下列出了一些重要的指导理念。
   security: 安全
-  security_para: 使用者必須要能夠信任門羅幣的交易，不用擔心錯誤與攻擊的風險。門羅幣提供礦工全額的獎勵，以期待這個最關鍵的角色可以為交易網路提供安全性。交易在密碼學上使用最新的加密工具以保證安全性。
+  security_para: 用戶必須能夠信任門羅幣及其交易，没有錯误或攻击的风险。門羅幣向礦工提供全额区块奖励，他們是提供此安全性的網絡中最关键的成员。交易使用可用的最新和最具弹性的加密工具進行加密保護。
   privacy: 隱私
-  privacy_para: 門羅幣相當重視隱私保護，門羅幣必須要能夠在法律上保護使用者，在更極端的例子中，是包括了生死交關的場合。這種隱私保護必須是所有使用者都可以完整獲得，不論他們是否了解這項科技或是了解門羅幣是如何運作。使用者必須要能信任門羅幣以期待不須擔心被其他人探查而改變其消費習慣。
+  privacy_para: 門羅幣非常重视隱私。門羅幣需要能夠在法庭上保護用戶，在极端情况下，免受死刑。這种级别的隱私必須完全可供所有用戶訪問，无论他們在技術上是否有能力或對門羅幣的工作原理一无所知。用戶需要以這样的方式自信地信任門羅幣，即他們不會因為担心其他人发現而被迫改變他們的消费习惯。
   decentralization: 去中心化
-  decentralization_para: 門羅幣致力於提供最大程度的去中心化。使用門羅幣時，你不需要去信任網路上的其他人，且門羅幣並不是由任何一個大型機構所運行。低使用門檻的工作量證明演算法使得門羅幣挖礦可以在一般的電腦中進行，這使得購買大量的挖礦算力變得更困難。透過
-    I2P 連線的節點可以降低揭露交易敏感資訊與通訊審查的風險，開發決策是非常透明化的公開討論，開發者會議紀錄也是完全公開在線上提供大家閱覽的。
-
+  decentralization_para: 門羅幣致力于在網絡安全和代碼開發方面提供最高程度的去中心化。其工作量證明算法防止專用挖礦硬件主导網絡，并允许公平分配区块奖励。此外，門羅幣的開發和研究通過全球协作進行，項目以最大透明度進行。每個開發决策都對公开討論开放，每個主要開發者會议都在線发布。
 
 developer-guides:
-  outdated: "請注意：以下的教學已在近期由社群更新並保持在最新狀態。然而，方法函式常常會增加 / 移除 / 更新，因此教學中描述的資訊仍有可能不夠準確。"
-  rpc: RPC 說明文件
-  daemonrpc: 節點 RPC 說明文件
-  walletrpc: 錢包 RPC 說明文件
+  head: 開發者指南、文檔和有用資源的集合（英文）。
+  outdated: "方法經常被添加/刪除/更新，可能描述不准確。"
+  rpc: RPC 文檔
+  daemonrpc: 守護進程 RPC
+  daemonrpc_descr: "@daemon 的 RPC 调用。包括输入、输出和示例。英文。"
+  walletrpc: 錢包 RPC
+  walletrpc_descr: monero-wallet-rpc 调用。包括输入、输出和示例。英文。
+  external: 外部資源
+  external_head: 社區成员維護的有用文檔和資源。
+  monerodocs: 旨在組织有关門羅幣的技術知识的综合資源。某些部分可能已过時。
+  moneroexamples: 與門羅幣開發相关的丰富示例和文檔列表。
+  moneroecosystem: 門羅幣開發者社區。包含一些門羅幣工作組的库、資源和指南，如本地化工作組和外联工作組。
+  monerose: 用戶和開發者最完整的資源之一。
+  libraries: 库和助手
+  libraries_para: 門羅幣库由社區創建和維護。以下仓库未經核心團隊審查，仅在此处列出以方便使用。在使用它們之前，請進行自己的研究，如果您想將库添加到此列表，請在
+  monero-javascript: 用于使用門羅幣的 Node.js 库。
+  monero-nodejs: 用于與 monero-wallet-rpc 交互的錢包管理器。
+  monerophp: 門羅幣集成團隊用 PHP 編寫的門羅幣库。
+  monerowp: Wordpress 的門羅幣 WooCommerce 插件。
+  monero-python: 用于處理門羅幣加密貨幣的综合 Python 模块。
+  moneriote-python: 用于維護門羅幣开放節點 DNS 記录的 Python 脚本。
+  monerorpc: 門羅幣錢包和守護進程 RPC 的 Java 接口。
+  monero-java: 用于使用門羅幣的 Java 库。
+  monero-cpp: 用于使用門羅幣的 C++ 库。
+  vanity-monero: 為 CryptoNote 貨幣（門羅幣等）生成虚荣地址。
+  go-monero-rpc-client: 門羅幣錢包和守護進程 RPC 的 Go 客户端。
+  monero-rs: 支持区块数据結構和與門羅幣加密貨幣相关的密鑰/地址生成和掃描的（反）序列化库。
+  csharp-monero: 與門羅幣的 JSON-RPC API 交互的錢包和守護進程客户端，構建于 .netstandard2.1 上
+
 user-guides:
-  general: 一般
+  general: 常规
   mining: 挖礦
-  recovery: 回復
+  backup: 備份
+  nodesync: 節點與同步
+  recovery: 恢復
   wallets: 錢包
-  offline-backup: 如何製作離線備份
-  vps-node: 如何在 VPS 上運行節點
-  import-blockchain: 匯入門羅幣區塊鏈檔案
+  hardwarewallet: 硬件錢包
+  anonimizationnetworks: 匿名化網絡
+  offline-backup: 如何進行离線備份（高级）
+  vps-node: 如何運行節點（systemd）
+  import-blockchain: 如何導入門羅幣區塊鏈（高级）
   monero-tools: 門羅幣工具
-  purchasing-storing: 安全地購買與儲存門羅幣
-  verify-allos: 在 Linux, Mac, 或 Windows 系統上驗證執行檔 (進階)
-  verify-windows: 在 windows 系統上驗證執行檔 (入門)
-  mine-on-pool: 如何使用 XMRig 在礦池挖礦
-  solo-mine: 如何使用 GUI 錢包進行 solo 挖礦
-  locked-funds: 如何修復被鎖定的資金
-  restore-account: 如何回復你的帳戶
-  qubes: 使用 Qubes 與 Whonix 隔離你的 CLI 錢包 / 節點
-  cli-wallet: 開始使用 CLI 錢包
-  remote-node-gui: 如何讓 GUI 錢包連接至遠端節點
-  view-only: 如何製作唯讀錢包
-  prove-payment: 如何證明付款
-  restore-from-keys: 從金鑰回復錢包
-  ledger-wallet-cli: 如何使用 CLI 錢包產生 Ledger 錢包 (monero-wallet-cli)
-  multisig-messaging-system: 如何使用 MMS 與 CLI 錢包進行多重簽名交易
-  tor_wallet: Connecting your local wallet to your own daemon over Tor
+  purchasing-storing: 如何創建門羅幣纸錢包
+  verify-allos: 如何使用命令行驗證您的門羅幣 CLI/GUI 軟件是安全的（高级）
+  verify-windows: 如何在 Windows 上驗證您的門羅幣 CLI/GUI 軟件是安全的（初学者）
+  mine-on-pool: 如何使用 XMRig 在矿池上挖礦
+  solo-mine: 如何使用門羅幣 GUI 獨立挖礦
+  locked-funds: 如何修復锁定的資金
+  restore-account: 如何從助記词恢復錢包
+  qubes: 如何通過 Qubes + Whonix 在 Tor 上使用門羅幣，带錢包隔离
+  cli-wallet: 門羅幣 CLI 錢包指南
+  remote-node-gui: 如何在 GUI 錢包中連接到遠程節點
+  view-only: 如何制作仅查看錢包
+  prove-payment: 如何證明已付款
+  restore-from-keys: 如何從密鑰恢復錢包
+  ledger-wallet-cli: 如何在門羅幣 CLI 上使用 Ledger 錢包
+  multisig-messaging-system: 使用 MMS 和 CLI 錢包進行多重签名交易
+  tor_wallet: 如何通過 Tor 將錢包連接到您自己的節點
+  node-tori2p: 如何向節點添加 Tor 和 I2P
+  guiguide: 門羅幣 GUI 錢包指南
+  make-payment: 如何進行付款
+  change-restore-height: 如何更改錢包恢復高度
+  back: 返回列表
+  scan-txid: 如何掃描缺失的交易 CLI/GUI
+  join-monero-matrix: 通過 Element 加入門羅幣社區 Matrix 服務器
 
 roadmap:
-  completed: 已完成的工作
-  ongoing: 進行中的工作
-  upcoming: 即將到來的工作
+  completed: 已完成的任務
+  ongoing: 正在進行的任務
+  upcoming: 即將進行的任務
+  proposed: 建議的任務
   future: 未來
 
-  jan:
-  feb:
-  mar:
-  apr:
-  may:
-  jun:
-  jul:
-  aug:
-  sep:
-  oct:
-  nov:
-  dec:
-  comingsoon:
-  launched:
-  renamed:
-  recovered:
-  paper1-2:
-  paper3:
-  released-0-8-8-6:
-  paper4:
-  released-0-9-0:
-  paper5:
-  ringsize-3:
-  released-0-10-0:
-  splitcoinbase:
-  released-0-10-1:
-  guibeta1:
-  enableringct:
-  released-0-10-2:
-  released-0-10-3-1:
-  hfminblock:
-  webredesign:
-  released-0-11-0:
-  fluffyblocks:
-  guioutbeta:
-  minringsize5:
-  releasedgui-0-11-0:
-  zeromq:
-  subaddress:
-  paper6:
-  release-0-11-1:
-  releasedgui-0-11-1:
-  multisig:
-  released-0-12-0:
-  releasedgui-0-12-0:
-  cryptonightv2:
-  hfring7:
-  getmonero-fr-pl:
-  released-0-12-1:
-  ledger:
-  released-0-12-2:
-  released-0-12-3:
-  releasedgui-0-12-3:
-  kovrialpha:
-  moneropedialoc:
-  getmonero-ar:
-  released-0-13-0-2:
-  releasedgui-0-13-3:
-  cryptonightv3:
-  bulletproofs:
-  ringsize11:
-  released-0-13-0-4:
-  paper8-9:
-  releasedgui-0-13-0-4:
-  paper7:
-  paper10:
-  mms:
-  getmonero-de:
-  released-0-14-0:
-  releasedgui-0-14-0:
-  ccs:
-  released-0-14-0-2:
-  cryptonightr:
-  getmonero-pt_br:
-  dlsag:
-  pruning:
-  trezort:
-  nanox:
-  tori2p:
-  multisigms:
-  weblate:
-  rpcpay:
-  ipv6:
-  removedpid:
-  nodediscovery:
-  randomx:
-  getmoneroweblate:
-  releasedgui-0-15-0-4:
-  released-0-15-0-5:
-  dandelion:
-  onionaddress:
-  supercop:
-  clsag:
-  tryptych:
-  kastelo:
-  layer2:
-  returnaddr:
+  jan: 一月
+  feb: 二月
+  mar: 三月
+  apr: 四月
+  may: 五月
+  jun: 六月
+  jul: 七月
+  aug: 八月
+  sep: 九月
+  oct: 十月
+  nov: 十一月
+  dec: 十二月
+  comingsoon: 即將推出
+
+  launched: 在 Bitcointalk 上推出
+  renamed: 從 Bitmonero 更名為 Monero
+  recovered: 從垃圾邮件攻击中恢復
+  paper1-2: 門羅幣研究實驗室論文 1 和 2 发布
+  paper3: 門羅幣研究實驗室論文 3 发布
+  released-0-8-8-6: 0.8.8.6 发布
+
+  paper4: 門羅幣研究實驗室論文 4 发布
+
+  released-0-9-0: 0.9.0 Hydrogen Helix 发布
+  paper5: 門羅幣研究實驗室論文 5 发布
+  ringsize-3: 網絡升级要求所有 @transactions 的最小 @ringsize 為 3
+  released-0-10-0: 0.10.0 Wolfram Warptangent 发布
+  splitcoinbase: 網絡升级將区块奖励拆分為 @denominations
+  released-0-10-1: 0.10.1 Wolfram Warptangent 发布
+  guibeta1: 官方 GUI Beta 1 发布
+
+  enableringct: 網絡升级以启用 @RingCT 交易
+  released-0-10-2: 0.10.2 发布；关键漏洞修补
+  released-0-10-3-1: 0.10.3.1 Wolfram Warptangent 发布
+  hfminblock: 網絡升级以调整最小块大小和动態費用算法
+  webredesign: 網站重新設計
+  released-0-11-0: 0.11.0.0 Helium Hydra 发布
+  fluffyblocks: '@fluffy blocks'
+  guioutbeta: GUI 退出測试版
+  minringsize5: 網絡升级將最小环大小增加到 5 并要求 RingCT 交易
+  releasedgui-0-11-0: GUI 0.11.0.0 Helium Hydra 发布
+  zeromq: 0MQ/ZeroMQ
+  subaddress: 子地址
+  paper6: 門羅幣研究實驗室論文 6 发布
+  release-0-11-1: 0.11.1.0 Helium Hydra 发布
+  releasedgui-0-11-1: GUI 0.11.1.0 Helium Hydra 发布
+  multisig: 多重签名（multisig）
+
+  released-0-12-0: 0.12.0.0 Lithium Luna 发布
+  releasedgui-0-12-0: GUI 0.12.0.0 Lithium Luna 发布
+  cryptonightv2: 新工作量證明 CryptoNightV2
+  hfring7: 網絡升级將最小环大小增加到 7，集成多重签名、子地址并更改 PoW 算法
+  getmonero-fr-pl: Getmonero.org 法语和波兰语本地化
+  released-0-12-1: 0.12.1.0 Lithium Luna 发布
+  ledger: Ledger 硬件錢包支持
+  released-0-12-2: 0.12.2.0 Lithium Luna 发布
+  released-0-12-3: 0.12.3.0 Lithium Luna 发布
+  releasedgui-0-12-3: GUI 0.12.3.0 Lithium Luna 发布
+  kovrialpha: Kovri alpha 发布
+  moneropedialoc: Getmonero.org 門羅幣百科开放本地化
+  getmonero-ar: Getmonero.org 阿拉伯语本地化
+  released-0-13-0-2: 0.13.0.2 Beryllium Bullet 发布
+  releasedgui-0-13-3: GUI 0.13.0.3 Beryllium Bullet 发布
+  cryptonightv3: 新工作量證明 CryptoNightV3
+  bulletproofs: 實施 @Bulletproofs 以減小交易大小
+  ringsize11: 網絡升级將最小 @ring-size 增加到 11，集成 Bulletproofs，更新費用計算算法并更改 PoW 算法
+  released-0-13-0-4: 0.13.0.4 Beryllium Bullet 发布
+  paper8-9: 門羅幣研究實驗室論文 8 和 9 发布
+  releasedgui-0-13-0-4: GUI 0.13.0.4 Beryllium Bullet 发布
+  paper7: 門羅幣研究實驗室論文 7 发布
+  paper10: 門羅幣研究實驗室論文 10 发布
+  mms: 實施門羅幣消息系統（MMS）以自动化多重签名錢包信息交换
+
+  getmonero-de: Getmonero.org 德语本地化
+  released-0-14-0: 0.14.0.0 Boron Butterfly 发布
+  releasedgui-0-14-0: GUI 0.14.0.0 Boron Butterfly 发布
+  ccs: 新社區众筹系統（CCS）取代论坛资助系統（FFS）
+  released-0-14-0-2: 0.14.0.2 Boron Butterfly 发布
+  cryptonightr: 新工作量證明 CryptoNightR
+  getmonero-pt_br: Getmonero.org 巴西葡萄牙语和荷兰语本地化
+  dlsag: "DLSAG：門羅幣中可互操作支付通道的非交互式退款交易"
+  pruning: 區塊鏈 @pruning
+  trezort: Trezor model T 支持
+  nanox: Ledger Nano X 支持
+  tori2p: Tor 和 I2P CLI 錢包集成
+  multisigms: 多重签名消息系統
+  weblate: "本地化平台更改：從 Pootle 到 Weblate"
+  rpcpay: 使用挖礦的服務付费系統（RPC-Pay）
+  ipv6: IPv6 支持
+  removedpid: 刪除獨立（长）@payment-ID 支持
+  nodediscovery: GUI 自动 @remote-nodes 发現和切换选项
+  randomx: 新工作量證明 @RandomX
+
+  getmoneroweblate: Getmonero 可在 Weblate 上翻譯
+  releasedgui-0-15-0-4: GUI 0.15.0.4 发布
+  released-0-15-0-5: CLI 0.15.0.5 发布
+  dandelion: 實施 Dandelion++ 協議
+  onionaddress: Getmonero.org 的洋葱地址
+  supercop: 錢包掃描加速（支持 supercop ASM）
+  clsag: 简洁可鏈接自发匿名組（CLSAG）签名
+  kastelo: "Kastelo：開源硬件錢包"
+  released-0-16-0-0: CLI 和 GUI 0.16.0.0 发布
+  released-0-17: CLI 和 GUI 0.17 'Oxygen Orion' 发布
+
+  atomicswaps: 門羅幣 <-> 比特币原子交换
+  bplus: Bulletproofs+
+  p2pool: P2Pool 发布
+  haveno: Haveno
+
+  seraphis-jamtis: Seraphis 代碼库和 Jamtis
+  ospead: OSPEAD
+  released-0-18: CLI 和 GUI 0.18 "Flourine Fermi" 发布
+  hardfork-v15: 網絡升级 v15 硬分叉
+  xmr-eth-atomicswaps: 門羅幣 <-> 以太坊原子交换
+  bp++: Bulletproofs++
+  lws-subaddress: 轻錢包服務器子地址支持
+  view-tags: 使用單字节查看標签將錢包同步速度提高 +40%
+
+  genimprov: "多项改進，如：区块傳播延迟降低、tx_extra 受限、錢包刷新和啟動加速"
+
+  xmrbch-atomicswap: XMR-BCH 原子交换完成
+  haveno-mainnet: HavenoDEX 发布
+  mrl-tasks: 門羅幣研究實驗室的建議任務
+  cuprate: Monerod Rust 實現 - Cuprate
+  site-redesign: getmonero.org 新重新設計
 
 
 research-lab:
-  intro: 門羅幣不只是致力於打造一個滿足貨幣替代性的貨幣，更是持續研究著與加密貨幣相關的金融隱私。在以下你能看到一些來自門羅幣研究實驗室發表的研究論文，還有更多論文正在準備發表。
-  mrl_papers: 門羅幣研究實驗室的論文 (英文)
+  intro: 門羅幣不仅致力于创造可互换性的貨幣，而且還致力于研究涉及加密貨幣的金融隱私领域。以下是我們自己的門羅幣研究實驗室的工作，以后還會有更多論文。
+  intro_contact: "要聯繫門羅幣研究實驗室，請加入我們的 <a href='https://matrix.to/#/#monero-research-lab:monero.social'>Matrix</a>/<a href='irc://irc.libera.chat/#monero-research-lab'>IRC 频道</a>"
+  mrl_papers: MRL 研究人员撰寫的論文
+  related_mrl_papers: 與門羅幣相关的論文
+  papersbutton: 訪問 MoneroResearch.info
+  papersp: 探索與門羅幣相关的广泛研究論文。
   abstract: 摘要
-  introduction: 前言
-  read-paper: 閱讀全文
+  introduction: 介绍
+  read-paper: 閱讀論文
   summary: 總結
-  mrlhtp: Understanding ge_fromfe_frombytes_vartime
-  mrlhtp_summary: Monero uses a unique hash function that transforms scalars into
-    elliptic curve points. It is useful for creating key images, in particular. This
-    document, authored by Shen Noether, translates its code implementation (the ge_fromfe_frombytes_vartime()
-    function) into mathematical expressions.
-  mrl1: A Note on Chain Reactions in Traceability in CryptoNote 2.0
-  mrl1_abstract: This research bulletin describes a plausible attack on a ring-signature
-    based anonymity system. We use as motivation the cryptocurrency protocol CryptoNote
-    2.0 ostensibly published by Nicolas van Saberhagen in 2012. It has been previously
-    demonstrated that the untraceability obscuring a one-time key pair can be dependent
-    upon the untraceability of all of the keys used in composing that ring signature.
-    This allows for the possibility of chain reactions in traceability between ring
-    signatures, causing a critical loss in untraceability across the whole network
-    if parameters are poorly chosen and if an attacker owns a sufficient percentage
-    of the network. The signatures are still one-time, however, and any such attack
-    will still not necessarily violate the anonymity of users. However, such an attack
-    could plausibly weaken the resistance CryptoNote demonstrates against blockchain
-    analysis. This research bulletin has not undergone peer review, and reflects only
-    the results of internal investigation.
-  mrl2: Counterfeiting via Merkle Tree Exploits within Virtual Currencies Employing
-    the CryptoNote Protocol
-  mrl2_abstract: On 4 September 2014, an unusual and novel attack was executed against
-    the Monero cryptocurrency network. This attack partitioned the network into two
-    distinct subsets which refused to accept the legitimacy of the other subset. This
-    had myriad effects, not all of which are yet known. The attacker had a short window
-    of time during which a sort of counterfeiting could occur, for example. This research
-    bulletin describes deficiencies in the CryptoNote reference code allowing for
-    this attack, describes the solution initially put forth by Rafal Freeman from
-    Tigusoft.pl and subsequently by the CryptoNote team, describes the current fix
-    in the Monero code base, and elaborates upon exactly what the offending block
-    did to the network. This research bulletin has not undergone peer review, and
-    reflects only the results of internal investigation.
-  mrl3: Monero is Not That Mysterious
-  mrl3_abstract: Recently, there have been some vague fears about the CryptoNote source
-    code and protocol floating around the internet based on the fact that it is a
-    more complicated protocol than, for instance, Bitcoin. The purpose of this note
-    is to try and clear up some misconceptions, and hopefully remove some of the mystery
-    surrounding Monero Ring Signatures. I will start by comparing the mathematics
-    involved in CryptoNote ring signatures (as described in [CN]) to the mathematics
-    in [FS], on which CryptoNote is based. After this, I will compare the mathematics
-    of the ring signature to what is actually in the CryptoNote codebase.
-  mrl4: Improving Obfuscation in the CryptoNote Protocol
-  mrl4_abstract: We identify several blockchain analysis attacks available to degrade
-    the untraceability of the CryptoNote 2.0 protocol. We analyze possible solutions,
-    discuss the relative merits and drawbacks to those solutions, and recommend improvements
-    to the Monero protocol that will hopefully provide long-term resistance of the
-    cryptocurrency against blockchain analysis. Our recommended improvements to Monero
-    include a protocol-level network-wide minimum mix-in policy of n = 2 foreign outputs
-    per ring signature, a protocol-level increase of this value to n = 4 after two
-    years, and a wallet-level default value of n = 4 in the interim. We also recommend
-    a torrent-style method of sending Monero output. We also discuss a non-uniform,
-    age-dependent mix-in selection method to mitigate the other forms of blockchain
-    analysis identified herein, but we make no formal recommendations on implementation
-    for a variety of reasons. The ramifications following these improvements are also
-    discussed in some detail. This research bulletin has not undergone peer review,
-    and reflects only the results of internal investigation.
-  mrl5: Ring Signature Confidential Transactions
-  mrl5_abstract: This article introduces a method of hiding transaction amounts in
-    the strongly decentralized anonymous cryptocurrency Monero. Similar to Bitcoin,
-    Monero is a cryptocurrency which is distributed through a proof of work “mining”
-    process. The original Monero protocol was based on CryptoNote, which uses ring
-    signatures and one-time keys to hide the destination and origin of transactions.
-    Recently the technique of using a commitment scheme to hide the amount of a transaction
-    has been discussed and implemented by Bitcoin Core Developer Gregory Maxwell.
-    In this article, a new type of ring signature, A Multi-layered Linkable Spontaneous
-    Anonymous Group signature is described which allows for hidden amounts, origins
-    and destinations of transactions with reasonable efficiency and verifiable, trustless
-    coin generation. Some extensions of the protocol are provided, such as Aggregate
-    Schnorr Range Proofs, and Ring Multisignature. The author would like to note that
-    early drafts of this were publicized in the Monero Community and on the bitcoin
-    research irc channel. Blockchain hashed drafts are available in [14] showing that
-    this work was started in Summer 2015, and completed in early October 2015. An
-    eprint is also available at http://eprint.iacr.org/2015/1098.
-  mrl6: An Efficient Implementation of Monero Subadresses
-  mrl6_abstract: Users of the Monero cryptocurrency who wish to reuse wallet addresses
-    in an unlinkable way must maintain separate wallets, which necessitates scanning
-    incoming transactions for each one. We document a new address scheme that allows
-    a user to maintain a single master wallet address and generate an arbitary number
-    of unlinkable subaddresses. Each transaction needs to be scanned only once to
-    determine if it is destinated for any of the user’s subaddresses. The scheme additionally
-    supports multiple outputs to other subaddresses, and is as efficient as traditional
-    wallet transactions.
-  mrl7: Sets of Spent Outputs
-  mrl7_abstract: This technical note generalizes the concept of spend outputs using
-    basic set theory. The definition captures a variety of earlier work on identifying
-    such outputs. We quantify the effects of this analysis on the Monero blockchain
-    and give a brief overview of mitigations.
-  mrl8: Dual Linkable Ring Signatures
-  mrl8_abstract: This bulletin describes a modification to Monero's linkable ring
-    signature scheme that permits dual-key outputs as ring members. Key images are
-    tied to both output one-time public keys in a dual, preventing both keys in that
-    transaction from being spent separately. This method has applications to non-interactive
-    refund transactions. We discuss the security implications of the scheme.
-  mrl9: Thring Signatures and their Applications to Spender-Ambiguous Digital Currencies
-  mrl9_abstract: We present threshold ring multi-signatures (thring signatures) for
-    collaborative computation of ring signatures, present a game of existential forgery
-    for thring signatures, and discuss uses of thring signatures in digital currencies
-    that include spender-ambiguous cross-chain atomic swaps for confidential amounts
-    without a trusted setup. We present an implementation of thring signatures that
-    we call linkable spontaneous threshold anonymous group signatures, and prove the
-    implementation existentially unforgeable.
-  mrl10: Discrete Logarithm Equality Across Groups
-  mrl10_abstract: This technical note describes an algorithm used to prove knowledge
-    of the same discrete logarithm across different groups. The scheme expresses the
-    common value as a scalar representation of bits, and uses a set of ring signatures
-    to prove each bit is a valid value that is the same (up to an equivalence) across
-    both scalar groups.
-  iacr2020018: "Triptych: logarithmic-sized linkable ring signatures with applications"
-  iacr2020018_abstract: Ring signatures are a common construction used to provide
-    signer ambiguity among a non-interactive set of public keys specified at the time
-    of signing. Unlike early approaches where signature size is linear in the size
-    of the signer anonymity set, current optimal solutions either require centralized
-    trusted setups or produce signatures logarithmic in size. However, few also provide
-    linkability, a property used to determine whether the signer of a message has
-    signed any previous message, possibly with restrictions on the anonymity set choice.
-    Here we introduce Triptych, a family of linkable ring signatures without trusted
-    setup that is based on generalizations of zero-knowledge proofs of knowledge of
-    commitment openings to zero. We demonstrate applications of Triptych in signer-ambiguous
-    transaction protocols by extending the construction to openings of parallel commitments
-    in independent anonymity sets. Signatures are logarithmic in the anonymity set
-    size and, while verification complexity is linear, collections of proofs can be
-    efficiently verified in batches. We show that for anonymity set sizes practical
-    for use in distributed protocols, Triptych offers competitive performance with
-    a straightforward construction.
-  cryptonote: Cryptonote 白皮書
-  cryptonote-whitepaper: Cryptonote 白皮書
-  cryptonote-whitepaper_para: 這是由 cryptonote 團隊所撰寫的原始 cryptonote 論文。閱讀此篇論文可以讓你對 cryptonote
-    演算法的運作有一些了解。
-  annotated: 加上註解的白皮書
-  annotated_para: 由門羅幣研究實驗室 (MRL) 加上註解後發布的 cryptonote 白皮書版本。這屬於非正式的逐行審查，同時也對一些艱難的概念進行了較容易理解的解釋。
-  brandon: Brandon Goodell 對於白皮書的審查
-  brandon_para: 這篇論文是由 MRL 研究員 Brandon Goodell 進行的正式審查。他對 cryptonote 白皮書內的理論與數學進行了深度的審查。
-
+  mrlhtp: 理解 ge_fromfe_frombytes_vartime
+  mrlhtp_summary: 門羅幣使用一种獨特的哈希函数，將標量转换為椭圆曲線点。它對于創建密鑰镜像特别有用。本文檔由 Shen Noether 撰寫，將其代碼實現（ge_fromfe_frombytes_vartime() 函数）转换為数学表達式。
+  mrl1: CryptoNote 2.0 中可追踪性链式反应的注释
+  mrl1_abstract: 本研究公告描述了對基于环签名的匿名系統的合理攻击。我們以 Nicolas van Saberhagen 在 2012 年表面上发布的加密貨幣協議 CryptoNote 2.0 為动机。之前已經證明，隐藏一次性密鑰對的不可追踪性可能取决于組成该环签名的所有密鑰的不可追踪性。這允许环签名之间的可追踪性链式反应的可能性，如果參数選擇不当且攻击者拥有足够比例的網絡，则會导致整個網絡的不可追踪性严重丧失。然而，签名仍然是一次性的，任何此类攻击仍然不一定會侵犯用戶的匿名性。然而，這种攻击可能會削弱 CryptoNote 對區塊鏈分析的抵抗力。本研究公告尚未經过同行評審，仅反映内部调查的結果。
+  mrl2: 通過使用 CryptoNote 協議的虚拟貨幣中的 Merkle 树漏洞進行伪造
+  mrl2_abstract: 2014 年 9 月 4 日，對門羅幣加密貨幣網絡执行了一次不寻常且新颖的攻击。這次攻击將網絡划分為两個不同的子集，它們拒绝接受另一個子集的合法性。這產生了无数影響，其中并非所有影響都是已知的。例如，攻击者有一個短暂的時间窗口，在此期间可能发生某种伪造。本研究公告描述了允许此攻击的 CryptoNote 參考代碼中的缺陷，描述了 Tigusoft.pl 的 Rafal Freeman 最初提出的解决方案以及随后由 CryptoNote 團隊提出的解决方案，描述了門羅幣代碼库中的当前修復，并詳細說明了违规区块對網絡的影響。本研究公告尚未經过同行評審，仅反映内部调查的結果。
+  mrl3: 門羅幣并不那么神秘
+  mrl3_abstract: 最近，基于 CryptoNote 源代碼和協議比比特币等協議更複雜的事實，互联网上流傳着一些關於 CryptoNote 源代碼和協議的模糊恐惧。本說明的目的是试圖澄清一些误解，并希望消除围绕門羅幣环签名的一些神秘感。我將首先比较 CryptoNote 环签名中涉及的数学（如 [CN] 中所述）與 CryptoNote 所基于的 [FS] 中的数学。之后，我將比较环签名的数学與 CryptoNote 代碼库中實际存在的内容。
+  mrl4: 改進 CryptoNote 協議中的混淆
+  mrl4_abstract: 我們识别了几种可用于降低 CryptoNote 2.0 協議不可追踪性的區塊鏈分析攻击。我們分析了可能的解决方案，討論了這些解决方案的相對优点和缺点，并建議對門羅幣協議進行改進，希望能為加密貨幣對區塊鏈分析提供长期抵抗力。我們對門羅幣的建議改進包括協議级網絡范围的最小混入策略 n = 每個环签名 2 個外部输出，两年后協議级將此值增加到 n = 4，以及在过渡期间錢包级默認值為 n = 4。我們還建議使用种子式方法發送門羅幣输出。我們還討論了一种非均匀的、依赖年龄的混入選擇方法來減轻此处识别的其他形式的區塊鏈分析，但出于各种原因，我們不對實施提出正式建議。還詳細討論了這些改進后的影響。本研究公告尚未經过同行評審，仅反映内部调查的結果。
+  mrl5: 环签名机密交易
+  mrl5_abstract: 本文介绍了一种在強去中心化匿名加密貨幣門羅幣中隐藏交易金额的方法。與比特币类似，門羅幣是一种通過工作量證明"挖礦"过程分发的加密貨幣。最初的門羅幣協議基于 CryptoNote，它使用环签名和一次性密鑰來隐藏交易的目的地和來源。最近，比特币核心開發者 Gregory Maxwell 討論并實施了使用承诺方案隐藏交易金额的技術。在本文中，描述了一种新型环签名，一种多層可鏈接自发匿名組签名，它允许以合理的效率和可驗證的、无需信任的币生成來隐藏交易的金额、來源和目的地。提供了協議的一些扩展，如聚合 Schnorr 范围證明和环多重签名。作者想指出，本文的早期草稿在門羅幣社區和比特币研究 irc 频道上公开。區塊鏈哈希草稿可在 [14] 中獲得，顯示這项工作始于 2015 年夏季，并于 2015 年 10 月初完成。电子预印本也可在 http://eprint.iacr.org/2015/1098 獲得。
+  mrl6: 門羅幣子地址的高效實現
+  mrl6_abstract: 希望以不可鏈接的方式重復使用錢包地址的門羅幣加密貨幣用戶必須維護單獨的錢包，這需要為每個錢包掃描傳入交易。我們記录了一种新的地址方案，允许用戶維護單個主錢包地址并生成任意数量的不可鏈接子地址。每笔交易只需要掃描一次，以確定它是否發送给用戶的任何子地址。该方案還支持向其他子地址的多個输出，并且與傳统錢包交易一样高效。
+  mrl7: 已花费输出集
+  mrl7_abstract: 本技術說明使用基本集合论概括了花费输出的概念。该定义捕获了识别此类输出的各种早期工作。我們量化了這种分析對門羅幣區塊鏈的影響，并简要概述了缓解措施。
+  mrl8: 双可鏈接环签名
+  mrl8_abstract: 本公告描述了對門羅幣可鏈接环签名方案的修改，允许双密鑰输出作為环成员。密鑰镜像與双中的两個输出一次性公钥绑定，防止该交易中的两個密鑰單獨花费。此方法適用于非交互式退款交易。我們討論了该方案的安全含义。
+  mrl9: Thring 签名及其在支付者模糊數字貨幣中的应用
+  mrl9_abstract: 我們提出了用于协作計算环签名的阈值环多重签名（thring 签名），提出了 thring 签名的存在性伪造游戏，并討論了 thring 签名在數字貨幣中的用途，包括无需信任設置的机密金额的支付者模糊跨链原子交换。我們提出了 thring 签名的實現，我們称之為可鏈接自发阈值匿名組签名，并證明该實現是存在性不可伪造的。
+  mrl10: 跨組的离散對数相等性
+  mrl10_abstract: 本技術說明描述了一种用于證明跨不同組知道相同离散對数的算法。该方案將公共值表示為位的標量表示，并使用一組环签名來證明每個位是一個有效值，该值在两個標量組中相同（達到等价性）。
+  iacr2019654: 简洁可鏈接环签名和對抗性密鑰的伪造
+  iacr2019654_abstract: 我們證明了一种非诽谤性版本是可鏈接环签名不可伪造性的自然定义。我們提出了一种具有简洁签名和多維密鑰的可鏈接环签名構造，如果随机预言机的决策性 Diffie-Hellman 問題的變體是困难的，则可鏈接匿名，如果密鑰聚合是單向函数，则可鏈接，如果离散對数問題的一次多變體是困难的，则非诽谤。我們評论了在无需信任設置的签名者模糊机密交易模型中的一些应用。
+  iacr2020018: "Triptych：對数大小的可鏈接环签名及其应用"
+  iacr2020018_abstract: 环签名是一种常见構造，用于在签名時指定的非交互式公钥集中提供签名者模糊性。與早期方法不同，早期方法的签名大小與签名者匿名集的大小成線性关系，当前的最佳解决方案要么需要中心化的信任設置，要么產生對数大小的签名。然而，很少有方法還提供可鏈接性，這是一种用于確定消息的签名者是否签署了任何先前消息的属性，可能對匿名集選擇有限制。在這里，我們介绍了 Triptych，一系列无需信任設置的可鏈接环签名，基于對开放到零的承诺的零知识證明的泛化。我們通過將構造扩展到獨立匿名集中的并行承诺的开放，展示了 Triptych 在签名者模糊交易協議中的应用。签名在匿名集大小上是對数的，虽然驗證複雜度是線性的，但證明集合可以批量高效驗證。我們表明，對于分布式協議中實用的匿名集大小，Triptych 以直接的構造提供了竞争性能。
+  iacr2020312: "Arcturus：机密交易的高效證明"
+  iacr2020312_note: "注意：本論文已被撤回，但可以通過点击'本報告的所有版本'查看。"
+  iacr2020312_abstract: 机密交易用于分布式數字资產中，以證明隐藏在承诺中的值的平衡，同時保持签名者模糊性。先前的工作描述了一种签名者模糊的零知识證明，用于證明在多個公共承诺集中的相同索引处打开到零的承诺，以及用作鏈接標签的可驗證随机函数的評估，并使用它來構建称為 Triptych 的可鏈接环签名，该签名可用作机密交易模型的構建块。在這项工作中，我們扩展了 Triptych 以構建 Arcturus，一种證明系統，该系統證明了在單個集合内打开多個承诺到零、在每次打开時正確構造可驗證随机函数的評估，以及在單個證明内跨單獨的承诺列表的值平衡。虽然可靠性取决于新颖的双离散對数硬度假設，但我們使用門羅幣區塊鏈的数据表明，Arcturus 可以在机密交易模型中使用，以提供比其他无需信任設置的最先進構造更快的總批量驗證時间。
+  cypherstack202410: 門羅幣中临時交易的一致最強大檢驗
+  cypherstack202410_abstract: 我們為具有小匿名集認證的交易協議（TPSASA）中的交易引入了一种通用的、低成本、低功耗统計測试，例如門羅幣。该測试將交易分类為临時（自发構造以花费確定性選擇的密鑰）或自我混淆（從與默認錢包軟件非常接近的概率分布構造，并且發送者和接收者相同）。该測试是 Neyman-Pearson 引理的一致最強大（UMP）似然比檢驗（LRT），不對用戶行為做任何假設。我們將這些測试扩展到利用有关用戶行為的先驗信息。我們討論了測试參数化，以及匿名集基数和用戶行為如何影響測试性能。我們還描述了基于我們的測试對門羅幣的最大似然去匿名化攻击。
+  cryptonote: Cryptonote 白皮书
+  cryptonote-whitepaper: Cryptonote 白皮书
+  cryptonote-whitepaper_para: 這是 cryptonote 團隊編寫的原始 cryptonote 論文。閱讀它將使您了解 cryptonote 算法的一般工作原理。
+  annotated: 带注释的白皮书
+  annotated_para: 門羅幣研究實驗室发布了 cryptonote 白皮书的带注释版本。這有点像對白皮书逐行提出的主张的非正式評论。它還用相對容易理解的术语解释了一些较难的概念。
+  brandon: Brandon Goodell 的白皮书評论
+  brandon_para: 本文是 MRL 研究员 Brandon Goodell 對原始 cryptonote 論文的正式評论。他深入研究了 cryptonote 論文中提出的主张和数学。
+  libraryp: "资料库包含有用的文檔，如'從零到門羅幣'和'精通門羅幣'，它們詳細探索和解释門羅幣。"
+  librarybutton: 探索资料库
 
 specs:
+  title: 技術信息
+  intro: 這里列出了一些關於門羅幣的基本技術信息。有关更深入的细节，請查閱
+  intro_link: 资料库
+  intro1: 或聯繫社區
   pow_title: 工作量證明
-  block_emission_title: 發行曲線
-  block_emission_main: "起始，主要發行曲線： 到 2022 年底將發行大約 1813.2 萬的門羅幣"
-  block_emission_tail: "接著，尾發行曲線： 當主要發行曲線結束後，每 2 分鐘區塊固定產生 0.6 XMR 的機制將會啟動，長時間的運作下相當於\
-    \ <1% 的通膨"
-  privacytech_sh: '@隱匿性地址'
-  privacytech_rs: 環狀簽名
-  privacytech_dandelion: 蒲公英改進協議
+  pow: 門羅幣使用 @randomx，一种由門羅幣社區成员創建的抗 ASIC 且對 CPU 友好的 POW 算法，旨在使使用特定挖礦硬件變得不可行。門羅幣以前使用 CryptoNight 和此算法的變體
+  pow_link: GitHub 仓库中的更多信息
+  block_emission_title: 发行曲線
+  block_emission_pre: "為了確保始终有挖掘門羅幣并保持其安全的激励，发行是无限的。有两种主要发行："
+  block_emission_main: "首先，主曲線：到 2022 年 5 月底约 1813.2 万枚币"
+  block_emission_tail: "然后，尾部发行（每 2 分鐘区块 0.6 XMR）在主发行完成后开始。這转化為 <1% 的通货膨胀率，随着時间的推移百分比趋向于 0"
+  blocks_title: 区块
+  blocks: 大约每 ~2 分鐘創建一個新的 @block。没有最大区块大小，而是区块奖励惩罚和动態区块大小，以確保动態 @scalability
+  privacytech_title: 主要隱私增強技術
+  privacytech_ringct: "@RingCT"
+  privacytech_sh: "@Stealth-Addresses"
+  privacytech_rs: "@ring-signatures"
+  privacytech_tor-i2p: 通過 Tor/I2P 的交易
+  privacytech_dandelion: Dandelion++
+
 library:
-  description: "以下是一些出版物、書籍或雜誌提供下載。"
-  books: 書籍
-  zerotomonerov2: "Zero to Monero: Second Edition"
+  description: "以下是一些可供您下載的出版物、书籍或杂志。"
+  books: 书籍
+  zerotomonerov2: "從零到門羅幣：第二版"
   zerotomonerov2p: >
-    Published: April 4, 2020, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX
-    source code here</a><br>
-    A comprehensive conceptual (and technical) explanation of Monero.<br>
-    We endeavor to teach anyone who knows basic algebra and simple computer science
-    concepts like the ‘bit representation’ of a number not only how Monero works at
-    a deep and comprehensive level, but also how useful and beautiful cryptography
-    can be.
-  zerotomonerov1: "Zero to Monero: First Edition"
+    发布日期：2020 年 4 月 4 日，<a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX 源代碼在此</a><br>
+    對門羅幣的全面概念性（和技術性）解释。<br>
+    我們努力教任何懂基本代数和簡單計算機科学概念（如數字的"位表示"）的人不仅了解門羅幣如何在深入和全面的層面上工作，而且了解密碼学是多么有用和美丽。
+  zerotomonerov2langs: 提供<a href="Zero-to-Monero-2-0-0-ru.pdf">俄语</a>、<a href="Zero-to-Monero-2-0-0-pt.pdf">葡萄牙语</a>和<a href="Zero-to-Monero-2-0-0-it.pdf">意大利语</a>版本。
+  zerotomonerov1: "從零到門羅幣：第一版"
   zerotomonerov1p: >
-    Published: June 26, 2018, with <a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX
-    source code here</a>
+    发布日期：2018 年 6 月 26 日，<a href="https://github.com/UkoeHB/Monero-RCT-report">LaTeX 源代碼在此</a>
   masteringmonerop: >
-    A guide through the seemingly complex world of Monero.<br>
-    It includes:
-    <ul><li>A broad introduction to blockchains and the importance of privacy - ideal
-    for non-technical users.</li>
-    <li>Discussion of Bitcoin’s shortcomings and specific solutions provided by Monero.</li>
-    <li>User stories (illustrating how Monero protects your privacy), analogies, examples,
-    legal/ethical discussions, and code snippets illustrating key technical concepts.</li>
-    <li>Details of the Monero decentralized network, peer-to-peer architecture, transaction
-    lifecycle, and security principles.</li>
-    <li>Introductions to technical foundations of Monero, intended for developers,
-    engineers, software architects, and curious users.</li>
-    <li>New developments such as Kovri, Bulletproofs, Multisignature, Hardware Wallets,
-    etc.</li></ul>
-    See <a href="https://masteringmonero.com/">Mastering Monero</a> website for information.
+    一份引导您穿越看似複雜的門羅幣世界的指南。<br>
+    它包括：
+    <ul><li>對區塊鏈和隱私重要性的广泛介绍 - 非常適合非技術用戶。</li>
+    <li>對比特币缺点和門羅幣提供的具體解决方案的討論。</li>
+    <li>用戶故事（說明門羅幣如何保護您的隱私）、类比、示例、法律/道德討論和說明关键技術概念的代碼片段。</li>
+    <li>門羅幣去中心化網絡、点對点架構、交易生命周期和安全原则的詳細信息。</li>
+    <li>面向開發人员、工程师、軟件架構师和好奇用戶的門羅幣技術基础介绍。</li>
+    <li>新发展，如 Kovri、Bulletproofs、多重签名、硬件錢包等。</li></ul>
+  cheatsheets: 速查表
+  thesalmonseries: "三文鱼系列"
+  thesalmonseriesp: >
+    處理門羅幣内部工作原理的信息圖。名称來自采用的颜色，具有语义含义（即使很弱）但也具有统一功能作為重復主题，在作者眼中类似于三文鱼褐變（從生到熟）:)
+  moneroaddressescheatsheet20201206: "門羅幣地址速查表"
+  moneroaddressescheatsheet20201206p: >
+    在"大局"和数学细节之间，各种密鑰、地址、范围（私有/公有、花费/查看、链上/链下、付款人/收款人）及其关系的單頁回顾。
+  ringscheatsheet20210301: "环速查表"
+  ringscheatsheet20210301p: >
+    從通用傳统签名到 CLSAG，通過环口味的视觉之旅，在海報大小的信息圖中逐步呈現其核心属性。
+  rctcheatsheet20210604: "RingCT 速查表"
+  rctcheatsheet20210604p: >
+    美味的 RingCT Type 5 交易配方：每十一個 UTXO 一個 CLSAG，按口味添加門羅幣金额；用 Pedersen 承诺加厚一切，其整體平衡對服務员也是显而易见的，并用 BulletProof 釉料保護最后的承诺；在选定的隐身地址上食用，并在十個区块后才消费。干杯！
+  zkbasicscheatsheet20220621: "ZK 基础速查表"
+  zkbasicscheatsheet20220621p: >
+    一個轻度理论性的插曲（希望仍然温和，试圖強调概念而不是形式主义并選擇接近的主题），為 Bulletproof 和其他未來的零知识相关功能（如果有的话）奠定基础。
+  newsletters: 時事通讯
+  revuomonero: >
+    Revuo Monero 是一份每周時事通讯，您可以在其中找到最新的門羅幣新闻。
+  themonerostandard: >
+    Monero Standard 是 recanman 的每周出版物，提供有关門羅幣協議的最新新闻和信息。
+    除了涵盖門羅幣社區的最新发展外，The Monero Standard 還包括每周價格圖表、挖礦池圖表、區塊鏈统計数据，甚至每周一個 Meme。
+  moneroobserverblitz: >
+    Monero Observer Blitz 提供門羅幣社區和協議最新发展的月度更新。
+    由 escapethe3RA 撰寫，本出版物涵盖與門羅幣持續開發、社區活动和该领域内显著成就相关的新闻。
+  moneroobserver: >
+    由 escapethe3ra 創建的獨立資源，Monero Observer 提供門羅幣最新发展的每日報道。它還提供广泛的資源、實用指南和每周或每月亮点，幫助社區保持最新。
+  twim: >
+    來自門羅幣生態系統的每周见解和更新。随時了解私人數字貨幣世界的最新发展、新闻和分析。
+
 moneropedia:
-  add_new_text1: 如果你有條目想要修改或新增，請
-  add_new_link: 在本網站的 GitLab repository 新開一個 issue
-  add_new_text2: 或是發送 pull request 以提交條目更動
+  description: >
+    围绕門羅幣的术语可能非常複雜和技術性。門羅幣百科是門羅幣社區創建的工具，以簡單的方式提供這些术语的解释。下面按字母顺序列出了所有門羅幣百科条目。
+  instructions: 添加門羅幣百科条目的說明位于
+  add_new_text1: 如果有您想要修改或添加的条目，請
+  add_new_link: 在本網站的 GitHub 仓库上开启問題
+  add_new_text2: 或通過拉取請求提交更改
+  back: 返回門羅幣百科
   entries:
-    account: Account
-    address: Address
-    airgap: Airgap
-    atomic-units: Atomic Units
-    blockchain: Blockchain
-    block: Block
-    bootstrap-node: Bootstrap-node
+    account: 賬戶
+    address: 地址
+    airgap: 气墙
+    atomic-units: 原子單位
+    blockchain: 區塊鏈
+    block: 区块
+    bootstrap-node: 引导節點
     bulletproofs: Bulletproofs
-    change: Change
+    change: 找零
     clearnet: Clearnet
-    coinbase: Coinbase Transaction
-    consensus: Consensus
-    cryptocurrency: Cryptocurrency
-    daemon: Daemon
-    denominations: Denominations
-    encryption: Encryption
-    fluffyblocks: Fluffy Blocks
-    fungibility: Fungibility
+    coinbase: 区块奖励交易
+    consensus: 共识
+    cryptocurrency: 加密貨幣
+    daemon: 守護進程
+    denominations: 單位名称
+    encryption: 加密
+    fluffyblocks: 小型区块
+    fungibility: 可互换性
     kovri: Kovri
-    locally-unique-host: Locally-unique host
-    mining: Mining
-    mnemonicseed: Mnemonic Seed
-    node: Node
+    locally-unique-host: 本地唯一主机
+    mining: 挖礦
+    mnemonicseed: 助記词
+    node: 節點
     openalias: OpenAlias
-    paperwallet: Paper Wallet
-    paymentid: Payment ID
-    pedersen-commitment: Pedersen Commitment
-    pruning: Pruning
+    paperwallet: 纸錢包
+    paymentid: 付款 ID
+    pedersen-commitment: Pedersen 承诺
+    pruning: 修剪
     randomx: RandomX
-    remote-node: Remote Node
-    ringCT: Ring CT
-    ringsignatures: Ring Signature
-    ring-size: Ring Size
-    scalability: Scalability
-    signature: Cryptographic Signature
-    smartmining: Smart Mining
-    spendkey: Spend Key
-    stealthaddress: Stealth Address
-    tail-emission: Tail Emission
-    transaction: Transactions
-    unlocktime: Transaction Unlock Time
-    viewkey: View Key
-    wallet: Wallet
+    remote-node: 遠程節點
+    ringCT: 环 CT
+    ringsignatures: 环签名
+    ring-size: 环大小
+    scalability: 可扩展性
+    signature: 加密签名
+    smartmining: 智能挖礦
+    spendkey: 花费密鑰
+    stealthaddress: 隐身地址
+    tail-emission: 尾部发行
+    transaction: 交易
+    unlocktime: 交易解锁時间
+    viewkey: 查看密鑰
+    wallet: 錢包
     clsag: CLSAG
+    merge-mining: 合并挖礦
+    p2pool: P2Pool
+    sidechain: 侧链
+
+tools:
+  intro1: 以下是與門羅幣生態系統交互的第三方工具列表。<b>Getmonero 團隊未審查這些工具，請參见本頁底部的免责声明。</b>如果工具不再支持門羅幣或您希望列出門羅幣工具，請
+  intro2: 开启 GitHub 問題讓我們知道
+  block-explorers: 区块浏覽器
+  address-generators: 地址生成器
+
+  network: 網絡
+  monerohash-nodes: 門羅幣節點地圖
+  nownodes: 節點 API
+  getblockio: 區塊鏈節點提供商
+  monerofail: 門羅幣節點列表和節點地圖
+  txstreet: 交易和区块可视化器
+
+  market: 市场
+  backtestking: 構建或購買您自己的交易策略/机器人。
+  cryptoradar: 市场比较網站
+
+  misc: 杂项
+  monerohow-stats: 统計
+  moneropro: 圖表和指標
+  monerologs: 門羅幣 IRC 频道存档
+  monerobase: 一些旧會议日志的存档
+  gateways: 支付网关
+
+  onion-service: Tor 洋葱服務
 
 blog:
-  author: 作者
-  date: 發表時間於
+  allposts: 所有文章
+  urgent: 紧急
+  releases: 发布
+  community: 社區
+  meetinglogs: 會议日志
+  author: 发布者
+  date: 发布時间
+  filter: "按类别过滤："
+  next: 下一個
+  previous: 上一個
+
 tags:
-  notags: 此標籤下沒有找到文章。
-footer:
-  feed: RSS Feed
-  source: 程式原碼
-  legal: 法律相關
-  ml: 郵信列表
-  ccs: 社群集資系統
-  reachout: 聯繫
+  notags: 此標签没有文章。
+
+accessibility:
+  arrowup: 返回頁面顶部
+  gotop: 返回顶部
+  guiscreen: 門羅幣圖形界面錢包的截圖。它在左侧顯示錢包余额和导航菜單，在右侧顯示發送 XMR 的表單。
+  cliscreen: CLI 錢包截圖
+
+error:
+  title: 頁面未找到（也许它重视隱私）
+  button: 返回首頁
