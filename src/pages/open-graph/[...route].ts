@@ -1,20 +1,21 @@
 import { OGImageRoute } from "astro-og-canvas";
-import { getCollection } from "astro:content";
+
+import { defaultLocale } from "@/i18n/config";
+import { splitLocaleId } from "@/i18n/utils";
+import { getLocalizedBlog } from "@/utils/blog";
 
 export const prerender = true;
 
-const posts = await getCollection("blog");
-const pages = posts.reduce(
-  (acc, post) => ({
-    ...acc,
-    // astro-og-canvas trims anything after the last dot, so its necessary to include a dummy .md extension, don't remove this!
-    [`blog/${post.id}.md`]: {
-      title: post.data.title ?? "Blog post",
-      description: post.data.summary ?? "",
-    },
-  }),
-  {} as Record<string, { title: string; description: string }>,
-);
+const posts = await getLocalizedBlog(defaultLocale);
+const pages: Record<string, { title: string; description: string }> = {};
+for (const post of posts) {
+  const { slug } = splitLocaleId(post.id);
+  // astro-og-canvas trims anything after the last dot, so its necessary to include a dummy .md extension, don't remove this!
+  pages[`blog/${slug}.md`] = {
+    title: post.data.title ?? "Blog post",
+    description: post.data.summary ?? "",
+  };
+}
 
 export const { getStaticPaths, GET } = await OGImageRoute({
   param: "route",

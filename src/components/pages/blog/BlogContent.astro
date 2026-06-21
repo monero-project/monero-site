@@ -1,4 +1,12 @@
-<div id="blog-content" lang="en" dir="ltr">
+---
+interface Props {
+  lang?: string;
+  dir?: "ltr" | "rtl";
+}
+const { lang = "en", dir = "ltr" } = Astro.props;
+---
+
+<div id="blog-content" lang={lang} dir={dir}>
   <slot />
 </div>
 
