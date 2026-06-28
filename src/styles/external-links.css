@@ -1,19 +1,19 @@
 a[rel~="external"]::after {
-  content: "";
-  display: inline-block;
-  inline-size: 0.9rem;
-  block-size: 0.9rem;
-  margin-inline-start: 0.25em;
-  vertical-align: -0.1rem;
-  mask: url("../assets/icons/mask/external-link.avif") no-repeat center /
-    contain;
+  content: "\00a0";
+  padding-inline-end: 0.9rem;
+  mask-image: url("../assets/icons/mask/external-link.avif");
+  mask-repeat: no-repeat;
+  mask-position: right center;
+  mask-size: 0.9rem 0.9rem;
   background-color: currentcolor;
 }
 
 [dir="rtl"] a[rel~="external"]::after {
+  padding-inline: 0.9rem 0;
   transform: scaleX(-1);
 }
 
 [dir="rtl"] [dir="ltr"] a[rel~="external"]::after {
+  padding-inline: 0 0.9rem;
   transform: unset;
 }
