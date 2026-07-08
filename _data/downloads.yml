@@ -1,35 +1,35 @@
 # 'vers' is meant to be used in case of a platform-specific release (e.g. vers: "0.18.2.0 - Mumbling Potato")
 
 gui:
-- version: "0.18.5.0 - Fluorine Fermi"
+- version: "0.18.5.1 - Fluorine Fermi"
   downloads:
    - platform: Windows 64-bit (Installer)
-     hash: 2aee0fb9a4a858199da46ce3344e7d6dec080efeab21c599903379e3e1d29dec
+     hash: 0c0880b62edf00ee4291b37c4ba32227fd1bc31433d84929eeec1e2862bd1c0f
      link: https://downloads.getmonero.org/gui/win64install
      icon: icon-windows
      vers: 
    - platform: Windows 64-bit (Zip)
-     hash: 86b665cbb22e0ce349e1a13fc37e600ae5ab36bf8335f623b7bc6570f6ced05d
+     hash: 9241bb617bc4de37b0c3b2481c234ce39984ba2615fc65991979c189f092c918
      link: https://downloads.getmonero.org/gui/win64
      icon: icon-windows
      vers: 
    - platform: macOS Intel
-     hash: 19c6a250c9ae68871a0c5ca7935dfe0eb3f1ddb468d6718b7c257aede096a254
+     hash: 1f7b2c3a0e83180267d4c09cbb4f4d14b35c4f3c218abae585f0bb288f8bf01c
      link: https://downloads.getmonero.org/gui/mac64
      icon: icon-apple
      vers: 
    - platform: macOS ARM
-     hash: 2fe562dd6ffb84941a4ff73412c234ebda8cb1831dec5ebbb217ea17d4288b92
+     hash: c40a9125a976d7f063216f286976a252eb5a7f26206bd034f25782691786f18c
      link: https://downloads.getmonero.org/gui/macarm8
      icon: icon-apple
      vers: 
    - platform: Linux 64-bit
-     hash: 99d7e9b1e8084f09bdf837dd862ad96c47a86292bdbd6c2f6b3aaa46ff510b62
+     hash: ecf7f734fb0048896b12f7e04e4f69a0257271f8411c06d30cd701371d2fd155
      link: https://downloads.getmonero.org/gui/linux64
      icon: icon-linux
      vers: 
    - platform: Source Code (archive)
-     hash: 38418512523740e68686c8b8317911e895fa9e8b0a99f6bcdcd74e46153dded3
+     hash: f94d2fa79899868ea5fc81edef8f4447a15eb431a28c4919f951f65e036e1839
      link: https://downloads.getmonero.org/gui/source
      icon: icon-github
    - platform: Source Code
@@ -38,70 +38,70 @@ gui:
      
 
 cli:
-- version: "0.18.5.0 - Fluorine Fermi"
+- version: "0.18.5.1 - Fluorine Fermi"
   downloads:
    - platform: Windows 64-bit
-     hash: 027d96a72d36663b6f5cbcc5b1564c65c628a9f8f2bb9b4d9859c03f741cabc4
+     hash: cf2ae8273977697d9ef2031c7337b781e6e5936578f602444b2990a173a2437d
      link: https://downloads.getmonero.org/cli/win64
      icon: icon-windows
      vers: 
    - platform: Windows 32-bit
-     hash: ce0210583b1b4113d709bb432dde72c55b76c40ebbc7b5b4d4ae862b507632a1
+     hash: f79746868794786ba4ca3c5a30191263ffb0b9a4ab1c0ffcbe30fd5d04986380
      link: https://downloads.getmonero.org/cli/win32
      icon: icon-windows
      vers:
    - platform: macOS Intel
-     hash: 79e03406046255d0f6a47e1fdcbbe677ab11ef7d9fcc4481252235361769292c
+     hash: 82e305bbf6128b386571bed173dae316f9dd06c4ee1217c5eda849444bec89a9
      link: https://downloads.getmonero.org/cli/mac64
      icon: icon-apple
      vers:
    - platform: macOS ARM
-     hash: fb48fcef9302bf2f97821498ec791b4f693af4984702e72e588ce02209f8960d
+     hash: dba08921841e675384ce019fd7c93b59fe7b1e6edaa0a3cf0e3253e263f61864
      link: https://downloads.getmonero.org/cli/macarm8
      icon: icon-apple
      vers:
    - platform: Linux 64-bit
-     hash: 166ad93036f95f5abeba24c8670061be022c9238dba2e6a7587611a1d759e294
+     hash: 22a7dda7b0cb699fdd6b7674c3b4a4465b337cc98a54983523b759e1e7cc9958
      link: https://downloads.getmonero.org/cli/linux64
      icon: icon-linux
      vers: 
    - platform: Linux 32-bit
-     hash: 57c63e067d7aefa69f74f44ef7f46091251512aba39570a7c8e26644d298eeb5
+     hash: 68783d76d9eac543d593ca1bdfa9c7eb540ec6c646acc68421702465c1d86182
      link: https://downloads.getmonero.org/cli/linux32
      icon: icon-linux
      vers:
    - platform: Linux ARMv8
-     hash: d8f19b947ce46d468615bb7331962d4ca732e79b1ac6c5128fa509df3f6cc487
+     hash: c0caf042cb7c7b760f5ad6be188084b59352440b32990a78b8051497b9398dbc
      link: https://downloads.getmonero.org/cli/linuxarm8
      icon: icon-linux
      vers:
    - platform: Linux ARMv7
-     hash: dedaf94b765c428040f1b64e580e389206141fa2be72fd1394be0a8614f04f40
+     hash: bd6693ac411919d474d98c9e7d7bae1f03e7ef7f1d779a15e2ba3a188c958d36
      link: https://downloads.getmonero.org/cli/linuxarm7
      icon: icon-linux
      vers:
    - platform: Linux RISC-V 64-bit 
-     hash: 219112ffac9af48226dc6ec1fadc8a210a5876eeb7f3a32f3d3cbae842b52bf9
+     hash: 28ead34fa4320ea6809f16c4b064d3b430e71caf3155d25677cc624388fc0ee5
      link: https://downloads.getmonero.org/cli/linuxriscv64
      icon: icon-linux
      vers:
    - platform: Android ARMv8
-     hash: 7321662959f917db85c3da1c0a37530d21fb5c25e2c9a2dc0490486842dec974
+     hash: a2c0fb240c5eaa947f5a2382ece4613c59b299645ad4d1480ef24e71b8aa8c8f
      link: https://downloads.getmonero.org/cli/androidarm8
      icon: icon-android
      vers:
    - platform: Android ARMv7
-     hash: ab5ab33899c5ac6806a0c1a24a3b01d46c291142f0983a8a184f93c8a3baca9f
+     hash: daa56844251a9e9f296caaaafcf72c60dade54ae93146085d627ffc883b0fec3
      link: https://downloads.getmonero.org/cli/androidarm7
      icon: icon-android
      vers:
    - platform: FreeBSD 64-bit
-     hash: 0beb34bac944fdf02e2939fe320b9a6a5b26910cbf0a1a629b26be2aad50bace
+     hash: cc32bb64fb577254fe24441e2db0b722dfedff5c953427ffbf396dc16f0feb62
      link: https://downloads.getmonero.org/cli/freebsd64
      icon: icon-freebsd
      vers:
    - platform: Source Code (archive)
-     hash: c764dfdf6d710c8dea913e77f31d0c75a8c6a3710a448341d28c3688ad2384e5
+     hash: 9ec6ed0fd37db9d81cf7738a5f0536cf9aec6ed8ef8fd48649a59a6aaf20de3d
      link: https://downloads.getmonero.org/cli/source
      icon: icon-github
    - platform: Source Code 
