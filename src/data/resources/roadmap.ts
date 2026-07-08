@@ -52,6 +52,11 @@ const inProgressItems: RoadmapItem[] = [
 
 const upcomingItems: RoadmapItem[] = [
   {
+    id: "bulletproofsStar",
+    status: "upcoming",
+    link: "https://repo.getmonero.org/monero-project/ccs-proposals/-/merge_requests/626",
+  },
+  {
     id: "bulletproofsPP",
     status: "upcoming",
   },

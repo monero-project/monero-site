@@ -30,6 +30,10 @@
             "title": "Jamtis",
             "description": "Post-quantum addressing protocol for Monero."
         },
+        "bulletproofsStar": {
+            "title": "Bulletproofs*",
+            "description": "Folding Bulletproofs for lighter many-input transactions."
+        },
         "bulletproofsPP": {
             "title": "Bulletproofs++",
             "description": "Next generation range proofs for smaller, faster transactions."
