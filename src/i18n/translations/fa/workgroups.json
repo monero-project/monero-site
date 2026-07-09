@@ -1,0 +1,107 @@
+{
+    "pageTitle": "",
+    "description": "",
+    "hero": {
+        "title": "",
+        "subtitle": ""
+    },
+    "hangoutsNote": {
+        "title": "",
+        "content": ""
+    },
+    "getStarted": {
+        "title": "",
+        "communityWorkgroup": {
+            "name": "",
+            "lead": "",
+            "description": "",
+            "cta": ""
+        }
+    },
+    "columns": {
+        "development": {
+            "title": "",
+            "subtitle": ""
+        },
+        "research": {
+            "title": "",
+            "subtitle": ""
+        },
+        "community": {
+            "title": "",
+            "subtitle": ""
+        }
+    },
+    "workgroups": {
+        "development": {
+            "name": "",
+            "action": "",
+            "bestFor": ""
+        },
+        "gui": {
+            "name": "",
+            "action": "",
+            "bestFor": ""
+        },
+        "website": {
+            "name": "",
+            "action": "",
+            "bestFor": ""
+        },
+        "seraphis": {
+            "name": "",
+            "action": "",
+            "bestFor": ""
+        },
+        "docs": {
+            "name": "",
+            "action": "",
+            "bestFor": ""
+        },
+        "researchLab": {
+            "name": "",
+            "action": "",
+            "bestFor": ""
+        },
+        "researchLounge": {
+            "name": "",
+            "action": "",
+            "bestFor": ""
+        },
+        "pow": {
+            "name": "",
+            "action": "",
+            "bestFor": ""
+        },
+        "policy": {
+            "name": "",
+            "action": "",
+            "bestFor": ""
+        },
+        "malware": {
+            "name": "",
+            "action": "",
+            "bestFor": ""
+        },
+        "localization": {
+            "name": "",
+            "action": "",
+            "bestFor": ""
+        },
+        "events": {
+            "name": "",
+            "action": "",
+            "bestFor": ""
+        },
+        "support": {
+            "name": "",
+            "action": "",
+            "bestFor": ""
+        }
+    },
+    "core": {
+        "title": "",
+        "description": "",
+        "note": ""
+    }
+}
