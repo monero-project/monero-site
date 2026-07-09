@@ -9,6 +9,10 @@
         "title": "Library",
         "cardSubtitle": "Books, publications, magazines, and educational materials curated by the community.",
         "subtitle": "Explore publications, books, and educational resources curated by the Monero community. Whether you're just starting out or diving deep into cryptography, there's something here for you.",
+        "featured": {
+            "lead": "Featured publication",
+            "readCta": "Read the book"
+        },
         "sections": {
             "books": {
                 "title": "Books",
@@ -55,21 +59,11 @@
             "description": "The Monero Research Lab (MRL) is an open, collaborative team of researchers working on cutting-edge cryptography and privacy technologies. Our work focuses on improving Monero's protocol, analyzing potential vulnerabilities, and advancing the state of financial privacy research."
         },
         "papers": {
-            "title": "Research Papers",
-            "subtitle": "Papers written by MRL members on cryptography, privacy, and protocol improvements.",
             "tabs": {
                 "mrlBulletins": "MRL Bulletins",
                 "iacr": "IACR",
-                "other": "Other"
-            }
-        },
-        "whitepapers": {
-            "title": "Cryptonote Whitepapers",
-            "subtitle": "Foundational documents describing the protocol Monero is built upon.",
-            "items": {
-                "cryptonote": "Cryptonote Whitepaper",
-                "annotated": "Annotated Whitepaper",
-                "goodellReview": "Brandon Goodell's Whitepaper Review"
+                "other": "Other",
+                "whitepapers": "Whitepapers"
             }
         }
     }

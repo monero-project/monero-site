@@ -12,10 +12,15 @@
   /* Surface Colors */
   --bg-color: light-dark(#fff, #171717);
   --card-color: light-dark(#f9f7fc, #211f26);
+  --card-elevated-color: color-mix(
+    in srgb,
+    var(--card-color),
+    var(--heading-color) 3%
+  );
   --card-hover-color: color-mix(
     in srgb,
     var(--card-color),
-    var(--heading-color) 5%
+    var(--heading-color) 6%
   );
   --footer-color: light-dark(#f0ecf4, #211f26);
 
@@ -136,7 +141,7 @@ td {
 }
 
 th {
-  background: var(--card-hover-color);
+  background: var(--card-elevated-color);
   font-weight: var(--font-weight-semibold);
   font-size: var(--font-size-sm);
   color: var(--heading-color);

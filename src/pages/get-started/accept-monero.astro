@@ -173,4 +173,13 @@ const { t, localizeHref, localizeNumber } = Astro.locals;
   .service-buttons {
     margin-top: var(--space-md);
   }
+
+  .service-buttons :global(.card) {
+    background: var(--card-elevated-color);
+  }
+
+  .service-buttons :global(.card[data-hover]:hover),
+  .service-buttons :global(.card[data-hover]:focus-visible) {
+    background: var(--card-hover-color);
+  }
 </style>
