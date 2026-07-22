@@ -1626,6 +1626,15 @@ library:
     <li>Introducciones a los fundamentos técnicos de Monero, destinadas a desarrolladores,
     ingenieros, arquitectos de software y usuarios curiosos.</li> <li>Nuevos desarrollos
     como Kovri, Bulletproofs, Multifirmas, Monederos físicos, etc.</li></ul>.
+  masteringmonerop1: "Una guía a través del aparentemente complejo mundo de Monero."
+  masteringmonerop2: "Incluye:"
+  masteringmoneroul1: "Una amplia introducción a las cadenas de bloques y a la importancia de la privacidad - ideal para usuarios no técnicos."
+  masteringmoneroul2: "Discusión de las deficiencias de Bitcoin y de las soluciones específicas proporcionadas por Monero."
+  masteringmoneroul3: "Historias de usuarios (que ilustran cómo Monero protege tu privacidad), analogías, ejemplos, discusiones legales/éticas y fragmentos de código que ilustran conceptos técnicos clave."
+  masteringmoneroul4: "Detalles de la red descentralizada de Monero, la arquitectura peer-to-peer, el ciclo de vida de las transacciones y los principios de seguridad."
+  masteringmoneroul5: "Introducciones a los fundamentos técnicos de Monero, destinadas a desarrolladores, ingenieros, arquitectos de software y usuarios curiosos."
+  masteringmoneroul6: "Nuevos desarrollos como Kovri, Bulletproofs, Multifirmas, Monederos físicos, etc."
+  masteringmoneroinfo:
   ringscheatsheet20210301: Hoja de ayuda de los anillos
   cheatsheets: Hojas de ayuda
   rctcheatsheet20210604: Hoja de ayuda de RingCT
