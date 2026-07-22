@@ -1,6 +1,6 @@
 import DOMPurify from "isomorphic-dompurify";
 import { marked } from "marked";
-import { getMoneropediaEntries, processHTMLString } from "./moneropedia";
+import { processHTMLString } from "./moneropedia";
 
 const purifyConfig = {
   ALLOWED_ATTR: [
@@ -21,23 +21,13 @@ const purifyConfig = {
 
 const parse = (markdown: string, locale?: string): string => {
   let html = marked.parse(markdown) as string;
-  const entries = locale
-    ? getMoneropediaEntries(locale, { cache: "only" })
-    : undefined;
-  if (entries) {
-    html = processHTMLString(html, entries);
-  }
+  if (locale) html = processHTMLString(html, locale);
   return DOMPurify.sanitize(html, purifyConfig);
 };
 
 const parseInline = (markdown: string, locale?: string): string => {
   let html = marked.parseInline(markdown, { breaks: true }) as string;
-  const entries = locale
-    ? getMoneropediaEntries(locale, { cache: "only" })
-    : undefined;
-  if (entries) {
-    html = processHTMLString(html, entries);
-  }
+  if (locale) html = processHTMLString(html, locale);
   return DOMPurify.sanitize(html, purifyConfig);
 };
 

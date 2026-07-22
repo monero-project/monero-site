@@ -31,7 +31,13 @@ if (baseBranch && baseRefArg) {
   process.exit(1);
 }
 
-const BLOG_DIR = "src/content/blog";
+const CONTENT_ROOT = "src/content";
+const CONTENT_DIRS = readdirSync(CONTENT_ROOT, { withFileTypes: true })
+  .filter(
+    (e) =>
+      e.isDirectory() && !e.name.startsWith("_") && !e.name.startsWith("."),
+  )
+  .map((e) => join(CONTENT_ROOT, e.name));
 const OG_ROUTE = "src/pages/open-graph/[...route].ts";
 const I18N_CONFIG = "src/i18n/config.ts";
 const I18N_DIR = "src/i18n/translations";
@@ -117,7 +123,7 @@ let changed: string[] = [];
 if (baseRef) {
   const mode = useMergeBase ? "merge-base" : "direct";
   console.log(`Diff: ${mode} against ${baseRef}`);
-  changed = getChangedFiles(baseRef, useMergeBase, BLOG_DIR, I18N_DIR);
+  changed = getChangedFiles(baseRef, useMergeBase, ...CONTENT_DIRS, I18N_DIR);
   console.log(
     `Diff: ${changed.length} file${changed.length !== 1 ? "s" : ""} changed`,
   );
@@ -125,7 +131,7 @@ if (baseRef) {
   console.log("Diff: skipped");
 }
 
-// Limit blog posts, keeping edited ones
+// Limit content entries
 if (limitPosts) {
   const limit = Number(limitPosts);
   if (!Number.isFinite(limit) || limit < 1) {
@@ -133,34 +139,50 @@ if (limitPosts) {
     process.exit(1);
   }
 
-  const isPost = (f: string) => /^\d/.test(f) && f.endsWith(".md");
+  const isContent = (f: string) => !f.startsWith("_") && f.endsWith(".md");
+  const localeSet = new Set(Object.keys(locales));
+  const stats: { name: string; kept: number; total: number }[] = [];
 
-  const allPosts = readdirSync(BLOG_DIR).filter(isPost).sort().reverse();
-  const keep = new Set(allPosts.slice(0, limit));
-
-  for (const file of changedFilesUnder(BLOG_DIR)) {
-    if (isPost(basename(file))) keep.add(basename(file));
+  for (const dir of CONTENT_DIRS) {
+    const changedKeep = new Set(changedFilesUnder(dir));
+    let kept = 0;
+    let total = 0;
+    for (const locale of readdirSync(dir)) {
+      if (!localeSet.has(locale)) continue;
+      const localeDir = join(dir, locale);
+      const files = readdirSync(localeDir).filter(isContent).sort().reverse();
+      const baseline =
+        locale === defaultLocale
+          ? new Set(files.slice(0, limit))
+          : new Set<string>();
+      for (const file of files) {
+        total++;
+        const rel = join(localeDir, file);
+        if (baseline.has(file) || changedKeep.has(rel)) {
+          kept++;
+          continue;
+        }
+        rmSync(rel);
+      }
+    }
+    if (total > 0) stats.push({ name: basename(dir), kept, total });
   }
 
-  let removed = 0;
-  for (const file of allPosts) {
-    if (keep.has(file)) continue;
-    rmSync(join(BLOG_DIR, file));
-    removed++;
-  }
-
-  console.log(
-    `Blog: kept ${allPosts.length - removed} of ${allPosts.length} posts`,
-  );
+  const summary = stats
+    .map(({ name, kept, total }) => `${name} ${kept}/${total}`)
+    .join(", ");
+  console.log(`Content: kept ${summary || "no entries"}`);
 }
 
 // Limit locales
 if (limitLocales) {
   const keepLocales = new Set([defaultLocale]);
 
-  for (const file of changedFilesUnder(I18N_DIR)) {
-    const locale = relative(I18N_DIR, file).split("/")[0];
-    if (locale && locale !== defaultLocale) keepLocales.add(locale);
+  for (const dir of [I18N_DIR, ...CONTENT_DIRS]) {
+    for (const file of changedFilesUnder(dir)) {
+      const locale = relative(dir, file).split("/")[0];
+      if (locale && locale !== defaultLocale) keepLocales.add(locale);
+    }
   }
 
   writeFileSync(I18N_CONFIG, serializeI18nConfig(keepLocales));

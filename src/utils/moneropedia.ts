@@ -5,6 +5,7 @@ import fg from "fast-glob";
 import matter from "gray-matter";
 
 import { defaultLocale } from "../i18n/config";
+import { memo } from "./memo";
 import escapeStringRegexp from "escape-string-regexp";
 
 const MONEROPEDIA_SUFFIXES = ["based", "like", "form"] as const;
@@ -28,25 +29,12 @@ export interface MoneropediaMatcher {
   lookup: Map<string, MoneropediaEntry>;
 }
 
-type EntriesCacheValue = {
-  entries?: MoneropediaEntry[];
-  promise?: Promise<MoneropediaEntry[]>;
-};
-
-const entriesCache = new Map<string, EntriesCacheValue>();
-
 export function buildMoneropediaHref(entry: MoneropediaEntry): string {
-  const basePath = `/resources/moneropedia/${entry.fileName.toLowerCase()}/`;
-  if (entry.locale === defaultLocale) {
-    return basePath;
-  }
-
-  return `/${entry.locale}${basePath}`;
+  return `/resources/moneropedia/${entry.fileName.toLowerCase()}/`;
 }
 
-async function loadLocaleEntries(
-  locale: string,
-): Promise<Map<string, MoneropediaEntry>> {
+// Filename-keyed so loadMergedEntries can override defaults with translations.
+const loadLocaleEntries = memo(async (locale: string) => {
   const localeDir = path.join(MONEROPEDIA_ROOT, locale);
 
   const files = await fg("**/*.md", {
@@ -73,71 +61,41 @@ async function loadLocaleEntries(
   );
 
   return new Map(entries.map((entry) => [entry.fileName, entry]));
-}
+});
 
-// Returns a list of entries for the requested locale, applying the
-// default locale content as a fallback
-async function loadMoneropediaEntries(
-  locale: string,
-): Promise<MoneropediaEntry[]> {
-  const fallback = await loadLocaleEntries(defaultLocale);
+async function loadMergedEntries(locale: string): Promise<MoneropediaEntry[]> {
   if (locale === defaultLocale) {
-    return Array.from(fallback.values());
+    return Array.from((await loadLocaleEntries(defaultLocale)).values());
   }
 
-  const current = await loadLocaleEntries(locale);
+  const [fallback, current] = await Promise.all([
+    loadLocaleEntries(defaultLocale),
+    loadLocaleEntries(locale),
+  ]);
   const merged = new Map(fallback);
-  for (const [file, entry] of current.entries()) {
-    merged.set(file, entry);
-  }
-
+  for (const [file, entry] of current) merged.set(file, entry);
   return Array.from(merged.values());
 }
 
-type MoneropediaCacheMode = "use" | "only" | "bypass";
+// Warm before any sync getMoneropediaMatcher read.
+const matcherCache = new Map<string, MoneropediaMatcher | null>();
 
-export function getMoneropediaEntries(
+export async function warmMoneropedia(
   locale: string,
-  options?: { cache?: Exclude<MoneropediaCacheMode, "only"> },
-): Promise<MoneropediaEntry[]>;
-export function getMoneropediaEntries(
-  locale: string,
-  options: { cache: "only" },
-): MoneropediaEntry[] | undefined;
-export function getMoneropediaEntries(
-  locale: string,
-  options: { cache?: MoneropediaCacheMode } = {},
-): Promise<MoneropediaEntry[]> | MoneropediaEntry[] | undefined {
-  const cacheMode = options.cache ?? "use";
-  const cached = entriesCache.get(locale);
-
-  if (cacheMode === "only") {
-    return cached?.entries;
-  }
-
-  if (cacheMode !== "bypass") {
-    if (cached?.entries) return Promise.resolve(cached.entries);
-    if (cached?.promise) return cached.promise;
-  }
-
-  const promise = loadMoneropediaEntries(locale).then((entries) => {
-    entriesCache.set(locale, { entries });
-    return entries;
-  });
-  entriesCache.set(locale, { promise });
-
-  return promise;
+): Promise<MoneropediaMatcher | null> {
+  if (matcherCache.has(locale)) return matcherCache.get(locale)!;
+  const matcher = buildMoneropediaMatcher(await loadMergedEntries(locale));
+  matcherCache.set(locale, matcher);
+  return matcher;
 }
 
-export async function initMoneropediaCache(locale: string): Promise<void> {
-  if (!locale) return;
-  const cached = entriesCache.get(locale);
-  if (cached?.entries) return;
-  if (cached?.promise) {
-    await cached.promise;
-    return;
-  }
-  await getMoneropediaEntries(locale);
+export function getMoneropediaMatcher(
+  locale: string,
+): MoneropediaMatcher | null {
+  if (matcherCache.has(locale)) return matcherCache.get(locale)!;
+  throw new Error(
+    `Moneropedia not warmed for "${locale}" — await warmMoneropedia(locale) before a sync read.`,
+  );
 }
 
 // Builds a regex + lookup map for scanning text. The regex matches any
@@ -168,16 +126,11 @@ export function buildMoneropediaMatcher(
 // Rewrites plain HTML by replacing `@term` mentions with Moneropedia links.
 // Useful for content that goes outside the Astro Content Collection pipeline (e.g., strings pulled
 // from i18n JSON files) but still needs the same linking behavior.
-export function processHTMLString(
-  html: string,
-  entries: MoneropediaEntry[],
-): string {
-  let processedHtml = html;
+export function processHTMLString(html: string, locale: string): string {
+  const matcher = getMoneropediaMatcher(locale);
+  if (!matcher) return html;
 
-  const matcher = buildMoneropediaMatcher(entries);
-  if (!matcher) return processedHtml;
-
-  processedHtml = processedHtml.replace(matcher.regex, (match, term) => {
+  return html.replace(matcher.regex, (match, term) => {
     const displayText = match.slice(1).replace(/-/g, " ");
     const entry = term && matcher.lookup.get(term.toLowerCase());
     if (!entry) return displayText;
@@ -187,6 +140,4 @@ export function processHTMLString(
 
     return `<a class="moneropedia-link" data-tooltip="${escapedSummary}" href="${linkPath}">${displayText}<sup>&#x1F6C8;</sup></a>`;
   });
-
-  return processedHtml;
 }
