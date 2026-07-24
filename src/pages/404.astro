@@ -38,7 +38,10 @@ const { t, localizeHref, localizeNumber } = Astro.locals;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: calc(100svh - (var(--page-top-margin) * 2) - 4.5rem);
+    min-block-size: calc(100vh - var(--header-height) - var(--page-top-margin));
+    min-block-size: calc(
+      100dvh - var(--header-height) - var(--page-top-margin)
+    );
     flex: 1;
   }
 
@@ -81,13 +84,5 @@ const { t, localizeHref, localizeNumber } = Astro.locals;
 
   .quick-links a {
     font-weight: var(--font-weight-semibold);
-  }
-
-  @media (width >= 600px) {
-    .error-container {
-      min-height: calc(
-        100vh - (var(--page-top-margin) * 5)
-      ); /* makes the footer be offscreen */
-    }
   }
 </style>
