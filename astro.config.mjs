@@ -16,9 +16,13 @@ const skipImageOptimization = process.env.SKIP_IMAGE_OPTIMIZATION === "true";
 // https://astro.build/config
 export default defineConfig({
   output: isSSR ? "server" : "static",
-  adapter: isSSR
-    ? (await import("@astrojs/node")).default({ mode: "standalone" })
-    : undefined,
+  ...(isSSR
+    ? {
+        adapter: (await import("@astrojs/node")).default({
+          mode: "standalone",
+        }),
+      }
+    : {}),
   site: `https://${SITE_ROOTDOMAIN}`,
   trailingSlash: "always",
   markdown: {

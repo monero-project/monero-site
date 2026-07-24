@@ -53,7 +53,7 @@ const {
 } = Astro.props;
 const { t, safeMarkdown } = Astro.locals;
 
-const PLATFORM_ICONS: Record<string, ImageMetadata> = {
+const PLATFORM_ICONS: Record<DownloadLink["platform"], ImageMetadata> = {
   windows: icons.mask("brand/windows"),
   macos: icons.mask("brand/apple"),
   linux: icons.mask("brand/linux"),

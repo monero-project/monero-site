@@ -9,9 +9,9 @@ import { icons } from "@/utils/icons";
 export interface Props extends HTMLAttributes<"div"> {
   href: string;
   title: string;
-  subtitle?: string;
-  logo?: ImageMetadata;
-  onionHref?: string;
+  subtitle?: string | undefined;
+  logo?: ImageMetadata | undefined;
+  onionHref?: string | undefined;
   variant?: "default" | "mini";
   border?: boolean;
 }

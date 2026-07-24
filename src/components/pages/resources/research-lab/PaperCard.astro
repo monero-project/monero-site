@@ -3,11 +3,11 @@ import Card from "@/components/ui/Card.astro";
 import IconLink from "@/components/ui/IconLink.astro";
 
 interface Props {
-  code?: string;
+  code?: string | undefined;
   title: string;
   abstract: string;
   url: string;
-  note?: string;
+  note?: string | undefined;
 }
 
 const { code, title, abstract, url, note } = Astro.props;

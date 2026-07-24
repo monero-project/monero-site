@@ -83,7 +83,7 @@ export const moneropediaLinks: Plugin<[], Root> = () => {
       );
     } catch (error) {
       console.error("[moneropedia] Processing error:", error);
-      return tree;
+      return;
     }
   };
 };

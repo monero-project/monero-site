@@ -7,7 +7,7 @@ type Variant = "primary" | "secondary" | "outline" | "danger";
 interface Props extends HTMLAttributes<As> {
   variant?: Variant;
   class?: string;
-  href?: string;
+  href?: string | undefined;
   target?: string;
   rel?: string;
   as?: As;

@@ -6,9 +6,9 @@ import type { ImageMetadata } from "astro";
 interface Props {
   name: string;
   description: string;
-  href?: string;
-  logo?: ImageMetadata;
-  monochrome?: boolean;
+  href?: string | undefined;
+  logo?: ImageMetadata | undefined;
+  monochrome?: boolean | undefined;
 }
 
 const { name, description, href, logo, monochrome = false } = Astro.props;

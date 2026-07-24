@@ -20,7 +20,7 @@ interface Props {
   link: string;
   linkText?: string;
   translateTag?: (key: string) => string;
-  id?: string;
+  id?: string | undefined;
 }
 
 const {
@@ -42,7 +42,9 @@ const ALIAS: Record<string, string> = {
   osx: "macos",
 };
 
-const ICONS: Record<string, ImageMetadata> = {
+type PlatformKey = "windows" | "macos" | "linux" | "android" | "ios";
+
+const ICONS: Record<PlatformKey, ImageMetadata> = {
   windows: icons.mask("brand/windows"),
   macos: icons.mask("brand/apple"),
   linux: icons.mask("brand/linux"),
@@ -58,17 +60,23 @@ const LABEL: Record<string, string> = {
   ios: t("downloads:platforms.ios") || "iOS",
 };
 
+const isPlatformKey = (key: string): key is PlatformKey => key in ICONS;
+
 const VALID = {
   desktop: new Set(["windows", "macos", "linux"]),
   mobile: new Set(["android", "ios"]),
 };
 
-function normalizeKeys(arr: string[] | undefined, set: Set<string>) {
+function normalizeKeys(
+  arr: string[] | undefined,
+  set: Set<string>,
+): PlatformKey[] {
   return Array.from(
     new Set( // remove duplicates post-normalization
       (arr ?? [])
         .map((s) => ALIAS[norm(s)] ?? norm(s))
-        .filter((k) => set.has(k)),
+        .filter((k) => set.has(k))
+        .filter(isPlatformKey),
     ),
   );
 }
