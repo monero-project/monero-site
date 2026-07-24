@@ -231,7 +231,7 @@ const setBuiltinId = (wallet: Wallet) => {
 
 <style>
   :global(#built-in-exchange) {
-    scroll-margin-top: var(--space-4xl);
+    scroll-margin-block-start: var(--anchor-offset);
   }
 
   .subheading {
@@ -243,11 +243,5 @@ const setBuiltinId = (wallet: Wallet) => {
 
   .compact-grid {
     padding: var(--space-xs) 0 var(--space-md) 0;
-  }
-
-  @media (width <= 1200px) {
-    :global(#built-in-exchange) {
-      scroll-margin-top: 6.5rem;
-    }
   }
 </style>

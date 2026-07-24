@@ -176,10 +176,10 @@ const { t, localizeHref } = Astro.locals;
     min-height: var(--hero-min-height);
   }
 
-  @media (width <= 1200px) {
-    #start-using-monero {
-      scroll-margin-top: 4rem;
-    }
+  #about-monero,
+  #start-using-monero,
+  #get-involved {
+    scroll-margin-block-start: var(--anchor-offset);
   }
 
   @media (width <= 600px) {
