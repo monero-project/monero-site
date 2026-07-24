@@ -3,3 +3,6 @@ allowBuilds:
   esbuild: false
   "@parcel/watcher": false
   sharp: false
+
+overrides:
+  astro-i18n-aut>astro: $astro

@@ -174,10 +174,13 @@ const rtl = dir === "rtl";
       border-inline-start: 1px solid var(--border-color);
     }
 
-    &:hover,
-    .primary-link:hover ~ & {
+    &:hover {
       color: var(--monero-orange);
     }
+  }
+
+  .primary-link:hover ~ .link-icon {
+    color: var(--monero-orange);
   }
 
   .onion-link {
