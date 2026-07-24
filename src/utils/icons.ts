@@ -39,7 +39,7 @@ export const icons = {
     return m;
   },
 
-  color(name: string): { light: ImageMetadata; dark?: ImageMetadata } {
+  color(name: string): { light: ImageMetadata; dark: ImageMetadata } {
     const light = lightIcons[name] ?? colorRoot[name];
     if (!light) throw new Error(`Unknown color icon: "${name}"`);
     return { light, dark: darkIcons[name] ?? light };

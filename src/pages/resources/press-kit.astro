@@ -23,8 +23,11 @@ import { getPublicImageDimensions } from "@/utils/image";
 import { icons } from "@/utils/icons";
 
 const { t, localizeHref } = Astro.locals;
-const previewDimensions = await Promise.all(
-  brandAssets.map((asset) => getPublicImageDimensions(asset.preview)),
+const brandAssetPreviews = await Promise.all(
+  brandAssets.map(async (asset) => ({
+    asset,
+    preview: await getPublicImageDimensions(asset.preview),
+  })),
 );
 
 const sections = [
@@ -68,11 +71,11 @@ const sections = [
     >
       <Grid minWidth="22rem" gap="xl" class="assets-grid">
         {
-          brandAssets.map((asset, i) => (
+          brandAssetPreviews.map(({ asset, preview }) => (
             <BrandAssetCard
               asset={asset}
-              previewWidth={previewDimensions[i].width}
-              previewHeight={previewDimensions[i].height}
+              previewWidth={preview.width}
+              previewHeight={preview.height}
             />
           ))
         }

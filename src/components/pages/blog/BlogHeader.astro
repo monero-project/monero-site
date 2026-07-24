@@ -7,7 +7,7 @@ interface Props {
   title: string;
   id: string;
   author: string;
-  tags?: string[];
+  tags?: string[] | undefined;
 }
 
 const { title, id, author, tags = [] } = Astro.props;

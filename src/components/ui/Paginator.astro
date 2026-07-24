@@ -34,12 +34,11 @@ if (last <= 5) {
   );
   const sorted = [...visible].sort((a, b) => a - b);
 
-  for (let i = 0; i < sorted.length; i++) {
-    const n = sorted[i];
-    const prev = sorted[i - 1];
+  for (const [i, n] of sorted.entries()) {
+    const prev = i > 0 ? sorted[i - 1] : undefined;
 
     // Add ellipsis or fill single gap
-    if (i > 0) {
+    if (prev !== undefined) {
       const gap = n - prev;
       if (gap === 2) {
         items.push({ type: "page", number: prev + 1 });

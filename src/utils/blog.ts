@@ -2,6 +2,12 @@ export const idToDateSlug = (id: string): string => {
   const [year, month, day, ...rest] = id.split("-");
   const title = rest.join("-");
 
+  if (!year || !month || !day) {
+    throw new Error(
+      `Blog id "${id}" is not in the expected YYYY-MM-DD-title form.`,
+    );
+  }
+
   return `${year}/${month.padStart(2, "0")}/${day.padStart(2, "0")}/${title}`;
 };
 

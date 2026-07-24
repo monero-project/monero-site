@@ -63,14 +63,8 @@ const fullTitle = title.includes("|")
           ),
           siteName: "Monero",
         },
-        image: {
-          alt: openGraph?.image?.alt ?? undefined,
-        },
-        article: {
-          publishedTime: openGraph?.article?.publishedTime ?? undefined,
-          authors: openGraph?.article?.authors ?? undefined,
-          tags: openGraph?.article?.tags ?? undefined,
-        },
+        image: openGraph?.image ?? {},
+        article: openGraph?.article ?? {},
       }}
       languageAlternates={Object.keys(locales).map((lang) => ({
         hrefLang: lang,

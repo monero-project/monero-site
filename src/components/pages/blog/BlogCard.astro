@@ -12,7 +12,7 @@ interface Props {
   tags: string[];
   title: string;
   summary: string;
-  image?: ImageMetadata;
+  image?: ImageMetadata | undefined;
 }
 
 const { author, tags, title, summary, image, id } = Astro.props;

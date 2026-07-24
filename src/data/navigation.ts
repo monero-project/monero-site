@@ -5,7 +5,7 @@ interface DropdownItem {
   key: string;
   href: string;
   icon: ImageMetadata;
-  iconDark?: ImageMetadata;
+  iconDark: ImageMetadata;
 }
 
 interface NavDropdownConfig {
