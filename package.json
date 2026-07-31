@@ -32,6 +32,7 @@
     "escape-string-regexp": "^5.0.0",
     "fast-glob": "^3.3.3",
     "gray-matter": "^4.0.3",
+    "htmlrewriter": "^0.0.13",
     "i18next": "^25.8.13",
     "i18next-fs-backend": "^2.6.1",
     "isomorphic-dompurify": "^2.36.0",

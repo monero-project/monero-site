@@ -5,35 +5,38 @@ import BlogContent from "@/components/pages/blog/BlogContent.astro";
 import BlogHeader from "@/components/pages/blog/BlogHeader.astro";
 import Card from "@/components/ui/Card.astro";
 import Layout from "@/layouts/Layout.astro";
-import { getDateStringFromId } from "@/utils/blog";
+import { defaultLocale } from "@/i18n/config";
+import { getDirection, getLocalizedEntry, splitLocaleId } from "@/i18n/utils";
+import { getDateStringFromId, getLocalizedBlog } from "@/utils/blog";
 import type { GetStaticPaths } from "astro";
 import { Image } from "astro:assets";
-import type { CollectionEntry } from "astro:content";
-import { getCollection, render } from "astro:content";
+import { render } from "astro:content";
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const posts = await getCollection("blog");
-  return posts.map((post) => ({
-    params: { post: post.id },
-    props: { post },
-  }));
+  const posts = await getLocalizedBlog(defaultLocale);
+  return posts.map((post) => {
+    const { slug } = splitLocaleId(post.id);
+    return { params: { post: slug }, props: { slug } };
+  });
 };
 
 interface Props {
-  post: CollectionEntry<"blog">;
+  slug: string;
 }
 
-const { post } = Astro.props;
-const { t, localizeHref, localizeDateString } = Astro.locals;
+const { slug } = Astro.props;
+const { locale, t, localizeHref, localizeDateString } = Astro.locals;
+
+const post = await getLocalizedEntry("blog", locale, slug);
+if (!post) {
+  throw new Error(`Blog entry not found: ${locale}/${slug}`);
+}
 
 const { Content } = await render(post);
-// Get recent posts for the sidebar
-const allPosts = (await getCollection("blog")).sort((a, b) =>
-  b.id.localeCompare(a.id),
-);
-const currentIndex = allPosts.findIndex((p) => p.id === post.id);
-const N = 4;
-const recentPosts = allPosts.filter((_, i) => i !== currentIndex).slice(0, N);
+const allPosts = await getLocalizedBlog(locale);
+const recentPosts = allPosts.filter((p) => p.id !== post.id).slice(0, 4);
+const { locale: contentLocale } = splitLocaleId(post.id);
+const contentDir = getDirection(contentLocale);
 ---
 
 <Layout
@@ -43,13 +46,13 @@ const recentPosts = allPosts.filter((_, i) => i !== currentIndex).slice(0, N);
     basic: {
       title: post.data.title,
       type: "article",
-      image: `/open-graph/blog/${post.id}.png`,
+      image: `/open-graph/blog/${slug}.png`,
     },
     image: {
       alt: `OpenGraph image for Monero blog post titled "${post.data.title}"`,
     },
     article: {
-      publishedTime: new Date(getDateStringFromId(post.id) ?? "").toISOString(),
+      publishedTime: new Date(getDateStringFromId(slug) ?? "").toISOString(),
       authors: post.data.author
         .split(/\s+and\s+|,/)
         .map((a: string) => a.trim()),
@@ -68,7 +71,7 @@ const recentPosts = allPosts.filter((_, i) => i !== currentIndex).slice(0, N);
     <article class="blog-post">
       <BlogHeader
         title={post.data.title}
-        id={post.id}
+        id={slug}
         author={post.data.author}
         tags={post.data.tags}
       />
@@ -86,7 +89,7 @@ const recentPosts = allPosts.filter((_, i) => i !== currentIndex).slice(0, N);
           </div>
         )
       }
-      <BlogContent>
+      <BlogContent lang={contentLocale} dir={contentDir}>
         <Content />
       </BlogContent>
     </article>
@@ -96,7 +99,8 @@ const recentPosts = allPosts.filter((_, i) => i !== currentIndex).slice(0, N);
       <ul class="recent-posts">
         {
           recentPosts.map((recentPost) => {
-            const dateStr = getDateStringFromId(recentPost.id);
+            const { slug: recentSlug } = splitLocaleId(recentPost.id);
+            const dateStr = getDateStringFromId(recentSlug);
             const formattedDate = localizeDateString(dateStr, {
               year: "numeric",
               month: "long",
@@ -106,7 +110,7 @@ const recentPosts = allPosts.filter((_, i) => i !== currentIndex).slice(0, N);
               <li>
                 <a
                   class="post-title"
-                  href={localizeHref(`/blog/${recentPost.id}/`)}
+                  href={localizeHref(`/blog/${recentSlug}/`)}
                 >
                   {recentPost.data.title}
                 </a>

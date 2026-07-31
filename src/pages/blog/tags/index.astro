@@ -2,11 +2,10 @@
 import PageContainer from "@/components/ui/layout/PageContainer.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import Layout from "@/layouts/Layout.astro";
-import { getCollection } from "astro:content";
+import { defaultLocale } from "@/i18n/config";
+import { getLocalizedBlog } from "@/utils/blog";
 
-const allPosts = (await getCollection("blog")).sort((a, b) =>
-  a.id.localeCompare(b.id),
-);
+const allPosts = await getLocalizedBlog(defaultLocale);
 const tags = [...new Set(allPosts.flatMap((post) => post.data.tags))].filter(
   (tag) => tag !== undefined,
 );

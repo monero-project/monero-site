@@ -47,6 +47,9 @@ importers:
       gray-matter:
         specifier: ^4.0.3
         version: 4.0.3
+      htmlrewriter:
+        specifier: ^0.0.13
+        version: 0.0.13
       i18next:
         specifier: ^25.8.13
         version: 25.8.13(typescript@5.9.3)
@@ -2384,6 +2387,9 @@ packages:
 
   htmlparser2@8.0.2:
     resolution: {integrity: sha512-GYdjWKDkbRLkZ5geuHs5NY1puJ+PXwP7+fHPRz06Eirsb9ugf6d8kkXav6ADhcODhFFPMIXyxkxSuMf3D6NCFA==}
+
+  htmlrewriter@0.0.13:
+    resolution: {integrity: sha512-HPxT+y/i9RzNeKrJ6MBFXwB+FeTfHPfcBzoKHVnk3oiKn2s6x13tLoxjggI+0/yOSBG1n8SV//PGDBJYT/4XQw==}
 
   http-cache-semantics@4.2.0:
     resolution: {integrity: sha512-dTxcvPXqPvXBQpq5dUr6mEMJX4oIEFv6bwom3FDwKRDsuIjjJGANqhBuoAn9c1RQJIdAKav33ED65E2ys+87QQ==}
@@ -6569,6 +6575,8 @@ snapshots:
       domhandler: 5.0.3
       domutils: 3.2.2
       entities: 4.5.0
+
+  htmlrewriter@0.0.13: {}
 
   http-cache-semantics@4.2.0: {}
 

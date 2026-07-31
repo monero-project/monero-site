@@ -2,19 +2,21 @@
 export const prerender = true;
 
 import { defaultLocale } from "@/i18n/config";
+import {
+  getLocalizedCollection,
+  getLocalizedEntry,
+  splitLocaleId,
+} from "@/i18n/utils";
 import type { CollectionEntry } from "astro:content";
-import { getCollection, getEntry, render } from "astro:content";
+import { render } from "astro:content";
 
 import Layout from "@/layouts/Layout.astro";
 import BackLink from "@/components/ui/BackLink.astro";
 
 export async function getStaticPaths() {
-  const entries = await getCollection("moneropedia", (entry) =>
-    entry.id.startsWith(defaultLocale + "/"),
-  );
-
+  const entries = await getLocalizedCollection("moneropedia", defaultLocale);
   return entries.map((entry) => ({
-    params: { slug: entry.id.replace(`${defaultLocale}/`, "") },
+    params: { slug: splitLocaleId(entry.id).slug },
   }));
 }
 
@@ -23,13 +25,10 @@ type Props = CollectionEntry<"moneropedia">;
 const { locale, t, localizeHref } = Astro.locals;
 
 const { slug } = Astro.params;
-const entry = await getEntry("moneropedia", `${locale}/${slug}`);
+const entry = await getLocalizedEntry("moneropedia", locale, slug ?? "");
 
 if (!entry) {
-  return new Response(null, {
-    status: 404,
-    statusText: "Not found",
-  });
+  throw new Error(`Moneropedia entry not found: ${locale}/${slug}`);
 }
 
 const { Content } = await render(entry);

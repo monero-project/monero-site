@@ -5,10 +5,11 @@ import Column from "@/components/ui/layout/Column.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
 import TOCContainer from "@/components/ui/toc/TOCContainer.astro";
 import Layout from "@/layouts/Layout.astro";
-import { getCollection, render } from "astro:content";
+import { render } from "astro:content";
+import { getLocalizedEntry } from "@/i18n/utils";
 import { icons } from "@/utils/icons";
 
-const { t } = Astro.locals;
+const { locale, t } = Astro.locals;
 
 const sections = [
   {
@@ -31,10 +32,9 @@ const sections = [
   },
 ];
 
-const legalContent = await getCollection("legal");
 const renderedSections = await Promise.all(
   sections.map(async (section) => {
-    const entry = legalContent.find((e) => e.id === section.id);
+    const entry = await getLocalizedEntry("legal", locale, section.id);
     if (!entry) {
       throw new Error(
         `Legal section ${section.id} not found. Ensure the section ID matches the file name in the src/content/legal directory.`,

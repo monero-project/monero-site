@@ -2,15 +2,11 @@ import type { Link, Root, Text, Html } from "mdast";
 import type { Plugin } from "unified";
 import type { VFile } from "vfile";
 
-import { defaultLocale, locales } from "../../i18n/config";
-import {
-  buildMoneropediaHref,
-  buildMoneropediaMatcher,
-  getMoneropediaEntries,
-} from "../../utils/moneropedia";
+import { defaultLocale } from "../../i18n/config";
+import { localeKeys } from "../../i18n/keys";
+import { buildMoneropediaHref, warmMoneropedia } from "../../utils/moneropedia";
 import { findAndReplace } from "mdast-util-find-and-replace";
 
-const AVAILABLE_LOCALES = new Set(Object.keys(locales));
 const BLOCKED_PARENT_TYPES = [
   "link",
   "linkReference",
@@ -47,18 +43,15 @@ function getLocaleFromFile(file?: VFile | null): string | undefined {
     .replace(/\\/g, "/")
     .split("/")
     .reverse()
-    .find((segment) => AVAILABLE_LOCALES.has(segment));
+    .find((segment) => localeKeys.includes(segment));
 }
 
 export const moneropediaLinks: Plugin<[], Root> = () => {
-  return async (tree: Root, file?: VFile | null) => {
+  return async (tree, file) => {
     try {
       const locale = getLocaleFromFile(file) ?? defaultLocale;
 
-      const entries = await getMoneropediaEntries(locale);
-      if (!entries.length) return;
-
-      const matcher = buildMoneropediaMatcher(entries);
+      const matcher = await warmMoneropedia(locale);
       if (!matcher) return;
 
       findAndReplace(
