@@ -1,13 +1,14 @@
 ---
 import BookCard from "@/components/pages/resources/library/BookCard.astro";
-import CheatsheetCard from "@/components/pages/resources/library/CheatsheetCard.astro";
+import Button from "@/components/ui/Button.astro";
 import ExternalResourceButton from "@/components/ui/ExternalResourceButton.astro";
+import HeroCard from "@/components/ui/HeroCard.astro";
+import MaskIcon from "@/components/ui/icons/MaskIcon.astro";
 import Grid from "@/components/ui/layout/Grid.astro";
 import PageContainer from "@/components/ui/layout/PageContainer.astro";
 import PageSection from "@/components/ui/layout/PageSection.astro";
-import Column from "@/components/ui/layout/Column.astro";
+import SectionTabs from "@/components/ui/tabs/SectionTabs.astro";
 import TitleCard from "@/components/ui/TitleCard.astro";
-import TOCContainer from "@/components/ui/toc/TOCContainer.astro";
 import Layout from "@/layouts/Layout.astro";
 
 import { books, cheatsheets, newsletters } from "@/data/resources/library";
@@ -15,24 +16,25 @@ import { icons } from "@/utils/icons";
 
 const { dir, t, localizeHref } = Astro.locals;
 
-const sections = [
+const featured = books[0];
+if (!featured || !featured.cover) {
+  throw new Error(
+    "Library: At least one book must exist and have a cover image.",
+  );
+}
+
+const tabs = [
   {
-    id: "books",
-    icon: icons.mask("book-text"),
-    title: t("knowledge-base:library.sections.books.title"),
-    subtitle: t("knowledge-base:library.sections.books.tocSubtitle"),
+    label: t("knowledge-base:library.sections.books.title"),
+    count: books.length,
   },
   {
-    id: "cheatsheets",
-    icon: icons.mask("receipt-text"),
-    title: t("knowledge-base:library.sections.cheatsheets.title"),
-    subtitle: t("knowledge-base:library.sections.cheatsheets.tocSubtitle"),
+    label: t("knowledge-base:library.sections.cheatsheets.title"),
+    count: cheatsheets.length,
   },
   {
-    id: "newsletters",
-    icon: icons.mask("mails"),
-    title: t("knowledge-base:library.sections.newsletters.title"),
-    subtitle: t("knowledge-base:library.sections.newsletters.tocSubtitle"),
+    label: t("knowledge-base:library.sections.newsletters.title"),
+    count: newsletters.length,
   },
 ];
 ---
@@ -49,92 +51,98 @@ const sections = [
   />
 
   <PageContainer>
-    <TOCContainer
-      sections={sections}
-      ariaLabel={t("knowledge-base:library.aria.sectionsNav")}
-    />
-    <PageSection
-      title={t("knowledge-base:library.sections.books.title")}
-      subtitle={t("knowledge-base:library.sections.books.subtitle")}
-      anchorId="books"
+    <HeroCard
+      image={featured.cover}
+      imageAlt={featured.coverAlt ?? ""}
+      title={featured.subtitle
+        ? `${featured.title} - ${featured.subtitle}`
+        : featured.title}
+      lead={t("knowledge-base:library.featured.lead")}
+      description={featured.description}
     >
-      <Grid columns={2} gap="md">
-        {books.map((book) => <BookCard {...book} />)}
-      </Grid>
-    </PageSection>
+      <Button as="a" href={featured.link}>
+        {t("knowledge-base:library.featured.readCta")}
+        <MaskIcon
+          src={icons.mask("arrow-right")}
+          size="1em"
+          rtl={dir === "rtl"}
+        />
+      </Button>
+    </HeroCard>
 
-    <hr aria-hidden="true" />
+    <PageSection>
+      <SectionTabs tabs={tabs}>
+        <Fragment slot="panel-0">
+          <Grid columns={2} gap="md">
+            {books.map((book) => <BookCard {...book} />)}
+          </Grid>
+        </Fragment>
 
-    <PageSection
-      title={t("knowledge-base:library.sections.cheatsheets.title")}
-      anchorId="cheatsheets"
-    >
-      <div class="cheatsheet-intro">
-        <h3 class="salmon-title">
-          {t("knowledge-base:library.sections.cheatsheets.salmonSeries.title")}
-        </h3>
-        <p class="section-intro">
-          {
-            t(
-              "knowledge-base:library.sections.cheatsheets.salmonSeries.description",
-            )
-          }
-        </p>
-      </div>
+        <Fragment slot="panel-1">
+          <div class="salmon-intro">
+            <h3>
+              {
+                t(
+                  "knowledge-base:library.sections.cheatsheets.salmonSeries.title",
+                )
+              }
+            </h3>
+            <p>
+              {
+                t(
+                  "knowledge-base:library.sections.cheatsheets.salmonSeries.description",
+                )
+              }
+            </p>
+          </div>
+          <Grid minWidth="22rem" gap="md">
+            {
+              cheatsheets.map((sheet) => (
+                <ExternalResourceButton
+                  href={sheet.url}
+                  title={sheet.title}
+                  subtitle={sheet.description}
+                  icon={icons.mask(sheet.icon)}
+                />
+              ))
+            }
+          </Grid>
+        </Fragment>
 
-      <Grid minWidth="16rem" gap="md">
-        {
-          cheatsheets.map((sheet) => (
-            <CheatsheetCard
-              url={sheet.url}
-              title={sheet.title}
-              description={sheet.description}
-              icon={icons.mask("receipt-text")}
-              rtl={dir === "rtl"}
-            />
-          ))
-        }
-      </Grid>
-    </PageSection>
-
-    <hr aria-hidden="true" />
-
-    <PageSection
-      title={t("knowledge-base:library.sections.newsletters.title")}
-      subtitle={t("knowledge-base:library.sections.newsletters.subtitle")}
-      anchorId="newsletters"
-    >
-      <Column gap="sm">
-        {
-          newsletters.map((newsletter) => (
-            <ExternalResourceButton
-              href={newsletter.url}
-              title={newsletter.title}
-              subtitle={newsletter.description}
-            />
-          ))
-        }
-      </Column>
+        <Fragment slot="panel-2">
+          <Grid minWidth="22rem" gap="md">
+            {
+              newsletters.map((newsletter) => (
+                <ExternalResourceButton
+                  href={newsletter.url}
+                  title={newsletter.title}
+                  subtitle={newsletter.description}
+                />
+              ))
+            }
+          </Grid>
+        </Fragment>
+      </SectionTabs>
     </PageSection>
   </PageContainer>
 </Layout>
 
 <style>
-  .section-intro {
-    color: var(--paragraph-subtitle);
-    margin-block: 0 var(--space-xl);
-    max-width: 70ch;
-    line-height: var(--line-height-body);
-  }
-
-  .cheatsheet-intro {
+  .salmon-intro {
     margin-bottom: var(--space-xl);
   }
 
-  .salmon-title {
-    margin-block: var(--space-xs);
+  .salmon-intro h3 {
+    margin: 0 0 var(--space-2xs);
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-semibold);
     color: var(--heading-color);
+  }
+
+  .salmon-intro p {
+    margin: 0;
+    color: var(--paragraph-subtitle);
+    max-width: 70ch;
+    line-height: var(--line-height-body);
   }
 </style>

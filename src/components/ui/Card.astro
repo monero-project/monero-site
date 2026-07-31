@@ -3,10 +3,12 @@ import type { HTMLTag } from "astro/types";
 
 type Padding = "none" | "xs" | "sm" | "md" | "lg" | "xl" | "2xl";
 type Radius = "none" | "sm" | "md" | "lg" | "xl";
+type Overflow = "hidden" | "visible";
 
 interface Props {
   padding?: Padding;
   radius?: Radius;
+  overflow?: Overflow;
   border?: boolean;
   hover?: boolean;
   transparent?: boolean;
@@ -18,6 +20,7 @@ interface Props {
 const {
   padding = "xl",
   radius = "md",
+  overflow = "hidden",
   border = false,
   hover = false,
   transparent = false,
@@ -35,7 +38,7 @@ const cardRadius = radius === "none" ? "0" : `var(--radius-${radius})`;
   data-border={border || undefined}
   data-hover={hover || undefined}
   data-transparent={transparent || undefined}
-  style={`--card-padding: ${cardPadding}; --card-radius: ${cardRadius}`}
+  style={`--card-padding: ${cardPadding}; --card-radius: ${cardRadius}; --card-overflow: ${overflow}`}
   {...rest}
 >
   <slot />
@@ -46,6 +49,7 @@ const cardRadius = radius === "none" ? "0" : `var(--radius-${radius})`;
     background: var(--card-color);
     padding: var(--card-padding);
     border-radius: var(--card-radius);
+    overflow: var(--card-overflow);
 
     &[data-border] {
       border: 1px solid var(--border-color);

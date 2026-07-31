@@ -71,6 +71,7 @@
         },
         "resources": {
             "title": "Resources",
+            "description": "References and tools for building on Monero.",
             "moneroDocs": "Monero Docs",
             "librariesSdks": "Libraries & SDKs",
             "githubOrganization": "GitHub Organization"

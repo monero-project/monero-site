@@ -21,6 +21,7 @@ export interface Cheatsheet {
   title: string;
   description: string;
   url: string;
+  icon: string;
 }
 
 export interface Newsletter {
@@ -80,24 +81,28 @@ export const cheatsheets: Cheatsheet[] = [
     description:
       "A single-page recap of keys, addresses, scopes and their relations.",
     url: "/library/MoneroAddressesCheatsheet20201206.pdf",
+    icon: "wallet",
   },
   {
     title: "Rings",
     description:
       "From generic legacy signature to CLSAG, a visual journey through ring flavours.",
     url: "/library/RctCheatsheet20210604.pdf",
+    icon: "crosshair",
   },
   {
     title: "RingCT",
     description:
       "The recipe of a delicious RingCT Type 5 transaction with all its ingredients.",
     url: "/library/RingsCheatsheet20210301.pdf",
+    icon: "shield-check",
   },
   {
     title: "ZK Basics",
     description:
       "Theoretical foundations for Bulletproof and other Zero-Knowledge features.",
     url: "/library/ZKbasicsCheatsheet20220621.pdf",
+    icon: "eye-off",
   },
 ];
 
