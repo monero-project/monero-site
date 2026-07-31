@@ -53,6 +53,10 @@ Alice can now send Charlie the transaction key along with transaction ID and Bob
 
 Note: if several transactions were made, this needs repeating for each such transaction.
 
+### Important limitation
+
+A successful payment check shows that a **given amount was directed to an address in that transaction**. It does **not** prove those funds are still **spendable** by the recipient. Outputs can be permanently time-locked, already spent, or unspendable after one-time address reuse. See [monero-project/monero#8819](https://github.com/monero-project/monero/issues/8819).
+
 ### Check payments
 
 Charlie now received those three pieces of information, and wants to check Alice is telling the truth: on an up to date
