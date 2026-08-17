@@ -298,6 +298,12 @@ meta_descr: downloads.intro
                             <td>X</td>
                             <td><a class="ext-noicon" href="https://github.com/EdgeApp" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
                         </tr>
+                        <tr>
+                            <td><img class="small" src="/img/monero-wallets.png" width="100" height="100" loading="lazy" alt="Monero Wallet logo"><a href="https://monero-wallets.com">Monero Wallet</a></td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                        </tr>
                         </table>
                         <div class="row between-xs mob-wallets mobile-only">
                             <h3>{% t downloads.localsync %}</h3>
@@ -315,6 +321,7 @@ meta_descr: downloads.intro
                             <p>{% t downloads.remotesyncinfo %}</p>
                             <ul>
                                 <li><a class="ext-noicon" href="https://edge.app/" aria-label="Edge Wallet icon" target="_blank"><img class="mob" src="/img/edge-wallet.png" width="141" height="142" loading="lazy" alt="Edge Logo">Edge</a></li>
+                                <li><a class="ext-noicon" href="https://monero-wallets.com" aria-label="Monero Wallet icon" target="_blank"><img class="mob" src="/img/monero-wallets.png" width="100" height="100" loading="lazy" alt="Monero Wallet Logo">Monero Wallet</a></li>
                             </ul>
                         </div>
             </div>
