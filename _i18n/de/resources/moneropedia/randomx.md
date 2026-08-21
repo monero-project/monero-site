@@ -18,6 +18,6 @@ egalitärere Verteilung von Blockbelohnungen zu schaffen.
 Spezifikationen von RandomX und dessen Entwicklung finden sich im
 [GitHub-Repository](https://github.com/tevador/RandomX). Ein von der
 Outreach-Workgroup erstellter [dezidierter Artikel über
-RandomX](https://www.monerooutreach.org/stories/RandomX.html) enthält noch
+RandomX](https://archive.is/v9K1h) enthält noch
 mehr Informationen über die Geschichte und den Zusammenhang von RandomX und
 Monero.

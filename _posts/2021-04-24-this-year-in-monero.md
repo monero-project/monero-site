@@ -117,7 +117,7 @@ Monero's fees spent increased ***71.11%*** YoY while the average transaction fee
 *NOTE: This time range begins with the implementation of RandomX in the November 30th, 2019 network upgrade.*
 
 - Monero's network hashrate increased from ***0.682GH/s*** to ***1.21GH/s*** over the year.
-- Monero forked to the ASIC-resistant mining algorithm known as [RandomX](https://www.monerooutreach.org/stories/RandomX.html?ref=hackernoon.com).
+- Monero forked to the ASIC-resistant mining algorithm known as [RandomX](https://archive.is/v9K1h).
 - Monero started after the RandomX upgrade with ***~27,000 miners***.
 - Monero unique miners increased from ***27,247*** to ***37,380*** over the year.
 
