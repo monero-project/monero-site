@@ -16,6 +16,6 @@ og å opprette en mer egalitær distribusjon av @blokk-belønningene.
 
 Spesifikasjonene og utviklingen til Random X kan bli funnet [i
 GitHub-arkivet](https://github.com/tevador/RandomX), mens [en artikkel
-dedikert til RandomX](https://www.monerooutreach.org/stories/RandomX.html)
+dedikert til RandomX](https://archive.is/v9K1h)
 som er laget av Outreach-arbeidsgruppen inneholder mer informasjon om
 historikken til RandomX og dets tilknytning til Monero.

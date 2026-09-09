@@ -18,6 +18,6 @@ Monero и используемый Monero начиная с версии 0.15.
 
 Спецификации и информацию о разработке RandomX можно найти [в репозитории
 GitHub](https://github.com/tevador/RandomX), а также в [статье, посвященной
-RandomX](https://www.monerooutreach.org/stories/RandomX.html), написанной
+RandomX](https://archive.is/v9K1h), написанной
 рабочей группой Monero Outreach. Указанная статья содержит больше сведений
 об истории RandomX и о связи этого алгоритма с Monero.

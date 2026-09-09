@@ -49,5 +49,5 @@ msgstr "Dieser innovative PoW wurde für CPUs optimiert und basiert auf der Ausf
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/randomx.md:12
 #
-msgid "RandomX specifications and development can be found [on the GitHub repository](https://github.com/tevador/RandomX), while [an article dedicated to RandomX](https://www.monerooutreach.org/stories/RandomX.html) made by the Outreach workgroup contains more information about the history of RandomX and its relation with Monero."
-msgstr "Spezifikationen von RandomX und dessen Entwicklung finden sich im [GitHub-Repository](https://github.com/tevador/RandomX). Ein von der Outreach-Workgroup erstellter [dezidierter Artikel über RandomX](https://www.monerooutreach.org/stories/RandomX.html) enthält noch mehr Informationen über die Geschichte und den Zusammenhang von RandomX und Monero."
+msgid "RandomX specifications and development can be found [on the GitHub repository](https://github.com/tevador/RandomX), while [an article dedicated to RandomX](https://archive.is/v9K1h) made by the Outreach workgroup contains more information about the history of RandomX and its relation with Monero."
+msgstr "Spezifikationen von RandomX und dessen Entwicklung finden sich im [GitHub-Repository](https://github.com/tevador/RandomX). Ein von der Outreach-Workgroup erstellter [dezidierter Artikel über RandomX](https://archive.is/v9K1h) enthält noch mehr Informationen über die Geschichte und den Zusammenhang von RandomX und Monero."

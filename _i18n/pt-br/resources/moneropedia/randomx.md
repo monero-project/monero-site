@@ -16,6 +16,6 @@ egalitarian distribution of the @block rewards.
 
 RandomX specifications and development can be found [on the GitHub
 repository](https://github.com/tevador/RandomX), while [an article dedicated
-to RandomX](https://www.monerooutreach.org/stories/RandomX.html) made by the
+to RandomX](https://archive.is/v9K1h) made by the
 Outreach workgroup contains more information about the history of RandomX
 and its relation with Monero.
