@@ -361,7 +361,7 @@ meta_descr: downloads.intro
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><a class="ext-noicon" href="https://trezor.io/learn/a/monero-xmr-on-trezor-model-t" target="_blank"><img src="/img/trezor.png" loading="lazy" alt="Trezor logo"></a><p><a href="https://trezor.io/learn/a/monero-xmr-on-trezor-model-t" target="_blank">{% t downloads.instructions %}</a></p></td>
+                                    <td><a class="ext-noicon" href="https://trezor.io/learn/supported-assets/other-cryptocurrencies/monero-xmr-on-trezor" target="_blank"><img src="/img/trezor.png" loading="lazy" alt="Trezor logo"></a><p><a href="https://trezor.io/learn/supported-assets/other-cryptocurrencies/monero-xmr-on-trezor" target="_blank">{% t downloads.instructions %}</a></p></td>
                                     <td>
                                         <ul>
                                             <li>Model T</li>
@@ -402,7 +402,7 @@ meta_descr: downloads.intro
                                             <li>{% t downloads.hwnanosplus %}</li>
                                             <li>{% t downloads.hwnanox %}</li>
                                     </ul>
-                                    <h3><a class="ext-noicon" href="https://trezor.io/learn/a/monero-xmr-on-trezor-model-t" target="_blank"><img src="/img/trezor.png" loading="lazy" alt="Trezor logo"></a><p><a href="https://trezor.io/learn/a/monero-xmr-on-trezor-model-t" target="_blank">{% t downloads.instructions %}</a></p></h3>
+                                    <h3><a class="ext-noicon" href="https://trezor.io/learn/supported-assets/other-cryptocurrencies/monero-xmr-on-trezor" target="_blank"><img src="/img/trezor.png" loading="lazy" alt="Trezor logo"></a><p><a href="https://trezor.io/learn/supported-assets/other-cryptocurrencies/monero-xmr-on-trezor" target="_blank">{% t downloads.instructions %}</a></p></h3>
                                     <ul>
                                         <b>{% t downloads.hwmobmodels %}</b>
                                             <li>Model T</li>
