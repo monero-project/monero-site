@@ -1188,6 +1188,15 @@ library:
     \ kao što su Kovri, Bulletproofs, Multisignature, Hardvare Novčanici itd. </li>\
     \ </ul> Pogledajte <a href=\"https://masteringmonero.com/\"> Ovladavanje Monerom\
     \ </a> veb-sajt za informacije.\n"
+  masteringmonerop1: "Vodič kroz naizgled složen svet Monera."
+  masteringmonerop2: "Sadrži:"
+  masteringmoneroul1: "Širok uvod u blokčejn i važnost privatnosti - idealno za netehničke korisnike."
+  masteringmoneroul2: "Diskusija o nedostacima Bitcoin-a i specifična rešenja koja pruža Monero."
+  masteringmoneroul3: "Priče korisnika (koje ilustruju kako Monero štiti vašu privatnost), analogije, primeri, pravne / etičke rasprave i isečci koda koji ilustruju ključne tehničke koncepte."
+  masteringmoneroul4: "Detalji o Monero decentralizovanoj mreži, peer-to-peer arhitekturi, životnom ciklusu transakcija i principima bezbednosti."
+  masteringmoneroul5: "Upoznavanje sa tehničkim osnovama Monera, namenjenim programerima, inženjerima, softverskim arhitektama i znatiželjnim korisnicima."
+  masteringmoneroul6: "Nova dostignuća kao što su Kovri, Bulletproofs, Multisignature, Hardvare Novčanici itd."
+  masteringmoneroinfo: "Pogledajte <a href=\"https://masteringmonero.com/\"> Ovladavanje Monerom</a> veb-sajt za informacije."
   zerotomonerov1p: "Objavljeno: 26. juna 2018, sa <a href=\"https://github.com/UkoeHB/Monero-RCT-report\"\
     >LaTeX izvorni kod ovde</a>\n"
   zerotomonerov1: 'Od Nule do Monera: Prvo Izdanje'
