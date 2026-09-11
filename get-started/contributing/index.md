@@ -55,6 +55,7 @@ meta_descr: meta_descr.contributing
                     </div><br>
                     <div class="row center-xs">
                         <a class="btn-link btn-auto btn-primary" href="https://ccs.getmonero.org">{% t contributing.ccsbutton %}</a>
+                        <a class="btn-link btn-auto btn-primary" href="https://bounties.monero.social/">Monero Bounties</a>
                     </div>
                 </div>
             </div>
