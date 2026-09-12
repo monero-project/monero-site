@@ -2,10 +2,24 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 
 import fg from "fast-glob";
-import matter from "gray-matter";
+import { parse as parseYaml } from "yaml";
 
 import { defaultLocale } from "../i18n/config";
-import escapeStringRegexp from "escape-string-regexp";
+
+function readFrontmatter(source: string): Record<string, unknown> {
+  const normalized = source.replace(/^\uFEFF/, "");
+  const lines = normalized.split(/\r?\n/);
+
+  if (lines[0]?.trim() !== "---") return {};
+
+  const end = lines.findIndex(
+    (line, index) => index > 0 && line.trim() === "---",
+  );
+
+  return end === -1 ? {} : (parseYaml(lines.slice(1, end).join("\n")) ?? {});
+}
+const escapeRegExp = (value: string) =>
+  value.replace(/[|\\{}()[\]^$+*?.]/g, "\\$&").replace(/-/g, "\\x2d");
 
 const MONEROPEDIA_SUFFIXES = ["based", "like", "form"] as const;
 export const MONEROPEDIA_LOOKAHEAD = `(${MONEROPEDIA_SUFFIXES.join("|")})`;
@@ -58,7 +72,8 @@ async function loadLocaleEntries(
   const entries = await Promise.all(
     files.map(async (relativePath) => {
       const filePath = path.join(localeDir, relativePath);
-      const { data } = matter(await readFile(filePath, "utf-8"));
+      const source = await readFile(filePath, "utf-8");
+      const data = readFrontmatter(source);
       const fileName = path.basename(filePath, path.extname(filePath));
 
       return {
@@ -155,7 +170,7 @@ export function buildMoneropediaMatcher(
       const key = term.toLowerCase();
       if (lookup.has(key)) continue;
       lookup.set(key, entry);
-      patterns.push(escapeStringRegexp(term));
+      patterns.push(escapeRegExp(term));
     }
   }
 

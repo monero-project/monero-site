@@ -27,11 +27,9 @@ const { t, localizeNumber } = Astro.locals;
 
 <section class="guide-step" data-align={align ?? null} data-reverse={reverse}>
   <div class="step-content">
-    <span class="step-label"
-      >{
-        t("common:components.guideStep.step", { step: localizeNumber(step) })
-      }</span
-    >
+    <span class="step-label">
+      {t("common:components.guideStep.step", { step })}
+    </span>
     <h2 class="step-title">{title}</h2>
     <div class="step-body">
       <slot />
@@ -101,7 +99,8 @@ const { t, localizeNumber } = Astro.locals;
       max-width: 55ch;
     }
 
-    & > :is(:global(ol), :global(ul)) {
+    & > :global(ol),
+    & > :global(ul) {
       margin: 0;
       padding-inline-start: var(--space-xl);
       color: var(--paragraph-subtitle);

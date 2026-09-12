@@ -8,7 +8,7 @@ There are two ways to do this, depending on where your content is:
 
 ## Option 1: Linking in Astro Content Collections (.md Files)
 
-If you're writing in a Markdown file that's part of an Astro Content Collection (e.g., a blog post), the built-in `remark-moneropedia` plugin does the linking for you automatically.
+If you're writing in a Markdown file that's part of an Astro Content Collection (e.g., a blog post), the built-in `satteri-moneropedia` plugin does the linking for you automatically.
 
 ### What It Does
 - It looks for terms starting with `@` (like `@airgap`).

@@ -17,7 +17,7 @@ import PageSection from "@/components/ui/layout/PageSection.astro";
 import type { Wallet } from "@/data/downloads/community";
 import { icons } from "@/utils/icons";
 
-export const sortWallets = (wallets: Wallet[]) =>
+const sortWallets = (wallets: Wallet[]) =>
   // Sort by number of supported platforms (mobile + desktop), then alphabetically
   [...wallets].sort((a, b) => {
     const count = (w: Wallet) =>

@@ -25,7 +25,7 @@ src/
 ├── assets/                   # icons/ (color, mask), images/
 ├── data/                     # Data files (downloads, merchants, exchanges - TS and JSON)
 ├── utils/                    # Helpers (icons.ts, moneropedia.ts, image.ts, safeMarkdown.ts)
-└── plugins/                  # Remark/AST plugins (remark-moneropedia)
+└── plugins/                  # Sätteri Markdown AST plugins (satteri-moneropedia)
 ```
 
 ## Common tasks & where to start
@@ -48,7 +48,7 @@ src/
 ## Where to look for examples
 
 - Page template: `src/pages/resources/moneropedia/[...slug].astro`
-- Moneropedia utils and linking: `src/utils/moneropedia.ts` and `src/plugins/remark-moneropedia/`
+- Moneropedia utils and linking: `src/utils/moneropedia.ts` and `src/plugins/satteri-moneropedia/`
 - Icon components: `src/components/ui/icons/MaskIcon.astro`, `ColorIcon.astro` - see [How to Use and Create Icons](how-to-use-and-create-icons.md) for usage and conventions.
 - Icons utility: `src/utils/icons.ts` - provides `icons.mask()` and `icons.color()` helpers for cleaner icon imports.
 
