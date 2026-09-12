@@ -28,13 +28,11 @@ const { dir } = Astro.locals;
       <Column gap="3xs" align="left">
         <span>{title}</span>
         <div class="mobile-filter-subtitle">
-          {
-            filterTexts.map(({ filter, text }) => (
-              <span class="filter-text" data-filter={filter}>
-                {text}
-              </span>
-            ))
-          }
+          {filterTexts.map(({ filter, text }) => (
+            <span class="filter-text" data-filter={filter}>
+              {text}
+            </span>
+          ))}
         </div>
       </Column>
     </div>

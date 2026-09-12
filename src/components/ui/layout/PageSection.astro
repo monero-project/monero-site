@@ -34,18 +34,16 @@ const ariaLabelledBy = ariaLabel ? undefined : anchorId;
   data-centered={centered || undefined}
   {...rest}
 >
-  {
-    hasHeader && (
-      <header class="header">
-        {title && (
-          <Heading id={anchorId} class="title">
-            {title}
-          </Heading>
-        )}
-        {subtitle && <p class="subtitle">{subtitle}</p>}
-      </header>
-    )
-  }
+  {hasHeader && (
+    <header class="header">
+      {title && (
+        <Heading id={anchorId} class="title">
+          {title}
+        </Heading>
+      )}
+      {subtitle && <p class="subtitle">{subtitle}</p>}
+    </header>
+  )}
   <slot />
 </section>
 

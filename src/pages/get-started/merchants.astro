@@ -26,19 +26,17 @@ const { t } = Astro.locals;
     <p>{t("merchants:intro")}</p>
 
     <Column gap="md">
-      {
-        merchants
-          .sort((a, b) => a.name.localeCompare(b.name))
-          .map((merchant) => (
-            <ExternalResourceButton
-              href={merchant.link}
-              onionHref={merchant.onionLink}
-              title={merchant.name}
-              subtitle={t(`merchants:subtitles.${merchant.id}`)}
-              logo={merchant.logo}
-            />
-          ))
-      }
+      {merchants
+        .sort((a, b) => a.name.localeCompare(b.name))
+        .map((merchant) => (
+          <ExternalResourceButton
+            href={merchant.link}
+            onionHref={merchant.onionLink}
+            title={merchant.name}
+            subtitle={t(`merchants:subtitles.${merchant.id}`)}
+            logo={merchant.logo}
+          />
+        ))}
     </Column>
   </PageContainer>
 

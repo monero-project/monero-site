@@ -12,13 +12,11 @@ const { class: className, showIcon = false } = Astro.props;
 ---
 
 <Card as="aside" padding="md" class:list={["tip-box", className]}>
-  {
-    showIcon && (
-      <span class="icon">
-        <MaskIcon src={icons.mask("shield-alert")} size="1.5em" />
-      </span>
-    )
-  }
+  {showIcon && (
+    <span class="icon">
+      <MaskIcon src={icons.mask("shield-alert")} size="1.5em" />
+    </span>
+  )}
   <slot />
 </Card>
 

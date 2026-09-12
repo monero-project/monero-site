@@ -16,18 +16,18 @@ const { t, localizeHref, localizeNumber } = Astro.locals;
 
       <nav class="quick-links">
         <a href={localizeHref("/")}>{t("common:notFound.links.home")}</a>
-        <a href={localizeHref("/get-started/what-is-monero/")}
-          >{t("common:notFound.links.whatIsMonero")}</a
-        >
-        <a href={localizeHref("/downloads/")}
-          >{t("common:notFound.links.downloads")}</a
-        >
-        <a href={localizeHref("/get-started/faq/")}
-          >{t("common:notFound.links.faq")}</a
-        >
-        <a href={localizeHref("/community/hangouts/")}
-          >{t("common:notFound.links.community")}</a
-        >
+        <a href={localizeHref("/get-started/what-is-monero/")}>
+          {t("common:notFound.links.whatIsMonero")}
+        </a>
+        <a href={localizeHref("/downloads/")}>
+          {t("common:notFound.links.downloads")}
+        </a>
+        <a href={localizeHref("/get-started/faq/")}>
+          {t("common:notFound.links.faq")}
+        </a>
+        <a href={localizeHref("/community/hangouts/")}>
+          {t("common:notFound.links.community")}
+        </a>
       </nav>
     </div>
   </div>

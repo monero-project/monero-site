@@ -31,23 +31,19 @@ const hasBottom = Astro.slots.has("bottom");
   class:list={["content-card", className]}
   {...rest}
 >
-  {
-    image && (
-      <div class="content-card-image">
-        <Image src={image} alt={imageAlt} format="avif" />
-      </div>
-    )
-  }
+  {image && (
+    <div class="content-card-image">
+      <Image src={image} alt={imageAlt} format="avif" />
+    </div>
+  )}
 
   <header>
     <div class="title-row">
-      {
-        icon && (
-          <div class="card-icon">
-            <MaskIcon src={icon} size="1.25em" />
-          </div>
-        )
-      }
+      {icon && (
+        <div class="card-icon">
+          <MaskIcon src={icon} size="1.25em" />
+        </div>
+      )}
       <div class="title-block">
         <h3 class="card-title">{title}</h3>
         {subtitle && <p class="card-subtitle">{subtitle}</p>}
@@ -59,13 +55,11 @@ const hasBottom = Astro.slots.has("bottom");
     <slot />
   </div>
 
-  {
-    hasBottom && (
-      <footer class="card-bottom">
-        <slot name="bottom" />
-      </footer>
-    )
-  }
+  {hasBottom && (
+    <footer class="card-bottom">
+      <slot name="bottom" />
+    </footer>
+  )}
 </Card>
 
 <style>

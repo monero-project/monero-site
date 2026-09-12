@@ -112,7 +112,7 @@ const hasBuiltinExchange = general.includes("i18n:builtInExchange");
     "community-card",
     { "has-built-in-exchange": hasBuiltinExchange },
   ]}
-  {...id ? { id } : {}}
+  {...(id ? { id } : {})}
 >
   <header
     class="card-header"
@@ -127,66 +127,62 @@ const hasBuiltinExchange = general.includes("i18n:builtInExchange");
   <div class="card-description">
     <p class="card-description-text">{description}</p>
 
-    {
-      showTags && (
-        <div
-          class="card-tags"
-          aria-label={t("common:components.communityCard.tags")}
-        >
+    {showTags && (
+      <div
+        class="card-tags"
+        aria-label={t("common:components.communityCard.tags")}
+      >
+        <ul class="list">
+          {general.map((tag) => (
+            <li
+              class:list={[
+                "pill",
+                { "builtin-exchange-pill": tag === "i18n:builtInExchange" },
+              ]}
+            >
+              <span class="tag-text">{getTagLabel(tag)}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
+  </div>
+
+  {showPlatforms && (
+    <div
+      class="card-platforms"
+      aria-label={t("common:components.communityCard.supportedPlatforms")}
+    >
+      {desktop.length > 0 && (
+        <div class="platform-row">
+          <span class="platforms-label">
+            {t("downloads:community.desktopLabel")}:
+          </span>
           <ul class="list">
-            {general.map((tag) => (
-              <li
-                class:list={[
-                  "pill",
-                  { "builtin-exchange-pill": tag === "i18n:builtInExchange" },
-                ]}
-              >
-                <span class="tag-text">{getTagLabel(tag)}</span>
+            {desktop.map((key) => (
+              <li class="pill" title={LABEL[key]}>
+                <MaskIcon src={ICONS[key]} size="1.25em" aria-hidden="true" />
               </li>
             ))}
           </ul>
         </div>
-      )
-    }
-  </div>
-
-  {
-    showPlatforms && (
-      <div
-        class="card-platforms"
-        aria-label={t("common:components.communityCard.supportedPlatforms")}
-      >
-        {desktop.length > 0 && (
-          <div class="platform-row">
-            <span class="platforms-label">
-              {t("downloads:community.desktopLabel")}:
-            </span>
-            <ul class="list">
-              {desktop.map((key) => (
-                <li class="pill" title={LABEL[key]}>
-                  <MaskIcon src={ICONS[key]} size="1.25em" aria-hidden="true" />
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-        {mobile.length > 0 && (
-          <div class="platform-row">
-            <span class="platforms-label">
-              {t("downloads:community.mobileLabel")}:
-            </span>
-            <ul class="list">
-              {mobile.map((key) => (
-                <li class="pill" title={LABEL[key]}>
-                  <MaskIcon src={ICONS[key]} size="1.25em" aria-hidden="true" />
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-      </div>
-    )
-  }
+      )}
+      {mobile.length > 0 && (
+        <div class="platform-row">
+          <span class="platforms-label">
+            {t("downloads:community.mobileLabel")}:
+          </span>
+          <ul class="list">
+            {mobile.map((key) => (
+              <li class="pill" title={LABEL[key]}>
+                <MaskIcon src={ICONS[key]} size="1.25em" aria-hidden="true" />
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </div>
+  )}
 
   <IconLink href={link} size="sm" weight="semibold" class="visit-link">
     {linkText ?? t("common:components.communityCard.visitWebsite")}

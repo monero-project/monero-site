@@ -56,11 +56,11 @@ const faqItems = faqToItems(
         >
           <p>{t("mining:gupax.lead")}</p>
           <ul>
-            {
-              (
-                t("mining:gupax.bullets", { returnObjects: true }) as string[]
-              ).map((bullet: string) => <li>{bullet}</li>)
-            }
+            {(
+              t("mining:gupax.bullets", { returnObjects: true }) as string[]
+            ).map((bullet: string) => (
+              <li>{bullet}</li>
+            ))}
           </ul>
 
           <IconLink slot="bottom" href="https://gupax.io/">
@@ -77,11 +77,11 @@ const faqItems = faqToItems(
         >
           <p>{t("mining:xmrig.lead")}</p>
           <ul>
-            {
-              (
-                t("mining:xmrig.bullets", { returnObjects: true }) as string[]
-              ).map((bullet: string) => <li>{bullet}</li>)
-            }
+            {(
+              t("mining:xmrig.bullets", { returnObjects: true }) as string[]
+            ).map((bullet: string) => (
+              <li>{bullet}</li>
+            ))}
           </ul>
 
           <IconLink slot="bottom" href="https://github.com/xmrig/xmrig">
@@ -98,11 +98,11 @@ const faqItems = faqToItems(
         >
           <p>{t("mining:solo.lead")}</p>
           <ul>
-            {
-              (
-                t("mining:solo.bullets", { returnObjects: true }) as string[]
-              ).map((bullet: string) => <li>{bullet}</li>)
-            }
+            {(
+              t("mining:solo.bullets", { returnObjects: true }) as string[]
+            ).map((bullet: string) => (
+              <li>{bullet}</li>
+            ))}
           </ul>
 
           <IconLink

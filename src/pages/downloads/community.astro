@@ -100,44 +100,36 @@ const setBuiltinId = (wallet: Wallet) => {
         {t("downloads:community.categories.moneroOnly")}
       </h3>
       <Grid minWidth="20rem" gap="lg" class="compact-grid">
-        {
-          sortWallets(communityWallets.wallets.moneroOnly).map((wallet) => (
-            <CommunityCard
-              logo={wallet.logo}
-              name={wallet.name}
-              description={t(`downloads:community.descriptions.${wallet.id}`)}
-              tags={wallet.tags}
-              link={wallet.link}
-              linkText={t("downloads:community.learnMore")}
-              translateTag={(key: string) =>
-                t(`downloads:community.tags.${key}`)
-              }
-              id={setBuiltinId(wallet)}
-            />
-          ))
-        }
+        {sortWallets(communityWallets.wallets.moneroOnly).map((wallet) => (
+          <CommunityCard
+            logo={wallet.logo}
+            name={wallet.name}
+            description={t(`downloads:community.descriptions.${wallet.id}`)}
+            tags={wallet.tags}
+            link={wallet.link}
+            linkText={t("downloads:community.learnMore")}
+            translateTag={(key: string) => t(`downloads:community.tags.${key}`)}
+            id={setBuiltinId(wallet)}
+          />
+        ))}
       </Grid>
 
       <h3 class="subheading">
         {t("downloads:community.categories.multiCoin")}
       </h3>
       <Grid minWidth="20rem" gap="lg" class="compact-grid">
-        {
-          sortWallets(communityWallets.wallets.multiCoin).map((wallet) => (
-            <CommunityCard
-              logo={wallet.logo}
-              name={wallet.name}
-              description={t(`downloads:community.descriptions.${wallet.id}`)}
-              tags={wallet.tags}
-              link={wallet.link}
-              linkText={t("downloads:community.learnMore")}
-              translateTag={(key: string) =>
-                t(`downloads:community.tags.${key}`)
-              }
-              id={setBuiltinId(wallet)}
-            />
-          ))
-        }
+        {sortWallets(communityWallets.wallets.multiCoin).map((wallet) => (
+          <CommunityCard
+            logo={wallet.logo}
+            name={wallet.name}
+            description={t(`downloads:community.descriptions.${wallet.id}`)}
+            tags={wallet.tags}
+            link={wallet.link}
+            linkText={t("downloads:community.learnMore")}
+            translateTag={(key: string) => t(`downloads:community.tags.${key}`)}
+            id={setBuiltinId(wallet)}
+          />
+        ))}
       </Grid>
 
       <h3 class="subheading">
@@ -147,22 +139,18 @@ const setBuiltinId = (wallet: Wallet) => {
         text={t("downloads:community.categories.lws.disclaimer")}
       />
       <Grid minWidth="25rem" gap="lg">
-        {
-          sortWallets(communityWallets.wallets.lws).map((wallet) => (
-            <CommunityCard
-              logo={wallet.logo}
-              name={wallet.name}
-              description={t(`downloads:community.descriptions.${wallet.id}`)}
-              tags={wallet.tags}
-              link={wallet.link}
-              linkText={t("downloads:community.learnMore")}
-              translateTag={(key: string) =>
-                t(`downloads:community.tags.${key}`)
-              }
-              id={setBuiltinId(wallet)}
-            />
-          ))
-        }
+        {sortWallets(communityWallets.wallets.lws).map((wallet) => (
+          <CommunityCard
+            logo={wallet.logo}
+            name={wallet.name}
+            description={t(`downloads:community.descriptions.${wallet.id}`)}
+            tags={wallet.tags}
+            link={wallet.link}
+            linkText={t("downloads:community.learnMore")}
+            translateTag={(key: string) => t(`downloads:community.tags.${key}`)}
+            id={setBuiltinId(wallet)}
+          />
+        ))}
       </Grid>
     </PageSection>
 
@@ -174,22 +162,18 @@ const setBuiltinId = (wallet: Wallet) => {
       subtitle={t("downloads:community.sections.cold.subtitle")}
     >
       <Grid minWidth="25rem" gap="lg">
-        {
-          sortWallets(communityWallets.cold).map((wallet) => (
-            <CommunityCard
-              logo={wallet.logo}
-              name={wallet.name}
-              description={t(`downloads:community.descriptions.${wallet.id}`)}
-              tags={wallet.tags}
-              link={wallet.link}
-              linkText={t("downloads:community.learnMore")}
-              translateTag={(key: string) =>
-                t(`downloads:community.tags.${key}`)
-              }
-              id={setBuiltinId(wallet)}
-            />
-          ))
-        }
+        {sortWallets(communityWallets.cold).map((wallet) => (
+          <CommunityCard
+            logo={wallet.logo}
+            name={wallet.name}
+            description={t(`downloads:community.descriptions.${wallet.id}`)}
+            tags={wallet.tags}
+            link={wallet.link}
+            linkText={t("downloads:community.learnMore")}
+            translateTag={(key: string) => t(`downloads:community.tags.${key}`)}
+            id={setBuiltinId(wallet)}
+          />
+        ))}
       </Grid>
     </PageSection>
 
@@ -201,22 +185,18 @@ const setBuiltinId = (wallet: Wallet) => {
       subtitle={t("downloads:community.sections.nodes.subtitle")}
     >
       <Grid minWidth="25rem" gap="lg">
-        {
-          sortWallets(communityWallets.nodes).map((wallet) => (
-            <CommunityCard
-              logo={wallet.logo}
-              name={wallet.name}
-              description={t(`downloads:community.descriptions.${wallet.id}`)}
-              tags={wallet.tags}
-              link={wallet.link}
-              linkText={t("downloads:community.learnMore")}
-              translateTag={(key: string) =>
-                t(`downloads:community.tags.${key}`)
-              }
-              id={setBuiltinId(wallet)}
-            />
-          ))
-        }
+        {sortWallets(communityWallets.nodes).map((wallet) => (
+          <CommunityCard
+            logo={wallet.logo}
+            name={wallet.name}
+            description={t(`downloads:community.descriptions.${wallet.id}`)}
+            tags={wallet.tags}
+            link={wallet.link}
+            linkText={t("downloads:community.learnMore")}
+            translateTag={(key: string) => t(`downloads:community.tags.${key}`)}
+            id={setBuiltinId(wallet)}
+          />
+        ))}
       </Grid>
     </PageSection>
 

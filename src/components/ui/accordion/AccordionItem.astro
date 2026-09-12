@@ -26,15 +26,13 @@ const { title, content, variant = "default", name, open = false } = Astro.props;
       <MaskIcon src={icons.mask("chevron-down")} />
     </div>
   </summary>
-  {
-    content ? (
-      <div class="content" set:html={DOMPurify.sanitize(content)} />
-    ) : (
-      <div class="content">
-        <slot />
-      </div>
-    )
-  }
+  {content ? (
+    <div class="content" set:html={DOMPurify.sanitize(content)} />
+  ) : (
+    <div class="content">
+      <slot />
+    </div>
+  )}
 </details>
 
 <style>

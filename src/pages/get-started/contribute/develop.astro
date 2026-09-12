@@ -105,16 +105,14 @@ const communityProjects = [
           subtitle={t("contribute:develop.communityProjectsSubtitle")}
         >
           <Column gap="sm">
-            {
-              communityProjects.map((project) => (
-                <ExternalResourceButton
-                  href={project.href}
-                  title={project.title}
-                  subtitle={project.subtitle}
-                  logo={project.logo}
-                />
-              ))
-            }
+            {communityProjects.map((project) => (
+              <ExternalResourceButton
+                href={project.href}
+                title={project.title}
+                subtitle={project.subtitle}
+                logo={project.logo}
+              />
+            ))}
           </Column>
         </PageSection>
       </Column>

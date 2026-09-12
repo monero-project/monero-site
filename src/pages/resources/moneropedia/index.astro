@@ -66,25 +66,23 @@ for (const letter of sortedLetters) {
       ariaLabel={t("knowledge-base:moneropedia.aria.navBar")}
     />
     <div class="letter-groups">
-      {
-        sortedLetters.map((letter, index) => {
-          const groupEntries = groups.get(letter)!;
-          const accordionItems = groupEntries.map((entry) => ({
-            title: entry.title,
-            content: safeMarkdown.parse(
-              `${entry.data.summary}\n\n[${t("knowledge-base:moneropedia.readMore")} ](${entry.href})`,
-            ),
-          }));
+      {sortedLetters.map((letter, index) => {
+        const groupEntries = groups.get(letter)!;
+        const accordionItems = groupEntries.map((entry) => ({
+          title: entry.title,
+          content: safeMarkdown.parse(
+            `${entry.data.summary}\n\n[${t("knowledge-base:moneropedia.readMore")} ](${entry.href})`,
+          ),
+        }));
 
-          return (
-            <LetterGroup
-              letter={letter}
-              items={accordionItems}
-              isFirst={index === 0}
-            />
-          );
-        })
-      }
+        return (
+          <LetterGroup
+            letter={letter}
+            items={accordionItems}
+            isFirst={index === 0}
+          />
+        );
+      })}
     </div>
   </PageContainer>
 </Layout>

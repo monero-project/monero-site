@@ -70,15 +70,13 @@ const sections = [
       anchorId="brand-assets"
     >
       <Grid minWidth="22rem" gap="xl" class="assets-grid">
-        {
-          brandAssetPreviews.map(({ asset, preview }) => (
-            <BrandAssetCard
-              asset={asset}
-              previewWidth={preview.width}
-              previewHeight={preview.height}
-            />
-          ))
-        }
+        {brandAssetPreviews.map(({ asset, preview }) => (
+          <BrandAssetCard
+            asset={asset}
+            previewWidth={preview.width}
+            previewHeight={preview.height}
+          />
+        ))}
       </Grid>
 
       <Row justify="end" class="download-all">
@@ -100,15 +98,13 @@ const sections = [
             {t("press-kit:sections.pressMaterials.pressDocumentation")}
           </h3>
           <Column gap="sm">
-            {
-              pressDocuments.map((doc) => (
-                <ExternalResourceButton
-                  href={doc.url}
-                  title={t(`press-kit:documents.${doc.id}.title`)}
-                  subtitle={t(`press-kit:documents.${doc.id}.description`)}
-                />
-              ))
-            }
+            {pressDocuments.map((doc) => (
+              <ExternalResourceButton
+                href={doc.url}
+                title={t(`press-kit:documents.${doc.id}.title`)}
+                subtitle={t(`press-kit:documents.${doc.id}.description`)}
+              />
+            ))}
           </Column>
         </Column>
 
@@ -117,15 +113,13 @@ const sections = [
             {t("press-kit:sections.pressMaterials.marketingMaterials")}
           </h3>
           <Column gap="sm">
-            {
-              marketingResources.map((resource) => (
-                <ExternalResourceButton
-                  href={resource.url}
-                  title={t(`press-kit:marketing.${resource.id}.title`)}
-                  subtitle={t(`press-kit:marketing.${resource.id}.description`)}
-                />
-              ))
-            }
+            {marketingResources.map((resource) => (
+              <ExternalResourceButton
+                href={resource.url}
+                title={t(`press-kit:marketing.${resource.id}.title`)}
+                subtitle={t(`press-kit:marketing.${resource.id}.description`)}
+              />
+            ))}
           </Column>
         </Column>
       </Grid>
