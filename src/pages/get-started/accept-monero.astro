@@ -12,7 +12,7 @@ import GuideStep from "@/components/pages/get-started/accept-monero/GuideStep.as
 import TipBox from "@/components/pages/get-started/accept-monero/TipBox.astro";
 import { icons } from "@/utils/icons";
 
-const { t, localizeHref, localizeNumber } = Astro.locals;
+const { t, localizeHref } = Astro.locals;
 ---
 
 <Layout
@@ -26,7 +26,7 @@ const { t, localizeHref, localizeNumber } = Astro.locals;
 
   <PageContainer>
     <GuideStep
-      step={localizeNumber(1)}
+      step={1}
       title={t("accept-monero:steps.chooseSetup.title")}
       icon={icons.mask("app-window")}
       align="start"
@@ -133,7 +133,7 @@ const { t, localizeHref, localizeNumber } = Astro.locals;
     <hr />
 
     <GuideStep
-      step={localizeNumber(2)}
+      step={2}
       title={t("accept-monero:steps.acceptPayment.title")}
       icon={icons.mask("hand-coins")}
       reverse
@@ -155,7 +155,7 @@ const { t, localizeHref, localizeNumber } = Astro.locals;
     <hr />
 
     <GuideStep
-      step={localizeNumber(3)}
+      step={3}
       title={t("accept-monero:steps.getListed.title")}
       icon={icons.mask("users")}
     >

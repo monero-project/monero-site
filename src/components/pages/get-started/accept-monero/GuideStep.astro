@@ -4,7 +4,7 @@ import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
 
 export interface Props {
-  step: number | string;
+  step: number;
   title: string;
   icon?: ImageMetadata;
   image?: ImageMetadata;
@@ -22,13 +22,15 @@ const {
   reverse = false,
   align,
 } = Astro.props;
-const { t } = Astro.locals;
+const { t, localizeNumber } = Astro.locals;
 ---
 
 <section class="guide-step" data-align={align ?? null} data-reverse={reverse}>
   <div class="step-content">
     <span class="step-label"
-      >{t("common:components.guideStep.step", { step })}</span
+      >{
+        t("common:components.guideStep.step", { step: localizeNumber(step) })
+      }</span
     >
     <h2 class="step-title">{title}</h2>
     <div class="step-body">
@@ -46,9 +48,7 @@ const { t } = Astro.locals;
               <MaskIcon src={icon} size="4rem" />
             </div>
           )}
-          <div class="placeholder-number">
-            {step.toString().padStart(2, "0")}
-          </div>
+          <div class="placeholder-number">{localizeNumber(step, 2)}</div>
         </div>
       )
     }
@@ -163,7 +163,7 @@ const { t } = Astro.locals;
   .placeholder-number {
     position: absolute;
     bottom: 1.5rem;
-    right: 1.5rem;
+    inset-inline-end: 1.5rem;
     font-size: 5rem;
     font-weight: var(--font-weight-bold);
     color: var(--border-color);
@@ -192,7 +192,7 @@ const { t } = Astro.locals;
     .placeholder-number {
       font-size: 3rem;
       bottom: 1rem;
-      right: 1rem;
+      inset-inline-end: 1rem;
     }
   }
 </style>

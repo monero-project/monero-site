@@ -1,5 +1,6 @@
 a[rel~="external"]::after {
   content: "\00a0";
+  display: inline-block;
   padding-inline-end: 0.9rem;
   mask-image: url("../assets/icons/mask/external-link.avif");
   mask-repeat: no-repeat;
