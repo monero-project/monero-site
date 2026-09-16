@@ -1,17 +1,32 @@
 // @ts-check
+import { satteri } from "@astrojs/markdown-satteri";
 import sitemap from "@astrojs/sitemap";
 import { filterSitemapByDefaultLocale, i18n } from "astro-i18n-aut/integration";
-import { defineConfig } from "astro/config";
+import { defineConfig, fontProviders } from "astro/config";
+import { defineHastPlugin } from "satteri";
 
 import { defaultLocale, locales } from "./src/i18n/config";
-import { moneropediaLinks } from "./src/plugins/remark-moneropedia";
-import rehypeExternalLinks from "rehype-external-links";
+import { moneropediaLinks } from "./src/plugins/satteri-moneropedia";
 import { isExternal } from "./src/utils/links";
 
 const SITE_ROOTDOMAIN = "beta.monerodevs.org";
 
 const isSSR = process.env.SSR === "true";
 const skipImageOptimization = process.env.SKIP_IMAGE_OPTIMIZATION === "true";
+
+const externalLinks = defineHastPlugin({
+  name: "external-links",
+  element: {
+    filter: ["a"],
+    visit(node, ctx) {
+      const href = node.properties.href;
+      if (typeof href !== "string" || !/^(https?:|\/\/)/i.test(href)) return;
+      if (!isExternal(href, SITE_ROOTDOMAIN)) return;
+      ctx.setProperty(node, "target", "_blank");
+      ctx.setProperty(node, "rel", ["noopener", "noreferrer", "external"]);
+    },
+  },
+});
 
 // https://astro.build/config
 export default defineConfig({
@@ -25,19 +40,27 @@ export default defineConfig({
     : {}),
   site: `https://${SITE_ROOTDOMAIN}`,
   trailingSlash: "always",
+  compressHTML: true,
+  session: false,
+  fonts: [
+    {
+      provider: fontProviders.npm({ remote: false }),
+      name: "DM Sans Variable",
+      cssVariable: "--font-dm-sans",
+      weights: ["100 1000"],
+      styles: ["normal"],
+      options: {
+        package: "@fontsource-variable/dm-sans",
+        file: "index.css",
+      },
+    },
+  ],
   markdown: {
-    remarkPlugins: [moneropediaLinks],
-    rehypePlugins: [
-      [
-        rehypeExternalLinks,
-        {
-          target: "_blank",
-          rel: ["noopener", "noreferrer", "external"],
-          /** @param {import('hast').Element} node*/
-          test: (node) => isExternal(node, SITE_ROOTDOMAIN),
-        },
-      ],
-    ],
+    processor: satteri({
+      features: { smartPunctuation: false },
+      mdastPlugins: [moneropediaLinks],
+      hastPlugins: [externalLinks],
+    }),
   },
   build: {
     format: "directory",

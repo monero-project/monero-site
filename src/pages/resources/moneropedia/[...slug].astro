@@ -23,7 +23,9 @@ type Props = CollectionEntry<"moneropedia">;
 const { locale, t, localizeHref } = Astro.locals;
 
 const { slug } = Astro.params;
-const entry = await getEntry("moneropedia", `${locale}/${slug}`);
+const entry =
+  (await getEntry("moneropedia", `${locale}/${slug}`)) ??
+  (await getEntry("moneropedia", `${defaultLocale}/${slug}`));
 
 if (!entry) {
   return new Response(null, {
