@@ -5,3 +5,4 @@ allowBuilds:
   sharp: false
 minimumReleaseAge: 20160 # minutes (14 days)
 blockExoticSubdeps: true
+trustPolicy: no-downgrade
