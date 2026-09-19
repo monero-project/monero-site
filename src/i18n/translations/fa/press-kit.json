@@ -1,0 +1,85 @@
+{
+    "pageTitle": "",
+    "title": "",
+    "subtitle": "",
+    "description": "",
+    "sections": {
+        "brandAssets": {
+            "title": "",
+            "tocSubtitle": "",
+            "intro": "",
+            "downloadVector": "",
+            "downloadAll": ""
+        },
+        "pressMaterials": {
+            "title": "",
+            "tocSubtitle": "",
+            "pressDocumentation": "",
+            "marketingMaterials": ""
+        },
+        "contacts": {
+            "title": "",
+            "tocSubtitle": "",
+            "pressInquiries": {
+                "title": "",
+                "description": ""
+            },
+            "workgroups": {
+                "title": "",
+                "description": "",
+                "link": ""
+            },
+            "community": {
+                "title": "",
+                "description": "",
+                "link": ""
+            }
+        }
+    },
+    "assets": {
+        "moneroSymbol": {
+            "name": "",
+            "description": ""
+        },
+        "moneroLogo": {
+            "name": "",
+            "description": ""
+        },
+        "variants": {
+            "transparent": "",
+            "whiteBackground": ""
+        },
+        "sizes": {
+            "small": "",
+            "medium": "",
+            "large": ""
+        }
+    },
+    "documents": {
+        "quickFacts": {
+            "title": "",
+            "description": ""
+        },
+        "timeline": {
+            "title": "",
+            "description": ""
+        }
+    },
+    "marketing": {
+        "dontBuySticker": {
+            "title": "",
+            "description": ""
+        },
+        "promotionalGraphics": {
+            "title": "",
+            "description": ""
+        },
+        "graphicsCollection": {
+            "title": "",
+            "description": ""
+        }
+    },
+    "aria": {
+        "sectionsNav": ""
+    }
+}

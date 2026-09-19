@@ -1,0 +1,193 @@
+{
+    "pageTitle": "",
+    "hero": {
+        "title": "",
+        "subtitle": ""
+    },
+    "basics": {
+        "title": "",
+        "whatIsMonero": {
+            "title": "",
+            "content": ""
+        },
+        "isMoneroMixer": {
+            "title": "",
+            "content": ""
+        },
+        "doesMoneroUseEncryption": {
+            "title": "",
+            "content": ""
+        },
+        "isMoneroLegal": {
+            "title": "",
+            "content": ""
+        },
+        "isMoneroForCriminals": {
+            "title": "",
+            "content": ""
+        },
+        "canMoneroBeBanned": {
+            "title": "",
+            "content": ""
+        },
+        "howDoesMoneroScale": {
+            "title": "",
+            "content": ""
+        },
+        "whoRunsMonero": {
+            "title": "",
+            "content": ""
+        }
+    },
+    "nodes": {
+        "title": "",
+        "doINeedOwnNode": {
+            "title": "",
+            "content": ""
+        },
+        "canNodeGetMeInTrouble": {
+            "title": "",
+            "content": ""
+        },
+        "hardwareRequirements": {
+            "title": "",
+            "content": ""
+        },
+        "canRunWithoutFullChain": {
+            "title": "",
+            "content": ""
+        },
+        "thirdPartyNodePrivacy": {
+            "title": "",
+            "content": ""
+        }
+    },
+    "privacy": {
+        "title": "",
+        "howDoesMoneroKeepPrivate": {
+            "title": "",
+            "content": ""
+        },
+        "canChainAnalysisBreak": {
+            "title": "",
+            "content": ""
+        },
+        "isMoneroPerfectlyAnonymous": {
+            "title": "",
+            "content": ""
+        },
+        "canFollowTaxRules": {
+            "title": "",
+            "content": ""
+        },
+        "whatIsViewKey": {
+            "title": "",
+            "content": ""
+        },
+        "howToProvePayment": {
+            "title": "",
+            "content": ""
+        },
+        "revokeViewKeyAccess": {
+            "title": "",
+            "content": ""
+        }
+    },
+    "security": {
+        "title": "",
+        "whatIsAsicResistance": {
+            "title": "",
+            "content": ""
+        },
+        "howKnowCoinsNotCreated": {
+            "title": "",
+            "content": ""
+        },
+        "isMoneroQuantumProof": {
+            "title": "",
+            "content": ""
+        },
+        "isCryptographySecure": {
+            "title": "",
+            "content": ""
+        },
+        "inflationBugExploited": {
+            "title": "",
+            "content": ""
+        },
+        "antivirusFlagsMonero": {
+            "title": "",
+            "content": ""
+        }
+    },
+    "wallets": {
+        "title": "",
+        "whatKindsOfWallets": {
+            "title": "",
+            "content": ""
+        },
+        "areLwsWalletsSafe": {
+            "title": "",
+            "content": ""
+        },
+        "whatWalletShouldIUse": {
+            "title": "",
+            "content": ""
+        },
+        "whatToBackUp": {
+            "title": "",
+            "content": ""
+        },
+        "deviceLostOrStolen": {
+            "title": "",
+            "content": ""
+        }
+    },
+    "economics": {
+        "title": "",
+        "totalSupply": {
+            "title": "",
+            "content": ""
+        },
+        "whatIsTailEmission": {
+            "title": "",
+            "content": ""
+        },
+        "tailEmissionInflation": {
+            "title": "",
+            "content": ""
+        },
+        "wasTherePremine": {
+            "title": "",
+            "content": ""
+        },
+        "howAreCoinsDistributed": {
+            "title": "",
+            "content": ""
+        }
+    },
+    "additionalResources": {
+        "title": "",
+        "subtitle": "",
+        "moneroDocs": {
+            "title": "",
+            "description": "",
+            "ctaLabel": ""
+        },
+        "stackExchange": {
+            "title": "",
+            "description": "",
+            "ctaLabel": ""
+        },
+        "reddit": {
+            "title": "",
+            "description": "",
+            "ctaLabel": ""
+        },
+        "monerohow": {
+            "title": "",
+            "description": "",
+            "ctaLabel": ""
+        }
+    }
+}
