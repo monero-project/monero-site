@@ -32,35 +32,31 @@ const { t, localizeHref } = Astro.locals;
     <Grid columns={2} gap="2xl" class="hangouts-grid">
       <PageSection title={t("hangouts:chat.title")} headingLevel={2}>
         <Column as="ul" gap="sm">
-          {
-            chatLinks.map((link) => (
-              <li>
-                <ExternalResourceButton
-                  href={link.href}
-                  title={t(link.titleKey)}
-                  subtitle={link.subtitleKey ? t(link.subtitleKey) : undefined}
-                  logo={link.logo}
-                />
-              </li>
-            ))
-          }
+          {chatLinks.map((link) => (
+            <li>
+              <ExternalResourceButton
+                href={link.href}
+                title={t(link.titleKey)}
+                subtitle={link.subtitleKey ? t(link.subtitleKey) : undefined}
+                logo={link.logo}
+              />
+            </li>
+          ))}
         </Column>
       </PageSection>
 
       <PageSection title={t("hangouts:social.title")} headingLevel={2}>
         <Column as="ul" gap="sm">
-          {
-            socialLinks.map((link) => (
-              <li>
-                <ExternalResourceButton
-                  href={link.href}
-                  title={t(link.titleKey)}
-                  subtitle={link.subtitleKey ? t(link.subtitleKey) : undefined}
-                  logo={link.logo}
-                />
-              </li>
-            ))
-          }
+          {socialLinks.map((link) => (
+            <li>
+              <ExternalResourceButton
+                href={link.href}
+                title={t(link.titleKey)}
+                subtitle={link.subtitleKey ? t(link.subtitleKey) : undefined}
+                logo={link.logo}
+              />
+            </li>
+          ))}
         </Column>
       </PageSection>
     </Grid>
@@ -69,18 +65,16 @@ const { t, localizeHref } = Astro.locals;
 
     <PageSection title={t("hangouts:channels.title")}>
       <Grid as="ul" columns={2} gap="sm">
-        {
-          channels.map((ch) => (
-            <li>
-              <IRCChannelButton
-                name={ch.name}
-                description={t(ch.descriptionKey)}
-                href={ch.href}
-                matrixHref={ch.matrixHref}
-              />
-            </li>
-          ))
-        }
+        {channels.map((ch) => (
+          <li>
+            <IRCChannelButton
+              name={ch.name}
+              description={t(ch.descriptionKey)}
+              href={ch.href}
+              matrixHref={ch.matrixHref}
+            />
+          </li>
+        ))}
       </Grid>
     </PageSection>
   </PageContainer>

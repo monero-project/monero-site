@@ -30,50 +30,48 @@ const { t } = Astro.locals;
   <p class="card-action">{action}</p>
 
   <p class="card-best-for">
-    <span class="best-for-label"
-      >{t("common:components.workgroupCard.bestFor")}</span
-    >
+    <span class="best-for-label">
+      {t("common:components.workgroupCard.bestFor")}
+    </span>{" "}
     {bestFor}
   </p>
 
   <div class="card-links">
-    {
-      matrixHref ? (
-        <>
-          <a
-            href={matrixHref}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="matrix-button"
-            title={t("common:components.workgroupCard.joinMatrix")}
-          >
-            <MaskIcon src={icons.mask("matrix")} size="1.5em" />
-            Matrix
-          </a>
-          <span class="irc-link">
-            <span class="irc-separator">·</span>
-            <a
-              href={ircHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              title={t("common:components.workgroupCard.joinIrc", { chatName })}
-            >
-              #{chatName}
-            </a>
-          </span>
-        </>
-      ) : (
+    {matrixHref ? (
+      <>
         <a
-          href={ircHref}
+          href={matrixHref}
           target="_blank"
           rel="noopener noreferrer"
           class="matrix-button"
-          title={t("common:components.workgroupCard.joinIrc", { chatName })}
+          title={t("common:components.workgroupCard.joinMatrix")}
         >
-          #{chatName}
+          <MaskIcon src={icons.mask("matrix")} size="1.5em" />
+          Matrix
         </a>
-      )
-    }
+        <span class="irc-link">
+          <span class="irc-separator">·</span>
+          <a
+            href={ircHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            title={t("common:components.workgroupCard.joinIrc", { chatName })}
+          >
+            #{chatName}
+          </a>
+        </span>
+      </>
+    ) : (
+      <a
+        href={ircHref}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="matrix-button"
+        title={t("common:components.workgroupCard.joinIrc", { chatName })}
+      >
+        #{chatName}
+      </a>
+    )}
   </div>
 </Card>
 

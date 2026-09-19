@@ -76,11 +76,9 @@ const PLATFORM_ICONS: Record<DownloadLink["platform"], ImageMetadata> = {
       <p class="card-subtitle">{subtitle}</p>
     </div>
     <ul class="card-features">
-      {
-        features.map((feature) => (
-          <li set:html={safeMarkdown.parseInline(feature ?? "")} />
-        ))
-      }
+      {features.map((feature) => (
+        <li set:html={safeMarkdown.parseInline(feature ?? "")} />
+      ))}
     </ul>
     <div class="card-footer">
       <div class="download-actions">
@@ -88,86 +86,78 @@ const PLATFORM_ICONS: Record<DownloadLink["platform"], ImageMetadata> = {
           label={t("downloads:core.downloadButton")}
           name={dropdownGroup}
         >
-          {
-            downloads.map((item) =>
-              item === "separator" ? (
-                <DropdownSeparator />
-              ) : (
-                <DropdownItem href={item.href} target={item.target}>
-                  <span class="dropdown-label">
-                    {item.platform && (
-                      <span class="platform-icon">
-                        <MaskIcon
-                          src={PLATFORM_ICONS[item.platform]}
-                          size="1em"
-                        />
-                      </span>
-                    )}
-                    <span>
-                      {`${t(`downloads:platforms.${item.platform}`)} (${t(`downloads:core.formats.${item.format}`)})`}
+          {downloads.map((item) =>
+            item === "separator" ? (
+              <DropdownSeparator />
+            ) : (
+              <DropdownItem href={item.href} target={item.target}>
+                <span class="dropdown-label">
+                  {item.platform && (
+                    <span class="platform-icon">
+                      <MaskIcon
+                        src={PLATFORM_ICONS[item.platform]}
+                        size="1em"
+                      />
                     </span>
+                  )}
+                  <span>
+                    {`${t(`downloads:platforms.${item.platform}`)} (${t(`downloads:core.formats.${item.format}`)})`}
                   </span>
-                  {item.size && <span slot="meta">{item.size}</span>}
-                </DropdownItem>
-              ),
-            )
-          }
+                </span>
+                {item.size && <span slot="meta">{item.size}</span>}
+              </DropdownItem>
+            ),
+          )}
         </Dropdown>
-        {
-          torrentUrl && magnetUrl && (
-            <div class="torrent-split-button">
-              <Button
-                variant="secondary"
-                href={torrentUrl}
-                as="a"
-                class="torrent-button"
-              >
-                {t("downloads:core.torrent")}
-              </Button>
-              <Button
-                variant="secondary"
-                href={magnetUrl}
-                as="a"
-                class="magnet-button"
-                aria-label={t("downloads:core.magnetLink")}
-                title={t("downloads:core.magnetLink")}
-              >
-                <ColorIcon
-                  src={icons.color("magnet").light}
-                  darkSrc={icons.color("magnet").dark}
-                  size="1.25em"
-                />
-              </Button>
-            </div>
-          )
-        }
+        {torrentUrl && magnetUrl && (
+          <div class="torrent-split-button">
+            <Button
+              variant="secondary"
+              href={torrentUrl}
+              as="a"
+              class="torrent-button"
+            >
+              {t("downloads:core.torrent")}
+            </Button>
+            <Button
+              variant="secondary"
+              href={magnetUrl}
+              as="a"
+              class="magnet-button"
+              aria-label={t("downloads:core.magnetLink")}
+              title={t("downloads:core.magnetLink")}
+            >
+              <ColorIcon
+                src={icons.color("magnet").light}
+                darkSrc={icons.color("magnet").dark}
+                size="1.25em"
+              />
+            </Button>
+          </div>
+        )}
       </div>
       <div class="metadata-links">
-        {
-          releaseNotesUrl && (
+        {releaseNotesUrl && (
+          <a
+            href={releaseNotesUrl}
+            target="_blank"
+            rel="noopener noreferrer external"
+            class="metadata-link"
+            set:text={t("downloads:core.releaseNotes")}
+          />
+        )}
+        {sourceCodeUrl && (
+          <>
+            {releaseNotesUrl && <span class="separator">·</span>}
             <a
-              href={releaseNotesUrl}
+              href={sourceCodeUrl}
               target="_blank"
               rel="noopener noreferrer external"
               class="metadata-link"
-              set:text={t("downloads:core.releaseNotes")}
+              set:text={t("downloads:core.sourceCode")}
             />
-          )
-        }
-        {
-          sourceCodeUrl && (
-            <>
-              {releaseNotesUrl && <span class="separator">·</span>}
-              <a
-                href={sourceCodeUrl}
-                target="_blank"
-                rel="noopener noreferrer external"
-                class="metadata-link"
-                set:text={t("downloads:core.sourceCode")}
-              />
-            </>
-          )
-        }
+          </>
+        )}
       </div>
     </div>
   </div>

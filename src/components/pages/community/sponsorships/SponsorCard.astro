@@ -21,13 +21,11 @@ const { name, description, href, logo, monochrome = false } = Astro.props;
     rel="noopener noreferrer"
     class:list={["sponsor-logo", { monochrome }]}
   >
-    {
-      logo ? (
-        <Image src={logo} alt="" loading="lazy" />
-      ) : (
-        <span class="sponsor-initial">{name.charAt(0)}</span>
-      )
-    }
+    {logo ? (
+      <Image src={logo} alt="" loading="lazy" />
+    ) : (
+      <span class="sponsor-initial">{name.charAt(0)}</span>
+    )}
   </a>
   <h3 class="sponsor-name">{name}</h3>
   <p class="sponsor-description">{description}</p>

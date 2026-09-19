@@ -37,34 +37,32 @@ const { projects, headers } = Astro.props;
       </tr>
     </thead>
     <tbody>
-      {
-        projects.map((project) => (
-          <tr class="project-row">
-            <td class="cell-project">
-              <span class="project-icon">
-                <MaskIcon src={project.icon} size="1rem" />
-              </span>
-              <span class="project-name">{project.title}</span>
-            </td>
-            <td class="cell-desc">{project.description}</td>
-            <td class="cell-stack">
-              {project.tags.map((tag) => (
-                <span class="tag">{tag}</span>
-              ))}
-            </td>
-            <td class="cell-link">
-              <a
-                href={project.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="visit-link"
-              >
-                {headers.visit}
-              </a>
-            </td>
-          </tr>
-        ))
-      }
+      {projects.map((project) => (
+        <tr class="project-row">
+          <td class="cell-project">
+            <span class="project-icon">
+              <MaskIcon src={project.icon} size="1rem" />
+            </span>
+            <span class="project-name">{project.title}</span>
+          </td>
+          <td class="cell-desc">{project.description}</td>
+          <td class="cell-stack">
+            {project.tags.map((tag) => (
+              <span class="tag">{tag}</span>
+            ))}
+          </td>
+          <td class="cell-link">
+            <a
+              href={project.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="visit-link"
+            >
+              {headers.visit}
+            </a>
+          </td>
+        </tr>
+      ))}
     </tbody>
   </table>
 </Card>

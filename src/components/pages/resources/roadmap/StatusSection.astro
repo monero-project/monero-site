@@ -25,41 +25,35 @@ const rtl = dir === "rtl";
 </header>
 
 <ul class="status-list" data-variant={variant}>
-  {
-    filteredItems.map((item) => (
-      <li>
-        {item.link ? (
-          <a
-            href={item.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="status-item"
-          >
-            <span class="status-title">
-              {t(`roadmap:items.${item.id}.title`)}
-              <MaskIcon
-                src={icons.mask("external-link")}
-                size="0.875em"
-                rtl={rtl}
-              />
-            </span>
-            <p class="status-desc">
-              {t(`roadmap:items.${item.id}.description`)}
-            </p>
-          </a>
-        ) : (
-          <div class="status-item">
-            <span class="status-title">
-              {t(`roadmap:items.${item.id}.title`)}
-            </span>
-            <p class="status-desc">
-              {t(`roadmap:items.${item.id}.description`)}
-            </p>
-          </div>
-        )}
-      </li>
-    ))
-  }
+  {filteredItems.map((item) => (
+    <li>
+      {item.link ? (
+        <a
+          href={item.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="status-item"
+        >
+          <span class="status-title">
+            {t(`roadmap:items.${item.id}.title`)}
+            <MaskIcon
+              src={icons.mask("external-link")}
+              size="0.875em"
+              rtl={rtl}
+            />
+          </span>
+          <p class="status-desc">{t(`roadmap:items.${item.id}.description`)}</p>
+        </a>
+      ) : (
+        <div class="status-item">
+          <span class="status-title">
+            {t(`roadmap:items.${item.id}.title`)}
+          </span>
+          <p class="status-desc">{t(`roadmap:items.${item.id}.description`)}</p>
+        </div>
+      )}
+    </li>
+  ))}
 </ul>
 
 <style>

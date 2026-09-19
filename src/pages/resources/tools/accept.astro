@@ -24,18 +24,16 @@ const { t, localizeHref } = Astro.locals;
 
   <PageContainer>
     <Grid as="ul" columns={2} gap="sm">
-      {
-        paymentGateways.map((tool) => (
-          <li>
-            <ExternalResourceButton
-              href={tool.href}
-              title={tool.title}
-              logo={tool.logo}
-              subtitle={t(`tools:accept.tools.${tool.id}`)}
-            />
-          </li>
-        ))
-      }
+      {paymentGateways.map((tool) => (
+        <li>
+          <ExternalResourceButton
+            href={tool.href}
+            title={tool.title}
+            logo={tool.logo}
+            subtitle={t(`tools:accept.tools.${tool.id}`)}
+          />
+        </li>
+      ))}
     </Grid>
   </PageContainer>
 
@@ -47,7 +45,10 @@ const { t, localizeHref } = Astro.locals;
     <a
       href="https://github.com/monero-project/monero-site/issues/new"
       target="_blank"
-      rel="noopener noreferrer">{t("tools:accept.disclaimer.linkText")}</a
-    >.
+      rel="noopener noreferrer"
+    >
+      {t("tools:accept.disclaimer.linkText")}
+    </a>
+    .
   </DisclaimerBar>
 </Layout>

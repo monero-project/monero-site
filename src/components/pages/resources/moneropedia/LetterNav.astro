@@ -8,13 +8,11 @@ const { letters, ariaLabel } = Astro.props;
 ---
 
 <nav class="letter-nav" aria-label={ariaLabel}>
-  {
-    letters.map((letter) => (
-      <a class="letter-nav-link" href={`#${letter}`}>
-        {letter}
-      </a>
-    ))
-  }
+  {letters.map((letter) => (
+    <a class="letter-nav-link" href={`#${letter}`}>
+      {letter}
+    </a>
+  ))}
 </nav>
 
 <style>

@@ -36,20 +36,18 @@ const { t, localizeNumber } = Astro.locals;
     </div>
   </div>
   <div class="step-image">
-    {
-      image ? (
-        <Image src={image} alt={imageAlt} format="avif" />
-      ) : (
-        <div class="step-image-placeholder">
-          {icon && (
-            <div class="placeholder-icon">
-              <MaskIcon src={icon} size="4rem" />
-            </div>
-          )}
-          <div class="placeholder-number">{localizeNumber(step, 2)}</div>
-        </div>
-      )
-    }
+    {image ? (
+      <Image src={image} alt={imageAlt} format="avif" />
+    ) : (
+      <div class="step-image-placeholder">
+        {icon && (
+          <div class="placeholder-icon">
+            <MaskIcon src={icon} size="4rem" />
+          </div>
+        )}
+        <div class="placeholder-number">{localizeNumber(step, 2)}</div>
+      </div>
+    )}
   </div>
 </section>
 

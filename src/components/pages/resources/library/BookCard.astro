@@ -22,15 +22,13 @@ const getLanguageName = (targetLocale: string): string => {
 
 <Card as="article" padding="lg" radius="lg" class="book-card">
   <a href={link} class="book-cover" target="_blank" rel="noopener noreferrer">
-    {
-      cover ? (
-        <Image src={cover} alt="" format="avif" />
-      ) : (
-        <div class="book-placeholder">
-          <MaskIcon src={icons.mask("book-text")} size="2rem" />
-        </div>
-      )
-    }
+    {cover ? (
+      <Image src={cover} alt="" format="avif" />
+    ) : (
+      <div class="book-placeholder">
+        <MaskIcon src={icons.mask("book-text")} size="2rem" />
+      </div>
+    )}
   </a>
 
   <div class="book-info">
@@ -46,23 +44,21 @@ const getLanguageName = (targetLocale: string): string => {
         {t("common:components.bookCard.readOnline")}
       </IconLink>
 
-      {
-        translations && translations.length > 0 && (
-          <div class="book-translations">
-            <span class="translations-label">
-              {t("common:components.bookCard.alsoAvailableIn")}
-            </span>
-            {translations.map((tr, i) => (
-              <>
-                <a href={tr.url} target="_blank" rel="noopener noreferrer">
-                  {getLanguageName(tr.locale)}
-                </a>
-                {i < translations.length - 1 && <span class="sep">·</span>}
-              </>
-            ))}
-          </div>
-        )
-      }
+      {translations && translations.length > 0 && (
+        <div class="book-translations">
+          <span class="translations-label">
+            {t("common:components.bookCard.alsoAvailableIn")}
+          </span>
+          {translations.map((tr, i) => (
+            <>
+              <a href={tr.url} target="_blank" rel="noopener noreferrer">
+                {getLanguageName(tr.locale)}
+              </a>
+              {i < translations.length - 1 && <span class="sep">·</span>}
+            </>
+          ))}
+        </div>
+      )}
     </div>
   </div>
 </Card>
