@@ -3,3 +3,8 @@ allowBuilds:
   esbuild: false
   "@parcel/watcher": false
   sharp: false
+minimumReleaseAge: 20160 # minutes (14 days)
+blockExoticSubdeps: true
+trustPolicy: no-downgrade
+overrides:
+  chokidar: 5.0.0
