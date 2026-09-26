@@ -41,16 +41,14 @@ const cards = [
 
   <PageContainer>
     <Grid columns={3} gap="xl">
-      {
-        cards.map((card) => (
-          <CategoryCard
-            title={card.title}
-            description={card.description}
-            href={card.href}
-            image={card.image}
-          />
-        ))
-      }
+      {cards.map((card) => (
+        <CategoryCard
+          title={card.title}
+          description={card.description}
+          href={card.href}
+          image={card.image}
+        />
+      ))}
     </Grid>
   </PageContainer>
 </Layout>

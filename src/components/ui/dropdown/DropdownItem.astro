@@ -5,14 +5,14 @@ const { class: className, ...rest } = Astro.props as HTMLAttributes<"a">;
 ---
 
 <a {...rest} class:list={["dropdown-item", className]}>
-  <span class="label"><slot /></span>
-  {
-    Astro.slots.has("meta") && (
-      <span class="meta">
-        <slot name="meta" />
-      </span>
-    )
-  }
+  <span class="label">
+    <slot />
+  </span>
+  {Astro.slots.has("meta") && (
+    <span class="meta">
+      <slot name="meta" />
+    </span>
+  )}
 </a>
 
 <style>

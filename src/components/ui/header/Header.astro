@@ -67,7 +67,9 @@ const navItems = navigationItems.map((item) => {
       <fieldset>
         <legend class="sr-only">{t("common:aria.primaryNavSections")}</legend>
         <ul class="nav-list">
-          {navItems.map((item) => <NavItem {...item} />)}
+          {navItems.map((item) => (
+            <NavItem {...item} />
+          ))}
         </ul>
       </fieldset>
     </nav>
@@ -76,7 +78,8 @@ const navItems = navigationItems.map((item) => {
       for="nav-toggle"
       class="scrim"
       aria-hidden="true"
-      aria-label={t("common:aria.closeMenu")}></label>
+      aria-label={t("common:aria.closeMenu")}
+    ></label>
 
     <div class="utils" aria-label={t("common:aria.utilities")}>
       <div class="lang">

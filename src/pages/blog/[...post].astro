@@ -72,20 +72,18 @@ const recentPosts = allPosts.filter((_, i) => i !== currentIndex).slice(0, N);
         author={post.data.author}
         tags={post.data.tags}
       />
-      {
-        post.data.image && (
-          <div style="text-align: center;">
-            <Image
-              src={post.data.image}
-              alt=""
-              width={350}
-              layout="constrained"
-              position="center"
-              format="avif"
-            />
-          </div>
-        )
-      }
+      {post.data.image && (
+        <div style="text-align: center;">
+          <Image
+            src={post.data.image}
+            alt=""
+            width={350}
+            layout="constrained"
+            position="center"
+            format="avif"
+          />
+        </div>
+      )}
       <BlogContent>
         <Content />
       </BlogContent>
@@ -94,29 +92,27 @@ const recentPosts = allPosts.filter((_, i) => i !== currentIndex).slice(0, N);
     <Card as="aside" border transparent class="sidebar">
       <h2>{t("blog:post.recentPosts")}</h2>
       <ul class="recent-posts">
-        {
-          recentPosts.map((recentPost) => {
-            const dateStr = getDateStringFromId(recentPost.id);
-            const formattedDate = localizeDateString(dateStr, {
-              year: "numeric",
-              month: "long",
-              day: "numeric",
-            });
-            return (
-              <li>
-                <a
-                  class="post-title"
-                  href={localizeHref(`/blog/${recentPost.id}/`)}
-                >
-                  {recentPost.data.title}
-                </a>
-                <time class="post-date" datetime={dateStr}>
-                  {formattedDate}
-                </time>
-              </li>
-            );
-          })
-        }
+        {recentPosts.map((recentPost) => {
+          const dateStr = getDateStringFromId(recentPost.id);
+          const formattedDate = localizeDateString(dateStr, {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          });
+          return (
+            <li>
+              <a
+                class="post-title"
+                href={localizeHref(`/blog/${recentPost.id}/`)}
+              >
+                {recentPost.data.title}
+              </a>
+              <time class="post-date" datetime={dateStr}>
+                {formattedDate}
+              </time>
+            </li>
+          );
+        })}
       </ul>
     </Card>
   </div>

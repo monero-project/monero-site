@@ -19,31 +19,29 @@ const { t } = Astro.locals;
 ---
 
 <div class="year-rows">
-  {
-    history.map((yearData) => (
-      <div class="year-row">
-        <span class="year-label">{yearData.year}</span>
-        <div class="event-chips">
-          {yearData.events.map((event) =>
-            event.link ? (
-              <a
-                href={event.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="event-chip has-link"
-              >
-                {t(`roadmap:history.events.${event.titleKey}`)}
-              </a>
-            ) : (
-              <span class="event-chip">
-                {t(`roadmap:history.events.${event.titleKey}`)}
-              </span>
-            ),
-          )}
-        </div>
+  {history.map((yearData) => (
+    <div class="year-row">
+      <span class="year-label">{yearData.year}</span>
+      <div class="event-chips">
+        {yearData.events.map((event) =>
+          event.link ? (
+            <a
+              href={event.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="event-chip has-link"
+            >
+              {t(`roadmap:history.events.${event.titleKey}`)}
+            </a>
+          ) : (
+            <span class="event-chip">
+              {t(`roadmap:history.events.${event.titleKey}`)}
+            </span>
+          ),
+        )}
       </div>
-    ))
-  }
+    </div>
+  ))}
 </div>
 
 <style>

@@ -40,7 +40,6 @@ export default defineConfig({
     : {}),
   site: `https://${SITE_ROOTDOMAIN}`,
   trailingSlash: "always",
-  compressHTML: true,
   session: false,
   fonts: [
     {

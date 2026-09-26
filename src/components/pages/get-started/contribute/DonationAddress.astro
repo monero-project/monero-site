@@ -43,28 +43,26 @@ const {
     <div class="address-details">
       <code class="address">{address}</code>
 
-      {
-        viewAddress && viewKey && (
-          <details class="view-only-details">
-            <summary>
-              <span class="icon">
-                <MaskIcon src={icons.mask("chevron-down")} size="0.875em" />
-              </span>
-              <span>{viewOnlyLabel}</span>
-            </summary>
-            <div class="view-only-content">
-              <p>
-                <strong>{primaryAddressLabel}</strong>
-              </p>
-              <code>{viewAddress}</code>
-              <p>
-                <strong>{viewKeyLabel}</strong>
-              </p>
-              <code>{viewKey}</code>
-            </div>
-          </details>
-        )
-      }
+      {viewAddress && viewKey && (
+        <details class="view-only-details">
+          <summary>
+            <span class="icon">
+              <MaskIcon src={icons.mask("chevron-down")} size="0.875em" />
+            </span>
+            <span>{viewOnlyLabel}</span>
+          </summary>
+          <div class="view-only-content">
+            <p>
+              <strong>{primaryAddressLabel}</strong>
+            </p>
+            <code>{viewAddress}</code>
+            <p>
+              <strong>{viewKeyLabel}</strong>
+            </p>
+            <code>{viewKey}</code>
+          </div>
+        </details>
+      )}
     </div>
   </div>
 </div>

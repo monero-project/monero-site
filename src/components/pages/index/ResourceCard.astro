@@ -24,21 +24,17 @@ const { safeMarkdown } = Astro.locals;
   transparent
   class="resource-card"
 >
-  {
-    icon && (
-      <div class="icon">
-        <MaskIcon src={icon} size="100%" />
-      </div>
-    )
-  }
+  {icon && (
+    <div class="icon">
+      <MaskIcon src={icon} size="100%" />
+    </div>
+  )}
 
   <h2 class="title">{title}</h2>
 
-  {
-    description && (
-      <p class="desc" set:html={safeMarkdown.parseInline(description)} />
-    )
-  }
+  {description && (
+    <p class="desc" set:html={safeMarkdown.parseInline(description)} />
+  )}
 
   <IconLink href={ctaHref} weight="bold" underline class="cta">
     {ctaLabel}

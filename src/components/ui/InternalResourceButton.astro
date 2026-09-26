@@ -22,13 +22,11 @@ const rtl = Astro.locals.dir === "rtl";
   href={href || undefined}
   aria-label={href ? title : undefined}
 >
-  {
-    icon && (
-      <span class="info-icon" aria-hidden="true">
-        <MaskIcon src={icon} size="1.5em" aria-hidden="true" />
-      </span>
-    )
-  }
+  {icon && (
+    <span class="info-icon" aria-hidden="true">
+      <MaskIcon src={icon} size="1.5em" aria-hidden="true" />
+    </span>
+  )}
 
   <div class="info-content">
     <span class="info-title">{title}</span>
@@ -37,18 +35,16 @@ const rtl = Astro.locals.dir === "rtl";
     </div>
   </div>
 
-  {
-    href && (
-      <span class="info-arrow" aria-hidden="true">
-        <MaskIcon
-          src={icons.mask("arrow-right")}
-          size="1.25em"
-          aria-hidden="true"
-          rtl={rtl}
-        />
-      </span>
-    )
-  }
+  {href && (
+    <span class="info-arrow" aria-hidden="true">
+      <MaskIcon
+        src={icons.mask("arrow-right")}
+        size="1.25em"
+        aria-hidden="true"
+        rtl={rtl}
+      />
+    </span>
+  )}
 </Card>
 
 <style>

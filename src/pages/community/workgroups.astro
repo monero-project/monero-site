@@ -80,19 +80,17 @@ const { t, dir, localizeHref } = Astro.locals;
         headingLevel={3}
       >
         <div class="column-cards">
-          {
-            developmentWorkgroups.map((wg) => (
-              <WorkgroupCard
-                name={t(wg.nameKey)}
-                action={t(wg.actionKey)}
-                bestFor={t(wg.bestForKey)}
-                icon={wg.icon}
-                chatName={wg.chatName}
-                ircHref={wg.ircHref}
-                matrixHref={wg.matrixHref}
-              />
-            ))
-          }
+          {developmentWorkgroups.map((wg) => (
+            <WorkgroupCard
+              name={t(wg.nameKey)}
+              action={t(wg.actionKey)}
+              bestFor={t(wg.bestForKey)}
+              icon={wg.icon}
+              chatName={wg.chatName}
+              ircHref={wg.ircHref}
+              matrixHref={wg.matrixHref}
+            />
+          ))}
         </div>
       </PageSection>
 
@@ -103,19 +101,17 @@ const { t, dir, localizeHref } = Astro.locals;
         headingLevel={3}
       >
         <div class="column-cards">
-          {
-            researchWorkgroups.map((wg) => (
-              <WorkgroupCard
-                name={t(wg.nameKey)}
-                action={t(wg.actionKey)}
-                bestFor={t(wg.bestForKey)}
-                icon={wg.icon}
-                chatName={wg.chatName}
-                ircHref={wg.ircHref}
-                matrixHref={wg.matrixHref}
-              />
-            ))
-          }
+          {researchWorkgroups.map((wg) => (
+            <WorkgroupCard
+              name={t(wg.nameKey)}
+              action={t(wg.actionKey)}
+              bestFor={t(wg.bestForKey)}
+              icon={wg.icon}
+              chatName={wg.chatName}
+              ircHref={wg.ircHref}
+              matrixHref={wg.matrixHref}
+            />
+          ))}
         </div>
       </PageSection>
 
@@ -126,19 +122,17 @@ const { t, dir, localizeHref } = Astro.locals;
         headingLevel={3}
       >
         <div class="column-cards">
-          {
-            communityWorkgroups.map((wg) => (
-              <WorkgroupCard
-                name={t(wg.nameKey)}
-                action={t(wg.actionKey)}
-                bestFor={t(wg.bestForKey)}
-                icon={wg.icon}
-                chatName={wg.chatName}
-                ircHref={wg.ircHref}
-                matrixHref={wg.matrixHref}
-              />
-            ))
-          }
+          {communityWorkgroups.map((wg) => (
+            <WorkgroupCard
+              name={t(wg.nameKey)}
+              action={t(wg.actionKey)}
+              bestFor={t(wg.bestForKey)}
+              icon={wg.icon}
+              chatName={wg.chatName}
+              ircHref={wg.ircHref}
+              matrixHref={wg.matrixHref}
+            />
+          ))}
         </div>
       </PageSection>
     </div>

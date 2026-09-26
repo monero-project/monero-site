@@ -32,39 +32,35 @@ const { t } = Astro.locals;
   </div>
 
   <Column gap="md">
-    {
-      asset.variants.map((variant) => (
-        <Row gap="xs">
-          <span class="variant-label">
-            {t(`press-kit:assets.variants.${variant.labelKey}`)}
-          </span>
-          <Row gap="md">
-            {variant.sizes.map((size) => (
-              <a
-                href={size.url}
-                class="size-link"
-                download
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {t(`press-kit:assets.sizes.${size.labelKey}`)}
-              </a>
-            ))}
-          </Row>
+    {asset.variants.map((variant) => (
+      <Row gap="xs">
+        <span class="variant-label">
+          {t(`press-kit:assets.variants.${variant.labelKey}`)}
+        </span>
+        <Row gap="md">
+          {variant.sizes.map((size) => (
+            <a
+              href={size.url}
+              class="size-link"
+              download
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t(`press-kit:assets.sizes.${size.labelKey}`)}
+            </a>
+          ))}
         </Row>
-      ))
-    }
+      </Row>
+    ))}
   </Column>
 
-  {
-    asset.vectorUrl && (
-      <div class="vector-download">
-        <Button as="a" href={asset.vectorUrl} variant="secondary">
-          {t("press-kit:sections.brandAssets.downloadVector")}
-        </Button>
-      </div>
-    )
-  }
+  {asset.vectorUrl && (
+    <div class="vector-download">
+      <Button as="a" href={asset.vectorUrl} variant="secondary">
+        {t("press-kit:sections.brandAssets.downloadVector")}
+      </Button>
+    </div>
+  )}
 </Card>
 
 <style>

@@ -144,73 +144,69 @@ const bottomLinks: Link[] = [
 <footer class="footer" aria-label={t("common:aria.footer")}>
   <div class="items">
     <nav class="grid" aria-label={t("common:aria.footerNav")}>
-      {
-        columns.map((col) => (
-          <section class="col">
-            <h3 class="title">{col.title}</h3>
-            <ul class="list">
-              {col.links.map((l) => (
-                <li>
-                  <a
-                    href={l.href}
-                    target={
-                      isExternal(l.href, "getmonero.org") ? "_blank" : undefined
-                    }
-                    rel={
-                      isExternal(l.href, "getmonero.org")
-                        ? "noopener noreferrer external"
-                        : undefined
-                    }
-                  >
-                    {l.label}
-                    {l.icon && (
-                      <MaskIcon
-                        src={l.icon?.src}
-                        size={l.icon?.size ?? "12px"}
-                        rtl={l.icon?.ignoreRtl ? false : dir == "rtl"}
-                        color={l.icon?.color}
-                        spacing="0.25em"
-                      />
-                    )}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </section>
-        ))
-      }
+      {columns.map((col) => (
+        <section class="col">
+          <h3 class="title">{col.title}</h3>
+          <ul class="list">
+            {col.links.map((l) => (
+              <li>
+                <a
+                  href={l.href}
+                  target={
+                    isExternal(l.href, "getmonero.org") ? "_blank" : undefined
+                  }
+                  rel={
+                    isExternal(l.href, "getmonero.org")
+                      ? "noopener noreferrer external"
+                      : undefined
+                  }
+                >
+                  {l.label}
+                  {l.icon && (
+                    <MaskIcon
+                      src={l.icon?.src}
+                      size={l.icon?.size ?? "12px"}
+                      rtl={l.icon?.ignoreRtl ? false : dir == "rtl"}
+                      color={l.icon?.color}
+                      spacing="0.25em"
+                    />
+                  )}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
     </nav>
 
     <nav class="bottom" aria-label={t("common:aria.secondaryFooterNav")}>
       <ul class="inline-list">
-        {
-          bottomLinks.map((l) => (
-            <li class="inline-item">
-              <a
-                href={l.href}
-                target={
-                  isExternal(l.href, "getmonero.org") ? "_blank" : undefined
-                }
-                rel={
-                  isExternal(l.href, "getmonero.org")
-                    ? "noopener noreferrer external"
-                    : undefined
-                }
-              >
-                {l.label}
-                {l.icon && (
-                  <MaskIcon
-                    src={l.icon?.src}
-                    size={l.icon?.size ?? "12px"}
-                    rtl={l.icon?.ignoreRtl ? false : dir == "rtl"}
-                    color={l.icon?.color}
-                    spacing="0.25em"
-                  />
-                )}
-              </a>
-            </li>
-          ))
-        }
+        {bottomLinks.map((l) => (
+          <li class="inline-item">
+            <a
+              href={l.href}
+              target={
+                isExternal(l.href, "getmonero.org") ? "_blank" : undefined
+              }
+              rel={
+                isExternal(l.href, "getmonero.org")
+                  ? "noopener noreferrer external"
+                  : undefined
+              }
+            >
+              {l.label}
+              {l.icon && (
+                <MaskIcon
+                  src={l.icon?.src}
+                  size={l.icon?.size ?? "12px"}
+                  rtl={l.icon?.ignoreRtl ? false : dir == "rtl"}
+                  color={l.icon?.color}
+                  spacing="0.25em"
+                />
+              )}
+            </a>
+          </li>
+        ))}
       </ul>
     </nav>
   </div>
