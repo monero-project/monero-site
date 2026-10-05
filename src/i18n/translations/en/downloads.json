@@ -85,11 +85,7 @@
         },
         "categories": {
             "moneroOnly": "Monero-only",
-            "multiCoin": "Multi-coin",
-            "lws": {
-                "title": "LWS Wallets",
-                "disclaimer": "LWS wallets keep your transaction history synchronized on a remote server for your convenience. Unless you have the option to specify your own servers, this may introduce privacy risks."
-            }
+            "multiCoin": "Multi-coin"
         },
         "learnMore": "Learn more",
         "desktopLabel": "Desktop",
@@ -100,11 +96,12 @@
             "monerocom": "A Monero-only wallet developed by Cake Labs.",
             "monerujo": "A Monero wallet for Android with advanced features.",
             "monfluo": "A pure Monero wallet for Android.",
+            "skylight": "A Monero wallet developed by MAGIC Grants.",
             "cakewallet": "A multi-coin wallet with Monero and hardware wallet support.",
             "eigenwallet": "Monero and Bitcoin wallet with built-in atomic swap capabilities.",
             "stackwallet": "A multi-coin wallet with Monero support for desktop and mobile.",
             "unstoppable": "A multi-coin wallet supporting Monero.",
-            "edge": "A multi-coin wallet with server-side syncing.",
+            "edge": "A multi-coin mobile wallet with Monero support.",
             "ledger": "Hardware wallet with Monero support via third-party apps.",
             "trezor": "Hardware wallet with Monero support via third-party apps.",
             "cupcake": "Offline signer app for use with Cake Wallet/Monero.com.",
@@ -114,7 +111,7 @@
         "tags": {
             "qrSigning": "QR Signing",
             "builtInExchange": "Built-in exchange",
-            "remoteScanning": "Remote scanning",
+            "lwsSupport": "LWS support",
             "diy": "DIY",
             "alphaSoftware": "Alpha software"
         },
