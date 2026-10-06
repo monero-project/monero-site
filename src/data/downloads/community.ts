@@ -5,6 +5,7 @@ import featherLogo from "@/assets/images/wallets/feather.avif";
 import monerocomLogo from "@/assets/images/wallets/monerocom.avif";
 import monerujoLogo from "@/assets/images/wallets/monerujo.avif";
 import monfluoLogo from "@/assets/images/wallets/monfluo.avif";
+import skylightLogo from "@/assets/images/wallets/skylight.avif";
 import cakewalletLogo from "@/assets/images/wallets/cakewallet.avif";
 import eigenwalletLogo from "@/assets/images/wallets/eigenwallet.avif";
 import stackWalletLogo from "@/assets/images/wallets/stack-wallet.webp";
@@ -46,7 +47,6 @@ interface CommunityData {
   wallets: {
     moneroOnly: Wallet[];
     multiCoin: Wallet[];
-    lws: Wallet[];
   };
   cold: ColdWallet[];
   nodes: Node[];
@@ -105,6 +105,17 @@ export const community: CommunityData = {
           general: ["GPL-3.0"],
         },
       },
+      {
+        id: "skylight",
+        name: "Skylight Wallet",
+        logo: skylightLogo,
+        link: "https://skylight.magicgrants.org",
+        tags: {
+          mobile: ["android", "ios"],
+          desktop: ["windows", "macos", "linux"],
+          general: ["MIT", "i18n:lwsSupport"],
+        },
+      },
     ],
     multiCoin: [
       {
@@ -116,6 +127,16 @@ export const community: CommunityData = {
           desktop: ["windows", "macos", "linux"],
           mobile: ["android", "ios"],
           general: ["GPL-3.0", "i18n:builtInExchange"],
+        },
+      },
+      {
+        id: "edge",
+        name: "Edge Wallet",
+        logo: edgeLogo,
+        link: "https://edge.app/monero-wallet/",
+        tags: {
+          mobile: ["android", "ios"],
+          general: ["BSD-3", "i18n:lwsSupport", "i18n:builtInExchange"],
         },
       },
       {
@@ -147,18 +168,6 @@ export const community: CommunityData = {
         tags: {
           mobile: ["android", "ios"],
           general: ["MIT"],
-        },
-      },
-    ],
-    lws: [
-      {
-        id: "edge",
-        name: "Edge Wallet",
-        logo: edgeLogo,
-        link: "https://edge.app/monero-wallet/",
-        tags: {
-          mobile: ["android", "ios"],
-          general: ["BSD-3", "i18n:remoteScanning", "i18n:builtInExchange"],
         },
       },
     ],
