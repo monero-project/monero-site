@@ -28,7 +28,7 @@ meta_descr: meta_descr.roadmap
                 <div class="tabPanel-widget">
                     <label for="tab-1" tabindex="0"></label>
                     <input id="tab-1" type="radio" name="tabs" aria-hidden="true">
-                    <h2>2014-'19</h2>
+                    <h2>2014-'21</h2>
                     <div class="tabPanel-content info-block">
                         <h2>2014</h2>
                             <ul>
@@ -153,11 +153,6 @@ meta_descr: meta_descr.roadmap
                                     <li class="completed">{% t roadmap.nodediscovery %}</li>
                                     <li class="completed">{% t roadmap.randomx %}</li>
                             </ul>
-                    </div>
-                    <label for="tab-2" tabindex="0"></label>
-                    <input id="tab-2" type="radio" name="tabs" aria-hidden="true">
-                    <h2>'20</h2>
-                    <div class="tabPanel-content info-block">
                         <h2>2020</h2>
                             <ul>
                                 <h3 class="months">{% t roadmap.feb %}</h3>
@@ -175,11 +170,6 @@ meta_descr: meta_descr.roadmap
                                     <li class="completed">{% t roadmap.clsag %}</li>
                                     <li class="completed">{% t roadmap.released-0-17 %}</li>
                             </ul>
-                    </div>
-                    <label for="tab-3" tabindex="0"></label>
-                    <input id="tab-3" type="radio" name="tabs" aria-hidden="true" checked>
-                    <h2>'21</h2>
-                    <div class="tabPanel-content info-block">
                         <h2>2021</h2>
                             <ul>
                                 <h3 class="months">{% t roadmap.feb %}</h3>
@@ -190,8 +180,8 @@ meta_descr: meta_descr.roadmap
                                     <li class="completed"><a href="{{ site.baseurl }}/2021/10/05/p2pool-released.html">{% t roadmap.p2pool %}</a></li>
                             </ul>
                     </div>
-                    <label for="tab-4" tabindex="0"></label>
-                    <input id="tab-4" type="radio" name="tabs" aria-hidden="true" checked>
+                    <label for="tab-2" tabindex="0"></label>
+                    <input id="tab-2" type="radio" name="tabs" aria-hidden="true" checked>
                     <h2>'22</h2>
                     <div class="tabPanel-content info-block">
                         <h2>2022</h2>
@@ -204,8 +194,8 @@ meta_descr: meta_descr.roadmap
                                     <li class="completed"><a href="{{ site.baseurl }}/2022/04/20/network-upgrade-july-2022.html">{% t roadmap.hardfork-v15 %}</a></li>
                             </ul>
                     </div>
-                    <label for="tab-5" tabindex="0"></label>
-                    <input id="tab-5" type="radio" name="tabs" aria-hidden="true" checked>
+                    <label for="tab-3" tabindex="0"></label>
+                    <input id="tab-3" type="radio" name="tabs" aria-hidden="true" checked>
                     <h2>'23</h2>
                     <div class="tabPanel-content info-block">
                         <h2>2023</h2>
@@ -218,8 +208,8 @@ meta_descr: meta_descr.roadmap
                                     <li class="completed">{% t roadmap.lws-subaddress %}</li>
                             </ul>
                     </div>
-                    <label for="tab-6" tabindex="0"></label>
-                    <input id="tab-6" type="radio" name="tabs" aria-hidden="true" checked>
+                    <label for="tab-4" tabindex="0"></label>
+                    <input id="tab-4" type="radio" name="tabs" aria-hidden="true" checked>
                     <h2>'24</h2>
                     <div class="tabPanel-content info-block">
                         <h2>2024</h2>
@@ -230,6 +220,24 @@ meta_descr: meta_descr.roadmap
                                     <li class="completed"><a href="https://haveno.exchange">{% t roadmap.haveno-mainnet %}</a></li>
                             </ul>
                     </div>
+                    <label for="tab-5" tabindex="0"></label>
+                    <input id="tab-5" type="radio" name="tabs" aria-hidden="true">
+                    <h2>'25</h2>
+                    <div class="tabPanel-content info-block">
+                        <h2>2025</h2>
+                            <ul>
+                            </ul>
+                    </div>
+                    <label for="tab-6" tabindex="0"></label>
+                    <input id="tab-6" type="radio" name="tabs" aria-hidden="true" checked>
+                    <h2>'26</h2>
+                    <div class="tabPanel-content info-block">
+                        <h2>2026</h2>
+                            <ul>
+                                <h3 class="months">{% t roadmap.feb %}</h3>
+                                <li class="completed"><a href="https://github.com/tevador/RandomX/pull/317">RandomX v2</a></li>
+                            </ul>
+                    </div>
                     <label for="tab-7" tabindex="0"></label>
                     <input id="tab-7" type="radio" name="tabs" aria-hidden="true">
                     <h2>{% t roadmap.future %}</h2>
@@ -237,13 +245,11 @@ meta_descr: meta_descr.roadmap
                         <h2>{% t roadmap.future %}</h2>
                             <ul>
                                 <h3 class="months">{% t roadmap.comingsoon %}</h3>
-                                    <li class="ongoing"><a href="https://www.reddit.com/r/Monero/comments/1pyzdpc/randomx_v2_update/">RandomX v2</a></li>
                                     <li class="ongoing"><a href="https://github.com/Rucknium/OSPEAD">{% t roadmap.ospead %}</a></li>
-                                    <li class="ongoing">{% t roadmap.bp++ %}</li>
                                     <li class="ongoing"><a href="https://cuprate.org/">{% t roadmap.cuprate %}</a></li>
-                                    <li class="ongoing"><a href="https://github.com/seraphis-migration/strategy/wiki/Our-Wallet-Rewrite-Project-After-Priority-Switched-From-Seraphis-to-FCMPs">{% t faq.fcmp %}</a></li>
-                                    <li class="upcoming">{% t roadmap.seraphis-jamtis %}</li>
-                                    <li class="upcoming">{% t roadmap.site-redesign %}</li>
+                                    <li class="ongoing"><a href="https://github.com/seraphis-migration/strategy/wiki/Our-Wallet-Rewrite-Project-After-Priority-Switched-From-Seraphis-to-FCMPs">{% t faq.fcmp %}</a> + <a href="https://github.com/jeffro256/carrot/blob/master/carrot.md">CARROT</a></li>
+                                    <li class="ongoing"><a href="https://gist.github.com/tevador/639d083c994c1ef9401832c08e2b7832">{% t roadmap.jamtis %}</a></li>
+                                    <li class="ongoing"><a href="https://beta.monerodevs.org">{% t roadmap.site-redesign %}</a></li>
                                     <li class="proposed"><a href="https://github.com/monero-project/research-lab/issues/94">{% t roadmap.mrl-tasks %}</a></li>
                             </ul>
                     </div>
