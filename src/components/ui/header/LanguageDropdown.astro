@@ -28,19 +28,17 @@ const localeList = Object.keys(locales).map((code) => {
     aria-label={t("common:components.languageDropdown.languages")}
   >
     <ul class="lang-list">
-      {
-        localeList.map((locale) => (
-          <li>
-            <a
-              href={localizeHref(locale.code, Astro.url.pathname)}
-              class={locale.code === currentLocale ? "active" : ""}
-              aria-current={locale.code === currentLocale ? "true" : undefined}
-            >
-              {locale.name}
-            </a>
-          </li>
-        ))
-      }
+      {localeList.map((locale) => (
+        <li>
+          <a
+            href={localizeHref(locale.code, Astro.url.pathname)}
+            class={locale.code === currentLocale ? "active" : ""}
+            aria-current={locale.code === currentLocale ? "true" : undefined}
+          >
+            {locale.name}
+          </a>
+        </li>
+      ))}
     </ul>
   </div>
 </details>

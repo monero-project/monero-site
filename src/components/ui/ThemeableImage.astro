@@ -27,17 +27,15 @@ const {
   data-rtl={rtl || undefined}
   {...rest}
 />
-{
-  darkSrc && (
-    <Image
-      class:list={[className, "dark-only"]}
-      src={darkSrc}
-      alt={alt}
-      data-rtl={rtl || undefined}
-      {...rest}
-    />
-  )
-}
+{darkSrc && (
+  <Image
+    class:list={[className, "dark-only"]}
+    src={darkSrc}
+    alt={alt}
+    data-rtl={rtl || undefined}
+    {...rest}
+  />
+)}
 
 <style>
   [data-rtl] {

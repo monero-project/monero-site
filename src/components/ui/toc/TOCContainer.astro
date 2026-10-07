@@ -18,17 +18,15 @@ const { sections, ariaLabel } = Astro.props;
 ---
 
 <nav class="toc" aria-label={ariaLabel}>
-  {
-    sections.map((section) => (
-      <TOCItem
-        href={`#${section.id}`}
-        icon={section.icon}
-        title={section.title}
-        subtitle={section.subtitle}
-        class="toc-item-default"
-      />
-    ))
-  }
+  {sections.map((section) => (
+    <TOCItem
+      href={`#${section.id}`}
+      icon={section.icon}
+      title={section.title}
+      subtitle={section.subtitle}
+      class="toc-item-default"
+    />
+  ))}
 </nav>
 
 <style>

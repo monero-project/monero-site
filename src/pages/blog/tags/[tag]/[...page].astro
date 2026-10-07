@@ -70,12 +70,16 @@ const titleKey = isMainTab ? "blog:index.hero.title" : "blog:tags.hero.title";
 ---
 
 <Layout
-  title={isMainTab
-    ? t("blog:index.pageTitle")
-    : t("blog:tags.pageTitle", { tag: translatedTag })}
-  description={isMainTab
-    ? t("blog:index.hero.subtitle")
-    : t("blog:tags.hero.subtitle", { tag: translatedTag })}
+  title={
+    isMainTab
+      ? t("blog:index.pageTitle")
+      : t("blog:tags.pageTitle", { tag: translatedTag })
+  }
+  description={
+    isMainTab
+      ? t("blog:index.hero.subtitle")
+      : t("blog:tags.hero.subtitle", { tag: translatedTag })
+  }
 >
   <Fragment slot="head">
     <link
@@ -107,18 +111,16 @@ const titleKey = isMainTab ? "blog:index.hero.title" : "blog:tags.hero.title";
       </a>
     </Row>
     <Grid columns={2} gap="md" class="blog-grid">
-      {
-        posts.map((post) => (
-          <BlogCard
-            id={post.id}
-            title={post.data.title}
-            author={post.data.author}
-            tags={post.data.tags || []}
-            image={post.data.image}
-            summary={post.data.summary || ""}
-          />
-        ))
-      }
+      {posts.map((post) => (
+        <BlogCard
+          id={post.id}
+          title={post.data.title}
+          author={post.data.author}
+          tags={post.data.tags || []}
+          image={post.data.image}
+          summary={post.data.summary || ""}
+        />
+      ))}
     </Grid>
     <Paginator page={page} />
   </PageContainer>

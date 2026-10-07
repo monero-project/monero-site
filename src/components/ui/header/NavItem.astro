@@ -27,70 +27,58 @@ const closeId = `${id}-close`;
 ---
 
 <li class="nav-item" data-is-dropdown={isDropdown || undefined}>
-  {
-    isDropdown && (
-      <>
-        <input
-          id={id}
-          class="dd-toggle"
-          type="radio"
-          name="nav-dd"
-          aria-hidden="true"
-          hidden
-        />
-        <input
-          id={closeId}
-          class="dd-close"
-          type="radio"
-          name="nav-dd"
-          aria-hidden="true"
-          hidden
-        />
-      </>
-    )
-  }
+  {isDropdown && (
+    <>
+      <input
+        id={id}
+        class="dd-toggle"
+        type="radio"
+        name="nav-dd"
+        aria-hidden="true"
+        hidden
+      />
+      <input
+        id={closeId}
+        class="dd-close"
+        type="radio"
+        name="nav-dd"
+        aria-hidden="true"
+        hidden
+      />
+    </>
+  )}
 
   <div class="row">
     <a href={href} class="link" tabindex="0">
       {label}
-      {
-        isDropdown && (
-          <span class="caret" aria-hidden="true">
-            <MaskIcon src={icons.mask("chevron-down")} />
-          </span>
-        )
-      }
+      {isDropdown && (
+        <span class="caret" aria-hidden="true">
+          <MaskIcon src={icons.mask("chevron-down")} />
+        </span>
+      )}
     </a>
 
-    {
-      isDropdown && (
-        <>
-          <label
-            for={id}
-            class="mobile-open"
-            aria-label={`Open ${label} menu`}
-          />
-          <label
-            for={closeId}
-            class="mobile-close"
-            aria-label={`Close ${label} menu`}
-          />
-        </>
-      )
-    }
+    {isDropdown && (
+      <>
+        <label for={id} class="mobile-open" aria-label={`Open ${label} menu`} />
+        <label
+          for={closeId}
+          class="mobile-close"
+          aria-label={`Close ${label} menu`}
+        />
+      </>
+    )}
   </div>
 
-  {
-    isDropdown && (
-      <div class="dropdown" role="menu" aria-label={`${label} menu`}>
-        <div class="dropdown-content">
-          {dropdown.map((item) => (
-            <NavDropdownLink {...item} />
-          ))}
-        </div>
+  {isDropdown && (
+    <div class="dropdown" role="menu" aria-label={`${label} menu`}>
+      <div class="dropdown-content">
+        {dropdown.map((item) => (
+          <NavDropdownLink {...item} />
+        ))}
       </div>
-    )
-  }
+    </div>
+  )}
 </li>
 
 <style>

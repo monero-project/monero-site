@@ -25,45 +25,39 @@ const date = localizeDateString(dateString, {
   <h1>{title}</h1>
 
   <div id="meta">
-    {
-      date && (
-        <div class="meta-item">
-          <div class="icon">
-            <MaskIcon src={icons.mask("calendar")} />
-          </div>
-          <time datetime={dateString}>{date}</time>
+    {date && (
+      <div class="meta-item">
+        <div class="icon">
+          <MaskIcon src={icons.mask("calendar")} />
         </div>
-      )
-    }
+        <time datetime={dateString}>{date}</time>
+      </div>
+    )}
 
-    {
-      author && (
-        <div class="meta-item">
-          <div class="icon">
-            <MaskIcon src={icons.mask("user")} />
-          </div>
-          {author.replace(" and ", ` ${t("blog:post.and")} `)}
+    {author && (
+      <div class="meta-item">
+        <div class="icon">
+          <MaskIcon src={icons.mask("user")} />
         </div>
-      )
-    }
+        {author.replace(" and ", ` ${t("blog:post.and")} `)}
+      </div>
+    )}
   </div>
 
-  {
-    tags.length > 0 && (
-      <div class="tag-container">
-        {tags.map((tag: string) => (
-          <a
-            class="tag"
-            href={localizeHref(
-              `/blog/tags/${tag.toLowerCase().replace(/\s+/g, "-")}/`,
-            )}
-          >
-            {t(`blog:tagLabels.${tag}`, { defaultValue: tag })}
-          </a>
-        ))}
-      </div>
-    )
-  }
+  {tags.length > 0 && (
+    <div class="tag-container">
+      {tags.map((tag: string) => (
+        <a
+          class="tag"
+          href={localizeHref(
+            `/blog/tags/${tag.toLowerCase().replace(/\s+/g, "-")}/`,
+          )}
+        >
+          {t(`blog:tagLabels.${tag}`, { defaultValue: tag })}
+        </a>
+      ))}
+    </div>
+  )}
 </div>
 
 <style>

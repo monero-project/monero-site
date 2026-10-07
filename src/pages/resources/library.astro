@@ -59,7 +59,9 @@ const sections = [
       anchorId="books"
     >
       <Grid columns={2} gap="md">
-        {books.map((book) => <BookCard {...book} />)}
+        {books.map((book) => (
+          <BookCard {...book} />
+        ))}
       </Grid>
     </PageSection>
 
@@ -74,26 +76,22 @@ const sections = [
           {t("knowledge-base:library.sections.cheatsheets.salmonSeries.title")}
         </h3>
         <p class="section-intro">
-          {
-            t(
-              "knowledge-base:library.sections.cheatsheets.salmonSeries.description",
-            )
-          }
+          {t(
+            "knowledge-base:library.sections.cheatsheets.salmonSeries.description",
+          )}
         </p>
       </div>
 
       <Grid minWidth="16rem" gap="md">
-        {
-          cheatsheets.map((sheet) => (
-            <CheatsheetCard
-              url={sheet.url}
-              title={sheet.title}
-              description={sheet.description}
-              icon={icons.mask("receipt-text")}
-              rtl={dir === "rtl"}
-            />
-          ))
-        }
+        {cheatsheets.map((sheet) => (
+          <CheatsheetCard
+            url={sheet.url}
+            title={sheet.title}
+            description={sheet.description}
+            icon={icons.mask("receipt-text")}
+            rtl={dir === "rtl"}
+          />
+        ))}
       </Grid>
     </PageSection>
 
@@ -105,15 +103,13 @@ const sections = [
       anchorId="newsletters"
     >
       <Column gap="sm">
-        {
-          newsletters.map((newsletter) => (
-            <ExternalResourceButton
-              href={newsletter.url}
-              title={newsletter.title}
-              subtitle={newsletter.description}
-            />
-          ))
-        }
+        {newsletters.map((newsletter) => (
+          <ExternalResourceButton
+            href={newsletter.url}
+            title={newsletter.title}
+            subtitle={newsletter.description}
+          />
+        ))}
       </Column>
     </PageSection>
   </PageContainer>

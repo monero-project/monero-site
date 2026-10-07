@@ -12,15 +12,15 @@ const { icon, title } = Astro.props;
 ---
 
 <Card as="aside" padding="md" class="disclaimer-bar">
-  {
-    icon && (
-      <span class="disclaimer-icon">
-        <MaskIcon src={icon} size="1.5em" aria-hidden="true" />
-      </span>
-    )
-  }
+  {icon && (
+    <span class="disclaimer-icon">
+      <MaskIcon src={icon} size="1.5em" aria-hidden="true" />
+    </span>
+  )}
   {title && <span class="disclaimer-title">{title}</span>}
-  <p class="disclaimer-text"><slot /></p>
+  <p class="disclaimer-text">
+    <slot />
+  </p>
 </Card>
 
 <style>
