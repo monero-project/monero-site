@@ -1,0 +1,23 @@
+{
+    "pageTitle": "",
+    "title": "",
+    "subtitle": "",
+    "description": "",
+    "sections": {
+        "termsOfUse": {
+            "title": "",
+            "tocSubtitle": ""
+        },
+        "copyright": {
+            "title": "",
+            "tocSubtitle": ""
+        },
+        "privacyPolicy": {
+            "title": "",
+            "tocSubtitle": ""
+        }
+    },
+    "aria": {
+        "sectionsNav": ""
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "pageTitle": "",
+    "hero": {
+        "title": "",
+        "subtitle": ""
+    },
+    "currentSponsors": {
+        "title": "",
+        "subtitle": ""
+    },
+    "contributions": {
+        "tari-labs": "",
+        "cake-wallet": "",
+        "cypher-stack": "",
+        "macstadium": "",
+        "symas": ""
+    },
+    "becomeASponsor": {
+        "title": "",
+        "description": "",
+        "cta": ""
+    },
+    "pastSponsors": {
+        "title": "",
+        "subtitle": ""
+    }
+}

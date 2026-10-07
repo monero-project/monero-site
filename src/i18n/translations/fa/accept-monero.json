@@ -1,0 +1,51 @@
+{
+    "pageTitle": "",
+    "title": "",
+    "subtitle": "",
+    "description": "",
+    "steps": {
+        "chooseSetup": {
+            "title": "",
+            "intro": "",
+            "wallet": {
+                "title": "",
+                "description": "",
+                "viewWallets": ""
+            },
+            "pos": {
+                "title": "",
+                "description": "",
+                "services": {
+                    "bitrequest": "",
+                    "btcpayPos": ""
+                }
+            },
+            "processor": {
+                "title": "",
+                "description": "",
+                "viewGateways": ""
+            },
+            "selfHosted": {
+                "title": "",
+                "description": "",
+                "services": {
+                    "btcpay": "",
+                    "bitcart": "",
+                    "moneropay": ""
+                }
+            }
+        },
+        "acceptPayment": {
+            "title": "",
+            "description": "",
+            "confirmations": "",
+            "confirmationsLabel": "",
+            "tip": ""
+        },
+        "getListed": {
+            "title": "",
+            "description": "",
+            "viewDirectories": ""
+        }
+    }
+}
