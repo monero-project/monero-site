@@ -71,6 +71,8 @@ meta_descr: developer-guides.head
                         <li><a href="https://github.com/monero-rs/monero-rs">monero-rs</a> - {% t developer-guides.monero-rs %}</li>
                     <h3>C#</h3>
                         <li><a href="https://github.com/monero-ecosystem/csharp-monero-rpc-client">csharp-monero-rpc-client (Monero Ecosystem)</a> - {% t developer-guides.csharp-monero %}</li>
+                        <li><a href="https://github.com/btcpay-monero/monero-csharp">monero-csharp</a> - {% t developer-guides.monero-csharp %}</li>
+                        <li><a href="https://github.com/btcpay-monero/monero-lws-csharp">monero-lws-csharp</a> - {% t developer-guides.monero-lws-csharp %}</li>
                 </ul>
                 </div>
             </div>

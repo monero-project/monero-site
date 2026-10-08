@@ -674,6 +674,8 @@ developer-guides:
   go-monero-rpc-client: A Go client for the Monero wallet and daemon RPC.
   monero-rs: Library with support for (de)serialization on block data structures and key/address generation and scanning related to Monero cryptocurrency.
   csharp-monero: A wallet and daemon client to interface with Monero's JSON-RPC API, built on .netstandard2.1
+  monero-csharp: A .NET library for interacting with Monero daemon and wallet RPC, released on NuGet as MoneroNet.
+  monero-lws-csharp: A .NET library for interacting with monero-lws, released on NuGet as MoneroLwsNet.
 
 user-guides:
   general: General
