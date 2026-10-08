@@ -16,6 +16,45 @@ Many RPC calls use the daemon's JSON RPC interface while others use their own in
 
 Note: "@atomic-units" refer to the smallest fraction of 1 XMR according to the monerod implementation. **1 XMR = 1e12 @atomic-units.**
 
+## ZMQ Pub/Sub
+
+Monero's daemon provides a ZMQ PUB socket for clients that need to receive notifications about blockchain and transaction-pool events. Unlike the HTTP JSON-RPC interface documented below, ZMQ Pub/Sub is event-driven and is useful when an application needs to react to daemon events without polling.
+
+Start `monerod` with a local ZMQ PUB endpoint:
+
+```bash
+monerod --zmq-pub tcp://127.0.0.1:18083
+```
+
+A client uses a ZMQ `SUB` socket and subscribes to one or more topics. Topics use the `format-context-event` form. The currently available format is `json`; contexts are `full` and `minimal`; and events include `chain_main`, `txpool_add`, and `miner_data` (the latter is available only with the `full` context).
+
+For example, the following Python client subscribes to minimal main-chain notifications:
+
+```python
+import json
+import zmq
+
+context = zmq.Context()
+socket = context.socket(zmq.SUB)
+socket.connect("tcp://127.0.0.1:18083")
+socket.setsockopt_string(zmq.SUBSCRIBE, "json-minimal-chain_main")
+
+message = socket.recv().decode()
+topic, payload = message.split(":", 1)
+data = json.loads(payload)
+print(topic, data)
+```
+
+Prefix subscriptions are supported. For example, subscribing to `json-minimal` receives all minimal JSON events supported by the daemon.
+
+Available events are:
+
+* `chain_main` - changes to the primary blockchain. Chain notifications are sent in chain order and include enough information to detect a missing notification.
+* `txpool_add` - newly observed publicly visible transactions added to the transaction pool. These notifications are sent before the corresponding chain notifications when applicable.
+* `miner_data` - data needed to construct a custom block template. This event is available only as `json-full-miner_data`.
+
+ZMQ PUB/SUB does not guarantee delivery when the network is congested. Clients should therefore detect missing chain notifications and recover by querying the daemon, for example with `get_last_block_header`. Keep the ZMQ PUB endpoint on a trusted/local interface unless remote access is explicitly required, because the endpoint is not an authenticated API.
+
 ### [JSON RPC Methods](#json-rpc-methods):
 
 * [get_block_count](#get_block_count)
