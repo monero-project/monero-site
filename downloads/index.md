@@ -298,6 +298,12 @@ meta_descr: downloads.intro
                             <td>X</td>
                             <td><a class="ext-noicon" href="https://github.com/EdgeApp" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
                         </tr>
+                        <tr>
+                            <td><img class="small" src="/img/xmrwallet.png" width="100" height="100" loading="lazy" alt="xmrwallet logo"><a href="https://xmrwallet.org/">xmrwallet</a></td>
+                            <td>X</td>
+                            <td><span class="icon-linux"></span></td>
+                            <td><a class="ext-noicon" href="https://github.com/vinamega/xmrwallet-core" aria-label="GitHub icon" target="_blank"><span class="icon-github"></span></a></td>
+                        </tr>
                         </table>
                         <div class="row between-xs mob-wallets mobile-only">
                             <h3>{% t downloads.localsync %}</h3>
