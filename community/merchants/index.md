@@ -129,6 +129,7 @@ meta_descr: merchants.descr
         <ul class="logo">
             <li><a href="https://simpleswap.io/">SimpleSwap</a></li>
             <li><a href="https://changenow.io/">ChangeNow</a></li>
+            <li><a href="https://safeswapglobal.online/">SafeSwapGlobal</a></li>
             <li><a href="https://godex.io/">Godex</a></li>
             <li><a href="https://stealthex.io/">StealthEX</a></li>
           </ul>
