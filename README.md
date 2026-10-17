@@ -48,7 +48,7 @@ If you want to post getmonero's onion address somewhere on the website, don't si
 **_Note: The Weblate server is down until further notice._**
 
 In this section you'll find the info you need to translate a page and add a new translation, but keep in mind that Monero has a [Localization Workgroup](https://github.com/monero-ecosystem/monero-translations) who coordinates and gives support to translators-volunteers. For live support/request of information, come chat on `#monero-translations` on Matrix or IRC (Libera.chat)
-The entire website is translatable on Weblate, an easy to use localization platform that provides contributors with a user friendly interface: [translate.getmonero.org](https://translate.getmonero.org). Before translating, please read [the guide for translators](https://github.com/monero-ecosystem/monero-translations/blob/master/weblate.md), which contains all the info and workflows you need to know before starting.
+The entire website is translatable on Weblate, an easy to use localization platform that provides contributors with a user friendly interface: [translate.monerodevs.org](https://translate.monerodevs.org). Before translating, please read [the guide for translators](https://github.com/monero-ecosystem/monero-translations/blob/master/weblate.md), which contains all the info and workflows you need to know before starting.
 
 Translators are required to have:
 
@@ -300,7 +300,7 @@ If an entry is `completed`, a green tick symbol will be displayed on its left. i
 
 If you need to add a month, add `<h3 id="months">{% t roadmap.MONTH %}</h3>` above your roadmap entry. `MONTH` is one of the 12 months, you'll find the list in the `_18n/en.yml` file. In the `roadmap` section.
 
-The roadmap can be translated on Weblate [on Weblate](https://translate.getmonero.org/projects/getmonero/monero-site/).
+The roadmap can be translated on Weblate [on Weblate](https://translate.monerodevs.org/projects/getmonero/monero-site/).
 
 ## How to add a question to the FAQ
 
