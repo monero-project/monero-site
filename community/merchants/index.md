@@ -131,6 +131,7 @@ meta_descr: merchants.descr
             <li><a href="https://changenow.io/">ChangeNow</a></li>
             <li><a href="https://godex.io/">Godex</a></li>
             <li><a href="https://stealthex.io/">StealthEX</a></li>
+            <li><a href="https://www.crypto-train.com/">Crypto-Train</a></li>
           </ul>
       </div>
     </div>
