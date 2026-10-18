@@ -98,6 +98,7 @@
             "anonero": "Privacy-focused wallet with all communications over Tor.",
             "feather": "A lightweight, fast, and feature-rich Monero desktop wallet.",
             "monerocom": "A Monero-only wallet developed by Cake Labs.",
+            "moneroone": "A Monero-only wallet for iOS and Android, with Trezor Safe 7 support on iPhone.",
             "monerujo": "A Monero wallet for Android with advanced features.",
             "monfluo": "A pure Monero wallet for Android.",
             "cakewallet": "A multi-coin wallet with Monero and hardware wallet support.",
