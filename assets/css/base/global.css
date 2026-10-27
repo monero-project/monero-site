@@ -104,6 +104,12 @@
    Global HTML Element Styles (do not define classes here!)
    ======================================== */
 
+/* always keep the scrollbar's room, so a short page (no scrollbar) is as wide
+   as a long one and nothing shifts sideways from page to page */
+html {
+  scrollbar-gutter: stable;
+}
+
 a {
   color: var(--monero-orange);
   text-decoration: none;
