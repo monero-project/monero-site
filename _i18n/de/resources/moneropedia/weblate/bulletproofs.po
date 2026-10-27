@@ -70,7 +70,7 @@ msgstr "Wo Bulletproofs ins Spiel kommen"
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/bulletproofs.md:16
 #, no-wrap
-msgid "Back in 2017, a [Standford applied crypto group](https://crypto.stanford.edu/bulletproofs/) wrote a [paper](https://eprint.iacr.org/2017/1066.pdf) presenting a new kind of range proofs, called bulletproofs.  \n"
+msgid "Back in 2017, a [Stanford applied crypto group](https://crypto.stanford.edu/bulletproofs/) wrote a [paper](https://eprint.iacr.org/2017/1066.pdf) presenting a new kind of range proofs, called bulletproofs.  \n"
 msgstr "Im Jahr 2017 veröffentlichte die [Applied Crypto Group der Stanford University](https://crypto.stanford.edu/bulletproofs/) ein [Paper](https://eprint.iacr.org/2017/1066.pdf), in welchem sie eine neue Art von \"Range-Proofs\" vorstellte: sogenannte Bulletproofs. \n"
 
 #

@@ -13,7 +13,7 @@ While it was doing the job, a big drawback was the huge size of such a ringCT tr
 
 ### Where it comes to bulletproofs
 
-Back in 2017, a [Standford applied crypto group](https://crypto.stanford.edu/bulletproofs/) wrote a [paper](https://eprint.iacr.org/2017/1066.pdf) presenting a new kind of range proofs, called bulletproofs.  
+Back in 2017, a [Stanford applied crypto group](https://crypto.stanford.edu/bulletproofs/) wrote a [paper](https://eprint.iacr.org/2017/1066.pdf) presenting a new kind of range proofs, called bulletproofs.  
 
 > Bulletproofs are short non-interactive zero-knowledge proofs that require no trusted setup.
 

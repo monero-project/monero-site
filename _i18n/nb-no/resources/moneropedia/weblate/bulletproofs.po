@@ -66,7 +66,7 @@ msgstr "Når det kommer til bulletproofs"
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/bulletproofs.md:16
 #, no-wrap
-msgid "Back in 2017, a [Standford applied crypto group](https://crypto.stanford.edu/bulletproofs/) wrote a [paper](https://eprint.iacr.org/2017/1066.pdf) presenting a new kind of range proofs, called bulletproofs.  \n"
+msgid "Back in 2017, a [Stanford applied crypto group](https://crypto.stanford.edu/bulletproofs/) wrote a [paper](https://eprint.iacr.org/2017/1066.pdf) presenting a new kind of range proofs, called bulletproofs.  \n"
 msgstr "I 2017 skrev en [krypto-gruppe på Stanford](https://crypto.stanford.edu/bulletproofs/) en [vitenskapelig artikkel](https://eprint.iacr.org/2017/1066.pdf) der de presenterte en ny type rekkeviddebevis, kalt bulletproofs.  \n"
 
 #. type: Plain text

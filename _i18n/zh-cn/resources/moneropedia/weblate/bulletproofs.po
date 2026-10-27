@@ -66,7 +66,7 @@ msgstr "涉及到防弹协议"
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/bulletproofs.md:16
 #, no-wrap
-msgid "Back in 2017, a [Standford applied crypto group](https://crypto.stanford.edu/bulletproofs/) wrote a [paper](https://eprint.iacr.org/2017/1066.pdf) presenting a new kind of range proofs, called bulletproofs.  \n"
+msgid "Back in 2017, a [Stanford applied crypto group](https://crypto.stanford.edu/bulletproofs/) wrote a [paper](https://eprint.iacr.org/2017/1066.pdf) presenting a new kind of range proofs, called bulletproofs.  \n"
 msgstr "早在2017年，一个[斯坦福应用加密小组](https://crypto.stanford.edu/bulletproofs/)写了一篇[论文](https://eprint.iacr.org/2017/1066.pdf)，提出了一种新的范围证明，称为防弹协议。 \n"
 
 #. type: Plain text

@@ -70,7 +70,7 @@ msgstr "Как появились Bulletproofs"
 #. type: Plain text
 #: ../_i18n/en/resources/moneropedia/bulletproofs.md:16
 #, no-wrap
-msgid "Back in 2017, a [Standford applied crypto group](https://crypto.stanford.edu/bulletproofs/) wrote a [paper](https://eprint.iacr.org/2017/1066.pdf) presenting a new kind of range proofs, called bulletproofs.  \n"
+msgid "Back in 2017, a [Stanford applied crypto group](https://crypto.stanford.edu/bulletproofs/) wrote a [paper](https://eprint.iacr.org/2017/1066.pdf) presenting a new kind of range proofs, called bulletproofs.  \n"
 msgstr "В 2017 году [группой исследователей](https://crypto.stanford.edu/bulletproofs/), работающих в области прикладной криптографии, из Стэнфорда была написана [работа](https://eprint.iacr.org/2017/1066.pdf), в которой предлагался новый вид доказательств диапазона под названием Bulletproofs.  \n"
 
 #. type: Plain text
