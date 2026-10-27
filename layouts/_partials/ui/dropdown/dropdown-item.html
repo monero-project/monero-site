@@ -1,0 +1,15 @@
+{{- /*
+  A link in a ui/dropdown/dropdown menu. The block is the label.
+
+    {{ with partial "ui/dropdown/dropdown-item" (dict "href" "..." "meta" "95 MB") }}Windows{{ end }}
+
+  Params: href, meta (text or HTML shown at the end), class, attrs.
+*/ -}}
+<a{{ partial "helpers/attrs" (merge (dict "href" .href "class" (trim (printf "dropdown-item %s" (.class | default "")) " ") "data-c-dropdown-item" true) (.attrs | default dict)) }}>
+  <span class="label" data-c-dropdown-item>{{ templates.Inner . }}</span>
+  {{- with .meta }}
+  <span class="meta" data-c-dropdown-item>
+    {{ . }}
+  </span>
+  {{- end }}
+</a>

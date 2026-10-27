@@ -1,0 +1,31 @@
+/* Styles for layouts/_partials/ui/disclaimer/disclaimer-bar.html */
+.disclaimer-bar[data-c-disclaimer-bar] {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-xs) var(--space-sm);
+  margin: var(--space-md) 0;
+}
+
+.disclaimer-icon[data-c-disclaimer-bar] {
+  grid-row: 1;
+  grid-column: 1;
+  display: flex;
+  align-items: center;
+  color: var(--monero-orange);
+}
+
+.disclaimer-title[data-c-disclaimer-bar] {
+  grid-row: 1;
+  grid-column: 2;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--heading-color);
+}
+
+.disclaimer-text[data-c-disclaimer-bar] {
+  grid-row: 2;
+  grid-column: 2;
+  margin: 0;
+  color: var(--text-primary);
+  line-height: var(--line-height-body);
+}

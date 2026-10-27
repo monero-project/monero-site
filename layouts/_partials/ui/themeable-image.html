@@ -1,0 +1,17 @@
+{{- /*
+  An image with an optional dark-mode variant: writes two <img>, shown by
+  colour scheme (light-only / dark-only).
+
+    {{ partial "ui/themeable-image" (dict "src" "images/x-light.png" "darkSrc" "images/x-dark.png" "alt" "") }}
+
+  Params: src, darkSrc (asset paths), alt, rtl (mirror in RTL), class, and the
+  ui/image params width, height, format, priority, loading, attrs.
+*/ -}}
+{{- $attrs := merge (dict "data-rtl" (cond (.rtl | default false) "true" "") "data-c-themeable-image" true) (.attrs | default dict) -}}
+{{- $img := dict "alt" .alt "width" .width "height" .height "format" .format "priority" .priority "loading" .loading "attrs" $attrs -}}
+{{- $class := slice -}}
+{{- with .class }}{{ $class = $class | append . }}{{ end -}}
+{{ partial "ui/image" (merge $img (dict "src" .src "class" (delimit (cond (ne (.darkSrc | default "") "") ($class | append "light-only") $class) " "))) }}
+{{- with .darkSrc }}
+{{ partial "ui/image" (merge $img (dict "src" . "class" (delimit ($class | append "dark-only") " "))) }}
+{{- end }}

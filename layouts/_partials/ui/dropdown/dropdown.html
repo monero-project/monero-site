@@ -1,0 +1,28 @@
+{{- /*
+  Disclosure menu (<details>). The block is the menu content, usually
+  ui/dropdown/dropdown-item and ui/dropdown/dropdown-separator partials.
+
+    {{ with partial "ui/dropdown/dropdown" (dict "label" "Download" "name" "core-downloads") }}
+      {{ with partial "ui/dropdown/dropdown-item" (dict "href" "...") }}Windows{{ end }}
+    {{ end }}
+
+  Params: label (text of the default trigger button), name (dropdowns sharing
+  a name close each other), trigger (HTML replacing the default button).
+*/ -}}
+{{- $content := templates.Inner . -}}
+<details class="dropdown"{{ partial "helpers/attrs" (dict "name" .name) }} data-c-dropdown>
+  <summary class="dropdown-summary" data-c-dropdown>
+    {{- with .trigger }}
+    {{ . }}
+    {{- else }}
+    {{ with partial "ui/button" (dict "variant" "primary" "as" "span" "attrs" (dict "data-c-dropdown" true) "label" $.label) -}}
+      {{ .label }}<span class="caret" data-c-dropdown>
+        {{ partial "ui/icons/mask-icon" (dict "src" "chevron-down") }}
+      </span>
+    {{- end }}
+    {{- end }}
+  </summary>
+  <div class="dropdown-content" data-c-dropdown>
+    {{ $content }}
+  </div>
+</details>

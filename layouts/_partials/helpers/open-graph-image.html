@@ -1,0 +1,46 @@
+{{- /*
+  Draw and publish a social-media preview card (1200×630) and return its URL.
+
+    {{ partial "helpers/open-graph-image" (dict "path" "open-graph/blog/2026/05/11/x.png" "title" .Title "description" .Params.summary) }}
+
+  Dark background with the orange edge (assets/images/open-graph/background.png),
+  title in DM Sans SemiBold, description in DM Sans Regular. Text is word-wrapped
+  here, using the glyph widths in data/dm-sans-widths.json, so the description
+  can be placed under however many lines the title takes.
+*/ -}}
+{{- define "_partials/inline/open-graph-wrap" -}}
+  {{- /* params: text, size (px), font (regular|semibold), width (px); returns lines */ -}}
+  {{- $font := index hugo.Data "dm-sans-widths" .font -}}
+  {{- $space := mul (index $font.widths " ") .size 0.001 -}}
+  {{- $lines := slice }}{{ $line := "" }}{{ $w := 0.0 -}}
+  {{- range split (trim .text " ") " " -}}
+    {{- $word := . -}}
+    {{- $ww := 0.0 -}}
+    {{- range split $word "" }}{{ $ww = add $ww (mul (index $font.widths . | default $font.default) $.size 0.001) }}{{ end -}}
+    {{- if and $line (gt (add $w $space $ww) $.width) -}}
+      {{- $lines = $lines | append $line }}{{ $line = $word }}{{ $w = $ww -}}
+    {{- else -}}
+      {{- $line = cond (eq $line "") $word (printf "%s %s" $line $word) -}}
+      {{- $w = cond (eq $w 0.0) $ww (add $w $space $ww) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- with $line }}{{ $lines = $lines | append . }}{{ end -}}
+  {{- return $lines -}}
+{{- end -}}
+{{- $left := 114 -}}{{- /* 18px edge + 96px padding */ -}}
+{{- /* the width the card's text wraps at */ -}}
+{{- $width := 900 -}}
+{{- $title := partial "inline/open-graph-wrap" (dict "text" .title "size" 56 "font" "semibold" "width" $width) -}}
+{{- $filters := slice (images.Text (delimit $title "\n") (dict
+  "font" (resources.Get "fonts/dm-sans/DMSans-SemiBold.ttf")
+  "size" 56 "linespacing" 6 "color" "#f0f0f0" "x" $left "y" 88
+)) -}}
+{{- with .description -}}
+  {{- $desc := partial "inline/open-graph-wrap" (dict "text" . "size" 30 "font" "regular" "width" $width) -}}
+  {{- $filters = $filters | append (images.Text (delimit $desc "\n") (dict
+    "font" (resources.Get "fonts/dm-sans/DMSans-Regular.ttf")
+    "size" 30 "linespacing" 15 "color" "#c6c6d0" "x" $left "y" (int (add 88 (mul (len $title) 61.6) 45))
+  )) -}}
+{{- end -}}
+{{- $img := resources.Get "images/open-graph/background.png" | images.Filter $filters -}}
+{{- return (resources.Copy .path $img).RelPermalink -}}

@@ -1,0 +1,17 @@
+/* Styles for layouts/_partials/ui/preview-banner.html */
+.preview-banner[data-c-preview-banner] {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 999;
+}
+
+.preview-banner-style[data-c-preview-banner] {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: var(--space-2xs) var(--space-md);
+  border-radius: var(--radius-md);
+}

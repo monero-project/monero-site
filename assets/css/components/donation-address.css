@@ -1,0 +1,109 @@
+/* Styles for layouts/_partials/pages/get-started/contribute/donation-address.html */
+.donation-address[data-c-donation-address] {
+  background: var(--card-hover-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+}
+
+.currency-name[data-c-donation-address] {
+  margin: 0 0 var(--space-sm);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  color: var(--heading-color);
+}
+
+.address-content[data-c-donation-address] {
+  display: flex;
+  gap: var(--space-md);
+  align-items: flex-start;
+}
+
+.qr-code[data-c-donation-address] {
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  flex-shrink: 0;
+}
+
+.address-details[data-c-donation-address] {
+  flex: 1;
+  min-width: 0;
+}
+
+.address[data-c-donation-address] {
+  flex: 1;
+  display: block;
+  padding: var(--space-xs) var(--space-sm);
+  background: #0000000d;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  font-family: monospace;
+  font-size: var(--font-size-sm);
+  word-break: break-all;
+  line-height: 1.4;
+}
+
+.view-only-details[data-c-donation-address] {
+  margin-top: var(--space-sm);
+  border: 1px dashed var(--border-color);
+  border-radius: var(--radius-md);
+  padding: var(--space-xs) var(--space-sm);
+  background: #00000005;
+
+  & summary {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+    font-weight: var(--font-weight-semibold);
+    color: var(--paragraph-subtitle);
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+  }
+
+  & .icon {
+    display: inline-flex;
+    transition: transform 0.2s;
+  }
+
+  &[open] .icon[data-c-donation-address] {
+    transform: rotate(180deg);
+  }
+}
+
+.view-only-content[data-c-donation-address] {
+  margin-top: var(--space-sm);
+  display: grid;
+  gap: var(--space-2xs);
+
+  & p {
+    margin: 0;
+  }
+
+  & code {
+    display: block;
+    padding: var(--space-xs) var(--space-sm);
+    background: #0000000d;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    font-family: monospace;
+    font-size: var(--font-size-sm);
+    word-break: break-all;
+    line-height: 1.4;
+  }
+}
+
+@media (width <= 600px) {
+  .address-content[data-c-donation-address] {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .address-details[data-c-donation-address] {
+    width: 100%;
+  }
+}

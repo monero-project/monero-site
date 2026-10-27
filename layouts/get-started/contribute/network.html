@@ -1,0 +1,57 @@
+{{ define "meta" }}{{ .Store.Set "meta" (dict "title" (partial "helpers/t" "contribute:network.title") "description" (partial "helpers/t" "contribute:network.subtitle")) }}{{ end }}
+{{ define "main" }}
+{{- $t := "helpers/t" -}}
+{{- $scope := dict "data-c-page-get-started-contribute-network" true -}}
+{{ partial "ui/title-card" (dict
+  "title" (partial $t "contribute:network.title")
+  "subtitle" (partial $t "contribute:network.subtitle")
+  "backHref" (partial "helpers/href" "/get-started/contribute/")
+  "backLabel" (partial $t "contribute:index.title")
+) }}
+{{ with partial "ui/layout/page-container" (dict "attrs" $scope "scope" $scope) }}
+  {{ with partial "ui/media-section" (dict
+    "attrs" .scope "scope" .scope
+    "aside" (partial "ui/image" (dict "src" "images/monero_pickaxe.webp" "alt" (partial "helpers/t" "contribute:network.mine.imageAlt") "format" "avif" "attrs" (merge .scope (dict "slot" "aside"))))
+  ) }}
+    <h2 data-c-page-get-started-contribute-network>{{ partial "helpers/t" "contribute:network.mine.title" }}</h2>
+    <p data-c-page-get-started-contribute-network>{{ partial "helpers/markdown" (dict "text" (partial "helpers/t" "contribute:network.mine.description") "inline" true) }}</p>
+    <ul data-c-page-get-started-contribute-network>
+      <li data-c-page-get-started-contribute-network>{{ partial "helpers/t" "contribute:network.mine.bullets.earnXmr" }}</li>
+      <li data-c-page-get-started-contribute-network>{{ partial "helpers/t" "contribute:network.mine.bullets.noSpecializedHardware" }}</li>
+      <li data-c-page-get-started-contribute-network>{{ partial "helpers/t" "contribute:network.mine.bullets.convertCpuPower" }}</li>
+    </ul>
+    {{ with partial "ui/layout/row" (dict "gap" "xl" "class" "cta-links" "attrs" .scope "scope" .scope) }}
+      {{ with partial "ui/button" (dict "href" (partial "helpers/href" "/get-started/mining/") "attrs" .scope) -}}
+        {{ partial "helpers/t" "contribute:network.mine.learnAboutMining" }}
+        {{ partial "ui/icons/mask-icon" (dict "src" "arrow-right" "size" "1em" "rtl" (eq site.Language.Direction "rtl")) }}
+      {{- end }}
+    {{ end }}
+  {{ end }}
+
+  <hr data-c-page-get-started-contribute-network>
+
+  {{ with partial "ui/media-section" (dict
+    "reverse" true
+    "attrs" .scope "scope" .scope
+    "aside" (partial "ui/image" (dict "src" "images/server.avif" "alt" (partial "helpers/t" "contribute:network.runANode.imageAlt") "format" "avif" "attrs" (merge .scope (dict "slot" "aside"))))
+  ) }}
+    <h2 data-c-page-get-started-contribute-network>{{ partial "helpers/t" "contribute:network.runANode.title" }}</h2>
+    <p data-c-page-get-started-contribute-network>
+      {{ partial "helpers/t" "contribute:network.runANode.description" }}
+    </p>
+    <ul data-c-page-get-started-contribute-network>
+      <li data-c-page-get-started-contribute-network>{{ partial "helpers/t" "contribute:network.runANode.bullets.validateBlocks" }}</li>
+      <li data-c-page-get-started-contribute-network>{{ partial "helpers/t" "contribute:network.runANode.bullets.reduceReliance" }}</li>
+      <li data-c-page-get-started-contribute-network>{{ partial "helpers/t" "contribute:network.runANode.bullets.enableOthers" }}</li>
+    </ul>
+    {{ with partial "ui/layout/row" (dict "gap" "xl" "class" "cta-links" "attrs" .scope "scope" .scope) }}
+      {{ with partial "ui/icon-link" (dict "href" "https://docs.getmonero.org/running-node/monerod-systemd" "weight" "bold" "underline" true "attrs" .scope) }}
+        {{ partial "helpers/t" "contribute:network.runANode.moneroDocs" }}
+      {{ end }}
+      {{ with partial "ui/icon-link" (dict "href" "https://sethforprivacy.com/guides/run-a-monero-node/" "weight" "bold" "underline" true "attrs" .scope) }}
+        {{ partial "helpers/t" "contribute:network.runANode.sethForPrivacy" }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ end }}

@@ -1,0 +1,80 @@
+navigationItems:
+  - translationKey: getStarted
+    section: getStarted
+    items:
+      - key: whatIsMonero
+        href: /get-started/what-is-monero
+        icon: icons/color/monero.avif
+        iconDark: icons/color/monero.avif
+      - key: buyMonero
+        href: /get-started/exchanges
+        icon: icons/color/light/merchants-exchanges.avif
+        iconDark: icons/color/dark/merchants-exchanges.avif
+      - key: spendMonero
+        href: /get-started/merchants
+        icon: icons/color/light/sponsorships.avif
+        iconDark: icons/color/dark/sponsorships.avif
+      - key: acceptMonero
+        href: /get-started/accept-monero
+        icon: icons/color/light/accept-monero.avif
+        iconDark: icons/color/dark/accept-monero.avif
+      - key: mining
+        href: /get-started/mining
+        icon: icons/color/light/mining.avif
+        iconDark: icons/color/dark/mining.avif
+      - key: contribute
+        href: /get-started/contribute
+        icon: icons/color/light/contribute.avif
+        iconDark: icons/color/dark/contribute.avif
+      - key: faq
+        href: /get-started/faq
+        icon: icons/color/light/faq.avif
+        iconDark: icons/color/dark/faq.avif
+  - translationKey: downloads
+    href: /downloads
+  - translationKey: blog
+    href: /blog
+  - translationKey: community
+    section: community
+    items:
+      - key: workgroups
+        href: /community/workgroups
+        icon: icons/color/light/workgroups.avif
+        iconDark: icons/color/dark/workgroups.avif
+      - key: sponsorships
+        href: /community/sponsorships
+        icon: icons/color/light/sponsorships.avif
+        iconDark: icons/color/dark/sponsorships.avif
+      - key: hangouts
+        href: /community/hangouts
+        icon: icons/color/light/hangouts.avif
+        iconDark: icons/color/dark/hangouts.avif
+  - translationKey: resources
+    section: resources
+    items:
+      - key: knowledgeBase
+        href: /resources/knowledge-base
+        icon: icons/color/light/moneropedia.avif
+        iconDark: icons/color/dark/moneropedia.avif
+      - key: roadmap
+        href: /resources/roadmap
+        icon: icons/color/light/roadmap.avif
+        iconDark: icons/color/dark/roadmap.avif
+      - key: researchLab
+        href: /resources/research-lab
+        icon: icons/color/light/research-lab.avif
+        iconDark: icons/color/dark/research-lab.avif
+      - key: moneroTools
+        href: /resources/tools
+        icon: icons/color/light/tools.avif
+        iconDark: icons/color/dark/tools.avif
+      - key: moneroDocs
+        href: "https://docs.getmonero.org"
+        icon: icons/color/light/developer-guides.avif
+        iconDark: icons/color/dark/developer-guides.avif
+      - key: pressKit
+        href: /resources/press-kit
+        icon: icons/color/light/press-kit.avif
+        iconDark: icons/color/dark/press-kit.avif
+  - translationKey: crowdfunding
+    href: "https://ccs.getmonero.org"

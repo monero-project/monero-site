@@ -1,0 +1,30 @@
+{{- /*
+  Turn @term mentions in an HTML string into Moneropedia links.
+  Context: (dict "html" "..." "lang" "en"). Lang picks whose entries to link
+  (default: current language).
+
+  A term matches case-insensitively when followed by a non-word character, the
+  end of the text, or -based / -like / -form ("@ringCT-based"). Hyphens in the
+  linked text become spaces. Terms are tried in entry order, first match wins.
+*/ -}}
+{{- $html := .html -}}
+{{- if strings.Contains $html "@" -}}
+  {{- $done := dict -}}
+  {{- range partialCached "helpers/moneropedia-entries" .lang (.lang | default site.Language.Lang) -}}
+    {{- $entry := . -}}
+    {{- range .terms -}}
+      {{- $key := lower . -}}
+      {{- if and (strings.Contains (lower $html) (printf "@%s" $key)) (not (isset $done $key)) -}}
+        {{- $done = merge $done (dict $key true) -}}
+        {{- $quoted := replaceRE `([.+*?()\[\]{}|^$\\])` `\$1` . -}}
+        {{- $re := printf `(?i)@(%s)(-(?:based|like|form)|[^\w-]|$)` $quoted -}}
+        {{- range uniq (findRESubmatch $re $html) -}}
+          {{- $text := replace (index . 1) "-" " " -}}
+          {{- $link := printf `<a class="moneropedia-link" data-tooltip="%s" href="%s">%s<sup>&#x1F6C8;</sup></a>%s` (replace (replace $entry.summary `"` "&quot;") "@" "&#64;") $entry.href $text (index . 2) -}}
+          {{- $html = replace $html (index . 0) $link -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $html -}}

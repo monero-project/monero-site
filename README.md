@@ -1,102 +1,82 @@
-# Monero Site Redesign in Astro
+# Monero Site Redesign in Hugo
 
-This is a implementation of the planned Monero page redesign, built with Astro.
+This is an implementation of the planned Monero page redesign, built with [Hugo](https://gohugo.io).
 
 ## Features
 
-- **Astro**: Static site generation for no JavaScript, optimal performance and SEO.
-- **Internationalization (i18n)**: Dynamically generated multi-language pages with namespace support. Weblate friendly (i18next)
+- **Hugo**: Static site generation, no JavaScript, reproducible builds (the same commit always produces the same files).
+- **Internationalization (i18n)**: Multi-language pages from i18next-style JSON translations with namespace support. Weblate friendly.
 - **Responsive Design**: Modern CSS for a desktop and mobile-friendly experience.
-- **Component-Based Architecture**: Reusable Astro components for Hero, Header, Footer, and page sections.
+- **Component-Based Architecture**: Reusable partials for the header, footer, cards and page sections, each with its own scoped stylesheet.
 
 ## Project Structure
 
 ```
 /
-├── public/
-│   └── media/            # Videos, images
+├── assets/
+│   ├── css/
+│   │   ├── base/         # Global styles, fonts, CSS variables
+│   │   ├── components/   # One stylesheet per component (scoped)
+│   │   └── main.css      # Imports everything, in order
+│   └── fonts/, images/   # Site fonts, Open Graph card background
+├── content/              # Page stubs (one per page) and the blog builder
+├── data/                 # Hugo-only data (locale formats, font metrics)
+├── downloads/            # hashes.txt and its signature, served at /downloads/
+├── layouts/
+│   ├── _markup/          # How Markdown links, images, headings and code render
+│   ├── _partials/
+│   │   ├── helpers/      # Translation, links, numbers, dates, Markdown...
+│   │   ├── pages/        # Page-specific components
+│   │   └── ui/           # Shared UI components (buttons, cards, etc.)
+│   ├── baseof.html       # The page frame (head, header, footer)
+│   └── ...               # One template per page, mirroring the URL
+├── public/               # Files copied as-is (media, PDFs, favicons)
+├── scripts/              # Checks run in CI
 ├── src/
-│   ├── assets/           # Page assets (icons, artwork, etc.)
-│   ├── components/       # Reusable Astro components
-│   │   ├── layout/       # Header, Footer
-│   │   ├── pages/        # Page-specific components (something that is only used on one page)
-│   │   └── ui/           # UI components (buttons, cards, etc.)
-│   ├── content/          # Markdown or MDX content files
-│   ├── data/             # Static importable data (e.g., download info)
-│   ├── i18n/             # Internationalization setup
-│   │   ├── locales/      # Translation JSON files
-│   │   ├── config.ts     # Locale configuration
-│   │   └── utils.ts      # i18n utilities
-│   ├── layouts/          # Astro layouts
-│   ├── pages/            # Route pages
-│   ├── styles/           # Global styles
-│   └── utils/            # Utility scripts
-├── astro.config.mjs      # Astro configuration
-└── package.json
+│   ├── assets/           # Images and icons used by templates
+│   ├── content/          # Markdown: blog, Moneropedia, legal
+│   ├── data/             # Site data (downloads, exchanges, ...)
+│   └── i18n/translations # Translation JSON files (Weblate)
+└── hugo.toml             # Hugo configuration
 ```
+
+See [Understanding the project structure](docs/understanding-the-project-structure.md) for more.
 
 ## Commands
 
-All commands are run from the root of the project:
+You need [Hugo extended](https://gohugo.io/installation/) **v0.167.0** (the version CI and Docker use). The checks below also need Python 3, `jq`, [yamlfmt](https://github.com/google/yamlfmt) and [Biome](https://biomejs.dev/); nothing needs Node.js.
 
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `pnpm install`         | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm prepare-build`   | Trim sources before `pnpm build` (see below)     |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm lint`            | Run ESLint to check for code issues              |
-| `pnpm lint:css`        | Run Stylelint to check for CSS issues            |
-| `pnpm format`          | Format code using Prettier                       |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+| Command                                | Action                                                 |
+| :------------------------------------- | :----------------------------------------------------- |
+| `hugo server`                          | Starts a local dev server at `localhost:1313`          |
+| `hugo`                                 | Builds the site to `./dist/`                           |
+| `python3 scripts/check-scoped-css.py`  | Checks that component styles only style their component |
+| `python3 scripts/check-no-js.py`       | Checks the built site in `./dist/` has no JavaScript   |
+| `python3 scripts/check-css-format.py`  | Checks stylesheets follow the project's formatting     |
+| `biome lint --error-on-warnings`       | Lints the stylesheets ([Biome](https://biomejs.dev/), rules in `biome.json`) |
+| `yamlfmt` / `yamlfmt -lint`            | Formats / checks the data YAML files ([yamlfmt](https://github.com/google/yamlfmt)) |
+| `jq . file.json > tmp && mv tmp file.json` | Formats a JSON data file the way CI expects        |
 
-## Prepare build
-
-It is possible to trim the source code before `pnpm build` to speed up preview deployments (fewer blog posts, fewer locales, no OG image generation).
-
-```bash
-pnpm prepare-build [flags]
-```
-
-Each flag has an env var equivalent, for build environments that don't accept CLI arguments.
-
-| Flag              | Env var              | Description                                               |
-| :---------------- | :------------------- | :-------------------------------------------------------- |
-| `--limit-posts N` | `LIMIT_POSTS=N`      | Keep only the N most recent blog posts                    |
-| `--skip-og`       | `SKIP_OG=true`       | Remove OpenGraph image generation                         |
-| `--limit-locales` | `LIMIT_LOCALES=true` | Build only the default locale (+ locales with PR changes) |
-
-Changed-file detection (pick one):
-
-| Flag                 | Env var            | Description                                              |
-| :------------------- | :----------------- | :------------------------------------------------------- |
-| `--base-branch NAME` | `BASE_BRANCH=NAME` | Branch to diff against via merge-base (for PRs/previews) |
-| `--base-ref SHA`     | `BASE_REF=SHA`     | SHA to diff against directly (for push events)           |
-
-`SKIP_PREPARE_BUILD=true` early-exits the script. Useful if you can't set a per-environment build command in your platform, and have to skip the script in production.
+A full build takes about a minute and a half the first time (it resizes images and draws the blog's preview cards); after that Hugo reuses its cache in `resources/_gen/`.
 
 ## Docker
 
-You can build and run the site without installing Node.js or pnpm. Five targets are available:
+You can build and run the site without installing Hugo. Three targets are available:
 
-| Target         | Purpose                        | Output                    |
-| :------------- | :----------------------------- | :------------------------ |
-| `dev`          | Local development, live reload | Dev server on `:4321`     |
-| `static`       | Export static site to host     | `dist/` on your machine   |
-| `ssr`          | Export SSR build to host       | SSR files on your machine |
-| `serve-static` | Production static via Caddy    | Static server on `:80`    |
-| `serve-ssr`    | SSR via Node.js (e.g. Coolify) | Node.js server on `:4321` |
+| Target         | Purpose                        | Output                  |
+| :------------- | :----------------------------- | :---------------------- |
+| `dev`          | Local development, live reload | Dev server on `:1313`   |
+| `static`       | Export static site to host     | `dist/` on your machine |
+| `serve-static` | Production static via Caddy    | Static server on `:80`  |
 
 ### `dev`
 
 ```bash
 docker build --target dev -t monero-site-dev .
-docker run -p 4321:4321 -v $(pwd)/src:/app/src monero-site-dev
+docker run -p 1313:1313 -v $(pwd):/app monero-site-dev
 ```
 
-Then open [http://127.0.0.1:4321](http://127.0.0.1:4321).
+Then open [http://127.0.0.1:1313](http://127.0.0.1:1313).
 
 ### `static`
 
@@ -105,14 +85,6 @@ docker build --target static --output dist .
 ```
 
 The built site will be output to the `dist/` directory on your host.
-
-### `ssr`
-
-```bash
-docker build --target ssr --output dist-ssr .
-```
-
-The SSR build will be output to the `dist-ssr/` directory on your host. Run it with `node dist-ssr/dist/server/entry.mjs`.
 
 ### `serve-static`
 
@@ -123,31 +95,30 @@ docker run -p 8080:80 monero-site
 
 Then open [http://127.0.0.1:8080](http://127.0.0.1:8080).
 
-### `serve-ssr`
-
-Builds with `SSR=true` and runs the Astro Node.js standalone server. Useful for platforms like Coolify for preview deployments.
-
-```bash
-docker build --target serve-ssr -t monero-site-ssr .
-docker run -p 4321:4321 monero-site-ssr
-```
-
-Then open [http://127.0.0.1:4321](http://127.0.0.1:4321).
-
 ### Build args
 
-| Arg                        | Description                                          | Example                     |
-| :------------------------- | :--------------------------------------------------- | :-------------------------- |
-| `PREPARE_BUILD_ARGS`       | Flags for the [prepare-build](#prepare-build) script | `--limit-posts 6 --skip-og` |
-| `SKIP_IMAGE_OPTIMIZATION`  | Disable image processing for faster builds          | `true`                      |
+| Arg            | Description                 | Example   |
+| :------------- | :-------------------------- | :-------- |
+| `HUGO_VERSION` | Hugo version to build with  | `0.167.0` |
 
-```bash
-docker build --build-arg PREPARE_BUILD_ARGS="--limit-posts 6 --skip-og" --build-arg SKIP_IMAGE_OPTIMIZATION=true --target serve-ssr -t monero-site-ssr .
-```
+`COOLIFY_PREVIEW`, `COOLIFY_BRANCH`, `COOLIFY_REPO` and `SOURCE_COMMIT` are passed through too: on a Coolify pull request preview they show the preview banner.
+
+### Coolify
+
+Deploy with the **Dockerfile** build pack, target `serve-static`, port `80`, and no build or install command. Pull request previews use the same settings.
+
+To make preview builds fast (seconds instead of about two minutes), give the previews these build variables; production leaves them unset and builds everything. CI does the same for pushes and pull requests, keeping the posts and languages the change touches (`scripts/ci-build-scope.sh`); a release builds the whole site:
+
+| Variable                       | Effect                                          |
+| :----------------------------- | :---------------------------------------------- |
+| `LIMIT_POSTS=10`               | only the newest 10 blog posts                   |
+| `SKIP_OG=true`                 | posts use the default social card (none drawn)  |
+| `SKIP_IMAGE_OPTIMIZATION=true` | images served as they are, not resized          |
 
 ## More
 
+- [Contributor documentation](docs/README.md)
 - [Beta Preview](https://beta.monerodevs.org)
-- [Astro Documentation](https://docs.astro.build)
+- [Hugo Documentation](https://gohugo.io/documentation/)
 - [Monero Project](https://www.getmonero.org)
 - [Diego's Figma](https://www.figma.com/design/y53fDBe55sM1GvhxXXjQEp/Monero-Website-Redesign-2024--Copy-?node-id=140-1399&t=TThf0slioIblcNoq-0)

@@ -1,0 +1,66 @@
+/* Styles for layouts/_partials/pages/resources/roadmap/history-timeline.html */
+.year-rows[data-c-history-timeline] {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.year-row[data-c-history-timeline] {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-xl) 0;
+  border-bottom: 1px solid var(--border-color);
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.year-label[data-c-history-timeline] {
+  flex-shrink: 0;
+  width: 4.5rem;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--heading-color);
+}
+
+.event-chips[data-c-history-timeline] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.event-chip[data-c-history-timeline] {
+  padding: var(--space-2xs) var(--space-sm);
+  background: var(--card-color);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  color: var(--paragraph-main);
+  text-decoration: none;
+
+  &.has-link {
+    color: var(--heading-color);
+
+    &:hover {
+      background: var(--monero-orange);
+      color: #fff;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+@media (width <= 600px) {
+  .year-row[data-c-history-timeline] {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-sm);
+  }
+
+  .year-label[data-c-history-timeline] {
+    width: auto;
+  }
+}

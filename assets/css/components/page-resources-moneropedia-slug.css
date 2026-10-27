@@ -1,0 +1,45 @@
+/* Styles for layouts/resources/moneropedia/page.html */
+.moneropedia-page[data-c-page-resources-moneropedia-slug] {
+  display: grid;
+  grid-template:
+    "sidebar header"
+    ". content" 1fr
+    / auto minmax(0, 1fr);
+  gap: 1rem 5rem;
+}
+
+.moneropedia-sidebar[data-c-page-resources-moneropedia-slug] {
+  align-self: center;
+  grid-area: sidebar;
+}
+
+.moneropedia-header[data-c-page-resources-moneropedia-slug] {
+  align-self: center;
+  grid-area: header;
+}
+
+.moneropedia-header[data-c-page-resources-moneropedia-slug]
+  h1[data-c-page-resources-moneropedia-slug] {
+  margin: 0;
+  font-size: var(--font-size-3xl);
+}
+
+.moneropedia-article[data-c-page-resources-moneropedia-slug] {
+  grid-area: content;
+  min-width: 0;
+}
+
+@media (width <= 900px) {
+  .moneropedia-page[data-c-page-resources-moneropedia-slug] {
+    grid-template:
+      "sidebar"
+      "header"
+      "content"
+      / 1fr;
+    gap: var(--space-xl);
+  }
+
+  .moneropedia-article[data-c-page-resources-moneropedia-slug] {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,11 @@
+{{- /*
+  A FAQ category: a card with a heading and an accordion of questions.
+
+    {{ partial "pages/get-started/faq/accordion-card" (dict "title" "Basics" "items" (slice (dict "title" "Q" "content" (partial "helpers/markdown" "A")))) }}
+
+  Params: title, items (as for ui/accordion/accordion).
+*/ -}}
+{{ with partial "ui/card" (dict "class" "accordion-card" "attrs" (dict "data-c-accordion-card" true) "title" .title "items" .items) }}
+  <h2 class="card-title" data-c-accordion-card>{{ .title }}</h2>
+  {{ partial "ui/accordion/accordion" (dict "items" .items) }}
+{{ end }}

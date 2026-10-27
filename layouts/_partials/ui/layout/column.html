@@ -1,0 +1,19 @@
+{{- /*
+  Vertical flex container.
+
+    {{ with partial "ui/layout/column" (dict "gap" "lg" "align" "center") }}...{{ end }}
+
+  Params: gap (2xs..3xl, default md), align (start|center|end|stretch,
+  default stretch), as (div|ul|ol|section|nav|article, default div), class, attrs.
+*/ -}}
+{{- $tag := .as | default "div" -}}
+{{- $align := index (dict "start" "flex-start" "center" "center" "end" "flex-end" "stretch" "stretch") (.align | default "stretch") -}}
+{{- $a := dict
+  "class" (trim (printf "column %s" (.class | default "")) " ")
+  "style" (printf "--gap: var(--space-%s); --align: %s" (.gap | default "md") $align)
+  "data-c-column" true
+-}}
+{{- /* html/template can't write a tag name from a variable, hence printf */ -}}
+{{ printf "<%s%s>" $tag (partial "helpers/attrs" (merge $a (.attrs | default dict))) | safeHTML }}
+  {{ templates.Inner . }}
+{{ printf "</%s>" $tag | safeHTML }}

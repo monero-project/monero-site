@@ -2,29 +2,36 @@
 
 ## Overview
 
-- Add the new locale code to `src/i18n/config.ts`.
-- Seed translation JSON files for the language under `src/i18n/translations/<lang>/` (copy from `en/`).
+- Add the language to `hugo.toml`.
+- Seed translation JSON files for the language under `src/i18n/translations/<lang>/` (copy from `en/`), unless Weblate already created them.
+- Add the language's date and digit formats to `data/locale.yaml`.
 
-## 1. Update the i18n configuration (required)
+## 1. Add the language to hugo.toml (required)
 
-Edit `src/i18n/config.ts` and add your language to the `locales` object. Use the short code (ISO 639-1) as the key and a locale string (`lang-REGION`) as the value:
+Add a block next to the existing `[languages.*]` blocks. Use the short code (ISO 639-1) as the key:
 
-```typescript
-export const defaultLocale = "en";
-export const locales = {
-  en: "en-US",
-  es: "es-ES",
-  fr: "fr-FR",
-  de: "de-DE", // <-- add your language here
-};
+```toml
+[languages.de]
+  weight = 4               # order in the language menu
+  label = "Deutsch"        # the language's own name, shown in the language menu
+  locale = "de-DE"         # language-REGION, used in the sitemap
+  # direction = "rtl"      # only for right-to-left languages (Arabic, Hebrew, Persian, Urdu)
+```
 
-// If the language is right-to-left (RTL), add it to this list:
-export const rtlLocales = ["ar", "he", "fa", "ur"];
+Then, in the `[module]` section, give the language its Moneropedia entries, next to the `ar`/`zh` mounts (before the `en` one, so a translated entry wins over the English one):
+
+```toml
+  [[module.mounts]]
+    source = "src/content/moneropedia/de"
+    target = "content/resources/moneropedia"
+    files = ["! **/_*"]
+    [module.mounts.sites.matrix]
+      languages = ["de"]
 ```
 
 Notes:
-- Adding a locale here will automatically make it available to the language dropdown and all other i18n utilities (e.g., `getLocale`, `localizeHref`).
-- Use the same short code consistently across the repo (e.g., `de`, `pt-br`, `nb-no`).
+- Every page, the language menu, `hreflang` links and the sitemap pick up the new language automatically. Its pages are built under `/de/`.
+- Use the same short code consistently across the repo (e.g., `de`, `pt-br`, `nb-no`), including the folder names in `src/i18n/translations/` and `src/content/moneropedia/`.
 
 ## 2. Create translation files (required)
 
@@ -43,23 +50,37 @@ cp src/i18n/translations/en/*.json src/i18n/translations/de/
 Important:
 - Commit and push these seed files so the translation system (Weblate) can pick them up.
 - Do not manually translate large numbers of strings in the repo; use Weblate for community-driven translations. Small one-off edits for testing are fine.
+- Strings that are still empty (untranslated) show in English on the site.
 
-## 3. Test the language locally
+## 3. Add date and number formats (required)
 
-- Run: `pnpm dev`.
+Dates and digits are formatted from `data/locale.yaml`. Add the language under `months` (month names as used in a full date), `dateLong` (with `{d}`, `{month}`, `{y}` placeholders) and, if the language doesn't use 0-9, `digits`. For example:
+
+```yaml
+months:
+  de: ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
+dateLong:
+  de: "{d}. {month} {y}"
+```
+
+The browser can tell you the right values: in its console, `new Date(2020, 3, 22).toLocaleDateString("de-DE", { day: "numeric", month: "long", year: "numeric" })` shows the date format, and `(1234567890).toLocaleString("ar-SA", { useGrouping: false })` the digits. Languages missing here fall back to English formats.
+
+## 4. Test the language locally
+
+- Run: `hugo server`.
 - Visit the site and open the language selector - the new language should be listed.
-- Verify translated UI strings with `t()` work by replacing a string in a namespace file (e.g., `common.json`) for a quick smoke test.
+- Check a page with dates (the blog) and one with numbers (the 404 page).
 - For RTL languages, preview pages and verify layout/direction looks correct.
 
 ## PR checklist
 
-- [ ] Added the new locale to `src/i18n/config.ts`.
+- [ ] Added the language block (and Moneropedia mount) to `hugo.toml`.
 - [ ] Created `src/i18n/translations/<lang>/` and seeded all namespace JSON files.
-- [ ] If applicable, added the locale to `rtlLocales` (for RTL languages).
-- [ ] Tested with `pnpm dev` and confirmed the language appears in the selector and basic strings resolve.
+- [ ] Added the language to `data/locale.yaml`.
+- [ ] Tested with `hugo server` and confirmed the language appears in the selector and basic strings resolve.
 
 ## Troubleshooting
 
-- Language not appearing: confirm `src/i18n/config.ts` was edited correctly and the dev server restarted.
-- Missing keys: ensure your namespace files contain the same keys as `en/`.
-- RTL layout issues: add the code to `rtlLocales` and verify styles; open an issue if complex layout changes are required.
+- Language not appearing: check the `[languages.<lang>]` block in `hugo.toml` and restart `hugo server`.
+- Missing keys: ensure your namespace files contain the same keys as `en/` (missing ones show in English).
+- RTL layout issues: check `direction = "rtl"` is set; open an issue if complex layout changes are required.

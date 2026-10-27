@@ -1,0 +1,114 @@
+/* Styles for layouts/_partials/pages/community/workgroups/workgroup-card.html */
+.workgroup-card[data-c-workgroup-card] {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.card-header[data-c-workgroup-card] {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.card-icon[data-c-workgroup-card] {
+  width: 1.75rem;
+  height: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: color-mix(in srgb, var(--monero-orange) 12%, transparent);
+  border-radius: var(--radius-sm);
+  color: var(--monero-orange);
+  flex-shrink: 0;
+}
+
+.card-name[data-c-workgroup-card] {
+  margin: 0;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  color: var(--heading-color);
+}
+
+.card-action[data-c-workgroup-card] {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  color: var(--text-primary);
+  line-height: var(--line-height-body);
+}
+
+.card-best-for[data-c-workgroup-card] {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  color: var(--paragraph-subtitle);
+
+  & .best-for-label {
+    font-weight: var(--font-weight-semibold);
+  }
+}
+
+.card-links[data-c-workgroup-card] {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-top: auto;
+  padding-top: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.matrix-button[data-c-workgroup-card] {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: var(--space-xs) var(--space-sm);
+  background: var(--card-hover-color);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--heading-color);
+  text-decoration: none;
+  transition:
+    background 0.15s,
+    color 0.15s;
+
+  &:hover {
+    background: color-mix(
+      in srgb,
+      var(--heading-color) 10%,
+      var(--card-hover-color)
+    );
+    color: #fff;
+  }
+}
+
+.irc-link[data-c-workgroup-card] {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: var(--font-size-sm);
+  color: var(--paragraph-subtitle);
+
+  & a {
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: color 0.15s;
+
+    &:hover {
+      color: var(--paragraph-subtitle);
+    }
+  }
+}
+
+@media (width <= 400px) {
+  .irc-link[data-c-workgroup-card] {
+    width: 100%;
+
+    &::before {
+      content: "IRC: ";
+    }
+  }
+
+  .irc-separator[data-c-workgroup-card] {
+    display: none;
+  }
+}

@@ -1,0 +1,27 @@
+{{- /*
+  Table-of-contents entry: icon, title and subtitle, with a # decoration.
+
+    {{ partial "ui/toc/tocitem" (dict "href" "#copyright" "icon" "copyright" "title" "Copyright" "subtitle" "...") }}
+
+  Params: href, icon (mask icon name or asset path), title, subtitle,
+  tag (a|span, default a), class, attrs.
+*/ -}}
+{{- $tag := .tag | default "a" -}}
+{{- $a := dict
+  "class" (trim (printf "toc-item %s" (.class | default "")) " ")
+  "href" (cond (eq $tag "a") (.href | default "") "")
+  "data-c-tocitem" true
+-}}
+{{- /* html/template can't write a tag name from a variable, hence printf */ -}}
+{{ printf "<%s%s>" $tag (partial "helpers/attrs" (merge $a (.attrs | default dict))) | safeHTML }}
+  <span class="item-icon" data-c-tocitem>
+    {{ partial "ui/icons/mask-icon" (dict "src" .icon "size" "1.5em") }}
+  </span>
+  <div class="item-content" data-c-tocitem>
+    <span class="item-title" data-c-tocitem>{{ .title }}</span>
+    <span class="item-subtitle" data-c-tocitem>{{ .subtitle }}</span>
+  </div>
+  <div class="decoration" data-c-tocitem>
+    {{ partial "ui/icons/mask-icon" (dict "src" "hashtag" "size" "0.75em") }}
+  </div>
+{{ printf "</%s>" $tag | safeHTML }}

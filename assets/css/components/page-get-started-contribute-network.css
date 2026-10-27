@@ -1,0 +1,33 @@
+/* Styles for layouts/get-started/contribute/network.html */
+h2[data-c-page-get-started-contribute-network] {
+  font-size: var(--font-size-3xl);
+  margin: 0;
+}
+
+p[data-c-page-get-started-contribute-network] {
+  font-size: var(--font-size-lg);
+  color: var(--paragraph-subtitle);
+  max-width: 60ch;
+  margin: 0.75rem 0 0;
+}
+
+ul[data-c-page-get-started-contribute-network] {
+  margin: 1rem 0 0;
+  padding: 0;
+  padding-inline-start: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  font-size: var(--font-size-lg);
+  color: var(--paragraph-subtitle);
+  line-height: var(--line-height-body);
+  max-width: 60ch;
+
+  & li::marker {
+    color: var(--monero-orange);
+  }
+}
+
+.cta-links[data-c-page-get-started-contribute-network] {
+  margin-top: var(--space-xl);
+}

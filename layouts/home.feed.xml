@@ -1,0 +1,20 @@
+{{- /*
+  /feed.xml: every blog post, newest first, with the full post as HTML.
+  Post bodies are rendered through content/_feed.md, which keeps the HTML
+  plain, as the feed always was.
+*/ -}}
+{{- $feed := site.GetPage "/_feed" -}}
+{{- $posts := sort (where (site.GetPage "/blog").RegularPages "Params.kind" "post") "Params.sortKey" "desc" -}}
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Monero</title><description>Monero Blog RSS Feed</description><link>{{ site.BaseURL }}</link>
+{{- range $posts -}}
+  {{- $body := replaceRE `(?s)\A---\r?\n.*?\r?\n---\r?\n?` "" (resources.Get .Params.sourceFile).Content -}}
+  {{- $html := partial "helpers/autolink" (dict "html" ($feed.RenderString $body) "plain" true) -}}
+  {{- /* like the sanitizer the feed always used: no embedded frames or scripts */ -}}
+  {{- range slice "iframe" "script" "object" "embed" -}}
+    {{- $html = replaceRE (printf `(?is)<%s\b.*?</%s>|<%s\b[^>]*/?>` . . .) "" $html -}}
+  {{- end -}}
+  <item><title>{{ transform.XMLEscape .Title }}</title><link>{{ .Permalink }}</link><guid isPermaLink="true">{{ .Permalink }}</guid>
+  {{- with .Params.summary }}<description>{{ transform.XMLEscape . }}</description>{{ end -}}
+  <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 GMT" }}</pubDate><content:encoded>{{ transform.XMLEscape $html }}</content:encoded></item>
+{{- end -}}
+</channel></rss>

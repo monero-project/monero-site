@@ -24,7 +24,7 @@ The FAQ page is located at `/get-started/faq` and displays frequently asked ques
        }
      }
      ```
-     - Update the FAQ page (`src/pages/get-started/faq.astro`) to include the new category by adding a similar `sectionToItems()` call.
+     - Add the new category's key to the list of sections at the top of `layouts/get-started/faq.html` (`range slice "basics" "nodes" ...`), where you want it to appear.
 
 4. **Add the question and answer**:
    - In the chosen category, add a new named key with `"title"` (the question) and `"content"` (the answer).
@@ -46,7 +46,7 @@ The FAQ page is located at `/get-started/faq` and displays frequently asked ques
    - The `"content"` field supports Markdown formatting, including links to Moneropedia terms using the `@` prefix (e.g., `@RandomX`).
 
 5. **Test the changes**:
-   - Run the development server (`pnpm dev`) and navigate to `/get-started/faq` to verify the new question appears correctly.
+   - Run the development server (`hugo server`) and navigate to `/get-started/faq/` to verify the new question appears correctly. Questions appear in the order they have in `faq.json`.
    - Check that any @links render properly as links to Moneropedia entries.
 
 ## Notes

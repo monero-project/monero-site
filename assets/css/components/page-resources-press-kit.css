@@ -1,0 +1,23 @@
+/* Styles for layouts/resources/press-kit.html */
+.column-title[data-c-page-resources-press-kit] {
+  margin: 0;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--paragraph-main);
+}
+
+.section-intro[data-c-page-resources-press-kit] {
+  color: var(--paragraph-subtitle);
+  margin: 0 0 var(--space-xl);
+  max-width: 70ch;
+}
+
+.download-all[data-c-page-resources-press-kit] {
+  margin-top: var(--space-2xl);
+}
+
+.assets-grid[data-c-page-resources-press-kit] {
+  margin-bottom: var(--space-2xl);
+}

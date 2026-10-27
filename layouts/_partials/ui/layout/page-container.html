@@ -1,0 +1,10 @@
+{{- /*
+  Main content wrapper with the standard bottom padding.
+
+    {{ with partial "ui/layout/page-container" (dict) }}...{{ end }}
+
+  Params: id, class, attrs.
+*/ -}}
+<div{{ partial "helpers/attrs" (merge (dict "id" .id "class" (trim (printf "page-container %s" (.class | default "")) " ") "data-c-page-container" true) (.attrs | default dict)) }}>
+  {{ templates.Inner . }}
+</div>

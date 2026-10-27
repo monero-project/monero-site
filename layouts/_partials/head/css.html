@@ -1,0 +1,9 @@
+{{- /*
+  The site stylesheet: the font faces (a template, to fingerprint the font
+  URLs) followed by assets/css/main.css bundled with css.Build.
+*/ -}}
+{{- $fonts := resources.Get "css/base/fonts.css" | resources.ExecuteAsTemplate "css/fonts.css" . -}}
+{{- $main := resources.Get "css/main.css" | css.Build (dict "minify" true) -}}
+{{- $css := slice $fonts $main | resources.Concat "css/site.css" -}}
+{{- if hugo.IsProduction }}{{ $css = $css | minify | fingerprint }}{{ end -}}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}">

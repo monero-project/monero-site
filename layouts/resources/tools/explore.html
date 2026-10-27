@@ -1,0 +1,46 @@
+{{ define "meta" }}{{ .Store.Set "meta" (dict "title" (partial "helpers/t" "tools:explore.pageTitle") "description" (partial "helpers/t" "tools:explore.subtitle")) }}{{ end }}
+{{ define "main" }}
+{{- $t := "helpers/t" -}}
+{{- $tools := index hugo.Data.resources "monero-tools" -}}
+{{- $sections := slice
+  (dict "key" "blockExplorers" "anchorId" "explorers" "tools" $tools.blockExplorers)
+  (dict "key" "network" "anchorId" "network" "tools" $tools.networkTools)
+  (dict "key" "utilities" "anchorId" "utilities" "tools" $tools.utilities)
+-}}
+{{ partial "ui/title-card" (dict
+  "title" (partial $t "tools:explore.title")
+  "subtitle" (partial $t "tools:explore.subtitle")
+  "backHref" (partial "helpers/href" "/resources/tools/")
+  "backLabel" (partial $t "tools:index.title")
+) }}
+{{ with partial "ui/layout/page-container" (dict "sections" $sections) }}
+  {{- range $i, $section := .sections }}
+  {{- if $i }}
+  <hr aria-hidden="true">
+  {{- end }}
+  {{ with partial "ui/layout/page-section" (dict
+    "title" (partial "helpers/t" (printf "tools:explore.sections.%s.title" .key))
+    "subtitle" (partial "helpers/t" (printf "tools:explore.sections.%s.subtitle" .key))
+    "anchorId" .anchorId
+    "section" $section
+  ) }}
+    {{ with partial "ui/layout/grid" (dict "as" "ul" "columns" 2 "gap" "sm" "section" .section) }}
+      {{- $key := .section.key }}
+      {{- range .section.tools }}
+      <li>
+        {{ partial "ui/external-resource-button" (dict
+          "href" .href
+          "title" .title
+          "subtitle" (partial "helpers/t" (printf "tools:explore.tools.%s.%s" $key .id))
+          "onionHref" .onionHref
+        ) }}
+      </li>
+      {{- end }}
+    {{ end }}
+  {{ end }}
+  {{- end }}
+{{ end }}
+{{ with partial "ui/disclaimer/disclaimer-bar" (dict "icon" "shield-alert" "title" (partial $t "tools:explore.disclaimer.title")) -}}
+  {{ partial "helpers/t" "tools:explore.disclaimer.text" }}<a href="https://github.com/monero-project/monero-site/issues/new" target="_blank" rel="noopener noreferrer">{{ partial "helpers/t" "tools:explore.disclaimer.linkText" }}</a>.
+{{ end }}
+{{ end }}

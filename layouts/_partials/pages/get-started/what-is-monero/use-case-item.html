@@ -1,0 +1,16 @@
+{{- /*
+  A use case: icon next to a title and description.
+
+    {{ partial "pages/get-started/what-is-monero/use-case-item" (dict "icon" "coins" "title" "..." "description" "...") }}
+
+  Params: icon (mask icon name), title, description.
+*/ -}}
+<div class="use-case-item" data-c-use-case-item>
+  <div class="icon" data-c-use-case-item>
+    {{ partial "ui/icons/mask-icon" (dict "src" .icon "size" "2rem") }}
+  </div>
+  <div data-c-use-case-item>
+    <h3 data-c-use-case-item>{{ .title }}</h3>
+    <p data-c-use-case-item>{{ .description }}</p>
+  </div>
+</div>

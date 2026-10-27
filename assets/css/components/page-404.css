@@ -1,0 +1,55 @@
+/* Styles for layouts/404.html */
+.error-container[data-c-page-404] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100svh - (var(--page-top-margin) * 2) - 4.5rem);
+  flex: 1;
+}
+
+.error-content[data-c-page-404] {
+  text-align: center;
+  max-width: 75ch;
+  width: 100%;
+  margin-bottom: 9rem;
+}
+
+.error-code[data-c-page-404] {
+  font-size: clamp(6rem, 15vw, 10rem);
+  font-weight: var(--font-weight-extra-bold);
+  color: var(--monero-orange);
+  line-height: 1;
+  margin: 0;
+}
+
+.error-title[data-c-page-404] {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--heading-color);
+  margin-block: var(--space-md);
+}
+
+.error-message[data-c-page-404] {
+  font-size: var(--font-size-lg);
+  color: var(--paragraph-main);
+  line-height: var(--line-height-body);
+  margin-block: var(--space-2xl);
+}
+
+.quick-links[data-c-page-404] {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-md) var(--space-xl);
+  margin-top: var(--space-md);
+}
+
+.quick-links[data-c-page-404] a[data-c-page-404] {
+  font-weight: var(--font-weight-semibold);
+}
+
+@media (width >= 600px) {
+  .error-container[data-c-page-404] {
+    min-height: calc(100vh - (var(--page-top-margin) * 5));
+  }
+}

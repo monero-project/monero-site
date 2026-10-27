@@ -1,0 +1,116 @@
+/* Styles for layouts/_partials/ui/header/language-dropdown.html */
+.lang-container[data-c-language-dropdown] {
+  position: static;
+  display: inline-block;
+
+  & > summary[data-c-language-dropdown] {
+    list-style: none;
+
+    &::marker,
+    &::-webkit-details-marker {
+      display: none;
+    }
+  }
+}
+
+.lang[data-c-language-dropdown] {
+  margin-inline-start: auto;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  padding: var(--space-xs) 0;
+  border: 0;
+  background: none;
+  vertical-align: middle;
+  color: inherit;
+
+  &:hover,
+  &:focus-visible,
+  .lang-container[data-c-language-dropdown][open] & {
+    color: var(--heading-color);
+  }
+}
+
+.lang-dropdown[data-c-language-dropdown] {
+  position: absolute;
+  inset-inline: 0;
+  inset-block-start: 100%;
+  background: var(--card-color);
+  box-shadow: 0 4px 2px -2px #0003;
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  z-index: var(--z-overlay);
+  padding-inline: clamp(1rem, 4vw, 4rem);
+  padding-block: 0 var(--space-md);
+  user-select: none;
+  max-height: 75dvh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: transform 0.2s;
+
+  .lang-container[data-c-language-dropdown][open] & {
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+}
+
+.lang-list[data-c-language-dropdown] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+
+  & li {
+    margin: 0;
+  }
+
+  & a {
+    display: block;
+    padding: var(--space-sm);
+    color: var(--heading-color);
+    text-decoration: none;
+    border-radius: var(--radius-md);
+
+    &:hover,
+    &:focus {
+      background: var(--card-hover-color);
+    }
+
+    &.active {
+      font-weight: var(--font-weight-semibold);
+      background: var(--card-hover-color);
+    }
+  }
+}
+
+@media (width >= 1200px) and (hover: hover) {
+  .lang-container[data-c-language-dropdown] {
+    position: relative;
+  }
+
+  .lang[data-c-language-dropdown] {
+    padding: 0;
+  }
+
+  .lang-dropdown[data-c-language-dropdown] {
+    inset-inline: auto;
+    inset-inline-end: 0;
+    inset-block-start: 100%;
+    margin-top: var(--space-xs);
+    padding: var(--space-sm);
+    min-width: 140px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    max-height: none;
+    overflow: visible;
+  }
+
+  .lang-list[data-c-language-dropdown] a[data-c-language-dropdown] {
+    padding: var(--space-xs) var(--space-sm);
+  }
+}

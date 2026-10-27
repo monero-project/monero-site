@@ -1,0 +1,18 @@
+{{ define "meta" }}{{ .Store.Set "meta" (dict "title" (partial "helpers/t" "contribute:index.pageTitle") "description" (partial "helpers/t" "contribute:index.subtitle")) }}{{ end }}
+{{ define "main" }}
+{{- $t := "helpers/t" -}}
+{{- $h := "helpers/href" -}}
+{{- $cards := slice
+  (dict "title" (partial $t "contribute:network.title") "description" (partial $t "contribute:network.subtitle") "href" (partial $h "/get-started/contribute/network") "image" "images/contribute/network.avif")
+  (dict "title" (partial $t "contribute:develop.title") "description" (partial $t "contribute:develop.subtitle") "href" (partial $h "/get-started/contribute/develop") "image" "images/contribute/develop.avif")
+  (dict "title" (partial $t "contribute:donate.title") "description" (partial $t "contribute:donate.subtitle") "href" (partial $h "/get-started/contribute/donate") "image" "images/contribute/donate.avif")
+}}
+{{ partial "ui/title-card" (dict "title" (partial $t "contribute:index.title") "subtitle" (partial $t "contribute:index.subtitle")) }}
+{{ with partial "ui/layout/page-container" (dict "cards" $cards) }}
+  {{ with partial "ui/layout/grid" (dict "columns" 3 "gap" "xl" "cards" .cards) }}
+    {{- range .cards }}
+    {{ partial "ui/category-card" . }}
+    {{- end }}
+  {{ end }}
+{{ end }}
+{{ end }}

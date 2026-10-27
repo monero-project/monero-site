@@ -52,7 +52,7 @@
         "website": {
             "name": "网站",
             "action": "构建和增强 getmonero.org。",
-            "bestFor": "TypeScript、Astro、Web 开发者"
+            "bestFor": "Hugo、HTML/CSS、Web 开发者"
         },
         "seraphis": {
             "name": "开发实验室",

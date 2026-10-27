@@ -1,0 +1,42 @@
+{{- /*
+  Call-to-action card: optional icon, title, description (the block) and a
+  button, or custom buttons.
+
+    {{ with partial "ui/ctacard" (dict "title" "Verify" "icon" "shield-check" "href" "/downloads/hashes.txt" "linkText" "View hashes") }}
+      <p>...</p>
+    {{ end }}
+
+  Params: title, href + linkText (the default button), buttons (HTML replacing
+  the default button), icon (mask icon name or asset path), variant
+  (centered), class, attrs.
+*/ -}}
+{{- $description := templates.Inner . -}}
+{{- $card := dict
+  "padding" "xl"
+  "class" (trim (printf "cta-card %s" (.class | default "")) " ")
+  "attrs" (merge (dict "data-variant" .variant "data-has-icon" (cond (ne (.icon | default "") "") "true" "") "data-c-ctacard" true) (.attrs | default dict))
+  "title" .title
+  "href" .href
+  "linkText" .linkText
+  "icon" .icon
+  "buttons" .buttons
+  "description" $description
+-}}
+{{ with partial "ui/card" $card }}
+  {{- with .icon }}
+  <span class="cta-icon" data-c-ctacard>
+    {{ partial "ui/icons/mask-icon" (dict "src" . "size" "2rem") }}
+  </span>
+  {{- end }}
+  <h3 class="cta-title" data-c-ctacard>{{ .title }}</h3>
+  <div class="cta-description" data-c-ctacard>
+    {{ .description }}
+  </div>
+  <div class="cta-link" data-c-ctacard>
+    {{- with .buttons }}
+    {{ . }}
+    {{- else }}
+    {{ with partial "ui/button" (dict "href" .href "attrs" (dict "data-c-ctacard" true) "text" .linkText) }}{{ .text }}{{ end }}
+    {{- end }}
+  </div>
+{{ end }}

@@ -1,0 +1,86 @@
+{{ define "meta" }}{{ .Store.Set "meta" (dict "title" (partial "helpers/t" "exchanges:pageTitle") "description" (partial "helpers/t" "exchanges:hero.subtitle")) }}{{ end }}
+
+{{- /* Sidebar: the filters, which check the hidden radio buttons on the page */ -}}
+{{- define "_partials/inline/exchanges-filters" -}}
+{{- $t := "helpers/t" -}}
+{{ with partial "pages/get-started/exchanges/filters-panel" (dict
+  "title" (partial $t "exchanges:sidebarTitle")
+  "description" (partial $t "exchanges:filtersDescription")
+  "clearLabel" (partial $t "exchanges:clearSelection")
+  "closeLabel" (partial $t "common:aria.close")
+  "clearFilterId" "filter-none"
+  "mobileToggleId" "mobile-filter-toggle"
+  "options" .options) }}
+  {{- range .options }}
+  {{ partial "pages/get-started/exchanges/filter-option" (dict
+    "filterId" (printf "filter-%s" .key)
+    "highlight" .highlight
+    "icon" .icon
+    "title" (partial "helpers/t" (printf "exchanges:highlightOptions.%s.title" .key))
+    "subtitle" (partial "helpers/t" (printf "exchanges:highlightOptions.%s.subtitle" .key))) }}
+  {{- end }}
+{{ end }}
+{{- end -}}
+
+{{ define "main" }}
+{{- $t := "helpers/t" -}}
+{{- $p := dict "data-c-page-get-started-exchanges" true -}}
+{{- $exchanges := (index hugo.Data "get-started").exchanges.exchanges -}}
+{{- /* highlight: the data-highlight tag of the rows a filter selects */ -}}
+{{- $options := slice
+  (dict "key" "easiest" "highlight" "user-friendly" "icon" "rabbit")
+  (dict "key" "fiat" "highlight" "fiat" "icon" "bank")
+  (dict "key" "privacy" "highlight" "privacy" "icon" "hat-glasses")
+-}}
+{{- $filterTexts := slice -}}
+{{- range $options }}
+  {{- $filterTexts = $filterTexts | append (dict "filter" .key "text" (partial $t (printf "exchanges:highlightOptions.selectedText.%s" .key))) -}}
+{{- end -}}
+{{- $d := dict "p" $p "exchanges" $exchanges "options" $options "filterTexts" $filterTexts -}}
+
+{{ partial "ui/title-card" (dict "title" (partial $t "exchanges:hero.title") "subtitle" (partial $t "exchanges:hero.subtitle")) }}
+{{ with partial "ui/layout/page-container" (dict "attrs" $p "d" $d) }}
+  <!-- hidden filter radio buttons -->
+  <fieldset id="exchange-filters" data-c-page-get-started-exchanges>
+    <legend class="sr-only" data-c-page-get-started-exchanges>Exchange Filters</legend>
+    {{- range .d.options }}
+    <input id="filter-{{ .key }}" class="filter-toggle" type="radio" name="exchange-filter" data-c-page-get-started-exchanges>
+    {{- end }}
+    <input id="filter-none" class="filter-toggle" type="radio" name="exchange-filter" aria-label="{{ partial "helpers/t" "exchanges:aria.clearFilters" }}" checked data-c-page-get-started-exchanges>
+  </fieldset>
+  <input id="mobile-filter-toggle" class="filter-toggle" type="checkbox" aria-label="{{ partial "helpers/t" "exchanges:aria.toggleFilters" }}" data-c-page-get-started-exchanges>
+  <div class="exchanges-wrapper" data-c-page-get-started-exchanges>
+    {{ with partial "ui/sidebar/sidebar-layout" (dict "sidebarPosition" "start" "sidebarWidth" "25rem"
+      "attrs" (merge .d.p (dict "aria-label" (partial "helpers/t" "exchanges:aria.pageLayout")))
+      "sidebar" (partial "inline/exchanges-filters" .d)
+      "d" .d) }}
+      {{ with partial "ui/layout/page-section" (dict "title" (partial "helpers/t" "exchanges:sections.decentralized.title") "subtitle" (partial "helpers/t" "exchanges:sections.decentralized.description") "anchorId" "decentralized" "attrs" .d.p "d" .d) }}
+        {{ partial "pages/get-started/exchanges/exchange-table" (dict "exchanges" .d.exchanges.decentralizedExchanges "hasKyc" false) }}
+      {{ end }}
+      <hr aria-hidden="true" data-c-page-get-started-exchanges>
+      {{ with partial "ui/layout/page-section" (dict "title" (partial "helpers/t" "exchanges:sections.aggregators.title") "subtitle" (partial "helpers/t" "exchanges:sections.aggregators.description") "anchorId" "aggregators" "attrs" .d.p) }}
+        {{ partial "ui/disclaimer/disclaimer-note" (dict "text" (partial "helpers/t" "exchanges:sections.aggregators.disclaimer")) }}
+        <p style="color: var(--paragraph-subtitle);" data-c-page-get-started-exchanges>
+          {{ partial "helpers/t" "exchanges:sections.aggregators.resourceIntro" }}
+        </p>
+        {{ partial "ui/external-resource-button" (dict
+          "href" "https://kycnot.me/?categories=aggregator&currency-mode=or&currencies=xmr&max-kyc=0"
+          "onionHref" "http://kycnotmezdiftahfmc34pqbpicxlnx3jbf5p7jypge7gdvduu7i6qjqd.onion/?categories=aggregator&currency-mode=or&currencies=xmr&max-kyc=0"
+          "title" (partial "helpers/t" "exchanges:sections.aggregators.resourceBtnTitle")
+          "subtitle" (partial "helpers/t" "exchanges:sections.aggregators.resourceBtnSubtitle")
+          "logo" "images/directories/kycnotme.jpg"
+          "attrs" (dict "data-highlight" "user-friendly crypto" "data-c-page-get-started-exchanges" true)) }}
+        <p style="color: var(--paragraph-subtitle);" data-c-page-get-started-exchanges>{{ partial "helpers/markdown" (dict "text" (partial "helpers/t" (slice "exchanges:sections.aggregators.tip" (dict "communityDownloadsUrl" (partial "helpers/href" "/downloads/community/#built-in-exchange")))) "inline" true) }}</p>
+      {{ end }}
+      <hr aria-hidden="true" data-c-page-get-started-exchanges>
+      {{ with partial "ui/layout/page-section" (dict "title" (partial "helpers/t" "exchanges:sections.centralized.title") "subtitle" (partial "helpers/t" "exchanges:sections.centralized.description") "anchorId" "centralized" "attrs" .d.p "d" .d) }}
+        {{ partial "pages/get-started/exchanges/exchange-table" (dict "exchanges" .d.exchanges.centralizedExchanges "hasKyc" true) }}
+      {{ end }}
+    {{ end }}
+    {{ with partial "ui/disclaimer/disclaimer-bar" (dict "icon" "shield-alert" "title" (partial "helpers/t" "exchanges:disclaimerTitle")) }}
+      {{- partial "helpers/t" "exchanges:disclaimer" -}}
+    {{ end }}
+    {{ partial "pages/get-started/exchanges/mobile-filter-bar" (dict "toggleId" "mobile-filter-toggle" "title" (partial "helpers/t" "exchanges:sidebarTitle") "filterTexts" .d.filterTexts) }}
+  </div>
+{{ end }}
+{{ end }}

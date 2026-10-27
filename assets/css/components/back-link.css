@@ -1,0 +1,43 @@
+/* Styles for layouts/_partials/ui/back-link.html */
+.back-link[data-c-back-link] {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--paragraph-subtitle);
+  transition: color 0.15s;
+  width: fit-content;
+  text-decoration: none;
+
+  & .icon-wrap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: var(--radius-full);
+    background: var(--card-color);
+  }
+
+  & .label {
+    white-space: nowrap;
+  }
+
+  &:hover {
+    color: var(--monero-orange);
+
+    & .icon-wrap {
+      background: var(--card-hover-color);
+    }
+  }
+
+  &[data-size="lg"] {
+    font-size: var(--font-size-2xl);
+    color: var(--monero-orange);
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

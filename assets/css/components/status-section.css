@@ -1,0 +1,114 @@
+/* Styles for layouts/_partials/pages/resources/roadmap/status-section.html */
+.status-label[data-c-status-section] {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+
+  & h2 {
+    margin: 0;
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--heading-color);
+  }
+}
+
+.label-dot[data-c-status-section] {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--paragraph-subtitle);
+
+  &[data-variant="active"] {
+    background: var(--monero-orange);
+    box-shadow: 0 0 0 3px
+      color-mix(in srgb, var(--monero-orange) 25%, transparent);
+    animation: 2s ease-in-out infinite pulse;
+  }
+
+  &[data-variant="upcoming"] {
+    background: var(--heading-color);
+  }
+
+  &[data-variant="proposed"] {
+    background: none;
+    border: 1.5px solid var(--paragraph-subtitle);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 3px
+      color-mix(in srgb, var(--monero-orange) 25%, transparent);
+  }
+
+  50% {
+    box-shadow: 0 0 0 5px
+      color-mix(in srgb, var(--monero-orange) 15%, transparent);
+  }
+}
+
+.status-list[data-c-status-section] {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+
+  & .status-item {
+    display: block;
+    padding: var(--space-sm) var(--space-md);
+    background: var(--card-color);
+    border-radius: var(--radius-md);
+    transition: background 0.15s;
+    text-decoration: none;
+  }
+
+  & a.status-item {
+    &::after {
+      display: none;
+    }
+
+    &:hover {
+      background: var(--card-hover-color);
+    }
+  }
+
+  & .status-title {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2xs);
+    font-weight: var(--font-weight-semibold);
+    color: var(--heading-color);
+    line-height: var(--line-height-caption);
+  }
+
+  & .status-desc {
+    margin: var(--space-2xs) 0 0;
+    font-size: var(--font-size-sm);
+    color: var(--paragraph-subtitle);
+    line-height: var(--line-height-caption);
+  }
+
+  &[data-variant="active"] .status-item[data-c-status-section] {
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    border-inline-start: 3px solid var(--monero-orange);
+  }
+
+  &[data-variant="proposed"] {
+    & .status-item {
+      background: none;
+      border: 1px solid var(--border-color);
+    }
+
+    & a.status-item:hover {
+      background: var(--card-hover-color);
+      border-color: var(--card-color);
+    }
+
+    & .status-title {
+      color: var(--paragraph-main);
+    }
+  }
+}

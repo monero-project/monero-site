@@ -52,7 +52,7 @@
         },
         "moneroWebsite": {
             "title": "موقع Monero",
-            "description": "هذا الموقع، مبني بإطار Astro."
+            "description": "هذا الموقع، مبني بمولّد المواقع الثابتة Hugo."
         },
         "moneroDocs": {
             "title": "وثائق Monero",

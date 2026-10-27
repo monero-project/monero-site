@@ -1,0 +1,26 @@
+{{- /*
+  Sidebar box with an optional title and subtitle; the block is the content
+  (usually ui/sidebar/sidebar-link partials).
+
+    {{ with partial "ui/sidebar/sidebar-card" (dict "title" "Whitepapers") }}...{{ end }}
+
+  Params: title, subtitle, class, attrs.
+*/ -}}
+{{- $body := templates.Inner . -}}
+{{- $column := dict
+  "gap" "xs"
+  "class" (trim (printf "card %s" (.class | default "")) " ")
+  "attrs" (merge (dict "data-c-sidebar-card" true) (.attrs | default dict))
+  "title" .title
+  "subtitle" .subtitle
+  "body" $body
+-}}
+{{ with partial "ui/layout/column" $column }}
+  {{- with .title }}
+  <h3 class="title" data-c-sidebar-card>{{ . }}</h3>
+  {{- end }}
+  {{- with .subtitle }}
+  <p class="subtitle" data-c-sidebar-card>{{ . }}</p>
+  {{- end }}
+  {{ .body }}
+{{ end }}

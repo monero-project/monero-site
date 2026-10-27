@@ -11,6 +11,13 @@ on:
 permissions:
   contents: read
 
+env:
+  HUGO_VERSION: "0.167.0"
+  YAMLFMT_VERSION: "0.21.0"
+  BIOME_VERSION: "2.5.15"
+  # biome-linux-x64 of that release (GitHub's digest; Biome publishes no checksums file)
+  BIOME_SHA256: "5d867a0b2ccea1755b7e508b01d836a8c64e31a1e4d11ec24b43b6b4eec8b3b6"
+
 jobs:
   lint:
     name: Lint & Format
@@ -20,39 +27,62 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - name: Check set:html safety
+      - name: Check unescaped HTML
+        # safeHTML & co. switch off escaping. They are allowed only for tag
+        # wrappers (printf "<%s...") and in the reviewed helpers/render hooks
+        # below; translation strings go through helpers/markdown, which sanitizes.
         run: |
-          if grep -r "set:html" src --include="*.astro" | grep -Ev "set:html=\{(safeMarkdown\.|DOMPurify\.sanitize)"; then
-            echo "Error: Found set:html usage without safeMarkdown or DOMPurify.sanitize"
+          if grep -rnE 'safe(HTML|HTMLAttr|JS|CSS|URL)\b' layouts \
+            | grep -vE '^layouts/(_partials/helpers/(attrs|markdown|moneropedia-content)\.html|_markup/render-(link|image)\.html|all\.enredirect\.html):' \
+            | grep -vE 'printf "</?%s(%s)?>"' \
+            | grep -vE 'htmlEscape'; then
+            echo "Error: unescaped output outside the reviewed places (see above)"
             exit 1
           fi
-          echo "All set:html usages are safe"
+          echo "All unescaped output is in reviewed places"
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v5
+      - name: Check component styles are scoped
+        run: python3 scripts/check-scoped-css.py
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v6
-        with:
-          node-version: "22"
-          cache: "pnpm"
+      - name: Check CSS formatting
+        run: python3 scripts/check-css-format.py
 
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+      - name: Lint CSS (Biome)
+        # rules: biome.json (Biome's recommended set); warnings fail too
+        run: |
+          curl -sSL -o biome "https://github.com/biomejs/biome/releases/download/%40biomejs/biome%40${BIOME_VERSION}/biome-linux-x64"
+          echo "${BIOME_SHA256}  biome" | sha256sum -c
+          chmod +x biome
+          ./biome lint --error-on-warnings
 
-      - name: ESLint - TypeScript validity
-        run: pnpm lint
+      - name: Check YAML formatting
+        run: |
+          base="https://github.com/google/yamlfmt/releases/download/v${YAMLFMT_VERSION}"
+          tarball="yamlfmt_${YAMLFMT_VERSION}_Linux_x86_64.tar.gz"
+          curl -sSLO "$base/$tarball"
+          curl -sSLO "$base/checksums.txt"
+          grep " $tarball\$" checksums.txt | sha256sum -c
+          tar -xzf "$tarball" yamlfmt
+          ./yamlfmt -lint
 
-      - name: Stylelint - CSS compatibility
-        run: pnpm lint:css
-
-      - name: Prettier - Code formatting
-        run: pnpm format:check
-
-      - name: Type check
-        run: pnpm check
+      - name: Check JSON files are valid and formatted
+        # translations are left to Weblate; everything else is kept in jq's format
+        run: |
+          status=0
+          for f in $(git ls-files '*.json' ':!src/i18n/translations/**'); do
+            if ! jq . "$f" | diff -q - "$f" > /dev/null; then
+              echo "::error file=$f::not valid JSON or not formatted (fix with: jq . $f > tmp && mv tmp $f)"
+              status=1
+            fi
+          done
+          for f in $(git ls-files 'src/i18n/translations/**/*.json'); do
+            jq empty "$f" || { echo "::error file=$f::not valid JSON"; status=1; }
+          done
+          exit $status
 
   reproducible-archive:
+    # Build the site twice and check both archives are byte-identical. On a
+    # release, the first run's archive is attached to the release.
     name: Reproducible Archive (Run ${{ matrix.run }})
     if: github.event_name != 'release' || github.event.release.target_commitish == 'beta'
     runs-on: ubuntu-22.04
@@ -65,28 +95,40 @@ jobs:
 
     steps:
       - uses: actions/checkout@v6
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v5
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v6
         with:
-          node-version: "22"
-          cache: "pnpm"
+          fetch-depth: 0 # to see what a push or pull request changes
 
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+      - name: Install Hugo
+        run: |
+          base="https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}"
+          tarball="hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz"
+          curl -sSLO "$base/$tarball"
+          curl -sSLO "$base/hugo_${HUGO_VERSION}_checksums.txt"
+          grep " $tarball\$" "hugo_${HUGO_VERSION}_checksums.txt" | sha256sum -c
+          tar -xzf "$tarball" hugo
+          sudo mv hugo /usr/local/bin/
+          hugo version
 
-      - name: Prepare source for CI/Release build
+      # Pushes and PRs build a reduced site, as fast as possible: the newest 10
+      # posts and English, plus the posts and languages the change touches (see
+      # scripts/ci-build-scope.sh). A release builds the whole site for its archive.
+      - name: Choose what to build
+        if: github.event_name != 'release'
         env:
-          BASE_BRANCH: ${{ github.event_name != 'release' && github.event.pull_request.base.ref || '' }} # PR target branch
-          BASE_REF: ${{ github.event_name == 'push' && github.event.before || '' }} # previous commit before the push event
-          LIMIT_POSTS: ${{ github.event_name != 'release' && '10' || '' }}
-          SKIP_IMAGE_OPTIMIZATION: ${{ github.event_name != 'release' && 'true' || '' }}
-          SKIP_OG: ${{ github.event_name != 'release' && 'true' || '' }}
-          LIMIT_LOCALES: ${{ github.event_name != 'release' && 'true' || '' }}
-        run: pnpm prepare-build && pnpm build
+          BASE_BRANCH: ${{ github.event.pull_request.base.ref }} # PR target branch
+          BEFORE: ${{ github.event_name == 'push' && github.event.before || '' }} # commit before the push
+        run: |
+          base=""
+          if [ -n "$BASE_BRANCH" ]; then base=$(git merge-base "origin/$BASE_BRANCH" HEAD)
+          elif [ -n "$BEFORE" ]; then base=$BEFORE
+          fi
+          scripts/ci-build-scope.sh "$base" | tee -a "$GITHUB_ENV"
+
+      - name: Build site
+        run: hugo --gc
+
+      - name: Check the site has no JavaScript
+        run: python3 scripts/check-no-js.py dist
 
       - name: Create archive
         run: |

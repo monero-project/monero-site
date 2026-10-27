@@ -1,0 +1,40 @@
+{{- /*
+  Info bar with an icon, title and description (the block). With href the
+  whole bar is a link with an arrow.
+
+    {{ with partial "ui/internal-resource-button" (dict "icon" "wallet" "title" "..." "href" (partial "helpers/href" "/downloads/community/")) }}
+      Visit the Community tab...
+    {{ end }}
+
+  Params: icon (mask icon name or asset path), title, href.
+*/ -}}
+{{- $description := templates.Inner . -}}
+{{- $card := dict
+  "as" (cond (ne (.href | default "") "") "a" "div")
+  "padding" "sm"
+  "hover" (ne (.href | default "") "")
+  "class" "info-bar"
+  "attrs" (dict "href" .href "aria-label" (cond (ne (.href | default "") "") .title "") "data-c-internal-resource-button" true)
+  "icon" .icon
+  "title" .title
+  "href" .href
+  "description" $description
+-}}
+{{ with partial "ui/card" $card }}
+  {{- with .icon }}
+  <span class="info-icon" aria-hidden="true" data-c-internal-resource-button>
+    {{ partial "ui/icons/mask-icon" (dict "src" . "size" "1.5em") }}
+  </span>
+  {{- end }}
+  <div class="info-content" data-c-internal-resource-button>
+    <span class="info-title" data-c-internal-resource-button>{{ .title }}</span>
+    <div class="info-description" data-c-internal-resource-button>
+      {{ .description }}
+    </div>
+  </div>
+  {{- if .href }}
+  <span class="info-arrow" aria-hidden="true" data-c-internal-resource-button>
+    {{ partial "ui/icons/mask-icon" (dict "src" "arrow-right" "size" "1.25em" "rtl" (eq site.Language.Direction "rtl")) }}
+  </span>
+  {{- end }}
+{{ end }}

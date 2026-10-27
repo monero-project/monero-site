@@ -1,0 +1,43 @@
+{{- /*
+  Card linking to an external site: optional logo, title, subtitle, an
+  external-link icon and an optional Tor (.onion) link.
+
+    {{ partial "ui/external-resource-button" (dict "href" "https://xmrchain.net" "title" "xmrchain.net" "subtitle" "...") }}
+
+  Params: href, title, subtitle, logo (asset path), onionHref,
+  variant (default|mini, default default), border, class, attrs.
+*/ -}}
+{{- $class := slice "external-resource-button" (.variant | default "default") -}}
+{{- if .onionHref }}{{ $class = $class | append "has-onion" }}{{ end -}}
+{{- if .logo }}{{ $class = $class | append "has-logo" }}{{ end -}}
+{{- with .class }}{{ $class = $class | append . }}{{ end -}}
+{{- $card := dict
+  "padding" "none" "hover" true "class" (delimit $class " ")
+  "attrs" (merge (dict "data-border" (cond (.border | default false) "true" "") "data-c-external-resource-button" true) (.attrs | default dict))
+  "href" .href
+  "title" .title
+  "subtitle" .subtitle
+  "logo" .logo
+  "onionHref" .onionHref
+-}}
+{{ with partial "ui/card" $card }}
+  <a href="{{ .href }}" target="_blank" rel="noopener noreferrer external" class="primary-link" tabindex="-1" data-c-external-resource-button>
+    {{- with .logo }}
+    <div class="logo" data-c-external-resource-button>
+      {{ partial "ui/image" (dict "src" . "alt" "" "format" "avif" "priority" true "attrs" (dict "data-c-external-resource-button" true)) }}
+    </div>
+    {{- end }}
+    <div class="content" data-c-external-resource-button>
+      <span class="title" data-c-external-resource-button>{{ .title }}</span>
+      <span class="subtitle" data-c-external-resource-button>{{ .subtitle }}</span>
+    </div>
+  </a>
+  <a href="{{ .href }}" target="_blank" rel="noopener noreferrer external" class="link-icon" data-c-external-resource-button>
+    {{ partial "ui/icons/mask-icon" (dict "src" "external-link" "size" "1em" "rtl" (eq site.Language.Direction "rtl")) }}
+  </a>
+  {{- with .onionHref }}
+  <a href="{{ . }}" target="_blank" rel="noopener noreferrer external" class="onion-link" title="{{ partial "helpers/t" "common:components.externalResourceButton.onionService" }}" aria-label="{{ partial "helpers/t" "common:components.externalResourceButton.openOnionService" }}" data-c-external-resource-button>
+    {{ partial "ui/icons/mask-icon" (dict "src" "tor" "size" "1.25em") }}
+  </a>
+  {{- end }}
+{{ end }}

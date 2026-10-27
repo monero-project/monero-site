@@ -1,0 +1,6 @@
+/* Styles for layouts/_partials/ui/dropdown/dropdown-separator.html */
+.dropdown-separator[data-c-dropdown-separator] {
+  border: 0;
+  border-top: 1px solid var(--border-color);
+  margin: 0.25rem 0;
+}

@@ -1,0 +1,12 @@
+{{- /*
+  Table of contents linking to sections of the page.
+
+    {{ partial "ui/toc/toccontainer" (dict "ariaLabel" "Legal sections" "sections" (slice (dict "id" "copyright" "icon" "copyright" "title" "..." "subtitle" "..."))) }}
+
+  Params: ariaLabel, sections (list of dict id, icon, title, subtitle).
+*/ -}}
+<nav class="toc" aria-label="{{ .ariaLabel }}" data-c-toccontainer>
+  {{- range .sections }}
+  {{ partial "ui/toc/tocitem" (dict "href" (printf "#%s" .id) "icon" .icon "title" .title "subtitle" .subtitle "class" "toc-item-default" "attrs" (dict "data-c-toccontainer" true)) }}
+  {{- end }}
+</nav>

@@ -1,0 +1,33 @@
+{{- /*
+  Moneropedia index: this language's entries (src/content/moneropedia/<lang>/),
+  grouped by first letter. The English entries shown for untranslated ones
+  (see hugo.toml) aren't listed.
+*/ -}}
+{{ define "meta" }}{{ .Store.Set "meta" (dict "title" (partial "helpers/t" "knowledge-base:moneropedia.pageTitle") "description" (partial "helpers/t" "knowledge-base:moneropedia.subtitle")) }}{{ end }}
+{{ define "main" }}
+{{- $t := "helpers/t" -}}
+{{- $groups := dict -}}
+{{- range .RegularPages -}}
+  {{- if not (partial "helpers/moneropedia-own" .) }}{{ continue }}{{ end -}}
+  {{- $title := .Title | default (index .Params.terms 0) -}}
+  {{- $letter := upper (substr $title 0 1) -}}
+  {{- $summary := printf "%s%s" (upper (substr .Params.summary 0 1)) (substr .Params.summary 1) -}}
+  {{- $item := dict "title" $title "content" (partial "helpers/markdown" (printf "%s\n\n[%s ](%s)" $summary (partial $t "knowledge-base:moneropedia.readMore") .RelPermalink)) -}}
+  {{- $groups = merge $groups (dict $letter ((index $groups $letter | default slice) | append $item)) -}}
+{{- end -}}
+{{- $letters := slice }}{{ range $l, $_ := $groups }}{{ $letters = $letters | append $l }}{{ end -}}
+{{ partial "ui/title-card" (dict
+  "title" (partial $t "knowledge-base:moneropedia.title")
+  "subtitle" (partial $t "knowledge-base:moneropedia.subtitle")
+  "backHref" (partial "helpers/href" "/resources/knowledge-base/")
+  "backLabel" (partial $t "knowledge-base:index.title")
+) }}
+{{ with partial "ui/layout/page-container" (dict "class" "moneropedia-index" "attrs" (dict "data-c-page-resources-moneropedia" true) "letters" $letters "groups" $groups) }}
+  {{ partial "pages/resources/moneropedia/letter-nav" (dict "letters" .letters "ariaLabel" (partial "helpers/t" "knowledge-base:moneropedia.aria.navBar")) }}
+  <div class="letter-groups" data-c-page-resources-moneropedia>
+    {{- range $i, $letter := .letters }}
+    {{ partial "pages/resources/moneropedia/letter-group" (dict "letter" $letter "items" (sort (index $.groups $letter) "title") "isFirst" (eq $i 0)) }}
+    {{- end }}
+  </div>
+{{ end }}
+{{ end }}

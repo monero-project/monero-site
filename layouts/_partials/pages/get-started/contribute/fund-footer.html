@@ -1,0 +1,20 @@
+{{- /*
+  Footer of the general fund section: a note, the OpenAlias and a contact address.
+
+    {{ partial "pages/get-started/contribute/fund-footer" (dict "note" "..." "openAliasLabel" "OpenAlias:" "openAliasValue" "donate.getmonero.org" "contactLabel" "Contact:" "contactEmail" "dev@getmonero.org") }}
+
+  Params: note, openAliasLabel, openAliasValue, contactLabel, contactEmail.
+*/ -}}
+<footer class="fund-footer" data-c-fund-footer>
+  <p class="fund-note" data-c-fund-footer>{{ .note }}</p>
+  {{ with partial "ui/layout/row" (dict "gap" "2xl" "class" "fund-meta" "attrs" (dict "data-c-fund-footer" true) "d" .) }}
+    <span class="meta-item" data-c-fund-footer>
+      <strong data-c-fund-footer>{{ .d.openAliasLabel }}</strong>
+      <code data-c-fund-footer>{{ .d.openAliasValue }}</code>
+    </span>
+    <span class="meta-item" data-c-fund-footer>
+      <strong data-c-fund-footer>{{ .d.contactLabel }}</strong>
+      <a href="mailto:{{ .d.contactEmail }}" data-c-fund-footer>{{ .d.contactEmail }}</a>
+    </span>
+  {{ end }}
+</footer>

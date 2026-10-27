@@ -1,0 +1,20 @@
+{{- /*
+  A sponsor: logo (or the name's first letter) linking to their site, name
+  and description.
+
+    {{ partial "pages/community/sponsorships/sponsor-card" (dict "name" "Symas" "description" "..." "href" "https://symas.com" "logo" "images/sponsors/symas.png") }}
+
+  Params: name, description, href, logo (asset path), monochrome (logo shown
+  in grey until hovered).
+*/ -}}
+{{ with partial "ui/card" (dict "as" "article" "padding" "xl" "class" "sponsor-card" "attrs" (dict "data-c-sponsor-card" true) "d" .) }}
+  <a{{ partial "helpers/attrs" (dict "href" .d.href) }} target="_blank" rel="noopener noreferrer" class="sponsor-logo{{ if .d.monochrome }} monochrome{{ end }}" data-c-sponsor-card>
+    {{- with .d.logo }}
+    {{ partial "ui/image" (dict "src" . "alt" "" "loading" "lazy" "attrs" (dict "data-c-sponsor-card" true)) }}
+    {{- else }}
+    <span class="sponsor-initial" data-c-sponsor-card>{{ substr .d.name 0 1 }}</span>
+    {{- end }}
+  </a>
+  <h3 class="sponsor-name" data-c-sponsor-card>{{ .d.name }}</h3>
+  <p class="sponsor-description" data-c-sponsor-card>{{ .d.description }}</p>
+{{ end }}

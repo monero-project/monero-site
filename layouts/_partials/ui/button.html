@@ -1,0 +1,21 @@
+{{- /*
+  A button, or a link styled as one.
+
+    {{ with partial "ui/button" (dict "href" "/downloads/" "variant" "secondary") }}Download{{ end }}
+
+  Renders <a> when href is set, otherwise <button> (as "button", the default)
+  or <span role="button"> (as "span", e.g. inside a <summary>).
+
+  Params: href, target, rel, variant (primary|secondary|outline|danger,
+  default primary), as, type (default button), class, attrs.
+*/ -}}
+{{- $class := trim (printf "button %s" (.class | default "")) " " -}}
+{{- $variant := .variant | default "primary" -}}
+{{- $attrs := .attrs | default dict -}}
+{{- if .href -}}
+<a{{ partial "helpers/attrs" (merge (dict "href" .href "target" .target "rel" .rel "data-variant" $variant "class" $class "data-c-button" true) $attrs) }}>{{ templates.Inner . }}</a>
+{{- else if eq (.as | default "button") "button" -}}
+<button{{ partial "helpers/attrs" (merge (dict "type" (.type | default "button") "data-variant" $variant "class" $class "data-c-button" true) $attrs) }}>{{ templates.Inner . }}</button>
+{{- else -}}
+<span{{ partial "helpers/attrs" (merge (dict "role" "button" "data-variant" $variant "class" $class "data-c-button" true) $attrs) }}>{{ templates.Inner . }}</span>
+{{- end -}}

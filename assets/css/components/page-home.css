@@ -1,0 +1,39 @@
+/* Styles for layouts/home.html */
+h2[data-c-page-home] {
+  font-size: var(--font-size-3xl);
+  color: var(--heading-color);
+  margin-bottom: var(--space-sm);
+}
+
+p[data-c-page-home] {
+  margin: 0;
+  color: var(--paragraph-subtitle);
+  font-size: var(--font-size-lg);
+}
+
+hr[data-c-page-home] {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: 1em 0;
+}
+
+.resource-grid[data-c-page-home] {
+  grid-column: span 2;
+}
+
+.landing-image[data-c-page-home] {
+  mask-image: radial-gradient(#000 60%, #0000 100%);
+}
+
+.index-hero[data-c-page-home] {
+  box-sizing: border-box;
+  margin-block-start: calc(-2 * var(--page-top-margin) - var(--header-height));
+  min-block-size: 100dvh;
+  padding-block-start: var(--header-overlay);
+}
+
+@media (width <= 1200px) {
+  #start-using-monero[data-c-page-home] {
+    scroll-margin-top: 4rem;
+  }
+}

@@ -1,0 +1,9 @@
+# yamlfmt (https://github.com/google/yamlfmt) settings for the site's data
+# files. CI runs `yamlfmt -lint`; run `yamlfmt` to fix formatting.
+doublestar: true
+include:
+  - src/data/**/*.yaml
+  - data/**/*.yaml
+formatter:
+  type: basic
+  retain_line_breaks: true

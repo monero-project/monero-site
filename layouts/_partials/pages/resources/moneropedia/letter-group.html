@@ -1,0 +1,10 @@
+{{- /* One letter of the Moneropedia index. Params: letter, items (accordion items), isFirst. */ -}}
+<div class="letter-group" id="{{ .letter }}" data-c-letter-group>
+  <hr class="letter-separator{{ if .isFirst }} first{{ end }}" data-c-letter-group>
+  <div class="letter-layout" data-c-letter-group>
+    <h2 class="letter-heading" data-c-letter-group>{{ .letter }}</h2>
+    <div data-c-letter-group>
+      {{ partial "ui/accordion/accordion" (dict "items" .items "multiExpand" false "variant" "card") }}
+    </div>
+  </div>
+</div>

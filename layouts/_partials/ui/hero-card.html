@@ -1,0 +1,41 @@
+{{- /*
+  Large card with a 200px image, title, lead, description and actions (the
+  block, usually ui/button partials).
+
+    {{ with partial "ui/hero-card" (dict "image" "images/community-logo.avif" "imageAlt" "" "title" "...") }}
+      {{ with partial "ui/button" (dict "href" "...") }}Join{{ end }}
+    {{ end }}
+
+  Params: image (asset path), imageAlt, title, lead, description, class.
+*/ -}}
+{{- $actions := templates.Inner . -}}
+{{- $card := dict
+  "as" "article" "padding" "2xl" "radius" "lg"
+  "class" (trim (printf "hero-card %s" (.class | default "")) " ")
+  "attrs" (dict "data-c-hero-card" true)
+  "image" .image
+  "imageAlt" .imageAlt
+  "title" .title
+  "lead" .lead
+  "description" .description
+  "actions" $actions
+-}}
+{{ with partial "ui/card" $card }}
+  <div class="hero-card-image" data-c-hero-card>
+    {{ partial "ui/image" (dict "src" .image "alt" .imageAlt "width" 200 "height" 200 "format" "avif" "attrs" (dict "data-c-hero-card" true)) }}
+  </div>
+  <div class="hero-card-content" data-c-hero-card>
+    {{- with .title }}
+    <h2 class="hero-card-title" data-c-hero-card>{{ . }}</h2>
+    {{- end }}
+    {{- with .lead }}
+    <p class="hero-card-lead" data-c-hero-card>{{ . }}</p>
+    {{- end }}
+    {{- with .description }}
+    <p class="hero-card-description" data-c-hero-card>{{ . }}</p>
+    {{- end }}
+    <div class="hero-card-actions" data-c-hero-card>
+      {{ .actions }}
+    </div>
+  </div>
+{{ end }}

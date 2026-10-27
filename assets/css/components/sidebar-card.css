@@ -1,0 +1,25 @@
+/* Styles for layouts/_partials/ui/sidebar/sidebar-card.html */
+.card[data-c-sidebar-card] {
+  background: var(--card-color);
+  border-radius: var(--radius-md);
+  padding: var(--space-xl);
+}
+
+.title[data-c-sidebar-card] {
+  margin: 0;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--heading-color);
+}
+
+.subtitle[data-c-sidebar-card] {
+  margin: 0 0 var(--space-xs);
+  color: var(--paragraph-subtitle);
+  line-height: var(--line-height-body);
+}
+
+@media (width >= 600px) {
+  .title[data-c-sidebar-card] {
+    font-size: var(--font-size-xl);
+  }
+}

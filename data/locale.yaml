@@ -1,0 +1,49 @@
+# Per-language digits, month names and date formats, taken from ICU (the data
+# browsers use for dates and numbers).
+# dateLong placeholders: {d} {month} {y}; digits are substituted afterwards.
+digits:
+  ar: "٠١٢٣٤٥٦٧٨٩"
+months:
+  en:
+    - "January"
+    - "February"
+    - "March"
+    - "April"
+    - "May"
+    - "June"
+    - "July"
+    - "August"
+    - "September"
+    - "October"
+    - "November"
+    - "December"
+  ar:
+    - "يناير"
+    - "فبراير"
+    - "مارس"
+    - "أبريل"
+    - "مايو"
+    - "يونيو"
+    - "يوليو"
+    - "أغسطس"
+    - "سبتمبر"
+    - "أكتوبر"
+    - "نوفمبر"
+    - "ديسمبر"
+  zh:
+    - "1"
+    - "2"
+    - "3"
+    - "4"
+    - "5"
+    - "6"
+    - "7"
+    - "8"
+    - "9"
+    - "10"
+    - "11"
+    - "12"
+dateLong:
+  en: "{month} {d}, {y}"
+  ar: "{d} {month} {y}"
+  zh: "{y}年{month}月{d}日"

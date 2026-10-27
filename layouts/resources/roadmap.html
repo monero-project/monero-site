@@ -1,0 +1,29 @@
+{{ define "meta" }}{{ .Store.Set "meta" (dict "title" (partial "helpers/t" "roadmap:pageTitle") "description" (partial "helpers/t" "roadmap:hero.subtitle")) }}{{ end }}
+{{ define "main" }}
+{{- $t := "helpers/t" -}}
+{{- $scope := dict "data-c-page-resources-roadmap" true -}}
+{{- $roadmap := hugo.Data.resources.roadmap.roadmapData -}}
+{{- $columns := slice
+  (dict "status" "in-progress" "variant" "active" "label" (partial $t "roadmap:status.inProgress"))
+  (dict "status" "upcoming" "variant" "upcoming" "label" (partial $t "roadmap:status.upcoming"))
+  (dict "status" "proposed" "variant" "proposed" "label" (partial $t "roadmap:status.proposed"))
+-}}
+{{ partial "ui/title-card" (dict "title" (partial $t "roadmap:hero.title") "subtitle" (partial $t "roadmap:hero.subtitle")) }}
+{{ with partial "ui/layout/page-container" (dict "attrs" $scope "scope" $scope "roadmap" $roadmap "columns" $columns) }}
+  {{ with partial "ui/layout/column" (dict "attrs" .scope "d" .) }}
+    {{ with partial "ui/layout/grid" (dict "as" "section" "columns" 3 "gap" "xl" "class" "kanban" "attrs" (merge .d.scope (dict "aria-label" (partial "helpers/t" "roadmap:aria.kanban"))) "d" .d) }}
+      {{- range .d.columns }}
+      {{ with partial "ui/layout/column" (dict "attrs" $.d.scope "column" (merge . (dict "items" $.d.roadmap.items))) }}
+        {{ partial "pages/resources/roadmap/status-section" .column }}
+      {{ end }}
+      {{- end }}
+    {{ end }}
+
+    <hr aria-hidden="true" data-c-page-resources-roadmap>
+
+    {{ with partial "ui/layout/page-section" (dict "title" (partial "helpers/t" "roadmap:history.title") "anchorId" "history" "attrs" .d.scope "d" .d) }}
+      {{ partial "pages/resources/roadmap/history-timeline" (dict "history" .d.roadmap.history) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ end }}

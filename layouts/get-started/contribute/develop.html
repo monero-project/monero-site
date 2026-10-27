@@ -1,0 +1,72 @@
+{{ define "meta" }}{{ .Store.Set "meta" (dict "title" (partial "helpers/t" "contribute:develop.title") "description" (partial "helpers/t" "contribute:develop.subtitle")) }}{{ end }}
+{{ define "main" }}
+{{- $t := "helpers/t" -}}
+{{- $h := "helpers/href" -}}
+{{- $coreProjects := slice
+  (dict "title" (partial $t "contribute:develop.daemon.title") "description" (partial $t "contribute:develop.daemon.description") "tags" (slice "C++") "href" "https://github.com/monero-project/monero" "icon" "terminal")
+  (dict "title" (partial $t "contribute:develop.guiWallet.title") "description" (partial $t "contribute:develop.guiWallet.description") "tags" (slice "C++" "QML") "href" "https://github.com/monero-project/monero-gui" "icon" "app-window")
+  (dict "title" (partial $t "contribute:develop.moneroWebsite.title") "description" (partial $t "contribute:develop.moneroWebsite.description") "tags" (slice "Hugo") "href" "https://github.com/monero-project/monero-site" "icon" "globe")
+  (dict "title" (partial $t "contribute:develop.moneroDocs.title") "description" (partial $t "contribute:develop.moneroDocs.description") "tags" (slice "Markdown") "href" "https://github.com/monero-project/monero-docs" "icon" "book-text")
+-}}
+{{- $communityProjects := slice
+  (dict "title" (partial $t "contribute:develop.cuprate.title") "subtitle" (partial $t "contribute:develop.cuprate.description") "href" "https://github.com/Cuprate/cuprate" "logo" "images/nodes/cuprate.avif")
+  (dict "title" (partial $t "contribute:develop.p2pool.title") "subtitle" (partial $t "contribute:develop.p2pool.description") "href" "https://github.com/SChernykh/p2pool" "logo" "images/ecosystem/p2pool.png")
+  (dict "title" (partial $t "contribute:develop.xmrig.title") "subtitle" (partial $t "contribute:develop.xmrig.description") "href" "https://github.com/xmrig/xmrig" "logo" "images/ecosystem/xmrig.png")
+-}}
+{{- $headers := dict
+  "project" (partial $t "contribute:develop.table.project")
+  "description" (partial $t "contribute:develop.table.description")
+  "stack" (partial $t "contribute:develop.table.stack")
+  "visit" (partial $t "contribute:develop.table.visit")
+-}}
+{{- $sidebar := partial "inline/develop-sidebar" . -}}
+{{ partial "ui/title-card" (dict
+  "title" (partial $t "contribute:develop.title")
+  "subtitle" (partial $t "contribute:develop.subtitle")
+  "backHref" (partial $h "/get-started/contribute/")
+  "backLabel" (partial $t "contribute:index.title")
+) }}
+{{- $d := dict "coreProjects" $coreProjects "communityProjects" $communityProjects "headers" $headers -}}
+{{ with partial "ui/layout/page-container" (dict "d" $d "sidebar" $sidebar) }}
+  {{ with partial "ui/sidebar/sidebar-layout" (dict "sidebar" .sidebar "d" .d) }}
+    {{ with partial "ui/layout/column" (dict "gap" "2xl" "d" .d) }}
+      {{ with partial "ui/layout/page-section" (dict
+        "title" (partial "helpers/t" "contribute:develop.coreProjects")
+        "subtitle" (partial "helpers/t" "contribute:develop.coreProjectsSubtitle")
+        "d" .d
+      ) }}
+        {{ partial "pages/get-started/contribute/projects-table" (dict "projects" .d.coreProjects "headers" .d.headers) }}
+      {{ end }}
+
+      {{ with partial "ui/layout/page-section" (dict
+        "title" (partial "helpers/t" "contribute:develop.communityProjects")
+        "subtitle" (partial "helpers/t" "contribute:develop.communityProjectsSubtitle")
+        "d" .d
+      ) }}
+        {{ with partial "ui/layout/column" (dict "gap" "sm" "d" .d) }}
+          {{- range .d.communityProjects }}
+          {{ partial "ui/external-resource-button" . }}
+          {{- end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ end }}
+
+{{- /* the sidebar slot: bounties, workgroups and developer resources */ -}}
+{{ define "_partials/inline/develop-sidebar" }}
+{{- $t := "helpers/t" -}}
+{{ with partial "ui/sidebar/sidebar-card" (dict "title" (partial $t "contribute:develop.bounties.title") "subtitle" (partial $t "contribute:develop.bounties.description")) }}
+  {{ with partial "ui/sidebar/sidebar-link" (dict "href" "https://bounties.monero.social/" "icon" "coins" "external" true) }}{{ partial "helpers/t" "contribute:develop.bounties.browseMoneroBounties" }}{{ end }}
+  {{ with partial "ui/sidebar/sidebar-link" (dict "href" "https://hackerone.com/monero" "icon" "shield-check" "external" true) }}{{ partial "helpers/t" "contribute:develop.bounties.securityDisclosures" }}{{ end }}
+{{ end }}
+{{ with partial "ui/sidebar/sidebar-card" (dict "title" (partial $t "contribute:develop.workgroups.title") "subtitle" (partial $t "contribute:develop.workgroups.description")) }}
+  {{ with partial "ui/sidebar/sidebar-link" (dict "href" (partial "helpers/href" "/community/workgroups/") "icon" "users") }}{{ partial "helpers/t" "contribute:develop.workgroups.joinWorkgroups" }}{{ end }}
+{{ end }}
+{{ with partial "ui/sidebar/sidebar-card" (dict "title" (partial $t "contribute:develop.resources.title")) }}
+  {{ with partial "ui/sidebar/sidebar-link" (dict "href" "https://docs.getmonero.org/" "icon" "book-text" "external" true) }}{{ partial "helpers/t" "contribute:develop.resources.moneroDocs" }}{{ end }}
+  {{ with partial "ui/sidebar/sidebar-link" (dict "href" (partial "helpers/href" "/resources/tools/develop/") "icon" "code-xml") }}{{ partial "helpers/t" "contribute:develop.resources.librariesSdks" }}{{ end }}
+  {{ with partial "ui/sidebar/sidebar-link" (dict "href" "https://github.com/monero-project" "icon" "external-link" "external" true) }}{{ partial "helpers/t" "contribute:develop.resources.githubOrganization" }}{{ end }}
+{{ end }}
+{{ end }}

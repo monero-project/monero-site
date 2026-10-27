@@ -1,0 +1,10 @@
+{{- /*
+  Is a link external to the root domain? (slice <href> <rootDomain>)
+  Relative links and subdomains of the root domain count as internal.
+*/ -}}
+{{- $href := index . 0 -}}
+{{- $root := index . 1 -}}
+{{- $host := (urls.Parse $href).Hostname -}}
+{{- $ext := false -}}
+{{- with $host }}{{ $ext = not (or (eq . $root) (hasSuffix . (printf ".%s" $root))) }}{{ end -}}
+{{- return $ext -}}

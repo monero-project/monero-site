@@ -1,0 +1,4 @@
+{{- /* /blog/ (page 1 of all posts). Later pages: blog/list.html. */ -}}
+{{ define "meta" }}{{ partial "pages/blog/list-meta" (dict "page" . "tag" "") }}{{ end }}
+{{ define "head" }}<link rel="alternate" type="application/rss+xml" title="{{ partial "helpers/t" "blog:rssTitle" }}" href="{{ absURL "feed.xml" }}">{{ end }}
+{{ define "main" }}{{ partial "pages/blog/list-page" (dict "page" . "pageNumber" 1 "tag" "") }}{{ end }}

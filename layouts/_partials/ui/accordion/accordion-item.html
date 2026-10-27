@@ -1,0 +1,28 @@
+{{- /*
+  One collapsible item (<details>). The body is either content or the block.
+
+    {{ partial "ui/accordion/accordion-item" (dict "title" "Q" "content" (partial "helpers/markdown" "A")) }}
+    {{ with partial "ui/accordion/accordion-item" (dict "title" "Q" "open" true) }}<p>A</p>{{ end }}
+
+  content is written as is when it is HTML (template.HTML, e.g. the result of
+  helpers/markdown); a plain string is escaped.
+
+  Params: title, content, variant (default|card), name (shared by items that
+  close each other), open.
+*/ -}}
+{{- $variant := .variant | default "default" -}}
+<details class="item"{{ partial "helpers/attrs" (dict "data-variant" (cond (ne $variant "default") $variant "") "name" .name "open" (.open | default false)) }} data-c-accordion-item>
+  <summary class="header" data-c-accordion-item>
+    <span class="title" data-c-accordion-item>{{ .title }}</span>
+    <div class="icon" data-c-accordion-item>
+      {{ partial "ui/icons/mask-icon" (dict "src" "chevron-down") }}
+    </div>
+  </summary>
+  {{- with .content }}
+  <div class="content" data-c-accordion-item>{{ . }}</div>
+  {{- else }}
+  <div class="content" data-c-accordion-item>
+    {{ templates.Inner . }}
+  </div>
+  {{- end }}
+</details>

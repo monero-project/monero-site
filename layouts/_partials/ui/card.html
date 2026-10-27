@@ -1,0 +1,26 @@
+{{- /*
+  A surface with the card background, padding and radius.
+
+    {{ with partial "ui/card" (dict "padding" "md" "hover" true "as" "a" "attrs" (dict "href" "/downloads/")) }}
+      <p>Any HTML here.</p>
+    {{ end }}
+
+  Params: as (tag, default div), padding (none|xs|sm|md|lg|xl|2xl, default xl),
+  radius (none|sm|md|lg|xl, default md), border, hover, transparent, class,
+  attrs (passed through: href, aria-*, a parent's scope attribute...).
+*/ -}}
+{{- $tag := .as | default "div" -}}
+{{- $padding := .padding | default "xl" -}}
+{{- $radius := .radius | default "md" -}}
+{{- $a := dict
+  "class" (trim (printf "card %s" (.class | default "")) " ")
+  "data-border" (cond (.border | default false) "true" "")
+  "data-hover" (cond (.hover | default false) "true" "")
+  "data-transparent" (cond (.transparent | default false) "true" "")
+  "style" (printf "--card-padding: %s; --card-radius: %s" (cond (eq $padding "none") "0" (printf "var(--space-%s)" $padding)) (cond (eq $radius "none") "0" (printf "var(--radius-%s)" $radius)))
+  "data-c-card" true
+-}}
+{{- /* html/template can't write a tag name from a variable, hence printf */ -}}
+{{ printf "<%s%s>" $tag (partial "helpers/attrs" (merge $a (.attrs | default dict))) | safeHTML }}
+  {{ templates.Inner . }}
+{{ printf "</%s>" $tag | safeHTML }}

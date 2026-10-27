@@ -1,0 +1,34 @@
+/* Styles for layouts/_partials/pages/get-started/what-is-monero/feature-card.html */
+.feature-card[data-c-feature-card] {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: var(--space-xl);
+  text-align: start;
+}
+
+.icon[data-c-feature-card] {
+  width: 2rem;
+  height: 2rem;
+  padding: var(--space-md);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  color: var(--monero-orange);
+}
+
+h3[data-c-feature-card] {
+  font-size: var(--font-size-lg);
+  color: var(--heading-color);
+  margin: 0;
+}
+
+p[data-c-feature-card] {
+  font-size: var(--font-size-md);
+  margin: 0;
+}
+
+.based-on[data-c-feature-card] {
+  font-size: var(--font-size-sm);
+  color: var(--paragraph-subtitle);
+  margin-top: auto;
+  padding-top: var(--space-xl);
+}

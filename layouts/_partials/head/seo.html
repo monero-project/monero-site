@@ -1,0 +1,65 @@
+{{- /*
+  <title>, description, canonical, Open Graph / Twitter cards and hreflang
+  alternates. Context: (dict "page" . "meta" (dict ...)), where meta has:
+    title, description          required
+    ogTitle                     defaults to title
+    ogType                      default "website"
+    ogImage                     site path, default /open-graph/default.png
+    ogImageAlt
+    article                     dict: publishedTime, authors, tags
+*/ -}}
+{{- $p := .page -}}
+{{- $url := absURL (partial "helpers/page-path" $p) -}}
+{{- $m := .meta -}}
+{{- $suffix := partial "helpers/t" "common:site.titleSuffix" -}}
+{{- $title := $m.title | default "" -}}
+{{- $fullTitle := cond (strings.Contains $title "|") $title (printf "%s | %s" $title $suffix) -}}
+{{- $ogTitle := $m.ogTitle | default $title -}}
+{{- $image := absURL ($m.ogImage | default "/open-graph/default.png") -}}
+<meta charset="UTF-8">
+<title>{{ $fullTitle }}</title>
+<link rel="canonical" href="{{ $url }}">
+{{- with $m.description }}
+<meta name="description" content="{{ . }}">
+{{- end }}
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="{{ $ogTitle }}">
+<meta property="og:type" content="{{ $m.ogType | default "website" }}">
+<meta property="og:image" content="{{ $image }}">
+<meta property="og:url" content="{{ $url }}">
+<meta property="og:locale" content="{{ site.Language.Lang }}">
+{{- range hugo.Sites }}{{ if ne .Language.Lang site.Language.Lang }}
+<meta property="og:locale:alternate" content="{{ .Language.Lang }}">
+{{- end }}{{ end }}
+<meta property="og:site_name" content="Monero">
+<meta property="og:image:url" content="{{ $image }}">
+{{- with $m.ogImageAlt }}
+<meta property="og:image:alt" content="{{ . }}">
+{{- end }}
+{{- with $m.article }}
+{{- with .publishedTime }}
+<meta property="article:published_time" content="{{ . }}">
+{{- end }}
+{{- range .authors }}
+<meta property="article:author" content="{{ . }}">
+{{- end }}
+{{- range .tags }}
+<meta property="article:tag" content="{{ . }}">
+{{- end }}
+{{- end }}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@monero">
+<meta name="twitter:title" content="{{ $ogTitle }}">
+<meta name="twitter:image" content="{{ $image }}">
+{{- with $m.description }}
+<meta name="twitter:description" content="{{ . }}">
+{{- end }}
+<link rel="icon" href="/meta/favicon-16x16.png" sizes="16x16">
+<link rel="icon" href="/meta/favicon-32x32.png" sizes="32x32">
+<link rel="sitemap" type="application/xml" href="/sitemap-index.xml">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{ hugo.Generator }}
+<meta name="color-scheme" content="light dark">
+{{- range hugo.Sites }}
+<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ printf "%s%s" (strings.TrimSuffix "/" site.BaseURL) (partial "helpers/href" (slice .Language.Lang (partial "helpers/page-path" $p))) }}">
+{{- end }}

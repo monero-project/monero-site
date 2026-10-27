@@ -1,0 +1,2 @@
+{{ define "meta" }}{{ .Store.Set "meta" (dict "title" (partial "helpers/t" "common:notFound.pageTitle") "description" (partial "helpers/t" "common:notFound.pageDescription")) }}{{ end }}
+{{ define "main" }}{{ partial "pages/not-found" . }}{{ end }}

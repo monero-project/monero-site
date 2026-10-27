@@ -1,0 +1,21 @@
+{{- /*
+  Render a dict as HTML attributes, with a leading space:
+
+    <a class="x"{{ partial "helpers/attrs" (dict "href" $href "data-c-hero" true) }}>
+
+  true renders a bare attribute; false, nil and "" are skipped (use the string
+  "true"/"false" for literal values). This is how parents pass their
+  data-c-<component> scope attribute and other props through to children.
+  Attribute order is sorted by name.
+*/ -}}
+{{- $out := slice -}}
+{{- range $k, $v := . -}}
+  {{- if eq $v true -}}
+    {{- $out = $out | append $k -}}
+  {{- else if not (or (eq $v nil) (eq $v false) (eq $v "")) -}}
+    {{- $out = $out | append (printf `%s="%s"` $k (htmlEscape (string $v))) -}}
+  {{- end -}}
+{{- end -}}
+{{- $res := "" -}}
+{{- with $out }}{{ $res = printf " %s" (delimit . " ") }}{{ end -}}
+{{- return (safeHTMLAttr $res) -}}

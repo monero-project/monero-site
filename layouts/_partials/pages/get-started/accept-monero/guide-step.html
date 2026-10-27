@@ -1,0 +1,38 @@
+{{- /*
+  A numbered step of a guide: "Step N", a title and the body (the block),
+  next to an image or, without one, a placeholder with an icon and the
+  number.
+
+    {{ with partial "pages/get-started/accept-monero/guide-step" (dict "step" 2 "title" "..." "icon" "hand-coins" "reverse" true) }}
+      <p>...</p>
+    {{ end }}
+
+  Params: step (number), title, icon (mask icon name), image (asset path),
+  imageAlt, reverse (image first), align ("start" to top-align the columns).
+*/ -}}
+{{- $body := templates.Inner . -}}
+<section class="guide-step"{{ partial "helpers/attrs" (dict "data-align" .align "data-reverse" (cond (.reverse | default false) "true" "false")) }} data-c-guide-step>
+  <div class="step-content" data-c-guide-step>
+    <span class="step-label" data-c-guide-step>{{ partial "helpers/t" (slice "common:components.guideStep.step" (dict "step" .step)) }}</span>
+    <h2 class="step-title" data-c-guide-step>{{ .title }}</h2>
+    <div class="step-body" data-c-guide-step>
+      {{ $body }}
+    </div>
+  </div>
+  <div class="step-image" data-c-guide-step>
+    {{- with .image }}
+    {{ partial "ui/image" (dict "src" . "alt" ($.imageAlt | default "") "format" "avif" "attrs" (dict "data-c-guide-step" true)) }}
+    {{- else }}
+    <div class="step-image-placeholder" data-c-guide-step>
+      {{- with .icon }}
+      <div class="placeholder-icon" data-c-guide-step>
+        {{ partial "ui/icons/mask-icon" (dict "src" . "size" "4rem") }}
+      </div>
+      {{- end }}
+      <div class="placeholder-number" data-c-guide-step>
+        {{ partial "helpers/number" (slice .step 2) }}
+      </div>
+    </div>
+    {{- end }}
+  </div>
+</section>

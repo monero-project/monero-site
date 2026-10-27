@@ -1,0 +1,37 @@
+/* Styles for layouts/_partials/pages/index/resource-card.html */
+.resource-card[data-c-resource-card] {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.icon[data-c-resource-card] {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin-bottom: var(--space-xl);
+  padding: var(--space-xl);
+  color: var(--monero-orange);
+  background: light-dark(var(--card-color), transparent);
+}
+
+.title[data-c-resource-card] {
+  margin: 0 0 var(--space-sm);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--heading-color);
+}
+
+.desc[data-c-resource-card] {
+  margin: 0 0 var(--space-xl);
+  line-height: var(--line-height-body);
+  max-width: 45ch;
+  color: var(--paragraph-subtitle);
+}
+
+.cta[data-c-resource-card] {
+  margin-top: auto;
+}

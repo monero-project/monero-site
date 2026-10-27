@@ -52,7 +52,7 @@
         "website": {
             "name": "الموقع",
             "action": "بناء وتعزيز getmonero.org.",
-            "bestFor": "TypeScript، Astro، مطورو الويب"
+            "bestFor": "Hugo، HTML/CSS، مطورو الويب"
         },
         "seraphis": {
             "name": "مختبر التطوير",

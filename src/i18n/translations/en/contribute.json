@@ -52,7 +52,7 @@
         },
         "moneroWebsite": {
             "title": "Monero Website",
-            "description": "This website, built with the Astro framework."
+            "description": "This website, built with the Hugo static site generator."
         },
         "moneroDocs": {
             "title": "Monero Docs",

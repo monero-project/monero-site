@@ -1,0 +1,18 @@
+{{ define "meta" }}{{ .Store.Set "meta" (dict "title" (partial "helpers/t" "knowledge-base:index.pageTitle") "description" (partial "helpers/t" "knowledge-base:index.subtitle")) }}{{ end }}
+{{ define "main" }}
+{{- $t := "helpers/t" -}}
+{{- $h := "helpers/href" -}}
+{{- $cards := slice
+  (dict "title" (partial $t "knowledge-base:library.title") "description" (partial $t "knowledge-base:library.cardSubtitle") "href" (partial $h "/resources/library/") "image" "images/knowledge-base/library.avif")
+  (dict "title" (partial $t "knowledge-base:moneropedia.title") "description" (partial $t "knowledge-base:moneropedia.cardSubtitle") "href" (partial $h "/resources/moneropedia/") "image" "images/knowledge-base/moneropedia.avif")
+  (dict "title" (partial $t "knowledge-base:researchLab.title") "description" (partial $t "knowledge-base:researchLab.cardSubtitle") "href" (partial $h "/resources/research-lab") "image" "images/knowledge-base/research-lab.avif")
+}}
+{{ partial "ui/title-card" (dict "title" (partial $t "knowledge-base:index.title")) }}
+{{ with partial "ui/layout/page-container" (dict "cards" $cards) }}
+  {{ with partial "ui/layout/grid" (dict "columns" 3 "gap" "xl" "cards" .cards) }}
+    {{- range .cards }}
+    {{ partial "ui/category-card" . }}
+    {{- end }}
+  {{ end }}
+{{ end }}
+{{ end }}

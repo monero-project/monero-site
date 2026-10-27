@@ -1,0 +1,16 @@
+{{- /*
+  A highlighted tip (the block), optionally with a shield icon.
+
+    {{ with partial "pages/get-started/accept-monero/tip-box" (dict "showIcon" true) }}Wait for confirmations.{{ end }}
+
+  Params: showIcon, class.
+*/ -}}
+{{- $text := templates.Inner . -}}
+{{ with partial "ui/card" (dict "as" "aside" "padding" "md" "class" (trim (printf "tip-box %s" (.class | default "")) " ") "attrs" (dict "data-c-tip-box" true) "showIcon" .showIcon "text" $text) }}
+  {{- if .showIcon }}
+  <span class="icon" data-c-tip-box>
+    {{ partial "ui/icons/mask-icon" (dict "src" "shield-alert" "size" "1.5em") }}
+  </span>
+  {{- end }}
+  {{ .text }}
+{{ end }}

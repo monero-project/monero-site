@@ -1,0 +1,11 @@
+{{- /* Commit badge shown on Coolify PR preview deployments only. */ -}}
+{{- if os.Getenv "COOLIFY_PREVIEW" -}}
+{{- $commit := os.Getenv "SOURCE_COMMIT" -}}
+{{- /* COOLIFY_BRANCH looks like "pull/2639/head:pr-2639-coolify" */ -}}
+{{- $pr := index (split (os.Getenv "COOLIFY_BRANCH") "/") 1 -}}
+<div class="preview-banner" data-c-preview-banner>
+  <span class="preview-banner-style" data-c-preview-banner>
+    <a href="{{ os.Getenv "COOLIFY_REPO" }}/pull/{{ $pr }}/changes/{{ $commit }}" data-c-preview-banner>{{ substr $commit 0 7 }}</a> Preview powered by <a href="https://coolify.io/" data-c-preview-banner>Coolify</a>
+  </span>
+</div>
+{{- end -}}

@@ -1,0 +1,56 @@
+{{ define "meta" }}{{ .Store.Set "meta" (dict "title" (partial "helpers/t" "knowledge-base:library.pageTitle") "description" (partial "helpers/t" "knowledge-base:library.subtitle")) }}{{ end }}
+{{ define "main" }}
+{{- $t := "helpers/t" -}}
+{{- $scope := dict "data-c-page-resources-library" true -}}
+{{- $library := hugo.Data.resources.library -}}
+{{- $sections := slice
+  (dict "id" "books" "icon" "book-text" "title" (partial $t "knowledge-base:library.sections.books.title") "subtitle" (partial $t "knowledge-base:library.sections.books.tocSubtitle"))
+  (dict "id" "cheatsheets" "icon" "receipt-text" "title" (partial $t "knowledge-base:library.sections.cheatsheets.title") "subtitle" (partial $t "knowledge-base:library.sections.cheatsheets.tocSubtitle"))
+  (dict "id" "newsletters" "icon" "mails" "title" (partial $t "knowledge-base:library.sections.newsletters.title") "subtitle" (partial $t "knowledge-base:library.sections.newsletters.tocSubtitle"))
+-}}
+{{ partial "ui/title-card" (dict
+  "title" (partial $t "knowledge-base:library.title")
+  "subtitle" (partial $t "knowledge-base:library.subtitle")
+  "backHref" (partial "helpers/href" "/resources/knowledge-base/")
+  "backLabel" (partial $t "knowledge-base:index.title")
+) }}
+{{ with partial "ui/layout/page-container" (dict "attrs" $scope "scope" $scope "library" $library "sections" $sections) }}
+  {{ partial "ui/toc/toccontainer" (dict "sections" .sections "ariaLabel" (partial "helpers/t" "knowledge-base:library.aria.sectionsNav")) }}
+  {{ with partial "ui/layout/page-section" (dict "title" (partial "helpers/t" "knowledge-base:library.sections.books.title") "subtitle" (partial "helpers/t" "knowledge-base:library.sections.books.subtitle") "anchorId" "books" "attrs" .scope "d" .) }}
+    {{ with partial "ui/layout/grid" (dict "columns" 2 "gap" "md" "attrs" .d.scope "d" .d) }}
+      {{- range .d.library.books }}
+      {{ partial "pages/resources/library/book-card" . }}
+      {{- end }}
+    {{ end }}
+  {{ end }}
+
+  <hr aria-hidden="true" data-c-page-resources-library>
+
+  {{ with partial "ui/layout/page-section" (dict "title" (partial "helpers/t" "knowledge-base:library.sections.cheatsheets.title") "anchorId" "cheatsheets" "attrs" .scope "d" .) }}
+    <div class="cheatsheet-intro" data-c-page-resources-library>
+      <h3 class="salmon-title" data-c-page-resources-library>
+        {{ partial "helpers/t" "knowledge-base:library.sections.cheatsheets.salmonSeries.title" }}
+      </h3>
+      <p class="section-intro" data-c-page-resources-library>
+        {{ partial "helpers/t" "knowledge-base:library.sections.cheatsheets.salmonSeries.description" }}
+      </p>
+    </div>
+
+    {{ with partial "ui/layout/grid" (dict "minWidth" "16rem" "gap" "md" "attrs" .d.scope "d" .d) }}
+      {{- range .d.library.cheatsheets }}
+      {{ partial "pages/resources/library/cheatsheet-card" (dict "url" .url "title" .title "description" .description "icon" "receipt-text") }}
+      {{- end }}
+    {{ end }}
+  {{ end }}
+
+  <hr aria-hidden="true" data-c-page-resources-library>
+
+  {{ with partial "ui/layout/page-section" (dict "title" (partial "helpers/t" "knowledge-base:library.sections.newsletters.title") "subtitle" (partial "helpers/t" "knowledge-base:library.sections.newsletters.subtitle") "anchorId" "newsletters" "attrs" .scope "d" .) }}
+    {{ with partial "ui/layout/column" (dict "gap" "sm" "attrs" .d.scope "d" .d) }}
+      {{- range .d.library.newsletters }}
+      {{ partial "ui/external-resource-button" (dict "href" .url "title" .title "subtitle" .description "attrs" $.d.scope) }}
+      {{- end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ end }}

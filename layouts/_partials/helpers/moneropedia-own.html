@@ -1,0 +1,7 @@
+{{- /*
+  Is a Moneropedia page its language's own entry (src/content/moneropedia/<lang>/),
+  rather than the English entry shown for one it hasn't translated?
+
+    {{ if partial "helpers/moneropedia-own" . }}...{{ end }}
+*/ -}}
+{{- return strings.Contains (replace .File.Filename "\\" "/") (printf "/src/content/moneropedia/%s/" .Language.Lang) -}}

@@ -1,0 +1,90 @@
+{{- /*
+  Download card for an official release: image, version, features, a
+  download menu, torrent/magnet buttons and release notes/source links.
+
+    {{ partial "pages/downloads/core-card" (dict
+      "id" "gui" "image" "images/gui.avif" "title" "..." "subtitle" "..."
+      "features" (slice "**Simple mode** for beginners")
+      "downloads" (index hugo.Data.downloads.core "gui").downloads
+      "version" "v0.18.5.0" "versionName" "Fluorine Fermi"
+      "releaseNotesUrl" "https://..." "sourceCodeUrl" "https://..."
+      "torrentUrl" "https://..." "magnetUrl" "magnet:?..."
+      "dropdownGroup" "core-downloads"
+    ) }}
+
+  Params: id, image (asset path), title, subtitle, features (Markdown
+  strings), downloads (items {href, platform, format, size, target} or the
+  string "separator", as in src/data/downloads/core.json), version,
+  versionName, releaseNotesUrl, sourceCodeUrl, torrentUrl, magnetUrl,
+  dropdownGroup (dropdowns sharing it close each other), attrs.
+*/ -}}
+{{ with partial "ui/card" (dict "padding" "none" "class" "download-card" "attrs" (merge (dict "id" .id "data-c-core-card" true) (.attrs | default dict)) "d" .) }}
+  {{- $d := .d }}
+  <div class="card-image" data-c-core-card>
+    {{ partial "ui/image" (dict "src" $d.image "alt" "" "format" "avif" "attrs" (dict "data-c-core-card" true)) }}
+  </div>
+  <div class="card-content" data-c-core-card>
+    <div class="card-header" data-c-core-card>
+      {{- with $d.versionName }}
+      <span class="version-name" data-c-core-card>"{{ . }}"</span>
+      {{- end }}
+      <div class="title-row" data-c-core-card>
+        <h2 class="card-title" data-c-core-card>{{ $d.title }}</h2>
+        {{- with $d.version }}
+        <span class="version-badge" data-c-core-card>{{ . }}</span>
+        {{- end }}
+      </div>
+      <p class="card-subtitle" data-c-core-card>{{ $d.subtitle }}</p>
+    </div>
+    <ul class="card-features" data-c-core-card>
+      {{- range $d.features }}
+      <li data-c-core-card>{{ partial "helpers/markdown" (dict "text" . "inline" true) }}</li>
+      {{- end }}
+    </ul>
+    <div class="card-footer" data-c-core-card>
+      <div class="download-actions" data-c-core-card>
+        {{ with partial "ui/dropdown/dropdown" (dict "label" (partial "helpers/t" "downloads:core.downloadButton") "name" $d.dropdownGroup "downloads" $d.downloads) }}
+          {{- range .downloads }}
+          {{- if eq . "separator" }}
+          {{ partial "ui/dropdown/dropdown-separator" . }}
+          {{- else }}
+          {{- $meta := "" }}
+          {{- with .size }}{{ $meta = printf `<span data-c-core-card>%s</span>` (htmlEscape .) | safeHTML }}{{ end }}
+          {{ with partial "ui/dropdown/dropdown-item" (dict "href" .href "attrs" (dict "target" .target "data-c-core-card" true) "meta" $meta "item" .) }}
+            <span class="dropdown-label" data-c-core-card>
+              {{- with .item.platform }}
+              <span class="platform-icon" data-c-core-card>
+                {{ partial "ui/icons/mask-icon" (dict "src" (printf "icons/mask/brand/%s.avif" (index (dict "windows" "windows" "macos" "apple" "linux" "linux" "android" "android" "freebsd" "freebsd") .)) "size" "1em") }}
+              </span>
+              {{- end }}
+              <span data-c-core-card>
+                {{ partial "helpers/t" (printf "downloads:platforms.%s" .item.platform) }} ({{ partial "helpers/t" (printf "downloads:core.formats.%s" .item.format) }})
+              </span>
+            </span>
+          {{ end }}
+          {{- end }}
+          {{- end }}
+        {{ end }}
+        {{- if and $d.torrentUrl $d.magnetUrl }}
+        <div class="torrent-split-button" data-c-core-card>
+          {{ with partial "ui/button" (dict "variant" "secondary" "href" $d.torrentUrl "class" "torrent-button" "attrs" (dict "data-c-core-card" true)) }}{{ partial "helpers/t" "downloads:core.torrent" }}{{ end }}
+          {{ with partial "ui/button" (dict "variant" "secondary" "href" $d.magnetUrl "class" "magnet-button" "attrs" (dict "aria-label" (partial "helpers/t" "downloads:core.magnetLink") "title" (partial "helpers/t" "downloads:core.magnetLink") "data-c-core-card" true)) }}
+            {{ partial "ui/icons/color-icon" (dict "src" "icons/color/light/magnet.avif" "darkSrc" "icons/color/dark/magnet.avif" "size" "1.25em") }}
+          {{ end }}
+        </div>
+        {{- end }}
+      </div>
+      <div class="metadata-links" data-c-core-card>
+        {{- with $d.releaseNotesUrl }}
+        <a href="{{ . }}" target="_blank" rel="noopener noreferrer external" class="metadata-link" data-c-core-card>{{ partial "helpers/t" "downloads:core.releaseNotes" }}</a>
+        {{- end }}
+        {{- with $d.sourceCodeUrl }}
+        {{- if $d.releaseNotesUrl }}
+        <span class="separator" data-c-core-card>·</span>
+        {{- end }}
+        <a href="{{ . }}" target="_blank" rel="noopener noreferrer external" class="metadata-link" data-c-core-card>{{ partial "helpers/t" "downloads:core.sourceCode" }}</a>
+        {{- end }}
+      </div>
+    </div>
+  </div>
+{{ end }}

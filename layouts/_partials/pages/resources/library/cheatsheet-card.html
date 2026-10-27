@@ -1,0 +1,19 @@
+{{- /*
+  A cheatsheet in the library: icon, title, description and an arrow, all one link.
+
+    {{ partial "pages/resources/library/cheatsheet-card" (dict "url" "/library/x.pdf" "title" "Rings" "description" "..." "icon" "receipt-text") }}
+
+  Params: url, title, description, icon (mask icon name or asset path).
+*/ -}}
+{{ with partial "ui/card" (dict "as" "a" "padding" "none" "hover" true "class" "cheatsheet-card" "attrs" (dict "href" .url "target" "_blank" "rel" "noopener noreferrer" "data-c-cheatsheet-card" true) "sheet" .) }}
+  <div class="cheatsheet-visual" data-c-cheatsheet-card>
+    {{ partial "ui/icons/mask-icon" (dict "src" .sheet.icon "size" "2.5rem") }}
+  </div>
+  <div class="cheatsheet-content" data-c-cheatsheet-card>
+    <h4 class="cheatsheet-title" data-c-cheatsheet-card>{{ .sheet.title }}</h4>
+    <p class="cheatsheet-description" data-c-cheatsheet-card>{{ .sheet.description }}</p>
+  </div>
+  <div class="cheatsheet-action" data-c-cheatsheet-card>
+    {{ partial "ui/icons/mask-icon" (dict "src" "arrow-right" "size" "1.25em" "rtl" (eq site.Language.Direction "rtl")) }}
+  </div>
+{{ end }}

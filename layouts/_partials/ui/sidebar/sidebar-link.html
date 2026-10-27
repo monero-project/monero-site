@@ -1,0 +1,27 @@
+{{- /*
+  Sidebar link with an icon and an arrow. The block is the link text.
+
+    {{ with partial "ui/sidebar/sidebar-link" (dict "href" "..." "icon" "book-text" "external" true) }}Whitepaper{{ end }}
+
+  Params: href, icon (mask icon name or asset path), external (opens in a new
+  tab), class, attrs.
+*/ -}}
+{{- $external := .external | default false -}}
+{{- $a := dict
+  "href" .href
+  "class" (trim (printf "link %s" (.class | default "")) " ")
+  "target" (cond $external "_blank" "")
+  "rel" (cond $external "noopener noreferrer" "")
+  "data-c-sidebar-link" true
+-}}
+<a{{ partial "helpers/attrs" (merge $a (.attrs | default dict)) }}>
+  <span class="icon" data-c-sidebar-link>
+    {{ partial "ui/icons/mask-icon" (dict "src" .icon "size" "1.25rem") }}
+  </span>
+  <span class="title" data-c-sidebar-link>
+    {{ templates.Inner . }}
+  </span>
+  <span class="arrow" data-c-sidebar-link>
+    {{ partial "ui/icons/mask-icon" (dict "src" "arrow-right" "size" "1em" "rtl" (eq site.Language.Direction "rtl")) }}
+  </span>
+</a>

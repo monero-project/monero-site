@@ -1,0 +1,6 @@
+{{- /* Jump links to each letter on the Moneropedia index. Params: letters, ariaLabel. */ -}}
+<nav class="letter-nav" aria-label="{{ .ariaLabel }}" data-c-letter-nav>
+  {{- range .letters }}
+  <a class="letter-nav-link" href="#{{ . }}" data-c-letter-nav>{{ . }}</a>
+  {{- end }}
+</nav>

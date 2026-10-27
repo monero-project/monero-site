@@ -1,0 +1,3 @@
+{{- /* Sets the page meta for a blog listing page. Params: page, tag (slug or ""). */ -}}
+{{- $m := partial "pages/blog/list-info" . -}}
+{{- .page.Store.Set "meta" (dict "title" $m.title "description" $m.description) -}}

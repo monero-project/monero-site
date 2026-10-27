@@ -1,0 +1,26 @@
+{{- /*
+  Base layout for every page. A page template provides:
+
+    {{ define "meta" }}{{ .Store.Set "meta" (dict "title" "..." "description" "...") }}{{ end }}
+    {{ define "head" }}...extra <head> tags (optional)...{{ end }}
+    {{ define "main" }}...page content...{{ end }}
+
+  See _partials/head/seo.html for the meta fields.
+*/ -}}
+{{- block "meta" . }}{{ end -}}
+<!doctype html>
+<html lang="{{ site.Language.Lang }}" dir="{{ site.Language.Direction | default "ltr" }}" data-c-layout>
+<head>
+  {{ partial "head/seo" (dict "page" . "meta" (.Store.Get "meta" | default dict)) }}
+  {{ partial "head/css" . }}
+  {{- block "head" . }}{{ end }}
+</head>
+<body data-c-layout>
+  {{ partial "ui/header/header" . }}
+  <main data-c-layout>
+    {{ block "main" . }}{{ end }}
+  </main>
+  {{ partial "ui/footer" . }}
+  {{ partial "ui/preview-banner" . }}
+</body>
+</html>

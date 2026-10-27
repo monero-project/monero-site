@@ -1,0 +1,68 @@
+/* Styles for layouts/get-started/what-is-monero.html */
+hr[data-c-page-get-started-what-is-monero] {
+  margin: 0;
+}
+
+p[data-c-page-get-started-what-is-monero] {
+  margin-bottom: 0;
+}
+
+.eyebrow[data-c-page-get-started-what-is-monero] {
+  text-transform: uppercase;
+  font-weight: var(--font-weight-semibold);
+  color: var(--monero-orange);
+  font-size: var(--font-size-sm);
+}
+
+.content-section[data-c-page-get-started-what-is-monero] {
+  margin-block: var(--space-2xl);
+
+  & h2 {
+    font-size: var(--font-size-3xl);
+    color: var(--heading-color);
+    margin-top: var(--space-xs);
+  }
+
+  & p {
+    font-size: var(--font-size-lg);
+    color: var(--paragraph-subtitle);
+    line-height: var(--line-height-body);
+    max-width: 75ch;
+  }
+}
+
+.centered-section[data-c-page-get-started-what-is-monero] {
+  text-align: center;
+
+  & p {
+    margin-inline: auto;
+  }
+}
+
+.video-section[data-c-page-get-started-what-is-monero] {
+  margin-top: var(--space-xl);
+}
+
+.community-cta-links[data-c-page-get-started-what-is-monero] {
+  margin-top: var(--space-2xl);
+}
+
+.bleed-aside[data-c-page-get-started-what-is-monero] {
+  margin-block: 0;
+
+  & .content {
+    padding-block: var(--space-2xl);
+  }
+}
+
+.top-blur[data-c-page-get-started-what-is-monero] {
+  mask-image: linear-gradient(to bottom, transparent, var(--bg-color) 0%);
+}
+
+.final-cta[data-c-page-get-started-what-is-monero] {
+  padding-block: var(--space-2xl);
+
+  & .cta-title {
+    font-size: var(--font-size-3xl);
+  }
+}

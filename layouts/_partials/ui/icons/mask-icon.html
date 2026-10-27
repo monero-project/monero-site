@@ -1,0 +1,18 @@
+{{- /*
+  Single-colour icon drawn with a CSS mask, so it takes the text colour.
+
+    {{ partial "ui/icons/mask-icon" (dict "src" "close" "size" "1.5rem") }}
+
+  Params: src (mask icon name or asset path), size (default 1em, numbers are
+  px), rtl (mirror), color (default currentColor), spacing (inline-start margin).
+*/ -}}
+{{- $src := .src -}}
+{{- if not (strings.Contains $src "/") }}{{ $src = printf "icons/mask/%s.avif" $src }}{{ end -}}
+{{- $res := resources.Get $src -}}
+{{- if not $res }}{{ errorf "ui/icons/mask-icon: icon not found: src/assets/%s" $src }}{{ end -}}
+{{- $url := $res.RelPermalink -}}
+{{- $size := .size | default "1em" -}}
+{{- if eq (printf "%T" $size) "int" }}{{ $size = printf "%dpx" $size }}{{ end -}}
+{{- $style := printf "--iconSize: %s;--iconSrc: url(%s);--iconColor: %s;" $size $url (.color | default "currentColor") -}}
+{{- with .spacing }}{{ $style = printf "%s--spacing: %s;" $style . }}{{ end -}}
+<div class="icon"{{ partial "helpers/attrs" (dict "data-rtl" (cond (.rtl | default false) "true" "") "data-c-mask-icon" true "style" $style) }}></div>

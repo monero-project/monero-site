@@ -1,0 +1,5 @@
+/* Styles for layouts/_partials/ui/accordion/accordion.html */
+.accordion[data-c-accordion] {
+  display: flex;
+  flex-direction: column;
+}

@@ -46,7 +46,7 @@
         "website": {
             "name": "Website",
             "action": "Build and enhance getmonero.org.",
-            "bestFor": "TypeScript, Astro, web developers"
+            "bestFor": "Hugo, HTML/CSS, web developers"
         },
         "seraphis": {
             "name": "Dev Lab",

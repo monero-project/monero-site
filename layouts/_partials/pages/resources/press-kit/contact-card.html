@@ -1,0 +1,15 @@
+{{- /*
+  A press contact: title, description and the block (a link).
+
+    {{ with partial "pages/resources/press-kit/contact-card" (dict "title" "Press Inquiries" "description" "...") }}
+      <a href="mailto:press@getmonero.org">press@getmonero.org</a>
+    {{ end }}
+
+  Params: title, description.
+*/ -}}
+{{- $body := templates.Inner . -}}
+{{ with partial "ui/card" (dict "class" "contact-card" "attrs" (dict "data-c-contact-card" true) "title" .title "description" .description "body" $body) }}
+  <h3 data-c-contact-card>{{ .title }}</h3>
+  <p data-c-contact-card>{{ .description }}</p>
+  {{ .body }}
+{{ end }}

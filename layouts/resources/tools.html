@@ -1,0 +1,23 @@
+{{ define "meta" }}{{ .Store.Set "meta" (dict "title" (partial "helpers/t" "tools:index.pageTitle") "description" (partial "helpers/t" "tools:index.description")) }}{{ end }}
+{{ define "main" }}
+{{- $t := "helpers/t" -}}
+{{- $h := "helpers/href" -}}
+{{- $tools := index hugo.Data.resources "monero-tools" -}}
+{{- $exploreCount := add (len $tools.blockExplorers) (len $tools.networkTools) (len $tools.utilities) -}}
+{{- $categories := slice
+  (dict "title" (partial $t "tools:explore.title") "description" (partial $t "tools:explore.subtitle") "href" (partial $h "/resources/tools/explore") "image" "images/tools/explore.avif"
+    "linkText" (partial $t (slice "tools:index.itemsCount" (dict "num" (partial "helpers/number" $exploreCount)))))
+  (dict "title" (partial $t "tools:develop.title") "description" (partial $t "tools:develop.subtitle") "href" (partial $h "/resources/tools/develop") "image" "images/tools/develop.avif"
+    "linkText" (partial $t (slice "tools:index.itemsCount" (dict "num" (partial "helpers/number" (len $tools.developerLibraries))))))
+  (dict "title" (partial $t "tools:accept.title") "description" (partial $t "tools:accept.subtitle") "href" (partial $h "/resources/tools/accept") "image" "images/tools/accept.avif"
+    "linkText" (partial $t (slice "tools:index.itemsCount" (dict "num" (partial "helpers/number" (len $tools.paymentGateways))))))
+}}
+{{ partial "ui/title-card" (dict "title" (partial $t "tools:index.title") "subtitle" (partial $t "tools:index.subtitle")) }}
+{{ with partial "ui/layout/page-container" (dict "categories" $categories) }}
+  {{ with partial "ui/layout/grid" (dict "columns" 3 "gap" "xl" "categories" .categories) }}
+    {{- range .categories }}
+    {{ partial "ui/category-card" . }}
+    {{- end }}
+  {{ end }}
+{{ end }}
+{{ end }}

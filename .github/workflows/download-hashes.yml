@@ -327,12 +327,6 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - uses: actions/setup-node@v6
-        with:
-          node-version: "22"
-
-      - uses: pnpm/action-setup@v5
-
       - name: Install dependencies
         run: |
           sudo apt-get update
@@ -401,8 +395,9 @@ jobs:
       - name: Format metadata file
         run: |
           set -euo pipefail
-          pnpm install --frozen-lockfile
-          pnpm exec prettier --write src/data/downloads/core.json
+          # jq writes the same formatting the file is kept in (2-space indent)
+          jq . src/data/downloads/core.json > core.json.tmp
+          mv core.json.tmp src/data/downloads/core.json
 
       - name: Create pull request
         env:

@@ -1,0 +1,14 @@
+{{- /*
+  "Back" link with a chevron.
+
+    {{ with partial "ui/back-link" (dict "href" (partial "helpers/href" "/resources/tools/")) }}Monero Tools{{ end }}
+
+  Params: href, size (sm|lg, default sm), class, attrs.
+*/ -}}
+{{- $size := .size | default "sm" -}}
+<a{{ partial "helpers/attrs" (merge (dict "href" .href "class" (trim (printf "back-link %s" (.class | default "")) " ") "data-size" $size "data-c-back-link" true) (.attrs | default dict)) }}>
+  <span class="icon-wrap" data-c-back-link>
+    {{ partial "ui/icons/mask-icon" (dict "src" "chevron-left" "size" (cond (eq $size "lg") "1.25rem" "1.125rem") "rtl" (eq site.Language.Direction "rtl")) }}
+  </span>
+  <span class="label" data-c-back-link>{{ templates.Inner . }}</span>
+</a>

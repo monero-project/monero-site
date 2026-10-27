@@ -1,0 +1,27 @@
+{{- /*
+  Two-column section: content (the block) next to an aside (image etc.),
+  stacked on narrow screens.
+
+    {{ with partial "ui/media-section" (dict "reverse" true "aside" (partial "ui/themeable-image" ...)) }}
+      <h2>...</h2>
+    {{ end }}
+
+  Params: reverse, hideAsideOnMobile (default true), aside (HTML),
+  as (section|div|article, default section), class, attrs.
+*/ -}}
+{{- $tag := .as | default "section" -}}
+{{- $a := dict
+  "class" (trim (printf "section %s" (.class | default "")) " ")
+  "data-reverse" (cond (.reverse | default false) "true" "")
+  "data-hide-aside" (cond (eq .hideAsideOnMobile false) "" "true")
+  "data-c-media-section" true
+-}}
+{{- /* html/template can't write a tag name from a variable, hence printf */ -}}
+{{ printf "<%s%s>" $tag (partial "helpers/attrs" (merge $a (.attrs | default dict))) | safeHTML }}
+  <div class="content" data-c-media-section>
+    {{ templates.Inner . }}
+  </div>
+  <div class="aside" data-c-media-section>
+    {{ .aside }}
+  </div>
+{{ printf "</%s>" $tag | safeHTML }}

@@ -1,0 +1,9 @@
+/* Styles for layouts/get-started/mining.html */
+.column-title[data-c-page-get-started-mining] {
+  margin: 0;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--paragraph-main);
+}

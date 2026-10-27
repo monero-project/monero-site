@@ -1,0 +1,37 @@
+{{- /*
+  Home page hero: "Monero means money" over the outlined Monero logo, with
+  the lead text and two buttons.
+
+    {{ partial "pages/index/hero" (dict "class" "index-hero" "attrs" (dict "data-c-page-home" true)) }}
+
+  Params: class, attrs.
+*/ -}}
+{{- $t := "helpers/t" -}}
+{{- $a := dict "class" (trim (printf "hero %s" (.class | default "")) " ") "aria-labelledby" "hero-title" "data-c-hero" true -}}
+<div{{ partial "helpers/attrs" (merge $a (.attrs | default dict)) }}>
+  <div class="background-logo" aria-hidden="true" data-c-hero>
+    <div class="logo-box" data-c-hero>
+      <div class="mask-icon" data-c-hero>
+        {{ partial "ui/icons/mask-icon" (dict "src" "monerooutline" "size" "100%") }}
+      </div>
+      <div class="inner-circle" data-c-hero></div>
+    </div>
+  </div>
+
+  <div class="wrap" data-c-hero>
+    <h1 id="hero-title" class="title" data-c-hero>
+      <span class="accent" data-c-hero>{{ partial $t "index:hero.titleMonero" }}</span><br data-c-hero>
+      <span class="plain" data-c-hero>{{ partial $t "index:hero.titleMeans" }}</span>
+      <span class="accent" data-c-hero>{{ partial $t "index:hero.titleMoney" }}</span>
+    </h1>
+
+    <p class="lead" data-c-hero>
+      {{ partial $t "index:hero.lead" }}
+    </p>
+
+    <div class="actions" data-c-hero>
+      {{ with partial "ui/button" (dict "variant" "primary" "class" "hero-button" "href" "#start-using-monero" "attrs" (dict "data-c-hero" true)) }}{{ partial "helpers/t" "index:hero.getStarted" }}{{ end }}
+      {{ with partial "ui/button" (dict "variant" "secondary" "class" "hero-button" "href" (partial "helpers/href" "/get-started/what-is-monero/") "attrs" (dict "data-c-hero" true)) }}{{ partial "helpers/t" "index:hero.aboutMonero" }}{{ end }}
+    </div>
+  </div>
+</div>

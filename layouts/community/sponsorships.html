@@ -1,0 +1,53 @@
+{{ define "meta" }}{{ .Store.Set "meta" (dict "title" (partial "helpers/t" "sponsorships:pageTitle") "description" (partial "helpers/t" "sponsorships:hero.subtitle")) }}{{ end }}
+{{ define "main" }}
+{{- $t := "helpers/t" -}}
+{{- $scope := dict "data-c-page-community-sponsorships" true -}}
+{{- $d := dict "scope" $scope "sponsors" hugo.Data.community.sponsors -}}
+{{ partial "ui/title-card" (dict "title" (partial $t "sponsorships:hero.title") "subtitle" (partial $t "sponsorships:hero.subtitle")) }}
+{{ with partial "ui/layout/page-container" (dict "attrs" $scope "d" $d) }}
+  {{ with partial "ui/layout/page-section" (dict
+    "title" (partial "helpers/t" "sponsorships:currentSponsors.title")
+    "subtitle" (partial "helpers/t" "sponsorships:currentSponsors.subtitle")
+    "attrs" .d.scope "d" .d
+  ) }}
+    {{ with partial "ui/layout/grid" (dict "columns" 3 "gap" "md" "attrs" .d.scope "d" .d) }}
+      {{- range .d.sponsors.currentSponsors }}
+      {{ partial "pages/community/sponsorships/sponsor-card" (dict
+        "name" .name
+        "description" (partial "helpers/t" (printf "sponsorships:contributions.%s" .id))
+        "href" .link
+        "logo" .logo
+        "monochrome" .monochrome
+      ) }}
+      {{- end }}
+    {{ end }}
+  {{ end }}
+
+  {{ with partial "ui/ctacard" (dict
+    "title" (partial "helpers/t" "sponsorships:becomeASponsor.title")
+    "href" "mailto:dev@getmonero.org"
+    "linkText" (partial "helpers/t" "sponsorships:becomeASponsor.cta")
+    "icon" "heart-plus"
+    "variant" "centered"
+    "attrs" .d.scope
+  ) }}
+    {{ partial "helpers/t" "sponsorships:becomeASponsor.description" }}
+  {{ end }}
+
+  <hr aria-hidden="true" data-c-page-community-sponsorships>
+
+  {{ with partial "ui/layout/page-section" (dict
+    "title" (partial "helpers/t" "sponsorships:pastSponsors.title")
+    "subtitle" (partial "helpers/t" "sponsorships:pastSponsors.subtitle")
+    "attrs" .d.scope "d" .d
+  ) }}
+    {{ with partial "ui/layout/row" (dict "gap" "sm" "attrs" .d.scope "d" .d) }}
+      {{- range .d.sponsors.pastSponsors }}
+      <a{{ partial "helpers/attrs" (dict "href" .link) }} target="_blank" rel="noopener noreferrer" class="past-sponsor-chip" data-c-page-community-sponsorships>
+        {{ .name }}
+      </a>
+      {{- end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ end }}

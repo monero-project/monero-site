@@ -1,0 +1,19 @@
+/* Styles for layouts/_partials/ui/themeable-image.html */
+[data-c-themeable-image][data-rtl] {
+  transform: scaleX(-1);
+  transform-origin: center;
+}
+
+.dark-only[data-c-themeable-image] {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .light-only[data-c-themeable-image] {
+    display: none;
+  }
+
+  .dark-only[data-c-themeable-image] {
+    display: block;
+  }
+}

@@ -1,0 +1,76 @@
+{{ define "meta" }}{{ .Store.Set "meta" (dict "title" (partial "helpers/t" "accept-monero:pageTitle") "description" (partial "helpers/t" "accept-monero:description")) }}{{ end }}
+
+{{- /* Buttons for the services of a setup option. Params: services (list of href, title, subtitle). */ -}}
+{{- define "_partials/inline/accept-monero-services" -}}
+{{ with partial "ui/layout/column" (dict "gap" "xs" "class" "service-buttons" "attrs" (dict "data-c-page-get-started-accept-monero" true) "services" .services) }}
+  {{- range .services }}
+  {{ partial "ui/external-resource-button" (dict "href" .href "title" .title "subtitle" .subtitle "border" true "attrs" (dict "data-c-page-get-started-accept-monero" true)) }}
+  {{- end }}
+{{ end }}
+{{- end -}}
+
+{{ define "main" }}
+{{- $t := "helpers/t" -}}
+{{- $h := "helpers/href" -}}
+{{- $p := dict "data-c-page-get-started-accept-monero" true -}}
+{{- $k := "accept-monero:steps.chooseSetup" -}}
+{{- /* Step 1 setup options: each has a link (href + linkKey) or service buttons */ -}}
+{{- $setups := slice
+  (dict "key" "wallet" "open" true "href" (partial $h "/downloads/community/#wallets") "linkKey" "viewWallets")
+  (dict "key" "pos" "services" (slice
+    (dict "href" "https://bitrequest.io/" "title" "BitRequest" "subtitle" (partial $t (printf "%s.pos.services.bitrequest" $k)))
+    (dict "href" "https://docs.btcpayserver.org/Apps/#point-of-sale-app" "title" "BTCPay Server POS" "subtitle" (partial $t (printf "%s.pos.services.btcpayPos" $k)))))
+  (dict "key" "processor" "href" (partial $h "/resources/tools/accept/") "linkKey" "viewGateways")
+  (dict "key" "selfHosted" "services" (slice
+    (dict "href" "https://btcpayserver.org/" "title" "BTCPay Server" "subtitle" (partial $t (printf "%s.selfHosted.services.btcpay" $k)))
+    (dict "href" "https://bitcart.ai/" "title" "Bitcart" "subtitle" (partial $t (printf "%s.selfHosted.services.bitcart" $k)))
+    (dict "href" "https://github.com/moneropay/moneropay" "title" "MoneroPay" "subtitle" (partial $t (printf "%s.selfHosted.services.moneropay" $k)))))
+-}}
+{{- $d := dict "p" $p "setups" $setups -}}
+
+{{ partial "ui/title-card" (dict "title" (partial $t "accept-monero:title") "subtitle" (partial $t "accept-monero:subtitle")) }}
+{{ with partial "ui/layout/page-container" (dict "attrs" $p "d" $d) }}
+  {{ with partial "pages/get-started/accept-monero/guide-step" (dict "step" 1 "title" (partial "helpers/t" "accept-monero:steps.chooseSetup.title") "icon" "app-window" "align" "start" "d" .d) }}
+    <p data-c-page-get-started-accept-monero>{{ partial "helpers/t" "accept-monero:steps.chooseSetup.intro" }}</p>
+    {{ with partial "ui/accordion/accordion" (dict "d" .d) }}
+      {{- range .d.setups }}
+      {{- $k := printf "accept-monero:steps.chooseSetup.%s" .key }}
+      {{ with partial "ui/accordion/accordion-item" (merge . (dict "title" (partial "helpers/t" (printf "%s.title" $k)) "variant" "card" "name" "method" "k" $k)) }}
+        <p data-c-page-get-started-accept-monero>
+          {{ partial "helpers/t" (printf "%s.description" .k) }}
+        </p>
+        {{- if .services }}
+        {{ partial "inline/accept-monero-services" . }}
+        {{- else }}
+        {{ with partial "ui/icon-link" (dict "href" .href "underline" true "attrs" (dict "data-c-page-get-started-accept-monero" true) "label" (partial "helpers/t" (printf "%s.%s" .k .linkKey))) }}
+          {{ .label }}
+        {{ end }}
+        {{- end }}
+      {{ end }}
+      {{- end }}
+    {{ end }}
+  {{ end }}
+  <hr data-c-page-get-started-accept-monero>
+  {{ with partial "pages/get-started/accept-monero/guide-step" (dict "step" 2 "title" (partial "helpers/t" "accept-monero:steps.acceptPayment.title") "icon" "hand-coins" "reverse" true) }}
+    <p data-c-page-get-started-accept-monero>
+      {{ partial "helpers/t" "accept-monero:steps.acceptPayment.description" }}
+    </p>
+    <p data-c-page-get-started-accept-monero>
+      <strong data-c-page-get-started-accept-monero>{{ partial "helpers/t" "accept-monero:steps.acceptPayment.confirmationsLabel" }}</strong>
+      {{ partial "helpers/t" "accept-monero:steps.acceptPayment.confirmations" }}
+    </p>
+    {{ with partial "pages/get-started/accept-monero/tip-box" (dict "showIcon" true) }}
+      {{ partial "helpers/t" "accept-monero:steps.acceptPayment.tip" }}
+    {{ end }}
+  {{ end }}
+  <hr data-c-page-get-started-accept-monero>
+  {{ with partial "pages/get-started/accept-monero/guide-step" (dict "step" 3 "title" (partial "helpers/t" "accept-monero:steps.getListed.title") "icon" "users") }}
+    <p data-c-page-get-started-accept-monero>
+      {{ partial "helpers/t" "accept-monero:steps.getListed.description" }}
+    </p>
+    {{ with partial "ui/icon-link" (dict "href" (partial "helpers/href" "/get-started/merchants") "underline" true "attrs" (dict "data-c-page-get-started-accept-monero" true)) }}
+      {{ partial "helpers/t" "accept-monero:steps.getListed.viewDirectories" }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ end }}

@@ -1,0 +1,12 @@
+{{- /*
+  Wrapper that sizes a <video> (the block).
+
+    {{ with partial "ui/video-container" (dict "maxWidth" "40rem" "centered" true) }}<video ...></video>{{ end }}
+
+  Params: maxWidth (default 100%), centered, class, attrs.
+*/ -}}
+{{- $a := merge (dict "class" (trim (printf "video-container %s" (.class | default "")) " ") "style" (printf "--video-max-width: %s" (.maxWidth | default "100%")) "data-c-video-container" true) (.attrs | default dict) -}}
+{{- /* data-centered is always written, as "true" or "false" */ -}}
+<div{{ partial "helpers/attrs" (merge $a (dict "data-centered" (cond (.centered | default false) "true" "false"))) }}>
+  {{ templates.Inner . }}
+</div>

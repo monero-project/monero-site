@@ -1,0 +1,65 @@
+{{- /*
+  A downloadable brand asset: preview, name, description, a download link per
+  variant and size, and an optional vector download.
+
+    {{ partial "pages/resources/press-kit/brand-asset-card" $asset }}
+
+  Params: an entry of hugo.Data.resources.press-kit.brandAssets (id, preview
+  (a file under public/), variants (list of dict labelKey, sizes (list of dict
+  labelKey, url)), vectorUrl).
+*/ -}}
+{{- /* The preview is a public file, served as is: the srcset lists the same
+  file at the display width, the breakpoints up to twice it, and twice it */ -}}
+{{- $preview := images.Config (path.Join "public" .preview) -}}
+{{- $w := $preview.Width -}}
+{{- $widths := slice $w -}}
+{{- range (slice 640 750 828 1080 1280 1668 2048 2560) }}{{ if and (gt . $w) (lt . (mul $w 2)) }}{{ $widths = $widths | append . }}{{ end }}{{ end -}}
+{{- $widths = $widths | append (mul $w 2) -}}
+{{- $srcset := slice -}}
+{{- range $widths }}{{ $srcset = $srcset | append (printf "%s %dw" $.preview .) }}{{ end -}}
+{{- $img := dict
+  "src" .preview
+  "srcset" (delimit $srcset ", ")
+  "loading" "lazy"
+  "decoding" "async"
+  "sizes" (printf "(min-width: %dpx) %dpx, 100vw" $w $w)
+  "data-image" "constrained"
+  "data-image-fit" "cover"
+  "data-image-pos" "center"
+  "width" $w
+  "height" $preview.Height
+  "data-c-brand-asset-card" true
+-}}
+{{ with partial "ui/card" (dict "attrs" (dict "data-c-brand-asset-card" true) "asset" . "img" $img) }}
+  <div class="asset-preview" data-c-brand-asset-card>
+    <img alt=""{{ partial "helpers/attrs" .img }}>
+  </div>
+
+  <div class="asset-header" data-c-brand-asset-card>
+    <h3 data-c-brand-asset-card>{{ partial "helpers/t" (printf "press-kit:assets.%s.name" .asset.id) }}</h3>
+    <p data-c-brand-asset-card>{{ partial "helpers/t" (printf "press-kit:assets.%s.description" .asset.id) }}</p>
+  </div>
+
+  {{ with partial "ui/layout/column" (dict "gap" "md" "attrs" (dict "data-c-brand-asset-card" true) "variants" .asset.variants) }}
+    {{- range .variants }}
+    {{ with partial "ui/layout/row" (dict "gap" "xs" "attrs" (dict "data-c-brand-asset-card" true) "variant" .) }}
+      <span class="variant-label" data-c-brand-asset-card>
+        {{ partial "helpers/t" (printf "press-kit:assets.variants.%s" .variant.labelKey) }}
+      </span>
+      {{ with partial "ui/layout/row" (dict "gap" "md" "attrs" (dict "data-c-brand-asset-card" true) "sizes" .variant.sizes) }}
+        {{- range .sizes }}
+        <a href="{{ .url }}" class="size-link" download target="_blank" rel="noopener noreferrer" data-c-brand-asset-card>
+          {{ partial "helpers/t" (printf "press-kit:assets.sizes.%s" .labelKey) }}
+        </a>
+        {{- end }}
+      {{ end }}
+    {{ end }}
+    {{- end }}
+  {{ end }}
+
+  {{- with .asset.vectorUrl }}
+  <div class="vector-download" data-c-brand-asset-card>
+    {{ with partial "ui/button" (dict "href" . "variant" "secondary" "attrs" (dict "data-c-brand-asset-card" true)) }}{{ partial "helpers/t" "press-kit:sections.brandAssets.downloadVector" }}{{ end }}
+  </div>
+  {{- end }}
+{{ end }}

@@ -1,5 +1,4 @@
-node_modules
 dist
-.astro
+resources/_gen
 .git
 .github

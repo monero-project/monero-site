@@ -1,0 +1,27 @@
+{{- /*
+  Link @term mentions in rendered page content (blog posts, Moneropedia, legal).
+
+    {{ partial "helpers/moneropedia-content" (dict "html" .Content "lang" "en") }}
+
+  Like helpers/moneropedia-links, but only rewrites text: tag attributes and
+  text inside <a>, <code> and <pre> are left alone. Blog posts always link to
+  the English entries (lang "en"); Moneropedia entries use their own language.
+*/ -}}
+{{- $html := string .html -}}
+{{- $out := $html -}}
+{{- if strings.Contains $html "@" -}}
+  {{- $out = "" -}}
+  {{- $skip := 0 -}}
+  {{- range findRE `<[^>]*>|[^<]+` $html -}}
+    {{- if hasPrefix . "<" -}}
+      {{- if findRE `^<(a|code|pre)[\s>]` . }}{{ $skip = add $skip 1 }}{{ end -}}
+      {{- if and (findRE `^</(a|code|pre)>` .) (gt $skip 0) }}{{ $skip = sub $skip 1 }}{{ end -}}
+      {{- $out = printf "%s%s" $out . -}}
+    {{- else if and (eq $skip 0) (strings.Contains . "@") -}}
+      {{- $out = printf "%s%s" $out (partial "helpers/moneropedia-links" (dict "html" . "lang" $.lang)) -}}
+    {{- else -}}
+      {{- $out = printf "%s%s" $out . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return (safeHTML $out) -}}

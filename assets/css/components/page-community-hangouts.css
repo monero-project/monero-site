@@ -1,0 +1,4 @@
+/* Styles for layouts/community/hangouts.html */
+.hangouts-grid[data-c-page-community-hangouts] {
+  margin-top: var(--space-2xl);
+}

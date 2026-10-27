@@ -1,0 +1,24 @@
+{{- /*
+  Mobile bar that opens the exchanges filters, showing the selected filter.
+
+    {{ partial "pages/get-started/exchanges/mobile-filter-bar" (dict "toggleId" "mobile-filter-toggle" "title" "..." "filterTexts" (slice (dict "filter" "fiat" "text" "..."))) }}
+
+  Params: toggleId, title, filterTexts (list of filter + text).
+*/ -}}
+<div class="mobile-filter-container" data-c-mobile-filter-bar>
+  <label for="{{ .toggleId }}" class="mobile-filter-bar" data-c-mobile-filter-bar>
+    <div class="mobile-filter-bar-inner" data-c-mobile-filter-bar>
+      {{ partial "ui/icons/mask-icon" (dict "src" "search" "size" "1.25em" "rtl" (eq site.Language.Direction "rtl")) }}
+      {{ with partial "ui/layout/column" (merge . (dict "gap" "3xs" "attrs" (dict "data-c-mobile-filter-bar" true))) }}
+        <span data-c-mobile-filter-bar>{{ .title }}</span>
+        <div class="mobile-filter-subtitle" data-c-mobile-filter-bar>
+          {{- range .filterTexts }}
+          <span class="filter-text" data-filter="{{ .filter }}" data-c-mobile-filter-bar>
+            {{ .text }}
+          </span>
+          {{- end }}
+        </div>
+      {{ end }}
+    </div>
+  </label>
+</div>

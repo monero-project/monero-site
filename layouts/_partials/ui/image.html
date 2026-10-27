@@ -1,0 +1,65 @@
+{{- /*
+  Responsive <img> for a file under assets/ (src/assets or public/meta),
+  "constrained": srcset at 1x/2x the display width plus the standard
+  breakpoints, never upscaled.
+
+    {{ partial "ui/image" (dict "src" "images/landing.avif" "alt" "" "format" "avif") }}
+
+  Params: src, alt, width, height, format (default webp), class, priority,
+  loading (default lazy), attrs (passed through, e.g. a parent's scope attr).
+*/ -}}
+{{- $img := .src -}}
+{{- if reflect.IsMap $img | not }}{{ with resources.Get .src }}{{ $img = . }}{{ else }}{{ errorf "image not found: %s" $.src }}{{ end }}{{ end -}}
+{{- $format := .format | default "webp" -}}
+{{- $isSVG := eq $img.MediaType.SubType "svg" -}}
+{{- $ow := 0 }}{{ $oh := 0 -}}
+{{- if $isSVG -}}
+  {{- /* SVGs aren't resized; read their size from the width/height or viewBox attributes */ -}}
+  {{- $svg := $img.Content -}}
+  {{- $w := index (findRESubmatch `<svg[^>]*\swidth="([0-9.]+)` $svg 1) 0 1 | default "" -}}
+  {{- $h := index (findRESubmatch `<svg[^>]*\sheight="([0-9.]+)` $svg 1) 0 1 | default "" -}}
+  {{- if not (and $w $h) -}}
+    {{- with findRESubmatch `<svg[^>]*\sviewBox="[0-9.-]+[ ,]+[0-9.-]+[ ,]+([0-9.]+)[ ,]+([0-9.]+)"` $svg 1 -}}
+      {{- $w = index . 0 1 }}{{ $h = index . 0 2 -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $ow = int (math.Round (float ($w | default 0))) }}{{ $oh = int (math.Round (float ($h | default 0))) -}}
+{{- else -}}
+  {{- $ow = $img.Width }}{{ $oh = $img.Height -}}
+{{- end -}}
+{{- $w := int (.width | default $ow) -}}
+{{- $h := int (.height | default (cond (gt $ow 0) (math.Round (div (mul (float $w) $oh) $ow)) 0)) -}}
+{{- $src := $img.RelPermalink -}}
+{{- $srcset := slice -}}
+{{- if eq (os.Getenv "SKIP_IMAGE_OPTIMIZATION") "true" -}}
+  {{- /* faster preview builds: the image as it is, not resized */ -}}
+  {{- $srcset = slice (printf "%s %dw" $src $ow) -}}
+{{- else if $isSVG -}}
+  {{- $srcset = slice (printf "%s %dw" $src $w) -}}
+{{- else -}}
+  {{- $max := math.Min (mul $w 2) $ow -}}
+  {{- $widths := slice -}}
+  {{- range (slice $w (mul $w 2) 640 750 828 1080 1280 1668 2048 2560) -}}
+    {{- if and (le . $max) (not (in $widths .)) }}{{ $widths = $widths | append . }}{{ end -}}
+  {{- end -}}
+  {{- range sort $widths -}}
+    {{- $r := $img.Resize (printf "%dx %s" . $format) -}}
+    {{- $srcset = $srcset | append (printf "%s %dw" $r.RelPermalink .) -}}
+    {{- if eq . $w }}{{ $src = $r.RelPermalink }}{{ end -}}
+  {{- end -}}
+{{- end -}}
+{{- $a := dict
+  "src" $src
+  "srcset" (delimit $srcset ", ")
+  "loading" (cond (.priority | default false) "eager" (.loading | default "lazy"))
+  "decoding" (cond (.priority | default false) "sync" "async")
+  "fetchpriority" (cond (.priority | default false) "high" "")
+  "sizes" (printf "(min-width: %dpx) %dpx, 100vw" $w $w)
+  "data-image" "constrained"
+  "data-image-fit" "cover"
+  "data-image-pos" "center"
+  "width" $w
+  "height" $h
+  "class" .class
+-}}
+<img alt="{{ .alt | default "" }}"{{ partial "helpers/attrs" (merge $a (.attrs | default dict)) }}>

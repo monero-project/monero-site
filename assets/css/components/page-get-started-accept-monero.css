@@ -1,0 +1,4 @@
+/* Styles for layouts/get-started/accept-monero.html */
+.service-buttons[data-c-page-get-started-accept-monero] {
+  margin-top: var(--space-md);
+}

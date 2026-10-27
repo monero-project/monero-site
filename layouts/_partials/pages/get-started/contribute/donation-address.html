@@ -1,0 +1,41 @@
+{{- /*
+  A donation address card: currency name, QR code and address, plus an
+  expandable view-only wallet section when viewAddress and viewKey are given.
+
+    {{ partial "pages/get-started/contribute/donation-address" (dict "currency" "Monero (XMR)" "address" "888..." "qrCode" "/contributing/donate-monero.png") }}
+
+  Params: currency, address, qrCode (path of a file in public/), viewAddress,
+  viewKey, viewOnlyLabel, primaryAddressLabel, viewKeyLabel.
+*/ -}}
+<div class="donation-address" data-c-donation-address>
+  <div class="address-header" data-c-donation-address>
+    <h4 class="currency-name" data-c-donation-address>{{ .currency }}</h4>
+  </div>
+  <div class="address-content" data-c-donation-address>
+    {{- /* a public/ file isn't processed, so this is the <img> ui/image would write, by hand */}}
+    <img src="{{ .qrCode }}" srcset="{{ .qrCode }} 200w, {{ .qrCode }} 400w" alt="QR code for {{ .currency }} donation" loading="lazy" decoding="async" sizes="(min-width: 200px) 200px, 100vw" data-image="constrained" data-image-fit="cover" data-image-pos="center" width="200" height="200" class="qr-code" data-c-donation-address>
+    <div class="address-details" data-c-donation-address>
+      <code class="address" data-c-donation-address>{{ .address }}</code>
+      {{- if and .viewAddress .viewKey }}
+      <details class="view-only-details" data-c-donation-address>
+        <summary data-c-donation-address>
+          <span class="icon" data-c-donation-address>
+            {{ partial "ui/icons/mask-icon" (dict "src" "chevron-down" "size" "0.875em") }}
+          </span>
+          <span data-c-donation-address>{{ .viewOnlyLabel | default "View-only wallet details" }}</span>
+        </summary>
+        <div class="view-only-content" data-c-donation-address>
+          <p data-c-donation-address>
+            <strong data-c-donation-address>{{ .primaryAddressLabel | default "Primary address" }}</strong>
+          </p>
+          <code data-c-donation-address>{{ .viewAddress }}</code>
+          <p data-c-donation-address>
+            <strong data-c-donation-address>{{ .viewKeyLabel | default "View Key" }}</strong>
+          </p>
+          <code data-c-donation-address>{{ .viewKey }}</code>
+        </div>
+      </details>
+      {{- end }}
+    </div>
+  </div>
+</div>

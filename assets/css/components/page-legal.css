@@ -1,0 +1,27 @@
+/* Styles for layouts/legal.html */
+.legal-content[data-c-page-legal] {
+  max-width: 75ch;
+  margin-inline: auto;
+}
+
+.prose[data-c-page-legal] {
+  line-height: var(--line-height-body);
+
+  & h3 {
+    font-size: var(--font-size-lg);
+    color: var(--heading-color);
+    margin: var(--space-2xl) 0 var(--space-sm);
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  & p {
+    margin: 0 0 var(--space-md);
+  }
+
+  & li {
+    margin-bottom: var(--space-xs);
+  }
+}

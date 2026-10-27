@@ -1,0 +1,58 @@
+/* Styles for layouts/_partials/ui/internal-resource-button.html */
+.info-bar[data-c-internal-resource-button] {
+  position: relative;
+  margin: var(--space-md) 0;
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  text-decoration: none;
+  color: inherit;
+}
+
+.info-icon[data-c-internal-resource-button] {
+  color: var(--monero-orange);
+  flex-shrink: 0;
+  display: flex;
+  align-self: center;
+}
+
+.info-content[data-c-internal-resource-button] {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  min-width: 0;
+
+  & .info-title {
+    margin: 0;
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-semibold);
+    color: var(--heading-color);
+  }
+
+  & .info-description {
+    margin: 0;
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+  }
+}
+
+.info-arrow[data-c-internal-resource-button] {
+  color: var(--monero-orange);
+  flex-shrink: 0;
+  display: flex;
+  margin-inline-start: auto;
+  opacity: 0.8;
+  transition: opacity 0.15s;
+}
+
+a[data-c-internal-resource-button].info-bar {
+  &:hover .info-arrow[data-c-internal-resource-button],
+  &:focus-visible .info-arrow[data-c-internal-resource-button] {
+    opacity: 1;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--monero-orange);
+    outline-offset: 2px;
+  }
+}

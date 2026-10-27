@@ -1,0 +1,36 @@
+{{- /*
+  A content page's rendered Markdown (blog posts, Moneropedia, legal), with
+    - footnotes in the markup the site has always used (GitHub-style: ids from
+      the footnote labels, a "Footnotes" heading for screen readers)
+    - bare web and e-mail addresses linked (helpers/autolink)
+    - @term mentions turned into Moneropedia links (helpers/moneropedia-content)
+
+    {{ partial "helpers/content" (dict "page" . "lang" "en") }}
+
+  lang: whose Moneropedia entries to link (default: current language).
+*/ -}}
+{{- $html := string .page.Content -}}
+{{- if strings.Contains $html `class="footnote-ref"` -}}
+  {{- /* Hugo numbers footnotes in order of first reference; get their labels in that order */ -}}
+  {{- $labels := slice -}}
+  {{- range findRESubmatch `\[\^([^\]\s]+)\]([^:]|$)` .page.RawContent -}}
+    {{- $labels = $labels | append (index . 1) -}}
+  {{- end -}}
+  {{- $html = replace $html "\n&#160;<a href=\"#fnref" "&#160;<a href=\"#fnref" -}}
+  {{- range $i, $label := uniq $labels -}}
+    {{- $n := add $i 1 -}}
+    {{- $ref := printf "user-content-fnref-%s" $label -}}
+    {{- /* the first reference and its back link, then repeats (fnref1:, fnref2:, ...) */ -}}
+    {{- $html = replace $html (printf `<sup id="fnref:%d"><a href="#fn:%d" class="footnote-ref" role="doc-noteref">%d</a></sup>` $n $n $n) (printf `<sup><a href="#user-content-fn-%s" id="%s" data-footnote-ref aria-describedby="footnote-label">%d</a></sup>` $label $ref $n) -}}
+    {{- $html = replace $html (printf `<li id="fn:%d">` $n) (printf `<li id="user-content-fn-%s">` $label) -}}
+    {{- $html = replace $html (printf "&#160;<a href=\"#fnref:%d\" class=\"footnote-backref\" role=\"doc-backlink\">&#x21a9;&#xfe0e;</a>" $n) (printf ` <a href="#%s" data-footnote-backref aria-label="Back to reference %d" class="data-footnote-backref">↩</a>` $ref $n) -}}
+    {{- range $k := seq 9 -}}
+      {{- $html = replace $html (printf `<sup id="fnref%d:%d"><a href="#fn:%d" class="footnote-ref" role="doc-noteref">%d</a></sup>` $k $n $n $n) (printf `<sup><a href="#user-content-fn-%s" id="%s-%d" data-footnote-ref aria-describedby="footnote-label">%d</a></sup>` $label $ref (add $k 1) $n) -}}
+      {{- $html = replace $html (printf "&#160;<a href=\"#fnref%d:%d\" class=\"footnote-backref\" role=\"doc-backlink\">&#x21a9;&#xfe0e;</a>" $k $n) (printf ` <a href="#%s-%d" data-footnote-backref aria-label="Back to reference %d-%d" class="data-footnote-backref">↩<sup>%d</sup></a>` $ref (add $k 1) $n (add $k 1) (add $k 1)) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $html = replace $html "<div class=\"footnotes\" role=\"doc-endnotes\">\n<hr>\n<ol>" "<section data-footnotes class=\"footnotes\"><h2 class=\"sr-only\" id=\"footnote-label\">Footnotes</h2>\n<ol>" -}}
+  {{- $html = replaceRE `</ol>\n</div>\s*$` "</ol>\n</section>" $html -}}
+{{- end -}}
+{{- $html = partial "helpers/autolink" (dict "html" $html) -}}
+{{- return partial "helpers/moneropedia-content" (dict "html" $html "lang" .lang) -}}

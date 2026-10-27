@@ -1,0 +1,47 @@
+{{- /*
+  Table of repositories: icon and name, description, stack tags and a visit link.
+
+    {{ partial "pages/get-started/contribute/projects-table" (dict
+      "projects" (slice (dict "title" "Daemon" "description" "..." "tags" (slice "C++") "href" "https://..." "icon" "terminal"))
+      "headers" (dict "project" "Project" "description" "Description" "stack" "Stack" "visit" "Visit")
+    ) }}
+
+  Params: projects (title, description, tags, href, icon: mask icon name), headers.
+*/ -}}
+{{ with partial "ui/card" (dict "padding" "none" "attrs" (dict "data-c-projects-table" true) "d" .) }}
+  {{- $headers := .d.headers }}
+  <table class="projects-table" data-c-projects-table>
+    <thead class="table-head" data-c-projects-table>
+      <tr data-c-projects-table>
+        <th scope="col" data-c-projects-table>{{ $headers.project }}</th>
+        <th scope="col" data-c-projects-table>{{ $headers.description }}</th>
+        <th scope="col" data-c-projects-table>{{ $headers.stack }}</th>
+        <th scope="col" class="th-link" data-c-projects-table>
+          <span class="sr-only" data-c-projects-table>{{ $headers.visit }}</span>
+        </th>
+      </tr>
+    </thead>
+    <tbody data-c-projects-table>
+      {{- range .d.projects }}
+      <tr class="project-row" data-c-projects-table>
+        <td class="cell-project" data-c-projects-table>
+          <span class="project-icon" data-c-projects-table>
+            {{ partial "ui/icons/mask-icon" (dict "src" .icon "size" "1rem") }}
+          </span>
+          <span class="project-name" data-c-projects-table>{{ .title }}</span>
+        </td>
+        <td class="cell-desc" data-c-projects-table>{{ .description }}</td>
+        <td class="cell-stack" data-c-projects-table>
+          {{- /* no whitespace between tags: the CSS spaces them */}}
+          {{ range .tags }}<span class="tag" data-c-projects-table>{{ . }}</span>{{ end }}
+        </td>
+        <td class="cell-link" data-c-projects-table>
+          <a href="{{ .href }}" target="_blank" rel="noopener noreferrer" class="visit-link" data-c-projects-table>
+            {{ $headers.visit }}
+          </a>
+        </td>
+      </tr>
+      {{- end }}
+    </tbody>
+  </table>
+{{ end }}

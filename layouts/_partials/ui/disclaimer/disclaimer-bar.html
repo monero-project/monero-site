@@ -1,0 +1,20 @@
+{{- /*
+  Disclaimer box with an optional icon and title. The block is the text
+  (inline HTML, it goes inside a <p>).
+
+    {{ with partial "ui/disclaimer/disclaimer-bar" (dict "icon" "shield-alert" "title" "Disclaimer") }}Use at your own risk.{{ end }}
+
+  Params: icon (mask icon name or asset path), title.
+*/ -}}
+{{- $text := templates.Inner . -}}
+{{ with partial "ui/card" (dict "as" "aside" "padding" "md" "class" "disclaimer-bar" "attrs" (dict "data-c-disclaimer-bar" true) "icon" .icon "title" .title "text" $text) }}
+  {{- with .icon }}
+  <span class="disclaimer-icon" data-c-disclaimer-bar>
+    {{ partial "ui/icons/mask-icon" (dict "src" . "size" "1.5em") }}
+  </span>
+  {{- end }}
+  {{- with .title }}
+  <span class="disclaimer-title" data-c-disclaimer-bar>{{ . }}</span>
+  {{- end }}
+  <p class="disclaimer-text" data-c-disclaimer-bar>{{ .text }}</p>
+{{ end }}

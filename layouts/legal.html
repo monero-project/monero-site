@@ -1,0 +1,33 @@
+{{ define "meta" }}{{ .Store.Set "meta" (dict "title" (partial "helpers/t" "legal:pageTitle") "description" (partial "helpers/t" "legal:description")) }}{{ end }}
+{{ define "main" }}
+{{- $t := "helpers/t" -}}
+{{- /* The documents of src/content/legal, in this order; id is the file name */ -}}
+{{- $sections := slice
+  (dict "id" "terms-of-use" "icon" "receipt-text" "title" (partial $t "legal:sections.termsOfUse.title") "subtitle" (partial $t "legal:sections.termsOfUse.tocSubtitle"))
+  (dict "id" "copyright" "icon" "copyright" "title" (partial $t "legal:sections.copyright.title") "subtitle" (partial $t "legal:sections.copyright.tocSubtitle"))
+  (dict "id" "privacy-policy" "icon" "shield-check" "title" (partial $t "legal:sections.privacyPolicy.title") "subtitle" (partial $t "legal:sections.privacyPolicy.tocSubtitle"))
+-}}
+{{- $docs := slice -}}
+{{- range $sections -}}
+  {{- $doc := index (where $.RegularPages "File.ContentBaseName" .id) 0 -}}
+  {{- if not $doc }}{{ errorf "Legal section %s not found. Ensure the section ID matches the file name in the src/content/legal directory." .id }}{{ end -}}
+  {{- $docs = $docs | append (merge . (dict "content" (partial "helpers/content" (dict "page" $doc)))) -}}
+{{- end -}}
+{{ partial "ui/title-card" (dict "title" (partial $t "legal:title") "subtitle" (partial $t "legal:subtitle") "centered" true) }}
+{{ with partial "ui/layout/page-container" (dict "attrs" (dict "data-c-page-legal" true) "sections" $sections "docs" $docs) }}
+  {{ partial "ui/toc/toccontainer" (dict "sections" .sections "ariaLabel" (partial "helpers/t" "legal:aria.sectionsNav")) }}
+
+  {{ with partial "ui/layout/column" (dict "class" "legal-content" "attrs" (dict "data-c-page-legal" true) "docs" .docs) }}
+    {{- range $i, $doc := .docs }}
+    {{- if $i }}
+    <hr aria-hidden="true" data-c-page-legal>
+    {{- end }}
+    {{ with partial "ui/layout/page-section" (dict "title" .title "anchorId" .id "centered" true "attrs" (dict "data-c-page-legal" true) "content" .content) }}
+      <div class="prose" data-c-page-legal>
+        {{ .content }}
+      </div>
+    {{ end }}
+    {{- end }}
+  {{ end }}
+{{ end }}
+{{ end }}

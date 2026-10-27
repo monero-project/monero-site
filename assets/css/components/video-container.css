@@ -1,0 +1,20 @@
+/* Styles for layouts/_partials/ui/video-container.html */
+.video-container[data-c-video-container] {
+  position: relative;
+  width: min(100%, var(--video-max-width, 100%));
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+
+  &[data-centered] {
+    margin-inline: auto;
+  }
+
+  & video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
