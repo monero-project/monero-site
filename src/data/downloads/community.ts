@@ -3,6 +3,7 @@ import type { ImageMetadata } from "astro";
 import anoneroLogo from "@/assets/images/wallets/anonero.avif";
 import featherLogo from "@/assets/images/wallets/feather.avif";
 import monerocomLogo from "@/assets/images/wallets/monerocom.avif";
+import moneroOneLogo from "@/assets/images/wallets/moneroone.avif";
 import monerujoLogo from "@/assets/images/wallets/monerujo.avif";
 import monfluoLogo from "@/assets/images/wallets/monfluo.avif";
 import cakewalletLogo from "@/assets/images/wallets/cakewallet.avif";
@@ -83,6 +84,16 @@ export const community: CommunityData = {
         tags: {
           mobile: ["android", "ios"],
           general: ["MIT", "i18n:qrSigning", "i18n:builtInExchange"],
+        },
+      },
+      {
+        id: "moneroone",
+        name: "Monero One",
+        logo: moneroOneLogo,
+        link: "https://monero.one",
+        tags: {
+          mobile: ["android", "ios"],
+          general: ["MIT"],
         },
       },
       {
