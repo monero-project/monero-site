@@ -1,0 +1,24 @@
+/* Styles for layouts/_partials/ui/header/theme-toggle.html */
+.theme-toggle[data-c-theme-toggle] {
+  display: inline-flex;
+  align-items: center;
+}
+
+.theme-toggle[data-c-theme-toggle] a[data-c-theme-toggle] {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: var(--paragraph-main);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--monero-orange);
+  }
+}
+
+/* the link that leads on from the current theme: system, light or dark */
+:root:not([data-theme]) .to-light[data-c-theme-toggle],
+:root[data-theme="light"] .to-dark[data-c-theme-toggle],
+:root[data-theme="dark"] .to-system[data-c-theme-toggle] {
+  display: inline-flex;
+}

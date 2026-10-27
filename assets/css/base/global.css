@@ -90,6 +90,16 @@
   --content-max-width: 1600px;
 }
 
+/* A theme chosen with the theme button (the web server marks the page
+   <html data-theme>, see ui/header/theme-toggle); otherwise the system's. */
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+}
+
 /* ========================================
    Global HTML Element Styles (do not define classes here!)
    ======================================== */

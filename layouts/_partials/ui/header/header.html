@@ -35,6 +35,7 @@
     </nav>
     <label for="nav-toggle" class="scrim" aria-hidden="true" aria-label="{{ partial $t "common:aria.closeMenu" }}" data-c-header></label>
     <div class="utils" aria-label="{{ partial $t "common:aria.utilities" }}" data-c-header>
+      {{ partial "ui/header/theme-toggle" . }}
       <div class="lang" data-c-header>
         {{ partial "ui/header/language-dropdown" . }}
       </div>

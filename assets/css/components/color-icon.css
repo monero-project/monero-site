@@ -19,8 +19,13 @@
   }
 }
 
+/* dark: the system's dark mode, unless the light theme is chosen; or the dark theme */
 @media (prefers-color-scheme: dark) {
-  .icon[data-c-color-icon] {
+  :root:not([data-theme="light"]) .icon[data-c-color-icon] {
     --iconUrl: var(--darkUrl);
   }
+}
+
+:root[data-theme="dark"] .icon[data-c-color-icon] {
+  --iconUrl: var(--darkUrl);
 }

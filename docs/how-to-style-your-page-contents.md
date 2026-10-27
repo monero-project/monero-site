@@ -2,7 +2,7 @@
 
 ## Quick rules
 
-- Use the CSS variables in `assets/css/base/global.css` (colors, spacing, typographic scales).
+- Use the CSS variables in `assets/css/base/global.css` (colors, spacing, typographic scales). For colours that differ in dark mode use `light-dark()`; for other dark-mode rules see [How to Serve the Site](how-to-serve-the-site.md#how-the-theme-button-works), so they follow the theme button.
 - Put styles in one stylesheet per page or component, `assets/css/components/<name>.css`, imported in `assets/css/main.css`.
 - Scope every selector with the page's or component's `data-c-<name>` attribute (see below). `python3 scripts/check-scoped-css.py` checks this, and CI runs it.
 - Prefer mobile-first responsive rules and test at the project's common breakpoints (600, 900, 1200, 1600px).

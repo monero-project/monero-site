@@ -37,8 +37,14 @@ CMD ["hugo", "server", "--bind", "0.0.0.0"]
 FROM scratch AS static
 COPY --from=build /app/dist /
 
+# Caddy with the replace-response plugin, which the theme button needs (see
+# Caddyfile). Pinned: the images by digest, the plugin by commit.
+FROM caddy:2.11.7-builder-alpine@sha256:ef9b65adf9a224770c6d5f6d1ae1bf99bc3caaa78d8c4bae3ea949ee6984f301 AS caddy
+RUN xcaddy build v2.11.7 --with github.com/caddyserver/replace-response@80962887e4c680abfd1b11ce1403fa8cc0fdd3d6
+
 # Serve static build with Caddy
-FROM caddy:alpine AS serve-static
+FROM caddy:2.11.7-alpine@sha256:eb4d35b7452d1ab6171fbdbe8d9275b2301dad6dad92115d91e19fb9b24d510f AS serve-static
+COPY --from=caddy /usr/bin/caddy /usr/bin/caddy
 COPY --from=build /app/dist /usr/share/caddy
 COPY Caddyfile /etc/caddy/Caddyfile
 EXPOSE 80

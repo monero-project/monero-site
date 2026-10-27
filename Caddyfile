@@ -1,8 +1,76 @@
+# Caddy for the built site (dist/), as used by the Dockerfile's serve-static
+# target. It needs the replace-response plugin (built in by the Dockerfile).
+#
+# The theme button (ui/header/theme-toggle) keeps the chosen theme in the
+# address, without JavaScript or cookies: /dark/... and /light/... are the
+# same files, with <html data-theme="dark|light"> and the site's links kept
+# under the prefix; ?theme=light|dark|system sends the page there.
+# See docs/how-to-serve-the-site.md.
+{
+	order replace after encode
+}
+
 :80 {
 	root * /usr/share/caddy
-	file_server
+
+	# the page's path without the /dark or /light prefix; never an address
+	# starting // or /\, which a browser reads as another site's (those go to /)
+	map {path} {site_page} {
+		~^/(?:dark|light)(/(?:[^/\\].*)?)$ "${1}"
+		~^/(?:dark|light)(?:/[/\\].*)?$ "/"
+		~^(/(?:[^/\\].*)?)$ "${1}"
+		default "/"
+	}
+
+	# the theme button's links
+	@to_light query theme=light
+	@to_dark query theme=dark
+	@to_system query theme=system
+	redir @to_light /light{site_page} 302
+	redir @to_dark /dark{site_page} 302
+	redir @to_system {site_page} 302
+
+	# the same files under /dark/ and /light/: pages marked with the theme,
+	# their links kept under the prefix
+	handle_path /dark/* {
+		replace {
+			match {
+				header Content-Type text/html*
+			}
+			"<html " "<html data-theme=\"dark\" "
+			"href=\"/" "href=\"/dark/"
+			"url=/" "url=/dark/"
+		}
+		file_server
+	}
+	handle_path /light/* {
+		replace {
+			match {
+				header Content-Type text/html*
+			}
+			"<html " "<html data-theme=\"light\" "
+			"href=\"/" "href=\"/light/"
+			"url=/" "url=/light/"
+		}
+		file_server
+	}
+	handle {
+		file_server
+	}
+
+	# the 404 page, in the theme of the address
 	handle_errors {
+		@dark_error expression {http.request.orig_uri.path}.startsWith("/dark/")
+		@light_error expression {http.request.orig_uri.path}.startsWith("/light/")
 		rewrite * /{err.status_code}.html
+		replace @dark_error {
+			"<html " "<html data-theme=\"dark\" "
+			"href=\"/" "href=\"/dark/"
+		}
+		replace @light_error {
+			"<html " "<html data-theme=\"light\" "
+			"href=\"/" "href=\"/light/"
+		}
 		file_server
 	}
 }

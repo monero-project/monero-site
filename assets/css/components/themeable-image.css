@@ -8,12 +8,21 @@
   display: none;
 }
 
+/* dark: the system's dark mode, unless the light theme is chosen; or the dark theme */
 @media (prefers-color-scheme: dark) {
-  .light-only[data-c-themeable-image] {
+  :root:not([data-theme="light"]) .light-only[data-c-themeable-image] {
     display: none;
   }
 
-  .dark-only[data-c-themeable-image] {
+  :root:not([data-theme="light"]) .dark-only[data-c-themeable-image] {
     display: block;
   }
+}
+
+:root[data-theme="dark"] .light-only[data-c-themeable-image] {
+  display: none;
+}
+
+:root[data-theme="dark"] .dark-only[data-c-themeable-image] {
+  display: block;
 }

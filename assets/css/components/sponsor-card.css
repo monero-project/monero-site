@@ -43,8 +43,13 @@
   line-height: var(--line-height-body);
 }
 
+/* dark: the system's dark mode, unless the light theme is chosen; or the dark theme */
 @media (prefers-color-scheme: dark) {
-  .sponsor-logo[data-c-sponsor-card].monochrome img[data-c-sponsor-card] {
+  :root:not([data-theme="light"]) .sponsor-logo[data-c-sponsor-card].monochrome img[data-c-sponsor-card] {
     filter: invert();
   }
+}
+
+:root[data-theme="dark"] .sponsor-logo[data-c-sponsor-card].monochrome img[data-c-sponsor-card] {
+  filter: invert();
 }

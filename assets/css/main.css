@@ -56,6 +56,7 @@
 @import url("./components/sidebar-layout.css");
 @import url("./components/sidebar-link.css");
 @import url("./components/themeable-image.css");
+@import url("./components/theme-toggle.css");
 @import url("./components/title-card.css");
 @import url("./components/toccontainer.css");
 @import url("./components/tocitem.css");
