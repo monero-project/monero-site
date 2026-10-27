@@ -14,7 +14,7 @@ transactions RingCT.
 
 ### En venir aux bulletproofs
 
-En 2017, un [groupe de cryptographie appliquée de Standford](https://crypto.stanford.edu/bulletproofs/) a écrit une [publication](https://eprint.iacr.org/2017/1066.pdf) présentant une nouvelle sorte de preuve d'étendue, appelé bulletproofs.  
+En 2017, un [groupe de cryptographie appliquée de Stanford](https://crypto.stanford.edu/bulletproofs/) a écrit une [publication](https://eprint.iacr.org/2017/1066.pdf) présentant une nouvelle sorte de preuve d'étendue, appelé bulletproofs.  
 
 > Bulletproofs are short non-interactive zero-knowledge proofs that require no trusted setup.
 
