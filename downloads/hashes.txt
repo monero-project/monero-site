@@ -8,43 +8,43 @@ Hash: SHA256
 #
 #
 ## CLI
-542cc0322a7d0d3c9cd47c7cc8d195bb74861a7eec79235b58a5877a90b04e6a  monero-android-armv7-v0.18.5.3.tar.bz2
-2621293d288d5ce23d251d1f4106d7e1bdd5bf3a37423e8a8c6851e4edba1768  monero-android-armv8-v0.18.5.3.tar.bz2
-2957d4ff49d095caf6d7e15c3c1ec7e256a944617e0de2d6038aeaf9ceed0f09  monero-freebsd-x64-v0.18.5.3.tar.bz2
-5d902eb7bc445f92ba8b17839e30fbf8a216368b2b4e2376edec6261f73200b1  monero-linux-armv7-v0.18.5.3.tar.bz2
-1490114f795ad2f67f57bc8d167c3e2539e9f173fc46f02f70ef4abf685f8c66  monero-linux-armv8-v0.18.5.3.tar.bz2
-f894e54e72139505a9ccbbf2fd318312ed39ba0a6101cce8b0b1d293d9762068  monero-linux-riscv64-v0.18.5.3.tar.bz2
-3333d0e04c9cbe3023e7e2b6dd369c407f36bb8df5b05fb0a19d7685b3d56dfc  monero-linux-x64-v0.18.5.3.tar.bz2
-f56e118f1ad04d863daf3d587af3f57871ec85ba685144e4606fa77811f98f6e  monero-linux-x86-v0.18.5.3.tar.bz2
-7a083ed2e2499dc25ac046ce7ef740c11183bdf4ac92460ffe503a5be46a54ab  monero-mac-armv8-v0.18.5.3.tar.bz2
-9fc26887cd9fe095fcab545e1b0846fcd06d159ce589fa70fb1fba77fdd54369  monero-mac-x64-v0.18.5.3.tar.bz2
-f58f8f803f0141c77f40f327c516e4721f61d112084eb3d6644028cb9680b82a  monero-win-x64-v0.18.5.3.zip
-bcf9cd33267cf493a3f555bafcda44d0c3b01118bfa1b92945e5631cff5d0ec3  monero-win-x86-v0.18.5.3.zip
-57f8bf5a32b0f8862e6826e7e19a911294d953eae630d2b8c05a976d4dced880  monero-source-v0.18.5.3.tar.bz2
+58d39c1e241bde624a01d9d2402784314a769bf47f555708aa52ae52fbcfc7f8  monero-android-armv7-v0.18.5.4.tar.bz2
+b1ba5efaf8d078fce26ae66a45252e4eb67a7de3068ea093c5ba6c8f7e7cb59c  monero-android-armv8-v0.18.5.4.tar.bz2
+0bf207083558c2b567b170ae78103c78a23a8ae628367579b7133b957f7cf54a  monero-freebsd-x64-v0.18.5.4.tar.bz2
+124883ebd8b3e19fb9000bc051dd9a28958a1a383455af78b539362b0d59094f  monero-linux-armv7-v0.18.5.4.tar.bz2
+d20d71e6522b41eb8e549c3425f7f4622c9c9a448fc7147525393fd0a6b59703  monero-linux-armv8-v0.18.5.4.tar.bz2
+4f064d6cecfbee03f9d468f616147e7fac1c48df3613d877105e321ac0b71a76  monero-linux-riscv64-v0.18.5.4.tar.bz2
+ba2928962c101b609434bf8c1b43ad59ebe96c5525977284ca599d8bf0f02d10  monero-linux-x64-v0.18.5.4.tar.bz2
+c48e3db1c4d008cdfadb1192b3d39906ed06c29ec61b357c8f30ecc1b6111595  monero-linux-x86-v0.18.5.4.tar.bz2
+d457de7c8a1ad42e3232fdea6d9f9003be9652143fb8f719c1fc906aa6b4917b  monero-mac-armv8-v0.18.5.4.tar.bz2
+9fefa7f5f7ae60fbd8d0ad18842b76c56ed161eca4ffb4f8b5f4800e5033b146  monero-mac-x64-v0.18.5.4.tar.bz2
+1ccac3b476ba75bf6dfdfa848f6520a79b64cdf3457a160eaa0dad82d5a2a042  monero-win-x64-v0.18.5.4.zip
+2cefcdb1027104aa7400d4bef5b1c1d4dcdbd7ee29d7c0c1bdcba7a458930578  monero-win-x86-v0.18.5.4.zip
+3c5aabb6e8abcabb58169cf4ad60b11be23cd7384c051a40ed2b23490d842bab  monero-source-v0.18.5.4.tar.bz2
 #
 ## GUI
-8c40cd6e52415c3f3406643ccbfd2602d6b93c07f2ada6d24e04ac3b459805c7  monero-gui-install-win-x64-v0.18.5.3.exe
-efaf3661025e15c4f3b440fc63f6877f99c51d0c147949c64e1c3cc7e6f6bfe4  monero-gui-linux-x64-v0.18.5.3.tar.bz2
-a3375415178dc049e58bdb2a5dd6ffc00ea4c288590166785f25f2e7fef5253d  monero-gui-mac-armv8-v0.18.5.3.dmg
-a995bc61d367fafed6e25d23746dd7e4439d70b61be8f5a63e7d1665e63ba771  monero-gui-mac-x64-v0.18.5.3.dmg
-17072f2fd1a39ef388d22acdad9539378833a95e974b0eef38380848910f0a2c  monero-gui-win-x64-v0.18.5.3.zip
-08329ab069237a4bc49098c3171cbe0d79503f23d974e0dc969f1041afcd6cb0  monero-gui-source-v0.18.5.3.tar.bz2
+4fa0808e63bb5ef2f936b5eede7c0f2552b5a92f877d23114d4c289b74cfaf19  monero-gui-install-win-x64-v0.18.5.4.exe
+44cd148993ebd4ca63d7a191244eef7e2a783225cbaa0e5edd475ca34abd5874  monero-gui-linux-x64-v0.18.5.4.tar.bz2
+d28c951bf84c71ad4d0ffa2ae5a72406b7f4f9b3c06dd5bbf007a0386a0c648c  monero-gui-mac-armv8-v0.18.5.4.dmg
+7fe280c14a6f8791245c8fdc75941d54eeb2c11c864b9e2df98395ce399a8435  monero-gui-mac-x64-v0.18.5.4.dmg
+0b5cbbe0a1fda5ec487a667cea62599114dca3609acaab436b64a38fa84d449c  monero-gui-win-x64-v0.18.5.4.zip
+4ae93a69c26a540fb4ff1f26d4d5e477f5167509310db91c1e49773f46de949e  monero-gui-source-v0.18.5.4.tar.bz2
 #
 #
 # ~binaryFate
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCAAdFiEEgaxZH+nEtlxYBq/D8K9NRioL35IFAmrEYsgACgkQ8K9NRioL
-35LMFA/+IWWpSH78agZmyD4Ey+ZVWbZa8D1GjqS9d8RfOCfLe7Qy5CUhxMsljbnX
-1HuDDTPpzcKo23y9o3J4OfQDTAfog6c7AJRvCHLZybQ7ajijXSP1mwk5C6mHSx7+
-3NCO0Q9D/qlFjaYjDQ9AJGhmamkHGHN028bgW9fB10P2JajF09mm+51Paqi8Wy+0
-DHr4VcZjkBSRuJy3FTpLEXD2GtGVpcadFjBuNKAv7AVX/aGivFSXIK30rlGyZR7x
-WjAsHMHUed09UvymEmj/9BfPhf5ax95jpLHFnBkN6wB+qHmOB6szMQMf/rf5Emnn
-wnrItN4Cf/oFiL0Cc+FGy4qGKs1jvmVCDGie/qubMp9HxCBBJjSMHTAh22asEW9a
-SqsOUm3NlpKKO3lFzQ5KL1ylC2lUEG8wD3hDTyfG4uYfauPxrEysWWpB63MZKSaE
-pzP0qkMqgD0lw+BiC69gopTMyzDrFK7O+oFLGMMAxmj5jmUSjvEgMBr06TWfhYr9
-mE8I0I0Y7dqIkRwY3uJ3mAylbgE0i6E/XDt1y9tk30JCNuY4dJ34I+SEbV51oska
-goMeVsYSQDc7wU30vcWE6VNZswX3IEqIR7rOtj+s4/pVHGK/dSgzggklCJnmZa3k
-Xgh27ic+B4lF88u33uf+x7vZVlYFhUPz51+XxEIS71QT6wx2Ku8=
-=3Zkd
+iQIzBAEBCAAdFiEEgaxZH+nEtlxYBq/D8K9NRioL35IFAmrRoO4ACgkQ8K9NRioL
+35JWhw//ZidbZH5aYAxQLe2VSb0xJbTWNlPDrSHyQdfaLgS+EQm+yphi86uja64T
+H359URzhsxh57jHlHmKB20I+iGS0xPUPOmGClYZ8EQxb+QYYBNuc2qtvfFAlkEVC
+oFF/6OOdx+m48UuW0wQ+ZP7HsAROTQ1jVmRHQl3dhVYYtkmNov8qyj1+LqZOclP4
+bCl1qjKpjm4XY1/7KBtJSjHQhIeSpFG4Wy5I00RyjXTAKYjYbjBR8MgcJUsQpISV
+4bTk2GMiLgTlC2u7clchLose4ihya6h6uH30m83MFv/Se+zxOeT7L6C3Vwxy0hiL
+IBpzS0op0AgbOju07S6NYjq6dymdaGFW9cGDeI1ffeK1Uf/gP2JcpVAkiGLgTYHa
+cCHGeYzDoOi1/erKx7WZE0BAAOq9qepL3CjWd7HpEnK4ovAUekjCsZJj7BNfIowt
+GY+sVseGrxObhg8rhYja+2MJzxHeKhE03n9PBY2yzx9LXT71ChEr9m6mbJbjDnXZ
+U2+Fpiv23FueHfaxH/77QFE7gFjxlCLEcQapJ+Q3KPkWflsyQRDv557+vsewcVep
+e1J3is9rmQKZXd1Kw20l0sJSzOY7gbMnVsKdGgTOdMWYNYbvpXCMoACkiuf9iq37
+/pIYxRg3wfsBbUoNbVFMyMk3qMIt7Nddy40xdUbV0y1LCuBNSYU=
+=3OkD
 -----END PGP SIGNATURE-----
