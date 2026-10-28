@@ -10,7 +10,6 @@ import TOCContainer from "@/components/ui/toc/TOCContainer.astro";
 import communityWallets from "@/data/downloads/community";
 
 import DisclaimerBar from "@/components/ui/disclaimer/DisclaimerBar.astro";
-import DisclaimerNote from "@/components/ui/disclaimer/DisclaimerNote.astro";
 import PageContainer from "@/components/ui/layout/PageContainer.astro";
 import PageSection from "@/components/ui/layout/PageSection.astro";
 
@@ -124,31 +123,6 @@ const setBuiltinId = (wallet: Wallet) => {
       <Grid minWidth="20rem" gap="lg" class="compact-grid">
         {
           sortWallets(communityWallets.wallets.multiCoin).map((wallet) => (
-            <CommunityCard
-              logo={wallet.logo}
-              name={wallet.name}
-              description={t(`downloads:community.descriptions.${wallet.id}`)}
-              tags={wallet.tags}
-              link={wallet.link}
-              linkText={t("downloads:community.learnMore")}
-              translateTag={(key: string) =>
-                t(`downloads:community.tags.${key}`)
-              }
-              id={setBuiltinId(wallet)}
-            />
-          ))
-        }
-      </Grid>
-
-      <h3 class="subheading">
-        {t("downloads:community.categories.lws.title")}
-      </h3>
-      <DisclaimerNote
-        text={t("downloads:community.categories.lws.disclaimer")}
-      />
-      <Grid minWidth="25rem" gap="lg">
-        {
-          sortWallets(communityWallets.wallets.lws).map((wallet) => (
             <CommunityCard
               logo={wallet.logo}
               name={wallet.name}
