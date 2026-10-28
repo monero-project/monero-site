@@ -1,8 +1,9 @@
 # How to Serve the Site
 
-`hugo` builds the whole site into `dist/`: plain files that any web server can serve. Two things need the web server's help:
+`hugo` builds the whole site into `dist/`: plain files that any web server can serve. Three things need the web server's help:
 
 - **The 404 page**: serve `/404.html` with status 404 for addresses that don't exist.
+- **Caching**: files with a hash in their name (the stylesheet, fonts, resized images) never change, so they get `Cache-Control: public, max-age=31536000, immutable`; everything else, pages included, gets `Cache-Control: no-cache`, so browsers check for a newer version each time (cheap: an unchanged file is a short "304 Not Modified").
 - **The theme button** in the header (System → Light → Dark → System).
 
 The Docker target `serve-static` does both with Caddy, using the [`Caddyfile`](../Caddyfile). The theme rules need Caddy's [replace-response](https://github.com/caddyserver/replace-response) plugin, which the Dockerfile builds in (`xcaddy build --with github.com/caddyserver/replace-response`). On another Caddy server, copy the `Caddyfile`'s rules and change `root`; on nginx, see [below](#nginx).
@@ -46,11 +47,19 @@ map $request_uri $site_page {
     default                                      /;
 }
 
+# also in the http {} block: caching (files with a hash in their name are kept)
+map $uri $cache_control {
+    "~\.[0-9a-f]{64}\.[a-z0-9]+$"  "public, max-age=31536000, immutable";
+    "~_hu_[0-9a-f]+"                "public, max-age=31536000, immutable";
+    default                         "no-cache";
+}
+
 server {
     # ... listen, server_name, TLS ...
     root /srv/monero-site;
     absolute_redirect off;
     error_page 404 /404.html;
+    add_header Cache-Control $cache_control always;
 
     if ($arg_theme = light)  { return 302 /light$site_page; }
     if ($arg_theme = dark)   { return 302 /dark$site_page; }
