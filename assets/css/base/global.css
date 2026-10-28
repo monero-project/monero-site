@@ -110,6 +110,12 @@ html {
   scrollbar-gutter: stable;
 }
 
+/* phones: no blue flash on whatever you tap (inherited by every element); the
+   keyboard's focus ring stays */
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
 a {
   color: var(--monero-orange);
   text-decoration: none;

@@ -70,7 +70,6 @@
   margin-inline-start: calc(-1 * var(--space-xs));
   border-radius: 8px;
   cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
 
   &:hover {
     background: var(--card-color);
