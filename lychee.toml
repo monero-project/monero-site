@@ -1,0 +1,20 @@
+# lychee config: fail CI on broken internal links in the built site.
+# Run offline (root-relative links are resolved against --root-dir=_site);
+# absolute and external URLs are not checked by this gate.
+offline = true
+no_progress = true
+fallback_extensions = ["html", "htm"]
+
+exclude = [
+  # Static assets — out of scope for this link gate.
+  '''\.(png|jpe?g|gif|svg|webp|avif|ico|css|js|mjs|map|woff2?|ttf|eot)$''',
+  # Schemeless/protocol-relative external embeds (e.g. podcast players).
+  '''libsyn\.com''',
+
+  # Pre-existing broken links, baselined (see monero-project/monero-site#2723).
+  '''/blog/tags/(ccs|cryptography|dev|development|jamtis|kovri|magic|malware|monero|protocol|seraphis)\.html$''',
+  '''/blog/tags/network(%20| )upgrade\.html''',
+  '''cryptonote\.org/whitepaper\.pdf''',
+  '''/2026/01/07/monero-0\.18\.4\.5-released\.html''',
+  '''site\.baseurl''',
+]

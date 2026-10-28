@@ -21,3 +21,26 @@ jobs:
         run: bundle install --jobs 4 --retry 3
       - name: build site
         run: bundle exec jekyll build --limit-posts 10
+
+  link-check:
+    name: Link check
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v6
+      # Ruby 3.1: the site's _plugins use File.exists? (removed in Ruby 3.2).
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+      - name: install bundler
+        run: gem install bundler:2.2.23
+      - name: bundle install
+        run: bundle install --jobs 4 --retry 3
+      # Full build (no --limit-posts) so every post's links are checked.
+      - name: build site
+        run: bundle exec jekyll build
+      - name: check links
+        uses: lycheeverse/lychee-action@v2.9.0
+        with:
+          args: --config lychee.toml --root-dir "${{ github.workspace }}/_site" "_site/**/*.html"
+          fail: true
+          failIfEmpty: true
