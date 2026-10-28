@@ -21,67 +21,51 @@ const uid = `stabs-${stableId(tabs.map((t) => t.label))}`;
 ---
 
 <div class:list={["section-tabs", className]} id={uid}>
-  {
-    tabs.map((_, index) => (
-      <input
-        type="radio"
-        name={uid}
-        id={`${uid}-${index}`}
-        class="tab-input"
-        checked={index === 0}
-      />
-    ))
-  }
+  {tabs.map((_, index) => (
+    <input
+      type="radio"
+      name={uid}
+      id={`${uid}-${index}`}
+      class="tab-input"
+      checked={index === 0}
+    />
+  ))}
 
   <div class="tab-labels">
-    {
-      tabs.map((tab, index) => (
-        <label for={`${uid}-${index}`} class="tab-label">
-          {tab.label}
-          {tab.count !== undefined && (
-            <span class="tab-count">{tab.count}</span>
-          )}
-        </label>
-      ))
-    }
+    {tabs.map((tab, index) => (
+      <label for={`${uid}-${index}`} class="tab-label">
+        {tab.label}
+        {tab.count !== undefined && <span class="tab-count">{tab.count}</span>}
+      </label>
+    ))}
   </div>
 
   <div class="tab-panels">
-    {
-      tabs[0] && (
-        <div class="tab-panel">
-          <slot name="panel-0" />
-        </div>
-      )
-    }
-    {
-      tabs[1] && (
-        <div class="tab-panel">
-          <slot name="panel-1" />
-        </div>
-      )
-    }
-    {
-      tabs[2] && (
-        <div class="tab-panel">
-          <slot name="panel-2" />
-        </div>
-      )
-    }
-    {
-      tabs[3] && (
-        <div class="tab-panel">
-          <slot name="panel-3" />
-        </div>
-      )
-    }
-    {
-      tabs[4] && (
-        <div class="tab-panel">
-          <slot name="panel-4" />
-        </div>
-      )
-    }
+    {tabs[0] && (
+      <div class="tab-panel">
+        <slot name="panel-0" />
+      </div>
+    )}
+    {tabs[1] && (
+      <div class="tab-panel">
+        <slot name="panel-1" />
+      </div>
+    )}
+    {tabs[2] && (
+      <div class="tab-panel">
+        <slot name="panel-2" />
+      </div>
+    )}
+    {tabs[3] && (
+      <div class="tab-panel">
+        <slot name="panel-3" />
+      </div>
+    )}
+    {tabs[4] && (
+      <div class="tab-panel">
+        <slot name="panel-4" />
+      </div>
+    )}
   </div>
 </div>
 

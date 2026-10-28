@@ -58,17 +58,15 @@ const categories = [
 
   <PageContainer>
     <Grid columns={3} gap="xl">
-      {
-        categories.map((cat) => (
-          <CategoryCard
-            title={cat.title}
-            description={cat.description}
-            href={cat.href}
-            linkText={cat.linkText}
-            image={cat.image}
-          />
-        ))
-      }
+      {categories.map((cat) => (
+        <CategoryCard
+          title={cat.title}
+          description={cat.description}
+          href={cat.href}
+          linkText={cat.linkText}
+          image={cat.image}
+        />
+      ))}
     </Grid>
   </PageContainer>
 </Layout>

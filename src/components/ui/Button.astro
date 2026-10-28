@@ -26,38 +26,36 @@ const {
 }: Props = Astro.props;
 ---
 
-{
-  href ? (
-    <a
-      href={href}
-      target={target}
-      rel={rel}
-      data-variant={variant}
-      class:list={["button", className]}
-      {...rest}
-    >
-      <slot />
-    </a>
-  ) : as === "button" ? (
-    <button
-      type={type}
-      data-variant={variant}
-      class:list={["button", className]}
-      {...rest}
-    >
-      <slot />
-    </button>
-  ) : (
-    <span
-      role="button"
-      data-variant={variant}
-      class:list={["button", className]}
-      {...rest}
-    >
-      <slot />
-    </span>
-  )
-}
+{href ? (
+  <a
+    href={href}
+    target={target}
+    rel={rel}
+    data-variant={variant}
+    class:list={["button", className]}
+    {...rest}
+  >
+    <slot />
+  </a>
+) : as === "button" ? (
+  <button
+    type={type}
+    data-variant={variant}
+    class:list={["button", className]}
+    {...rest}
+  >
+    <slot />
+  </button>
+) : (
+  <span
+    role="button"
+    data-variant={variant}
+    class:list={["button", className]}
+    {...rest}
+  >
+    <slot />
+  </span>
+)}
 
 <style>
   .button {

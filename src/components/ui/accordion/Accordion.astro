@@ -23,20 +23,18 @@ const accordionName = multiExpand ? undefined : `accordion-${accordionId}`;
 ---
 
 <div class:list={["accordion", `accordion--${variant}`]}>
-  {
-    items ? (
-      items.map((item) => (
-        <AccordionItem
-          title={item.title}
-          content={item.content}
-          variant={variant}
-          name={accordionName}
-        />
-      ))
-    ) : (
-      <slot />
-    )
-  }
+  {items ? (
+    items.map((item) => (
+      <AccordionItem
+        title={item.title}
+        content={item.content}
+        variant={variant}
+        name={accordionName}
+      />
+    ))
+  ) : (
+    <slot />
+  )}
 </div>
 
 <style>

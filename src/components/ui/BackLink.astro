@@ -21,7 +21,9 @@ const rtl = Astro.locals.dir === "rtl";
       rtl={rtl}
     />
   </span>
-  <span class="label"><slot /></span>
+  <span class="label">
+    <slot />
+  </span>
 </a>
 
 <style>

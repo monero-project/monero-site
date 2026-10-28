@@ -19,13 +19,11 @@ const {
 ---
 
 <header class="header" data-centered={centered || undefined}>
-  {
-    backHref && backLabel && (
-      <BackLink href={backHref} class="back">
-        {backLabel}
-      </BackLink>
-    )
-  }
+  {backHref && backLabel && (
+    <BackLink href={backHref} class="back">
+      {backLabel}
+    </BackLink>
+  )}
   <h1 class="title">{title}</h1>
   {subtitle && <p class="subtitle">{subtitle}</p>}
 </header>

@@ -40,9 +40,7 @@ const { t, localizeHref } = Astro.locals;
           name="method"
           open
         >
-          <p>
-            {t("accept-monero:steps.chooseSetup.wallet.description")}
-          </p>
+          <p>{t("accept-monero:steps.chooseSetup.wallet.description")}</p>
           <IconLink
             href={localizeHref("/downloads/community/#wallets")}
             underline
@@ -56,9 +54,7 @@ const { t, localizeHref } = Astro.locals;
           variant="card"
           name="method"
         >
-          <p>
-            {t("accept-monero:steps.chooseSetup.pos.description")}
-          </p>
+          <p>{t("accept-monero:steps.chooseSetup.pos.description")}</p>
           <Column gap="xs" class="service-buttons">
             <ExternalResourceButton
               href="https://bitrequest.io/"
@@ -84,9 +80,7 @@ const { t, localizeHref } = Astro.locals;
           variant="card"
           name="method"
         >
-          <p>
-            {t("accept-monero:steps.chooseSetup.processor.description")}
-          </p>
+          <p>{t("accept-monero:steps.chooseSetup.processor.description")}</p>
           <IconLink href={localizeHref("/resources/tools/accept/")} underline>
             {t("accept-monero:steps.chooseSetup.processor.viewGateways")}
           </IconLink>
@@ -97,9 +91,7 @@ const { t, localizeHref } = Astro.locals;
           variant="card"
           name="method"
         >
-          <p>
-            {t("accept-monero:steps.chooseSetup.selfHosted.description")}
-          </p>
+          <p>{t("accept-monero:steps.chooseSetup.selfHosted.description")}</p>
           <Column gap="xs" class="service-buttons">
             <ExternalResourceButton
               href="https://btcpayserver.org/"
@@ -138,18 +130,14 @@ const { t, localizeHref } = Astro.locals;
       icon={icons.mask("hand-coins")}
       reverse
     >
+      <p>{t("accept-monero:steps.acceptPayment.description")}</p>
       <p>
-        {t("accept-monero:steps.acceptPayment.description")}
-      </p>
-      <p>
-        <strong
-          >{t("accept-monero:steps.acceptPayment.confirmationsLabel")}</strong
-        >
+        <strong>
+          {t("accept-monero:steps.acceptPayment.confirmationsLabel")}
+        </strong>{" "}
         {t("accept-monero:steps.acceptPayment.confirmations")}
       </p>
-      <TipBox showIcon>
-        {t("accept-monero:steps.acceptPayment.tip")}
-      </TipBox>
+      <TipBox showIcon>{t("accept-monero:steps.acceptPayment.tip")}</TipBox>
     </GuideStep>
 
     <hr />
@@ -159,9 +147,7 @@ const { t, localizeHref } = Astro.locals;
       title={t("accept-monero:steps.getListed.title")}
       icon={icons.mask("users")}
     >
-      <p>
-        {t("accept-monero:steps.getListed.description")}
-      </p>
+      <p>{t("accept-monero:steps.getListed.description")}</p>
       <IconLink href={localizeHref("/get-started/merchants")} underline>
         {t("accept-monero:steps.getListed.viewDirectories")}
       </IconLink>

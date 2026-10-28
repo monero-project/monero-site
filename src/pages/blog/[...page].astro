@@ -76,18 +76,16 @@ const tabs = [
       </a>
     </Row>
     <Grid columns={2} gap="md" class="blog-grid">
-      {
-        posts.map((post) => (
-          <BlogCard
-            id={post.id}
-            title={post.data.title}
-            author={post.data.author}
-            tags={post.data.tags || []}
-            image={post.data.image}
-            summary={post.data.summary || ""}
-          />
-        ))
-      }
+      {posts.map((post) => (
+        <BlogCard
+          id={post.id}
+          title={post.data.title}
+          author={post.data.author}
+          tags={post.data.tags || []}
+          image={post.data.image}
+          summary={post.data.summary || ""}
+        />
+      ))}
     </Grid>
     <Paginator page={page} />
   </PageContainer>

@@ -55,71 +55,69 @@ const hasPrev = current > 1;
 const hasNext = current < last;
 ---
 
-{
-  last > 1 && (
-    <nav
-      class="pagination"
-      aria-label={t("common:components.paginator.pagination")}
+{last > 1 && (
+  <nav
+    class="pagination"
+    aria-label={t("common:components.paginator.pagination")}
+  >
+    <a
+      href={hasPrev ? page.url.prev : undefined}
+      class="pagination-arrow"
+      aria-label={t("common:components.paginator.previousPage")}
+      aria-disabled={!hasPrev}
+      rel={hasPrev ? "prev" : undefined}
     >
-      <a
-        href={hasPrev ? page.url.prev : undefined}
-        class="pagination-arrow"
-        aria-label={t("common:components.paginator.previousPage")}
-        aria-disabled={!hasPrev}
-        rel={hasPrev ? "prev" : undefined}
-      >
-        <MaskIcon
-          src={icons.mask("chevron-left")}
-          size="1.25em"
-          rtl={dir === "rtl"}
-        />
-      </a>
+      <MaskIcon
+        src={icons.mask("chevron-left")}
+        size="1.25em"
+        rtl={dir === "rtl"}
+      />
+    </a>
 
-      <ul class="pagination-list">
-        {items.map((item) => {
-          if (item.type === "ellipsis") {
-            return (
-              <li class="pagination-separator" aria-hidden="true">
-                <span class="pagination-ellipsis">…</span>
-              </li>
-            );
-          }
-
-          const n = item.number;
-          const href = getHrefForPage(n);
-          const isCurrent = n === current;
-
+    <ul class="pagination-list">
+      {items.map((item) => {
+        if (item.type === "ellipsis") {
           return (
-            <li>
-              <a
-                href={href}
-                class="pagination-page"
-                aria-label={t("common:components.paginator.page", { n })}
-                aria-current={isCurrent ? "page" : undefined}
-              >
-                {localizeNumber(n)}
-              </a>
+            <li class="pagination-separator" aria-hidden="true">
+              <span class="pagination-ellipsis">…</span>
             </li>
           );
-        })}
-      </ul>
+        }
 
-      <a
-        href={hasNext ? page.url.next : undefined}
-        class="pagination-arrow"
-        aria-label={t("common:components.paginator.nextPage")}
-        aria-disabled={!hasNext}
-        rel={hasNext ? "next" : undefined}
-      >
-        <MaskIcon
-          src={icons.mask("chevron-right")}
-          size="1.25em"
-          rtl={dir === "rtl"}
-        />
-      </a>
-    </nav>
-  )
-}
+        const n = item.number;
+        const href = getHrefForPage(n);
+        const isCurrent = n === current;
+
+        return (
+          <li>
+            <a
+              href={href}
+              class="pagination-page"
+              aria-label={t("common:components.paginator.page", { n })}
+              aria-current={isCurrent ? "page" : undefined}
+            >
+              {localizeNumber(n)}
+            </a>
+          </li>
+        );
+      })}
+    </ul>
+
+    <a
+      href={hasNext ? page.url.next : undefined}
+      class="pagination-arrow"
+      aria-label={t("common:components.paginator.nextPage")}
+      aria-disabled={!hasNext}
+      rel={hasNext ? "next" : undefined}
+    >
+      <MaskIcon
+        src={icons.mask("chevron-right")}
+        size="1.25em"
+        rtl={dir === "rtl"}
+      />
+    </a>
+  </nav>
+)}
 
 <style>
   .pagination {

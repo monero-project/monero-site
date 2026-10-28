@@ -32,25 +32,21 @@ const hasButtonsSlot = Astro.slots.has("buttons");
   data-has-icon={icon ? true : null}
   {...rest}
 >
-  {
-    icon && (
-      <span class="cta-icon">
-        <MaskIcon src={icon} size="2rem" />
-      </span>
-    )
-  }
+  {icon && (
+    <span class="cta-icon">
+      <MaskIcon src={icon} size="2rem" />
+    </span>
+  )}
   <h3 class="cta-title">{title}</h3>
   <div class="cta-description">
     <slot />
   </div>
   <div class="cta-link">
-    {
-      hasButtonsSlot ? (
-        <slot name="buttons" />
-      ) : (
-        <Button href={href}>{linkText}</Button>
-      )
-    }
+    {hasButtonsSlot ? (
+      <slot name="buttons" />
+    ) : (
+      <Button href={href}>{linkText}</Button>
+    )}
   </div>
 </Card>
 

@@ -30,17 +30,15 @@ const { t } = Astro.locals;
       subtitle={t("sponsorships:currentSponsors.subtitle")}
     >
       <Grid columns={3} gap="md">
-        {
-          currentSponsors.map((sponsor) => (
-            <SponsorCard
-              name={sponsor.name}
-              description={t(`sponsorships:contributions.${sponsor.id}`)}
-              href={sponsor.link}
-              logo={sponsor.logo}
-              monochrome={sponsor.monochrome}
-            />
-          ))
-        }
+        {currentSponsors.map((sponsor) => (
+          <SponsorCard
+            name={sponsor.name}
+            description={t(`sponsorships:contributions.${sponsor.id}`)}
+            href={sponsor.link}
+            logo={sponsor.logo}
+            monochrome={sponsor.monochrome}
+          />
+        ))}
       </Grid>
     </PageSection>
 
@@ -61,18 +59,16 @@ const { t } = Astro.locals;
       subtitle={t("sponsorships:pastSponsors.subtitle")}
     >
       <Row gap="sm">
-        {
-          pastSponsors.map((sponsor) => (
-            <a
-              href={sponsor.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="past-sponsor-chip"
-            >
-              {sponsor.name}
-            </a>
-          ))
-        }
+        {pastSponsors.map((sponsor) => (
+          <a
+            href={sponsor.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="past-sponsor-chip"
+          >
+            {sponsor.name}
+          </a>
+        ))}
       </Row>
     </PageSection>
   </PageContainer>

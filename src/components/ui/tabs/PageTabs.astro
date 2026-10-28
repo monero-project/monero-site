@@ -31,148 +31,146 @@ const active = I(initial);
 ---
 
 <div class="tabs" id={uid}>
-  {
-    links ? (
+  {links ? (
+    <div class="tab-header">
+      {labels.map((label, i) => (
+        <a
+          class:list={["tab-label", activeIndex === i && "active"]}
+          href={links[i]}
+        >
+          {label}
+        </a>
+      ))}
+    </div>
+  ) : (
+    <>
+      <fieldset>
+        <legend class="sr-only">
+          {t("common:components.pageTabs.tabSelection")}
+        </legend>
+        {labels.map((_, i) => (
+          <input
+            type="radio"
+            name={uid}
+            id={`${uid}-${i}`}
+            checked={active === i}
+            aria-controls={`${uid}-panel-${i}`}
+          />
+        ))}
+      </fieldset>
+
       <div class="tab-header">
         {labels.map((label, i) => (
-          <a
-            class:list={["tab-label", activeIndex === i && "active"]}
-            href={links[i]}
-          >
+          <label class="tab-label" for={`${uid}-${i}`}>
             {label}
-          </a>
+          </label>
         ))}
       </div>
-    ) : (
-      <>
-        <fieldset>
-          <legend class="sr-only">
-            {t("common:components.pageTabs.tabSelection")}
-          </legend>
-          {labels.map((_, i) => (
-            <input
-              type="radio"
-              name={uid}
-              id={`${uid}-${i}`}
-              checked={active === i}
-              aria-controls={`${uid}-panel-${i}`}
-            />
-          ))}
-        </fieldset>
 
-        <div class="tab-header">
-          {labels.map((label, i) => (
-            <label class="tab-label" for={`${uid}-${i}`}>
-              {label}
-            </label>
-          ))}
-        </div>
-
-        <div class="tab-content">
-          {labels[0] && (
-            <div
-              class="panel"
-              id={`${uid}-panel-0`}
-              role="tabpanel"
-              aria-labelledby={`${uid}-0`}
-            >
-              <slot name="panel-0" />
-            </div>
-          )}
-          {labels[1] && (
-            <div
-              class="panel"
-              id={`${uid}-panel-1`}
-              role="tabpanel"
-              aria-labelledby={`${uid}-1`}
-            >
-              <slot name="panel-1" />
-            </div>
-          )}
-          {labels[2] && (
-            <div
-              class="panel"
-              id={`${uid}-panel-2`}
-              role="tabpanel"
-              aria-labelledby={`${uid}-2`}
-            >
-              <slot name="panel-2" />
-            </div>
-          )}
-          {labels[3] && (
-            <div
-              class="panel"
-              id={`${uid}-panel-3`}
-              role="tabpanel"
-              aria-labelledby={`${uid}-3`}
-            >
-              <slot name="panel-3" />
-            </div>
-          )}
-          {labels[4] && (
-            <div
-              class="panel"
-              id={`${uid}-panel-4`}
-              role="tabpanel"
-              aria-labelledby={`${uid}-4`}
-            >
-              <slot name="panel-4" />
-            </div>
-          )}
-          {labels[5] && (
-            <div
-              class="panel"
-              id={`${uid}-panel-5`}
-              role="tabpanel"
-              aria-labelledby={`${uid}-5`}
-            >
-              <slot name="panel-5" />
-            </div>
-          )}
-          {labels[6] && (
-            <div
-              class="panel"
-              id={`${uid}-panel-6`}
-              role="tabpanel"
-              aria-labelledby={`${uid}-6`}
-            >
-              <slot name="panel-6" />
-            </div>
-          )}
-          {labels[7] && (
-            <div
-              class="panel"
-              id={`${uid}-panel-7`}
-              role="tabpanel"
-              aria-labelledby={`${uid}-7`}
-            >
-              <slot name="panel-7" />
-            </div>
-          )}
-          {labels[8] && (
-            <div
-              class="panel"
-              id={`${uid}-panel-8`}
-              role="tabpanel"
-              aria-labelledby={`${uid}-8`}
-            >
-              <slot name="panel-8" />
-            </div>
-          )}
-          {labels[9] && (
-            <div
-              class="panel"
-              id={`${uid}-panel-9`}
-              role="tabpanel"
-              aria-labelledby={`${uid}-9`}
-            >
-              <slot name="panel-9" />
-            </div>
-          )}
-        </div>
-      </>
-    )
-  }
+      <div class="tab-content">
+        {labels[0] && (
+          <div
+            class="panel"
+            id={`${uid}-panel-0`}
+            role="tabpanel"
+            aria-labelledby={`${uid}-0`}
+          >
+            <slot name="panel-0" />
+          </div>
+        )}
+        {labels[1] && (
+          <div
+            class="panel"
+            id={`${uid}-panel-1`}
+            role="tabpanel"
+            aria-labelledby={`${uid}-1`}
+          >
+            <slot name="panel-1" />
+          </div>
+        )}
+        {labels[2] && (
+          <div
+            class="panel"
+            id={`${uid}-panel-2`}
+            role="tabpanel"
+            aria-labelledby={`${uid}-2`}
+          >
+            <slot name="panel-2" />
+          </div>
+        )}
+        {labels[3] && (
+          <div
+            class="panel"
+            id={`${uid}-panel-3`}
+            role="tabpanel"
+            aria-labelledby={`${uid}-3`}
+          >
+            <slot name="panel-3" />
+          </div>
+        )}
+        {labels[4] && (
+          <div
+            class="panel"
+            id={`${uid}-panel-4`}
+            role="tabpanel"
+            aria-labelledby={`${uid}-4`}
+          >
+            <slot name="panel-4" />
+          </div>
+        )}
+        {labels[5] && (
+          <div
+            class="panel"
+            id={`${uid}-panel-5`}
+            role="tabpanel"
+            aria-labelledby={`${uid}-5`}
+          >
+            <slot name="panel-5" />
+          </div>
+        )}
+        {labels[6] && (
+          <div
+            class="panel"
+            id={`${uid}-panel-6`}
+            role="tabpanel"
+            aria-labelledby={`${uid}-6`}
+          >
+            <slot name="panel-6" />
+          </div>
+        )}
+        {labels[7] && (
+          <div
+            class="panel"
+            id={`${uid}-panel-7`}
+            role="tabpanel"
+            aria-labelledby={`${uid}-7`}
+          >
+            <slot name="panel-7" />
+          </div>
+        )}
+        {labels[8] && (
+          <div
+            class="panel"
+            id={`${uid}-panel-8`}
+            role="tabpanel"
+            aria-labelledby={`${uid}-8`}
+          >
+            <slot name="panel-8" />
+          </div>
+        )}
+        {labels[9] && (
+          <div
+            class="panel"
+            id={`${uid}-panel-9`}
+            role="tabpanel"
+            aria-labelledby={`${uid}-9`}
+          >
+            <slot name="panel-9" />
+          </div>
+        )}
+      </div>
+    </>
+  )}
 </div>
 
 <style lang="scss">

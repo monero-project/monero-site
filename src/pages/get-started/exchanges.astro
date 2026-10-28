@@ -58,19 +58,17 @@ const highlightOptions = [
     <!-- hidden filter radio buttons -->
     <fieldset id="exchange-filters">
       <legend class="sr-only">Exchange Filters</legend>
-      {
-        highlightOptions.map((opt) => {
-          const filterId = `filter-${opt.key}`;
-          return (
-            <input
-              id={filterId}
-              class="filter-toggle"
-              type="radio"
-              name="exchange-filter"
-            />
-          );
-        })
-      }
+      {highlightOptions.map((opt) => {
+        const filterId = `filter-${opt.key}`;
+        return (
+          <input
+            id={filterId}
+            class="filter-toggle"
+            type="radio"
+            name="exchange-filter"
+          />
+        );
+      })}
       <input
         id="filter-none"
         class="filter-toggle"
@@ -103,17 +101,15 @@ const highlightOptions = [
           clearFilterId="filter-none"
           mobileToggleId="mobile-filter-toggle"
         >
-          {
-            highlightOptions.map((opt) => (
-              <FilterOption
-                filterId={`filter-${opt.key}`}
-                highlight={opt.highlight}
-                icon={opt.icon}
-                title={opt.title}
-                subtitle={opt.subtitle}
-              />
-            ))
-          }
+          {highlightOptions.map((opt) => (
+            <FilterOption
+              filterId={`filter-${opt.key}`}
+              highlight={opt.highlight}
+              icon={opt.icon}
+              title={opt.title}
+              subtitle={opt.subtitle}
+            />
+          ))}
         </FiltersPanel>
 
         <PageSection

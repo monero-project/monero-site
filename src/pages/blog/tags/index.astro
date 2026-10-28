@@ -31,19 +31,17 @@ const { t, localizeHref } = Astro.locals;
   />
   <PageContainer>
     <ul>
-      {
-        tags.map((tag) => (
-          <li>
-            <a
-              href={localizeHref(
-                `/blog/tags/${tag.toLowerCase().replace(/\s+/g, "-")}/`,
-              )}
-            >
-              {t(`blog:tagLabels.${tag}`, { defaultValue: tag })}
-            </a>
-          </li>
-        ))
-      }
+      {tags.map((tag) => (
+        <li>
+          <a
+            href={localizeHref(
+              `/blog/tags/${tag.toLowerCase().replace(/\s+/g, "-")}/`,
+            )}
+          >
+            {t(`blog:tagLabels.${tag}`, { defaultValue: tag })}
+          </a>
+        </li>
+      ))}
     </ul>
   </PageContainer>
 </Layout>

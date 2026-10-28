@@ -53,18 +53,16 @@ const renderedSections = await Promise.all(
     <TOCContainer sections={sections} ariaLabel={t("legal:aria.sectionsNav")} />
 
     <Column class="legal-content">
-      {
-        renderedSections.map((section, index) => (
-          <>
-            {index > 0 && <hr aria-hidden="true" />}
-            <PageSection title={section.title} anchorId={section.id} centered>
-              <div class="prose">
-                <section.Content />
-              </div>
-            </PageSection>
-          </>
-        ))
-      }
+      {renderedSections.map((section, index) => (
+        <>
+          {index > 0 && <hr aria-hidden="true" />}
+          <PageSection title={section.title} anchorId={section.id} centered>
+            <div class="prose">
+              <section.Content />
+            </div>
+          </PageSection>
+        </>
+      ))}
     </Column>
   </PageContainer>
 </Layout>

@@ -34,18 +34,16 @@ const { t, localizeHref } = Astro.locals;
       anchorId="explorers"
     >
       <Grid as="ul" columns={2} gap="sm">
-        {
-          blockExplorers.map((tool) => (
-            <li>
-              <ExternalResourceButton
-                href={tool.href}
-                title={tool.title}
-                subtitle={t(`tools:explore.tools.blockExplorers.${tool.id}`)}
-                onionHref={tool.onionHref}
-              />
-            </li>
-          ))
-        }
+        {blockExplorers.map((tool) => (
+          <li>
+            <ExternalResourceButton
+              href={tool.href}
+              title={tool.title}
+              subtitle={t(`tools:explore.tools.blockExplorers.${tool.id}`)}
+              onionHref={tool.onionHref}
+            />
+          </li>
+        ))}
       </Grid>
     </PageSection>
 
@@ -57,17 +55,15 @@ const { t, localizeHref } = Astro.locals;
       anchorId="network"
     >
       <Grid as="ul" columns={2} gap="sm">
-        {
-          networkTools.map((tool) => (
-            <li>
-              <ExternalResourceButton
-                href={tool.href}
-                title={tool.title}
-                subtitle={t(`tools:explore.tools.network.${tool.id}`)}
-              />
-            </li>
-          ))
-        }
+        {networkTools.map((tool) => (
+          <li>
+            <ExternalResourceButton
+              href={tool.href}
+              title={tool.title}
+              subtitle={t(`tools:explore.tools.network.${tool.id}`)}
+            />
+          </li>
+        ))}
       </Grid>
     </PageSection>
 
@@ -79,17 +75,15 @@ const { t, localizeHref } = Astro.locals;
       anchorId="utilities"
     >
       <Grid as="ul" columns={2} gap="sm">
-        {
-          utilities.map((tool) => (
-            <li>
-              <ExternalResourceButton
-                href={tool.href}
-                title={tool.title}
-                subtitle={t(`tools:explore.tools.utilities.${tool.id}`)}
-              />
-            </li>
-          ))
-        }
+        {utilities.map((tool) => (
+          <li>
+            <ExternalResourceButton
+              href={tool.href}
+              title={tool.title}
+              subtitle={t(`tools:explore.tools.utilities.${tool.id}`)}
+            />
+          </li>
+        ))}
       </Grid>
     </PageSection>
   </PageContainer>
@@ -102,7 +96,10 @@ const { t, localizeHref } = Astro.locals;
     <a
       href="https://github.com/monero-project/monero-site/issues/new"
       target="_blank"
-      rel="noopener noreferrer">{t("tools:explore.disclaimer.linkText")}</a
-    >.
+      rel="noopener noreferrer"
+    >
+      {t("tools:explore.disclaimer.linkText")}
+    </a>
+    .
   </DisclaimerBar>
 </Layout>

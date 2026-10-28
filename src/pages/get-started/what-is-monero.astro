@@ -52,8 +52,9 @@ const getLanguageLabel = (lang: string): string => {
   <TitleCard title={t("what-is-monero:hero.title")} />
   <PageContainer>
     <MediaSection as="div" class="content-section bleed-aside">
-      <span class="eyebrow">{t("what-is-monero:sections.problem.eyebrow")}</span
-      >
+      <span class="eyebrow">
+        {t("what-is-monero:sections.problem.eyebrow")}
+      </span>
       <h2
         set:html={safeMarkdown.parseInline(
           t("what-is-monero:sections.problem.title"),
@@ -77,9 +78,9 @@ const getLanguageLabel = (lang: string): string => {
     <hr />
 
     <MediaSection as="div" reverse class="content-section bleed-aside">
-      <span class="eyebrow"
-        >{t("what-is-monero:sections.solution.eyebrow")}</span
-      >
+      <span class="eyebrow">
+        {t("what-is-monero:sections.solution.eyebrow")}
+      </span>
       <h2
         set:html={safeMarkdown.parseInline(
           t("what-is-monero:sections.solution.title"),
@@ -104,9 +105,9 @@ const getLanguageLabel = (lang: string): string => {
 
     <MediaSection as="div" hideAsideOnMobile={false} class="content-section">
       <Fragment>
-        <span class="eyebrow"
-          >{t("what-is-monero:sections.useCases.eyebrow")}</span
-        >
+        <span class="eyebrow">
+          {t("what-is-monero:sections.useCases.eyebrow")}
+        </span>
         <h2>{t("what-is-monero:sections.useCases.title")}</h2>
         <p
           set:html={safeMarkdown.parseInline(
@@ -155,9 +156,9 @@ const getLanguageLabel = (lang: string): string => {
     <hr />
 
     <div class="content-section centered-section">
-      <span class="eyebrow"
-        >{t("what-is-monero:sections.technology.eyebrow")}</span
-      >
+      <span class="eyebrow">
+        {t("what-is-monero:sections.technology.eyebrow")}
+      </span>
       <h2>{t("what-is-monero:sections.technology.title")}</h2>
       <Grid minWidth="20rem" gap="2xl">
         <FeatureCard
@@ -236,16 +237,14 @@ const getLanguageLabel = (lang: string): string => {
             label="English"
             default
           />
-          {
-            i18nVttFiles.map((lang) => (
-              <track
-                kind="captions"
-                src={`/media/vtt/msmsm/${lang}.vtt`}
-                srclang={lang}
-                label={getLanguageLabel(lang)}
-              />
-            ))
-          }
+          {i18nVttFiles.map((lang) => (
+            <track
+              kind="captions"
+              src={`/media/vtt/msmsm/${lang}.vtt`}
+              srclang={lang}
+              label={getLanguageLabel(lang)}
+            />
+          ))}
           Your browser does not support the video tag.
         </video>
       </VideoContainer>

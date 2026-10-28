@@ -112,43 +112,37 @@ const paperTabs = [
       <SidebarLayout>
         <SectionTabs tabs={paperTabs}>
           <Column slot="panel-0" gap="sm">
-            {
-              mrlBulletins.map((paper) => (
-                <PaperCard
-                  code={paper.code}
-                  title={paper.title}
-                  abstract={paper.abstract}
-                  url={paper.url}
-                  note={paper.note}
-                />
-              ))
-            }
+            {mrlBulletins.map((paper) => (
+              <PaperCard
+                code={paper.code}
+                title={paper.title}
+                abstract={paper.abstract}
+                url={paper.url}
+                note={paper.note}
+              />
+            ))}
           </Column>
           <Column slot="panel-1" gap="sm">
-            {
-              iacrPapers.map((paper) => (
-                <PaperCard
-                  code={paper.code}
-                  title={paper.title}
-                  abstract={paper.abstract}
-                  url={paper.url}
-                  note={paper.note}
-                />
-              ))
-            }
+            {iacrPapers.map((paper) => (
+              <PaperCard
+                code={paper.code}
+                title={paper.title}
+                abstract={paper.abstract}
+                url={paper.url}
+                note={paper.note}
+              />
+            ))}
           </Column>
           <Column slot="panel-2" gap="sm">
-            {
-              otherPapers.map((paper) => (
-                <PaperCard
-                  code={paper.code}
-                  title={paper.title}
-                  abstract={paper.abstract}
-                  url={paper.url}
-                  note={paper.note}
-                />
-              ))
-            }
+            {otherPapers.map((paper) => (
+              <PaperCard
+                code={paper.code}
+                title={paper.title}
+                abstract={paper.abstract}
+                url={paper.url}
+                note={paper.note}
+              />
+            ))}
           </Column>
         </SectionTabs>
 
@@ -157,17 +151,15 @@ const paperTabs = [
           title={t("knowledge-base:researchLab.whitepapers.title")}
           subtitle={t("knowledge-base:researchLab.whitepapers.subtitle")}
         >
-          {
-            whitepapers.map((paper) => (
-              <SidebarLink
-                href={paper.url}
-                icon={icons.mask("book-text")}
-                external
-              >
-                {t(`knowledge-base:researchLab.whitepapers.items.${paper.id}`)}
-              </SidebarLink>
-            ))
-          }
+          {whitepapers.map((paper) => (
+            <SidebarLink
+              href={paper.url}
+              icon={icons.mask("book-text")}
+              external
+            >
+              {t(`knowledge-base:researchLab.whitepapers.items.${paper.id}`)}
+            </SidebarLink>
+          ))}
         </SidebarCard>
       </SidebarLayout>
     </PageSection>

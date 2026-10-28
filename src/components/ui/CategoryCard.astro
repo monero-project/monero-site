@@ -20,9 +20,7 @@ const defaultLinkText = t("common:components.categoryCard.explore");
 ---
 
 <Card as="a" padding="none" hover href={href} class="category-card">
-  <div class="card-image">
-    {image && <Image src={image} alt="" />}
-  </div>
+  <div class="card-image">{image && <Image src={image} alt="" />}</div>
   <div class="card-content">
     <h2 class="card-title">{title}</h2>
     <p class="card-description">{description}</p>

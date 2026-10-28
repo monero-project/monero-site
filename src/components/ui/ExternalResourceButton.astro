@@ -50,13 +50,11 @@ const rtl = dir === "rtl";
     class="primary-link"
     tabindex="-1"
   >
-    {
-      logo && (
-        <div class="logo">
-          <Image src={logo} alt="" format="avif" priority />
-        </div>
-      )
-    }
+    {logo && (
+      <div class="logo">
+        <Image src={logo} alt="" format="avif" priority />
+      </div>
+    )}
 
     <div class="content">
       <span class="title">{title}</span>
@@ -73,22 +71,20 @@ const rtl = dir === "rtl";
     <MaskIcon src={icons.mask("external-link")} size="1em" rtl={rtl} />
   </a>
 
-  {
-    onionHref && (
-      <a
-        href={onionHref}
-        target="_blank"
-        rel="noopener noreferrer external"
-        class="onion-link"
-        title={t("common:components.externalResourceButton.onionService")}
-        aria-label={t(
-          "common:components.externalResourceButton.openOnionService",
-        )}
-      >
-        <MaskIcon src={icons.mask("tor")} size="1.25em" />
-      </a>
-    )
-  }
+  {onionHref && (
+    <a
+      href={onionHref}
+      target="_blank"
+      rel="noopener noreferrer external"
+      class="onion-link"
+      title={t("common:components.externalResourceButton.onionService")}
+      aria-label={t(
+        "common:components.externalResourceButton.openOnionService",
+      )}
+    >
+      <MaskIcon src={icons.mask("tor")} size="1.25em" />
+    </a>
+  )}
 </Card>
 
 <style>

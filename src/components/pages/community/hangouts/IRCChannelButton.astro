@@ -31,30 +31,27 @@ const { prefix, suffix } = parseChannelName(name);
 <div class="irc-channel-button">
   <a href={href} target="_blank" rel="noopener noreferrer" class="primary-link">
     <span class="channel-content">
-      <span class="channel-name"
-        >{prefix && <span class="channel-prefix">{prefix}</span>}<span
-          class="channel-suffix">{suffix}</span
-        ></span
-      >
+      <span class="channel-name">
+        {prefix && <span class="channel-prefix">{prefix}</span>}
+        <span class="channel-suffix">{suffix}</span>
+      </span>
       <span class="channel-desc">{description}</span>
     </span>
     <MaskIcon src={icons.mask("external-link")} size="1em" rtl={rtl} />
   </a>
 
-  {
-    matrixHref && (
-      <a
-        href={matrixHref}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="matrix-link"
-        title={t("common:components.ircChannelButton.matrix")}
-        aria-label={t("common:components.ircChannelButton.openOnMatrix")}
-      >
-        <MaskIcon src={icons.mask("matrix")} size="2em" />
-      </a>
-    )
-  }
+  {matrixHref && (
+    <a
+      href={matrixHref}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="matrix-link"
+      title={t("common:components.ircChannelButton.matrix")}
+      aria-label={t("common:components.ircChannelButton.openOnMatrix")}
+    >
+      <MaskIcon src={icons.mask("matrix")} size="2em" />
+    </a>
+  )}
 </div>
 
 <style>
