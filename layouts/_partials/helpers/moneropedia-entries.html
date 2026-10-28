@@ -1,0 +1,30 @@
+{{- /*
+  Moneropedia entries for a language (default: current), English entries
+  filling in where the language has none. Returns a list of
+    dict "name" <file name> "terms" [...] "summary" "..." "href" "/resources/moneropedia/<name>/"
+  ordered by file name, the order @term matching tries them in.
+*/ -}}
+{{- $lang := . | default site.Language.Lang -}}
+{{- $byName := dict -}}
+{{- range hugo.Sites -}}
+  {{- $l := .Language.Lang -}}
+  {{- if or (eq $l "en") (eq $l $lang) -}}
+    {{- with .GetPage "/resources/moneropedia" -}}
+      {{- range .RegularPages -}}
+        {{- if not (partial "helpers/moneropedia-own" .) }}{{ continue }}{{ end -}}
+        {{- $name := .File.ContentBaseName -}}
+        {{- if not (and .Title .Params.terms .Params.summary) -}}
+          {{- errorf "src/content/moneropedia/%s/%s: front matter needs title, terms (a list) and summary" $l .File.LogicalName -}}
+        {{- end -}}
+        {{- if or (eq $l $lang) (not (isset $byName $name)) -}}
+          {{- $href := printf "/resources/moneropedia/%s/" (lower $name) -}}
+          {{- if ne $l "en" }}{{ $href = printf "/%s%s" $l $href }}{{ end -}}
+          {{- $byName = merge $byName (dict $name (dict "name" $name "terms" (.Params.terms | default slice) "summary" (.Params.summary | default "") "href" $href)) -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $entries := slice -}}
+{{- range $byName }}{{ $entries = $entries | append . }}{{ end -}}{{- /* maps range in key order */ -}}
+{{- return $entries -}}

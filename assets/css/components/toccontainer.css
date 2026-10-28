@@ -1,0 +1,18 @@
+/* Styles for layouts/_partials/ui/toc/toccontainer.html */
+.toc[data-c-toccontainer] {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+  gap: var(--space-md);
+  padding-bottom: var(--space-2xl);
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: var(--space-2xl);
+}
+
+.toc-item-default[data-c-toccontainer] {
+  background: var(--card-color);
+
+  &:hover,
+  &:focus-visible {
+    background: var(--card-hover-color);
+  }
+}

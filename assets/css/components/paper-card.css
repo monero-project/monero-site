@@ -1,0 +1,52 @@
+/* Styles for layouts/_partials/pages/resources/research-lab/paper-card.html */
+.paper-card[data-c-paper-card] {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.paper-header[data-c-paper-card] {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.paper-code[data-c-paper-card] {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--monero-orange);
+  font-family: var(--font-mono, monospace);
+  background: color-mix(in srgb, var(--monero-orange) 12%, transparent);
+  padding: 0.2em 0.5em;
+  border-radius: var(--radius-sm);
+}
+
+.paper-badge[data-c-paper-card] {
+  font-size: var(--font-size-xs);
+  color: var(--paragraph-subtitle);
+  font-style: italic;
+}
+
+.paper-title[data-c-paper-card] {
+  margin: 0;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--heading-color);
+  line-height: 1.35;
+}
+
+.paper-abstract[data-c-paper-card] {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  color: var(--paragraph-subtitle);
+  line-height: var(--line-height-body);
+  overflow: hidden;
+  max-width: 65ch;
+}
+
+@media (width <= 600px) {
+  .paper-title[data-c-paper-card] {
+    font-size: var(--font-size-sm);
+  }
+}

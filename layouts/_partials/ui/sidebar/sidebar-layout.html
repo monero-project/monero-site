@@ -1,0 +1,23 @@
+{{- /*
+  Main content (the block) with a sidebar, stacked on narrow screens.
+
+    {{ with partial "ui/sidebar/sidebar-layout" (dict "sidebar" (partial "pages/x/links" .)) }}...{{ end }}
+
+  Params: sidebar (HTML), sidebarWidth (default 20rem), sidebarPosition
+  (start|end, default end), gap (lg|xl|2xl|3xl, default 2xl), class, attrs.
+*/ -}}
+{{- $position := .sidebarPosition | default "end" -}}
+{{- $a := dict
+  "class" (trim (printf "layout %s" (.class | default "")) " ")
+  "data-position" (cond (ne $position "end") $position "")
+  "style" (printf "--gap: var(--space-%s); --sidebar-width: %s" (.gap | default "2xl") (.sidebarWidth | default "20rem"))
+  "data-c-sidebar-layout" true
+-}}
+<div{{ partial "helpers/attrs" (merge $a (.attrs | default dict)) }}>
+  <div class="main" data-c-sidebar-layout>
+    {{ templates.Inner . }}
+  </div>
+  <aside class="sidebar" data-c-sidebar-layout>
+    {{ .sidebar }}
+  </aside>
+</div>

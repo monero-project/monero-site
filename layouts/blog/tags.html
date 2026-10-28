@@ -1,0 +1,15 @@
+{{- /* /blog/tags/: every tag, in order of first use (created by content/blog/_content.gotmpl) */ -}}
+{{ define "meta" }}{{ .Store.Set "meta" (dict "title" (partial "helpers/t" "blog:tagIndex.hero.title") "description" (partial "helpers/t" "blog:tagIndex.hero.subtitle")) }}{{ end }}
+{{ define "head" }}<link rel="alternate" type="application/rss+xml" title="Monero Blog RSS" href="{{ absURL "feed.xml" }}">{{ end }}
+{{ define "main" }}
+{{ partial "ui/title-card" (dict "title" (partial "helpers/t" "blog:tagIndex.hero.title") "subtitle" (partial "helpers/t" "blog:tagIndex.hero.subtitle")) }}
+{{ with partial "ui/layout/page-container" (dict "tags" .Params.tagList) }}
+  <ul>
+    {{- range .tags }}
+    <li>
+      <a href="{{ partial "helpers/href" (printf "/blog/tags/%s/" (replaceRE `\s+` "-" (lower .))) }}">{{ partial "helpers/t" (slice (printf "blog:tagLabels.%s" .) (dict "defaultValue" .)) }}</a>
+    </li>
+    {{- end }}
+  </ul>
+{{ end }}
+{{ end }}

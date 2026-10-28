@@ -1,0 +1,155 @@
+baseURL = "https://beta.monerodevs.org/"
+title = "Monero"
+publishDir = "dist"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+disableHugoGeneratorInject = true
+disableKinds = ["taxonomy", "term", "rss", "sitemap", "robotstxt"]
+# keep builds reproducible: no wall-clock or git dates leak into the output
+enableGitInfo = false
+timeZone = "UTC"
+
+[build]
+  noJSConfigInAssets = true
+
+# environment variables templates may read: Coolify's (PR previews) and the
+# switches that make a preview build faster (see README.md, Coolify):
+#   LIMIT_POSTS=10               only the newest 10 blog posts (and KEEP_POSTS:
+#                                file names of other posts to build too)
+#   SKIP_OG=true                 no drawn preview cards; posts use the default card
+#   SKIP_IMAGE_OPTIMIZATION=true images as they are, not resized
+[security.funcs]
+  getenv = ["^HUGO_", "^CI$", "^COOLIFY_", "^SOURCE_COMMIT$", "^LIMIT_POSTS$", "^KEEP_POSTS$", "^SKIP_OG$", "^SKIP_IMAGE_OPTIMIZATION$"]
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+# Bare addresses (https://..., www...., e-mail) are linked by helpers/autolink
+# after rendering, with GitHub's rules; Goldmark's own linkify misses some.
+[markup.goldmark.extensions]
+  linkify = false
+
+[markup.goldmark.parser.attribute]
+  block = false
+
+# No smart punctuation: quotes, -- and ... stay as typed.
+[markup.goldmark.extensions.typographer]
+  disable = true
+
+# sitemap and blog feed: one each, at the site root (layouts/home.*.xml)
+[outputFormats.sitemapindex]
+  mediaType = "application/xml"
+  baseName = "sitemap-index"
+  isPlainText = true
+  notAlternative = true
+[outputFormats.sitemap0]
+  mediaType = "application/xml"
+  baseName = "sitemap-0"
+  isPlainText = true
+  notAlternative = true
+# /en/<path>/ redirects to /<path>/ for every English page (layouts/all.enredirect.html).
+# Its own media type keeps Hugo from using the pages' normal HTML templates for it.
+[mediaTypes."text/x-enredirect"]
+  suffixes = ["html"]
+[outputFormats.enredirect]
+  mediaType = "text/x-enredirect"
+  path = "en"
+  baseName = "index"
+  isHTML = true
+  notAlternative = true
+  noUgly = true
+[outputFormats.feed]
+  mediaType = "application/rss+xml"
+  baseName = "feed"
+  isPlainText = true
+  notAlternative = true
+
+[languages.en]
+  weight = 1
+  label = "English"
+  locale = "en-US"
+  [languages.en.outputs]
+    home = ["html", "enredirect", "sitemapindex", "sitemap0", "feed"]
+    page = ["html", "enredirect"]
+    section = ["html", "enredirect"]
+
+[languages.ar]
+  weight = 2
+  label = "العربية"
+  locale = "ar-SA"
+  direction = "rtl"
+
+[languages.zh]
+  weight = 3
+  label = "中文"
+  locale = "zh-CN"
+
+# Content, translations and data live under src/ (Weblate and the CI workflows
+# read and write those files); these mounts give Hugo its usual layout.
+[module]
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    [module.mounts.sites.matrix]
+      languages = ["**"]
+  # blog posts are read by content/blog/_content.gotmpl, which gives them the
+  # same URLs the site always had (/blog/YYYY/MM/DD/<file name>/)
+  [[module.mounts]]
+    source = "src/content/blog"
+    target = "assets/blog"
+  [[module.mounts]]
+    source = "src/content/legal"
+    target = "content/legal"
+    files = ["! **/_*"]
+    [module.mounts.sites.matrix]
+      languages = ["**"]
+  # moneropedia: a language's own entries, then the English ones for entries it
+  # hasn't translated (the first mount wins for a file in both); @term links to
+  # entries a language lacks point at the English page (see helpers/moneropedia)
+  [[module.mounts]]
+    source = "src/content/moneropedia/ar"
+    target = "content/resources/moneropedia"
+    files = ["! **/_*"]
+    [module.mounts.sites.matrix]
+      languages = ["ar"]
+  [[module.mounts]]
+    source = "src/content/moneropedia/zh"
+    target = "content/resources/moneropedia"
+    files = ["! **/_*"]
+    [module.mounts.sites.matrix]
+      languages = ["zh"]
+  [[module.mounts]]
+    source = "src/content/moneropedia/en"
+    target = "content/resources/moneropedia"
+    files = ["! **/_*"]
+    [module.mounts.sites.matrix]
+      languages = ["**"]
+  [[module.mounts]]
+    source = "src/i18n/translations"
+    target = "data/translations"
+  [[module.mounts]]
+    source = "src/data"
+    target = "data"
+    # data files only (contributing.json.asc lives here too)
+    files = ["*.yaml", "**/*.yaml", "*.json", "**/*.json"]
+  [[module.mounts]]
+    source = "data"
+    target = "data"
+  [[module.mounts]]
+    source = "src/assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "public/meta"
+    target = "assets/meta"
+  [[module.mounts]]
+    source = "public"
+    target = "static"
+  [[module.mounts]]
+    source = "downloads"
+    target = "static/downloads"
+  [[module.mounts]]
+    source = "layouts"
+    target = "layouts"

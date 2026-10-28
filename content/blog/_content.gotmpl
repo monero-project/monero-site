@@ -1,0 +1,98 @@
+{{- /*
+  Builds the blog from src/content/blog/*.md (mounted at assets/blog):
+
+    /blog/YYYY/MM/DD/<rest of file name>/   one page per post   (layouts/blog/post.html)
+    /blog/2/, /blog/3/, ...                 all posts, 6 a page (layouts/blog/list.html;
+                                            page 1 is /blog/, content/blog/_index.md)
+    /blog/tags/                             tag index           (layouts/blog/tags.html)
+    /blog/tags/<tag>/, .../<tag>/2/, ...    posts with a tag    (layouts/blog/tag.html)
+
+  Post file names are YYYY-MM-DD-<slug>.md; the slug is used as-is in the URL.
+*/ -}}
+{{- /* the blog is English, but every language gets its own copy of the pages */ -}}
+{{- $.EnableAllLanguages -}}
+{{- $perPage := 6 -}}
+{{- $root := cond (eq site.Language.Lang hugo.Sites.Default.Language.Lang) "" (printf "/%s" site.Language.Lang) -}}
+
+{{- /* collect posts, newest first */ -}}
+{{- $posts := slice -}}
+{{- range resources.Match "blog/*.md" -}}
+  {{- $file := path.Base .Name -}}
+  {{- if not (hasPrefix $file "_") -}}
+    {{- $name := strings.TrimSuffix ".md" $file -}}
+    {{- $parts := split $name "-" -}}
+    {{- $y := index $parts 0 -}}
+    {{- $m := printf "%02d" (int (strings.TrimLeft "0" (index $parts 1))) -}}
+    {{- $d := printf "%02d" (int (strings.TrimLeft "0" (index $parts 2))) -}}
+    {{- $id := printf "%s/%s/%s/%s" $y $m $d (delimit (after 3 $parts) "-") -}}
+    {{- $raw := .Content -}}
+    {{- $fm := dict -}}
+    {{- $body := $raw -}}
+    {{- with findRESubmatch `(?s)\A---\r?\n(.*?)\r?\n---\r?\n?(.*)\z` $raw 1 -}}
+      {{- $fm = index . 0 1 | transform.Unmarshal (dict "format" "yaml") -}}
+      {{- $body = index . 0 2 -}}
+    {{- end -}}
+    {{- /* required front matter (summary, tags and image are optional) */ -}}
+    {{- range slice "title" "author" -}}
+      {{- if not (index $fm .) }}{{ errorf "src/content/blog/%s: front matter needs %q" $file . }}{{ end -}}
+    {{- end -}}
+    {{- with $fm.tags }}{{ if not (reflect.IsSlice .) }}{{ errorf "src/content/blog/%s: tags must be a list, e.g. [releases]" $file }}{{ end }}{{ end -}}
+    {{- with $fm.image }}{{ if not (resources.Get (path.Join "blog" .)) }}{{ errorf "src/content/blog/%s: image %q not found" $file . }}{{ end }}{{ end -}}
+    {{- $posts = $posts | append (dict "id" $id "sortKey" (lower $id) "date" (printf "%s-%s-%s" $y $m $d) "file" .Name "fm" $fm "body" $body) -}}
+  {{- end -}}
+{{- end -}}
+{{- $posts = sort $posts "sortKey" "desc" -}}
+{{- /* LIMIT_POSTS=N (faster preview and CI builds): only the newest N posts,
+  plus those named in KEEP_POSTS (file names, space-separated) */ -}}
+{{- with os.Getenv "LIMIT_POSTS" -}}
+  {{- $n := int . -}}
+  {{- $keep := split (os.Getenv "KEEP_POSTS") " " -}}
+  {{- $limited := slice -}}
+  {{- range $i, $p := $posts -}}
+    {{- if or (lt $i $n) (in $keep (path.Base $p.file)) }}{{ $limited = $limited | append $p }}{{ end -}}
+  {{- end -}}
+  {{- $posts = $limited -}}
+{{- end -}}
+
+{{- range $posts -}}
+  {{- $tags := .fm.tags | default slice -}}
+  {{- $.AddPage (dict
+    "path" (replace .id "/" "-")
+    "url" (printf "%s/blog/%s/" $root .id)
+    "title" .fm.title
+    "layout" "post"
+    "dates" (dict "date" (time.AsTime (printf "%sT00:00:00Z" .date)))
+    "params" (dict
+      "blogId" .id
+      "date" .date
+      "sortKey" .sortKey
+      "kind" "post"
+      "author" (.fm.author | default "")
+      "summary" (.fm.summary | default "")
+      "postTags" $tags
+      "image" (.fm.image | default "")
+      "sourceFile" .file
+    )
+    "content" (dict "value" .body)
+  ) -}}
+{{- end -}}
+
+{{- /* page 2+ of the full list */ -}}
+{{- $pages := int (math.Ceil (div (float (len $posts)) $perPage)) -}}
+{{- range seq 2 $pages -}}
+  {{- $.AddPage (dict "path" (printf "page-%d" .) "url" (printf "%s/blog/%d/" $root .) "title" "Blog" "layout" "list" "params" (dict "kind" "list" "pageNumber" .)) -}}
+{{- end -}}
+
+{{- /* tags, in order of first use from the oldest post */ -}}
+{{- $tags := slice -}}
+{{- range sort $posts "sortKey" "asc" }}{{ range .fm.tags }}{{ if not (in $tags .) }}{{ $tags = $tags | append . }}{{ end }}{{ end }}{{ end -}}
+{{- $.AddPage (dict "path" "tags" "url" (printf "%s/blog/tags/" $root) "title" "Tags" "layout" "tags" "params" (dict "kind" "tags" "tagList" $tags)) -}}
+{{- range $tag := $tags -}}
+  {{- $slug := replaceRE `\s+` "-" (lower $tag) -}}
+  {{- $count := 0 -}}
+  {{- range $posts }}{{ if in (.fm.tags | default slice) $tag }}{{ $count = add $count 1 }}{{ end }}{{ end -}}
+  {{- range $n := seq (int (math.Ceil (div (float $count) $perPage))) -}}
+    {{- $url := cond (eq $n 1) (printf "%s/blog/tags/%s/" $root $slug) (printf "%s/blog/tags/%s/%d/" $root $slug $n) -}}
+    {{- $.AddPage (dict "path" (printf "tags-%s-%d" (urlize $slug) $n) "url" $url "title" $tag "layout" "tag" "params" (dict "kind" "tag" "tag" $tag "tagSlug" $slug "pageNumber" $n)) -}}
+  {{- end -}}
+{{- end -}}

@@ -1,0 +1,40 @@
+/* Styles for layouts/_partials/ui/title-card.html */
+.header[data-c-title-card] {
+  display: flex;
+  flex-direction: column;
+
+  &[data-centered] {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.back[data-c-title-card] {
+  margin-bottom: var(--space-md);
+}
+
+.title[data-c-title-card] {
+  margin: 0;
+  color: var(--monero-orange);
+  font-weight: var(--font-weight-extra-bold);
+  line-height: var(--line-height-heading);
+  font-size: var(--font-size-5xl);
+}
+
+.subtitle[data-c-title-card] {
+  max-width: 70ch;
+  line-height: var(--line-height-body);
+  font-size: var(--font-size-xl);
+  color: var(--paragraph-main);
+  font-weight: var(--font-weight-normal);
+
+  .header[data-c-title-card][data-centered] & {
+    margin-inline: auto;
+  }
+}
+
+@media (width <= 600px) {
+  .subtitle[data-c-title-card] {
+    display: none;
+  }
+}

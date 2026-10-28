@@ -1,0 +1,25 @@
+/*
+  Responsive images from the ui/image partial. In a layer, so any page or
+  component style overrides them.
+*/
+@layer images {
+  :where([data-image]) {
+    height: auto;
+  }
+
+  :where([data-image="full-width"]) {
+    width: 100%;
+  }
+
+  :where([data-image="constrained"]) {
+    max-width: 100%;
+  }
+
+  [data-image-fit="cover"] {
+    object-fit: cover;
+  }
+
+  [data-image-pos="center"] {
+    object-position: center;
+  }
+}

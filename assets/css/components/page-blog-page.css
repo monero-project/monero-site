@@ -1,0 +1,32 @@
+/* Styles for layouts/blog/page.html */
+.blog-grid[data-c-page-blog-page][data-capped] {
+  grid-template-columns: 1fr;
+}
+
+.tabs-bar[data-c-page-blog-page] {
+  margin-bottom: var(--space-2xl);
+
+  & .tab-header {
+    margin-bottom: unset;
+  }
+}
+
+.rss-icon[data-c-page-blog-page] {
+  display: none;
+}
+
+@media (width >= 1200px) {
+  .blog-grid[data-c-page-blog-page][data-capped] {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .rss-icon[data-c-page-blog-page] {
+    display: inline-flex;
+    align-items: center;
+    color: var(--monero-orange);
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

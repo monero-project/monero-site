@@ -1,17 +1,9 @@
 # build output
 dist/
 
-# generated types
-.astro/
-
-# dependencies
-node_modules/
-
-# logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
+# hugo
+resources/_gen/
+.hugo_build.lock
 
 # environment variables
 .env
@@ -22,5 +14,3 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
-
-astro_tmp_pages_*

@@ -1,0 +1,34 @@
+/* Styles for layouts/_partials/ui/sidebar/sidebar-layout.html */
+.layout[data-c-sidebar-layout] {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+.main[data-c-sidebar-layout] {
+  flex: 1;
+  min-width: 0;
+}
+
+.sidebar[data-c-sidebar-layout] {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+@media (width >= 1200px) {
+  .layout[data-c-sidebar-layout] {
+    flex-direction: row;
+    align-items: flex-start;
+
+    &[data-position="start"] {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .sidebar[data-c-sidebar-layout] {
+    position: sticky;
+    top: 2rem;
+    flex: 0 0 var(--sidebar-width);
+  }
+}

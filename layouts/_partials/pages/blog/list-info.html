@@ -1,0 +1,37 @@
+{{- /*
+  Titles and tab state for a blog listing page. Params: page, tag (the tag's
+  slug for tag pages, "" for all posts). Returns dict: title, description,
+  heading, subtitle, baseURL, activeTab.
+*/ -}}
+{{- $t := "helpers/t" -}}
+{{- $path := .page.RelPermalink -}}
+{{- $res := dict -}}
+{{- if not .tag -}}
+  {{- $res = dict
+    "title" (partial $t "blog:index.pageTitle")
+    "description" (partial $t "blog:index.hero.subtitle")
+    "heading" (partial $t "blog:index.hero.title")
+    "subtitle" (partial $t "blog:index.hero.subtitle")
+    "baseURL" (partial "helpers/href" "/blog/")
+    "activeTab" 0
+  -}}
+{{- else -}}
+  {{- /* the tabs: page 1 of urgent/releases/community is a main tab */ -}}
+  {{- $active := -1 }}{{ $main := false -}}
+  {{- range $i, $tab := slice "/blog/tags/urgent" "/blog/tags/releases" "/blog/tags/community" -}}
+    {{- $l := partial "helpers/href" $tab -}}
+    {{- if and (eq $active -1) (hasPrefix $path $l) }}{{ $active = add $i 1 }}{{ end -}}
+    {{- if eq $path $l }}{{ $main = true }}{{ end -}}
+  {{- end -}}
+  {{- $name := replace .tag "-" " " -}}
+  {{- $label := partial $t (slice (printf "blog:tagLabels.%s" $name) (dict "defaultValue" $name)) -}}
+  {{- $res = dict
+    "title" (cond $main (partial $t "blog:index.pageTitle") (partial $t (slice "blog:tags.pageTitle" (dict "tag" $label))))
+    "description" (cond $main (partial $t "blog:index.hero.subtitle") (partial $t (slice "blog:tags.hero.subtitle" (dict "tag" $label))))
+    "heading" (partial $t (slice (cond $main "blog:index.hero.title" "blog:tags.hero.title") (dict "tag" $label)))
+    "subtitle" (partial $t (slice "blog:tags.hero.subtitle" (dict "tag" $label)))
+    "baseURL" (partial "helpers/href" (printf "/blog/tags/%s/" .tag))
+    "activeTab" $active
+  -}}
+{{- end -}}
+{{- return $res -}}

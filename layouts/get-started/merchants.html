@@ -1,0 +1,22 @@
+{{ define "meta" }}{{ .Store.Set "meta" (dict "title" (partial "helpers/t" "merchants:pageTitle") "description" (partial "helpers/t" "merchants:hero.subtitle")) }}{{ end }}
+{{ define "main" }}
+{{- $t := "helpers/t" -}}
+{{- $merchants := sort (index hugo.Data "get-started").merchants.merchants "name" -}}
+{{ partial "ui/title-card" (dict "title" (partial $t "merchants:hero.title") "subtitle" (partial $t "merchants:hero.subtitle")) }}
+{{ with partial "ui/layout/page-container" (dict "merchants" $merchants) }}
+  <p>{{ partial "helpers/t" "merchants:intro" }}</p>
+  {{ with partial "ui/layout/column" (dict "gap" "md" "merchants" .merchants) }}
+    {{- range .merchants }}
+    {{ partial "ui/external-resource-button" (dict
+      "href" .link
+      "onionHref" .onionLink
+      "title" .name
+      "subtitle" (partial "helpers/t" (printf "merchants:subtitles.%s" .id))
+      "logo" .logo) }}
+    {{- end }}
+  {{ end }}
+{{ end }}
+{{ with partial "ui/disclaimer/disclaimer-bar" (dict "icon" "shield-alert" "title" (partial $t "merchants:disclaimerTitle")) }}
+  {{- partial "helpers/t" "merchants:disclaimer" -}}
+{{ end }}
+{{ end }}

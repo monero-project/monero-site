@@ -1,0 +1,44 @@
+/* Styles for layouts/_partials/pages/resources/library/cheatsheet-card.html */
+.cheatsheet-card[data-c-cheatsheet-card] {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.cheatsheet-visual[data-c-cheatsheet-card] {
+  background: var(--background-color);
+  padding: var(--space-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--monero-orange);
+}
+
+.cheatsheet-content[data-c-cheatsheet-card] {
+  flex: 1;
+  padding: var(--space-md) var(--space-lg);
+}
+
+.cheatsheet-title[data-c-cheatsheet-card] {
+  margin: 0 0 var(--space-2xs);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--heading-color);
+}
+
+.cheatsheet-description[data-c-cheatsheet-card] {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  color: var(--paragraph-subtitle);
+  line-height: var(--line-height-body);
+}
+
+.cheatsheet-action[data-c-cheatsheet-card] {
+  padding: var(--space-sm) var(--space-lg);
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: var(--monero-orange);
+}

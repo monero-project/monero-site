@@ -1,0 +1,19 @@
+{{- /* Context: the current page */ -}}
+{{- $path := partial "helpers/page-path" . -}}
+<details class="lang-container" data-c-language-dropdown>
+  <summary class="lang" aria-label="{{ partial "helpers/t" "common:components.languageDropdown.changeLanguage" }}" aria-haspopup="true" role="button" data-c-language-dropdown>
+    {{ partial "ui/icons/mask-icon" (dict "src" "globe" "size" "1.5rem") }}
+  </summary>
+  <div class="lang-dropdown" aria-label="{{ partial "helpers/t" "common:components.languageDropdown.languages" }}" data-c-language-dropdown>
+    <ul class="lang-list" data-c-language-dropdown>
+      {{- range hugo.Sites }}
+      {{- $current := eq .Language.Lang site.Language.Lang }}
+      <li data-c-language-dropdown>
+        <a href="{{ partial "helpers/href" (slice .Language.Lang $path) }}" class="{{ cond $current "active" "" }}"{{ partial "helpers/attrs" (dict "aria-current" (cond $current "true" "")) }} data-c-language-dropdown>
+          {{ .Language.Label }}
+        </a>
+      </li>
+      {{- end }}
+    </ul>
+  </div>
+</details>

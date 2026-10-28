@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+# the same pages in the light and dark theme (see Caddyfile)
+Disallow: /dark/
+Disallow: /light/
 
 Sitemap: https://getmonero.org/sitemap-index.xml

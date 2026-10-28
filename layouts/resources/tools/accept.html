@@ -1,0 +1,27 @@
+{{ define "meta" }}{{ .Store.Set "meta" (dict "title" (partial "helpers/t" "tools:accept.pageTitle") "description" (partial "helpers/t" "tools:accept.subtitle")) }}{{ end }}
+{{ define "main" }}
+{{- $t := "helpers/t" -}}
+{{ partial "ui/title-card" (dict
+  "title" (partial $t "tools:accept.title")
+  "subtitle" (partial $t "tools:accept.subtitle")
+  "backHref" (partial "helpers/href" "/resources/tools/")
+  "backLabel" (partial $t "tools:index.title")
+) }}
+{{ with partial "ui/layout/page-container" (dict) }}
+  {{ with partial "ui/layout/grid" (dict "as" "ul" "columns" 2 "gap" "sm") }}
+    {{- range (index hugo.Data.resources "monero-tools").paymentGateways }}
+    <li>
+      {{ partial "ui/external-resource-button" (dict
+        "href" .href
+        "title" .title
+        "logo" .logo
+        "subtitle" (partial "helpers/t" (printf "tools:accept.tools.%s" .id))
+      ) }}
+    </li>
+    {{- end }}
+  {{ end }}
+{{ end }}
+{{ with partial "ui/disclaimer/disclaimer-bar" (dict "icon" "shield-alert" "title" (partial $t "tools:accept.disclaimer.title")) -}}
+  {{ partial "helpers/t" "tools:accept.disclaimer.text" }}<a href="https://github.com/monero-project/monero-site/issues/new" target="_blank" rel="noopener noreferrer">{{ partial "helpers/t" "tools:accept.disclaimer.linkText" }}</a>.
+{{ end }}
+{{ end }}

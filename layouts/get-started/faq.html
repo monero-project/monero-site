@@ -1,0 +1,48 @@
+{{ define "meta" }}{{ .Store.Set "meta" (dict "title" (partial "helpers/t" "faq:pageTitle") "description" (partial "helpers/t" "faq:hero.subtitle")) }}{{ end }}
+{{ define "main" }}
+{{- $t := "helpers/t" -}}
+{{- $p := dict "data-c-page-get-started-faq" true -}}
+{{- /* Each section's questions, in the order of faq.json */ -}}
+{{- $sections := slice -}}
+{{- range slice "basics" "nodes" "privacy" "security" "wallets" "economics" -}}
+  {{- $section := . -}}
+  {{- $items := slice -}}
+  {{- range partial "helpers/t-keys" (printf "faq:%s" $section) -}}
+    {{- if ne . "title" -}}
+      {{- $items = $items | append (dict
+        "title" (partial $t (printf "faq:%s.%s.title" $section .))
+        "content" (partial "helpers/markdown" (partial $t (printf "faq:%s.%s.content" $section .)))) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $sections = $sections | append (dict "title" (partial $t (printf "faq:%s.title" $section)) "items" $items) -}}
+{{- end -}}
+{{- $resources := slice
+  (dict "key" "moneroDocs" "icon" "developer-guides" "ctaHref" "https://docs.getmonero.org")
+  (dict "key" "stackExchange" "icon" "faq" "ctaHref" "https://monero.stackexchange.com")
+  (dict "key" "reddit" "icon" "developer-guides" "ctaHref" "https://www.reddit.com/r/MoneroSupport")
+  (dict "key" "monerohow" "icon" "developer-guides" "ctaHref" "https://monero.how")
+-}}
+{{- $d := dict "p" $p "sections" $sections "resources" $resources -}}
+
+{{ partial "ui/title-card" (dict "title" (partial $t "faq:hero.title") "subtitle" (partial $t "faq:hero.subtitle")) }}
+{{ with partial "ui/layout/page-container" (dict "attrs" $p "d" $d) }}
+  {{ with partial "ui/layout/grid" (dict "columns" 2 "gap" "lg" "class" "accordion-grid" "attrs" .d.p "d" .d) }}
+    {{- range .d.sections }}
+    {{ partial "pages/get-started/faq/accordion-card" . }}
+    {{- end }}
+  {{ end }}
+  {{ with partial "pages/index/index-card" (dict "id" "monero-resources" "title" (partial "helpers/t" "faq:additionalResources.title") "description" (partial "helpers/t" "faq:additionalResources.subtitle") "attrs" .d.p "d" .d) }}
+    {{ with partial "ui/layout/grid" (dict "minWidth" "18rem" "gap" "2xl" "class" "resource-grid" "attrs" .d.p "d" .d) }}
+      {{- range .d.resources }}
+      {{- $k := printf "faq:additionalResources.%s" .key }}
+      {{ partial "pages/index/resource-card" (dict
+        "icon" .icon
+        "title" (partial "helpers/t" (printf "%s.title" $k))
+        "description" (partial "helpers/t" (printf "%s.description" $k))
+        "ctaLabel" (partial "helpers/t" (printf "%s.ctaLabel" $k))
+        "ctaHref" .ctaHref) }}
+      {{- end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ end }}

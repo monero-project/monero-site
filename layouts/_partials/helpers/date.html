@@ -1,0 +1,13 @@
+{{- /*
+  Long date ("April 22, 2020" / "٢٢ أبريل ٢٠٢٠" / "2020年4月22日") for the
+  current language. Accepts a time.Time or a YYYY-MM-DD string.
+*/ -}}
+{{- $t := time.AsTime . -}}
+{{- $lang := site.Language.Lang -}}
+{{- $l := hugo.Data.locale -}}
+{{- $fmt := index $l.dateLong $lang | default $l.dateLong.en -}}
+{{- $months := index $l.months $lang | default $l.months.en -}}
+{{- $out := replace $fmt "{d}" (partial "helpers/number" $t.Day) -}}
+{{- $out = replace $out "{month}" (index $months (sub (int $t.Month) 1)) -}}
+{{- $out = replace $out "{y}" (partial "helpers/number" $t.Year) -}}
+{{- return $out -}}

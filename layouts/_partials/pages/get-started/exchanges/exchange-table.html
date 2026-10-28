@@ -1,0 +1,78 @@
+{{- /*
+  Table of exchanges (from src/data/get-started/exchanges.yaml). Each row
+  gets data-highlight tags that the filters on the page match on.
+
+    {{ partial "pages/get-started/exchanges/exchange-table" (dict "exchanges" $list "hasKyc" true) }}
+
+  Params: exchanges, hasKyc (adds the KYC column).
+*/ -}}
+{{- if not .exchanges }}{{ errorf "exchange-table: 'exchanges' is required" }}{{ end -}}
+{{- $t := "helpers/t" -}}
+{{- $label := dict
+  "name" (partial $t "exchanges:table.name")
+  "kyc" (partial $t "exchanges:table.kyc")
+  "fiat" (partial $t "exchanges:table.fiat")
+  "crypto" (partial $t "exchanges:table.crypto")
+  "visit" (partial $t "exchanges:table.visit")
+-}}
+<div class="table-wrap" data-c-exchange-table>
+  <table class="exchange-table" data-c-exchange-table>
+    <colgroup data-c-exchange-table>
+      <col class="col-name" data-c-exchange-table>
+      {{- if .hasKyc }}
+      <col class="col-kyc" data-c-exchange-table>
+      {{- end }}
+      <col class="col-flag" data-c-exchange-table>
+      <col class="col-flag" data-c-exchange-table>
+      <col class="col-visit" data-c-exchange-table>
+    </colgroup>
+    <thead class="exchange-thead" data-c-exchange-table>
+      <tr data-c-exchange-table>
+        <th scope="col" data-c-exchange-table>{{ $label.name }}</th>
+        {{- if .hasKyc }}
+        <th scope="col" data-c-exchange-table>{{ $label.kyc }}</th>
+        {{- end }}
+        <th scope="col" data-c-exchange-table>{{ $label.fiat }}</th>
+        <th scope="col" data-c-exchange-table>{{ $label.crypto }}</th>
+        <th scope="col" class="th-visit" data-c-exchange-table>
+          <span class="sr-only" data-c-exchange-table>{{ $label.visit }}</span>
+        </th>
+      </tr>
+    </thead>
+    <tbody data-c-exchange-table>
+      {{- range .exchanges }}
+      {{- $tags := slice -}}
+      {{- if .fiat }}{{ $tags = $tags | append "fiat" }}{{ end -}}
+      {{- if .crypto }}{{ $tags = $tags | append "crypto" }}{{ end -}}
+      {{- if eq .type "decentralized" }}{{ $tags = $tags | append "privacy" }}{{ end -}}
+      {{- if eq .type "aggregator" }}{{ $tags = $tags | append "user-friendly" }}{{ end -}}
+      {{- if .userFriendly }}{{ $tags = $tags | append "user-friendly" }}{{ end }}
+      <tr class="exchange-row"{{ partial "helpers/attrs" (dict "data-highlight" (delimit $tags " ")) }} data-c-exchange-table>
+        <td class="with-icon" data-label="{{ $label.name }}" data-c-exchange-table>
+          {{ partial "ui/image" (dict "src" .img "alt" .alt "class" "exchange-icon" "format" "avif" "priority" true "attrs" (dict "data-c-exchange-table" true)) }}
+          <span class="exchange-name" data-c-exchange-table>{{ .name }}</span>
+          <span class="exchange-description" data-c-exchange-table>
+            {{ partial $t (printf "exchanges:descriptions.%s" .id) }}
+          </span>
+        </td>
+        {{- if $.hasKyc }}
+        <td class="{{ trim (printf "pill %s" (.kycClass | default "")) " " }}" data-label="{{ $label.kyc }}" data-c-exchange-table>
+          {{ with .kycReq }}{{ partial $t (printf "exchanges:kyc.%s" .) }}{{ end }}
+        </td>
+        {{- end }}
+        <td class="pill {{ cond .fiat "checkmark" "cross" }}" data-label="{{ $label.fiat }}" data-c-exchange-table>
+          <span aria-hidden="true" data-c-exchange-table>{{ cond .fiat "✓" "✗" }}</span>
+        </td>
+        <td class="pill {{ cond .crypto "checkmark" "cross" }}" data-label="{{ $label.crypto }}" data-c-exchange-table>
+          <span aria-hidden="true" data-c-exchange-table>{{ cond .crypto "✓" "✗" }}</span>
+        </td>
+        <td class="visit-cell" data-label="{{ $label.visit }}" data-c-exchange-table>
+          <a href="{{ .url }}" target="_blank" rel="noopener noreferrer external" data-c-exchange-table>
+            {{ $label.visit }}
+          </a>
+        </td>
+      </tr>
+      {{- end }}
+    </tbody>
+  </table>
+</div>

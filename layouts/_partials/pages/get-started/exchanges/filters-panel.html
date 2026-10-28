@@ -1,0 +1,28 @@
+{{- /*
+  Exchanges sidebar: title, description, the filter options (the block), a
+  "clear" label and, on mobile, a close label.
+
+    {{ with partial "pages/get-started/exchanges/filters-panel" (dict "title" "..." "clearFilterId" "filter-none" "mobileToggleId" "mobile-filter-toggle") }}
+      {{ partial "pages/get-started/exchanges/filter-option" ... }}
+    {{ end }}
+
+  Params: title, description, clearLabel, closeLabel, clearFilterId,
+  mobileToggleId.
+*/ -}}
+{{- $options := templates.Inner . -}}
+<div class="filters-panel" data-c-filters-panel>
+  <h2 class="filters-title" data-c-filters-panel>{{ .title }}</h2>
+  <p class="filters-description" data-c-filters-panel>{{ .description }}</p>
+  {{ with partial "ui/layout/column" (merge . (dict "gap" "md" "options" $options "attrs" (dict "data-c-filters-panel" true))) }}
+    {{ .options }}
+    <div class="clear-filters" data-c-filters-panel>
+      <label for="{{ .clearFilterId }}" class="clear-filters-link" data-c-filters-panel>
+        {{ .clearLabel }}
+      </label>
+    </div>
+    <label for="{{ .mobileToggleId }}" class="mobile-filter-close" data-c-filters-panel>
+      {{ partial "ui/icons/mask-icon" (dict "src" "close" "size" "1.25em") }}
+      {{ .closeLabel }}
+    </label>
+  {{ end }}
+</div>

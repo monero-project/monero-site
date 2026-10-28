@@ -1,0 +1,388 @@
+/* Styles for layouts/_partials/ui/header/header.html */
+
+/* global */
+:root {
+  --drawer-gap: clamp(5rem, 20vw, 9rem);
+  --header-overlay: var(--header-height);
+}
+
+/* the menu button's burger, between burger (0) and X (1): registered, so it can be animated */
+@property --t {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 0;
+}
+
+.header[data-c-header] {
+  position: sticky;
+  inset-block-start: 0;
+  background: var(--bg-color);
+  box-shadow: var(--shadow-sm);
+  z-index: var(--z-header);
+}
+
+.header-inner[data-c-header] {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  box-sizing: border-box;
+  block-size: var(--header-height);
+}
+
+.brand[data-c-header] {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  color: var(--paragraph-main);
+  text-decoration: none;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.02em;
+  justify-self: start;
+}
+
+.mark[data-c-header] {
+  inline-size: 1.625rem;
+  block-size: 1.625rem;
+}
+
+.utils[data-c-header] {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-md);
+  justify-self: end;
+}
+
+.lang[data-c-header] {
+  color: var(--paragraph-main);
+  display: inline-flex;
+  align-items: center;
+}
+
+.hamburger[data-c-header] {
+  color: var(--paragraph-main);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 2.5rem;
+  block-size: 2.5rem;
+  margin-inline-start: calc(-1 * var(--space-xs));
+  border-radius: 8px;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--card-color);
+  }
+}
+
+/* the checkbox behind the menu button: hidden, but reachable with the keyboard */
+.nav-toggle[data-c-header] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+
+  &:focus-visible ~ .hamburger[data-c-header] {
+    outline: 2px solid var(--monero-orange);
+  }
+}
+
+/* The burger, getmonero.org's size: three lines 7px apart (the middle one two,
+   on top of each other) that, opening, fold into Monero's M (four lines), hold
+   it a moment, then into an X; closing, back the same way. --t goes from 0
+   (burger) to 1 (X); --a moves each line from the burger to the M (t 0 to
+   0.4), --c from the M to the X (t 0.6 to 1). Where @property isn't known, no
+   animation: the burger or the X at once. Each line: its centre (x, y, px, from
+   the button's centre), angle (deg) and length (of 24px) in the burger (0), the
+   M (1) and the X (2). */
+.burger[data-c-header] {
+  --t: 0;
+
+  position: relative;
+  display: block;
+  inline-size: 24px;
+  block-size: 24px;
+  transition: --t 0.7s linear;
+
+  & > span[data-c-header] {
+    --a: clamp(0, var(--t) * 2.5, 1);
+    --c: clamp(0, var(--t) * 2.5 - 1.5, 1);
+    --x0: 0;
+    --r0: 0;
+    --s0: 1;
+    --x2: 0;
+    --y2: 0;
+    --s2: 0.9;
+
+    position: absolute;
+    inset-block-start: 11px;
+    left: 0;
+    inline-size: 24px;
+    block-size: 2px;
+    border-radius: 1px;
+    background: currentcolor;
+    transform: translate(
+        calc(
+          (
+            var(--x0) +
+            (var(--x1) - var(--x0)) *
+            var(--a) +
+            (var(--x2) - var(--x1)) *
+            var(--c)
+          ) *
+          1px
+        ),
+        calc(
+          (
+            var(--y0) +
+            (var(--y1) - var(--y0)) *
+            var(--a) +
+            (var(--y2) - var(--y1)) *
+            var(--c)
+          ) *
+          1px
+        )
+      )
+      rotate(
+        calc(
+          (
+            var(--r0) +
+            (var(--r1) - var(--r0)) *
+            var(--a) +
+            (var(--r2) - var(--r1)) *
+            var(--c)
+          ) *
+          1deg
+        )
+      )
+      scaleX(
+        calc(
+          var(--s0) +
+          (var(--s1) - var(--s0)) *
+          var(--a) +
+          (var(--s2) - var(--s1)) *
+          var(--c)
+        )
+      );
+  }
+
+  /* the burger's top, middle (twice) and bottom lines; the M's left stroke,
+     down to the middle, up again, its right stroke */
+  & > span[data-c-header]:nth-child(1) {
+    --y0: -7;
+    --x1: -8;
+    --y1: 0;
+    --r1: 90;
+    --s1: 0.667;
+    --r2: 45;
+  }
+
+  & > span[data-c-header]:nth-child(2) {
+    --y0: 0;
+    --x1: -4;
+    --y1: -3;
+    --r1: 51.34;
+    --s1: 0.534;
+    --r2: 45;
+  }
+
+  & > span[data-c-header]:nth-child(3) {
+    --y0: 0;
+    --x1: 4;
+    --y1: -3;
+    --r1: -51.34;
+    --s1: 0.534;
+    --r2: -45;
+  }
+
+  & > span[data-c-header]:nth-child(4) {
+    --y0: 7;
+    --x1: 8;
+    --y1: 0;
+    --r1: -90;
+    --s1: 0.667;
+    --r2: -45;
+  }
+}
+
+.nav-toggle[data-c-header]:checked
+  ~ .hamburger[data-c-header]
+  .burger[data-c-header] {
+  --t: 1;
+}
+
+fieldset[data-c-header] {
+  border: none;
+  margin: 0;
+  padding: 0;
+  min-inline-size: 0;
+  display: contents;
+}
+
+.sr-only[data-c-header] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* the drawer: from the start (left; right in right-to-left languages), below
+   the header, which stays on top so the menu button closes it; it slides in
+   as getmonero.org's menu does */
+.nav[data-c-header] {
+  --closed: translateX(-105%);
+
+  position: fixed;
+  inset-block: var(--header-height) 0;
+  inset-inline-start: 0;
+  inline-size: min(26.25rem, calc(100vw - var(--drawer-gap)));
+  box-sizing: border-box;
+  background: var(--bg-color);
+  padding: var(--space-md);
+  z-index: var(--z-modal-content);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transform: var(--closed);
+  visibility: hidden;
+  transition:
+    transform 0.5s,
+    visibility 0.5s;
+
+  [dir="rtl"] & {
+    --closed: translateX(105%);
+  }
+}
+
+.nav-list[data-c-header] {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex: auto;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrim[data-c-header] {
+  position: fixed;
+  inset: var(--header-height) 0 0;
+  background: #00000073;
+  z-index: var(--z-modal-background);
+  touch-action: none;
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+  transition:
+    opacity 0.5s,
+    visibility 0.5s;
+}
+
+.nav-toggle[data-c-header]:checked {
+  & ~ .nav[data-c-header] {
+    transform: none;
+    visibility: visible;
+  }
+
+  & ~ .scrim[data-c-header] {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* global */
+body:has(#nav-toggle:checked) {
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+.header[data-c-header]:has(.lang-container[open]) {
+  background: var(--card-color);
+}
+
+@media (width >= 1200px) {
+  .header-inner[data-c-header] {
+    padding-inline: 5rem;
+  }
+}
+
+@media (width >= 1200px) and (hover: hover) {
+  /* global */
+  :root {
+    --header-overlay: 0px;
+  }
+
+  .header[data-c-header] {
+    position: relative;
+    background: unset;
+    box-shadow: unset;
+  }
+
+  .header[data-c-header]:has(.lang-container[open]) {
+    background: unset;
+  }
+
+  .header-inner[data-c-header] {
+    grid-template-columns: 1fr auto 1fr;
+  }
+
+  .header-inner[data-c-header] .nav[data-c-header] {
+    position: static;
+    inset: auto;
+    inline-size: auto;
+    padding: 0;
+    background: unset;
+    box-shadow: none;
+    overflow: visible;
+    transform: none;
+    visibility: visible;
+    transition: none;
+    display: block;
+  }
+
+  .nav-list[data-c-header] {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    margin: 0;
+    flex: unset;
+    overflow: visible;
+  }
+
+  .nav-toggle[data-c-header] {
+    display: none;
+  }
+
+  /* global */
+  body:has(#nav-toggle:checked) {
+    overflow: unset;
+    overscroll-behavior: unset;
+  }
+
+  .scrim[data-c-header],
+  .hamburger[data-c-header] {
+    display: none;
+  }
+
+  .header[data-c-header]:has(.nav-item[data-is-dropdown]:hover),
+  .header[data-c-header]:has(.nav-item[data-is-dropdown]:focus-within) {
+    background: var(--card-color);
+  }
+
+  .header[data-c-header]:has(.nav-item[data-is-dropdown]:focus-within)
+    .nav-item[data-is-dropdown]:not(:focus-within) {
+    pointer-events: none;
+  }
+}

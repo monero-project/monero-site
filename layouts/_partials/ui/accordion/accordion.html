@@ -1,0 +1,35 @@
+{{- /*
+  A list of collapsible items. Either pass items, or use the block form with
+  ui/accordion/accordion-item partials inside.
+
+    {{ partial "ui/accordion/accordion" (dict "items" (slice (dict "title" "Q" "content" (partial "helpers/markdown" "A")))) }}
+
+    {{ with partial "ui/accordion/accordion" (dict) }}
+      {{ with partial "ui/accordion/accordion-item" (dict "title" "Q" "variant" "card" "name" "faq") }}...{{ end }}
+    {{ end }}
+
+  Unless multiExpand is set, the items share a <details name>, so opening one
+  closes the others.
+
+  Params: items (list of dict title, content: HTML), multiExpand,
+  variant (default|card, default default).
+*/ -}}
+{{- $variant := .variant | default "default" -}}
+<div class="accordion accordion--{{ $variant }}" data-c-accordion>
+  {{- with .items }}
+    {{- $titles := slice }}
+    {{- range . }}
+      {{- if not (strings.TrimSpace (.title | default "")) }}{{ errorf "ui/accordion/accordion: item has an empty title." }}{{ end }}
+      {{- $titles = $titles | append .title }}
+    {{- end }}
+    {{- $name := "" }}
+    {{- if not $.multiExpand }}
+      {{- $name = printf "accordion-%s-%s" $variant (partial "helpers/stable-id" $titles) }}
+    {{- end }}
+    {{- range . }}
+  {{ partial "ui/accordion/accordion-item" (dict "title" .title "content" .content "variant" $variant "name" $name) }}
+    {{- end }}
+  {{- else }}
+  {{ templates.Inner . }}
+  {{- end }}
+</div>

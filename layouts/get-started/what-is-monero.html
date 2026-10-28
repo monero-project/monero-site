@@ -1,0 +1,127 @@
+{{ define "meta" }}{{ .Store.Set "meta" (dict "title" (partial "helpers/t" "what-is-monero:pageTitle") "description" (partial "helpers/t" "what-is-monero:hero.subtitle")) }}{{ end }}
+
+{{- /* Aside of the use cases section */ -}}
+{{- define "_partials/inline/what-is-monero-use-cases" -}}
+{{- $items := slice
+  (dict "key" "financialPrivacy" "icon" "shield-check")
+  (dict "key" "fungibility" "icon" "coins")
+  (dict "key" "censorshipResistance" "icon" "fist")
+  (dict "key" "businessPayments" "icon" "briefcase")
+-}}
+{{ with partial "ui/layout/column" (dict "gap" "2xl" "attrs" (dict "slot" "aside" "data-c-page-get-started-what-is-monero" true) "items" $items) }}
+  {{- range .items }}
+  {{ partial "pages/get-started/what-is-monero/use-case-item" (dict
+    "icon" .icon
+    "title" (partial "helpers/t" (printf "what-is-monero:sections.useCases.items.%s.title" .key))
+    "description" (partial "helpers/t" (printf "what-is-monero:sections.useCases.items.%s.description" .key))) }}
+  {{- end }}
+{{ end }}
+{{- end -}}
+
+{{- /* Buttons of the final call to action */ -}}
+{{- define "_partials/inline/what-is-monero-cta-buttons" -}}
+{{ with partial "ui/button" (dict "variant" "primary" "href" (partial "helpers/href" "/downloads/community/#wallets") "attrs" (dict "data-c-page-get-started-what-is-monero" true)) }}
+  {{ partial "helpers/t" "what-is-monero:sections.cta.downloadWallet" }}
+{{ end }}
+{{ with partial "ui/button" (dict "variant" "secondary" "href" (partial "helpers/href" "/get-started/exchanges/") "attrs" (dict "data-c-page-get-started-what-is-monero" true)) }}
+  {{ partial "helpers/t" "what-is-monero:sections.cta.getMonero" }}
+{{ end }}
+{{- end -}}
+
+{{ define "main" }}
+{{- $t := "helpers/t" -}}
+{{- $h := "helpers/href" -}}
+{{- $p := dict "data-c-page-get-started-what-is-monero" true -}}
+{{- $rtl := eq site.Language.Direction "rtl" -}}
+{{- $features := slice
+  (dict "key" "stealthAddresses" "icon" "hat-glasses" "links" (dict "mpECDH" (partial $h "/resources/moneropedia/elliptic-curve-diffie-hellman/")))
+  (dict "key" "fcmp" "icon" "shield-plus" "links" (dict "mpCurveTrees" (partial $h "/resources/moneropedia/curve-trees/")))
+  (dict "key" "confidentialTransactions" "icon" "eye-off" "links" (dict
+    "mpPedersenCommitments" (partial $h "/resources/moneropedia/pedersen-commitment/")
+    "mpBulletproofs" (partial $h "/resources/moneropedia/bulletproofs/")))
+-}}
+{{- /* Caption tracks: every public/media/vtt/msmsm/*.vtt besides English,
+  labelled with the language's own name */ -}}
+{{- $languageNames := dict "de" "Deutsch" "el" "Ελληνικά" "es" "Español" "pl" "Polski" "pt-BR" "Português (Brasil)" "ru" "Русский" -}}
+{{- $tracks := slice -}}
+{{- range os.ReadDir "public/media/vtt/msmsm" -}}
+  {{- $lang := strings.TrimSuffix ".vtt" .Name -}}
+  {{- if and (strings.HasSuffix .Name ".vtt") (ne $lang "en") -}}
+    {{- $tracks = $tracks | append (dict "lang" $lang "label" (index $languageNames $lang | default $lang)) -}}
+  {{- end -}}
+{{- end -}}
+{{- $d := dict "p" $p "rtl" $rtl "features" $features "tracks" $tracks -}}
+
+{{ partial "ui/title-card" (dict "title" (partial $t "what-is-monero:hero.title")) }}
+{{ with partial "ui/layout/page-container" (dict "attrs" $p "d" $d) }}
+  {{ with partial "ui/media-section" (dict "as" "div" "class" "content-section bleed-aside" "attrs" .d.p
+    "aside" (partial "ui/themeable-image" (dict "class" "top-blur" "src" "images/what-is-monero/surveillance-light.avif" "darkSrc" "images/what-is-monero/surveillance-dark.avif" "alt" "" "rtl" .d.rtl "attrs" (dict "slot" "aside" "data-c-page-get-started-what-is-monero" true)))) }}
+    <span class="eyebrow" data-c-page-get-started-what-is-monero>{{ partial "helpers/t" "what-is-monero:sections.problem.eyebrow" }}</span>
+    <h2 data-c-page-get-started-what-is-monero>{{ partial "helpers/markdown" (dict "text" (partial "helpers/t" "what-is-monero:sections.problem.title") "inline" true) }}</h2>
+    <p data-c-page-get-started-what-is-monero>{{ partial "helpers/markdown" (dict "text" (partial "helpers/t" "what-is-monero:sections.problem.content") "inline" true) }}</p>
+  {{ end }}
+  <hr data-c-page-get-started-what-is-monero>
+  {{ with partial "ui/media-section" (dict "as" "div" "reverse" true "class" "content-section bleed-aside" "attrs" .d.p
+    "aside" (partial "ui/themeable-image" (dict "class" "top-blur" "src" "images/what-is-monero/privacy-light.avif" "darkSrc" "images/what-is-monero/privacy-dark.avif" "alt" "" "rtl" .d.rtl "attrs" (dict "slot" "aside" "data-c-page-get-started-what-is-monero" true)))) }}
+    <span class="eyebrow" data-c-page-get-started-what-is-monero>{{ partial "helpers/t" "what-is-monero:sections.solution.eyebrow" }}</span>
+    <h2 data-c-page-get-started-what-is-monero>{{ partial "helpers/markdown" (dict "text" (partial "helpers/t" "what-is-monero:sections.solution.title") "inline" true) }}</h2>
+    <p data-c-page-get-started-what-is-monero>{{ partial "helpers/markdown" (dict "text" (partial "helpers/t" "what-is-monero:sections.solution.content") "inline" true) }}</p>
+  {{ end }}
+  <hr data-c-page-get-started-what-is-monero>
+  {{ with partial "ui/media-section" (dict "as" "div" "hideAsideOnMobile" false "class" "content-section" "attrs" .d.p
+    "aside" (partial "inline/what-is-monero-use-cases" .)) }}
+    <span class="eyebrow" data-c-page-get-started-what-is-monero>{{ partial "helpers/t" "what-is-monero:sections.useCases.eyebrow" }}</span>
+    <h2 data-c-page-get-started-what-is-monero>{{ partial "helpers/t" "what-is-monero:sections.useCases.title" }}</h2>
+    <p data-c-page-get-started-what-is-monero>{{ partial "helpers/markdown" (dict "text" (partial "helpers/t" "what-is-monero:sections.useCases.intro") "inline" true) }}</p>
+  {{ end }}
+  <hr data-c-page-get-started-what-is-monero>
+  <div class="content-section centered-section" data-c-page-get-started-what-is-monero>
+    <span class="eyebrow" data-c-page-get-started-what-is-monero>{{ partial "helpers/t" "what-is-monero:sections.technology.eyebrow" }}</span>
+    <h2 data-c-page-get-started-what-is-monero>{{ partial "helpers/t" "what-is-monero:sections.technology.title" }}</h2>
+    {{ with partial "ui/layout/grid" (dict "minWidth" "20rem" "gap" "2xl" "attrs" .d.p "d" .d) }}
+      {{- range .d.features }}
+      {{- $k := printf "what-is-monero:sections.technology.features.%s" .key }}
+      {{ partial "pages/get-started/what-is-monero/feature-card" (dict
+        "icon" .icon
+        "title" (partial "helpers/t" (printf "%s.title" $k))
+        "description" (partial "helpers/t" (printf "%s.description" $k))
+        "basedOn" (partial "helpers/t" (slice (printf "%s.basedOn" $k) .links))) }}
+      {{- end }}
+    {{ end }}
+  </div>
+  <hr data-c-page-get-started-what-is-monero>
+  <div class="content-section centered-section" data-c-page-get-started-what-is-monero>
+    <span class="eyebrow" data-c-page-get-started-what-is-monero>{{ partial "helpers/t" "what-is-monero:sections.video.eyebrow" }}</span>
+    <h2 data-c-page-get-started-what-is-monero>{{ partial "helpers/t" "what-is-monero:sections.video.title" }}</h2>
+    <p data-c-page-get-started-what-is-monero>{{ partial "helpers/t" "what-is-monero:sections.video.description" }}</p>
+    {{ with partial "ui/video-container" (dict "maxWidth" "854px" "centered" true "class" "video-section" "attrs" .d.p "d" .d) }}
+      <video width="100%" height="100%" controls preload="none" poster="/media/msmsm.webp" aria-label="{{ partial "helpers/t" "what-is-monero:aria.presentationVideo" }}" data-c-page-get-started-what-is-monero>
+        <source src="/media/msmsm.mp4" type="video/mp4" data-c-page-get-started-what-is-monero>
+        <track kind="captions" src="/media/vtt/msmsm/en.vtt" srclang="en" label="English" default data-c-page-get-started-what-is-monero>
+        {{- range .d.tracks }}
+        <track kind="captions" src="/media/vtt/msmsm/{{ .lang }}.vtt" srclang="{{ .lang }}" label="{{ .label }}" data-c-page-get-started-what-is-monero>
+        {{- end }}
+        Your browser does not support the video tag.
+      </video>
+    {{ end }}
+  </div>
+  <hr data-c-page-get-started-what-is-monero>
+  {{ with partial "ui/media-section" (dict "as" "div" "class" "content-section" "attrs" .d.p
+    "aside" (partial "ui/image" (dict "src" "images/community-logo.avif" "alt" "" "format" "avif" "attrs" (dict "slot" "aside" "data-c-page-get-started-what-is-monero" true)))) }}
+    <h2 data-c-page-get-started-what-is-monero>{{ partial "helpers/t" "what-is-monero:sections.community.title" }}</h2>
+    <p data-c-page-get-started-what-is-monero>{{ partial "helpers/markdown" (dict "text" (partial "helpers/t" (slice "what-is-monero:sections.community.content" (dict "mrlLink" (partial "helpers/href" "/resources/research-lab/")))) "inline" true) }}</p>
+    {{ with partial "ui/layout/row" (dict "gap" "md" "class" "community-cta-links" "attrs" (dict "data-c-page-get-started-what-is-monero" true)) }}
+      {{ with partial "ui/icon-link" (dict "href" (partial "helpers/href" "/community/hangouts/") "weight" "bold" "attrs" (dict "data-c-page-get-started-what-is-monero" true)) }}
+        {{ partial "helpers/t" "what-is-monero:sections.community.joinCommunity" }}
+      {{ end }}
+      {{ with partial "ui/icon-link" (dict "href" (partial "helpers/href" "/community/workgroups/") "weight" "bold" "attrs" (dict "data-c-page-get-started-what-is-monero" true)) }}
+        {{ partial "helpers/t" "what-is-monero:sections.community.contributeToMonero" }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ with partial "ui/ctacard" (dict "variant" "centered" "title" (partial "helpers/t" "what-is-monero:sections.cta.title") "class" "final-cta" "attrs" .d.p
+    "buttons" (partial "inline/what-is-monero-cta-buttons" .)) }}
+    {{ partial "helpers/t" "what-is-monero:sections.cta.subtitle" }}
+  {{ end }}
+{{ end }}
+{{ end }}

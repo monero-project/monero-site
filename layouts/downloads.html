@@ -1,0 +1,64 @@
+{{ define "meta" }}{{ .Store.Set "meta" (dict "title" (partial "helpers/t" "downloads:pageTitle") "description" (partial "helpers/t" "downloads:hero.subtitle")) }}{{ end }}
+{{ define "main" }}
+{{- $t := "helpers/t" -}}
+{{- $h := "helpers/href" -}}
+{{- $scope := dict "data-c-page-downloads" true -}}
+{{- /* src/data/downloads/core.json is rewritten by CI (jq); read it as-is */ -}}
+{{- $core := hugo.Data.downloads.core -}}
+{{- /* Feature keys of downloads:core.<id>.features, in display order (Hugo
+  maps are sorted by key, so the translation file's order is spelled out here) */ -}}
+{{- $features := dict
+  "gui" (slice "simpleMode" "advancedMode" "merchantPage" "hardwareWallet" "fiatConversion" "pruning" "languages")
+  "cli" (slice "nodeChoice" "torI2p" "bootstrap" "hardwareWallet" "rpc" "pruning")
+-}}
+{{- $cards := slice -}}
+{{- range slice (dict "id" "gui" "repo" "monero-gui") (dict "id" "cli" "repo" "monero") -}}
+  {{- $release := index $core .id -}}
+  {{- $id := .id -}}
+  {{- $featureText := slice -}}
+  {{- range index $features .id }}{{ $featureText = $featureText | append (partial $t (printf "downloads:core.%s.features.%s" $id .)) }}{{ end -}}
+  {{- $cards = $cards | append (dict
+    "id" .id
+    "image" (printf "images/%s.avif" .id)
+    "title" (partial $t (printf "downloads:core.%s.title" .id))
+    "subtitle" (partial $t (printf "downloads:core.%s.subtitle" .id))
+    "version" $release.version
+    "versionName" $release.name
+    "releaseNotesUrl" (printf "https://github.com/monero-project/%s/releases/tag/%s" .repo $release.version)
+    "sourceCodeUrl" (printf "https://github.com/monero-project/%s" .repo)
+    "torrentUrl" $release.torrent.link
+    "magnetUrl" $release.torrent.magnet
+    "features" $featureText
+    "downloads" $release.downloads
+    "dropdownGroup" "core-downloads"
+    "attrs" $scope
+  ) -}}
+{{- end -}}
+{{ partial "ui/title-card" (dict "title" (partial $t "downloads:hero.title") "subtitle" (partial $t "downloads:hero.subtitle")) }}
+{{ with partial "ui/layout/page-container" (dict "attrs" $scope "scope" $scope "cards" $cards) }}
+  {{ partial "ui/tabs/page-tabs" (dict
+    "id" "tabs-downloads-core"
+    "labels" (slice (partial "helpers/t" "downloads:tabs.core") (partial "helpers/t" "downloads:tabs.community"))
+    "links" (slice (partial "helpers/href" "/downloads") (partial "helpers/href" "/downloads/community"))
+    "activeIndex" 0
+  ) }}
+  {{ with partial "ui/internal-resource-button" (dict "icon" "wallet" "title" (partial "helpers/t" "downloads:communityNote.title") "href" (partial "helpers/href" "/downloads/community")) }}
+    {{ partial "helpers/t" "downloads:communityNote.content" }}
+  {{ end }}
+  {{ with partial "ui/layout/grid" (dict "columns" 2 "gap" "xl" "class" "downloads-grid" "attrs" .scope "cards" .cards) }}
+    {{- range .cards }}
+    {{ partial "pages/downloads/core-card" . }}
+    {{- end }}
+  {{ end }}
+
+  {{ with partial "ui/ctacard" (dict
+    "title" (partial "helpers/t" "downloads:core.verifyDownload")
+    "href" "/downloads/hashes.txt"
+    "linkText" (partial "helpers/t" "downloads:core.viewHashes")
+    "icon" "shield-check"
+    "attrs" .scope
+  ) }}
+    {{ partial "helpers/markdown" (partial "helpers/t" (slice "downloads:core.verifyDescription" (dict "verifyInstructionLink" "https://docs.getmonero.org/interacting/verify-monero-binaries"))) }}
+  {{ end }}
+{{ end }}
+{{ end }}

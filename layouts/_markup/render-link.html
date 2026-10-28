@@ -1,0 +1,12 @@
+{{- /*
+  Links in Markdown content. http(s) links to other sites open in a new tab and
+  get rel="external", which also shows the external-link icon
+  (base/external-links.css); so do protocol-relative //host links. Other
+  schemes (irc:, mailto:) are left alone.
+  Markdown from translation strings (helpers/markdown) is left as plain links.
+*/ -}}
+{{- $external := false -}}
+{{- if and (not .Page.Params.plainLinks) (findRE `(?i)^(https?:|//)` .Destination 1) -}}
+  {{- $external = partial "helpers/is-external" (slice .Destination (urls.Parse site.BaseURL).Hostname) -}}
+{{- end -}}
+<a href="{{ .Destination | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if $external }} rel="noopener noreferrer external" target="_blank"{{ end }}>{{ .Text }}</a>

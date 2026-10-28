@@ -1,0 +1,42 @@
+/* Styles for layouts/community/workgroups.html */
+.workgroup-columns[data-c-page-community-workgroups] {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+.column-cards[data-c-page-community-workgroups] {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+@media (width <= 1200px) {
+  .workgroup-columns[data-c-page-community-workgroups] {
+    grid-template-columns: 1fr 1fr;
+
+    & > [data-c-page-community-workgroups]:last-child {
+      grid-column: span 2;
+
+      & .column-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+
+@media (width <= 900px) {
+  .workgroup-columns[data-c-page-community-workgroups] {
+    grid-template-columns: 1fr;
+
+    & > [data-c-page-community-workgroups]:last-child {
+      grid-column: auto;
+
+      & .column-cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}

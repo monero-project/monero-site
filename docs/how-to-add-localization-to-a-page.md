@@ -2,7 +2,7 @@
 
 ## Basic Page Localization Setup
 
-1. **Add Translations**: Create/update JSON files in `src/i18n/translations/[locale]/`. Each file is a namespace (e.g., `downloads.json` = `downloads` namespace).
+1. **Add Translations**: Create/update JSON files in `src/i18n/translations/[locale]/`. Each file is a namespace (e.g., `downloads.json` = `downloads` namespace). Only edit the English files; Weblate handles the other languages.
 
    Example `src/i18n/translations/en/my-page.json`:
    ```json
@@ -15,159 +15,107 @@
    }
    ```
 
-   For dynamic content (links, etc), use `{{variable}}` placeholders. Pass values when calling `t()` (see step 2).
+   For dynamic content (links, etc), use `{{variable}}` placeholders and pass the values when translating (see step 2).
 
-2. **Update the Page**: Use the translation utilities from `Astro.locals` (provided by the middleware).
+2. **Update the Page**: Use the helpers in `layouts/_partials/helpers/`. They always work in the language of the page being built.
 
-   ```astro
-   ---
-   import Layout from "@/layouts/Layout.astro";
-   import TitleCard from "@/components/ui/TitleCard.astro";
+   ```go-html-template
+   {{ define "meta" }}{{ .Store.Set "meta" (dict "title" (partial "helpers/t" "my-page:pageTitle") "description" (partial "helpers/t" "my-page:heroSubtitle")) }}{{ end }}
 
-   const { t, localizeHref } = Astro.locals;
-   ---
+   {{ define "main" }}
+   {{ partial "ui/title-card" (dict "title" (partial "helpers/t" "my-page:heroTitle") "subtitle" (partial "helpers/t" "my-page:heroSubtitle")) }}
 
-   <Layout title={t("my-page:pageTitle")} description={t("my-page:heroSubtitle")}>
-     <TitleCard title={t("my-page:heroTitle")} subtitle={t("my-page:heroSubtitle")} />
-
-     <div id="content">
-       <p>{t("my-page:greeting", { name: "Alice" })}</p>
-       <p>{t("my-page:itemCount", { count: 5 })}</p>
-     </div>
-   </Layout>
+   <div id="content">
+     <p>{{ partial "helpers/t" (slice "my-page:greeting" (dict "name" "Alice")) }}</p>
+     <p>{{ partial "helpers/t" (slice "my-page:itemCount" (dict "count" 5)) }}</p>
+   </div>
+   {{ end }}
    ```
 
-   The middleware provides these helpers on `Astro.locals`:
-   - `t` - translation function
-   - `locale` - current locale string
-   - `dir` - text direction ("ltr" or "rtl")
-   - `localizeHref` - creates locale-aware URLs
-   - `localizeNumber` - formats numbers for the locale
-   - `localizeDateString` - formats dates for the locale
-   - `safeMarkdown` - renders Markdown with Moneropedia links
+   The helpers:
+   - `helpers/t` - translate a key
+   - `helpers/href` - locale-aware URLs
+   - `helpers/number` - numbers in the language's digits
+   - `helpers/date` - long dates for the language
+   - `helpers/markdown` - render Markdown from a translation, with Moneropedia links
+   - `helpers/t-keys` - the keys of a translation object, in file order
+   - `site.Language.Lang` - the current language code; `site.Language.Direction` - "rtl" for right-to-left languages
 
-## Utility Functions
+## Helpers
 
-These utilities are available on `Astro.locals` via the middleware. For advanced use cases, they can also be imported from `@/i18n/utils`.
+### site.Language.Lang
+**Why**: The current language code (`en`, `ar`, ...).
 
-### locale
-**Why**: The current locale string, retrieved automatically by the middleware.
-
-**How**: Access via `Astro.locals.locale`.
-
-Example:
-```astro
----
-const { locale } = Astro.locals;
-// locale is "en", "ar", etc.
----
+```go-html-template
+{{ if eq site.Language.Lang "en" }}...{{ end }}
 ```
 
-### localizeHref
-**Why**: Creates locale-aware URLs for links, ensuring correct paths for different languages.
+### helpers/href
+**Why**: Creates locale-aware URLs for links, ensuring correct paths for different languages. It adds the language prefix and the trailing slash; absolute URLs are returned unchanged.
 
-**How**: Use `Astro.locals.localizeHref(href)`. The locale is automatically applied.
-
-Example:
-```astro
----
-const { localizeHref } = Astro.locals;
-const link = localizeHref("/blog"); // "/es/blog" for Spanish, "/blog" for English
----
+```go-html-template
+<a href="{{ partial "helpers/href" "/blog" }}">  {{/* "/ar/blog/" in Arabic, "/blog/" in English */}}
+<a href="{{ partial "helpers/href" (slice "zh" "/blog") }}">  {{/* a specific language: "/zh/blog/" */}}
 ```
 
-### localizeNumber
-**Why**: Formats numbers according to locale rules (e.g., digit glyphs for Arabic).
+### helpers/number
+**Why**: Formats whole numbers with the language's digit glyphs (e.g. Arabic-Indic digits). Pass a second number to zero-pad.
 
-**How**: Use `Astro.locals.localizeNumber(number, minimumIntegerDigits?)`.
-
-Example:
-```astro
----
-const { localizeNumber } = Astro.locals;
-const formatted = localizeNumber(1234); // Localizes digit glyphs
----
+```go-html-template
+{{ partial "helpers/number" 404 }}              {{/* "٤٠٤" in Arabic */}}
+{{ partial "helpers/number" (slice 3 2) }}      {{/* "03" */}}
 ```
 
-> Tip: If you need thousands separators/grouping (e.g., "1,234"), use `Intl.NumberFormat` directly with `useGrouping: true`.
+### helpers/date
+**Why**: Formats a date as day, month name and year the way the language writes it ("April 22, 2020", "٢٢ أبريل ٢٠٢٠", "2020年4月22日"). Takes a date or a `YYYY-MM-DD` string. The formats live in `data/locale.yaml`.
 
-### localizeDateString
-**Why**: Formats dates in locale-specific ways (e.g., MM/DD/YYYY vs DD/MM/YYYY).
-
-**How**: Use `Astro.locals.localizeDateString(date, options?)`.
-
-Example:
-```astro
----
-const { localizeDateString } = Astro.locals;
-const date = localizeDateString("2023-12-16", { year: "numeric", month: "long" }); // "December 2023" in en
----
+```go-html-template
+{{ partial "helpers/date" "2023-12-16" }}
 ```
 
-### getLocaleName (advanced)
-**Why**: Gets the display name of a language (e.g., for language selectors).
+### Language names and text direction
+**Why**: The language names in the language menu come from the `label` of each language in `hugo.toml`. Right-to-left languages have `direction = "rtl"` there; use it to mirror direction-dependent icons.
 
-**How**: Import from `@/i18n/utils` and pass locale code.
-
-Example:
-```typescript
-import { getLocaleName } from "@/i18n/utils";
-
-const name = getLocaleName("es")?.name; // "Spanish"
+```go-html-template
+{{ partial "ui/icons/mask-icon" (dict "src" "arrow-right" "rtl" (eq site.Language.Direction "rtl")) }}
 ```
 
-### dir (text direction)
-**Why**: Determines text direction (left-to-right or right-to-left) for RTL languages. Can be used to set the `dir` attribute on HTML elements and `MaskIcon` components.
+### helpers/t (translation)
+**Why**: Loads translations from the JSON files. Missing or empty strings (Weblate leaves untranslated strings empty) fall back to English. A `defaultValue` var is used if even English has no such key.
 
-**How**: Use `Astro.locals.dir`.
-
-Example:
-```astro
----
-const { dir } = Astro.locals;
-// dir is "ltr" or "rtl"
----
-<div dir={dir}>...</div>
-<MaskIcon src={icons.mask("arrow-right")} rtl={dir === "rtl"} />
+```go-html-template
+{{ partial "helpers/t" "index:pageTitle" }}
+{{ partial "helpers/t" (slice "blog:tagLabels.mining" (dict "defaultValue" "mining")) }}
+{{/* objects (e.g. a FAQ section) are returned as maps */}}
+{{ $basics := partial "helpers/t" "faq:basics" }}
 ```
 
-### t (translation function)
-**Why**: Loads translations from JSON files.
+Maps come back sorted alphabetically. When the order of the keys matters (FAQ questions, lists), loop over `helpers/t-keys`, which gives the keys in the order of the JSON file:
 
-**How**: Use `Astro.locals.t`. Returns an initialized i18next instance.
-
-Example:
-```astro
----
-const { t } = Astro.locals;
-const text = t("index:pageTitle");
-// For objects (e.g., FAQ categories), use:
-const basicsSection = t("faq:basics", { returnObjects: true });
----
+```go-html-template
+{{ range partial "helpers/t-keys" "faq:basics" }}
+  {{ partial "helpers/t" (printf "faq:basics.%s.title" .) }}
+{{ end }}
 ```
 
-### safeMarkdown
-**Why**: Renders Markdown strings with automatic Moneropedia `@term` linking and XSS sanitization.
+### helpers/markdown
+**Why**: Renders Markdown from a translation string, with automatic Moneropedia `@term` linking. Translations come from outside contributors, so all HTML in them is escaped except a few reviewed shapes (links with `target="_blank"`/`rel="noopener noreferrer"`, and `<span style="color: …">`). Use it for any translated text that contains Markdown.
 
-**How**: Use `Astro.locals.safeMarkdown.parse()` or `.parseInline()` for inline content.
-
-Example:
-```astro
----
-const { t, safeMarkdown } = Astro.locals;
----
-<div set:html={safeMarkdown.parse(t("faq:basics.answer"))} />
+```go-html-template
+{{ partial "helpers/markdown" (partial "helpers/t" "faq:basics.whatIsMonero.content") }}
+{{/* inline: no <p>, newlines become <br> */}}
+{{ partial "helpers/markdown" (dict "text" (partial "helpers/t" "index:hero.subtitle") "inline" true) }}
 ```
+
+Never mark a translation as safe HTML yourself (`safeHTML`); CI rejects unreviewed uses.
 
 ## Tips
-- For getmonero.org links in translation JSON files, use interpolation variables `{{link}}` and pass localized URLs when calling `t()` with `localizeHref()`.
-    Example in `src/i18n/translations/en/common.json`: 
+- For getmonero.org links in translation JSON files, use interpolation variables `{{link}}` and pass localized URLs when translating with `helpers/href`.
+    Example in `src/i18n/translations/en/common.json`:
     ```json
     "learnMore": "Learn more on the {{link}}."
     ```
-    ```astro
-    ---
-    const { t, localizeHref } = Astro.locals;
-    const learnMoreText = t("common:learnMore", { link: localizeHref("/get-started/") });
-    ---
+    ```go-html-template
+    {{ partial "helpers/t" (slice "common:learnMore" (dict "link" (partial "helpers/href" "/get-started/"))) }}
     ```
+- If a translated string ends in a space and is followed by a link in the template, put the `<a>` on the same line right after it; a line break would add a second space.

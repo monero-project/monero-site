@@ -11,6 +11,10 @@ on:
 permissions:
   contents: read
 
+env:
+  HUGO_VERSION: "0.167.0"
+  PRE_COMMIT_VERSION: "4.6.2"
+
 jobs:
   lint:
     name: Lint & Format
@@ -20,39 +24,38 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - name: Check set:html safety
+      - name: Check unescaped HTML
+        # safeHTML & co. switch off escaping. They are allowed only for tag
+        # wrappers (printf "<%s...") and in the reviewed helpers/render hooks
+        # below; translation strings go through helpers/markdown, which sanitizes.
         run: |
-          if grep -r "set:html" src --include="*.astro" | grep -Ev "set:html=\{(safeMarkdown\.|DOMPurify\.sanitize)"; then
-            echo "Error: Found set:html usage without safeMarkdown or DOMPurify.sanitize"
+          if grep -rnE 'safe(HTML|HTMLAttr|JS|CSS|URL)\b' layouts \
+            | grep -vE '^layouts/(_partials/helpers/(attrs|markdown|moneropedia-content)\.html|_markup/render-(link|image)\.html|all\.enredirect\.html):' \
+            | grep -vE 'printf "</?%s(%s)?>"' \
+            | grep -vE 'htmlEscape'; then
+            echo "Error: unescaped output outside the reviewed places (see above)"
             exit 1
           fi
-          echo "All set:html usages are safe"
+          echo "All unescaped output is in reviewed places"
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v5
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v6
+      # the pre-commit hooks (.pre-commit-config.yaml) on every file: CSS lint and
+      # formatting (Biome), component styles scoped, YAML (yamllint) and JSON
+      # formatting, final newlines, trailing spaces, valid JSON/YAML. pre-commit
+      # installs Biome and yamllint from the revs in its config.
+      - name: Cache pre-commit's hook environments
+        uses: actions/cache@v4
         with:
-          node-version: "22"
-          cache: "pnpm"
+          path: ~/.cache/pre-commit
+          key: pre-commit-${{ hashFiles('.pre-commit-config.yaml') }}
 
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: ESLint - TypeScript validity
-        run: pnpm lint
-
-      - name: Stylelint - CSS compatibility
-        run: pnpm lint:css
-
-      - name: Prettier - Code formatting
-        run: pnpm format:check
-
-      - name: Type check
-        run: pnpm check
+      - name: Run the pre-commit hooks
+        run: |
+          pip install "pre-commit==${PRE_COMMIT_VERSION}"
+          pre-commit run --all-files --show-diff-on-failure
 
   reproducible-archive:
+    # Build the site twice and check both archives are byte-identical. On a
+    # release, the first run's archive is attached to the release.
     name: Reproducible Archive (Run ${{ matrix.run }})
     if: github.event_name != 'release' || github.event.release.target_commitish == 'beta'
     runs-on: ubuntu-22.04
@@ -65,28 +68,40 @@ jobs:
 
     steps:
       - uses: actions/checkout@v6
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v5
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v6
         with:
-          node-version: "22"
-          cache: "pnpm"
+          fetch-depth: 0 # to see what a push or pull request changes
 
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+      - name: Install Hugo
+        run: |
+          base="https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}"
+          tarball="hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz"
+          curl -sSLO "$base/$tarball"
+          curl -sSLO "$base/hugo_${HUGO_VERSION}_checksums.txt"
+          grep " $tarball\$" "hugo_${HUGO_VERSION}_checksums.txt" | sha256sum -c
+          tar -xzf "$tarball" hugo
+          sudo mv hugo /usr/local/bin/
+          hugo version
 
-      - name: Prepare source for CI/Release build
+      # Pushes and PRs build a reduced site, as fast as possible: the newest 10
+      # posts and English, plus the posts and languages the change touches (see
+      # scripts/ci-build-scope.sh). A release builds the whole site for its archive.
+      - name: Choose what to build
+        if: github.event_name != 'release'
         env:
-          BASE_BRANCH: ${{ github.event_name != 'release' && github.event.pull_request.base.ref || '' }} # PR target branch
-          BASE_REF: ${{ github.event_name == 'push' && github.event.before || '' }} # previous commit before the push event
-          LIMIT_POSTS: ${{ github.event_name != 'release' && '10' || '' }}
-          SKIP_IMAGE_OPTIMIZATION: ${{ github.event_name != 'release' && 'true' || '' }}
-          SKIP_OG: ${{ github.event_name != 'release' && 'true' || '' }}
-          LIMIT_LOCALES: ${{ github.event_name != 'release' && 'true' || '' }}
-        run: pnpm prepare-build && pnpm build
+          BASE_BRANCH: ${{ github.event.pull_request.base.ref }} # PR target branch
+          BEFORE: ${{ github.event_name == 'push' && github.event.before || '' }} # commit before the push
+        run: |
+          base=""
+          if [ -n "$BASE_BRANCH" ]; then base=$(git merge-base "origin/$BASE_BRANCH" HEAD)
+          elif [ -n "$BEFORE" ]; then base=$BEFORE
+          fi
+          scripts/ci-build-scope.sh "$base" | tee -a "$GITHUB_ENV"
+
+      - name: Build site
+        run: hugo --gc
+
+      - name: Check the site has no JavaScript
+        run: python3 scripts/check-no-js.py dist
 
       - name: Create archive
         run: |

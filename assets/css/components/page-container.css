@@ -1,0 +1,4 @@
+/* Styles for layouts/_partials/ui/layout/page-container.html */
+.page-container[data-c-page-container] {
+  padding-bottom: var(--space-2xl);
+}

@@ -1,0 +1,51 @@
+/* Styles for layouts/_partials/pages/index/get-started-card.html */
+
+/* global */
+:root {
+  --num-color: light-dark(var(--monero-orange), var(--border-color));
+}
+
+.gs[data-c-get-started-card] {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xl);
+  padding: 1.5rem 0;
+}
+
+.num[data-c-get-started-card] {
+  font-weight: var(--font-weight-semibold);
+  font-size: 6.5rem;
+  line-height: 1;
+  color: var(--num-color);
+  width: 2ch;
+}
+
+.text[data-c-get-started-card] {
+  flex: 1;
+}
+
+.title[data-c-get-started-card] {
+  margin: 0 0 var(--space-xs);
+  font-weight: var(--font-weight-extra-bold);
+  font-size: var(--font-size-2xl);
+  color: var(--heading-color);
+}
+
+.desc[data-c-get-started-card] {
+  margin: 0 0 var(--space-md);
+  color: var(--paragraph-subtitle);
+  max-width: 60ch;
+  line-height: var(--line-height-body);
+}
+
+@media (width <= 600px) {
+  .gs[data-c-get-started-card] {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-lg);
+  }
+
+  .num[data-c-get-started-card] {
+    font-size: 4.5rem;
+  }
+}

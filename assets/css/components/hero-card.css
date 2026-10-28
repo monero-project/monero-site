@@ -1,0 +1,88 @@
+/* Styles for layouts/_partials/ui/hero-card.html */
+.hero-card[data-c-hero-card] {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-3xl);
+  align-items: center;
+}
+
+.hero-card-image[data-c-hero-card] {
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.hero-card-content[data-c-hero-card] {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.hero-card-title[data-c-hero-card] {
+  margin: 0;
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--heading-color);
+}
+
+.hero-card-lead[data-c-hero-card] {
+  margin: 0;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--monero-orange);
+}
+
+.hero-card-description[data-c-hero-card] {
+  margin: 0;
+  color: var(--paragraph-subtitle);
+  line-height: var(--line-height-body);
+  max-width: 75ch;
+}
+
+.hero-card-actions[data-c-hero-card] {
+  display: flex;
+  gap: var(--space-sm);
+  margin-top: var(--space-sm);
+  flex-wrap: wrap;
+
+  & a,
+  & button {
+    padding: 0.625em 1.25em;
+    gap: 0.35em;
+  }
+}
+
+@media (width <= 900px) {
+  .hero-card[data-c-hero-card] {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: var(--space-xl);
+  }
+
+  .hero-card-image[data-c-hero-card] {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+  }
+
+  .hero-card-actions[data-c-hero-card] {
+    justify-content: center;
+  }
+}
+
+@media (width <= 600px) {
+  .hero-card-image[data-c-hero-card] {
+    width: 120px;
+    height: 120px;
+  }
+
+  .hero-card-title[data-c-hero-card] {
+    font-size: var(--font-size-xl);
+  }
+}

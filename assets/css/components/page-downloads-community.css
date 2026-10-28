@@ -1,0 +1,24 @@
+/* Styles for layouts/downloads/community.html */
+
+/* global */
+#built-in-exchange {
+  scroll-margin-top: var(--space-4xl);
+}
+
+.subheading[data-c-page-downloads-community] {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--heading-color);
+  margin: var(--space-lg) 0 var(--space-2xs) 0;
+}
+
+.compact-grid[data-c-page-downloads-community] {
+  padding: var(--space-xs) 0 var(--space-md) 0;
+}
+
+@media (width <= 1200px) {
+  /* global */
+  #built-in-exchange {
+    scroll-margin-top: 6.5rem;
+  }
+}

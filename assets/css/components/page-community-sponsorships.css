@@ -1,0 +1,22 @@
+/* Styles for layouts/community/sponsorships.html */
+.past-sponsor-chip[data-c-page-community-sponsorships] {
+  display: inline-block;
+  padding: var(--space-xs) var(--space-md);
+  background: var(--card-color);
+  color: var(--paragraph-subtitle);
+  font-size: var(--font-size-sm);
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  transition:
+    background 0.15s,
+    color 0.15s;
+
+  &:hover {
+    background: var(--card-hover-color);
+    color: var(--heading-color);
+  }
+
+  &::after {
+    display: none;
+  }
+}

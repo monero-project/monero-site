@@ -1,0 +1,43 @@
+{{- /*
+  A roadmap column: a heading with a coloured dot and the items with the given
+  status (linked when they have a link).
+
+    {{ partial "pages/resources/roadmap/status-section" (dict "items" $items "status" "upcoming" "variant" "upcoming" "label" "Upcoming") }}
+
+  Params: items (list of dict id, status, link), status (in-progress|upcoming|
+  proposed), variant (active|upcoming|proposed), label.
+*/ -}}
+{{- $t := "helpers/t" -}}
+<header class="status-label" data-c-status-section>
+  <span class="label-dot" data-variant="{{ .variant }}" data-c-status-section></span>
+  <h2 data-c-status-section>{{ .label }}</h2>
+</header>
+
+<ul class="status-list" data-variant="{{ .variant }}" data-c-status-section>
+  {{- range where .items "status" .status }}
+  {{- $title := partial $t (printf "roadmap:items.%s.title" .id) }}
+  {{- $description := partial $t (printf "roadmap:items.%s.description" .id) }}
+  <li data-c-status-section>
+    {{- with .link }}
+    <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="status-item" data-c-status-section>
+      <span class="status-title" data-c-status-section>
+        {{ $title }}
+        {{ partial "ui/icons/mask-icon" (dict "src" "external-link" "size" "0.875em" "rtl" (eq site.Language.Direction "rtl")) }}
+      </span>
+      <p class="status-desc" data-c-status-section>
+        {{ $description }}
+      </p>
+    </a>
+    {{- else }}
+    <div class="status-item" data-c-status-section>
+      <span class="status-title" data-c-status-section>
+        {{ $title }}
+      </span>
+      <p class="status-desc" data-c-status-section>
+        {{ $description }}
+      </p>
+    </div>
+    {{- end }}
+  </li>
+  {{- end }}
+</ul>

@@ -1,0 +1,55 @@
+{{- /* A blog post; pages are created by content/blog/_content.gotmpl. */ -}}
+{{ define "meta" }}
+  {{- $ogImage := printf "open-graph/blog/%s.png" .Params.blogId -}}
+  {{- if eq (os.Getenv "SKIP_OG") "true" -}}
+    {{- /* faster preview builds: the default card instead of drawing one */ -}}
+    {{- $ogImage = "open-graph/default.png" -}}
+  {{- else if eq site.Language.Lang hugo.Sites.Default.Language.Lang -}}
+    {{- /* the preview card is the same in every language; draw it once */ -}}
+    {{- $_ := partial "helpers/open-graph-image" (dict "path" $ogImage "title" .Title "description" .Params.summary) -}}
+  {{- end -}}
+  {{- $authors := slice -}}
+  {{- range split (replaceRE `\s+and\s+` "," .Params.author) "," }}{{ $authors = $authors | append (trim . " ") }}{{ end -}}
+  {{- .Store.Set "meta" (dict
+    "title" (partial "helpers/t" (slice "blog:post.pageTitle" (dict "title" .Title)))
+    "description" (.Params.summary | default .Title)
+    "ogTitle" .Title
+    "ogType" "article"
+    "ogImage" (printf "/%s" $ogImage)
+    "ogImageAlt" (printf `OpenGraph image for Monero blog post titled "%s"` .Title)
+    "article" (dict "publishedTime" (printf "%sT00:00:00.000Z" .Params.date) "authors" $authors "tags" .Params.postTags)
+  ) -}}
+{{ end }}
+
+{{ define "head" }}
+  <link rel="alternate" type="application/rss+xml" title="Monero Blog RSS" href="{{ absURL "feed.xml" }}">
+{{ end }}
+
+{{ define "main" }}
+{{- $recent := slice -}}
+{{- range sort (where (site.GetPage "/blog").RegularPages "Params.kind" "post") "Params.sortKey" "desc" -}}
+  {{- if and (ne .Params.blogId $.Params.blogId) (lt (len $recent) 4) }}{{ $recent = $recent | append . }}{{ end -}}
+{{- end -}}
+<div class="blog-container" data-c-page-blog-post>
+  <article class="blog-post" data-c-page-blog-post>
+    {{ partial "pages/blog/blog-header" . }}
+    {{- with .Params.image }}
+    <div style="text-align: center;" data-c-page-blog-post>
+      {{ partial "ui/image" (dict "src" (path.Join (path.Dir $.Params.sourceFile) .) "alt" "" "width" 350 "format" "avif" "attrs" (dict "data-c-page-blog-post" true)) }}
+    </div>
+    {{- end }}
+    {{ partial "pages/blog/blog-content" . }}
+  </article>
+  {{ with partial "ui/card" (dict "as" "aside" "border" true "transparent" true "class" "sidebar" "recent" $recent "attrs" (dict "data-c-page-blog-post" true)) }}
+    <h2 data-c-page-blog-post>{{ partial "helpers/t" "blog:post.recentPosts" }}</h2>
+    <ul class="recent-posts" data-c-page-blog-post>
+      {{- range .recent }}
+      <li data-c-page-blog-post>
+        <a class="post-title" href="{{ partial "helpers/href" (printf "/blog/%s/" .Params.blogId) }}" data-c-page-blog-post>{{ .Title }}</a>
+        <time class="post-date" datetime="{{ .Params.date }}" data-c-page-blog-post>{{ partial "helpers/date" .Params.date }}</time>
+      </li>
+      {{- end }}
+    </ul>
+  {{ end }}
+</div>
+{{ end }}

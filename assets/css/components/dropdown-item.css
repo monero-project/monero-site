@@ -1,0 +1,25 @@
+/* Styles for layouts/_partials/ui/dropdown/dropdown-item.html */
+.dropdown-item[data-c-dropdown-item] {
+  padding: var(--space-sm);
+  color: var(--heading-color);
+  text-decoration: none;
+  font-size: var(--font-size-sm);
+  transition: background 0.2s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-md);
+  white-space: nowrap;
+  border-radius: var(--radius-md);
+
+  &:hover {
+    background: var(--card-hover-color);
+  }
+}
+
+.meta[data-c-dropdown-item] {
+  color: var(--paragraph-subtitle);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-normal);
+  margin-inline-start: 3rem;
+}

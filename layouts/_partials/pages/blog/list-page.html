@@ -1,0 +1,17 @@
+{{- /*
+  Body of a blog listing page. Params: page, pageNumber, tag (slug, "" for all posts), tagName.
+*/ -}}
+{{- $p := .page -}}
+{{- $posts := sort (where (site.GetPage "/blog").RegularPages "Params.kind" "post") "Params.sortKey" "desc" -}}
+{{- $m := partial "pages/blog/list-info" (dict "page" $p "tag" .tag) -}}
+{{- if .tag }}{{ $posts = where $posts "Params.postTags" "intersect" (slice .tagName) }}{{ end -}}
+{{ partial "ui/title-card" (dict "title" $m.heading "subtitle" $m.subtitle) }}
+{{ partial "pages/blog/post-list" (dict
+  "posts" $posts
+  "pageNumber" .pageNumber
+  "baseURL" $m.baseURL
+  "tabsId" (cond (eq .tag "") "tabs-blog" (printf "tabs-blog-tag-%s" $p.Params.tagSlug))
+  "activeTab" $m.activeTab
+  "rssHref" (cond (eq .tag "") "/feed.xml" (absURL "feed.xml"))
+  "scope" (cond (eq .tag "") "page-blog-page" "page-blog-tags-tag-page")
+) }}

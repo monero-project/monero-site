@@ -1,0 +1,21 @@
+{{- /*
+  Images in Markdown content. Files next to the content (e.g. ./assets/x.png in
+  src/content/blog) are resized like ui/image; other URLs, and all images in
+  the feed (content/_feed.md), are used as-is.
+*/ -}}
+{{- $src := .Destination -}}
+{{- $res := "" -}}
+{{- if and (not (urls.Parse $src).IsAbs) (not .Page.Params.feed) -}}
+  {{- with .Page.Params.sourceFile -}}
+    {{- $res = resources.Get (path.Join (path.Dir .) $src) -}}
+  {{- end -}}
+{{- end -}}
+{{- if and (not $res) (hasPrefix $src ".") (not .Page.Params.feed) -}}
+  {{- errorf "%s: image %q not found (relative images are resolved from the Markdown file)" .Page.Params.sourceFile $src -}}
+{{- end -}}
+{{- with $res -}}
+  {{- /* unlike ui/image elsewhere, Markdown images set no object-fit */ -}}
+  {{- partial "ui/image" (dict "src" . "alt" $.PlainText "attrs" (dict "data-image-fit" "")) -}}
+{{- else -}}
+  <img src="{{ $src | safeURL }}" alt="{{ .PlainText }}"{{ with .Title }} title="{{ . }}"{{ end }}>
+{{- end -}}

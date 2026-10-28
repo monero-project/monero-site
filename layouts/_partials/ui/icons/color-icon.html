@@ -1,0 +1,17 @@
+{{- /*
+  Full-colour icon as a background image, swapping to the dark variant under
+  prefers-color-scheme: dark.
+
+    {{ partial "ui/icons/color-icon" (dict "src" "icons/color/light/faq.avif" "darkSrc" "icons/color/dark/faq.avif" "size" "2rem") }}
+
+  Params: src, darkSrc (default src), size (default 1em, numbers are px), class, rtl.
+*/ -}}
+{{- $res := resources.Get .src -}}
+{{- if not $res }}{{ errorf "ui/icons/color-icon: icon not found: src/assets/%s" .src }}{{ end -}}
+{{- $light := $res.RelPermalink -}}
+{{- $dark := $light -}}
+{{- with .darkSrc }}{{ with resources.Get . }}{{ $dark = .RelPermalink }}{{ else }}{{ errorf "ui/icons/color-icon: icon not found: src/assets/%s" . }}{{ end }}{{ end -}}
+{{- $size := .size | default "1em" -}}
+{{- if eq (printf "%T" $size) "int" }}{{ $size = printf "%dpx" $size }}{{ end -}}
+{{- $class := trim (printf "icon %s" (.class | default "")) " " -}}
+<div{{ partial "helpers/attrs" (dict "class" $class "aria-hidden" "true" "data-rtl" (cond (.rtl | default false) "true" "") "data-c-color-icon" true "style" (printf "--lightUrl: url(%s);--darkUrl: url(%s);--iconSize: %s;" $light $dark $size)) }}></div>

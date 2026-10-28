@@ -1,0 +1,7 @@
+{{- /*
+  The page's public path, used for canonical, hreflang and language links.
+  The server's /404.html stands in for /404/, so it reports that path.
+*/ -}}
+{{- $path := .RelPermalink -}}
+{{- if eq .Kind "404" }}{{ $path = partial "helpers/href" "/404/" }}{{ end -}}
+{{- return $path -}}

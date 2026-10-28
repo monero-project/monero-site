@@ -1,0 +1,60 @@
+{{ define "meta" }}{{ .Store.Set "meta" (dict "title" (partial "helpers/t" "contribute:donate.title") "description" (partial "helpers/t" "contribute:donate.subtitle")) }}{{ end }}
+{{ define "main" }}
+{{- $t := "helpers/t" -}}
+{{- $fund := "contribute:donate.generalFund" -}}
+{{- $data := hugo.Data.contributing.contributing -}}
+{{ partial "ui/title-card" (dict
+  "title" (partial $t "contribute:donate.title")
+  "subtitle" (partial $t "contribute:donate.subtitle")
+  "backHref" (partial "helpers/href" "/get-started/contribute/")
+  "backLabel" (partial $t "contribute:index.title")
+) }}
+{{ with partial "ui/layout/page-container" (dict "fund" $fund "data" $data) }}
+  {{ with partial "ui/hero-card" (dict
+    "image" "images/idea-bulb.avif"
+    "imageAlt" ""
+    "title" (partial "helpers/t" "contribute:donate.ccs.title")
+    "lead" (partial "helpers/t" "contribute:donate.ccs.lead")
+    "description" (partial "helpers/t" "contribute:donate.ccs.description")
+  ) }}
+    {{ with partial "ui/button" (dict "href" "https://ccs.getmonero.org/funding-required/" "target" "_blank" "rel" "noopener") -}}
+      {{ partial "helpers/t" "contribute:donate.ccs.viewProposals" }}
+      {{ partial "ui/icons/mask-icon" (dict "src" "external-link" "size" "1em" "rtl" (eq site.Language.Direction "rtl")) }}
+    {{- end }}
+  {{ end }}
+
+  <hr>
+
+  {{ with partial "ui/layout/page-section" (dict
+    "title" (partial "helpers/t" (printf "%s.title" .fund))
+    "subtitle" (partial "helpers/t" (printf "%s.subtitle" .fund))
+    "fund" .fund "data" .data
+  ) }}
+    {{ with partial "ui/layout/grid" (dict "columns" 2 "gap" "md" "fund" .fund "data" .data) }}
+      {{ partial "pages/get-started/contribute/donation-address" (dict
+        "currency" (partial "helpers/t" (printf "%s.moneroXmr" .fund))
+        "address" .data.xmr.address
+        "qrCode" (printf "/contributing/%s" .data.xmr.qr_filename)
+        "viewAddress" .data.xmr.view_address
+        "viewKey" .data.xmr.view_key
+        "viewOnlyLabel" (partial "helpers/t" (printf "%s.viewOnlyWalletDetails" .fund))
+        "primaryAddressLabel" (partial "helpers/t" (printf "%s.primaryAddress" .fund))
+        "viewKeyLabel" (partial "helpers/t" (printf "%s.viewKey" .fund))
+      ) }}
+      {{ partial "pages/get-started/contribute/donation-address" (dict
+        "currency" (partial "helpers/t" (printf "%s.bitcoinBtc" .fund))
+        "address" .data.btc.address
+        "qrCode" (printf "/contributing/%s" .data.btc.qr_filename)
+      ) }}
+    {{ end }}
+
+    {{ partial "pages/get-started/contribute/fund-footer" (dict
+      "note" (partial "helpers/t" (printf "%s.description" .fund))
+      "openAliasLabel" (partial "helpers/t" (printf "%s.openAlias" .fund))
+      "openAliasValue" "donate.getmonero.org"
+      "contactLabel" (partial "helpers/t" (printf "%s.contact" .fund))
+      "contactEmail" "dev@getmonero.org"
+    ) }}
+  {{ end }}
+{{ end }}
+{{ end }}

@@ -1,0 +1,19 @@
+{{- /*
+  The theme button: System -> Light -> Dark -> System. All three links are
+  here; the stylesheet shows the one that leads on from the current theme.
+
+  Without JavaScript or cookies, the theme is kept in the address: the web
+  server serves the same files under /light/ and /dark/, marking the page
+  <html data-theme="light|dark">, and a link ?theme=light|dark|system sends
+  the page there (see Caddyfile and docs/how-to-serve-the-site.md). On a server without
+  that configuration the links just reload the page.
+*/ -}}
+{{- $t := "helpers/t" -}}
+<nav class="theme-toggle" aria-label="{{ partial $t "common:components.themeToggle.label" }}" data-c-theme-toggle>
+  {{- range slice (dict "to" "light" "icon" "contrast" "key" "toLight") (dict "to" "dark" "icon" "sun" "key" "toDark") (dict "to" "system" "icon" "moon" "key" "toSystem") }}
+  {{- $label := partial $t (printf "common:components.themeToggle.%s" .key) }}
+  <a class="to-{{ .to }}" href="?theme={{ .to }}" title="{{ $label }}" aria-label="{{ $label }}" rel="nofollow" data-c-theme-toggle>
+    {{ partial "ui/icons/mask-icon" (dict "src" .icon "size" "1.5rem") }}
+  </a>
+  {{- end }}
+</nav>

@@ -1,0 +1,46 @@
+{{- /*
+  Render Markdown from a translation string (or other untrusted text) safely.
+
+    {{ partial "helpers/markdown" (partial "helpers/t" "faq:intro") }}
+    {{ partial "helpers/markdown" (dict "text" $s "inline" true) }}
+
+  inline: no wrapping <p>, and every newline becomes <br> (so a blank line is
+  <br><br>).
+
+  All HTML in the text is escaped except these shapes, which translations use:
+    <a href="..." [target="_blank"] [rel="noopener noreferrer"]>...</a>
+    <span style="color: <colour>">...</span>
+  @term mentions become Moneropedia links.
+*/ -}}
+{{- $text := . -}}
+{{- $inline := false -}}
+{{- if reflect.IsMap . }}{{ $text = .text }}{{ $inline = .inline | default false }}{{ end -}}
+{{- $s := htmlEscape (string $text) -}}
+{{- /* Re-allow the whitelisted tags, as complete pairs only. href must be
+  http(s), a site path or a fragment; target/rel may only take these values. */ -}}
+{{- $href := `((?:https?://|/|#)(?:[^&<>\s"]|&amp;)*)` -}}
+{{- range slice
+  (slice ` target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;` ` target="_blank" rel="noopener noreferrer"`)
+  (slice ` target=&#34;_blank&#34;` ` target="_blank"`)
+  (slice ` rel=&#34;noopener noreferrer&#34;` ` rel="noopener noreferrer"`)
+  (slice "" "")
+-}}
+  {{- $s = replaceRE (printf `&lt;a href=&#34;%s&#34;%s&gt;(.*?)&lt;/a&gt;` $href (index . 0)) (printf `<a href="$1"%s>$2</a>` (index . 1)) $s -}}
+{{- end -}}
+{{- $s = replaceRE `&lt;span style=&#34;(color: ?(?:#[0-9a-fA-F]{3,8}|var\(--[a-z-]+\)|[a-z]+);?)&#34;&gt;(.*?)&lt;/span&gt;` `<span style="$1">$2</span>` $s -}}
+{{- $strings := site.GetPage "/_strings" -}}
+{{- $html := "" -}}
+{{- if $inline -}}
+  {{- /* Swap newlines for a private-use character so the text stays one
+    paragraph, drop the newlines the renderer adds (e.g. after render hooks)
+    and turn the source newlines into <br>. */ -}}
+  {{- $html = $strings.RenderString (dict "display" "inline") (replace $s "\n" "\uE000") -}}
+  {{- $html = replace (replace (string $html) "\n" "") "\uE000" "<br>" -}}
+{{- else -}}
+  {{- /* block display keeps the <p> of a single paragraph; no heading ids in translation strings */ -}}
+  {{- $html = $strings.RenderString (dict "display" "block") $s -}}
+  {{- $html = replaceRE `<h([1-6]) id="[^"]*">` "<h$1>" (string $html) -}}
+{{- end -}}
+{{- $html = partial "helpers/autolink" (dict "html" (string $html) "plain" true) -}}
+{{- $html = partial "helpers/moneropedia-links" (dict "html" $html) -}}
+{{- return (safeHTML $html) -}}

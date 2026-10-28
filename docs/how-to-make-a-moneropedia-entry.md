@@ -39,7 +39,7 @@ terms:
 
 ## 5. Test & submit
 
-- Run `pnpm dev` and visit `/resources/moneropedia/` and the new entry `/resources/moneropedia/<slug>/`.
+- Run `hugo server` and visit `/resources/moneropedia/` and the new entry `/resources/moneropedia/<slug>/` (the file name in lowercase). The build stops with an error naming the file if `title`, `terms` or `summary` is missing.
 - Verify tooltips and `@`-links work, images load, and the summary appears in the index.
 - Open a PR with a clear description and link to references or sources.
 
@@ -48,7 +48,7 @@ terms:
 - [ ] English source added to `src/content/moneropedia/en/`.
 - [ ] Front matter includes `title`, `summary`, and `terms`.
 - [ ] Images (if any) placed in `./assets/<file-name>/` and referenced relatively.
-- [ ] Run `pnpm dev` and verify entry renders and links work.
+- [ ] Run `hugo server` and verify entry renders and links work.
 
 ## Examples & references
 - See existing entries in `src/content/moneropedia/en/` for style and structure.

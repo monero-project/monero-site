@@ -1,0 +1,12 @@
+{{- /*
+  A filter in the exchanges sidebar: a label for one of the page's hidden
+  filter radio buttons.
+
+    {{ partial "pages/get-started/exchanges/filter-option" (dict "filterId" "filter-fiat" "highlight" "fiat" "icon" "bank" "title" "..." "subtitle" "...") }}
+
+  Params: filterId, highlight (the data-highlight tag it selects), icon (mask
+  icon name), title, subtitle.
+*/ -}}
+<label for="{{ .filterId }}" class="filter-option" data-highlight="{{ .highlight }}" data-c-filter-option>
+  {{ partial "ui/toc/tocitem" (dict "icon" .icon "title" .title "subtitle" .subtitle "tag" "span" "attrs" (dict "data-c-filter-option" true)) }}
+</label>

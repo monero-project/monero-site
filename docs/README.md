@@ -6,6 +6,7 @@ Essential guides for new contributors to get set up.
 
 - [How to Set Up the Development Environment](how-to-set-up-the-development-environment.md)
 - [Understanding the Project Structure](understanding-the-project-structure.md)
+- [How to Serve the Site](how-to-serve-the-site.md) (web server setup, the theme button)
 
 ## Page Development
 

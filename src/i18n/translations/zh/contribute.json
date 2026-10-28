@@ -52,7 +52,7 @@
         },
         "moneroWebsite": {
             "title": "Monero 网站",
-            "description": "本网站，使用 Astro 框架构建。"
+            "description": "本网站，使用 Hugo 静态网站生成器构建。"
         },
         "moneroDocs": {
             "title": "Monero 文档",

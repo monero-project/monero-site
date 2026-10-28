@@ -1,0 +1,53 @@
+/* Styles for layouts/_partials/pages/get-started/exchanges/mobile-filter-bar.html */
+.mobile-filter-container[data-c-mobile-filter-bar] {
+  display: block;
+  position: sticky;
+  bottom: 0;
+  margin-top: var(--space-xl);
+  margin-inline: calc(-1 * var(--space-2xl));
+  background-color: var(--bg-color);
+}
+
+.mobile-filter-bar[data-c-mobile-filter-bar] {
+  display: block;
+  padding: var(--space-md);
+  background-color: var(--bg-color);
+  border-top: 1px solid var(--border-color);
+  box-shadow: 0 -2px 4px #00000026;
+  cursor: pointer;
+}
+
+.mobile-filter-bar-inner[data-c-mobile-filter-bar] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  padding: 0.65rem var(--space-md);
+  border-radius: var(--radius-full);
+  background: var(--card-color);
+  border: 1px solid var(--border-color);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--heading-color);
+
+  &:hover {
+    background: var(--card-hover-color);
+  }
+}
+
+.mobile-filter-subtitle[data-c-mobile-filter-bar] {
+  display: none;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-normal);
+  color: var(--paragraph-subtitle);
+}
+
+.filter-text[data-c-mobile-filter-bar] {
+  display: none;
+}
+
+@media (width >= 1200px) {
+  .mobile-filter-container[data-c-mobile-filter-bar] {
+    display: none;
+  }
+}

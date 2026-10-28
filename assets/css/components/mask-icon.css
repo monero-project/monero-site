@@ -1,0 +1,14 @@
+/* Styles for layouts/_partials/ui/icons/mask-icon.html */
+.icon[data-c-mask-icon] {
+  display: inline-block;
+  inline-size: var(--iconSize);
+  block-size: var(--iconSize);
+  margin-inline-start: var(--spacing);
+  background: var(--iconColor);
+  mask: var(--iconSrc) no-repeat center / contain;
+
+  &[data-rtl] {
+    transform: scaleX(-1);
+    transform-origin: center;
+  }
+}

@@ -1,0 +1,127 @@
+{{ define "meta" }}{{ .Store.Set "meta" (dict "title" (partial "helpers/t" "downloads:pageTitle") "description" (partial "helpers/t" "downloads:hero.subtitle")) }}{{ end }}
+{{ define "main" }}
+{{- $t := "helpers/t" -}}
+{{- $scope := dict "data-c-page-downloads-community" true -}}
+{{- $data := hugo.Data.downloads.community.community -}}
+{{- $sections := slice
+  (dict "id" "wallets" "icon" "wallet" "title" (partial $t "downloads:community.sections.wallets.title") "subtitle" (partial $t "downloads:community.sections.wallets.subtitle"))
+  (dict "id" "cold-wallets" "icon" "snowflake" "title" (partial $t "downloads:community.sections.cold.title") "subtitle" (partial $t "downloads:community.sections.cold.subtitle"))
+  (dict "id" "nodes" "icon" "server" "title" (partial $t "downloads:community.sections.nodes.title") "subtitle" (partial $t "downloads:community.sections.nodes.subtitle"))
+-}}
+{{- /* Each list becomes community-card params, sorted by number of supported
+  platforms (mobile + desktop), then by name. The first card on the page with
+  a built-in exchange gets id="built-in-exchange" (an anchor other pages link to). */ -}}
+{{- $lists := dict -}}
+{{- $builtinIdAssigned := false -}}
+{{- range slice
+  (dict "name" "moneroOnly" "wallets" $data.wallets.moneroOnly)
+  (dict "name" "multiCoin" "wallets" $data.wallets.multiCoin)
+  (dict "name" "lws" "wallets" $data.wallets.lws)
+  (dict "name" "cold" "wallets" $data.cold)
+  (dict "name" "nodes" "wallets" $data.nodes)
+-}}
+  {{- $cards := slice -}}
+  {{- range .wallets -}}
+    {{- $platformCount := add (len (.tags.mobile | default slice)) (len (.tags.desktop | default slice)) -}}
+    {{- $cards = $cards | append (dict
+      "sortKey" (printf "%03d %s" (sub 999 $platformCount) (lower .name))
+      "logo" .logo
+      "name" .name
+      "description" (partial $t (printf "downloads:community.descriptions.%s" .id))
+      "tags" .tags
+      "link" .link
+      "linkText" (partial $t "downloads:community.learnMore")
+    ) -}}
+  {{- end -}}
+  {{- $sorted := slice -}}
+  {{- range sort $cards "sortKey" -}}
+    {{- $card := . -}}
+    {{- if and (not $builtinIdAssigned) (in (.tags.general | default slice) "i18n:builtInExchange") -}}
+      {{- $builtinIdAssigned = true -}}
+      {{- $card = merge . (dict "id" "built-in-exchange") -}}
+    {{- end -}}
+    {{- $sorted = $sorted | append $card -}}
+  {{- end -}}
+  {{- $lists = merge $lists (dict .name $sorted) -}}
+{{- end -}}
+{{ partial "ui/title-card" (dict "title" (partial $t "downloads:hero.title") "subtitle" (partial $t "downloads:hero.subtitle")) }}
+{{ with partial "ui/layout/page-container" (dict "attrs" $scope "scope" $scope "sections" $sections "lists" $lists) }}
+  {{ partial "ui/tabs/page-tabs" (dict
+    "id" "tabs-downloads-community"
+    "labels" (slice (partial "helpers/t" "downloads:tabs.core") (partial "helpers/t" "downloads:tabs.community"))
+    "links" (slice (partial "helpers/href" "/downloads") (partial "helpers/href" "/downloads/community"))
+    "activeIndex" 1
+  ) }}
+
+  {{ partial "ui/toc/toccontainer" (dict "sections" .sections "ariaLabel" (printf "%s sections" (partial "helpers/t" "downloads:tabs.community"))) }}
+
+  {{ with partial "ui/layout/page-section" (dict
+    "anchorId" "wallets"
+    "title" (partial "helpers/t" "downloads:community.sections.wallets.title")
+    "subtitle" (partial "helpers/t" "downloads:community.sections.wallets.subtitle")
+    "attrs" .scope "scope" .scope "lists" .lists
+  ) }}
+    <h3 class="subheading" data-c-page-downloads-community>
+      {{ partial "helpers/t" "downloads:community.categories.moneroOnly" }}
+    </h3>
+    {{ with partial "ui/layout/grid" (dict "minWidth" "20rem" "gap" "lg" "class" "compact-grid" "attrs" .scope "cards" .lists.moneroOnly) }}
+      {{- range .cards }}
+      {{ partial "pages/downloads/community-card" . }}
+      {{- end }}
+    {{ end }}
+
+    <h3 class="subheading" data-c-page-downloads-community>
+      {{ partial "helpers/t" "downloads:community.categories.multiCoin" }}
+    </h3>
+    {{ with partial "ui/layout/grid" (dict "minWidth" "20rem" "gap" "lg" "class" "compact-grid" "attrs" .scope "cards" .lists.multiCoin) }}
+      {{- range .cards }}
+      {{ partial "pages/downloads/community-card" . }}
+      {{- end }}
+    {{ end }}
+
+    <h3 class="subheading" data-c-page-downloads-community>
+      {{ partial "helpers/t" "downloads:community.categories.lws.title" }}
+    </h3>
+    {{ partial "ui/disclaimer/disclaimer-note" (dict "text" (partial "helpers/t" "downloads:community.categories.lws.disclaimer")) }}
+    {{ with partial "ui/layout/grid" (dict "minWidth" "25rem" "gap" "lg" "attrs" .scope "cards" .lists.lws) }}
+      {{- range .cards }}
+      {{ partial "pages/downloads/community-card" . }}
+      {{- end }}
+    {{ end }}
+  {{ end }}
+
+  <hr aria-hidden="true" data-c-page-downloads-community>
+
+  {{ with partial "ui/layout/page-section" (dict
+    "anchorId" "cold-wallets"
+    "title" (partial "helpers/t" "downloads:community.sections.cold.title")
+    "subtitle" (partial "helpers/t" "downloads:community.sections.cold.subtitle")
+    "attrs" .scope "scope" .scope "lists" .lists
+  ) }}
+    {{ with partial "ui/layout/grid" (dict "minWidth" "25rem" "gap" "lg" "attrs" .scope "cards" .lists.cold) }}
+      {{- range .cards }}
+      {{ partial "pages/downloads/community-card" . }}
+      {{- end }}
+    {{ end }}
+  {{ end }}
+
+  <hr aria-hidden="true" data-c-page-downloads-community>
+
+  {{ with partial "ui/layout/page-section" (dict
+    "anchorId" "nodes"
+    "title" (partial "helpers/t" "downloads:community.sections.nodes.title")
+    "subtitle" (partial "helpers/t" "downloads:community.sections.nodes.subtitle")
+    "attrs" .scope "scope" .scope "lists" .lists
+  ) }}
+    {{ with partial "ui/layout/grid" (dict "minWidth" "25rem" "gap" "lg" "attrs" .scope "cards" .lists.nodes) }}
+      {{- range .cards }}
+      {{ partial "pages/downloads/community-card" . }}
+      {{- end }}
+    {{ end }}
+  {{ end }}
+
+  {{ with partial "ui/disclaimer/disclaimer-bar" (dict "icon" "shield-alert" "title" (partial "helpers/t" "downloads:community.disclaimerTitle")) }}
+    {{- partial "helpers/t" "downloads:community.disclaimer" -}}
+  {{ end }}
+{{ end }}
+{{ end }}

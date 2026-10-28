@@ -1,0 +1,32 @@
+{{- /*
+  Link to an IRC channel with its description, and an optional Matrix link.
+  The channel name is split at its first dash into a muted prefix and the
+  highlighted rest ("#monero-" + "community").
+
+    {{ partial "pages/community/hangouts/ircchannel-button" (dict "name" "#monero" "description" "..." "href" "https://web.libera.chat/#monero" "matrixHref" "https://matrix.to/#/...") }}
+
+  Params: name, description, href, matrixHref.
+*/ -}}
+{{- $prefix := "" -}}
+{{- $suffix := .name -}}
+{{- with findRESubmatch `^([^-]*-)(.*)$` .name 1 -}}
+  {{- $prefix = index . 0 1 -}}
+  {{- $suffix = index . 0 2 -}}
+{{- end -}}
+<div class="irc-channel-button" data-c-ircchannel-button>
+  <a href="{{ .href }}" target="_blank" rel="noopener noreferrer" class="primary-link" data-c-ircchannel-button>
+    <span class="channel-content" data-c-ircchannel-button>
+      <span class="channel-name" data-c-ircchannel-button>
+        {{- with $prefix }}<span class="channel-prefix" data-c-ircchannel-button>{{ . }}</span>{{ end -}}
+        <span class="channel-suffix" data-c-ircchannel-button>{{ $suffix }}</span>
+      </span>
+      <span class="channel-desc" data-c-ircchannel-button>{{ .description }}</span>
+    </span>
+    {{ partial "ui/icons/mask-icon" (dict "src" "external-link" "size" "1em" "rtl" (eq site.Language.Direction "rtl")) }}
+  </a>
+  {{- with .matrixHref }}
+  <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="matrix-link" title="{{ partial "helpers/t" "common:components.ircChannelButton.matrix" }}" aria-label="{{ partial "helpers/t" "common:components.ircChannelButton.openOnMatrix" }}" data-c-ircchannel-button>
+    {{ partial "ui/icons/mask-icon" (dict "src" "matrix" "size" "2em") }}
+  </a>
+  {{- end }}
+</div>

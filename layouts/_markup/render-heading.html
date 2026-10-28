@@ -1,0 +1,2 @@
+{{- /* Headings get an id for linking, except in the feed (content/_feed.md). */ -}}
+<h{{ .Level }}{{ if not .Page.Params.feed }} id="{{ .Anchor }}"{{ end }}{{ range $k, $v := .Attributes }}{{ if ne $k "id" }} {{ $k }}="{{ $v }}"{{ end }}{{ end }}>{{ .Text }}</h{{ .Level }}>

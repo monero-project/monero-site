@@ -1,0 +1,45 @@
+{{- $t := "helpers/t" -}}
+<header class="header" data-c-header>
+  <div class="header-inner" data-c-header>
+    {{- /* the menu's state, before everything it opens (the menu button, the drawer, the backdrop) */}}
+    <input id="nav-toggle" class="nav-toggle" type="checkbox" aria-controls="primary-nav" aria-label="{{ partial $t "common:aria.openMenu" }}" data-c-header>
+    {{- /* narrow screens: the menu button, at the start like the drawer it opens: a burger that
+      turns into Monero's M and then an X while the menu is open, and back */}}
+    <label for="nav-toggle" class="hamburger" aria-hidden="true" data-c-header>
+      <span class="burger" data-c-header><span data-c-header></span><span data-c-header></span><span data-c-header></span><span data-c-header></span></span>
+    </label>
+    <a class="brand" href="{{ partial "helpers/href" "/" }}" data-c-header>
+      {{ partial "ui/image" (dict "src" "meta/monerologo.avif" "alt" "" "width" 64 "height" 64 "format" "avif" "priority" true "class" "mark" "attrs" (dict "aria-hidden" "true" "data-c-header" true)) }}
+      <span data-c-header>MONERO</span>
+    </a>
+    <nav id="primary-nav" class="nav" aria-label="{{ partial $t "common:aria.primaryNav" }}" data-c-header>
+      <fieldset data-c-header>
+        <legend class="sr-only" data-c-header>{{ partial $t "common:aria.primaryNavSections" }}</legend>
+        <ul class="nav-list" data-c-header>
+          {{- range hugo.Data.navigation.navigationItems }}
+            {{- $label := partial $t (printf "common:header.nav.%s" .translationKey) }}
+            {{- $section := .section }}
+            {{- $dropdown := slice }}
+            {{- range .items }}
+              {{- $dropdown = $dropdown | append (dict
+                "label" (partial $t (printf "common:header.dropdowns.%s.%s.label" $section .key))
+                "desc" (partial $t (printf "common:header.dropdowns.%s.%s.desc" $section .key))
+                "href" (partial "helpers/href" .href)
+                "icon" .icon
+                "iconDark" .iconDark
+              ) }}
+            {{- end }}
+            {{ partial "ui/header/nav-item" (dict "label" $label "href" (cond (isset . "href") (partial "helpers/href" (.href | default "")) "") "dropdown" $dropdown) }}
+          {{- end }}
+        </ul>
+      </fieldset>
+    </nav>
+    <label for="nav-toggle" class="scrim" aria-hidden="true" aria-label="{{ partial $t "common:aria.closeMenu" }}" data-c-header></label>
+    <div class="utils" aria-label="{{ partial $t "common:aria.utilities" }}" data-c-header>
+      {{ partial "ui/header/theme-toggle" . }}
+      <div class="lang" data-c-header>
+        {{ partial "ui/header/language-dropdown" . }}
+      </div>
+    </div>
+  </div>
+</header>

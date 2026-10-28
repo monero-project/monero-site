@@ -1,0 +1,64 @@
+{{ define "meta" }}{{ .Store.Set "meta" (dict "title" (partial "helpers/t" "index:pageTitle") "description" (partial "helpers/t" "index:hero.lead")) }}{{ end }}
+{{ define "main" }}
+{{- $t := "helpers/t" -}}
+{{- $h := "helpers/href" -}}
+{{- $p := dict "data-c-page-home" true -}}
+{{- $about := slice
+  (dict "title" (partial $t "index:main") "text" (partial $t "index:privacyText"))
+  (dict "title" (partial $t "index:decentralized") "text" (partial $t "index:decentralizedText"))
+  (dict "title" (partial $t "index:communityDriven") "text" (partial $t "index:communityText"))
+-}}
+{{- $steps := slice
+  (dict "step" 1 "title" (partial $t "index:step1Title") "description" (partial $t "index:step1Desc") "ctaHref" (partial $h "/downloads") "ctaLabel" (partial $t "index:step1Cta"))
+  (dict "step" 2 "title" (partial $t "index:step2Title") "description" (partial $t "index:step2Desc") "ctaHref" (partial $h "/get-started/exchanges") "ctaLabel" (partial $t "index:step2Cta"))
+  (dict "step" 3 "title" (partial $t "index:step3Title") "description" (partial $t "index:step3Desc") "ctaHref" (partial $h "/get-started/merchants") "ctaLabel" (partial $t "index:step3Cta"))
+-}}
+{{- $resources := slice
+  (dict "title" (partial $t "index:hangoutsTitle") "description" (partial $t "index:hangoutsDesc") "ctaLabel" (partial $t "index:hangoutsCta") "ctaHref" (partial $h "/community/hangouts") "icon" "message-circle")
+  (dict "title" (partial $t "index:workgroupsTitle") "description" (partial $t "index:workgroupsDesc") "ctaLabel" (partial $t "index:workgroupsCta") "ctaHref" (partial $h "/community/workgroups") "icon" "users")
+  (dict "title" (partial $t "index:contributeTitle") "description" (partial $t "index:contributeDesc") "ctaLabel" (partial $t "index:contributeCta") "ctaHref" (partial $h "/get-started/contribute") "icon" "code-xml")
+-}}
+{{- $d := dict "p" $p "about" $about "steps" $steps "resources" $resources -}}
+{{ partial "pages/index/hero" (dict "class" "index-hero" "attrs" $p) }}
+<div class="main-content" data-c-page-home>
+  {{ with partial "pages/index/index-card" (dict "id" "about-monero" "title" (partial $t "index:aboutTitle") "description" (partial $t "index:aboutDescription") "attrs" $p "d" $d) }}
+    {{ with partial "ui/layout/column" (dict "gap" "2xl" "attrs" .d.p "d" .d) }}
+      {{- range $i, $item := .d.about }}
+      <div data-c-page-home>
+        <h2{{ if eq $i 0 }} style="margin-top: 0;"{{ end }} data-c-page-home>{{ $item.title }}</h2>
+        <p data-c-page-home>
+          {{ $item.text }}
+        </p>
+      </div>
+      {{- end }}
+    {{ end }}
+    {{ with partial "ui/video-container" (dict "attrs" .d.p) }}
+      <video width="100%" height="100%" controls preload="none" poster="/media/what-is-monero.webp" aria-label="{{ partial "helpers/t" "index:aria.heroVideo" }}" data-c-page-home>
+        <source src="/media/what-is-monero.webm" type="video/webm" data-c-page-home>
+        <track kind="captions" src="" srclang="en" label="No captions" data-c-page-home>
+        Your browser does not support the video tag.
+      </video>
+    {{ end }}
+  {{ end }}
+  <hr data-c-page-home>
+  {{ with partial "pages/index/index-card" (dict "id" "start-using-monero" "title" (partial $t "index:startTitle") "description" (partial $t "index:startDescription") "attrs" $p "d" $d) }}
+    {{ partial "ui/image" (dict "src" "images/landing.avif" "alt" "" "class" "landing-image" "format" "avif" "attrs" .d.p) }}
+    <div data-c-page-home>
+      {{- range $i, $step := .d.steps }}
+      {{- if $i }}
+      <hr data-c-page-home>
+      {{- end }}
+      {{ partial "pages/index/get-started-card" $step }}
+      {{- end }}
+    </div>
+  {{ end }}
+  <hr data-c-page-home>
+  {{ with partial "pages/index/index-card" (dict "id" "get-involved" "title" (partial $t "index:getInvolvedTitle") "description" (partial $t "index:getInvolvedDescription") "attrs" $p "d" $d) }}
+    {{ with partial "ui/layout/grid" (dict "minWidth" "250px" "gap" "2xl" "class" "resource-grid" "attrs" .d.p "d" .d) }}
+      {{- range .d.resources }}
+      {{ partial "pages/index/resource-card" . }}
+      {{- end }}
+    {{ end }}
+  {{ end }}
+</div>
+{{ end }}

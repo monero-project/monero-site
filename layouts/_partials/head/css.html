@@ -1,0 +1,11 @@
+{{- /*
+  The site stylesheet: the font faces (a template, to fingerprint the font
+  URLs) followed by assets/css/main.css bundled with css.Build.
+*/ -}}
+{{- $fonts := resources.Get "css/base/fonts.css" | resources.ExecuteAsTemplate "css/fonts.css" . -}}
+{{- $main := resources.Get "css/main.css" | css.Build (dict "minify" true) -}}
+{{- $css := slice $fonts $main | resources.Concat "css/site.css" -}}
+{{- if hugo.IsProduction }}{{ $css = $css | minify | fingerprint }}{{ end -}}
+{{- /* the main font with the stylesheet, so it's there for the first paint (fonts.css: optional) */}}
+<link rel="preload" href="{{ (resources.Get "fonts/dm-sans/dm-sans-latin-wght-normal.woff2" | fingerprint).RelPermalink }}" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{ $css.RelPermalink }}">

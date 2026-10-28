@@ -1,0 +1,38 @@
+{{- /*
+  Text link with an icon (an arrow, or external-link for external links).
+
+    {{ with partial "ui/icon-link" (dict "href" "/downloads/" "underline" true) }}View wallets{{ end }}
+
+  Params: href, icon (mask icon name or asset path; "" for no icon),
+  iconPosition (start|end, default end), iconSize (default 1em),
+  size (sm|base|lg, default base), weight (normal|medium|semibold|bold,
+  default semibold), color (orange|heading|inherit, default orange), underline,
+  external (default: href starts with http or //), as (tag, default a with
+  href, span without), class, attrs.
+*/ -}}
+{{- $href := .href | default "" -}}
+{{- $external := .external -}}
+{{- if eq $external nil }}{{ $external = or (hasPrefix $href "http") (hasPrefix $href "//") }}{{ end -}}
+{{- $icon := cond $external "external-link" "arrow-right" -}}
+{{- if isset . "icon" }}{{ $icon = .icon }}{{ end -}}
+{{- $position := .iconPosition | default "end" -}}
+{{- $tag := .as | default (cond (ne $href "") "a" "span") -}}
+{{- $colors := dict "orange" "var(--monero-orange)" "heading" "var(--heading-color)" "inherit" "inherit" -}}
+{{- $a := dict
+  "href" $href
+  "class" (trim (printf "link %s" (.class | default "")) " ")
+  "data-underline" (cond (.underline | default false) "true" "")
+  "data-icon-position" (cond (ne $position "end") $position "")
+  "target" (cond $external "_blank" "")
+  "rel" (cond $external "noopener noreferrer" "")
+  "style" (printf "--color: %s; --weight: var(--font-weight-%s); --size: var(--font-size-%s)" (index $colors (.color | default "orange")) (.weight | default "semibold") (.size | default "base"))
+  "data-c-icon-link" true
+-}}
+{{- $iconHTML := "" -}}
+{{- with $icon }}{{ $iconHTML = partial "ui/icons/mask-icon" (dict "src" . "size" ($.iconSize | default "1em") "rtl" (eq site.Language.Direction "rtl")) }}{{ end -}}
+{{- /* html/template can't write a tag name from a variable, hence printf */ -}}
+{{ printf "<%s%s>" $tag (partial "helpers/attrs" (merge $a (.attrs | default dict))) | safeHTML }}
+  {{- if eq $position "start" }}{{ $iconHTML }}{{ end }}
+  {{ templates.Inner . }}
+  {{ if eq $position "end" }}{{ $iconHTML }}{{ end -}}
+{{ printf "</%s>" $tag | safeHTML }}

@@ -1,0 +1,33 @@
+{{- /* Params: label, href, dropdown (list of dicts for nav-dropdown-link) */ -}}
+{{- $isDropdown := gt (len .dropdown) 0 -}}
+{{- $id := printf "dd-%s" (partial "helpers/stable-id" .label) -}}
+{{- $closeId := printf "%s-close" $id -}}
+<li class="nav-item"{{ partial "helpers/attrs" (dict "data-is-dropdown" (cond $isDropdown "true" "")) }} data-c-nav-item>
+  {{- if $isDropdown }}
+  <input id="{{ $id }}" class="dd-toggle" type="radio" name="nav-dd" aria-hidden="true" hidden data-c-nav-item>
+  <input id="{{ $closeId }}" class="dd-close" type="radio" name="nav-dd" aria-hidden="true" hidden data-c-nav-item>
+  {{- end }}
+  <div class="row" data-c-nav-item>
+    <a{{ partial "helpers/attrs" (dict "href" .href) }} class="link" tabindex="0" data-c-nav-item>
+      {{ .label }}
+      {{- if $isDropdown }}
+      <span class="caret" aria-hidden="true" data-c-nav-item>
+        {{ partial "ui/icons/mask-icon" (dict "src" "chevron-down") }}
+      </span>
+      {{- end }}
+    </a>
+    {{- if $isDropdown }}
+    <label for="{{ $id }}" class="mobile-open" aria-label="Open {{ .label }} menu" data-c-nav-item></label>
+    <label for="{{ $closeId }}" class="mobile-close" aria-label="Close {{ .label }} menu" data-c-nav-item></label>
+    {{- end }}
+  </div>
+  {{- if $isDropdown }}
+  <div class="dropdown" role="menu" aria-label="{{ .label }} menu" data-c-nav-item>
+    <div class="dropdown-content" data-c-nav-item>
+      {{- range .dropdown }}
+      {{ partial "ui/header/nav-dropdown-link" . }}
+      {{- end }}
+    </div>
+  </div>
+  {{- end }}
+</li>

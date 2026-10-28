@@ -1,118 +1,146 @@
 # How to Create a New Component
 
-For more detailed information, refer to the [Astro component documentation.](https://docs.astro.build/en/basics/astro-components/).
+Components are [Hugo partials](https://gohugo.io/templates/partial/): small HTML templates in `layouts/_partials/` with a matching stylesheet in `assets/css/components/`.
 
 ## Quick checklist
 
-- Pick type: UI (`src/components/ui/`) | Page (`src/components/pages/...`).
-- Name with PascalCase (e.g., `MyButton.astro`).
-- Keep it small, testable, accessible, and well-documented.
+- Pick a type: UI (`layouts/_partials/ui/`) or page-specific (`layouts/_partials/pages/<page>/`).
+- Name files in kebab-case. The file name (without `.html`) is the component's **name** and must be unique across the site, e.g. `ui/button.html` is `button` and `pages/blog/blog-header.html` is `blog-header`.
+- Add `assets/css/components/<name>.css` and import it in `assets/css/main.css`.
+- Put `data-c-<name>` on every element the component writes (see [Styling](#styling)).
+- Run `scripts/check-scoped-css.py` before opening a PR (CI runs it too).
 
 ## Where to put a new component (ui / pages)
 
-Quick decision guide:
+- `layouts/_partials/ui/` -> **Reusable UI building blocks**
+  - Small, style/behaviour-focused components used across the site (buttons, accordions, icons, layout helpers).
+  - Take parameters, no page-specific logic.
+  - Example: `ui/button.html`, `ui/accordion/accordion.html`.
+- `layouts/_partials/pages/<page>/` -> **Page-specific components**
+  - Tied to one page or feature (blog card, downloads card, exchanges table).
+  - Example: `pages/blog/blog-card.html`.
 
-- `src/components/ui/` -> **Reusable UI building blocks**
-  - Use for small, style/behavior-focused components that may be used across the site (Buttons, Accordions, Icon wrappers).
-  - Keep these dependency-free (accept props, avoid page-specific logic).
-  - Subfolders exist for organization: `accordion/`, `header/`, `icons/`, `layout/`, `tabs/`, `toc/`, etc.
-  - Example: `src/components/ui/Button.astro`, `src/components/ui/accordion/Accordion.astro`.
+If you're unsure, look for a similar component and follow its pattern.
 
-- `src/components/pages/<page-name>/` -> **Page-specific or feature components**
-  - Use when the component is tightly coupled to one page or feature (e.g., blog listing card, downloads grid, search results component, exchanges table).
-  - They can import page-level helpers and expect specific data shapes.
-  - Example: `src/components/pages/blog/BlogCard.astro`.
+## Minimal component
 
-Rules of thumb:
-- If it's small and can be reused later -> put it in `ui/` (or a subfolder within `ui/`).
-- If it depends on a single page's data or route -> put it in `pages/<page-name>/`.
+`layouts/_partials/ui/note.html`:
 
-If you're still unsure, search for similar components in `src/components/` and follow the existing pattern. Add a short comment at the top of the file describing purpose and intended scope.
+```go-html-template
+{{- /*
+  A highlighted note box.
 
-## Minimal component template
+    {{ with partial "ui/note" (dict "title" "Heads up") }}
+      <p>Any HTML here.</p>
+    {{ end }}
 
-```astro
-// MyComponent.astro
----
-interface Props { title?: string; class?: string }
-const { title = "", class: className = "" } = Astro.props;
----
-
-<div class:list={["card", className]}>
-  {title && <h3>{title}</h3>}
-  <slot />
+  Params: title (optional), class.
+*/ -}}
+<div class="note {{ .class }}" data-c-note>
+  {{- with .title }}
+  <h3 data-c-note>{{ . }}</h3>
+  {{- end }}
+  {{ templates.Inner . }}
 </div>
-
-<style>
-  .card {
-    padding: 0.75rem;
-    border-radius: 8px;
-    background-color: var(--card-color);
-  }
-</style>
 ```
 
-- Usage of `slot` lets you nest content inside the component. Example:
-```astro
-<MyComponent title="Hello">
-  <p>This is nested content inside MyComponent.</p>
-</MyComponent>
+`assets/css/components/note.css`:
+
+```css
+.note[data-c-note] {
+  padding: 0.75rem;
+  border-radius: 8px;
+  background-color: var(--card-color);
+}
+
+h3[data-c-note] {
+  margin-block-start: 0;
+}
 ```
 
+## Parameters and content ("slots")
 
-## Props, Types, and Slots
+- A component's context (`.`) is the `dict` it was called with. Document the parameters in the comment at the top of the file.
+- Call it as `{{ partial "ui/note" (dict "title" "Hi") }}` when there's no inner content.
+- To pass inner content, use the block form, which is Hugo's equivalent of a slot:
 
-- Define a small props interface in the frontmatter for TypeScript safety.
-- Use slots for content and to keep the component flexible.
-- Avoid heavy computations in frontmatter; move complex logic to `src/utils/`.
+  ```go-html-template
+  {{ with partial "ui/note" (dict "title" "Hi" "count" 3) }}
+    <p>{{ .count }} things</p>
+  {{ end }}
+  ```
+
+  The component renders the block where it calls `{{ templates.Inner . }}`.
+  Inside the block, `.` is the dict you passed to the component, and variables
+  defined outside the block (`$foo`) are **not** available. Put anything the
+  block needs into the dict. `site`, `hugo` and other partials work as usual.
+- Things that trip people up with blocks:
+  - A component that renders `templates.Inner` must always be called in block
+    form, even with an empty block (`{{ with partial "ui/card" (dict) }}{{ end }}`).
+  - `templates.Inner` can't be called inside another component's block. A
+    component built on another one renders its own content first and passes it
+    on: `{{ $body := templates.Inner . }}` then
+    `{{ with partial "ui/card" (dict "body" $body) }}{{ .body }}{{ end }}`.
+  - When blocks are nested, collect the page's data into one dict and pass it
+    to every block as `"d"`; inside any block it is then `.d.something`
+    (see `layouts/_partials/pages/blog/post-list.html`).
+- For extra named content (a "named slot"), pass pre-rendered HTML as a parameter,
+  e.g. `"meta" (partial "pages/downloads/core-version" .)`.
+- Keep logic light. Shared helpers live in `layouts/_partials/helpers/`
+  (translation, links, numbers, dates, attributes).
 
 ## Styling
 
-- Use component-scoped `<style>` and CSS variables from `src/styles/global.css`.
-- Keep styles simple and responsive (follow existing classes and breakpoints).
+Component styles are **scoped** so they can't leak into other components.
+
+1. Every element the component's template writes gets the attribute `data-c-<name>`.
+   Content passed in through a block belongs to the *caller*, so the caller's
+   attribute goes on it, not the component's.
+2. Every selector in `components/<name>.css` includes `[data-c-<name>]` on each
+   part: `.card[data-c-card] .title[data-c-card]`, `&[data-c-card]:hover`.
+   Pseudo-elements go after the attribute: `.title[data-c-card]::before`.
+3. A parent can style a child component's root element by passing its own
+   attribute in `attrs`, if the child accepts `attrs`:
+
+   ```go-html-template
+   {{ partial "ui/button" (dict "href" "/downloads/" "class" "hero-button" "attrs" (dict "data-c-hero" true)) }}
+   ```
+
+   with `.hero-button[data-c-hero]` in `hero.css`. In `main.css` the parent's stylesheet must be imported after the child's.
+4. To style HTML you don't control, such as rendered Markdown, scope only the
+   container: `.legal-content[data-c-page-legal] h2 { ... }` (see `page-legal.css`).
+   The blog post body is the one exception: it is styled through its `#blog-content`
+   id, marked `/* global */` in `blog-content.css`.
+
+Use the CSS variables from `assets/css/base/global.css` and the existing breakpoints.
+
+## Attributes helper
+
+Use `partial "helpers/attrs"` to write optional attributes. It skips empty
+values and writes `true` as a bare attribute. Use `true` for boolean HTML
+attributes (`open`, `hidden`) and scope attributes; data attributes that CSS
+matches on a value (`[data-hover="true"]`) need the string `"true"`:
+
+```go-html-template
+<a class="link"{{ partial "helpers/attrs" (dict "href" .href "target" .target "aria-current" (cond .active "page" "")) }} data-c-nav-item>
+```
 
 ## Accessibility
 
-- Add ARIA attributes for interactive elements and keyboard support where needed.
-- Ensure images/icons have appropriate `aria-hidden` or descriptive text.
+- Add ARIA attributes to interactive elements and make them work with the keyboard.
+- Give images and icons an appropriate `aria-hidden` or descriptive text.
 
 ## Localization in components
 
-Components can access `Astro.locals` directly for translation and locale utilities. Component-level strings should be added to the `common.json` translation file, under the `components` key.
+Never hard-code user-facing text. Use translation keys. If a translated string
+ends in a space and is followed by a link, put the `<a>` right after the text
+on the same line, as a line break would add a second space:
 
-```astro
----
-// MyComponent.astro
-interface Props { customLabel?: string }
-const { customLabel } = Astro.props;
-const { t, dir } = Astro.locals;
----
-<div dir={dir}>
-  <span>{t("common:components.bookCard.readOnline")}</span>
-  {customLabel && <span>{customLabel}</span>}
-</div>
+```go-html-template
+{{ partial "helpers/t" "common:components.paginator.nextPage" }}
+{{ partial "helpers/t" (slice "common:components.guideStep.step" (dict "step" 2)) }}
+{{ partial "helpers/href" "/downloads/" }}   {{/* localized link */}}
+{{ partial "helpers/number" 404 }}           {{/* localized digits */}}
 ```
 
-**Guidelines:**
-- Use `Astro.locals.t` for standard UI strings (buttons, labels, aria text).
-- Use `Astro.locals.dir` for RTL-aware layouts.
-- For component-level strings, add keys to `src/i18n/translations/[locale]/common.json`.
-- Page-specific content should still be passed as props from the page.
-
-## Testing & QA
-
-- Run `pnpm dev` and load the page that uses the component.
-- Check browser console and TypeScript for errors.
-- Run `pnpm lint` and `pnpm format` before opening a PR.
-
-## Documentation
-
-- Add a short comment at the top of the component describing props and usage.
-- If the component is part of the shared UI library, add a short example to [How to use the UI library](how-to-use-the-ui-library.md).
-
-## Examples
-
-- Reusable button: `src/components/ui/Button.astro` (variants, `aria-` support).
-- Page-only card: `src/components/pages/blog/BlogCard.astro`.
-
-For icon usage see [How to Use and Create Icons](how-to-use-and-create-icons.md).
+See [How to add localization to a page](./how-to-add-localization-to-a-page.md).

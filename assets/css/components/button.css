@@ -1,0 +1,37 @@
+/* Styles for layouts/_partials/ui/button.html */
+.button[data-c-button] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75em 1.5em;
+  border-radius: var(--radius-full);
+  font: inherit;
+  font-weight: var(--font-weight-bold);
+  transition: opacity 0.2s;
+  border: 1px solid #0000;
+  cursor: pointer;
+  text-decoration: none;
+  user-select: none;
+  box-sizing: border-box;
+
+  &[data-variant="primary"] {
+    background: color-mix(in srgb, var(--monero-orange) 90%, black);
+    color: #fff;
+  }
+
+  &[data-variant="secondary"] {
+    background: var(--secondary-button-color, var(--footer-color));
+    color: var(--paragraph-main);
+  }
+
+  &[data-variant="outline"] {
+    background: none;
+    color: var(--monero-orange);
+    border-color: var(--monero-orange);
+  }
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.9;
+  }
+}

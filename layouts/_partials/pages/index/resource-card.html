@@ -1,0 +1,26 @@
+{{- /*
+  "Get involved" card: round icon, title, description (inline Markdown) and
+  a link.
+
+    {{ partial "pages/index/resource-card" (dict "icon" "users" "title" "..." "description" "..." "ctaLabel" "..." "ctaHref" "/community/workgroups/") }}
+
+  Params: icon (mask icon name), title, description, ctaLabel, ctaHref.
+*/ -}}
+{{- $card := merge . (dict "as" "article" "padding" "2xl" "radius" "xl" "border" true "transparent" true "class" "resource-card" "attrs" (dict "data-c-resource-card" true)) -}}
+{{ with partial "ui/card" $card }}
+  {{- with .icon }}
+  <div class="icon" data-c-resource-card>
+    {{ partial "ui/icons/mask-icon" (dict "src" . "size" "100%") }}
+  </div>
+  {{- end }}
+
+  <h2 class="title" data-c-resource-card>{{ .title }}</h2>
+
+  {{- with .description }}
+  <p class="desc" data-c-resource-card>{{ partial "helpers/markdown" (dict "text" . "inline" true) }}</p>
+  {{- end }}
+
+  {{ with partial "ui/icon-link" (dict "href" .ctaHref "weight" "bold" "underline" true "class" "cta" "attrs" (dict "data-c-resource-card" true) "label" .ctaLabel) }}
+    {{ .label }}
+  {{ end }}
+{{ end }}

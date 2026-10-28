@@ -1,0 +1,23 @@
+{{- /*
+  A numbered "start using Monero" step.
+
+    {{ partial "pages/index/get-started-card" (dict "step" 1 "title" "..." "description" "..." "ctaHref" "/downloads/" "ctaLabel" "...") }}
+
+  Params: step (number, shown as two digits), title, description, ctaHref
+  (localized here, default #), ctaLabel.
+*/ -}}
+<article class="gs" data-c-get-started-card>
+  <div class="num" aria-hidden="true" data-c-get-started-card>
+    {{ partial "helpers/number" (slice .step 2) }}
+  </div>
+
+  <div class="text" data-c-get-started-card>
+    <h2 class="title" data-c-get-started-card>{{ .title }}</h2>
+    {{- with .description }}
+    <p class="desc" data-c-get-started-card>{{ . }}</p>
+    {{- end }}
+    {{ with partial "ui/icon-link" (dict "href" (partial "helpers/href" (.ctaHref | default "#")) "weight" "bold" "underline" true "attrs" (dict "data-c-get-started-card" true) "label" .ctaLabel) }}
+      {{ .label }}
+    {{ end }}
+  </div>
+</article>

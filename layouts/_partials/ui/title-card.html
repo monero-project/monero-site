@@ -1,0 +1,16 @@
+{{- /*
+  Page title block (h1, optional subtitle and back link).
+
+    {{ partial "ui/title-card" (dict "title" "Monero Tools" "subtitle" "...") }}
+
+  Params: title, subtitle, centered, backHref, backLabel.
+*/ -}}
+<header class="header"{{ partial "helpers/attrs" (dict "data-centered" (cond (.centered | default false) "true" "")) }} data-c-title-card>
+  {{- if and .backHref .backLabel }}
+  {{ with partial "ui/back-link" (dict "href" .backHref "class" "back" "attrs" (dict "data-c-title-card" true) "label" .backLabel) }}{{ .label }}{{ end }}
+  {{- end }}
+  <h1 class="title" data-c-title-card>{{ .title }}</h1>
+  {{- with .subtitle }}
+  <p class="subtitle" data-c-title-card>{{ . }}</p>
+  {{- end }}
+</header>

@@ -1,28 +1,28 @@
 # https://docs.github.com/en/code-security/reference/supply-chain-security/dependabot-options-reference
+# Dependabot reads this file from the default branch (master); target-branch
+# makes it check beta's files and open its PRs against beta. Keep the copy on
+# master the same.
 version: 2
 updates:
-  - package-ecosystem: "npm"
+  # the hooks' revs in .pre-commit-config.yaml (Biome, yamllint, pre-commit-hooks)
+  - package-ecosystem: "pre-commit"
     directory: "/"
+    target-branch: "beta"
     schedule:
       interval: "monthly"
-    open-pull-requests-limit: 10
-    ignore:
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
+    open-pull-requests-limit: 5
     groups:
-      dev-dependencies:
-        patterns:
-          - "*"
-        dependency-type: "development"
-      production-dependencies:
-        patterns:
-          - "*"
-        dependency-type: "production"
+      pre-commit:
+        patterns: ["*"]
   - package-ecosystem: "github-actions"
     directory: "/"
+    target-branch: "beta"
     schedule:
       interval: "monthly"
     open-pull-requests-limit: 5
     ignore:
       - dependency-name: "*"
         update-types: ["version-update:semver-major"]
+    groups:
+      github-actions:
+        patterns: ["*"]

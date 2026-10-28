@@ -1,0 +1,8 @@
+/* Styles for layouts/resources/roadmap.html */
+hr[data-c-page-resources-roadmap] {
+  margin-block: 1rem;
+}
+
+.kanban[data-c-page-resources-roadmap] {
+  align-items: start;
+}

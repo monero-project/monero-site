@@ -1,0 +1,104 @@
+blockExplorers:
+  - id: p2poolObserver
+    title: P2Pool Observer
+    href: "https://blocks.p2pool.observer/"
+  - id: p2poolIo
+    title: P2Pool.io Explorer
+    href: "https://p2pool.io/explorer/"
+    onionHref: "http://yucmgsbw7nknw7oi3bkuwudvc657g2xcqahhbjyewazusyytapqo4xid.onion/explorer/"
+  - id: moneroHash
+    title: MoneroHash
+    href: "https://monerohash.com/explorer/"
+  - id: xmrchain
+    title: xmrchain.net
+    href: "https://xmrchain.net"
+  - id: localMonero
+    title: LocalMonero Explorer
+    href: "https://localmonero.co/blocks"
+  - id: moneroWatch
+    title: MoneroWatch
+    href: "https://monerowat.ch"
+  - id: xmrmx
+    title: xmr.mx
+    href: "https://explorer.xmr.mx"
+    onionHref: "http://ravfxexpx76quysu77pbvao4ng5qnyo46gguklfwlafhllrujwdgqtyd.onion/"
+developerLibraries:
+  - id: moneroTs
+    title: monero-ts
+    href: "https://github.com/monero-ecosystem/monero-ts"
+    logo: images/dev-tools/monero-ts.png
+  - id: moneroPython
+    title: monero-python
+    href: "https://github.com/monero-ecosystem/monero-python"
+    logo: images/dev-tools/monero-python.png
+  - id: moneroOxide
+    title: monero-oxide
+    href: "https://github.com/monero-oxide/monero-oxide"
+    logo: images/dev-tools/monero-oxide.png
+  - id: moneroJava
+    title: monero-java
+    href: "https://github.com/monero-ecosystem/monero-java"
+    logo: images/dev-tools/monero-java.png
+  - id: moneroCpp
+    title: monero-cpp
+    href: "https://github.com/monero-ecosystem/monero-cpp"
+    logo: images/dev-tools/monero-cpp.png
+  - id: monerophp
+    title: monerophp
+    href: "https://github.com/monero-integrations/monerophp"
+    logo: images/dev-tools/monerophp.png
+  - id: goMoneroRpc
+    title: Go Monero RPC Client
+    href: "https://github.com/omani/go-monero-rpc-client"
+    logo: images/dev-tools/go-monero-rpc-client.png
+networkTools:
+  - id: moneroFail
+    title: Monero.fail
+    href: "https://monero.fail"
+  - id: ditatompel
+    title: ditatompel
+    href: "https://www.ditatompel.com/monero/remote-node"
+  - id: moneroHashNodes
+    title: monerohash.com
+    href: "https://monerohash.com/nodes-distribution.html"
+  - id: txStreet
+    title: TxStreet
+    href: "https://txstreet.com/v/xmr"
+paymentGateways:
+  - id: btcPayServer
+    title: BTCPayServer
+    href: "https://btcpayserver.org"
+    logo: images/payment-gateways/btcpayserver.png
+  - id: nowPayments
+    title: NOWPayments
+    href: "https://nowpayments.io"
+    logo: images/payment-gateways/nowpayments.png
+  - id: bitcart
+    title: Bitcart
+    href: "https://bitcart.ai"
+    logo: images/payment-gateways/bitcart.png
+  - id: coinPayments
+    title: CoinPayments
+    href: "https://www.coinpayments.net"
+    logo: images/payment-gateways/coinpayments.png
+  - id: cryptoWoo
+    title: CryptoWoo
+    href: "https://www.cryptowoo.com"
+    logo: images/payment-gateways/cryptowoo.jpg
+  - id: moneroWooCommerce
+    title: Monero WooCommerce
+    href: "https://github.com/monero-integrations/monerowp"
+    logo: images/dev-tools/monerowp.png
+utilities:
+  - id: llcoins
+    title: xmr.llcoins.net
+    href: "https://xmr.llcoins.net"
+  - id: monerotech
+    title: monerotech.info
+    href: "https://monerotech.info"
+  - id: moneroHow
+    title: Monero.how
+    href: "https://www.monero.how"
+  - id: moneroLogs
+    title: MoneroLogs
+    href: "https://monerologs.net"

@@ -1,0 +1,40 @@
+{{- /*
+  A page of the blog listing: tabs, post cards and page links.
+  Used by pages/blog/list-page.html.
+
+  Params: posts (all posts to list, newest first), pageNumber, baseURL
+  (localized URL of page 1), tabsId, activeTab, rssHref,
+  scope (page-blog-page | page-blog-tags-tag-page).
+*/ -}}
+{{- $perPage := 6 -}}
+{{- $total := int (math.Ceil (div (float (len .posts)) $perPage)) -}}
+{{- /* page links, shaped like a Hugo pager for ui/paginator */ -}}
+{{- $pagers := slice -}}
+{{- range $n := seq $total }}{{ $pagers = $pagers | append (dict "URL" (cond (eq $n 1) $.baseURL (printf "%s%d/" $.baseURL $n))) }}{{ end -}}
+{{- $pager := dict "PageNumber" .pageNumber "TotalPages" $total "Pagers" $pagers -}}
+{{- if gt .pageNumber 1 }}{{ $pager = merge $pager (dict "Prev" (index $pagers (sub .pageNumber 2))) }}{{ end -}}
+{{- if lt .pageNumber $total }}{{ $pager = merge $pager (dict "Next" (index $pagers .pageNumber)) }}{{ end -}}
+{{- $labels := slice }}{{ $links := slice -}}
+{{- range slice (slice "blog:tabs.allPosts" "/blog") (slice "blog:tagLabels.urgent" "/blog/tags/urgent") (slice "blog:tagLabels.releases" "/blog/tags/releases") (slice "blog:tagLabels.community" "/blog/tags/community") -}}
+  {{- $labels = $labels | append (partial "helpers/t" (index . 0)) }}{{ $links = $links | append (partial "helpers/href" (index . 1)) -}}
+{{- end -}}
+{{- /* everything the blocks below need; inside a block it is .d */ -}}
+{{- $d := merge . (dict
+  "scopeAttr" (dict (printf "data-c-%s" .scope) true)
+  "labels" $labels "links" $links "pager" $pager
+  "shown" (first $perPage (after (mul (sub .pageNumber 1) $perPage) .posts))
+) -}}
+{{ with partial "ui/layout/page-container" (dict "attrs" $d.scopeAttr "d" $d) }}
+  {{ with partial "ui/layout/row" (dict "justify" "between" "align" "center" "wrap" false "class" "tabs-bar" "attrs" .d.scopeAttr "d" .d) }}
+    {{ partial "ui/tabs/page-tabs" (dict "id" .d.tabsId "labels" .d.labels "links" .d.links "activeIndex" .d.activeTab) }}
+    <a class="rss-icon" href="{{ .d.rssHref }}" aria-label="{{ partial "helpers/t" "blog:aria.rssFeed" }}" title="{{ partial "helpers/t" "blog:aria.rssFeed" }}"{{ partial "helpers/attrs" .d.scopeAttr }}>
+      {{ partial "ui/icons/mask-icon" (dict "src" "rss" "size" "2.5rem" "rtl" (eq site.Language.Direction "rtl")) }}
+    </a>
+  {{ end }}
+  {{ with partial "ui/layout/grid" (dict "columns" 2 "gap" "md" "class" "blog-grid" "attrs" .d.scopeAttr "d" .d) }}
+    {{- range .d.shown }}
+    {{ partial "pages/blog/blog-card" . }}
+    {{- end }}
+  {{ end }}
+  {{ partial "ui/paginator" .d.pager }}
+{{ end }}

@@ -1,0 +1,23 @@
+{{- /*
+  A home page section: title and description side by side, then the block
+  as a two-column body.
+
+    {{ with partial "pages/index/index-card" (dict "id" "get-involved" "title" "..." "description" "...") }}
+      ...
+    {{ end }}
+
+  Params: id, title, description, attrs.
+*/ -}}
+{{- $a := dict "class" "card" "id" .id "aria-labelledby" .id "data-c-index-card" true -}}
+<div{{ partial "helpers/attrs" (merge $a (.attrs | default dict)) }}>
+  <header class="head" data-c-index-card>
+    <h1 class="title" data-c-index-card>{{ .title }}</h1>
+    {{- with .description }}
+    <p class="desc" data-c-index-card>{{ . }}</p>
+    {{- end }}
+  </header>
+
+  <div class="body" data-c-index-card>
+    {{ templates.Inner . }}
+  </div>
+</div>

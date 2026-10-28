@@ -1,0 +1,101 @@
+/* Styles for layouts/_partials/ui/accordion/accordion-item.html */
+.item[data-c-accordion-item] {
+  border-bottom: 1px solid var(--border-color);
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.header[data-c-accordion-item] {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-xl) 0;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  gap: var(--space-sm);
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+}
+
+.title[data-c-accordion-item] {
+  color: var(--heading-color);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-lg);
+}
+
+.icon[data-c-accordion-item] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: var(--border-color);
+  color: var(--paragraph-main);
+  flex-shrink: 0;
+  margin-inline-start: auto;
+
+  .item[data-c-accordion-item][open] & {
+    transform: rotate(180deg);
+  }
+}
+
+.content[data-c-accordion-item] {
+  padding: 0 0 var(--space-xl) 0;
+  color: var(--paragraph-main);
+  line-height: var(--line-height-body);
+  font-weight: var(--font-weight-normal);
+
+  & > :first-child {
+    margin-top: 0;
+  }
+
+  & > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.item[data-c-accordion-item][data-variant="card"] {
+  border: none;
+  margin-bottom: var(--space-sm);
+  border-radius: var(--radius-lg);
+  background: var(--card-color);
+  padding: 0 var(--space-lg);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  & > .header[data-c-accordion-item] {
+    padding: var(--space-lg) 0;
+  }
+
+  &:has(.header:focus-visible) {
+    border-radius: var(--radius-lg);
+  }
+
+  & > .content[data-c-accordion-item] {
+    padding: 0 0 var(--space-lg) 0;
+  }
+}
+
+@media (hover: hover) {
+  .header[data-c-accordion-item]:hover .icon[data-c-accordion-item] {
+    background: var(--card-hover-color);
+  }
+}
+
+@media screen and (width <= 900px) {
+  .header[data-c-accordion-item] {
+    padding: var(--space-md) 0;
+  }
+
+  .title[data-c-accordion-item] {
+    font-size: var(--font-size-base);
+  }
+}

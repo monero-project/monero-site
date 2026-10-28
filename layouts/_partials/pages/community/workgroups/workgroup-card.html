@@ -1,0 +1,44 @@
+{{- /*
+  A workgroup: icon, name, what it does, who it's for and its chat links
+  (Matrix plus IRC, or IRC only).
+
+    {{ partial "pages/community/workgroups/workgroup-card" (dict "name" "..." "action" "..." "bestFor" "..." "icon" "icons/mask/terminal.avif" "chatName" "monero-dev" "ircHref" "https://..." "matrixHref" "https://...") }}
+
+  Params: name, action, bestFor, icon (mask icon name or asset path),
+  chatName, ircHref, matrixHref.
+*/ -}}
+{{ with partial "ui/card" (dict "as" "article" "padding" "md" "class" "workgroup-card" "attrs" (dict "data-c-workgroup-card" true) "d" .) }}
+  {{- $joinIrc := partial "helpers/t" (slice "common:components.workgroupCard.joinIrc" (dict "chatName" .d.chatName)) }}
+  <div class="card-header" data-c-workgroup-card>
+    <div class="card-icon" data-c-workgroup-card>
+      {{ partial "ui/icons/mask-icon" (dict "src" .d.icon "size" "1.25em") }}
+    </div>
+    <h3 class="card-name" data-c-workgroup-card>{{ .d.name }}</h3>
+  </div>
+
+  <p class="card-action" data-c-workgroup-card>{{ .d.action }}</p>
+
+  <p class="card-best-for" data-c-workgroup-card>
+    <span class="best-for-label" data-c-workgroup-card>{{ partial "helpers/t" "common:components.workgroupCard.bestFor" }}</span>
+    {{ .d.bestFor }}
+  </p>
+
+  <div class="card-links" data-c-workgroup-card>
+    {{- if .d.matrixHref }}
+    <a href="{{ .d.matrixHref }}" target="_blank" rel="noopener noreferrer" class="matrix-button" title="{{ partial "helpers/t" "common:components.workgroupCard.joinMatrix" }}" data-c-workgroup-card>
+      {{ partial "ui/icons/mask-icon" (dict "src" "matrix" "size" "1.5em") }}
+      Matrix
+    </a>
+    <span class="irc-link" data-c-workgroup-card>
+      <span class="irc-separator" data-c-workgroup-card>·</span>
+      <a href="{{ .d.ircHref }}" target="_blank" rel="noopener noreferrer" title="{{ $joinIrc }}" data-c-workgroup-card>
+        #{{ .d.chatName }}
+      </a>
+    </span>
+    {{- else }}
+    <a href="{{ .d.ircHref }}" target="_blank" rel="noopener noreferrer" class="matrix-button" title="{{ $joinIrc }}" data-c-workgroup-card>
+      #{{ .d.chatName }}
+    </a>
+    {{- end }}
+  </div>
+{{ end }}

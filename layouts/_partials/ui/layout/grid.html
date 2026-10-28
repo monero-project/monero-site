@@ -1,0 +1,26 @@
+{{- /*
+  Responsive grid. Give either columns (a capped column count that collapses
+  on narrow screens) or minWidth (fluid columns of at least that width).
+
+    {{ with partial "ui/layout/grid" (dict "columns" 3 "gap" "xl") }}...{{ end }}
+
+  Params: columns (2|3|4), minWidth, gap (2xs..3xl, default lg),
+  as (div|ul|ol, default div), class, attrs.
+*/ -}}
+{{- if and .columns .minWidth }}{{ errorf "ui/layout/grid: cannot use both 'columns' and 'minWidth'." }}{{ end -}}
+{{- if not (or .columns .minWidth) }}{{ errorf "ui/layout/grid: provide either 'columns' or 'minWidth'." }}{{ end -}}
+{{- $tag := .as | default "div" -}}
+{{- $minWidth := .minWidth -}}
+{{- with .columns }}{{ $minWidth = index (dict "2" "25rem" "3" "18rem" "4" "14rem") (string .) }}{{ end -}}
+{{- $style := printf "--grid-min-width: %s; --grid-gap: var(--space-%s);" $minWidth (.gap | default "lg") -}}
+{{- with .columns }}{{ $style = printf "%s --grid-col-count: %d;" $style . }}{{ end -}}
+{{- $a := dict
+  "class" (trim (printf "grid %s" (.class | default "")) " ")
+  "data-capped" (cond (ne .columns nil) "true" "")
+  "style" $style
+  "data-c-grid" true
+-}}
+{{- /* html/template can't write a tag name from a variable, hence printf */ -}}
+{{ printf "<%s%s>" $tag (partial "helpers/attrs" (merge $a (.attrs | default dict))) | safeHTML }}
+  {{ templates.Inner . }}
+{{ printf "</%s>" $tag | safeHTML }}

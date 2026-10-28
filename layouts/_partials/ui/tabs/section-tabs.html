@@ -1,0 +1,37 @@
+{{- /*
+  CSS-only tabs inside a section, with optional counts. The id is derived
+  from the labels, so it is stable across builds.
+
+    {{ partial "ui/tabs/section-tabs" (dict "tabs" (slice (dict "label" "MRL" "count" 10) (dict "label" "IACR")) "panels" (slice $mrl $iacr)) }}
+
+  Params: tabs (list of dict label, count; at most 5 get a panel), panels
+  (HTML, one per tab), class.
+*/ -}}
+{{- $tabs := .tabs | default slice -}}
+{{- $panels := .panels | default slice -}}
+{{- if not $tabs }}{{ errorf "ui/tabs/section-tabs requires at least one tab." }}{{ end -}}
+{{- $labels := slice -}}
+{{- range $tabs }}{{ $labels = $labels | append .label }}{{ end -}}
+{{- $uid := printf "stabs-%s" (partial "helpers/stable-id" $labels) -}}
+<div class="{{ trim (printf "section-tabs %s" (.class | default "")) " " }}" id="{{ $uid }}" data-c-section-tabs>
+  {{- range $i, $_ := $tabs }}
+  <input type="radio" name="{{ $uid }}" id="{{ $uid }}-{{ $i }}" class="tab-input"{{ partial "helpers/attrs" (dict "checked" (eq $i 0)) }} data-c-section-tabs>
+  {{- end }}
+  <div class="tab-labels" data-c-section-tabs>
+    {{- range $i, $tab := $tabs }}
+    <label for="{{ $uid }}-{{ $i }}" class="tab-label" data-c-section-tabs>
+      {{ .label }}
+      {{- if ne .count nil }}
+      <span class="tab-count" data-c-section-tabs>{{ .count }}</span>
+      {{- end }}
+    </label>
+    {{- end }}
+  </div>
+  <div class="tab-panels" data-c-section-tabs>
+    {{- range $i, $_ := first 5 $tabs }}
+    <div class="tab-panel" data-c-section-tabs>
+      {{ if lt $i (len $panels) }}{{ index $panels $i }}{{ end }}
+    </div>
+    {{- end }}
+  </div>
+</div>

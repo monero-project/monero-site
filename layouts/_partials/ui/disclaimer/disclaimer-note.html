@@ -1,0 +1,13 @@
+{{- /*
+  Small inline warning with a shield icon.
+
+    {{ partial "ui/disclaimer/disclaimer-note" (dict "text" "...") }}
+
+  Params: text.
+*/ -}}
+<div class="disclaimer-note" data-c-disclaimer-note>
+  <div class="disclaimer-icon" data-c-disclaimer-note>
+    {{ partial "ui/icons/mask-icon" (dict "src" "shield-alert" "size" "1.25em") }}
+  </div>
+  <span data-c-disclaimer-note>{{ .text }}</span>
+</div>

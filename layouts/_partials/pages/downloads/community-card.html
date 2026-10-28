@@ -1,0 +1,105 @@
+{{- /*
+  Card for a community wallet or node: logo, name, description, tags,
+  supported platforms and a link.
+
+    {{ partial "pages/downloads/community-card" (dict
+      "logo" "images/wallets/feather.avif" "name" "Feather Wallet" "description" "..."
+      "tags" (dict "desktop" (slice "windows" "linux") "general" (slice "BSD-3" "i18n:qrSigning"))
+      "link" "https://featherwallet.org" "linkText" "Learn more"
+    ) }}
+
+  Params: logo (asset path), name, description, link, linkText (default
+  "Visit website"), id, tags:
+    desktop: windows | macos | linux (aliases win, mac, osx)
+    mobile: android | ios
+    general: shown as-is, or "i18n:<key>" for downloads:community.tags.<key>
+  ("i18n:builtInExchange" highlights the card).
+*/ -}}
+{{- $alias := dict "win" "windows" "mac" "macos" "osx" "macos" -}}
+{{- $icons := dict "windows" "windows" "macos" "apple" "linux" "linux" "android" "android" "ios" "apple" -}}
+{{- $valid := dict "desktop" (slice "windows" "macos" "linux") "mobile" (slice "android" "ios") -}}
+{{- $tags := .tags | default dict -}}
+{{- /* platforms: lower-cased, aliases resolved, unknown ones dropped, no duplicates */ -}}
+{{- $platforms := dict -}}
+{{- range $group, $allowed := $valid -}}
+  {{- $keys := slice -}}
+  {{- range index $tags $group -}}
+    {{- $k := strings.TrimSpace (lower .) -}}
+    {{- $k = index $alias $k | default $k -}}
+    {{- if and (in $allowed $k) (not (in $keys $k)) }}{{ $keys = $keys | append $k }}{{ end -}}
+  {{- end -}}
+  {{- $platforms = merge $platforms (dict $group $keys) -}}
+{{- end -}}
+{{- /* general tags: duplicates (ignoring case) keep the first one's place and the last one's text */ -}}
+{{- $generalKeys := slice -}}
+{{- $generalLabels := dict -}}
+{{- range $tags.general -}}
+  {{- $k := strings.TrimSpace (lower .) -}}
+  {{- if not (in $generalKeys $k) }}{{ $generalKeys = $generalKeys | append $k }}{{ end -}}
+  {{- $generalLabels = merge $generalLabels (dict $k .) -}}
+{{- end -}}
+{{- $general := slice -}}
+{{- range $generalKeys }}{{ $general = $general | append (index $generalLabels .) }}{{ end -}}
+{{- $builtinExchange := in $general "i18n:builtInExchange" -}}
+{{- $card := dict
+  "padding" "md" "radius" "xl"
+  "class" (cond $builtinExchange "community-card has-built-in-exchange" "community-card")
+  "attrs" (dict "id" .id "data-c-community-card" true)
+  "d" .
+  "general" $general
+  "desktop" $platforms.desktop
+  "mobile" $platforms.mobile
+  "icons" $icons
+-}}
+{{ with partial "ui/card" $card }}
+  <header class="card-header" aria-label="{{ partial "helpers/t" "common:components.communityCard.project" }}" data-c-community-card>
+    <div class="card-logo" aria-hidden="true" data-c-community-card>
+      {{ partial "ui/image" (dict "src" .d.logo "alt" "" "format" "avif" "attrs" (dict "data-c-community-card" true)) }}
+    </div>
+    <h3 class="card-title" data-c-community-card>{{ .d.name }}</h3>
+  </header>
+
+  <div class="card-description" data-c-community-card>
+    <p class="card-description-text" data-c-community-card>{{ .d.description }}</p>
+    {{- with .general }}
+    <div class="card-tags" aria-label="{{ partial "helpers/t" "common:components.communityCard.tags" }}" data-c-community-card>
+      <ul class="list" data-c-community-card>
+        {{- range . }}
+        <li class="pill{{ if eq . "i18n:builtInExchange" }} builtin-exchange-pill{{ end }}" data-c-community-card>
+          <span class="tag-text" data-c-community-card>
+            {{- if hasPrefix . "i18n:" }}{{ partial "helpers/t" (printf "downloads:community.tags.%s" (strings.TrimPrefix "i18n:" .)) }}{{ else }}{{ . }}{{ end -}}
+          </span>
+        </li>
+        {{- end }}
+      </ul>
+    </div>
+    {{- end }}
+  </div>
+
+  {{- if or .desktop .mobile }}
+  {{- $icons := .icons }}
+  <div class="card-platforms" aria-label="{{ partial "helpers/t" "common:components.communityCard.supportedPlatforms" }}" data-c-community-card>
+    {{- range slice (dict "label" "downloads:community.desktopLabel" "keys" .desktop) (dict "label" "downloads:community.mobileLabel" "keys" .mobile) }}
+    {{- $label := .label }}
+    {{- with .keys }}
+    <div class="platform-row" data-c-community-card>
+      <span class="platforms-label" data-c-community-card>
+        {{ partial "helpers/t" $label }}:
+      </span>
+      <ul class="list" data-c-community-card>
+        {{- range . }}
+        <li class="pill" title="{{ partial "helpers/t" (printf "downloads:platforms.%s" .) }}" data-c-community-card>
+          {{ partial "ui/icons/mask-icon" (dict "src" (printf "icons/mask/brand/%s.avif" (index $icons .)) "size" "1.25em") }}
+        </li>
+        {{- end }}
+      </ul>
+    </div>
+    {{- end }}
+    {{- end }}
+  </div>
+  {{- end }}
+
+  {{ with partial "ui/icon-link" (dict "href" .d.link "size" "sm" "weight" "semibold" "class" "visit-link" "attrs" (dict "data-c-community-card" true) "text" (.d.linkText | default (partial "helpers/t" "common:components.communityCard.visitWebsite"))) }}
+    {{ .text }}
+  {{ end }}
+{{ end }}

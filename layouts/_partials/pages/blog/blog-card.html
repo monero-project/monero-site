@@ -1,0 +1,42 @@
+{{- /* A post in the blog listings. Context: the post page. */ -}}
+{{- $t := "helpers/t" -}}
+{{- $link := partial "helpers/href" (printf "/blog/%s/" .Params.blogId) -}}
+{{- $tags := .Params.postTags | default slice -}}
+{{ with partial "ui/card" (dict "padding" "2xl" "border" true "transparent" true "class" "card-container" "attrs" (dict "data-c-blog-card" true) "post" . "link" $link "tags" $tags) }}
+  <a class="thumbnail" href="{{ .link }}" tabindex="-1" aria-hidden="true" data-no-image="{{ cond (ne .post.Params.image "") "false" "true" }}" data-c-blog-card>
+    {{- with .post.Params.image }}
+    {{ partial "ui/image" (dict "src" (path.Join (path.Dir $.post.Params.sourceFile) .) "alt" $.post.Title "format" "avif" "attrs" (dict "data-c-blog-card" true)) }}
+    {{- else }}
+    <span data-c-blog-card>{{ partial "helpers/t" (slice (printf "blog:tagLabels.%s" (index .tags 0)) (dict "defaultValue" (index .tags 0))) }}</span>
+    {{- end }}
+  </a>
+  <div class="info" data-c-blog-card>
+    <div class="meta" data-c-blog-card>
+      <div class="meta-item" data-c-blog-card>
+        <div class="icon" data-c-blog-card>
+          {{ partial "ui/icons/mask-icon" (dict "src" "calendar") }}
+        </div>
+        <time datetime="{{ .post.Params.date }}" data-c-blog-card>{{ partial "helpers/date" .post.Params.date }}</time>
+      </div>
+      {{- with .post.Params.author }}
+      <div class="meta-item" data-c-blog-card>
+        <div class="icon" data-c-blog-card>
+          {{ partial "ui/icons/mask-icon" (dict "src" "user") }}
+        </div>
+        {{ replaceRE " and " (printf " %s " (partial "helpers/t" "blog:post.and")) . 1 }}
+      </div>
+      {{- end }}
+    </div>
+    <h2 class="title" data-c-blog-card>
+      <a href="{{ .link }}" dir="ltr" data-c-blog-card>{{ .post.Title }}</a>
+    </h2>
+    <p class="summary" data-c-blog-card><span dir="ltr" data-c-blog-card>{{ .post.Params.summary }}</span></p>
+    {{- with .tags }}
+    <div class="tag-container" data-c-blog-card>
+      {{- range . }}
+      <a class="tag" href="{{ partial "helpers/href" (printf "/blog/tags/%s/" (replaceRE `\s+` "-" (lower .))) }}" data-c-blog-card>{{ partial "helpers/t" (slice (printf "blog:tagLabels.%s" .) (dict "defaultValue" .)) }}</a>
+      {{- end }}
+    </div>
+    {{- end }}
+  </div>
+{{ end }}

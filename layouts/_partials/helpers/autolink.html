@@ -1,0 +1,44 @@
+{{- /*
+  Bare web and e-mail addresses in rendered HTML become links, following
+  GitHub-flavoured Markdown's autolink rules (https://github.github.com/gfm/#autolinks-extension-):
+    - http:// and https:// addresses (any letter case), and www. addresses
+      (linked as http://www....), not straight after a letter or digit
+    - the domain needs a dot and no _ in its last two parts
+    - trailing ? ! . , : * _ ~, an unbalanced ), and an entity like &amp;
+      at the end are not part of the link
+    - e-mail addresses become mailto: links
+  Only text is changed; tag attributes and text inside <a>, <code> and <pre>
+  are left alone. This replaces Goldmark's own linkify (off in hugo.toml),
+  which misses addresses such as http://45.32.161.183/ or zzz.i2p.
+
+    {{ partial "helpers/autolink" (dict "html" $html) }}
+
+  plain: true for links without rel="external" and target (translation strings).
+*/ -}}
+{{- $html := string .html -}}
+{{- if not (findRE `(?i)https?://|www\.|@` $html 1) }}{{ return $html }}{{ end -}}
+{{- $plain := .plain | default false -}}
+{{- $root := (urls.Parse site.BaseURL).Hostname -}}
+{{- $out := slice -}}
+{{- $skip := 0 -}}
+{{- range findRE `<[^>]*>|[^<]+` $html -}}
+  {{- if hasPrefix . "<" -}}
+    {{- if findRE `^<(a|code|pre)[\s>]` . }}{{ $skip = add $skip 1 }}{{ end -}}
+    {{- if and (findRE `^</(a|code|pre)>` .) (gt $skip 0) }}{{ $skip = sub $skip 1 }}{{ end -}}
+    {{- $out = $out | append . -}}
+  {{- else if or (gt $skip 0) (not (findRE `(?i)https?://|www\.|@` . 1)) -}}
+    {{- $out = $out | append . -}}
+  {{- else -}}
+    {{- /* a text node: link each word (addresses never contain spaces) */ -}}
+    {{- $parts := slice -}}
+    {{- $linked := false -}}
+    {{- range findRE `\s+|\S+` (htmlUnescape .) -}}
+      {{- $r := partial "helpers/autolink-word" (dict "word" . "plain" $plain "root" $root) -}}
+      {{- if $r.linked }}{{ $linked = true }}{{ end -}}
+      {{- $parts = $parts | append $r.html -}}
+    {{- end -}}
+    {{- /* keep the text exactly as rendered unless something was linked */ -}}
+    {{- $out = $out | append (cond $linked (delimit $parts "") .) -}}
+  {{- end -}}
+{{- end -}}
+{{- return delimit $out "" -}}

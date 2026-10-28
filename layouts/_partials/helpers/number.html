@@ -1,0 +1,13 @@
+{{- /*
+  Format an integer with the current language's digits, like
+  Number.toLocaleString without grouping. Pass (slice n minDigits) to zero-pad.
+*/ -}}
+{{- $n := . -}}
+{{- $min := 1 -}}
+{{- if reflect.IsSlice . }}{{ $n = index . 0 }}{{ $min = index . 1 }}{{ end -}}
+{{- $s := printf (printf "%%0%dd" $min) (int $n) -}}
+{{- with index hugo.Data.locale.digits site.Language.Lang -}}
+  {{- $digits := split . "" -}}
+  {{- range $i, $d := $digits }}{{ $s = replace $s (string $i) $d }}{{ end -}}
+{{- end -}}
+{{- return $s -}}

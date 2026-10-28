@@ -1,0 +1,95 @@
+{{ define "meta" }}{{ .Store.Set "meta" (dict "title" (partial "helpers/t" "mining:pageTitle") "description" (partial "helpers/t" "mining:description")) }}{{ end }}
+
+{{- /* Link at the bottom of a mining option card. Params: href, label. */ -}}
+{{- define "_partials/inline/mining-card-link" -}}
+{{ with partial "ui/icon-link" (dict "href" .href "attrs" (dict "slot" "bottom" "data-c-page-get-started-mining" true) "label" .label) }}
+  {{ .label }}
+{{ end }}
+{{- end -}}
+
+{{ define "main" }}
+{{- $t := "helpers/t" -}}
+{{- $p := dict "data-c-page-get-started-mining" true -}}
+{{- $options := slice
+  (dict "key" "gupax" "icon" "app-window" "image" "images/gupax-window.avif" "href" "https://gupax.io/")
+  (dict "key" "xmrig" "icon" "terminal" "image" "images/xmrig-window.avif" "href" "https://github.com/xmrig/xmrig")
+  (dict "key" "solo" "icon" "pickaxe" "image" "images/gui.avif" "href" "https://docs.getmonero.org/interacting/mining/guides/solo/")
+-}}
+{{- /* Resource columns; each link's title and subtitle are at mining:resources.<column>.<link> */ -}}
+{{- $resources := slice
+  (dict "key" "guides" "links" (slice
+    (dict "key" "mineToPool" "href" "https://docs.getmonero.org/interacting/mining/guides/pool/xmrig-pool")
+    (dict "key" "gupaxSetup" "href" "https://gupax.io/#guide")))
+  (dict "key" "pools" "links" (slice
+    (dict "key" "comparePools" "href" "https://miningpoolstats.stream/monero")))
+  (dict "key" "benchmarks" "links" (slice
+    (dict "key" "hashrateEstimates" "href" "https://xmrig.com/benchmark")))
+-}}
+{{- $faq := slice -}}
+{{- range partial "helpers/t-keys" "mining:faq" -}}
+  {{- if ne . "title" -}}
+    {{- $faq = $faq | append (dict
+      "title" (partial $t (printf "mining:faq.%s.title" .))
+      "content" (partial "helpers/markdown" (partial $t (printf "mining:faq.%s.content" .)))) -}}
+  {{- end -}}
+{{- end -}}
+{{- $d := dict "p" $p "options" $options "resources" $resources "faq" $faq -}}
+
+{{ partial "ui/title-card" (dict "title" (partial $t "mining:hero.title") "subtitle" (partial $t "mining:hero.subtitle")) }}
+{{ with partial "ui/layout/page-container" (dict "attrs" $p "d" $d) }}
+  {{ with partial "ui/layout/page-section" (dict "ariaLabel" (partial "helpers/t" "mining:aria.miningOptions") "attrs" .d.p "d" .d) }}
+    {{ with partial "ui/layout/grid" (dict "columns" 3 "gap" "lg" "attrs" .d.p "d" .d) }}
+      {{- range .d.options }}
+      {{- $k := printf "mining:%s" .key }}
+      {{ with partial "ui/content-card" (dict
+        "title" (partial "helpers/t" (printf "%s.title" $k))
+        "subtitle" (partial "helpers/t" (printf "%s.subtitle" $k))
+        "icon" .icon
+        "image" .image
+        "imageAlt" (partial "helpers/t" (printf "%s.imageAlt" $k))
+        "bottom" (partial "inline/mining-card-link" (dict "href" .href "label" (partial "helpers/t" (printf "%s.cta" $k))))
+        "attrs" (dict "data-c-page-get-started-mining" true)
+        "lead" (partial "helpers/t" (printf "%s.lead" $k))
+        "bullets" (partial "helpers/t" (printf "%s.bullets" $k))) }}
+        <p data-c-page-get-started-mining>{{ .lead }}</p>
+        <ul data-c-page-get-started-mining>
+          {{- range .bullets }}
+          <li data-c-page-get-started-mining>{{ . }}</li>
+          {{- end }}
+        </ul>
+      {{ end }}
+      {{- end }}
+    {{ end }}
+  {{ end }}
+  <hr aria-hidden="true" data-c-page-get-started-mining>
+  {{ with partial "ui/layout/page-section" (dict "title" (partial "helpers/t" "mining:resources.title") "attrs" .d.p "d" .d) }}
+    {{ with partial "ui/layout/grid" (dict "minWidth" "16rem" "gap" "2xl" "attrs" .d.p "d" .d) }}
+      {{- range .d.resources }}
+      {{- $k := printf "mining:resources.%s" .key }}
+      {{ with partial "ui/layout/column" (dict "gap" "md" "attrs" (dict "data-c-page-get-started-mining" true) "k" $k "links" .links) }}
+        <h3 class="column-title" data-c-page-get-started-mining>{{ partial "helpers/t" (printf "%s.title" .k) }}</h3>
+        {{ with partial "ui/layout/column" (dict "as" "ul" "gap" "sm" "attrs" (dict "data-c-page-get-started-mining" true) "k" .k "links" .links) }}
+          {{- range .links }}
+          <li data-c-page-get-started-mining>
+            {{ partial "ui/external-resource-button" (dict
+              "href" .href
+              "title" (partial "helpers/t" (printf "%s.%s.title" $.k .key))
+              "subtitle" (partial "helpers/t" (printf "%s.%s.subtitle" $.k .key))
+              "variant" "mini"
+              "attrs" (dict "data-c-page-get-started-mining" true)) }}
+          </li>
+          {{- end }}
+        {{ end }}
+      {{ end }}
+      {{- end }}
+    {{ end }}
+  {{ end }}
+  <hr aria-hidden="true" data-c-page-get-started-mining>
+  {{ with partial "ui/layout/page-section" (dict "title" (partial "helpers/t" "mining:faq.title") "attrs" .d.p "d" .d) }}
+    {{ partial "ui/accordion/accordion" (dict "variant" "card" "items" .d.faq) }}
+    {{ with partial "ui/disclaimer/disclaimer-bar" (dict "icon" "shield-alert" "title" (partial "helpers/t" "mining:disclaimer.title")) }}
+      {{- partial "helpers/t" "mining:disclaimer.content" -}}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ end }}

@@ -1,0 +1,16 @@
+{{- $t := "helpers/t" -}}
+{{- $h := "helpers/href" -}}
+<div class="error-container" data-c-page-404>
+  <div class="error-content" data-c-page-404>
+    <h1 class="error-code" data-c-page-404>{{ partial "helpers/number" 404 }}</h1>
+    <h2 class="error-title" data-c-page-404>{{ partial $t "common:notFound.title" }}</h2>
+    <p class="error-message" data-c-page-404>{{ partial $t "common:notFound.message" }}</p>
+    <nav class="quick-links" data-c-page-404>
+      <a href="{{ partial $h "/" }}" data-c-page-404>{{ partial $t "common:notFound.links.home" }}</a>
+      <a href="{{ partial $h "/get-started/what-is-monero/" }}" data-c-page-404>{{ partial $t "common:notFound.links.whatIsMonero" }}</a>
+      <a href="{{ partial $h "/downloads/" }}" data-c-page-404>{{ partial $t "common:notFound.links.downloads" }}</a>
+      <a href="{{ partial $h "/get-started/faq/" }}" data-c-page-404>{{ partial $t "common:notFound.links.faq" }}</a>
+      <a href="{{ partial $h "/community/hangouts/" }}" data-c-page-404>{{ partial $t "common:notFound.links.community" }}</a>
+    </nav>
+  </div>
+</div>

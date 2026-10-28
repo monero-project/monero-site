@@ -1,0 +1,16 @@
+/* Styles for layouts/downloads.html */
+.downloads-grid[data-c-page-downloads] {
+  margin-top: var(--space-xl);
+}
+
+#gui[data-c-page-downloads],
+#cli[data-c-page-downloads] {
+  scroll-margin-top: 6.5rem;
+}
+
+@media (width >= 1200px) {
+  #gui[data-c-page-downloads],
+  #cli[data-c-page-downloads] {
+    scroll-margin-top: unset;
+  }
+}

@@ -1,0 +1,32 @@
+/* Styles for layouts/_partials/ui/layout/grid.html */
+.grid[data-c-grid] {
+  display: grid;
+  gap: var(--grid-gap);
+  grid-template-columns: repeat(
+      auto-fit,
+      minmax(min(var(--grid-min-width), 100%), 1fr)
+    );
+
+  &:is(ul, ol) {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &[data-capped] {
+    --gap-count: calc(var(--grid-col-count) - 1);
+    --total-gap-width: calc(var(--gap-count) * var(--grid-gap));
+    --grid-max-width: calc(
+      (100% - var(--total-gap-width)) /
+      var(--grid-col-count)
+    );
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(
+          min(100%, max(var(--grid-min-width), var(--grid-max-width))),
+          1fr
+        )
+      );
+  }
+}

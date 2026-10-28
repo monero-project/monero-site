@@ -1,0 +1,30 @@
+/* Styles for layouts/baseof.html */
+html,
+/* global */
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-dm-sans);
+  background: var(--bg-color);
+  color: var(--text-primary);
+  display: flex;
+  flex-direction: column;
+}
+
+main[data-c-layout] {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+  padding: var(--page-top-margin) var(--mobile-padding-inline) var(--space-2xl);
+  margin: var(--page-top-margin) auto 0;
+  width: 100%;
+  max-width: var(--content-max-width);
+  flex: 1 0 auto;
+  box-sizing: border-box;
+}
+
+@media (width >= 1200px) {
+  main[data-c-layout] {
+    padding-inline: var(--desktop-padding-inline);
+  }
+}

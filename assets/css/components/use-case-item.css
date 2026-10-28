@@ -1,0 +1,21 @@
+/* Styles for layouts/_partials/pages/get-started/what-is-monero/use-case-item.html */
+.use-case-item[data-c-use-case-item] {
+  display: flex;
+  gap: var(--space-md);
+  align-items: flex-start;
+}
+
+.icon[data-c-use-case-item] {
+  color: var(--monero-orange);
+}
+
+h3[data-c-use-case-item] {
+  margin: 0;
+  font-size: var(--font-size-lg);
+  color: var(--heading-color);
+}
+
+p[data-c-use-case-item] {
+  font-size: var(--font-size-md);
+  margin: 0;
+}

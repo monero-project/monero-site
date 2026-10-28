@@ -1,0 +1,58 @@
+{{- /*
+  Page navigation for a paginated list. Context: a Hugo pager (.Paginator or
+  .Paginate). Nothing is written when there is only one page.
+
+    {{ partial "ui/paginator" .Paginator }}
+
+  Up to 5 pages are all listed; otherwise the first, last, current and its
+  neighbours, with "…" for gaps (a gap of one page shows that page instead).
+*/ -}}
+{{- $t := "helpers/t" -}}
+{{- $current := .PageNumber -}}
+{{- $last := .TotalPages -}}
+{{- $pagers := .Pagers -}}
+{{- if gt $last 1 -}}
+{{- /* items: page numbers, 0 for an ellipsis */ -}}
+{{- $items := slice -}}
+{{- if le $last 5 -}}
+  {{- $items = seq $last -}}
+{{- else -}}
+  {{- $visible := slice -}}
+  {{- range sort (uniq (slice 1 $last $current (sub $current 1) (add $current 1))) -}}
+    {{- if and (ge . 1) (le . $last) }}{{ $visible = $visible | append . }}{{ end -}}
+  {{- end -}}
+  {{- range $i, $n := $visible -}}
+    {{- if $i -}}
+      {{- $gap := sub $n (index $visible (sub $i 1)) -}}
+      {{- if eq $gap 2 }}{{ $items = $items | append (sub $n 1) }}{{ else if gt $gap 2 }}{{ $items = $items | append 0 }}{{ end -}}
+    {{- end -}}
+    {{- $items = $items | append $n -}}
+  {{- end -}}
+{{- end -}}
+{{- $rtl := eq site.Language.Direction "rtl" -}}
+<nav class="pagination" aria-label="{{ partial $t "common:components.paginator.pagination" }}" data-c-paginator>
+  {{- with .Prev }}
+  <a href="{{ .URL }}" class="pagination-arrow" aria-label="{{ partial $t "common:components.paginator.previousPage" }}" aria-disabled="false" rel="prev" data-c-paginator>
+  {{- else }}
+  <a class="pagination-arrow" aria-label="{{ partial $t "common:components.paginator.previousPage" }}" aria-disabled="true" data-c-paginator>
+  {{- end }}
+    {{- partial "ui/icons/mask-icon" (dict "src" "chevron-left" "size" "1.25em" "rtl" $rtl) -}}
+  </a>
+  <ul class="pagination-list" data-c-paginator>
+    {{- range $items }}
+    {{- if eq . 0 }}
+    <li class="pagination-separator" aria-hidden="true" data-c-paginator><span class="pagination-ellipsis" data-c-paginator>…</span></li>
+    {{- else }}
+    <li data-c-paginator><a href="{{ (index $pagers (sub . 1)).URL }}" class="pagination-page" aria-label="{{ partial $t (slice "common:components.paginator.page" (dict "n" .)) }}"{{ partial "helpers/attrs" (dict "aria-current" (cond (eq . $current) "page" "")) }} data-c-paginator>{{ partial "helpers/number" . }}</a></li>
+    {{- end }}
+    {{- end }}
+  </ul>
+  {{- with .Next }}
+  <a href="{{ .URL }}" class="pagination-arrow" aria-label="{{ partial $t "common:components.paginator.nextPage" }}" aria-disabled="false" rel="next" data-c-paginator>
+  {{- else }}
+  <a class="pagination-arrow" aria-label="{{ partial $t "common:components.paginator.nextPage" }}" aria-disabled="true" data-c-paginator>
+  {{- end }}
+    {{- partial "ui/icons/mask-icon" (dict "src" "chevron-right" "size" "1.25em" "rtl" $rtl) -}}
+  </a>
+</nav>
+{{- end -}}

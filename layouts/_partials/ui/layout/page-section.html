@@ -1,0 +1,31 @@
+{{- /*
+  A page section with an optional heading and subtitle.
+
+    {{ with partial "ui/layout/page-section" (dict "title" "Block Explorers" "anchorId" "explorers") }}...{{ end }}
+
+  The section is labelled by its heading (anchorId) unless ariaLabel is given.
+
+  Params: title, subtitle, headingLevel (default 2), anchorId, ariaLabel,
+  centered, class, attrs.
+*/ -}}
+{{- $a := dict
+  "class" (trim (printf "section %s" (.class | default "")) " ")
+  "aria-label" .ariaLabel
+  "aria-labelledby" (cond (ne (.ariaLabel | default "") "") "" (.anchorId | default ""))
+  "data-centered" (cond (.centered | default false) "true" "")
+  "data-c-page-section" true
+-}}
+{{- $h := printf "h%d" (int (.headingLevel | default 2)) -}}
+<section{{ partial "helpers/attrs" (merge $a (.attrs | default dict)) }}>
+  {{- if or .title .subtitle }}
+  <header class="header" data-c-page-section>
+    {{- with .title }}
+    {{ printf "<%s%s>" $h (partial "helpers/attrs" (dict "id" $.anchorId "class" "title" "data-c-page-section" true)) | safeHTML }}{{ . }}{{ printf "</%s>" $h | safeHTML }}
+    {{- end }}
+    {{- with .subtitle }}
+    <p class="subtitle" data-c-page-section>{{ . }}</p>
+    {{- end }}
+  </header>
+  {{- end }}
+  {{ templates.Inner . }}
+</section>

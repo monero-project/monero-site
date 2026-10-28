@@ -1,0 +1,3 @@
+{{- /* /en/<path>/: redirect to the page's real (unprefixed) English URL. Written as one string so html/template leaves the URL (e.g. "+") alone. */ -}}
+{{- $to := replace .RelPermalink " " "%20" -}}
+{{- printf `<!doctype html><title>Redirecting to: %s</title><meta http-equiv="refresh" content="0;url=%s"><meta name="robots" content="noindex"><link rel="canonical" href="%s"><body>	<a href="%s">Redirecting from <code>/en%s</code> to <code>%s</code></a></body>` $to $to (absURL $to) $to $to $to | safeHTML -}}

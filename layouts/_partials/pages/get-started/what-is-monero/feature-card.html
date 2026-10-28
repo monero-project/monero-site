@@ -1,0 +1,16 @@
+{{- /*
+  A technology card: round icon, title, description and a "based on" line
+  (inline Markdown).
+
+    {{ partial "pages/get-started/what-is-monero/feature-card" (dict "icon" "eye-off" "title" "..." "description" "..." "basedOn" "...") }}
+
+  Params: icon (mask icon name), title, description, basedOn.
+*/ -}}
+{{ with partial "ui/layout/column" (merge . (dict "gap" "md" "class" "feature-card" "attrs" (dict "data-c-feature-card" true))) }}
+  <div class="icon" data-c-feature-card>
+    {{ partial "ui/icons/mask-icon" (dict "src" .icon "size" "100%") }}
+  </div>
+  <h3 data-c-feature-card>{{ .title }}</h3>
+  <p data-c-feature-card>{{ .description }}</p>
+  <p class="based-on" data-c-feature-card>{{ partial "helpers/markdown" (dict "text" .basedOn "inline" true) }}</p>
+{{ end }}

@@ -1,0 +1,57 @@
+# Footer links. `label` is a key in src/i18n/translations/<lang>/common.json
+# (under footer.). Site paths (starting with /get-started, /resources, ...) are
+# localized automatically; set `localize: false` to keep a path as-is.
+# Optional `icon`: a mask icon name from src/assets/icons/mask, with size,
+# color and ignoreRtl (don't mirror in right-to-left languages).
+columns:
+  - title: columns.resources.title
+    links:
+      - label: columns.resources.links.aboutMonero
+        href: /get-started/what-is-monero/
+      - label: columns.resources.links.moneropedia
+        href: /resources/moneropedia/
+      - label: columns.resources.links.moneroDocs
+        href: https://docs.getmonero.org
+      - label: columns.resources.links.faq
+        href: /get-started/faq
+  - title: columns.reachOut.title
+    links:
+      - label: columns.reachOut.links.workgroups
+        href: /community/workgroups
+      - label: columns.reachOut.links.hangouts
+        href: /community/hangouts
+      - label: columns.reachOut.links.mailingList
+        href: https://lists.getmonero.org/postorius/lists/monero-announce.lists.getmonero.org/
+  - title: columns.community.title
+    links:
+      - label: columns.community.links.stackExchange
+        href: https://monero.stackexchange.com/
+      - label: columns.community.links.bitcoinTalk
+        href: https://bitcointalk.org/index.php?topic=583449.0
+      - label: columns.community.links.translate
+        href: https://translate.getmonero.org
+  - title: columns.theMoneroProject.title
+    links:
+      - label: columns.theMoneroProject.links.openAlias
+        href: https://openalias.org
+      - label: columns.theMoneroProject.links.moneroResearchLab
+        href: /resources/research-lab
+      - label: columns.theMoneroProject.links.pressKit
+        href: /resources/press-kit
+      - label: columns.theMoneroProject.links.communityCrowdfundingSystem
+        href: https://ccs.getmonero.org
+
+bottomLinks:
+  - label: bottomLinks.torOnionService
+    href: http://monerotoruzizulg5ttgat2emf4d6fbmiea25detrmmy7erypseyteyd.onion
+    icon: {name: tor, size: 1rem, color: "#7d4698", ignoreRtl: true}
+  - label: bottomLinks.vulnerabilityResponse
+    href: https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md
+  - label: bottomLinks.legal
+    href: /legal
+  - label: bottomLinks.sourceCode
+    href: https://github.com/monero-project
+  - label: bottomLinks.rssFeed
+    href: /feed.xml
+    localize: false
+    icon: {name: rss, size: 1rem, color: "var(--monero-orange)"}

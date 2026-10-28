@@ -1,0 +1,23 @@
+/* Styles for layouts/_partials/ui/disclaimer/disclaimer-note.html */
+.disclaimer-note[data-c-disclaimer-note] {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-block: var(--space-sm);
+  padding: var(--space-xs);
+  background: #ff98000d;
+  border: 1px solid #ff980033;
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-sm);
+  color: var(--text-primary);
+
+  & > span[data-c-disclaimer-note] {
+    flex: 1;
+  }
+}
+
+.disclaimer-icon[data-c-disclaimer-note] {
+  align-self: flex-start;
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}

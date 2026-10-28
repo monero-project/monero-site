@@ -47,6 +47,12 @@
         },
         "paperCard": {
             "readPaper": "Read Paper"
+        },
+        "themeToggle": {
+            "label": "Theme",
+            "toLight": "Theme: system. Switch to light",
+            "toDark": "Theme: light. Switch to dark",
+            "toSystem": "Theme: dark. Switch to the system's"
         }
     },
     "aria": {

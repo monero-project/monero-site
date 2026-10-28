@@ -1,0 +1,22 @@
+{{- /*
+  Horizontal flex container.
+
+    {{ with partial "ui/layout/row" (dict "gap" "md" "justify" "between") }}...{{ end }}
+
+  Params: gap (2xs..2xl, default md), justify (start|center|end|between|around,
+  default start), align (start|center|end|baseline|stretch, default center),
+  wrap (default true), as (div|ul|ol|nav, default div), class, attrs.
+*/ -}}
+{{- $tag := .as | default "div" -}}
+{{- $justify := index (dict "start" "flex-start" "center" "center" "end" "flex-end" "between" "space-between" "around" "space-around") (.justify | default "start") -}}
+{{- $align := index (dict "start" "flex-start" "center" "center" "end" "flex-end" "baseline" "baseline" "stretch" "stretch") (.align | default "center") -}}
+{{- $a := dict
+  "class" (trim (printf "row %s" (.class | default "")) " ")
+  "data-nowrap" (cond (eq .wrap false) "true" "")
+  "style" (printf "--gap: var(--space-%s); --justify: %s; --align: %s;" (.gap | default "md") $justify $align)
+  "data-c-row" true
+-}}
+{{- /* html/template can't write a tag name from a variable, hence printf */ -}}
+{{ printf "<%s%s>" $tag (partial "helpers/attrs" (merge $a (.attrs | default dict))) | safeHTML }}
+  {{ templates.Inner . }}
+{{ printf "</%s>" $tag | safeHTML }}

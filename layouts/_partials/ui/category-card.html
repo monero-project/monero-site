@@ -1,0 +1,28 @@
+{{- /*
+  Clickable card with an image, title, description and a "link" line.
+
+    {{ partial "ui/category-card" (dict "title" "..." "description" "..." "href" "/resources/library/" "image" "images/knowledge-base/library.avif") }}
+
+  Params: title, description, href, image (asset path), linkText (default
+  "Explore").
+*/ -}}
+{{- $card := dict
+  "as" "a" "padding" "none" "hover" true "class" "category-card"
+  "attrs" (dict "href" .href "data-c-category-card" true)
+  "title" .title
+  "description" .description
+  "image" .image
+  "linkText" (.linkText | default (partial "helpers/t" "common:components.categoryCard.explore"))
+-}}
+{{ with partial "ui/card" $card }}
+  <div class="card-image" data-c-category-card>
+    {{- with .image }}
+    {{ partial "ui/image" (dict "src" . "alt" "" "attrs" (dict "data-c-category-card" true)) }}
+    {{- end }}
+  </div>
+  <div class="card-content" data-c-category-card>
+    <h2 class="card-title" data-c-category-card>{{ .title }}</h2>
+    <p class="card-description" data-c-category-card>{{ .description }}</p>
+    {{ with partial "ui/icon-link" (dict "as" "span" "class" "card-link" "attrs" (dict "data-c-category-card" true) "text" .linkText) }}{{ .text }}{{ end }}
+  </div>
+{{ end }}

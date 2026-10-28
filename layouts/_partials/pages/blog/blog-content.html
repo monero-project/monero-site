@@ -1,0 +1,4 @@
+{{- /* The body of a blog post (always English). Context: the post page. */ -}}
+<div id="blog-content" lang="en" dir="ltr">
+  {{ partialCached "helpers/content" (dict "page" . "lang" "en") .Params.blogId }}
+</div>

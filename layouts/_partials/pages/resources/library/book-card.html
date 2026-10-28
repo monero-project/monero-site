@@ -1,0 +1,57 @@
+{{- /*
+  A book in the library: cover, title, subtitle, description, a read link and
+  links to translations.
+
+    {{ partial "pages/resources/library/book-card" $book }}
+
+  Params: an entry of hugo.Data.resources.library.books (title, subtitle,
+  description, cover (asset path), link, translations (list of dict locale, url)).
+*/ -}}
+{{- /* Each language's name in that language, capitalized */ -}}
+{{- $languageNames := dict
+  "ar" "العربية" "de" "Deutsch" "es" "Español" "fr" "Français" "it" "Italiano"
+  "ja" "日本語" "pt" "Português" "ru" "Русский" "zh" "中文"
+-}}
+{{- $translations := slice -}}
+{{- range .translations -}}
+  {{- $translations = $translations | append (dict "url" .url "name" (index $languageNames .locale | default .locale)) -}}
+{{- end -}}
+{{ with partial "ui/card" (dict "as" "article" "padding" "lg" "radius" "lg" "class" "book-card" "attrs" (dict "data-c-book-card" true) "book" . "translations" $translations) }}
+  <a href="{{ .book.link }}" class="book-cover" target="_blank" rel="noopener noreferrer" data-c-book-card>
+    {{- with .book.cover }}
+    {{ partial "ui/image" (dict "src" . "alt" "" "format" "avif" "attrs" (dict "data-c-book-card" true)) }}
+    {{- else }}
+    <div class="book-placeholder" data-c-book-card>
+      {{ partial "ui/icons/mask-icon" (dict "src" "book-text" "size" "2rem") }}
+    </div>
+    {{- end }}
+  </a>
+
+  <div class="book-info" data-c-book-card>
+    <div class="book-header" data-c-book-card>
+      <h3 class="book-title" data-c-book-card>{{ .book.title }}</h3>
+      {{- with .book.subtitle }}
+      <span class="book-subtitle" data-c-book-card>{{ . }}</span>
+      {{- end }}
+    </div>
+
+    <p class="book-description" data-c-book-card>{{ .book.description }}</p>
+
+    <div class="book-footer" data-c-book-card>
+      {{ with partial "ui/icon-link" (dict "href" .book.link "size" "sm" "attrs" (dict "data-c-book-card" true)) }}{{ partial "helpers/t" "common:components.bookCard.readOnline" }}{{ end }}
+      {{- with .translations }}
+      <div class="book-translations" data-c-book-card>
+        <span class="translations-label" data-c-book-card>
+          {{ partial "helpers/t" "common:components.bookCard.alsoAvailableIn" }}
+        </span>
+        {{- range $i, $tr := . }}
+        {{- if $i }}
+        <span class="sep" data-c-book-card>·</span>
+        {{- end }}
+        <a href="{{ $tr.url }}" target="_blank" rel="noopener noreferrer" data-c-book-card>{{ $tr.name }}</a>
+        {{- end }}
+      </div>
+      {{- end }}
+    </div>
+  </div>
+{{ end }}

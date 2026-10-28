@@ -1,0 +1,4 @@
+{{- /* /blog/tags/<tag>/ and its later pages (created by content/blog/_content.gotmpl) */ -}}
+{{ define "meta" }}{{ partial "pages/blog/list-meta" (dict "page" . "tag" .Params.tagSlug) }}{{ end }}
+{{ define "head" }}<link rel="alternate" type="application/rss+xml" title="{{ partial "helpers/t" "blog:rssTitle" }}" href="{{ absURL "feed.xml" }}">{{ end }}
+{{ define "main" }}{{ partial "pages/blog/list-page" (dict "page" . "pageNumber" .Params.pageNumber "tag" .Params.tagSlug "tagName" .Params.tag) }}{{ end }}

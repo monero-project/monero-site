@@ -1,0 +1,28 @@
+{{- /*
+  Past milestones, one row of chips per year (linked when they have a link).
+
+    {{ partial "pages/resources/roadmap/history-timeline" (dict "history" $history) }}
+
+  Params: history (list of dict year, events (list of dict month, titleKey, link)).
+*/ -}}
+<div class="year-rows" data-c-history-timeline>
+  {{- range .history }}
+  <div class="year-row" data-c-history-timeline>
+    <span class="year-label" data-c-history-timeline>{{ .year }}</span>
+    <div class="event-chips" data-c-history-timeline>
+      {{- range .events }}
+      {{- $title := partial "helpers/t" (printf "roadmap:history.events.%s" .titleKey) }}
+      {{- with .link }}
+      <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="event-chip has-link" data-c-history-timeline>
+        {{ $title }}
+      </a>
+      {{- else }}
+      <span class="event-chip" data-c-history-timeline>
+        {{ $title }}
+      </span>
+      {{- end }}
+      {{- end }}
+    </div>
+  </div>
+  {{- end }}
+</div>

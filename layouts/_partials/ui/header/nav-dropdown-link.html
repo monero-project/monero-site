@@ -1,0 +1,13 @@
+{{- /* Params: href, label, desc, icon, iconDark */ -}}
+<a href="{{ .href }}" class="dropdown-item" role="menuitem" data-c-nav-dropdown-link>
+  {{ partial "ui/icons/color-icon" (dict "src" .icon "darkSrc" .iconDark "size" "2rem" "class" "icon") }}
+  <div class="content" data-c-nav-dropdown-link>
+    <div class="title" data-c-nav-dropdown-link>{{ .label }}</div>
+    {{- with .desc }}
+    <div class="desc" data-c-nav-dropdown-link>{{ . }}</div>
+    {{- end }}
+  </div>
+  <div class="arrow" data-c-nav-dropdown-link>
+    {{ partial "ui/icons/mask-icon" (dict "src" "arrow-right" "size" "1rem" "rtl" (eq site.Language.Direction "rtl")) }}
+  </div>
+</a>

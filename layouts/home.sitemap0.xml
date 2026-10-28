@@ -1,0 +1,30 @@
+{{- /*
+  /sitemap-0.xml: every published page in every language, sorted by URL, each
+  with links to the same page in each language that has it.
+*/ -}}
+{{- $codes := dict -}}
+{{- range hugo.Sites }}{{ $codes = merge $codes (dict .Language.Lang .Language.Locale) }}{{ end -}}
+{{- /* page path without the language prefix -> language -> URL */ -}}
+{{- $byPath := dict -}}
+{{- $all := slice -}}
+{{- range hugo.Sites -}}
+  {{- $lang := .Language.Lang -}}
+  {{- range .Pages -}}
+    {{- if and .RelPermalink (ne .Kind "404") (ne .Layout "not-found") -}}
+      {{- $url := .Permalink | replaceRE ` ` "%20" -}}
+      {{- $key := cond (eq $lang "en") .RelPermalink (strings.TrimPrefix (printf "/%s" $lang) .RelPermalink) -}}
+      {{- $byPath = merge $byPath (dict $key (merge (index $byPath $key | default dict) (dict $lang $url))) -}}
+      {{- $all = $all | append (dict "url" $url "key" $key "lang" $lang) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+{{- range sort $all "url" -}}
+  {{- $alts := index $byPath .key -}}
+  <url><loc>{{ .url }}</loc>
+  {{- /* the page in each language that has it, ordered by URL */ -}}
+  {{- $links := slice }}{{ range $l, $u := $alts }}{{ $links = $links | append (dict "lang" $l "url" $u) }}{{ end -}}
+  {{- range sort $links "url" }}<xhtml:link rel="alternate" hreflang="{{ index $codes .lang }}" href="{{ .url }}"/>{{ end -}}
+  </url>
+{{- end -}}
+</urlset>

@@ -1,0 +1,13 @@
+{{- /*
+  Fenced code blocks: the github-dark colours, plain text, one span per
+  line. No syntax highlighting is applied. In the
+  feed (content/_feed.md) they are plain <pre><code>.
+*/ -}}
+{{- if .Page.Params.feed -}}
+<pre><code{{ with .Type }} class="language-{{ . }}"{{ end }}>{{ .Inner }}</code></pre>
+{{- else -}}
+{{- $lines := split (strings.TrimSuffix "\n" .Inner) "\n" -}}
+<pre class="code-block github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="{{ .Type | default "plaintext" }}"><code>
+{{- range $i, $l := $lines }}{{ if $i }}{{ "\n" }}{{ end }}<span class="line"><span>{{ $l }}</span></span>{{ end -}}
+</code></pre>
+{{- end -}}

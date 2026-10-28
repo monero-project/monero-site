@@ -1,0 +1,56 @@
+{{- /*
+  Tabs, either switching panels on the page (CSS only, radio inputs) or as
+  navigation links to other pages.
+
+    {{ partial "ui/tabs/page-tabs" (dict "id" "tabs-downloads" "labels" (slice "Core" "Community") "links" (slice "/downloads/" "/downloads/community/") "activeIndex" 0) }}
+    {{ partial "ui/tabs/page-tabs" (dict "id" "tabs-x" "labels" (slice "A" "B") "panels" (slice $panelA $panelB)) }}
+
+  Params: id (required, unique on the page), labels (1 to 10), links (one URL
+  per label: navigation mode), activeIndex (highlighted link), panels (HTML,
+  one per label: same-page mode), initial (0-based tab shown first).
+*/ -}}
+{{- $labels := .labels | default slice -}}
+{{- $panels := .panels | default slice -}}
+{{- $uid := strings.TrimSpace (.id | default "") -}}
+{{- if not $labels }}{{ errorf "ui/tabs/page-tabs needs a non-empty labels list." }}{{ end -}}
+{{- if gt (len $labels) 10 }}{{ errorf "ui/tabs/page-tabs supports up to 10 tabs." }}{{ end -}}
+{{- if and .links (ne (len .links) (len $labels)) }}{{ errorf "ui/tabs/page-tabs: links must match labels in length." }}{{ end -}}
+{{- if and .links $panels }}{{ errorf "ui/tabs/page-tabs cannot have both links and panels." }}{{ end -}}
+{{- if not $uid }}{{ errorf "ui/tabs/page-tabs requires a non-empty id." }}{{ end -}}
+{{- $active := int (math.Min (math.Max 0 (int (.initial | default 0))) (sub (len $labels) 1)) -}}
+<div class="tabs" id="{{ $uid }}" data-c-page-tabs>
+  {{- if .links }}
+  <div class="tab-header" data-c-page-tabs>
+    {{- range $i, $label := $labels }}
+    <a class="tab-label{{ if eq $i $.activeIndex }} active{{ end }}" href="{{ index $.links $i }}" data-c-page-tabs>
+      {{ $label }}
+    </a>
+    {{- end }}
+  </div>
+  {{- else }}
+  <fieldset data-c-page-tabs>
+    <legend class="sr-only" data-c-page-tabs>
+      {{ partial "helpers/t" "common:components.pageTabs.tabSelection" }}
+    </legend>
+    {{- range $i, $_ := $labels }}
+    <input type="radio" name="{{ $uid }}" id="{{ $uid }}-{{ $i }}"{{ partial "helpers/attrs" (dict "checked" (eq $i $active)) }} aria-controls="{{ $uid }}-panel-{{ $i }}" data-c-page-tabs>
+    {{- end }}
+  </fieldset>
+  <div class="tab-header" data-c-page-tabs>
+    {{- range $i, $label := $labels }}
+    <label class="tab-label" for="{{ $uid }}-{{ $i }}" data-c-page-tabs>
+      {{ $label }}
+    </label>
+    {{- end }}
+  </div>
+  <div class="tab-content" data-c-page-tabs>
+    {{- range $i, $label := $labels }}
+    {{- if $label }}
+    <div class="panel" id="{{ $uid }}-panel-{{ $i }}" role="tabpanel" aria-labelledby="{{ $uid }}-{{ $i }}" data-c-page-tabs>
+      {{ if lt $i (len $panels) }}{{ index $panels $i }}{{ end }}
+    </div>
+    {{- end }}
+    {{- end }}
+  </div>
+  {{- end }}
+</div>

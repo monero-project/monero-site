@@ -1,0 +1,11 @@
+{{- /*
+  A short id derived from text: the first 12 hex digits of the SHA-256 of a
+  string, or of a list of strings written as JSON (["a","b"]). Used for
+  accordion names, section tab ids and header dropdown ids.
+
+    {{ partial "helpers/stable-id" "Resources" }}               -> 6b1a8a6d0b8e
+    {{ partial "helpers/stable-id" (slice "Tab one" "Tab two") }}
+*/ -}}
+{{- $data := . -}}
+{{- if reflect.IsSlice . }}{{ $data = jsonify (dict "noHTMLEscape" true) . }}{{ end -}}
+{{- return substr (sha256 $data) 0 12 -}}

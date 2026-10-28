@@ -1,0 +1,28 @@
+{{- /* Title, date, author and tags at the top of a blog post. Context: the post page. */ -}}
+{{- $t := "helpers/t" -}}
+<div id="post-header" data-c-blog-header>
+  <h1 data-c-blog-header>{{ .Title }}</h1>
+  <div id="meta" data-c-blog-header>
+    <div class="meta-item" data-c-blog-header>
+      <div class="icon" data-c-blog-header>
+        {{ partial "ui/icons/mask-icon" (dict "src" "calendar") }}
+      </div>
+      <time datetime="{{ .Params.date }}" data-c-blog-header>{{ partial "helpers/date" .Params.date }}</time>
+    </div>
+    {{- with .Params.author }}
+    <div class="meta-item" data-c-blog-header>
+      <div class="icon" data-c-blog-header>
+        {{ partial "ui/icons/mask-icon" (dict "src" "user") }}
+      </div>
+      {{ replaceRE " and " (printf " %s " (partial $t "blog:post.and")) . 1 }}
+    </div>
+    {{- end }}
+  </div>
+  {{- with .Params.postTags }}
+  <div class="tag-container" data-c-blog-header>
+    {{- range . }}
+    <a class="tag" href="{{ partial "helpers/href" (printf "/blog/tags/%s/" (replaceRE `\s+` "-" (lower .))) }}" data-c-blog-header>{{ partial $t (slice (printf "blog:tagLabels.%s" .) (dict "defaultValue" .)) }}</a>
+    {{- end }}
+  </div>
+  {{- end }}
+</div>

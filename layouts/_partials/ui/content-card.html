@@ -1,0 +1,54 @@
+{{- /*
+  Article card with an optional image, icon and subtitle, a body (the block)
+  and an optional footer.
+
+    {{ with partial "ui/content-card" (dict "title" "Gupax" "icon" "app-window" "bottom" $links) }}
+      <p>...</p>
+    {{ end }}
+
+  Params: title, icon (mask icon name or asset path), subtitle, image (asset
+  path), imageAlt, bottom (HTML for the footer), class, attrs.
+*/ -}}
+{{- $body := templates.Inner . -}}
+{{- $card := dict
+  "as" "article" "radius" "lg"
+  "class" (trim (printf "content-card %s" (.class | default "")) " ")
+  "attrs" (merge (dict "data-c-content-card" true) (.attrs | default dict))
+  "title" .title
+  "icon" .icon
+  "subtitle" .subtitle
+  "image" .image
+  "imageAlt" (.imageAlt | default "")
+  "bottom" .bottom
+  "body" $body
+-}}
+{{ with partial "ui/card" $card }}
+  {{- if .image }}
+  <div class="content-card-image" data-c-content-card>
+    {{ partial "ui/image" (dict "src" .image "alt" .imageAlt "format" "avif" "attrs" (dict "data-c-content-card" true)) }}
+  </div>
+  {{- end }}
+  <header data-c-content-card>
+    <div class="title-row" data-c-content-card>
+      {{- with .icon }}
+      <div class="card-icon" data-c-content-card>
+        {{ partial "ui/icons/mask-icon" (dict "src" . "size" "1.25em") }}
+      </div>
+      {{- end }}
+      <div class="title-block" data-c-content-card>
+        <h3 class="card-title" data-c-content-card>{{ .title }}</h3>
+        {{- with .subtitle }}
+        <p class="card-subtitle" data-c-content-card>{{ . }}</p>
+        {{- end }}
+      </div>
+    </div>
+  </header>
+  <div class="card-body" data-c-content-card>
+    {{ .body }}
+  </div>
+  {{- with .bottom }}
+  <footer class="card-bottom" data-c-content-card>
+    {{ . }}
+  </footer>
+  {{- end }}
+{{ end }}

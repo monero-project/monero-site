@@ -1,0 +1,70 @@
+{{ define "meta" }}{{ .Store.Set "meta" (dict "title" (partial "helpers/t" "press-kit:pageTitle") "description" (partial "helpers/t" "press-kit:description")) }}{{ end }}
+{{ define "main" }}
+{{- $t := "helpers/t" -}}
+{{- $scope := dict "data-c-page-resources-press-kit" true -}}
+{{- $sections := slice
+  (dict "id" "brand-assets" "icon" "component" "title" (partial $t "press-kit:sections.brandAssets.title") "subtitle" (partial $t "press-kit:sections.brandAssets.tocSubtitle"))
+  (dict "id" "press-materials" "icon" "book-text" "title" (partial $t "press-kit:sections.pressMaterials.title") "subtitle" (partial $t "press-kit:sections.pressMaterials.tocSubtitle"))
+  (dict "id" "contacts" "icon" "users" "title" (partial $t "press-kit:sections.contacts.title") "subtitle" (partial $t "press-kit:sections.contacts.tocSubtitle"))
+-}}
+{{ partial "ui/title-card" (dict "title" (partial $t "press-kit:title") "subtitle" (partial $t "press-kit:subtitle")) }}
+{{ with partial "ui/layout/page-container" (dict "attrs" $scope "scope" $scope "kit" (index hugo.Data.resources "press-kit") "sections" $sections) }}
+  {{ partial "ui/toc/toccontainer" (dict "sections" .sections "ariaLabel" (partial "helpers/t" "press-kit:aria.sectionsNav")) }}
+
+  {{ with partial "ui/layout/page-section" (dict "title" (partial "helpers/t" "press-kit:sections.brandAssets.title") "subtitle" (partial "helpers/t" "press-kit:sections.brandAssets.intro") "anchorId" "brand-assets" "attrs" .scope "d" .) }}
+    {{ with partial "ui/layout/grid" (dict "minWidth" "22rem" "gap" "xl" "class" "assets-grid" "attrs" .d.scope "d" .d) }}
+      {{- range .d.kit.brandAssets }}
+      {{ partial "pages/resources/press-kit/brand-asset-card" . }}
+      {{- end }}
+    {{ end }}
+
+    {{ with partial "ui/layout/row" (dict "justify" "end" "class" "download-all" "attrs" .d.scope "d" .d) }}
+      {{ with partial "ui/button" (dict "href" "/media/press-kit/monero-press-kit.zip" "variant" "primary" "attrs" .d.scope) }}{{ partial "helpers/t" "press-kit:sections.brandAssets.downloadAll" }}{{ end }}
+    {{ end }}
+  {{ end }}
+
+  <hr aria-hidden="true" data-c-page-resources-press-kit>
+
+  {{ with partial "ui/layout/page-section" (dict "title" (partial "helpers/t" "press-kit:sections.pressMaterials.title") "anchorId" "press-materials" "attrs" .scope "d" .) }}
+    {{ with partial "ui/layout/grid" (dict "columns" 2 "gap" "2xl" "attrs" .d.scope "d" .d) }}
+      {{ with partial "ui/layout/column" (dict "gap" "md" "attrs" .d.scope "d" .d) }}
+        <h3 class="column-title" data-c-page-resources-press-kit>
+          {{ partial "helpers/t" "press-kit:sections.pressMaterials.pressDocumentation" }}
+        </h3>
+        {{ with partial "ui/layout/column" (dict "gap" "sm" "attrs" .d.scope "d" .d) }}
+          {{- range .d.kit.pressDocuments }}
+          {{ partial "ui/external-resource-button" (dict "href" .url "title" (partial "helpers/t" (printf "press-kit:documents.%s.title" .id)) "subtitle" (partial "helpers/t" (printf "press-kit:documents.%s.description" .id)) "attrs" $.d.scope) }}
+          {{- end }}
+        {{ end }}
+      {{ end }}
+
+      {{ with partial "ui/layout/column" (dict "gap" "md" "attrs" .d.scope "d" .d) }}
+        <h3 class="column-title" data-c-page-resources-press-kit>
+          {{ partial "helpers/t" "press-kit:sections.pressMaterials.marketingMaterials" }}
+        </h3>
+        {{ with partial "ui/layout/column" (dict "gap" "sm" "attrs" .d.scope "d" .d) }}
+          {{- range .d.kit.marketingResources }}
+          {{ partial "ui/external-resource-button" (dict "href" .url "title" (partial "helpers/t" (printf "press-kit:marketing.%s.title" .id)) "subtitle" (partial "helpers/t" (printf "press-kit:marketing.%s.description" .id)) "attrs" $.d.scope) }}
+          {{- end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  <hr aria-hidden="true" data-c-page-resources-press-kit>
+
+  {{ with partial "ui/layout/page-section" (dict "title" (partial "helpers/t" "press-kit:sections.contacts.title") "anchorId" "contacts" "attrs" .scope "d" .) }}
+    {{ with partial "ui/layout/grid" (dict "minWidth" "18rem" "gap" "md" "attrs" .d.scope "d" .d) }}
+      {{ with partial "pages/resources/press-kit/contact-card" (dict "title" (partial "helpers/t" "press-kit:sections.contacts.pressInquiries.title") "description" (partial "helpers/t" "press-kit:sections.contacts.pressInquiries.description")) }}
+        <a href="mailto:press@getmonero.org" data-c-page-resources-press-kit>press@getmonero.org</a>
+      {{ end }}
+      {{ with partial "pages/resources/press-kit/contact-card" (dict "title" (partial "helpers/t" "press-kit:sections.contacts.workgroups.title") "description" (partial "helpers/t" "press-kit:sections.contacts.workgroups.description") "d" .d) }}
+        {{ with partial "ui/icon-link" (dict "href" (partial "helpers/href" "/community/workgroups") "attrs" .d.scope) }}{{ partial "helpers/t" "press-kit:sections.contacts.workgroups.link" }}{{ end }}
+      {{ end }}
+      {{ with partial "pages/resources/press-kit/contact-card" (dict "title" (partial "helpers/t" "press-kit:sections.contacts.community.title") "description" (partial "helpers/t" "press-kit:sections.contacts.community.description") "d" .d) }}
+        {{ with partial "ui/icon-link" (dict "href" (partial "helpers/href" "/community/hangouts") "attrs" .d.scope) }}{{ partial "helpers/t" "press-kit:sections.contacts.community.link" }}{{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ end }}

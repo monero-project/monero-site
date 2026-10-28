@@ -1,0 +1,31 @@
+/* Styles for layouts/_partials/ui/icons/color-icon.html */
+.icon[data-c-color-icon] {
+  display: inline-block;
+  inline-size: var(--iconSize);
+  block-size: var(--iconSize);
+  aspect-ratio: 1;
+  vertical-align: middle;
+
+  --iconUrl: var(--lightUrl);
+
+  background-image: var(--iconUrl);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  &[data-rtl] {
+    transform: scaleX(-1);
+    transform-origin: center;
+  }
+}
+
+/* dark: the system's dark mode, unless the light theme is chosen; or the dark theme */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .icon[data-c-color-icon] {
+    --iconUrl: var(--darkUrl);
+  }
+}
+
+:root[data-theme="dark"] .icon[data-c-color-icon] {
+  --iconUrl: var(--darkUrl);
+}

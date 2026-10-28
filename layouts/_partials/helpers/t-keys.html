@@ -1,0 +1,39 @@
+{{- /*
+  The keys of a translation object in the order of the JSON file (Hugo's data
+  maps are sorted alphabetically, which would reorder e.g. FAQ questions).
+
+    {{ range partial "helpers/t-keys" "faq:basics" }}
+      {{ partial "helpers/t" (printf "faq:basics.%s.title" .) }}
+    {{ end }}
+
+  Reads src/i18n/translations/<lang>/<ns>.json, falling back to English when
+  the language doesn't have the object. Relies on the files being formatted
+  one key per line, as Weblate writes them.
+*/ -}}
+{{- $ns := index (split . ":") 0 -}}
+{{- $path := split (strings.TrimPrefix (printf "%s:" $ns) .) "." -}}
+{{- $keys := slice -}}
+{{- range uniq (slice site.Language.Lang "en") -}}
+  {{- $file := printf "src/i18n/translations/%s/%s.json" . $ns -}}
+  {{- if and (not $keys) (fileExists $file) -}}
+    {{- $body := os.ReadFile $file -}}
+    {{- /* narrow $body down to the object at $path */ -}}
+    {{- range $path -}}
+      {{- $key := . -}}
+      {{- $indent := "" -}}
+      {{- with findRESubmatch (printf `\n( *)"%s": \{` $key) $body 1 }}{{ $indent = index . 0 1 }}{{ end -}}
+      {{- $inner := "" -}}
+      {{- with findRESubmatch (printf `(?s)\n%s"%s": \{(.*?)\n%s\}` $indent $key $indent) $body 1 }}{{ $inner = index . 0 1 }}{{ end -}}
+      {{- $body = $inner -}}
+    {{- end -}}
+    {{- /* its own keys are the ones indented like its first key */ -}}
+    {{- $matches := findRESubmatch `\n( *)"([^"]+)":` $body -}}
+    {{- with $matches -}}
+      {{- $childIndent := index . 0 1 -}}
+      {{- range . -}}
+        {{- if eq (index . 1) $childIndent }}{{ $keys = $keys | append (index . 2) }}{{ end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $keys -}}

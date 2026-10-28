@@ -1,0 +1,39 @@
+{{- /* Footer. The links live in src/data/footer.yaml. */ -}}
+{{- define "_partials/inline/footer-link" -}}
+  {{- $href := cond (eq .localize false) .href (partial "helpers/href" .href) -}}
+  {{- $ext := partial "helpers/is-external" (slice $href "getmonero.org") -}}
+  <a{{ partial "helpers/attrs" (dict "href" $href "target" (cond $ext "_blank" "") "rel" (cond $ext "noopener noreferrer external" "")) }} data-c-footer>
+    {{ partial "helpers/t" (printf "common:footer.%s" .label) }}
+    {{- with .icon }}
+    {{ partial "ui/icons/mask-icon" (dict "src" .name "size" (.size | default "12px") "rtl" (and (not .ignoreRtl) (eq site.Language.Direction "rtl")) "color" .color "spacing" "0.25em") }}
+    {{- end }}
+  </a>
+{{- end -}}
+{{- $t := "helpers/t" -}}
+<footer class="footer" aria-label="{{ partial $t "common:aria.footer" }}" data-c-footer>
+  <div class="items" data-c-footer>
+    <nav class="grid" aria-label="{{ partial $t "common:aria.footerNav" }}" data-c-footer>
+      {{- range hugo.Data.footer.columns }}
+      <section class="col" data-c-footer>
+        <h3 class="title" data-c-footer>{{ partial $t (printf "common:footer.%s" .title) }}</h3>
+        <ul class="list" data-c-footer>
+          {{- range .links }}
+          <li data-c-footer>
+            {{ partial "inline/footer-link" . }}
+          </li>
+          {{- end }}
+        </ul>
+      </section>
+      {{- end }}
+    </nav>
+    <nav class="bottom" aria-label="{{ partial $t "common:aria.secondaryFooterNav" }}" data-c-footer>
+      <ul class="inline-list" data-c-footer>
+        {{- range hugo.Data.footer.bottomLinks }}
+        <li class="inline-item" data-c-footer>
+          {{ partial "inline/footer-link" . }}
+        </li>
+        {{- end }}
+      </ul>
+    </nav>
+  </div>
+</footer>

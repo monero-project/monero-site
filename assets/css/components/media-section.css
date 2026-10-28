@@ -1,0 +1,44 @@
+/* Styles for layouts/_partials/ui/media-section.html */
+.section[data-c-media-section] {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  align-items: center;
+
+  & .content,
+  & .aside {
+    min-width: 0;
+  }
+
+  &[data-hide-aside] .aside[data-c-media-section] {
+    display: none;
+  }
+}
+
+@media (width >= 900px) {
+  .section[data-c-media-section] {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+
+    & .aside {
+      position: relative;
+      align-self: stretch;
+    }
+
+    &[data-reverse] .content[data-c-media-section] {
+      order: 2;
+    }
+
+    &[data-hide-aside] .aside[data-c-media-section] {
+      display: block;
+    }
+  }
+
+  .aside[data-c-media-section] img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+}

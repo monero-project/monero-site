@@ -1,0 +1,61 @@
+# Git hooks with pre-commit (https://pre-commit.com/). Optional locally: install
+# it (pip install pre-commit) and run `pre-commit install --install-hooks` once
+# (see README.md, Git hooks); CI runs the same hooks on every file
+# (pre-commit run --all-files).
+# The hooks fix what they can (formatting, final newlines, trailing spaces);
+# if they changed something, add the changes and commit again. pre-commit sets
+# up Biome and yamllint itself (in its own cache); the local hooks use Python 3.
+# Dependabot bumps each repo's rev.
+
+# not touched by these hooks: content as written, the signed downloads, static
+# files served as they are, and the /en/ redirect template, which must not end
+# with a newline. Translations (Weblate's) are only checked to be valid JSON.
+exclude: ^(src/content/|downloads/|public/|layouts/all\.enredirect\.html$)
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: 3e8a8703264a2f4a69428a0aa4dcb512790b2c8c # v6.0.0
+    hooks:
+      - id: check-merge-conflict
+      - id: check-added-large-files
+      - id: end-of-file-fixer
+        exclude: ^src/i18n/translations/
+      - id: trailing-whitespace
+        args: [--markdown-linebreak-ext=md] # keep Markdown's two-space line breaks
+        exclude: ^src/i18n/translations/
+      - id: mixed-line-ending
+        args: [--fix=lf]
+        exclude: ^src/i18n/translations/
+      - id: check-yaml
+      - id: check-json
+      # formatted like `jq .` (as the Download Hashes workflow writes core.json)
+      - id: pretty-format-json
+        args: [--autofix, --no-sort-keys, --no-ensure-ascii, --indent=2]
+        exclude: ^src/i18n/translations/
+
+  # Biome's official hook: pre-commit installs it with its own Node.js, from
+  # the hook's lockfile (nothing in this repo, nothing on your PATH)
+  - repo: https://github.com/biomejs/pre-commit
+    rev: f9fccc969fb42a59a17a1a430df9f38851f9b2da # v2.6.3
+    hooks:
+      - id: biome-check
+        name: CSS lint and formatting (Biome)
+        args: [--error-on-warnings]
+        files: ^assets/css/.*\.css$
+        exclude: ^assets/css/base/fonts\.css$
+
+  - repo: https://github.com/adrienverge/yamllint
+    rev: cba56bcde1fdd01c1deb3f945e69764c291a6530 # v1.38.0
+    hooks:
+      - id: yamllint
+        name: YAML lint (yamllint)
+        files: ^(src/data|data)/.*\.yaml$
+
+  - repo: local
+    hooks:
+      - id: scoped-css
+        name: component styles are scoped
+        entry: python3 scripts/check-scoped-css.py
+        language: system
+        files: ^assets/css/.*\.css$
+        pass_filenames: false

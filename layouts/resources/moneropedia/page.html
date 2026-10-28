@@ -1,0 +1,17 @@
+{{- /* A Moneropedia entry (src/content/moneropedia/<lang>/<name>.md), or the
+  English one in a language that hasn't translated it. */ -}}
+{{ define "meta" }}{{ .Store.Set "meta" (dict "title" (printf "%s | %s" (.Title | default (index .Params.terms 0)) (partial "helpers/t" "knowledge-base:moneropedia.pageTitle")) "description" "") }}{{ end }}
+{{ define "main" }}
+<div class="moneropedia-page container" data-c-page-resources-moneropedia-slug>
+  <aside class="moneropedia-sidebar" data-c-page-resources-moneropedia-slug>
+    {{ with partial "ui/back-link" (dict "href" (partial "helpers/href" "/resources/moneropedia/") "size" "lg" "attrs" (dict "data-c-page-resources-moneropedia-slug" true)) }}{{ partial "helpers/t" "knowledge-base:moneropedia.title" }}{{ end }}
+  </aside>
+  <header class="moneropedia-header" data-c-page-resources-moneropedia-slug>
+    <h1 data-c-page-resources-moneropedia-slug>{{ .Title | default (index .Params.terms 0) }}</h1>
+  </header>
+  <article class="moneropedia-article" data-c-page-resources-moneropedia-slug>
+    {{- /* @terms link to the entries of the language the text is written in */}}
+    {{ partial "helpers/content" (dict "page" . "lang" (cond (partial "helpers/moneropedia-own" .) site.Language.Lang "en")) }}
+  </article>
+</div>
+{{ end }}

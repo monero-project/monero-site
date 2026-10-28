@@ -1,0 +1,72 @@
+{{ define "meta" }}{{ .Store.Set "meta" (dict "title" (partial "helpers/t" "knowledge-base:researchLab.pageTitle") "description" (partial "helpers/t" "knowledge-base:researchLab.subtitle")) }}{{ end }}
+
+{{- /* A tab panel: the papers in a column, put in the named slot (panel-N) */ -}}
+{{- define "_partials/inline/research-lab-papers" -}}
+  {{ with partial "ui/layout/column" (dict "gap" "sm" "attrs" (dict "slot" .slot) "papers" .papers) }}
+    {{- range .papers }}
+    {{ partial "pages/resources/research-lab/paper-card" . }}
+    {{- end }}
+  {{ end }}
+{{- end -}}
+
+{{- /* The sidebar: links to the Cryptonote whitepapers */ -}}
+{{- define "_partials/inline/research-lab-whitepapers" -}}
+  {{ with partial "ui/sidebar/sidebar-card" (dict "title" (partial "helpers/t" "knowledge-base:researchLab.whitepapers.title") "subtitle" (partial "helpers/t" "knowledge-base:researchLab.whitepapers.subtitle") "attrs" (dict "slot" "sidebar") "whitepapers" .) }}
+    {{- range .whitepapers }}
+    {{ with partial "ui/sidebar/sidebar-link" (dict "href" .url "icon" "book-text" "external" true "id" .id) }}{{ partial "helpers/t" (printf "knowledge-base:researchLab.whitepapers.items.%s" .id) }}{{ end }}
+    {{- end }}
+  {{ end }}
+{{- end -}}
+
+{{ define "main" }}
+{{- $t := "helpers/t" -}}
+{{- $lab := index hugo.Data.resources "research-lab" -}}
+{{- $rtl := eq site.Language.Direction "rtl" -}}
+{{- $tabs := slice
+  (dict "label" (partial $t "knowledge-base:researchLab.papers.tabs.mrlBulletins") "count" (len $lab.mrlBulletins))
+  (dict "label" (partial $t "knowledge-base:researchLab.papers.tabs.iacr") "count" (len $lab.iacrPapers))
+  (dict "label" (partial $t "knowledge-base:researchLab.papers.tabs.other") "count" (len $lab.otherPapers))
+-}}
+{{- $panels := slice
+  (partial "inline/research-lab-papers" (dict "slot" "panel-0" "papers" $lab.mrlBulletins))
+  (partial "inline/research-lab-papers" (dict "slot" "panel-1" "papers" $lab.iacrPapers))
+  (partial "inline/research-lab-papers" (dict "slot" "panel-2" "papers" $lab.otherPapers))
+-}}
+{{ partial "ui/title-card" (dict
+  "title" (partial $t "knowledge-base:researchLab.title")
+  "subtitle" (partial $t "knowledge-base:researchLab.subtitle")
+  "backHref" (partial "helpers/href" "/resources/knowledge-base/")
+  "backLabel" (partial $t "knowledge-base:index.title")
+) }}
+{{ with partial "ui/layout/page-container" (dict "rtl" $rtl "tabs" $tabs "panels" $panels "sidebar" (partial "inline/research-lab-whitepapers" $lab.whitepapers)) }}
+  {{- /* inside each block . is that partial's dict, so rtl is passed along for the icons */}}
+  {{ with partial "ui/hero-card" (dict
+    "image" "images/mrl-logo.avif"
+    "imageAlt" (partial "helpers/t" "knowledge-base:researchLab.hero.imageAlt")
+    "title" (partial "helpers/t" "knowledge-base:researchLab.hero.title")
+    "description" (partial "helpers/t" "knowledge-base:researchLab.hero.description")
+    "rtl" .rtl
+  ) }}
+    {{ with partial "ui/button" (dict "href" "https://moneroresearch.info/" "target" "_blank" "rel" "noopener noreferrer" "rtl" .rtl) }}
+      MoneroResearch.info
+      {{ partial "ui/icons/mask-icon" (dict "src" "external-link" "size" "1em" "rtl" .rtl) }}
+    {{ end }}
+    {{ with partial "ui/button" (dict "href" "https://matrix.to/#/#monero-research-lab:monero.social" "target" "_blank" "rel" "noopener noreferrer" "variant" "secondary" "rtl" .rtl) }}
+      Matrix
+      {{ partial "ui/icons/mask-icon" (dict "src" "external-link" "size" "1em" "rtl" .rtl) }}
+    {{ end }}
+    {{ with partial "ui/button" (dict "href" "https://web.libera.chat/#monero-research-lab" "target" "_blank" "rel" "noopener noreferrer" "variant" "secondary" "rtl" .rtl) }}
+      {{ partial "ui/icons/mask-icon" (dict "src" "hashtag" "size" "0.9em" "rtl" .rtl) }}
+      IRC
+    {{ end }}
+  {{ end }}
+
+  <hr aria-hidden="true">
+
+  {{ with partial "ui/layout/page-section" (dict "title" (partial "helpers/t" "knowledge-base:researchLab.papers.title") "subtitle" (partial "helpers/t" "knowledge-base:researchLab.papers.subtitle") "anchorId" "papers" "d" .) }}
+    {{ with partial "ui/sidebar/sidebar-layout" (dict "sidebar" .d.sidebar "d" .d) }}
+      {{ partial "ui/tabs/section-tabs" (dict "tabs" .d.tabs "panels" .d.panels) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ end }}

@@ -1,0 +1,16 @@
+{{- /*
+  Localize a site path for the current language (or (slice <lang> <path>)):
+  strips any existing locale prefix, prefixes non-default languages and adds a
+  trailing slash unless the path has a fragment. Absolute URLs pass through.
+*/ -}}
+{{- $lang := site.Language.Lang -}}
+{{- $href := . -}}
+{{- if reflect.IsSlice . }}{{ $lang = index . 0 }}{{ $href = index . 1 }}{{ end -}}
+{{- $langs := slice -}}
+{{- range hugo.Sites }}{{ $langs = $langs | append .Language.Lang }}{{ end -}}
+{{- $p := cond (hasPrefix $href "/") $href (printf "/%s" $href) -}}
+{{- $p = replaceRE (printf `^/(%s)(/|$)` (delimit $langs "|")) "/" $p -}}
+{{- $prefix := cond (eq $lang hugo.Sites.Default.Language.Lang) "" (printf "/%s" $lang) -}}
+{{- $out := printf "%s%s%s" $prefix $p (cond (strings.Contains $p "#") "" "/") -}}
+{{- if hasPrefix $href "http" }}{{ $out = $href }}{{ else }}{{ $out = replaceRE `/+` "/" $out }}{{ end -}}
+{{- return $out -}}

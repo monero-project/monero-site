@@ -1,0 +1,41 @@
+{{ define "meta" }}{{ .Store.Set "meta" (dict "title" (partial "helpers/t" "hangouts:pageTitle") "description" (partial "helpers/t" "hangouts:description")) }}{{ end }}
+{{ define "main" }}
+{{- $t := "helpers/t" -}}
+{{- $scope := dict "data-c-page-community-hangouts" true -}}
+{{- $d := dict "scope" $scope "data" hugo.Data.community.hangouts -}}
+{{ partial "ui/title-card" (dict "title" (partial $t "hangouts:hero.title") "subtitle" (partial $t "hangouts:hero.subtitle")) }}
+{{ with partial "ui/layout/page-container" (dict "attrs" $scope "d" $d) }}
+  {{ with partial "ui/internal-resource-button" (dict "icon" "users" "title" (partial "helpers/t" "hangouts:workgroupsNote.title") "href" (partial "helpers/href" "/community/workgroups")) }}
+    {{ partial "helpers/t" "hangouts:workgroupsNote.content" }}
+  {{ end }}
+
+  {{ with partial "ui/layout/grid" (dict "columns" 2 "gap" "2xl" "class" "hangouts-grid" "attrs" .d.scope "d" .d) }}
+    {{- $scope := .d.scope }}
+    {{- range slice (dict "title" "hangouts:chat.title" "links" .d.data.chatLinks) (dict "title" "hangouts:social.title" "links" .d.data.socialLinks) }}
+    {{ with partial "ui/layout/page-section" (dict "title" (partial "helpers/t" .title) "headingLevel" 2 "attrs" $scope "scope" $scope "links" .links) }}
+      {{ with partial "ui/layout/column" (dict "as" "ul" "gap" "sm" "attrs" .scope "scope" .scope "links" .links) }}
+        {{- $scope := .scope }}
+        {{- range .links }}
+        {{- $subtitle := "" }}{{ with .subtitleKey }}{{ $subtitle = partial "helpers/t" . }}{{ end }}
+        <li data-c-page-community-hangouts>
+          {{ partial "ui/external-resource-button" (dict "href" .href "title" (partial "helpers/t" .titleKey) "subtitle" $subtitle "logo" .logo "attrs" $scope) }}
+        </li>
+        {{- end }}
+      {{ end }}
+    {{ end }}
+    {{- end }}
+  {{ end }}
+
+  <hr aria-hidden="true" data-c-page-community-hangouts>
+
+  {{ with partial "ui/layout/page-section" (dict "title" (partial "helpers/t" "hangouts:channels.title") "attrs" .d.scope "d" .d) }}
+    {{ with partial "ui/layout/grid" (dict "as" "ul" "columns" 2 "gap" "sm" "attrs" .d.scope "d" .d) }}
+      {{- range .d.data.channels }}
+      <li data-c-page-community-hangouts>
+        {{ partial "pages/community/hangouts/ircchannel-button" (dict "name" .name "description" (partial "helpers/t" .descriptionKey) "href" .href "matrixHref" .matrixHref) }}
+      </li>
+      {{- end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ end }}

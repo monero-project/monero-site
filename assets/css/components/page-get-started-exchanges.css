@@ -1,0 +1,111 @@
+/* Styles for layouts/get-started/exchanges.html */
+fieldset[data-c-page-get-started-exchanges] {
+  border: none;
+  margin: 0;
+  padding: 0;
+  min-inline-size: 0;
+  display: contents;
+}
+
+.sr-only[data-c-page-get-started-exchanges] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.filter-toggle[data-c-page-get-started-exchanges] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#exchange-filters[data-c-page-get-started-exchanges]:has(#filter-fiat:checked)
+  ~ .exchanges-wrapper[data-c-page-get-started-exchanges]
+  tr[data-highlight~="fiat"],
+#exchange-filters[data-c-page-get-started-exchanges]:has(
+    #filter-privacy:checked
+  )
+  ~ .exchanges-wrapper[data-c-page-get-started-exchanges]
+  tr[data-highlight~="privacy"],
+#exchange-filters[data-c-page-get-started-exchanges]:has(
+    #filter-easiest:checked
+  )
+  ~ .exchanges-wrapper[data-c-page-get-started-exchanges]
+  tr[data-highlight~="user-friendly"] {
+  background: #ff98001a;
+}
+
+#exchange-filters[data-c-page-get-started-exchanges]:has(#filter-fiat:checked)
+  ~ .exchanges-wrapper[data-c-page-get-started-exchanges]
+  .filter-option[data-highlight~="fiat"],
+#exchange-filters[data-c-page-get-started-exchanges]:has(
+    #filter-privacy:checked
+  )
+  ~ .exchanges-wrapper[data-c-page-get-started-exchanges]
+  .filter-option[data-highlight~="privacy"],
+#exchange-filters[data-c-page-get-started-exchanges]:has(
+    #filter-easiest:checked
+  )
+  ~ .exchanges-wrapper[data-c-page-get-started-exchanges]
+  .filter-option[data-highlight~="user-friendly"] {
+  background: var(--card-color);
+  border-color: var(--monero-orange);
+}
+
+#exchange-filters[data-c-page-get-started-exchanges]:has(
+    #filter-easiest:checked
+  )
+  ~ .exchanges-wrapper[data-c-page-get-started-exchanges]
+  [data-highlight~="user-friendly"]:not(tr, .filter-option) {
+  outline: 2px solid var(--monero-orange);
+}
+
+#exchange-filters[data-c-page-get-started-exchanges]:has(
+    :checked:not(#filter-none)
+  )
+  ~ .exchanges-wrapper[data-c-page-get-started-exchanges]
+  .mobile-filter-subtitle {
+  display: block;
+}
+
+#exchange-filters[data-c-page-get-started-exchanges]:has(
+    #filter-easiest:checked
+  )
+  ~ .exchanges-wrapper[data-c-page-get-started-exchanges]
+  .filter-text[data-filter="easiest"],
+#exchange-filters[data-c-page-get-started-exchanges]:has(#filter-fiat:checked)
+  ~ .exchanges-wrapper[data-c-page-get-started-exchanges]
+  .filter-text[data-filter="fiat"],
+#exchange-filters[data-c-page-get-started-exchanges]:has(
+    #filter-privacy:checked
+  )
+  ~ .exchanges-wrapper[data-c-page-get-started-exchanges]
+  .filter-text[data-filter="privacy"] {
+  display: inline;
+}
+
+@media (width < 1200px) {
+  #mobile-filter-toggle[data-c-page-get-started-exchanges]:checked
+    ~ .exchanges-wrapper[data-c-page-get-started-exchanges]
+    .filters-panel {
+    box-shadow: 0 -8px 16px #00000059;
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+
+@media (width >= 1200px) {
+  #mobile-filter-toggle[data-c-page-get-started-exchanges] {
+    display: none;
+  }
+}

@@ -1,0 +1,20 @@
+{{- /*
+  A research paper: code, note badge, title, abstract and a read link.
+
+    {{ partial "pages/resources/research-lab/paper-card" $paper }}
+
+  Params: code, note, title, abstract, url (an entry of hugo.Data.resources.research-lab).
+*/ -}}
+{{ with partial "ui/card" (dict "as" "article" "padding" "lg" "class" "paper-card" "attrs" (dict "data-c-paper-card" true) "paper" .) }}
+  <div class="paper-header" data-c-paper-card>
+    {{- with .paper.code }}
+    <span class="paper-code" data-c-paper-card>{{ . }}</span>
+    {{- end }}
+    {{- with .paper.note }}
+    <span class="paper-badge" data-c-paper-card>{{ . }}</span>
+    {{- end }}
+  </div>
+  <h3 class="paper-title" data-c-paper-card>{{ .paper.title }}</h3>
+  <p class="paper-abstract" data-c-paper-card>{{ .paper.abstract }}</p>
+  {{ with partial "ui/icon-link" (dict "href" .paper.url "size" "sm" "attrs" (dict "data-c-paper-card" true)) }}{{ partial "helpers/t" "common:components.paperCard.readPaper" }}{{ end }}
+{{ end }}

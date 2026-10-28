@@ -1,0 +1,63 @@
+{{ define "meta" }}{{ .Store.Set "meta" (dict "title" (partial "helpers/t" "workgroups:pageTitle") "description" (partial "helpers/t" "workgroups:description")) }}{{ end }}
+{{ define "main" }}
+{{- $t := "helpers/t" -}}
+{{- $scope := dict "data-c-page-community-workgroups" true -}}
+{{- $data := hugo.Data.community.workgroups -}}
+{{- $columns := slice
+  (dict "key" "development" "workgroups" $data.developmentWorkgroups)
+  (dict "key" "research" "workgroups" $data.researchWorkgroups)
+  (dict "key" "community" "workgroups" $data.communityWorkgroups)
+-}}
+{{ partial "ui/title-card" (dict "title" (partial $t "workgroups:hero.title") "subtitle" (partial $t "workgroups:hero.subtitle")) }}
+{{ with partial "ui/layout/page-container" (dict "attrs" $scope "scope" $scope "columns" $columns) }}
+  {{ with partial "ui/internal-resource-button" (dict "icon" "message-circle" "title" (partial "helpers/t" "workgroups:hangoutsNote.title") "href" (partial "helpers/href" "/community/hangouts")) }}
+    {{ partial "helpers/t" "workgroups:hangoutsNote.content" }}
+  {{ end }}
+  {{ with partial "ui/hero-card" (dict
+    "image" "images/community-logo.avif"
+    "imageAlt" ""
+    "title" (partial "helpers/t" "workgroups:getStarted.communityWorkgroup.name")
+    "lead" (partial "helpers/t" "workgroups:getStarted.communityWorkgroup.lead")
+    "description" (partial "helpers/t" "workgroups:getStarted.communityWorkgroup.description")
+    "scope" .scope
+  ) }}
+    {{ with partial "ui/button" (dict "href" "https://matrix.to/#/#monero-community:monero.social" "target" "_blank" "rel" "noopener noreferrer" "attrs" .scope) -}}
+      {{ partial "helpers/t" "workgroups:getStarted.communityWorkgroup.cta" }}
+      {{ partial "ui/icons/mask-icon" (dict "src" "external-link" "size" "1em" "rtl" (eq site.Language.Direction "rtl")) }}
+    {{- end }}
+    {{ with partial "ui/button" (dict "href" "https://web.libera.chat/#monero-community" "target" "_blank" "rel" "noopener noreferrer" "variant" "secondary" "attrs" .scope) }}
+      {{ partial "ui/icons/mask-icon" (dict "src" "hashtag" "size" "0.9em") }}
+      IRC
+    {{ end }}
+  {{ end }}
+
+  <hr aria-hidden="true" data-c-page-community-workgroups>
+
+  <div class="workgroup-columns" data-c-page-community-workgroups>
+    {{- $scope := .scope }}
+    {{- range .columns }}
+    {{ with partial "ui/layout/page-section" (dict
+      "title" (partial "helpers/t" (printf "workgroups:columns.%s.title" .key))
+      "subtitle" (partial "helpers/t" (printf "workgroups:columns.%s.subtitle" .key))
+      "headingLevel" 3
+      "attrs" $scope
+      "workgroups" .workgroups
+    ) }}
+      <div class="column-cards" data-c-page-community-workgroups>
+        {{- range .workgroups }}
+        {{ partial "pages/community/workgroups/workgroup-card" (dict
+          "name" (partial "helpers/t" .nameKey)
+          "action" (partial "helpers/t" .actionKey)
+          "bestFor" (partial "helpers/t" .bestForKey)
+          "icon" .icon
+          "chatName" .chatName
+          "ircHref" .ircHref
+          "matrixHref" .matrixHref
+        ) }}
+        {{- end }}
+      </div>
+    {{ end }}
+    {{- end }}
+  </div>
+{{ end }}
+{{ end }}
