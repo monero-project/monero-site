@@ -1,0 +1,78 @@
+{
+    "pageTitle": "",
+    "hero": {
+        "title": "",
+        "subtitle": ""
+    },
+    "sidebarTitle": "",
+    "filtersDescription": "",
+    "sections": {
+        "decentralized": {
+            "title": "",
+            "description": ""
+        },
+        "aggregators": {
+            "title": "",
+            "description": "",
+            "disclaimer": "",
+            "resourceBtnTitle": "",
+            "resourceBtnSubtitle": "",
+            "resourceIntro": "",
+            "tip": ""
+        },
+        "centralized": {
+            "title": "",
+            "description": ""
+        }
+    },
+    "descriptions": {
+        "basicswapdex": "",
+        "bisq": "",
+        "eigenwallet": "",
+        "retoswap": "",
+        "cyphergoat": "",
+        "orangefren": "",
+        "trocador": "",
+        "bitfinex": "",
+        "kraken": "",
+        "kucoin": ""
+    },
+    "highlightOptions": {
+        "easiest": {
+            "title": "",
+            "subtitle": ""
+        },
+        "fiat": {
+            "title": "",
+            "subtitle": ""
+        },
+        "privacy": {
+            "title": "",
+            "subtitle": ""
+        },
+        "selectedText": {
+            "easiest": "",
+            "fiat": "",
+            "privacy": ""
+        }
+    },
+    "disclaimerTitle": "",
+    "disclaimer": "",
+    "clearSelection": "",
+    "table": {
+        "name": "",
+        "kyc": "",
+        "fiat": "",
+        "crypto": "",
+        "visit": ""
+    },
+    "kyc": {
+        "required": "",
+        "optional": "",
+        "none": ""
+    },
+    "aria": {
+        "clearFilters": "",
+        "toggleFilters": ""
+    }
+}

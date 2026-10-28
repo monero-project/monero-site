@@ -1,0 +1,57 @@
+{
+    "pageTitle": "",
+    "description": "",
+    "hero": {
+        "title": "",
+        "subtitle": ""
+    },
+    "workgroupsNote": {
+        "title": "",
+        "content": ""
+    },
+    "chat": {
+        "title": "",
+        "matrix": {
+            "title": "",
+            "subtitle": ""
+        },
+        "discord": {
+            "title": ""
+        },
+        "telegram": {
+            "title": ""
+        }
+    },
+    "social": {
+        "title": "",
+        "reddit": {
+            "title": "",
+            "subtitle": ""
+        },
+        "x": {
+            "title": "",
+            "subtitle": ""
+        }
+    },
+    "channels": {
+        "title": "",
+        "monero": {
+            "description": ""
+        },
+        "community": {
+            "description": ""
+        },
+        "markets": {
+            "description": ""
+        },
+        "offtopic": {
+            "description": ""
+        },
+        "mining": {
+            "description": ""
+        },
+        "support": {
+            "description": ""
+        }
+    }
+}

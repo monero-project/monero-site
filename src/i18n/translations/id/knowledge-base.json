@@ -1,0 +1,76 @@
+{
+    "index": {
+        "pageTitle": "",
+        "title": "",
+        "subtitle": ""
+    },
+    "library": {
+        "pageTitle": "",
+        "title": "",
+        "cardSubtitle": "",
+        "subtitle": "",
+        "sections": {
+            "books": {
+                "title": "",
+                "tocSubtitle": "",
+                "subtitle": ""
+            },
+            "cheatsheets": {
+                "title": "",
+                "tocSubtitle": "",
+                "salmonSeries": {
+                    "title": "",
+                    "description": ""
+                }
+            },
+            "newsletters": {
+                "title": "",
+                "tocSubtitle": "",
+                "subtitle": ""
+            }
+        },
+        "aria": {
+            "sectionsNav": ""
+        }
+    },
+    "moneropedia": {
+        "pageTitle": "",
+        "title": "",
+        "cardSubtitle": "",
+        "subtitle": "",
+        "searchPlaceholder": "",
+        "readMore": "",
+        "aria": {
+            "navBar": ""
+        }
+    },
+    "researchLab": {
+        "pageTitle": "",
+        "title": "",
+        "cardSubtitle": "",
+        "subtitle": "",
+        "hero": {
+            "imageAlt": "",
+            "title": "",
+            "description": ""
+        },
+        "papers": {
+            "title": "",
+            "subtitle": "",
+            "tabs": {
+                "mrlBulletins": "",
+                "iacr": "",
+                "other": ""
+            }
+        },
+        "whitepapers": {
+            "title": "",
+            "subtitle": "",
+            "items": {
+                "cryptonote": "",
+                "annotated": "",
+                "goodellReview": ""
+            }
+        }
+    }
+}

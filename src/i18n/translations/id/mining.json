@@ -1,0 +1,104 @@
+{
+    "pageTitle": "",
+    "description": "",
+    "hero": {
+        "title": "",
+        "subtitle": ""
+    },
+    "gupax": {
+        "title": "",
+        "imageAlt": "",
+        "subtitle": "",
+        "lead": "",
+        "bullets": [
+            "",
+            "",
+            ""
+        ],
+        "cta": ""
+    },
+    "xmrig": {
+        "title": "",
+        "imageAlt": "",
+        "subtitle": "",
+        "lead": "",
+        "bullets": [
+            "",
+            ""
+        ],
+        "cta": ""
+    },
+    "solo": {
+        "title": "",
+        "imageAlt": "",
+        "subtitle": "",
+        "lead": "",
+        "bullets": [
+            "",
+            ""
+        ],
+        "cta": ""
+    },
+    "resources": {
+        "title": "",
+        "guides": {
+            "title": "",
+            "mineToPool": {
+                "title": "",
+                "subtitle": ""
+            },
+            "gupaxSetup": {
+                "title": "",
+                "subtitle": ""
+            }
+        },
+        "pools": {
+            "title": "",
+            "comparePools": {
+                "title": "",
+                "subtitle": ""
+            }
+        },
+        "benchmarks": {
+            "title": "",
+            "hashrateEstimates": {
+                "title": "",
+                "subtitle": ""
+            }
+        }
+    },
+    "faq": {
+        "title": "",
+        "whatIsRandomX": {
+            "title": "",
+            "content": ""
+        },
+        "soloVsPool": {
+            "title": "",
+            "content": ""
+        },
+        "whyP2Pool": {
+            "title": "",
+            "content": ""
+        },
+        "hardwareExpectations": {
+            "title": "",
+            "content": ""
+        },
+        "whatMiningSoftware": {
+            "title": "",
+            "content": ""
+        },
+        "whereToGetHelp": {
+            "title": "",
+            "content": ""
+        }
+    },
+    "disclaimer": {
+        "title": "",
+        "content": ""
+    },
+    "aria": {
+        "miningOptions": ""
+    }
+}

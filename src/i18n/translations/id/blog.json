@@ -1,0 +1,78 @@
+{
+    "rssTitle": "",
+    "tagLabels": {
+        "0mq": "",
+        "accounts": "",
+        "announcements": "",
+        "blockchaindb": "",
+        "branding": "",
+        "ccs": "",
+        "community": "",
+        "compliance": "",
+        "conferences": "",
+        "core": "",
+        "crypto": "",
+        "cryptography": "",
+        "dev": "",
+        "dev diaries": "",
+        "development": "",
+        "docs": "",
+        "exchanges": "",
+        "external": "",
+        "forkguard": "",
+        "funding": "",
+        "gui": "",
+        "i2p": "",
+        "i8n": "",
+        "jamtis": "",
+        "kovri": "",
+        "magic": "",
+        "malware": "",
+        "mining": "",
+        "monero": "",
+        "monero missives": "",
+        "mymonero": "",
+        "network upgrade": "",
+        "platforms": "",
+        "protocol": "",
+        "protocol upgrade": "",
+        "releases": "",
+        "research": "",
+        "rpc": "",
+        "seraphis": "",
+        "urgent": "",
+        "usability": ""
+    },
+    "index": {
+        "pageTitle": "",
+        "hero": {
+            "title": "",
+            "subtitle": ""
+        }
+    },
+    "tagIndex": {
+        "pageTitle": "",
+        "hero": {
+            "title": "",
+            "subtitle": ""
+        }
+    },
+    "tags": {
+        "pageTitle": "",
+        "hero": {
+            "title": "",
+            "subtitle": ""
+        }
+    },
+    "post": {
+        "pageTitle": "",
+        "recentPosts": "",
+        "and": ""
+    },
+    "tabs": {
+        "allPosts": ""
+    },
+    "aria": {
+        "rssFeed": ""
+    }
+}

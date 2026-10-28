@@ -1,0 +1,115 @@
+{
+    "index": {
+        "pageTitle": "",
+        "title": "",
+        "subtitle": ""
+    },
+    "network": {
+        "title": "",
+        "subtitle": "",
+        "mine": {
+            "title": "",
+            "description": "",
+            "learnAboutMining": "",
+            "imageAlt": "",
+            "bullets": {
+                "earnXmr": "",
+                "noSpecializedHardware": "",
+                "convertCpuPower": ""
+            }
+        },
+        "runANode": {
+            "title": "",
+            "description": "",
+            "moneroDocs": "",
+            "sethForPrivacy": "",
+            "imageAlt": "",
+            "bullets": {
+                "validateBlocks": "",
+                "reduceReliance": "",
+                "enableOthers": ""
+            }
+        }
+    },
+    "develop": {
+        "title": "",
+        "subtitle": "",
+        "coreProjects": "",
+        "coreProjectsSubtitle": "",
+        "table": {
+            "project": "",
+            "description": "",
+            "stack": "",
+            "visit": ""
+        },
+        "daemon": {
+            "title": "",
+            "description": ""
+        },
+        "guiWallet": {
+            "title": "",
+            "description": ""
+        },
+        "moneroWebsite": {
+            "title": "",
+            "description": ""
+        },
+        "moneroDocs": {
+            "title": "",
+            "description": ""
+        },
+        "bounties": {
+            "title": "",
+            "description": "",
+            "browseMoneroBounties": "",
+            "securityDisclosures": ""
+        },
+        "workgroups": {
+            "title": "",
+            "description": "",
+            "joinWorkgroups": ""
+        },
+        "resources": {
+            "title": "",
+            "moneroDocs": "",
+            "librariesSdks": "",
+            "githubOrganization": ""
+        },
+        "communityProjects": "",
+        "communityProjectsSubtitle": "",
+        "xmrig": {
+            "title": "",
+            "description": ""
+        },
+        "cuprate": {
+            "title": "",
+            "description": ""
+        },
+        "p2pool": {
+            "title": "",
+            "description": ""
+        }
+    },
+    "donate": {
+        "title": "",
+        "subtitle": "",
+        "ccs": {
+            "title": "",
+            "lead": "",
+            "description": "",
+            "viewProposals": ""
+        },
+        "generalFund": {
+            "title": "",
+            "subtitle": "",
+            "description": "",
+            "moneroXmr": "",
+            "bitcoinBtc": "",
+            "viewOnlyWalletDetails": "",
+            "primaryAddress": "",
+            "viewKey": "",
+            "openAlias": "",
+            "contact": ""
+        }
+    }
+}
