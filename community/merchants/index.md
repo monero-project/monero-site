@@ -18,6 +18,7 @@ meta_descr: merchants.descr
         <ul class="logo">
           <li><a href="https://cryptwerk.com/pay-with/xmr/">cryptwerk.com</a></li>
           <li><a href="https://monerica.com">Monerica</a></li>
+          <li><a href="https://xmr.club">xmr.club</a></li>
         </ul>
       </div>
     </div>
