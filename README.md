@@ -44,7 +44,7 @@ See [Understanding the project structure](docs/understanding-the-project-structu
 
 ## Commands
 
-You need [Hugo extended](https://gohugo.io/installation/) **v0.167.0** (the version CI and Docker use). The checks below also need Python 3, `jq`, [yamlfmt](https://github.com/google/yamlfmt) and [Biome](https://biomejs.dev/); nothing needs Node.js.
+You need [Hugo extended](https://gohugo.io/installation/) **v0.167.0** (the version CI and Docker use). The checks below are optional (CI runs them on every PR) and need Python 3 and [pre-commit](https://pre-commit.com/); see [Git hooks](#git-hooks-optional).
 
 | Command                                | Action                                                 |
 | :------------------------------------- | :----------------------------------------------------- |
@@ -52,12 +52,22 @@ You need [Hugo extended](https://gohugo.io/installation/) **v0.167.0** (the vers
 | `hugo`                                 | Builds the site to `./dist/`                           |
 | `python3 scripts/check-scoped-css.py`  | Checks that component styles only style their component |
 | `python3 scripts/check-no-js.py`       | Checks the built site in `./dist/` has no JavaScript   |
-| `python3 scripts/check-css-format.py`  | Checks stylesheets follow the project's formatting     |
-| `biome lint --error-on-warnings`       | Lints the stylesheets ([Biome](https://biomejs.dev/), rules in `biome.json`) |
-| `yamlfmt` / `yamlfmt -lint`            | Formats / checks the data YAML files ([yamlfmt](https://github.com/google/yamlfmt)) |
-| `jq . file.json > tmp && mv tmp file.json` | Formats a JSON data file the way CI expects        |
+| `pre-commit run biome-check --all-files` | Lints the stylesheets and fixes their formatting ([Biome](https://biomejs.dev/), settings in `biome.json`) |
+| `pre-commit run yamllint --all-files`  | Lints the data YAML files ([yamllint](https://yamllint.readthedocs.io/), settings in `.yamllint`) |
+| `pre-commit run --all-files`           | Runs all of CI's lint and format checks, fixing what they can ([pre-commit](https://pre-commit.com/)) |
 
 A full build takes about a minute and a half the first time (it resizes images and draws the blog's preview cards); after that Hugo reuses its cache in `resources/_gen/`.
+
+### Git hooks (optional)
+
+To run CI's checks on your staged files before each commit, fixing what they can (formatting, final newlines, trailing spaces):
+
+```bash
+pip install pre-commit
+pre-commit install --install-hooks
+```
+
+This downloads the tools the hooks use, at the versions in `.pre-commit-config.yaml` (the ones CI uses, kept current by Dependabot), into pre-commit's own cache, `~/.cache/pre-commit/`: about 350 MB, nothing in the repository and nothing on your `PATH`. Most of it (about 310 MB) is [Biome](https://biomejs.dev/), the CSS linter: its official hook is a Node.js package, so pre-commit gives it a private copy of Node.js. The rest is [yamllint](https://yamllint.readthedocs.io/) and the other Python hooks. It takes about half a minute, once. `pre-commit uninstall` removes the hook and `pre-commit clean` deletes the cache.
 
 ## Docker
 

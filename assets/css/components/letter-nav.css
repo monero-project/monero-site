@@ -37,7 +37,9 @@
     top: var(--sticky-offset);
     align-self: flex-start;
     max-height: calc(
-      100vh - var(--sticky-offset) - calc(var(--sticky-offset) / 2)
+      100vh -
+      var(--sticky-offset) -
+      calc(var(--sticky-offset) / 2)
     );
     margin-bottom: var(--space-xl);
     overflow: hidden auto;

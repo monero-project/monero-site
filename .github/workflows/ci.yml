@@ -13,10 +13,7 @@ permissions:
 
 env:
   HUGO_VERSION: "0.167.0"
-  YAMLFMT_VERSION: "0.21.0"
-  BIOME_VERSION: "2.5.15"
-  # biome-linux-x64 of that release (GitHub's digest; Biome publishes no checksums file)
-  BIOME_SHA256: "5d867a0b2ccea1755b7e508b01d836a8c64e31a1e4d11ec24b43b6b4eec8b3b6"
+  PRE_COMMIT_VERSION: "4.6.2"
 
 jobs:
   lint:
@@ -41,44 +38,20 @@ jobs:
           fi
           echo "All unescaped output is in reviewed places"
 
-      - name: Check component styles are scoped
-        run: python3 scripts/check-scoped-css.py
+      # the pre-commit hooks (.pre-commit-config.yaml) on every file: CSS lint and
+      # formatting (Biome), component styles scoped, YAML (yamllint) and JSON
+      # formatting, final newlines, trailing spaces, valid JSON/YAML. pre-commit
+      # installs Biome and yamllint from the revs in its config.
+      - name: Cache pre-commit's hook environments
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pre-commit
+          key: pre-commit-${{ hashFiles('.pre-commit-config.yaml') }}
 
-      - name: Check CSS formatting
-        run: python3 scripts/check-css-format.py
-
-      - name: Lint CSS (Biome)
-        # rules: biome.json (Biome's recommended set); warnings fail too
+      - name: Run the pre-commit hooks
         run: |
-          curl -sSL -o biome "https://github.com/biomejs/biome/releases/download/%40biomejs/biome%40${BIOME_VERSION}/biome-linux-x64"
-          echo "${BIOME_SHA256}  biome" | sha256sum -c
-          chmod +x biome
-          ./biome lint --error-on-warnings
-
-      - name: Check YAML formatting
-        run: |
-          base="https://github.com/google/yamlfmt/releases/download/v${YAMLFMT_VERSION}"
-          tarball="yamlfmt_${YAMLFMT_VERSION}_Linux_x86_64.tar.gz"
-          curl -sSLO "$base/$tarball"
-          curl -sSLO "$base/checksums.txt"
-          grep " $tarball\$" checksums.txt | sha256sum -c
-          tar -xzf "$tarball" yamlfmt
-          ./yamlfmt -lint
-
-      - name: Check JSON files are valid and formatted
-        # translations are left to Weblate; everything else is kept in jq's format
-        run: |
-          status=0
-          for f in $(git ls-files '*.json' ':!src/i18n/translations/**'); do
-            if ! jq . "$f" | diff -q - "$f" > /dev/null; then
-              echo "::error file=$f::not valid JSON or not formatted (fix with: jq . $f > tmp && mv tmp $f)"
-              status=1
-            fi
-          done
-          for f in $(git ls-files 'src/i18n/translations/**/*.json'); do
-            jq empty "$f" || { echo "::error file=$f::not valid JSON"; status=1; }
-          done
-          exit $status
+          pip install "pre-commit==${PRE_COMMIT_VERSION}"
+          pre-commit run --all-files --show-diff-on-failure
 
   reproducible-archive:
     # Build the site twice and check both archives are byte-identical. On a

@@ -1,0 +1,4 @@
+# yamllint (https://yamllint.readthedocs.io/) settings for the site's data files
+extends: relaxed
+rules:
+  line-length: disable

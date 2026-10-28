@@ -3,9 +3,9 @@
   display: grid;
   gap: var(--grid-gap);
   grid-template-columns: repeat(
-    auto-fit,
-    minmax(min(var(--grid-min-width), 100%), 1fr)
-  );
+      auto-fit,
+      minmax(min(var(--grid-min-width), 100%), 1fr)
+    );
 
   &:is(ul, ol) {
     list-style: none;
@@ -17,12 +17,16 @@
     --gap-count: calc(var(--grid-col-count) - 1);
     --total-gap-width: calc(var(--gap-count) * var(--grid-gap));
     --grid-max-width: calc(
-      (100% - var(--total-gap-width)) / var(--grid-col-count)
+      (100% - var(--total-gap-width)) /
+      var(--grid-col-count)
     );
 
     grid-template-columns: repeat(
-      auto-fit,
-      minmax(min(100%, max(var(--grid-min-width), var(--grid-max-width))), 1fr)
-    );
+        auto-fit,
+        minmax(
+          min(100%, max(var(--grid-min-width), var(--grid-max-width))),
+          1fr
+        )
+      );
   }
 }

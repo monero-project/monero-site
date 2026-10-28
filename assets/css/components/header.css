@@ -122,13 +122,49 @@
     block-size: 2px;
     border-radius: 1px;
     background: currentcolor;
-    transform:
-      translate(
-        calc((var(--x0) + (var(--x1) - var(--x0)) * var(--a) + (var(--x2) - var(--x1)) * var(--c)) * 1px),
-        calc((var(--y0) + (var(--y1) - var(--y0)) * var(--a) + (var(--y2) - var(--y1)) * var(--c)) * 1px)
+    transform: translate(
+        calc(
+          (
+            var(--x0) +
+            (var(--x1) - var(--x0)) *
+            var(--a) +
+            (var(--x2) - var(--x1)) *
+            var(--c)
+          ) *
+          1px
+        ),
+        calc(
+          (
+            var(--y0) +
+            (var(--y1) - var(--y0)) *
+            var(--a) +
+            (var(--y2) - var(--y1)) *
+            var(--c)
+          ) *
+          1px
+        )
       )
-      rotate(calc((var(--r0) + (var(--r1) - var(--r0)) * var(--a) + (var(--r2) - var(--r1)) * var(--c)) * 1deg))
-      scaleX(calc(var(--s0) + (var(--s1) - var(--s0)) * var(--a) + (var(--s2) - var(--s1)) * var(--c)));
+      rotate(
+        calc(
+          (
+            var(--r0) +
+            (var(--r1) - var(--r0)) *
+            var(--a) +
+            (var(--r2) - var(--r1)) *
+            var(--c)
+          ) *
+          1deg
+        )
+      )
+      scaleX(
+        calc(
+          var(--s0) +
+          (var(--s1) - var(--s0)) *
+          var(--a) +
+          (var(--s2) - var(--s1)) *
+          var(--c)
+        )
+      );
   }
 
   /* the burger's top, middle (twice) and bottom lines; the M's left stroke,
@@ -170,7 +206,9 @@
   }
 }
 
-.nav-toggle[data-c-header]:checked ~ .hamburger[data-c-header] .burger[data-c-header] {
+.nav-toggle[data-c-header]:checked
+  ~ .hamburger[data-c-header]
+  .burger[data-c-header] {
   --t: 1;
 }
 

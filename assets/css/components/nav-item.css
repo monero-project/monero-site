@@ -180,10 +180,10 @@
 
 @media (width >= 1200px) and (hover: hover) and (pointer: fine) {
   .nav-item[data-c-nav-item][data-is-dropdown]:is(
-      :hover,
-      :focus-within,
-      :has(.dropdown :focus-visible)
-    ) {
+    :hover,
+    :focus-within,
+    :has(.dropdown :focus-visible)
+  ) {
     & > .dropdown[data-c-nav-item] {
       visibility: visible;
       pointer-events: auto;

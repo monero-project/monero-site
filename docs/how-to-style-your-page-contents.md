@@ -145,12 +145,12 @@ CSS variables can't be used in media queries, so write the numbers.
 - Check color contrast and focus states. `prefers-color-scheme: dark` is already supported via the variables; only write a `@media (prefers-color-scheme: dark)` rule for something the variables don't cover.
 - Use semantic HTML, ARIA attributes where necessary, and ensure keyboard operability (e.g., focus-visible outlines).
 
-## Linting CSS (Biome)
+## Linting and formatting CSS (Biome)
 
-CI lints `assets/css/` with [Biome](https://biomejs.dev/)'s recommended rules (unknown properties, units, functions and pseudo-classes, duplicates, empty blocks, specificity order…); the settings are in `biome.json`, and warnings fail too. Biome is a single program: download `biome-linux-x64` (or your platform's) from the [release CI uses](https://github.com/biomejs/biome/releases) (see `BIOME_VERSION` in `.github/workflows/ci.yml`), then in the repository:
+CI checks `assets/css/` with [Biome](https://biomejs.dev/): its recommended lint rules (unknown properties, units, functions and pseudo-classes, duplicates, empty blocks, specificity order…) and its formatting (2-space indents, lines up to 80 characters). The settings are in `biome.json`, and warnings fail too. pre-commit installs the Biome version in `.pre-commit-config.yaml` (Dependabot keeps it current), then in the repository:
 
 ```bash
-biome lint --error-on-warnings
+pre-commit run biome-check --all-files   # what CI runs; fixes the formatting (and safe lint fixes)
 ```
 
 To silence a rule for one line, say why: `/* biome-ignore lint/<group>/<rule>: reason */` on the line before.
@@ -160,6 +160,6 @@ To silence a rule for one line, say why: `/* biome-ignore lint/<group>/<rule>: r
 - [ ] CSS is in `assets/css/components/<name>.css`, imported in `main.css`, and scoped (or added to `assets/css/base/` with justification).
 - [ ] Uses CSS variables instead of hard-coded colors or sizes.
 - [ ] Works in dark mode and on common breakpoints.
-- [ ] `python3 scripts/check-scoped-css.py` and `python3 scripts/check-css-format.py` pass, and Biome (above) is clean.
+- [ ] `python3 scripts/check-scoped-css.py` passes, and Biome (above) is clean.
 
 Links: [How to Make a New Page](how-to-make-a-new-page.md) | [How to Use the UI Library](how-to-use-the-ui-library.md) | [How to Handle Assets and Images](how-to-handle-assets-and-images.md)

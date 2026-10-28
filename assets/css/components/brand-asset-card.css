@@ -5,8 +5,8 @@
   justify-content: center;
   padding: var(--space-xl);
   margin-bottom: var(--space-lg);
-  background: repeating-conic-gradient(#e4e1e9 0% 25%, #f9f7fc 0% 50%) 50% /
-    16px 16px;
+  background:
+    repeating-conic-gradient(#e4e1e9 0% 25%, #f9f7fc 0% 50%) 50% / 16px 16px;
   border-radius: var(--radius-md);
 
   & img {

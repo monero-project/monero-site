@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.5.15/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.6.3/schema.json",
   "files": {
     "includes": [
       "assets/css/**/*.css",
@@ -7,7 +7,10 @@
     ]
   },
   "formatter": {
-    "enabled": false
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 80
   },
   "assist": {
     "enabled": false
@@ -16,6 +19,11 @@
     "enabled": true,
     "rules": {
       "preset": "recommended"
+    }
+  },
+  "json": {
+    "formatter": {
+      "enabled": false
     }
   }
 }

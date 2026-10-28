@@ -6,7 +6,7 @@ Quick, minimal steps to get the site running locally so you can start contributi
 
 - [Hugo extended](https://gohugo.io/installation/) **v0.167.0**, the version CI and Docker use. Use the release binary from GitHub (or your package manager if it has exactly this version). It must be the *extended* edition.
 - Git, for cloning and PRs.
-- Optional: Python 3, `jq`, [yamlfmt](https://github.com/google/yamlfmt) and [Biome](https://biomejs.dev/), to run the checks locally (CI runs them anyway). Nothing needs Node.js.
+- Optional: Python 3 and [pre-commit](https://pre-commit.com/), to run the checks locally (CI runs them anyway). It downloads the tools the checks use, about 350 MB in `~/.cache/pre-commit/`, see [Git hooks](../README.md#git-hooks-optional).
 
 Verify:
 
@@ -48,10 +48,10 @@ The site is written to `dist/`.
 
 - Check component styles: `python3 scripts/check-scoped-css.py`
 - Check the built site has no JavaScript: `python3 scripts/check-no-js.py` (after `hugo`)
-- Check CSS formatting: `python3 scripts/check-css-format.py` (2-space indents, one `property: value;` per line; it tells you the file and line)
-- Lint CSS: `biome lint --error-on-warnings` (see [How to style your page contents](how-to-style-your-page-contents.md#linting-css-biome))
-- Format the data YAML files: `yamlfmt` (check only: `yamlfmt -lint`)
-- Format a JSON data file: `jq . src/data/downloads/core.json > tmp && mv tmp src/data/downloads/core.json` (CI checks JSON files are in this format)
+- Lint CSS and check its formatting: `pre-commit run biome-check --all-files` (it fixes the formatting) (see [How to style your page contents](how-to-style-your-page-contents.md#linting-and-formatting-css-biome))
+- Optional: check your staged files before each commit, fixing the formatting of CSS and JSON: `pip install pre-commit`, then `pre-commit install --install-hooks` once (`.pre-commit-config.yaml`)
+- Lint the data YAML files: `pre-commit run yamllint --all-files`
+- Run all of CI's lint and format checks, fixing what they can: `pre-commit run --all-files` (`pip install pre-commit`)
 
 ## Troubleshooting
 
