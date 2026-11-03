@@ -23,6 +23,7 @@ meta_descr: meta_descr.tools
                         <p><a href="https://monerowat.ch/">Monero Watch</a></p>
                         <p><a href="https://p2pool.io/explorer/">P2Pool</a> (<a href="http://yucmgsbw7nknw7oi3bkuwudvc657g2xcqahhbjyewazusyytapqo4xid.onion/explorer/">{% t tools.onion-service %}</a>)</p>
                         <p><a href="https://localmonero.co/blocks/">LocalMonero.co blocks</a> (<a href="http://nehdddktmhvqklsnkjqcbpmb63htee2iznpcbs5tgzctipxykpj6yrid.onion/blocks">{% t tools.onion-service %}</a>)</p>
+                        <p><a href="https://ghostswap.io/explorer/">GhostSwap Monero Explorer</a></p>
                     </div>
                 </div>
             </div>
