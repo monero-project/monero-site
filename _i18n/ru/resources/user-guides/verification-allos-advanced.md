@@ -1,4 +1,4 @@
-{% include disclaimer.html translated="yes" translationOutdated="no" %}
+{% include disclaimer.html translated="yes" translationOutdated="yes" %}
 
 Верификация двоичных файлов Monero производится до извлечения, установки или
 использования программного обеспечения Monero. Это единственный способ

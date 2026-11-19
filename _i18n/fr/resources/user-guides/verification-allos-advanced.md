@@ -1,4 +1,4 @@
-{% include disclaimer.html translated="yes" translationOutdated="no" %}
+{% include disclaimer.html translated="yes" translationOutdated="yes" %}
 
 Les fichiers binaires Monero devrait être vérifiés avant extraction,
 installation ou utilisation de l'application Monero. C'est l'unique manière

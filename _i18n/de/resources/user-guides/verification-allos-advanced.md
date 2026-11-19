@@ -1,4 +1,4 @@
-{% include disclaimer.html translated="yes" translationOutdated="no" %}
+{% include disclaimer.html translated="yes" translationOutdated="yes" %}
 
 Vor dem Extrahieren, Installieren oder Nutzen der Monero-Software sollten
 die Monero-Binärdateien verifiziert werden, da du nur so sichergehen kannst,

@@ -1,4 +1,4 @@
-{% include disclaimer.html translated="yes" translationOutdated="no" %}
+{% include disclaimer.html translated="yes" translationOutdated="yes" %}
 
 Verifisering av Monero-binærfilene bør gjøres i forkant av utpakking av filer, installering eller bruk av Monero-programvaren. Dette er den eneste måten å sikre at du bruker den offisielle Monero-binærfilen. Hvis du mottar en falsk binærfil (f.eks. ved phishing, MITM osv.), vil denne guiden beskytte deg fra å bli lurt til å bruke den.
 

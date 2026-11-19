@@ -1,4 +1,4 @@
-{% include disclaimer.html translated="yes" translationOutdated="no" %}
+{% include disclaimer.html translated="yes" translationOutdated="yes" %}
 
 Verifisering av Monero-binærfilene bør gjøres i forkant av utpakking,
 installering eller bruk av Monero-programvaren. Dette er den eneste måten å

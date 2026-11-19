@@ -1,10 +1,10 @@
 {% include disclaimer.html translated="no" translationOutdated="no" %}
 
-Verification of the Monero binary files should be done prior to extracting, installing, or using the Monero software. This is the only way to ensure that you are using the official Monero binary. If you receive a fake binary (eg. phishing, MITM, etc.), following this guide will protect you from being tricked into using it.
+Verify a Monero archive before extracting or running it. This guide checks that your download matches the SHA256 hash in `hashes.txt`, signed by binaryFate. Verify the signing key's fingerprint as described below before trusting that comparison.
 
-To protect the integrity of the binaries the Monero team provides a cryptographically signed list of all the [SHA256](https://en.wikipedia.org/wiki/SHA-2) hashes. If your downloaded binary has been tampered with it will be produce a [different hash](https://en.wikipedia.org/wiki/File_verification) than the one in the file.
+A matching signed hash does not establish how the archive was built. Gitian lets independent builders build the same CLI release from source and compare their output hashes. As a separate CLI example, their [signed results for v0.18.5.4 on Windows](https://github.com/monero-project/gitian.sigs/tree/master/v0.18.5.4-win) can be checked against the released CLI files. Those results do not cover the GUI archive used in the examples below; the GUI's [reproducible build instructions](https://github.com/monero-project/monero-gui#building-reproducible-windows-static-binaries-with-docker-any-os) are separate.
 
-This is a beginners guide for the Windows operating system and will make use of GUIs almost exclusively. It will walk you through the process of installing the required software, importing the signing key, downloading the necessary files, and finally verifying that your binary is authentic.
+This is a beginners guide for the Windows operating system and will make use of GUIs almost exclusively. It will walk you through the process of installing the required software, importing the signing key, downloading the necessary files, and finally checking your download against the signed hash.
 
 ## Table of Contents
 
@@ -204,7 +204,7 @@ If you receive an **INVALID** signature, **DO NOT CONTINUE.** Instead delete the
 
 ## 4. Binary File Verification
 
-This section will cover downloading the Monero binary and verifying its authenticity.
+This section will cover downloading the Monero binary and comparing it with the signed release hash.
 
 ### 4.1. Download Binary
 
@@ -242,6 +242,6 @@ Compare the hash from the terminal with the one in the hash file. They should be
 
 ![binary compare hashes](/img/resources/user-guides/en/verify_binary_windows_beginner/verify-win_binary-word-cmd-compare.png)
 
-If your hash **DOES** match then you are finished with verification! You can be sure the Monero files you have are authentic. You may extract and install/use the files normally.
+If your hash **DOES** match the signed list, you have completed this guide. You may extract and install/use the files normally.
 
 If your hash **DOES NOT** match **DO NOT CONTINUE.** Instead delete the Monero binary from the `Downloads` directory and go back to [section 4.1](#41-download-binary).

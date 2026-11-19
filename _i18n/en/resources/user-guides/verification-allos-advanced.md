@@ -1,22 +1,23 @@
 {% include disclaimer.html translated="no" translationOutdated="no" %}
 
-Verification of the Monero binary files should be done prior to extracting,
-installing, or using the Monero software. This is the only way to ensure
-that you are using the official Monero software. If you receive a fake
-Monero binary (eg. phishing, MITM, etc.), following this guide will protect
-you from being tricked into using it.
+Verify a Monero archive before extracting or running it. This guide checks
+that your download matches the [SHA256](https://en.wikipedia.org/wiki/SHA-2)
+hash in `hashes.txt`, signed by binaryFate. Verify the signing key's
+fingerprint as described below before trusting that comparison.
 
-To protect the integrity of the binaries the Monero team provides a
-cryptographically signed list of all the
-[SHA256](https://en.wikipedia.org/wiki/SHA-2) hashes. If your downloaded
-binary has been tampered with it will be produce a [different
-hash](https://en.wikipedia.org/wiki/File_verification) than the one in the
-file.
+A matching signed hash does not establish how the archive was built. Gitian
+lets independent builders build the same CLI release from source and compare
+their output hashes. The [signed build results for CLI
+releases](https://github.com/monero-project/gitian.sigs), including v0.18.5.4,
+can be checked separately against the released CLI files. They do not cover
+the GUI archives used in the examples below; the GUI's
+[reproducible build instructions](https://github.com/monero-project/monero-gui)
+are separate.
 
 This is an advanced guide for Linux, Mac, or Windows operating systems and
 will make use of the command line. It will walk you through the process of
 installing the required software, importing the signing key, downloading the
-necessary files, and finally verifying that your binary is authentic.
+necessary files, and finally checking your download against the signed hash.
 
 ## Table of Contents:
 
@@ -187,8 +188,8 @@ file for your binary file.
 monero-linux-x64-v0.15.0.1.tar.bz2
 ```
 
-If your hash **DOES** match, then you are finished with the guide! You can
-extract the files and install.
+If your hash **DOES** match the signed list, you have completed this guide.
+You can extract the files and install.
 
 If your hash **DOES NOT** match, **DO NOT CONTINUE.** Instead delete the
 binary you downloaded and go back to [section Get Monero binary](#get-monero-binary).
