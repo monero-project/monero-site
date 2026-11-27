@@ -915,6 +915,15 @@ library:
     <li>Nuovi sviluppi come Kovri, Bulletproofs, Multifirma, Portafogli hardware etc.</li></ul>
     Visita il sito <a href="https://masteringmonero.com/">Mastering Monero</a> per
     informazioni sulla versione completa.
+  masteringmonerop1: "Una guida sul mondo apparentemente complesso di Monero."
+  masteringmonerop2: "Include:"
+  masteringmoneroul1: "Una introduzione alle blockchain e all'importanza della privacy - ideale per utenti non tecnici."
+  masteringmoneroul2: "Discussione sui limiti di Bitcoin e soluzioni specifiche apportate da Monero."
+  masteringmoneroul3: "Storie degli utilizzatori (come Monero protegge la tua privacy), analogie,  esempi, discussioni tecnico-legali, e frammenti di codice che illustrano gli aspetti tecnici principali."
+  masteringmoneroul4: "Dettagli della rete decentralizzata Monero, l'architettura p2p, il ciclo di vita della transazione e i principi di sicurezza."
+  masteringmoneroul5: "Introduzione ai fondamenti tecnici di Monero, rivolto a sviluppatori, ingegneri, architetti software ed utenti curiosi."
+  masteringmoneroul6: "Nuovi sviluppi come Kovri, Bulletproofs, Multifirma, Portafogli hardware etc."
+  masteringmoneroinfo: "Visita il sito <a href=\"https://masteringmonero.com/\">Mastering Monero</a> per informazioni sulla versione completa."
 moneropedia:
   add_new_text1: Se c'è una voce che vorresti modificare o aggiungere,
   add_new_link: apri una issue sul repositorio GitLab di questo sito
