@@ -22,7 +22,7 @@ Dans l'invite de commande. Notez votre phrase mnémonique de 25 mots, si vous ne
 
 Vous pouvez réaliser ceci en copiant les fichiers dans un nouveau répertoire.
 
-Parfois, lors de la création de votre portefeuille, vous pourriez lui avoir donner un nom sans la partie .bin. Dans ce cas, votre portefeuille s'appellera nomdevotreportefeuille sans le .bin à la fin.
+Parfois, lors de la création de votre portefeuille, vous pourriez lui avoir donné un nom sans la partie .bin. Dans ce cas, votre portefeuille s'appellera nomdevotreportefeuille sans le .bin à la fin.
 
 - Supprimez nomdevotreportefeuille.bin
 
